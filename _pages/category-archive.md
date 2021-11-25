@@ -1,5 +1,5 @@
 ---
-title: "Posts by Publications"
+title: "Publications"
 layout: categories
 permalink: /pubs/
 author_profile: true
