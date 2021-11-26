@@ -1,6 +1,5 @@
 ---
 permalink: /teaching/
-filename: _pages/contact.md	
 ---
 
 Spring 2021 Head T.A. for Advanced Topics in Deep Learning, Duke University
