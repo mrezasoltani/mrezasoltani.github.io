@@ -67,7 +67,7 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://scholar.google.com/citations?user=A_UgINAAAAAJ&hl=en"
     - label: "LinkedIn"
-      svg: linkedin.svg
+      icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/mohammadreza-soltani-99bb1ba0/"
      
     #- label: "Twitter"
