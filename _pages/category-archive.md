@@ -1,6 +1,6 @@
 ---
-title: "Publications"
-#layout: categories
-permalink: /pubs/
+title: "Posts by Category"
+layout: categories
+permalink: /categories/
 author_profile: true
 ---
