@@ -1,5 +1,6 @@
 ---
 permalink: /teaching/
+title: "Teaching Experience"
 ---
 
 Spring 2021 Head T.A. for Advanced Topics in Deep Learning, Duke University
