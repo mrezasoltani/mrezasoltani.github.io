@@ -3,7 +3,6 @@ permalink: /teaching/
 title: "Teaching Experience"
 ---
 
-/*:
 - Spring 2021 Head T.A. for Advanced Topics in Deep Learning, Duke University
 
 - Fall 2020 Instructor for Multivariable Calculus, Duke University
@@ -21,4 +20,3 @@ title: "Teaching Experience"
 - Fall 2014 T.A. for Electrical and Electronic Circuits, University of Nebraska- Lincoln (UNL)
 
 - 2011 - 2012 Private Tutor for Engineering Mathematics, Differential Equations, and Engineering Probability and Statistic, Iran
-*/
