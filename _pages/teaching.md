@@ -2,7 +2,7 @@
 permalink: /teaching/
 title: "Teaching Experience"
 ---
-/*
+/*:
 - Spring 2021 Head T.A. for Advanced Topics in Deep Learning, Duke University
 
 - Fall 2020 Instructor for Multivariable Calculus, Duke University
