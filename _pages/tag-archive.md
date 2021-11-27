@@ -1,6 +1,6 @@
 ---
-title: "Useful Links"
-permalink: /links/
+title: "Posts by Tag"
+permalink: /tags/
 layout: tags
 author_profile: true
 ---
