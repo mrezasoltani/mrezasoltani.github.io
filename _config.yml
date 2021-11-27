@@ -66,6 +66,10 @@ author:
     - label: "Google Scholar"
       icon: "fas fa-fw fa-link"
       url: "https://scholar.google.com/citations?user=A_UgINAAAAAJ&hl=en"
+    - label: "LinkedIn"
+      svg: linkedin.svg
+      url: "https://www.linkedin.com/in/mohammadreza-soltani-99bb1ba0/"
+     
     #- label: "Twitter"
     #  icon: "fab fa-fw fa-twitter-square"
     #  url: "https://twitter.com/"
