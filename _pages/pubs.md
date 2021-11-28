@@ -23,11 +23,11 @@ author_profile: true
 - **M.Soltani**, S. Jain, A. Sambasivan, “Unsupervised Demixing of Structured Signals from Their Superposition Using GANs”, ICLR Workshop on Deep Generative Models for Highly Structured Data, May 2019.
 - **M. Soltani** and C. Hegde, “Fast and Provable Algorithms for Learning Two-Layer Polynomial Neural Networks”, IEEE Transactions on Signal Processing (TSP), vol. 67, no. 13, p3361-3371, July 2019.
 - **M. Soltani** and C. Hegde, “Fast Low-Rank Estimation for Ill-Conditioned Matrices'', International Symposium on Information Theory (ISIT), June 2018.
-- **M. Soltani** and C. Hegde, “Towards Provable Learning of Polynomial Neural Networks Using Low-Rank Matrix Estimation”, Artificial Intelligence and Statistics (AISTAT), April 2018. (**acceptance rate: %33**)
-- **M. Soltani** and C. Hegde, “Fast Low-Rank Matrix Estimation without the Condition Number”, https://arxiv.org/abs/1712.03281, Dec 2017. %to SIAM Journal on Optimization
+- **M. Soltani** and C. Hegde, “Towards Provable Learning of Polynomial Neural Networks Using Low-Rank Matrix Estimation”, Artificial Intelligence and Statistics (AISTAT), April 2018. (**acceptance rate: \%33**)
+- **M. Soltani** and C. Hegde, “Fast Low-Rank Matrix Estimation without the Condition Number”, https://arxiv.org/abs/1712.03281, Dec 2017.
 - **M. Soltani** and C. Hegde, “Towards Provable Learning of Polynomial Neural Networks Using Low-Rank Matrix Estimation”, NIPS Workshop On Deep Learning: Bridging Theory and Practice (DLP), Dec 2017.
 - **M.Soltani** and C. Hegde, “Demixing Structured Superposition Signals from Periodic and Aperiodic Nonlinear Observations”, IEEE GlobalSIP Symposium on Sparse Signal Processing and Deep Learning, Nov 2017.
--V. Shah, **M.Soltani** and C. Hegde, “Reconstruction from Periodic Nonlinearities, with Applications to HDR Imaging”, Asilomar Conference on Signals, Systems, and Computers, Nov 2017.
+- V. Shah, **M.Soltani** and C. Hegde, “Reconstruction from Periodic Nonlinearities, with Applications to HDR Imaging”, Asilomar Conference on Signals, Systems, and Computers, Nov 2017.
 - **M.Soltani** and C. Hegde, “Fast Algorithms for Learning Latent Variables in Graphical Models”, ACM KDD Mining and Learning With Graphs (KDD MLG), Aug 2017.
 - **M.Soltani** and C. Hegde, Improved Algorithms for Matrix Recovery from Rank-One Projections, poster presentation in Midwest Machine Learning Symposium (MMLS), May 2017. (**Winner of the best poster award**)
 - **M.Soltani** and C. Hegde, “Fast Algorithms for Demixing Sparse Signals from Nonlinear Observations”, IEEE Transactions on Signal Processing (TSP), vol. 65, no. 16, p4209-4222, Aug 2017.
