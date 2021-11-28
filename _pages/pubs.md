@@ -9,17 +9,14 @@ author_profile: true
 - C. Le, **M. Soltani**, J. Dong, V. Tarokh, “Fisher Task Distance and Its Applications in Transfer Learning and Neural Architecture Search”, submitted, 2021.
 - J. Dong, S. Ren, Y. Deng, O. Khatib, J. Malof, **M. Soltani**, W. Padilla, V. Tarokh, “Blaschke Product Neural Networks (BPNN): A Physics-Infused Neural Network for Phase Retrieval of Meromorphic Functions”, submitted, 2021.
 - C. Le, **M. Soltani**, R. Ravier, V. Tarokh, “Neural Architecture Search From Task Similarity Measure”, submitted, 2021.
-#  A. Yanchenko, **M. Soltani**, R. Ravier, S. Mukherjee, V.Tarokh, “A Methodology for Exploring Deep Convolutional Features in Relation to Hand-Crafted Features with an Application to Music Audio Modelingt, submitted 2021.
 - M. Angjelichinoski, **M. Soltani**, J. Choi, B. Pesaran, V. Tarokh, ``Deep Pinsker and James-Stein Neural Networks for Decoding Motor Intentions from Limited Data" , IEEE Transactions on Neural Systems \& Rehabilitation Engineering (TNSRE), 2021.
 - Y.Feng, C. Wongkamthong, **M. Soltani**, Y. NG, S. Gogineni, B. Kang, A. Pezeshki, R. Calderbank, M. Rangaswamy, V. Tarokh, “Knowledge-Aided Data-DrivenRadar Clutter Cancellation”, IEEE Radar Conference, May, 2021
 - M. Cho, **M.Soltani**, C. Hegde, ``One-Shot Neural Architecture Search via Compressive Sensing", ICLR Workshop on Neural Architecture Search (NAS), May, 2021.
 - C. Cannella, **M. Soltani**, V. Tarokh, ``Projected Latent Markov Chain Monte Carlo: Conditional Sampling of Normalizing Flows'', International Conference on Learning Representation (ICLR), May 2021.
 - C. Le, **M.Soltani**, R. Ravier, V. Tarokh, ``Task-Aware Neural Architecture Search", International Conference on Acoustics, Speech, and Signal Processing (ICASSP), June 2021.
-#  A. Sambasivan, S. Jain,  **M. Soltani**, J. Haupt, ``Fast Object Detection by Leveraging Temporal Correlation Between Sparse Activation Patterns in Deep Neural Networks'", submitted, 2021.
 - Y.Feng, C. Wongkamthong, **M. Soltani**, Y. NG, S. Gogineni, B. Kang, A. Pezeshki, R. Calderbank, M. Rangaswamy, V. Tarokh, ``Knowledge-Aided Data-DrivenRadar Clutter Cancellation", IEEE Radar Conference, May, 2021.
 - **M.Soltani**, S. Wu, Y.Li, R. Ravier, J. Ding, V. Tarokh, ``Compressing Deep Networks Using Fisher Score of Feature Maps", International Conference on The Data Compression Conference (DCC), March 2021.
 - **M.Soltani**, S. Wu, J. Ding, R. Ravier, V. Tarokh, ``On the Information of Feature Maps and Pruning of Deep Neural Networks", International Conference on Pattern Recognition (ICPR), Jan 2021.
-#  R. Ravier,, **M.Soltani**, M. simoes, D. Garagic, V. Tarokh, ``GeoStat Representations of Time Series for Fast Classification", submitted, 2020.
 - M. Angjelichinoski, **M. Soltani**, J. Choi, B. Pesaran, V. Tarokh, ``Deep James-Stien Neural Networks for Brain-Computer Interfaces", International Conference on Acoustics, Speech, and Signal Processing (ICASSP), May 2020.
 - C. Cannella, J. Ding, **M. Soltani**, Y. Zhou, V. Tarokh, ``Perception-Distortion Trade-Off with Restricted Boltzmann Machines", International Conference on Acoustics, Speech, and Signal Processing (ICASSP), May 2020.
 - **M.Soltani**, S. Jain, C. Hegde, ``Learning Structured Signals Using GANs with Applications in Denoising and Demixing",  Asilomar Conference on Signals, Systems, and Computers, Nov 2019.
@@ -42,6 +39,11 @@ author_profile: true
 - **M. Soltani**, M. Hempel, and H. Sharif, ``Data Fusion Utilization for optimizing Large-Scale Wireless Sensor Networks", International Conference on Communications (ICC), 2014.
 - M. Maadani, S. A. Motamedi, and **M. Soltani**, ``EDCA Delay Analysis of Spatial Multiplexing in IEEE802. 11-Based Wireless Sensor and Actuator Networks",  International Journal of Information and Electronics Engineering, 2(3), p.318, 2012.
 - **M.Soltani**, ``A novel Tunable Opportunistic Routing Protocol for WSN Applications", Amirkabir University of Technology, Technical Report, 2012.
-# **M. Maadani**, S. A. Motamedi, and **M. Soltani,}, ``Delay Analysis of MIMO-Enabled IEEE 802.11- Based Soft-Real-Time Wireless Sensor and Actuator", International Conference on Intelligent Information Networks, 2011.
 - **M. Maadani**, S. A. Motamedi, and **M. Soltani**, ``Delay Analysis of MIMO-Enabled IEEE 802.11-Based Soft-Real-Time Wireless Sensor and Actuator Networks", Dela, vol. 150, p200, 2011.
 - **M. Soltani**, S. A. Motamedi, S. Ahmadi, and M. Maadani, ``Power-Aware and Void-Avoidant Routing Protocol for Reliable Industrial Wireless Sensor Networks", International Conference on Wireless Communications, Networking and Mobile Computing (WiCOM), 2011.
+<!--- 
+# **M. Maadani**, S. A. Motamedi, and **M. Soltani,}, ``Delay Analysis of MIMO-Enabled IEEE 802.11- Based Soft-Real-Time Wireless Sensor and Actuator", International Conference on Intelligent Information Networks, 2011.
+#  R. Ravier,, **M.Soltani**, M. simoes, D. Garagic, V. Tarokh, ``GeoStat Representations of Time Series for Fast Classification", submitted, 2020.
+#  A. Sambasivan, S. Jain,  **M. Soltani**, J. Haupt, ``Fast Object Detection by Leveraging Temporal Correlation Between Sparse Activation Patterns in Deep Neural Networks'", submitted, 2021.
+#  A. Yanchenko, **M. Soltani**, R. Ravier, S. Mukherjee, V.Tarokh, “A Methodology for Exploring Deep Convolutional Features in Relation to Hand-Crafted Features with an Application to Music Audio Modelingt, submitted 2021.
+-->
