@@ -10,7 +10,7 @@ author_profile: true
 - J. Dong, S. Ren, Y. Deng, O. Khatib, J. Malof, **M. Soltani**, W. Padilla, V. Tarokh, “Blaschke Product Neural Networks (BPNN): A Physics-Infused Neural Network for Phase Retrieval of Meromorphic Functions”, submitted, 2021.
 - C. Le, **M. Soltani**, R. Ravier, V. Tarokh, “Neural Architecture Search From Task Similarity Measure”, submitted, 2021.
 - M. Angjelichinoski, **M. Soltani**, J. Choi, B. Pesaran, V. Tarokh, “Deep Pinsker and James-Stein Neural Networks for Decoding Motor Intentions from Limited Data” , IEEE Transactions on Neural Systems & Rehabilitation Engineering (TNSRE), 2021.
-- Y.Feng, C. Wongkamthong, **M. Soltani**, Y. NG, S. Gogineni, B. Kang, A. Pezeshki, R. Calderbank, M. Rangaswamy, V. Tarokh, “Knowledge-Aided Data-DrivenRadar Clutter Cancellation”, IEEE Radar Conference, May, 2021
+- Y.Feng, C. Wongkamthong, **M. Soltani**, Y. NG, S. Gogineni, B. Kang, A. Pezeshki, R. Calderbank, M. Rangaswamy, V. Tarokh, “Knowledge-Aided Data-DrivenRadar Clutter Cancellation”, IEEE Radar Conference, May, 2021.
 - M. Cho, **M.Soltani**, C. Hegde, “One-Shot Neural Architecture Search via Compressive Sensing”, ICLR Workshop on Neural Architecture Search (NAS), May, 2021.
 - C. Cannella, **M. Soltani**, V. Tarokh, “Projected Latent Markov Chain Monte Carlo: Conditional Sampling of Normalizing Flows'', International Conference on Learning Representation (ICLR), May 2021.
 - C. Le, **M.Soltani**, R. Ravier, V. Tarokh, “Task-Aware Neural Architecture Search”, International Conference on Acoustics, Speech, and Signal Processing (ICASSP), June 2021.
@@ -23,16 +23,16 @@ author_profile: true
 - **M.Soltani**, S. Jain, A. Sambasivan, “Unsupervised Demixing of Structured Signals from Their Superposition Using GANs”, ICLR Workshop on Deep Generative Models for Highly Structured Data, May 2019.
 - **M. Soltani** and C. Hegde, “Fast and Provable Algorithms for Learning Two-Layer Polynomial Neural Networks”, IEEE Transactions on Signal Processing (TSP), vol. 67, no. 13, p3361-3371, July 2019.
 - **M. Soltani** and C. Hegde, “Fast Low-Rank Estimation for Ill-Conditioned Matrices'', International Symposium on Information Theory (ISIT), June 2018.
-- **M. Soltani** and C. Hegde, “Towards Provable Learning of Polynomial Neural Networks Using Low-Rank Matrix Estimation”, Artificial Intelligence and Statistics (AISTAT), April 2018. (**acceptance rate: %33**)
+- **M. Soltani** and C. Hegde, “Towards Provable Learning of Polynomial Neural Networks Using Low-Rank Matrix Estimation”, Artificial Intelligence and Statistics (AISTAT), April 2018 (**acceptance rate: %33**).
 - **M. Soltani** and C. Hegde, “Fast Low-Rank Matrix Estimation without the Condition Number”, https://arxiv.org/abs/1712.03281, Dec 2017.
 - **M. Soltani** and C. Hegde, “Towards Provable Learning of Polynomial Neural Networks Using Low-Rank Matrix Estimation”, NIPS Workshop On Deep Learning: Bridging Theory and Practice (DLP), Dec 2017.
 - **M.Soltani** and C. Hegde, “Demixing Structured Superposition Signals from Periodic and Aperiodic Nonlinear Observations”, IEEE GlobalSIP Symposium on Sparse Signal Processing and Deep Learning, Nov 2017.
 - V. Shah, **M.Soltani** and C. Hegde, “Reconstruction from Periodic Nonlinearities, with Applications to HDR Imaging”, Asilomar Conference on Signals, Systems, and Computers, Nov 2017.
 - **M.Soltani** and C. Hegde, “Fast Algorithms for Learning Latent Variables in Graphical Models”, ACM KDD Mining and Learning With Graphs (KDD MLG), Aug 2017.
-- **M.Soltani** and C. Hegde, Improved Algorithms for Matrix Recovery from Rank-One Projections, poster presentation in Midwest Machine Learning Symposium (MMLS), May 2017. (**Winner of the best poster award**)
+- **M.Soltani** and C. Hegde, Improved Algorithms for Matrix Recovery from Rank-One Projections, poster presentation in Midwest Machine Learning Symposium (MMLS), May 2017 (**Winner of the best poster award**).
 - **M.Soltani** and C. Hegde, “Fast Algorithms for Demixing Sparse Signals from Nonlinear Observations”, IEEE Transactions on Signal Processing (TSP), vol. 65, no. 16, p4209-4222, Aug 2017.
 - **M.Soltani** and C. Hegde, “Stable Recovery of Sparse Vectors From Random Sinusoidal Feature Maps”, International Conference on Acoustics, Speech, and Signal Processing (ICASSP), March 2017.
-- **M. Soltani** and C. Hegde, “Iterative Thresholding for Demixing Structured Superpositions in High Dimensions”, NIPS Workshop on Learning in High Dimensions with Structure (LHDS), Dec 2016. (**Oral presentation; acceptance rate: 2/50})
+- **M. Soltani** and C. Hegde, “Iterative Thresholding for Demixing Structured Superpositions in High Dimensions”, NIPS Workshop on Learning in High Dimensions with Structure (LHDS), Dec 2016 (**Oral presentation; acceptance rate: 2/50**).
 - **M. Soltani** and C. Hegde, “A Fast Iterative Algorithm for Demixing Sparse Signals from Nonlinear Observations”, IEEE GlobalSIP Symposium on Compressed Sensing and Deep Learning, Dec 2016.
 - **M. Soltani** and C. Hegde, “Demixing Sparse Signals from Nonlinear Observations,” Asilomar Conference on Signals, Systems, and Computers, Nov 2016.
 - **M. Soltani**, M. Hempel, and H. Sharif, “Utilization of Convex Optimization for Data Fusion-driven Sensor Management in WSNs”, International Wireless Communications \& Mobile Computing Conference (IWCMC), 2015.
