@@ -23,7 +23,7 @@ author_profile: true
 - **M.Soltani**, S. Jain, A. Sambasivan, “Unsupervised Demixing of Structured Signals from Their Superposition Using GANs”, ICLR Workshop on Deep Generative Models for Highly Structured Data, May 2019.
 - **M. Soltani** and C. Hegde, “Fast and Provable Algorithms for Learning Two-Layer Polynomial Neural Networks”, IEEE Transactions on Signal Processing (TSP), vol. 67, no. 13, p3361-3371, July 2019.
 - **M. Soltani** and C. Hegde, “Fast Low-Rank Estimation for Ill-Conditioned Matrices'', International Symposium on Information Theory (ISIT), June 2018.
-- **M. Soltani** and C. Hegde, “Towards Provable Learning of Polynomial Neural Networks Using Low-Rank Matrix Estimation”, Artificial Intelligence and Statistics (AISTAT), April 2018. (**acceptance rate: \%33**)
+- **M. Soltani** and C. Hegde, “Towards Provable Learning of Polynomial Neural Networks Using Low-Rank Matrix Estimation”, Artificial Intelligence and Statistics (AISTAT), April 2018. (**acceptance rate: %33**)
 - **M. Soltani** and C. Hegde, “Fast Low-Rank Matrix Estimation without the Condition Number”, https://arxiv.org/abs/1712.03281, Dec 2017.
 - **M. Soltani** and C. Hegde, “Towards Provable Learning of Polynomial Neural Networks Using Low-Rank Matrix Estimation”, NIPS Workshop On Deep Learning: Bridging Theory and Practice (DLP), Dec 2017.
 - **M.Soltani** and C. Hegde, “Demixing Structured Superposition Signals from Periodic and Aperiodic Nonlinear Observations”, IEEE GlobalSIP Symposium on Sparse Signal Processing and Deep Learning, Nov 2017.
@@ -41,9 +41,3 @@ author_profile: true
 - **M.Soltani**, “A novel Tunable Opportunistic Routing Protocol for WSN Applications”, Amirkabir University of Technology, Technical Report, 2012.
 - **M. Maadani**, S. A. Motamedi, and **M. Soltani**, “Delay Analysis of MIMO-Enabled IEEE 802.11-Based Soft-Real-Time Wireless Sensor and Actuator Networks”, Dela, vol. 150, p200, 2011.
 - **M. Soltani**, S. A. Motamedi, S. Ahmadi, and M. Maadani, “Power-Aware and Void-Avoidant Routing Protocol for Reliable Industrial Wireless Sensor Networks”, International Conference on Wireless Communications, Networking and Mobile Computing (WiCOM), 2011.
-<!--- 
-# **M. Maadani**, S. A. Motamedi, and **M. Soltani,}, “Delay Analysis of MIMO-Enabled IEEE 802.11- Based Soft-Real-Time Wireless Sensor and Actuator”, International Conference on Intelligent Information Networks, 2011.
-#  R. Ravier,, **M.Soltani**, M. simoes, D. Garagic, V. Tarokh, “GeoStat Representations of Time Series for Fast Classification”, submitted, 2020.
-#  A. Sambasivan, S. Jain,  **M. Soltani**, J. Haupt, “Fast Object Detection by Leveraging Temporal Correlation Between Sparse Activation Patterns in Deep Neural Networks'”, submitted, 2021.
-#  A. Yanchenko, **M. Soltani**, R. Ravier, S. Mukherjee, V.Tarokh, “A Methodology for Exploring Deep Convolutional Features in Relation to Hand-Crafted Features with an Application to Music Audio Modelingt, submitted 2021.
--->
