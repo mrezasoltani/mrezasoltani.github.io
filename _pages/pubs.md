@@ -3,7 +3,7 @@ title: "Publications"
 permalink: /pubs/
 author_profile: true
 ---
-- **M.Soltani**, S. Wu, J. Ding, V. Tarokh, ``On The Energy Statistics of Feature Maps in Pruning of Neural Networks with Skip-Connections", submitted, 2020.
+- **M.Soltani**, S. Wu, J. Ding, V. Tarokh, "On The Energy Statistics of Feature Maps in Pruning of Neural Networks with Skip-Connections", submitted, 2020.
 - Y. Deng, J. Dong, S. Ren, O. Khatib,  **M. Soltani**, V. Tarokh, W. Padilla, J. Malof, “Benchmarking Data-driven Surrogate Simulators for Artificial Electromagnetic Materials”, NeurIPS 2021 Datasets and Benchmarks Track, 2021.
 - C. Le, J. Dong,  **M. Soltani**, V. Tarokh, “Task Affinity with Maximum Bipartite Matching in Few-Shot Learning”, submitted, 2021.
 - C. Le, **M. Soltani**, J. Dong, V. Tarokh, “Fisher Task Distance and Its Applications in Transfer Learning and Neural Architecture Search”, submitted, 2021.
