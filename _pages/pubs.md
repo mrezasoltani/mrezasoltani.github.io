@@ -9,7 +9,7 @@ author_profile: true
 - C. Le, **M. Soltani**, J. Dong, V. Tarokh, “Fisher Task Distance and Its Applications in Transfer Learning and Neural Architecture Search”, submitted, 2021.
 - J. Dong, S. Ren, Y. Deng, O. Khatib, J. Malof, **M. Soltani**, W. Padilla, V. Tarokh, “Blaschke Product Neural Networks (BPNN): A Physics-Infused Neural Network for Phase Retrieval of Meromorphic Functions”, submitted, 2021.
 - C. Le, **M. Soltani**, R. Ravier, V. Tarokh, “Neural Architecture Search From Task Similarity Measure”, submitted, 2021.
-- M. Angjelichinoski, **M. Soltani**, J. Choi, B. Pesaran, V. Tarokh, “Deep Pinsker and James-Stein Neural Networks for Decoding Motor Intentions from Limited Data” , IEEE Transactions on Neural Systems \& Rehabilitation Engineering (TNSRE), 2021.
+- M. Angjelichinoski, **M. Soltani**, J. Choi, B. Pesaran, V. Tarokh, “Deep Pinsker and James-Stein Neural Networks for Decoding Motor Intentions from Limited Data” , IEEE Transactions on Neural Systems & Rehabilitation Engineering (TNSRE), 2021.
 - Y.Feng, C. Wongkamthong, **M. Soltani**, Y. NG, S. Gogineni, B. Kang, A. Pezeshki, R. Calderbank, M. Rangaswamy, V. Tarokh, “Knowledge-Aided Data-DrivenRadar Clutter Cancellation”, IEEE Radar Conference, May, 2021
 - M. Cho, **M.Soltani**, C. Hegde, “One-Shot Neural Architecture Search via Compressive Sensing”, ICLR Workshop on Neural Architecture Search (NAS), May, 2021.
 - C. Cannella, **M. Soltani**, V. Tarokh, “Projected Latent Markov Chain Monte Carlo: Conditional Sampling of Normalizing Flows'', International Conference on Learning Representation (ICLR), May 2021.
