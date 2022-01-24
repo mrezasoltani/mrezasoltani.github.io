@@ -3,13 +3,13 @@ title: "Publications"
 permalink: /pubs/
 author_profile: true
 ---
+- J. Dong, S. Ren, Y. Deng, O. Khatib, J. Malof, **M. Soltani**, W. Padilla, V. Tarokh, “Blaschke Product Neural Networks (BPNN): A Physics-Infused Neural Network for Phase Retrieval of Meromorphic Functions”, International Conference on Learning Representations (ICLR), April 2022.
+- - C. Le, J. Dong,  **M. Soltani**, V. Tarokh, “Task Affinity with Maximum Bipartite Matching in Few-Shot Learning”, International Conference on Learning Representations (ICLR), April 2022.
 - **M.Soltani**, S. Wu, J. Ding, V. Tarokh, “On The Energy Statistics of Feature Maps in Pruning of Neural Networks with Skip-Connections”, International Conference on The Data Compression Conference (DCC), March 2022.
 - S. Venkatasubramanian, C. Wongkamthong, **M. Soltani**, B. Kang, S. Gogineni, A. Pezeshki, M. Rangaswamy, V. Tarokh, "Toward Data-Driven STAP Radar", IEEE Radar Conference, March 2022.
 - Dong, S. Wu, **M. Soltani**, V. Tarokh, "Multi-Agent Adversarial Attacks for Multi-Channel Communication", International Conference on Autonomous Agents and Multiagent Systems (AAMAS),  May 2022. 
 - Y. Deng, J. Dong, S. Ren, O. Khatib,  **M. Soltani**, V. Tarokh, W. Padilla, J. Malof, “Benchmarking Data-driven Surrogate Simulators for Artificial Electromagnetic Materials”, NeurIPS Datasets and Benchmarks Track, May 2021.
-- C. Le, J. Dong,  **M. Soltani**, V. Tarokh, “Task Affinity with Maximum Bipartite Matching in Few-Shot Learning”, submitted, 2021.
 - C. Le, **M. Soltani**, J. Dong, V. Tarokh, “Fisher Task Distance and Its Applications in Transfer Learning and Neural Architecture Search”, submitted, 2021.
-- J. Dong, S. Ren, Y. Deng, O. Khatib, J. Malof, **M. Soltani**, W. Padilla, V. Tarokh, “Blaschke Product Neural Networks (BPNN): A Physics-Infused Neural Network for Phase Retrieval of Meromorphic Functions”, submitted, 2021.
 - C. Le, **M. Soltani**, R. Ravier, V. Tarokh, “Neural Architecture Search From Task Similarity Measure”, submitted, 2021.
 - M. Angjelichinoski, **M. Soltani**, J. Choi, B. Pesaran, V. Tarokh, “Deep Pinsker and James-Stein Neural Networks for Decoding Motor Intentions from Limited Data” , IEEE Transactions on Neural Systems & Rehabilitation Engineering (TNSRE), 2021.
 - Y.Feng, C. Wongkamthong, **M. Soltani**, Y. NG, S. Gogineni, B. Kang, A. Pezeshki, R. Calderbank, M. Rangaswamy, V. Tarokh, “Knowledge-Aided Data-DrivenRadar Clutter Cancellation”, IEEE Radar Conference, May, 2021.
