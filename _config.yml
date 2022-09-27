@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Mohammadreza Soltani"
   avatar : "/assets/images/IMG_0064.JPG"
-  bio    : "Principal Data Scientist in Fidelity Invetment."
+  bio    : "Principal Data Scientist in Fidelity Investments"
   links:
     - label: "Google Scholar"
       icon: "fas fa-fw fa-link"
