@@ -15,3 +15,5 @@
 2. Discriminative and Generative
 ### Supervised and unsupervised
 * In supervised methods, we are given a set of $N$ input-output pairs $\mathcal{D}=$ $`\{(x_i, y_i)\}`$$_{i=1}^N$, and the goal is to learn a map from inputs, $x_i$'s to outputs, $y_i$'s. Input variables are knowm with different names like **features**, **attributes**, or **covariates**. These input variables are typically a $p$-dimentional vetors, denoting for example hights and weights of different persons (in this case, $p=2$. That is, $x_i$ is a 2-dimentional real vector corresponidng to the $i^{th}$ person.   
+However, input variables can be a very complex structured object, such as an image, s speech signal, a sentence, an email message, a time series, a graph, etc. On the other hand, output variables known as **response variable** can be anything, but most methods assume that $y_i$'s are categorical or nominal variables from some finite set, i.e., $y_i$ $\in$ $`\{1,2,\dots,C\}`$ in a classification problem, for example.
+* In supervised methods, we
