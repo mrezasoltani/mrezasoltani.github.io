@@ -19,10 +19,11 @@ However, input variables can be a very complex structured object, such as an ima
 * Supervised problems come in two flavors:
   1. **Regression:** In regression problems, the output variables are continuous, i.e., $y_i \in \mathbb{R}$ or $y_i \in \mathbb{C}$ for $i=1,2,\dots, N$.
   2. **Classification:** In classification problems, the output variables are discrete, and they belong to a finite set (i.e., a set with a finite number of elements). That is, $y_i$ $\in$ $`\{1,2,\dots,C\}`$ for $i=1,2,\dots, N$.
-* Some examples of supervised learning:
+
 * Regression example: Face detection. The input, $x$ is an image, where $p$ is the number of pixels in the image. The output, $y_i$ is the location of faces in the figure (a real vale).
 <img width="831" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/38d8dfc0-7825-49f7-9993-09db19733f41">
-(a) Input image (Murphy family, photo taken 5 August 2010). (b) The output of the classifier, which detected 5 faces at different poses.
-Classification example: Hand-written digit recognition. The input, $x$ is an image, where $p$ is the number of pixels in the image. The output, $y_i$ is one the numbers in the set $`{0,1,2,\dots,9\}`$ (a discrete value).
+*(a) Input image (Murphy family, photo taken 5 August 2010). (b) The output of the classifier, which detected 5 faces at different poses.
+Classification example: Hand-written digit recognition.*
+The input, $x$ is an image, where $p$ is the number of pixels in the image. The output, $y_i$ is one of the numbers in the set $`{0,1,2,\dots,9\}`$ (a discrete value).
 
 * In supervised methods, we
