@@ -10,12 +10,16 @@
 * Next we do a crash course in Python and Numpy.
 ## What is machine learning?
 * With the deluge of data, we need to find ways to discover what is in the data. ML is a set of algorithms/methods that help us learn and recognize the hidden patterns in data. ML is not a new topic. In fact, learning from data has been explored and used by many disciplines such as Statistics, Signal Processing, Control Theory, etc. What makes ML special is to provide a common formalism to the problems and algorithms. With the help of ML techniques, one can predict future data, or perform other kinds of decision-making under uncertainty.
-* There are different types of ML. Two common types of categorizing ML methods:
-1. Supervised and Unsupervised
-2. Discriminative and Generative
+* There are different types of ML. Sometimes models and methods are used interchangably. However, a model is not a (learning) method/algorithm.
+* Two common types of categorizing ML methods:
+   - 1. Supervised Learning
+   - 2. Unsupervised Learning
+* Two common types of categorizing ML models:
+   - 1. Discriminative
+   - 2. Generative 
 
 ### Supervised Learning
-* In supervised methods, we are given a set of $N$ input-output pairs $\mathcal{D}=$ $`\{(\mathbf{x_i}, y_i)\}`$$_{i=1}^N$, and the goal is to learn a map from inputs, $\mathbf{x_i}$'s to outputs, $y_i$'s. Input variables have different names like **features**, **attributes**, or **covariates**. These input variables are typically a $p$-dimentional vector, denoting for example heights and weights of different persons (in this case, $p=2$. That is, $x_i$ is a 2-dimensional real vector corresponding to the $i^{th}$ person.   
+* In supervised methods, we are given a set of $N$ input-output pairs $\mathcal{D}=$ $`\{(\mathbf{x_i}, y_i)\}`$$_{i=1}^N$, and the goal is to learn a map from inputs, $\mathbf{x_i}$'s to outputs, $y_i$'s. Input variables have different names like **features**, **attributes**, or **covariates**. These input variables are typically a $p$-dimentional vector, denoting for example heights and weights of different persons (in this case, $p=2$. That is, $\mathbf{x_i}$ is a 2-dimensional real vector corresponding to the $i^{th}$ person.   
 However, input variables can be a very complex structured object, such as an image, s speech signal, a sentence, an email message, a time series, a graph, etc. On the other hand, output variables known as **response variable** or **labels** can be anything, but most methods assume that $y_i$'s are categorical or nominal variables from some finite set, i.e., $y_i$ $\in$ $`\{1,2,\dots,C\}`$ in a classification problem, for example.
 #### Supervised problems come in two flavors:
   1. **Regression:** In regression problems, the output variables are continuous, i.e., $y_i \in \mathbb{R}$ or $y_i \in \mathbb{C}$ for $i=1,2,\dots, N$.
