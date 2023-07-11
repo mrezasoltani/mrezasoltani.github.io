@@ -49,3 +49,4 @@ However, input variables can be a very complex structured object, such as an ima
 </p>
 
 ### Discriminative and Generative
+* A generative model explains how the data was generated, while a discriminative model focuses on predicting the labels of the data.
