@@ -69,11 +69,15 @@ However, input variables can be a very complex structured object, such as an ima
 </div>
 
 ### Other learning methods
-* In addition to the supervised and unsupervised leanring methods, there are different learning algorithms. For instance, _Semi-Supervised Learning (SSL)_ methods, in which there are some limitted labels, but not enough to train a model in a supervised fashion. In this case, one needs to use both supervised and unsupervised techniques.
-   * One approach to SSL is called _self-training_. The idea is to leverage the existing labels by training an initial model on a few labeled samples. This generates so-called Pseudo Labels. Next, we select more confident lables and construct a new dataset with the more confident pseudo labeled and the the limitted labeled data, and train the intial model again for this new dataset. This hopefully improves the initial model. We then iteratively apply this procedure until the desired performance is met.
+* In addition to the supervised and unsupervised leanring methods, there are different learning approaches.
+   *  **_Semi-Supervised Learning (SSL)._** There are some cases where we have only access to limitted labels, but not enough to train a model in a supervised fashion. In this case, one needs to use both supervised and unsupervised techniques.
+      * One approach to SSL is called _self-training_. The idea is to leverage the existing labels by training an initial model on a few labeled samples. This generates so-called Pseudo Labels. Next, we select more confident lables and construct a new dataset with the more confident pseudo labeled and the the limitted labeled data, and train the intial model again for this new dataset. This hopefully improves the initial model. We then iteratively apply this procedure until the desired performance is met.
 
-<p align="center">
-   <img src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/4f6d2d83-778d-46c3-b9fb-59d9d995e7ba" width="400" height="300">
-   <br>
-         <em>Self-training approach for SSL.</em>
-</p>
+      <p align="center">
+         <img src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/4f6d2d83-778d-46c3-b9fb-59d9d995e7ba" width="400" height="300">
+         <br>
+               <em>Self-training approach for SSL.</em>
+      </p>
+   * **_Active Learning_.**
+   * **_Online Learning_.**
+   * **_Reinforcement Learning_.**
