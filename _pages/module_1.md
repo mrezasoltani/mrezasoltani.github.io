@@ -74,8 +74,8 @@ However, input variables can be a very complex structured object, such as an ima
       * One approach to SSL is called _self-training_. The idea is to leverage the existing labels by training an initial model on a few labeled samples. This generates so-called Pseudo Labels. Next, we select more confident lables and construct a new dataset with the more confident pseudo labeled and the the limitted labeled data, and train the intial model again for this new dataset. This hopefully improves the initial model. We then iteratively apply this procedure until the desired performance is met.
 
       <p align="center">
-         <img src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/4f6d2d83-778d-46c3-b9fb-59d9d995e7ba" width="400" height="300">
-         <br>
+         <img src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/e0a94596-5de6-4f1f-8a7f-6b1891dccdb6" width="400" height="300">
+         <br> 
                <em>Self-training approach for SSL.</em>
       </p>
    * **_Active Learning_.**
