@@ -53,4 +53,17 @@ However, input variables can be a very complex structured object, such as an ima
 </p>
 
 ### Discriminative and Generative
-* A generative model explains how the data was generated, while a discriminative model focuses on predicting the labels of the data.
+* A discriminative model focuses on predicting labels of the input data, while a generative model explains how the data was generated. In other words, a discriminative model learns the boundry curve to distinguish data from each other. In the probablistic language, it learns a considtional probabilty distibution given by $\mathbb{P}(Y|\mathrm{X})$. Please note that $Y$ and $\mathrm{X}$ are written as random (uppercase) quantities; however, we understand that these are events or realization vectors (such as $y_i$'s and $\mathrm{x_i}$'s). On the other hand, a generative model learns a joint probability distibution denoted by $\mathbb{P}(\mathrm{X}, Y)$
+* We will talk about our mathematical notations in the mathematics background modules.
+* Examples of discriminative models include Linear Regression, Logistic Regression, SVM, etc.
+* Examples of generative models include Linear Discriminant Analysis (LDA), Naive Bayes, Conditional GANs, Optical Flow Models (motion of objects in an image or a video sequence), etc.
+### All combinations is possible !!!
+* There is a misconception that all generative models are unsupervised, or all discriminative models are supervised. This is obviously incorrect statement.
+
+<div align="center">
+   
+|              | Generative             | Discriminative                                |
+| -------------| ---------------------- | --------------------------------------------- |
+| **Supervised**   | Conditional GANs, Naive Bayes | SVM, Logistic Regression |
+| **Unsupervised** | LDA, Normalizing Flows | Optical Flow Models  |
+</div>
