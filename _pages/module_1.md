@@ -28,7 +28,7 @@ However, input variables can be a very complex structured object, such as an ima
    - **Face detection** (regression example): The input, $\mathbf{x}$ is an image, where $p$ is the number of pixels in the image. The output, $y_i$ is the location of faces in the figure (a real value).
 
 <p align="center">
-   <img width="831" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/38d8dfc0-7825-49f7-9993-09db19733f41">
+   <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/38d8dfc0-7825-49f7-9993-09db19733f41">
       <br>
    <em>(a) Input image (Murphy family, photo taken 5 August 2010). (b) The output of the classifier, which detected 5 faces at different 
        poses. Classification example: Hand-written digit recognition. [K. Murphy, 2012.]</em>
@@ -37,7 +37,7 @@ However, input variables can be a very complex structured object, such as an ima
    - **Digit recognition** (classification example): The input, $\mathbf{x}$ is an image, where $p$ is the number of pixels in the image. The output, $y_i$ is one of the numbers in the set $`\{0,1,2,\dots,9\}`$ (a discrete value).
 
 <p align="center">
-   <img width="602" alt="Screenshot 2023-07-10 at 9 26 53 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/44375613-fbb2-4f22-a502-fbed168e471a">
+   <img width="400" alt="Screenshot 2023-07-10 at 9 26 53 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/44375613-fbb2-4f22-a502-fbed168e471a">
    <br>
       <em>MNIST dataset. [http://yann.lecun.com/exdb/mnist/]</em>
 </p>
@@ -47,7 +47,7 @@ However, input variables can be a very complex structured object, such as an ima
 
 - **Clustering (image segmentation)**: Clustering or grouping simialr pixels in an image.
 <p align="center">
-  <img width="854" alt="Screenshot 2023-07-10 at 9 57 45 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/fb9ccc46-0a7b-4eb2-9396-a34642d1ff10">
+  <img width="600" alt="Screenshot 2023-07-10 at 9 57 45 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/fb9ccc46-0a7b-4eb2-9396-a34642d1ff10">
   <br>
       <em>Application of the K-means clustering algorithm to image segmentation. [C. Bishop, 2006]</em>
 </p>
@@ -57,7 +57,7 @@ However, input variables can be a very complex structured object, such as an ima
 * We will talk about our mathematical notations in the mathematics background modules.
 * Examples of discriminative models include Linear Regression, Logistic Regression, SVM, etc.
 * Examples of generative models include Linear Discriminant Analysis (LDA), Naive Bayes, Conditional GANs, Optical Flow Models (motion of objects in an image or a video sequence), etc.
-### All combinations is possible !!!
+### All combinations are possible !!!
 * There is a misconception that all generative models are unsupervised, or all discriminative models are supervised. This is obviously incorrect statement.
 
 <div align="center">
@@ -67,3 +67,13 @@ However, input variables can be a very complex structured object, such as an ima
 | **Supervised**   | Conditional GANs, Naive Bayes | SVM, Logistic Regression |
 | **Unsupervised** | LDA, Normalizing Flows | Optical Flow Models  |
 </div>
+
+### Other learning methods
+* In addition to the supervised and unsupervised leanring methods, there are different learning algorithms. For instance, _Semi-Supervised Learning (SSL)_ methods, in which there are some limitted labels, but not enough to train a model in a supervised fashion. In this case, one needs to use both supervised and unsupervised techniques.
+   * One approach to SSL is called _self-training_. The idea is to leverage the existing labels by training an initial model on a few labeled samples. This generates so-called Pseudo Labels. Next, we select more confident lables and construct a new dataset with the more confident pseudo labeled and the the limitted labeled data, and train the intial model again for this new dataset. This hopefully improves the initial model. We then iteratively apply this procedure until the desired performance is met.
+
+<p align="center">
+   <img src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/4f6d2d83-778d-46c3-b9fb-59d9d995e7ba" width="400" height="300">
+   <br>
+         <em>Self-training approach for SSL.</em>
+</p>
