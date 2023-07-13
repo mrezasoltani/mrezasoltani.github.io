@@ -47,12 +47,12 @@ However, input variables can be a very complex structured object, such as an ima
 ### Unsupervised Learning
 * In unsupervised methods, we are only given input data without any labels. Here the goal is to discover any interesting or structure in the data (knowledge discovery). For example, discovering groups of similar examples within the data, where is called clustering. Another example is the density estimation problem, in which the goal is to estimate the distribution of data within the input space.
 
-- **Clustering (image segmentation)**: Clustering or grouping simialr pixels in an image.
-<p align="center">
-  <img width="600" alt="Screenshot 2023-07-10 at 9 57 45 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/fb9ccc46-0a7b-4eb2-9396-a34642d1ff10">
-  <br>
-      <em>Application of the K-means clustering algorithm to image segmentation. [C. Bishop, 2006]</em>
-</p>
+- **Clustering (image segmentation)**: Clustering or grouping similar pixels in an image.
+   <p align="center">
+     <img width="600" alt="Screenshot 2023-07-10 at 9 57 45 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/fb9ccc46-0a7b-4eb2-9396-a34642d1ff10">
+     <br>
+         <em>Application of the K-means clustering algorithm to image segmentation. [C. Bishop, 2006]</em>
+   </p>
 
 ### Discriminative and Generative
 
@@ -60,7 +60,9 @@ However, input variables can be a very complex structured object, such as an ima
    * We will talk about our mathematical notations in the mathematics background modules.
 * Examples of discriminative models include Linear Regression, Logistic Regression, SVM, etc.
 * Examples of generative models include Linear Discriminant Analysis (LDA), Naive Bayes, Conditional GANs, Optical Flow Models (motion of objects in an image or a video sequence), etc.
+
 ### All combinations are possible !!!
+
 * There is a misconception that all generative models are unsupervised, or all discriminative models are supervised. This is obviously an incorrect statement.
 
 <div align="center">
