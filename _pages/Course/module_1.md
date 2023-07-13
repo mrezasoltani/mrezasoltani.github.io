@@ -65,13 +65,13 @@ However, input variables can be a very complex structured object, such as an ima
 
 * There is a misconception that all generative models are unsupervised, or all discriminative models are supervised. This is obviously an incorrect statement.
 
-<div align="center">
+
    
    |              | Generative             | Discriminative                                |
-   | :-------------| ----------------------: | --------------------------------------------- |
+   | -------------| ---------------------- | --------------------------------------------- |
    | **Supervised**   | Conditional GANs, Naive Bayes | SVM, Logistic Regression |
    | **Unsupervised** | LDA, Normalizing Flows | Optical Flow Models |
-</div>
+
 
 ### Other learning methods
 * In addition to the supervised and unsupervised learning methods, there are different learning approaches.
@@ -83,6 +83,7 @@ However, input variables can be a very complex structured object, such as an ima
          <br> 
                <em>Self-training approach for SSL.</em>
       </p>
+      
    * **_Active Learning_.** Similar to semi-supervised learning, active learning provides another way to mitigate the issue of lack of enough labeled data. In particular, active learning starts with the training of an initial model using limited labeled data. It then tries to rank the unlabeled data using a method called _aqcuisition function_. Once the unlabeled data are ranked, those with higher ranks are labeled typically by a human, and then the model is again trained with both the small labeled dataset and the newly labeled data. Depending on what acquisition function is used, there are different types of active learning algorithms.
         <p align="center">
            <img width="400" alt="Screenshot 2023-07-12 at 9 55 34 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/18727e75-2efa-4199-a894-1d76e3d74667">
