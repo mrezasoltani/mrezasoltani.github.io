@@ -8,7 +8,7 @@ title: "Module 1 - Introduction"
 2. Probability
 3. Statistics
 4. Optimization
-\\(\\{(\mathbf{x_i}, y_i)\\}_{i=1}^N\\)
+
 * Next we do a crash course in Python and Numpy.
 ## What is machine learning?
 * With the deluge of data, we need to find ways to discover what is in the data. ML is a set of algorithms/methods that help us learn and recognize the hidden patterns in data. ML is not a new topic. In fact, learning from data has been explored and used by many disciplines such as Statistics, Signal Processing, Control Theory, etc. What makes ML special is to provide a common formalism to the problems and algorithms. With the help of ML techniques, one can predict future data, or perform other kinds of decision-making under uncertainty.
@@ -21,8 +21,8 @@ title: "Module 1 - Introduction"
    - 2. Generative 
 
 ### Supervised Learning
-* In supervised methods, we are given a set of \\(N\\) input-output pairs \\(\mathcal{D}=\\) \\(\{(\mathbf{x_i}, y_i)\}_{i=1}^N\\), and the goal is to learn a map from inputs, \\(\mathbf{x_i}\\)'s to outputs, \\(y_i\\)'s. Input variables have different names like **features**, **attributes**, or **covariates**. These input variables are typically a \\(p\\)-dimentional vector, denoting for example heights and weights of different persons (in this case, \\(p=2\\). That is, \\(\mathbf{x_i}\\) is a 2-dimensional real vector corresponding to the \\(i^{th}\\) person.   
-However, input variables can be a very complex structured object, such as an image, a speech signal, a sentence, an email message, a time series, a graph, etc. On the other hand, output variables known as **response variable** or **labels** can be anything, but most methods assume that \\(y_i\\)'s are categorical or nominal variables from some finite set, i.e., \\(y_i\\) \\(\in\\) \\(\\{1,2,\dots,C\\}\\) in a classification problem, for example.
+* In supervised methods, we are given a set of \\(N\\) input-output pairs \\(\mathcal{D}=\\) \\(\\{(\mathbf{x_i}, y_i)\\}_{i=1}^N\\), and the goal is to learn a map from inputs, \\(\mathbf{x_i}\\)'s to outputs, \\(y_i\\)'s. Input variables have different names like **features**, **attributes**, or **covariates**. These input variables are typically a \\(p\\)-dimentional vector, denoting for example heights and weights of different persons (in this case, \\(p=2\\). That is, \\(\mathbf{x_i}\\) is a 2-dimensional real vector corresponding to the \\(i^{th}\\) person. However, input variables can be a very complex structured object, such as an image, a speech signal, a sentence, an email message, a time series, a graph, etc. On the other hand, output variables known as **response variable** or **labels** can be anything, but most methods assume that \\(y_i\\)'s are categorical or nominal variables from some finite set, i.e., \\(y_i\\) \\(\in\\) \\(\\{1,2,\dots,C\\}\\) in a classification problem, for example.
+
 #### Supervised problems come in two flavors:
   1. **Regression:** In regression problems, the output variables are continuous, i.e., \\(y_i \in \mathbb{R}\\) or \\(y_i \in \mathbb{C}\\) for \\(i=1,2,\dots, N\\).
   2. **Classification:** In classification problems, the output variables are discrete, and they belong to a finite set (i.e., a set with a finite number of elements). That is, \\(y_i\\) \\(\in\\) \\(\\{1,2,\dots,C\\}\\) for \\(i=1,2,\dots, N\\).
@@ -56,10 +56,9 @@ However, input variables can be a very complex structured object, such as an ima
       </p>
       
 ### Discriminative and Generative
-
 * A discriminative model focuses on predicting labels of the input data, while a generative model explains how the data was generated. In other words, a discriminative model learns the boundary curve to distinguish data from each other. In the probabilistic language, it learns a conditional probability distribution given by \\(\mathbb{P}(Y|\mathrm{X})\\). Please note that \\(Y\\) and \\(\mathrm{X}\\) are written as random (uppercase) quantities; however, we understand that these are events or realization vectors (such as \\(y_i\\)'s and \\(\mathrm{x_i}\\)'s). On the other hand, a generative model learns a joint probability distribution denoted by \\(\mathbb{P}(\mathrm{X}, Y)\\) (We will talk about our mathematical notations in the mathematics background modules).
-   - * Examples of discriminative models include Linear Regression, Logistic Regression, SVM, etc.
-   - * Examples of generative models include Linear Discriminant Analysis (LDA), Naive Bayes, Conditional GANs, Optical Flow Models (motion of objects in an image or a video sequence), etc.
+   * Examples of discriminative models include Linear Regression, Logistic Regression, SVM, etc.
+   * Examples of generative models include Linear Discriminant Analysis (LDA), Naive Bayes, Conditional GANs, Optical Flow Models (motion of objects in an image or a video sequence), etc.
 
 ### All combinations are possible !!!
 
