@@ -1,5 +1,5 @@
 ---
-permalink: /course/
+permalink: /course_modules/
 title: "Course"
 ---
 * [Content](Course/starter.md)
