@@ -56,7 +56,7 @@ title: "Module 1 - Introduction"
       </p>
       
 ### Discriminative and Generative
-* A discriminative model focuses on predicting labels of the input data, while a generative model explains how the data was generated. In other words, a discriminative model learns the boundary curve to distinguish data from each other. In the probabilistic language,
+* A discriminative model focuses on predicting labels of the input data, while a generative model explains how the data was generated. In other words, a discriminative model learns the boundary curve to distinguish data from each other. In the probabilistic language, it learns a conditional probability \\(\mathbb{P}(Y|\mathrm{X})\\).
 
 ### All combinations are possible !!!
 
