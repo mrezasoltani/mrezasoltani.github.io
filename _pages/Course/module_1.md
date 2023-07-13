@@ -48,7 +48,7 @@ classes: wide
 ### Unsupervised Learning
 * In unsupervised methods, we are only given input data without any labels. Here the goal is to discover any interesting or structure in the data (knowledge discovery). For example, discovering groups of similar examples within the data, where is called clustering. Another example is the density estimation problem, in which the goal is to estimate the distribution of data within the input space.
 
-   - **Clustering (Image Segmentation)**: Clustering or grouping similar pixels in an image.
+   - **Clustering** (image segmentation): Clustering or grouping similar pixels in an image.
 
       <p align="center">
         <img width="600" alt="Screenshot 2023-07-10 at 9 57 45 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/fb9ccc46-0a7b-4eb2-9396-a34642d1ff10">
