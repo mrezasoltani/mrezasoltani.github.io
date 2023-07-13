@@ -55,8 +55,7 @@ However, input variables can be a very complex structured object, such as an ima
       </p>
 
 ### Discriminative and Generative
-
-   * A discriminative model focuses on predicting labels of the input data, while a generative model explains how the data was generated. In other words, a discriminative model learns the boundary curve to distinguish data from each other. In the probabilistic language, it learns a conditional probability distribution given by $\mathbb{P}(Y|\mathrm{X})$. Please note that $Y$ and $\mathrm{X}$ are written as random (uppercase) quantities; however, we understand that these are events or realization vectors (such as $y_i$'s and $\mathrm{x_i}$'s). On the other hand, a generative model learns a joint probability distribution denoted by $\mathbb{P}(\mathrm{X}, Y)$
+* A discriminative model focuses on predicting labels of the input data, while a generative model explains how the data was generated. In other words, a discriminative model learns the boundary curve to distinguish data from each other. In the probabilistic language, it learns a conditional probability distribution given by $\mathbb{P}(Y|\mathrm{X})$. Please note that $Y$ and $\mathrm{X}$ are written as random (uppercase) quantities; however, we understand that these are events or realization vectors (such as $y_i$'s and $\mathrm{x_i}$'s). On the other hand, a generative model learns a joint probability distribution denoted by $\mathbb{P}(\mathrm{X}, Y)$
       * We will talk about our mathematical notations in the mathematics background modules.
    * Examples of discriminative models include Linear Regression, Logistic Regression, SVM, etc.
    * Examples of generative models include Linear Discriminant Analysis (LDA), Naive Bayes, Conditional GANs, Optical Flow Models (motion of objects in an image or a video sequence), etc.
