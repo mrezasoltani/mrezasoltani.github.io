@@ -98,4 +98,4 @@ classes: wide
       <em>Standard Reinforcement Learning (RL) scenrio.</em>
    </p>
    
-* In addition to the above learning methods, you may see names like _Transfer Learning_, _Meta Learning_, 'Continous or Life-Long Learring', _Curriculum Leanirng_, _Teacher-Student Learning (Distillation)_ in the litrature. 
+* In addition to the above learning methods, you may see names like _Transfer Learning_, _Meta Learning_, Continous or Life-Long Learring, _Curriculum Leanirng_, _Teacher-Student Learning (Distillation)_ in the litrature. All these methods are different types of learning which may be used as supervise/unsupervise/RL fashion. We w'll look at some of these in the course. 
