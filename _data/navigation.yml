@@ -7,5 +7,5 @@ main:
     url: /links/
   - title: "About"
     url: /about/
-  - course: "Course"
+  - title: "Course"
     url: /course_modules/
