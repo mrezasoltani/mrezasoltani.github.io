@@ -111,7 +111,7 @@ defaults:
       path: "_pages"
       type: pages
     values:
-      layout: wide
+      layout: single
       author_profile: false
 
 category_archive:
