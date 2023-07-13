@@ -8,7 +8,7 @@ title: "Module 1 - Introduction"
 2. Probability
 3. Statistics
 4. Optimization
-   
+   \\( y_0 = 4\times5 \\)
 * Next we do a crash course in Python and Numpy.
 ## What is machine learning?
 * With the deluge of data, we need to find ways to discover what is in the data. ML is a set of algorithms/methods that help us learn and recognize the hidden patterns in data. ML is not a new topic. In fact, learning from data has been explored and used by many disciplines such as Statistics, Signal Processing, Control Theory, etc. What makes ML special is to provide a common formalism to the problems and algorithms. With the help of ML techniques, one can predict future data, or perform other kinds of decision-making under uncertainty.
