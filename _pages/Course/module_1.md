@@ -27,16 +27,16 @@ However, input variables can be a very complex structured object, such as an ima
   1. **Regression:** In regression problems, the output variables are continuous, i.e., $y_i \in \mathbb{R}$ or $y_i \in \mathbb{C}$ for $i=1,2,\dots, N$.
   2. **Classification:** In classification problems, the output variables are discrete, and they belong to a finite set (i.e., a set with a finite number of elements). That is, $y_i$ $\in$ $`\{1,2,\dots,C\}`$ for $i=1,2,\dots, N$.
 
-   - **Face detection** (regression example): The input, $\mathbf{x}$ is an image, where $p$ is the number of pixels in the image. The output, $y_i$ is the location of faces in the figure (a real value).
+      - **Face detection** (regression example): The input, $\mathbf{x}$ is an image, where $p$ is the number of pixels in the image. The output, $y_i$ is the location of faces in the figure (a real value).
 
-<p align="center">
-   <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/38d8dfc0-7825-49f7-9993-09db19733f41">
-      <br>
-   <em>(a) Input image (Murphy family, photo taken 5 August 2010). (b) The output of the classifier, which detected 5 faces at different 
-       poses. Classification example: Hand-written digit recognition. [K. Murphy, 2012.]</em>
-</p>
+         <p align="center">
+            <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/38d8dfc0-7825-49f7-9993-09db19733f41">
+               <br>
+            <em>(a) Input image (Murphy family, photo taken 5 August 2010). (b) The output of the classifier, which detected 5 faces at different 
+                poses. Classification example: Hand-written digit recognition. [K. Murphy, 2012.]</em>
+         </p>
 
-   - **Digit recognition** (classification example): The input, $\mathbf{x}$ is an image, where $p$ is the number of pixels in the image. The output, $y_i$ is one of the numbers in the set $`\{0,1,2,\dots,9\}`$ (a discrete value).
+      - **Digit recognition** (classification example): The input, $\mathbf{x}$ is an image, where $p$ is the number of pixels in the image. The output, $y_i$ is one of the numbers in the set $`\{0,1,2,\dots,9\}`$ (a discrete value).
 
 <p align="center">
    <img width="400" alt="Screenshot 2023-07-10 at 9 26 53 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/44375613-fbb2-4f22-a502-fbed168e471a">
