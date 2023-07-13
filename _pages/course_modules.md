@@ -1,3 +1,3 @@
-* [Content](Course/Starter.md)
+* [Content](Course/starter.md)
 * Module 1
 * Module 2
