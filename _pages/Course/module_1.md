@@ -64,10 +64,10 @@ However, input variables can be a very complex structured object, such as an ima
 
 <div align="center">
    
-|              | Generative             | Discriminative                                |
-| -------------| ---------------------- | --------------------------------------------- |
-| **Supervised**   | Conditional GANs, Naive Bayes | SVM, Logistic Regression |
-| **Unsupervised** | LDA, Normalizing Flows | Optical Flow Models  |
+   |              | Generative             | Discriminative                                |
+   | -------------| ---------------------- | --------------------------------------------- |
+   | **Supervised**   | Conditional GANs, Naive Bayes | SVM, Logistic Regression |
+   | **Unsupervised** | LDA, Normalizing Flows | Optical Flow Models |
 </div>
 
 ### Other learning methods
