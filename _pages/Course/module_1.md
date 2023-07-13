@@ -65,12 +65,12 @@ classes: wide
 
 * There is a misconception that all generative models are unsupervised, or all discriminative models are supervised. This is obviously an incorrect statement.
 
-<p align="center">   
+<div align="center">   
    |              | Generative             | Discriminative |
    | -------------| ---------------------- | --------------------------------------------- |
    | **Supervised**   | Conditional GANs, Naive Bayes | SVM, Logistic Regression |
    | **Unsupervised** | LDA, Normalizing Flows | Optical Flow Models |
-</p>
+</div>
 
 ### Other learning methods
 * In addition to the supervised and unsupervised learning methods, there are different learning approaches.
