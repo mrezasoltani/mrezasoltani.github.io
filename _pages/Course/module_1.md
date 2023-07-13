@@ -3,14 +3,6 @@ title: "Module 1 - Introduction"
 classes: wide
 ---
 
-* We start by introducing what machine learning is, and why we need to know about it. Next, we review the required mathematical background for understanding Machine Learning (ML) and Deep Learning (DL).
-* We cover the following fundamental topics:
-1. Linear Algebra
-2. Probability
-3. Statistics
-4. Optimization
-
-* Next we do a crash course in Python and Numpy.
 ## What Is Machine Learning?
 * With the deluge of data, we need to find ways to discover what is in the data. ML is a set of algorithms/methods that help us learn and recognize the hidden patterns in data. ML is not a new topic. In fact, learning from data has been explored and used by many disciplines such as Statistics, Signal Processing, Control Theory, etc. What makes ML special is to provide a common formalism to the problems and algorithms. With the help of ML techniques, one can predict future data, or perform other kinds of decision-making under uncertainty.
 * There are different types of ML. Sometimes models and methods are used interchangably. However, a model is not a (learning) method/algorithm.
