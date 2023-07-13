@@ -1,5 +1,6 @@
 ---
 title: "Module 1 - Introduction"
+classes: wide
 ---
 
 * We start by introducing what machine learning is, and why we need to know about it. Next, we review the required mathematical background for understanding Machine Learning (ML) and Deep Learning (DL).
