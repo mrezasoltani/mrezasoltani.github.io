@@ -43,7 +43,7 @@ However, input variables can be a very complex structured object, such as an ima
 </p>
 
 ### Unsupervised Learning
-* In unsupervised methods, we are only given input data without any labels. Here the goal is to discover any intersting or structure in the data (knowledge discovery). For example, discovering groups of similar examples within the data, where it is called clustering. Another example is the density estimation problem, in which the goal is to estimate the distribution of data within the input space.
+* In unsupervised methods, we are only given input data without any labels. Here the goal is to discover any interesting or structure in the data (knowledge discovery). For example, discovering groups of similar examples within the data, where is called clustering. Another example is the density estimation problem, in which the goal is to estimate the distribution of data within the input space.
 
 - **Clustering (image segmentation)**: Clustering or grouping simialr pixels in an image.
 <p align="center">
@@ -53,12 +53,12 @@ However, input variables can be a very complex structured object, such as an ima
 </p>
 
 ### Discriminative and Generative
-* A discriminative model focuses on predicting labels of the input data, while a generative model explains how the data was generated. In other words, a discriminative model learns the boundry curve to distinguish data from each other. In the probablistic language, it learns a considtional probabilty distibution given by $\mathbb{P}(Y|\mathrm{X})$. Please note that $Y$ and $\mathrm{X}$ are written as random (uppercase) quantities; however, we understand that these are events or realization vectors (such as $y_i$'s and $\mathrm{x_i}$'s). On the other hand, a generative model learns a joint probability distibution denoted by $\mathbb{P}(\mathrm{X}, Y)$
+* A discriminative model focuses on predicting labels of the input data, while a generative model explains how the data was generated. In other words, a discriminative model learns the boundary curve to distinguish data from each other. In the probabilistic language, it learns a conditional probability distribution given by $\mathbb{P}(Y|\mathrm{X})$. Please note that $Y$ and $\mathrm{X}$ are written as random (uppercase) quantities; however, we understand that these are events or realization vectors (such as $y_i$'s and $\mathrm{x_i}$'s). On the other hand, a generative model learns a joint probability distribution denoted by $\mathbb{P}(\mathrm{X}, Y)$
 * We will talk about our mathematical notations in the mathematics background modules.
 * Examples of discriminative models include Linear Regression, Logistic Regression, SVM, etc.
 * Examples of generative models include Linear Discriminant Analysis (LDA), Naive Bayes, Conditional GANs, Optical Flow Models (motion of objects in an image or a video sequence), etc.
 ### All combinations are possible !!!
-* There is a misconception that all generative models are unsupervised, or all discriminative models are supervised. This is obviously incorrect statement.
+* There is a misconception that all generative models are unsupervised, or all discriminative models are supervised. This is obviously an incorrect statement.
 
 <div align="center">
    
@@ -69,15 +69,21 @@ However, input variables can be a very complex structured object, such as an ima
 </div>
 
 ### Other learning methods
-* In addition to the supervised and unsupervised leanring methods, there are different learning approaches.
-   *  **_Semi-Supervised Learning (SSL)._** There are some cases where we have only access to limitted labels, but not enough to train a model in a supervised fashion. In this case, one needs to use both supervised and unsupervised techniques.
-      * One approach to SSL is called _self-training_. The idea is to leverage the existing labels by training an initial model on a few labeled samples. This generates so-called Pseudo Labels. Next, we select more confident lables and construct a new dataset with the more confident pseudo labeled and the the limitted labeled data, and train the intial model again for this new dataset. This hopefully improves the initial model. We then iteratively apply this procedure until the desired performance is met.
+* In addition to the supervised and unsupervised learning methods, there are different learning approaches.
+   *  **_Semi-Supervised Learning (SSL)._** There are some cases where we have only access to limited labels, but not enough to train a model in a supervised fashion. In this case, one needs to use both supervised and unsupervised techniques.
+      * One approach to SSL is called _self-training_. The idea is to leverage the existing labels by training an initial model on a few labeled samples. This generates so-called Pseudo Labels. Next, we select more confident labels and construct a new dataset with the more confident pseudo-labeled and the limited labeled data, and train the initial model again for this new dataset. This hopefully improves the initial model. We then iteratively apply this procedure until the desired performance is met.
 
       <p align="center">
          <img src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/e0a94596-5de6-4f1f-8a7f-6b1891dccdb6" width="400" height="300">
          <br> 
                <em>Self-training approach for SSL.</em>
       </p>
-   * **_Active Learning_.**
+   * **_Active Learning_.** Similar to semi-supervised learning, active learning provides another way to mitigate the issue of lack of enough labeled data. In particular, active learning starts with the training of an initial model using limited labeled data. It then tries to rank the unlabeled data using a method called _aqcuisition function_. Once the unlabeled data are ranked, those with higher ranks are labeled typically by a human, and then the model is again trained with both the small labeled dataset and the newly labeled data. Depending on what acquisition function is used, there are different types of active learning algorithms.
+        <p align="center">
+           <img width="400" alt="Screenshot 2023-07-12 at 9 55 34 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/18727e75-2efa-4199-a894-1d76e3d74667">
+         <br>
+        <em>Active Learning. [Burr Settles et al.].</em>
+      </p>
+     
    * **_Online Learning_.**
    * **_Reinforcement Learning_.**
