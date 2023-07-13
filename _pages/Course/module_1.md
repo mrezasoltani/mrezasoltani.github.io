@@ -11,7 +11,7 @@ classes: wide
 4. Optimization
 
 * Next we do a crash course in Python and Numpy.
-## What is machine learning?
+## What Is Machine Learning?
 * With the deluge of data, we need to find ways to discover what is in the data. ML is a set of algorithms/methods that help us learn and recognize the hidden patterns in data. ML is not a new topic. In fact, learning from data has been explored and used by many disciplines such as Statistics, Signal Processing, Control Theory, etc. What makes ML special is to provide a common formalism to the problems and algorithms. With the help of ML techniques, one can predict future data, or perform other kinds of decision-making under uncertainty.
 * There are different types of ML. Sometimes models and methods are used interchangably. However, a model is not a (learning) method/algorithm.
 * Two common types of categorizing ML methods:
@@ -24,11 +24,11 @@ classes: wide
 ### Supervised Learning
 * In supervised methods, we are given a set of \\(N\\) input-output pairs \\(\mathcal{D}=\\) \\(\\{(\mathbf{x_i}, y_i)\\}_{i=1}^N\\), and the goal is to learn a map from inputs, \\(\mathbf{x_i}\\)'s to outputs, \\(y_i\\)'s. Input variables have different names like **features**, **attributes**, or **covariates**. These input variables are typically a \\(p\\)-dimentional vector, denoting for example heights and weights of different persons (in this case, \\(p=2\\). That is, \\(\mathbf{x_i}\\) is a 2-dimensional real vector corresponding to the \\(i^{th}\\) person. However, input variables can be a very complex structured object, such as an image, a speech signal, a sentence, an email message, a time series, a graph, etc. On the other hand, output variables known as **response variable** or **labels** can be anything, but most methods assume that \\(y_i\\)'s are categorical or nominal variables from some finite set, i.e., \\(y_i\\) \\(\in\\) \\(\\{1,2,\dots,C\\}\\) in a classification problem, for example.
 
-#### Supervised problems come in two flavors:
+#### Supervised Problems Come in Two Flavors:
   1. **Regression:** In regression problems, the output variables are continuous, i.e., \\(y_i \in \mathbb{R}\\) or \\(y_i \in \mathbb{C}\\) for \\(i=1,2,\dots, N\\).
   2. **Classification:** In classification problems, the output variables are discrete, and they belong to a finite set (i.e., a set with a finite number of elements). That is, \\(y_i\\) \\(\in\\) \\(\\{1,2,\dots,C\\}\\) for \\(i=1,2,\dots, N\\).
 
-      - **Face detection** (regression example): The input, \\(\mathbf{x}\\) is an image, where \\(p\\) is the number of pixels in the image. The output, \\(y_i\\) is the location of faces in the figure (a real value).
+      - **Face Detection** (regression example): The input, \\(\mathbf{x}\\) is an image, where \\(p\\) is the number of pixels in the image. The output, \\(y_i\\) is the location of faces in the figure (a real value).
 
          <p align="center">
             <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/38d8dfc0-7825-49f7-9993-09db19733f41">
@@ -37,7 +37,7 @@ classes: wide
                 poses. Classification example: Hand-written digit recognition. [K. Murphy, 2012.]</em>
          </p>
 
-      - **Digit recognition** (classification example): The input, \\(\mathbf{x}\\) is an image, where \\(p\\) is the number of pixels in the image. The output, \\(y_i\\) is one of the numbers in the set \\(\{0,1,2,\dots,9\}\\) (a discrete value).
+      - **Digit Recognition** (classification example): The input, \\(\mathbf{x}\\) is an image, where \\(p\\) is the number of pixels in the image. The output, \\(y_i\\) is one of the numbers in the set \\(\{0,1,2,\dots,9\}\\) (a discrete value).
 
          <p align="center">
             <img width="400" alt="Screenshot 2023-07-10 at 9 26 53 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/44375613-fbb2-4f22-a502-fbed168e471a">
@@ -48,7 +48,7 @@ classes: wide
 ### Unsupervised Learning
 * In unsupervised methods, we are only given input data without any labels. Here the goal is to discover any interesting or structure in the data (knowledge discovery). For example, discovering groups of similar examples within the data, where is called clustering. Another example is the density estimation problem, in which the goal is to estimate the distribution of data within the input space.
 
-   - **Clustering (image segmentation)**: Clustering or grouping similar pixels in an image.
+   - **Clustering (Image Segmentation)**: Clustering or grouping similar pixels in an image.
 
       <p align="center">
         <img width="600" alt="Screenshot 2023-07-10 at 9 57 45 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/fb9ccc46-0a7b-4eb2-9396-a34642d1ff10">
@@ -61,18 +61,16 @@ classes: wide
    * Examples of discriminative models include Linear Regression, Logistic Regression, SVM, etc.
    * Examples of generative models include Linear Discriminant Analysis (LDA), Naive Bayes, Conditional GANs, Optical Flow Models (motion of objects in an image or a video sequence), etc.
 
-### All combinations are possible !!!
+### All Combinations Are Possible !!!
 
 * There is a misconception that all generative models are unsupervised, or all discriminative models are supervised. This is obviously an incorrect statement.
-
-<div align="center">   
+   
    |              | Generative             | Discriminative |
    | -------------| ---------------------- | --------------------------------------------- |
    | **Supervised**   | Conditional GANs, Naive Bayes | SVM, Logistic Regression |
    | **Unsupervised** | LDA, Normalizing Flows | Optical Flow Models |
-</div>
 
-### Other learning methods
+### Other Learning Methods
 * In addition to the supervised and unsupervised learning methods, there are different learning approaches.
    *  **_Semi-Supervised Learning (SSL)._** There are some cases where we have only access to limited labels, but not enough to train a model in a supervised fashion. In this case, one needs to use both supervised and unsupervised techniques.
       * One approach to SSL is called _self-training_. The idea is to leverage the existing labels by training an initial model on a few labeled samples. This generates so-called Pseudo Labels. Next, we select more confident labels and construct a new dataset with the more confident pseudo-labeled and the limited labeled data, and train the initial model again for this new dataset. This hopefully improves the initial model. We then iteratively apply this procedure until the desired performance is met.
