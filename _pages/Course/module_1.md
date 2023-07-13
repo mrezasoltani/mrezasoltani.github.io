@@ -8,7 +8,7 @@ title: "Module 1 - Introduction"
 2. Probability
 3. Statistics
 4. Optimization
-\\({(\mathbf{x_i}, y_i)}_{i=1}^N\\)
+\\(``\{(\mathbf{x_i}, y_i)``\}_{i=1}^N\\)
 * Next we do a crash course in Python and Numpy.
 ## What is machine learning?
 * With the deluge of data, we need to find ways to discover what is in the data. ML is a set of algorithms/methods that help us learn and recognize the hidden patterns in data. ML is not a new topic. In fact, learning from data has been explored and used by many disciplines such as Statistics, Signal Processing, Control Theory, etc. What makes ML special is to provide a common formalism to the problems and algorithms. With the help of ML techniques, one can predict future data, or perform other kinds of decision-making under uncertainty.
@@ -57,6 +57,7 @@ However, input variables can be a very complex structured object, such as an ima
       
 ### Discriminative and Generative
 * A discriminative model focuses on predicting labels of the input data, while a generative model explains how the data was generated. In other words, a discriminative model learns the boundary curve to distinguish data from each other. In the probabilistic language, it learns a conditional probability distribution given by \\(\mathbb{P}(Y|\mathrm{X})\\). Please note that \\(Y\\) and \\(\mathrm{X}\\) are written as random (uppercase) quantities; however, we understand that these are events or realization vectors (such as \\(y_i\\)'s and \\(\mathrm{x_i}\\)'s). On the other hand, a generative model learns a joint probability distribution denoted by \\(\mathbb{P}(\mathrm{X}, Y)\\)
+  
       - * We will talk about our mathematical notations in the mathematics background modules.
    * Examples of discriminative models include Linear Regression, Logistic Regression, SVM, etc.
    * Examples of generative models include Linear Discriminant Analysis (LDA), Naive Bayes, Conditional GANs, Optical Flow Models (motion of objects in an image or a video sequence), etc.
