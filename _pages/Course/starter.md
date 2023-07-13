@@ -1,5 +1,6 @@
-
-# Welcome to the Machine/Deep Learning course.
+---
+title: "Welcome to the Machine/Deep Learning course."
+---
 
 ## Content
 * Module 1 -- Introduction
