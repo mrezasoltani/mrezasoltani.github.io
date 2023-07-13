@@ -1,5 +1,6 @@
 ---
 title: "Welcome to the ML/DL course."
+classes: wide
 ---
 
 ## Content
@@ -10,6 +11,17 @@ title: "Welcome to the ML/DL course."
   * Module 4 -- Statistics
   * Module 5 -- Optimization
 * Programming
-  * Python
-  * Numpy, Pandas, Visulization
-  * Pytorch
+  * Module 6 --- Python, Numpy, Pandas, Visulization
+  * Module 7 --- Pytorch
+* Machine Learning
+ * Module 8 --- Linear Models
+ * Module 9 --- Linear Models
+ * Module 10 --- Decision Trees, Bagging, Ensemble Methods
+ * Module 11 --- Unsupervised Leanirng
+ * Module 12 --- Unsupervised Leanirng
+* Deep Learning
+ * Module 13 --- Feed-Forward Models
+ * Module 14 --- Optimization in DL
+ * Module 15 --- Convoulutional Neural Networks (CNNs)
+ * Module 16 --- Recurrent Neural Networks (RNNs)
+ * Module 17 --- Attention & Transformers
