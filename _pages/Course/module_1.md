@@ -89,5 +89,6 @@ classes: wide
         <em>Active Learning. [Burr Settles et al.].</em>
       </p>
      
-   * **_Online Learning_.**
+   * **_Online Learning_.** Methods under this category try to learn from a stream or sequence of data instances ariving one by one at each time. So far, all discussed methods assume that the entire training data is available. Sometimes this is called _batch (off-line) learning_. The goal of an online learning is to maximize accuracy/correctness for the sequence of predictions based on the history of received data and predictions made so far, and possibly additional available information. In general, online learning can be fully supervised, partially supervised (with partial/limited feedback), or totally unsupervised. Those online learning problems based on the partial feedback are also called _multi-armed bandit_ problems. Online learning is a very useful learning techinque as it overcomes the drawbacks of traditional batch learning in which the model can be updated dynamically by an online learner once new training data arrives. Moreover, online learning algorithms are often easy to understand, simple to implement, and often supported by solid theoretical analysis.
+  
    * **_Reinforcement Learning_.**
