@@ -21,11 +21,11 @@ title: "Module 1 - Introduction"
    - 2. Generative 
 
 ### Supervised Learning
-* In supervised methods, we are given a set of \\(N\\) input-output pairs \\(\mathcal{D}=\\) \\(`\{(\mathbf{x_i}, y_i)\}`\\)\\(_{i=1}^N\\), and the goal is to learn a map from inputs, \\(\mathbf{x_i}\\)'s to outputs, \\(y_i\\)'s. Input variables have different names like **features**, **attributes**, or **covariates**. These input variables are typically a \\(p\\)-dimentional vector, denoting for example heights and weights of different persons (in this case, \\(p=2\\). That is, \\(\mathbf{x_i}\\) is a 2-dimensional real vector corresponding to the \\(i^{th}\\) person.   
-However, input variables can be a very complex structured object, such as an image, a speech signal, a sentence, an email message, a time series, a graph, etc. On the other hand, output variables known as **response variable** or **labels** can be anything, but most methods assume that \\(y_i\\)'s are categorical or nominal variables from some finite set, i.e., \\(y_i\\) \\(\in\\) \\(`\{1,2,\dots,C\}`\\) in a classification problem, for example.
+* In supervised methods, we are given a set of \\(N\\) input-output pairs \\(\mathcal{D}=\\) \\(\{(\mathbf{x_i}, y_i)\}_{i=1}^N\\), and the goal is to learn a map from inputs, \\(\mathbf{x_i}\\)'s to outputs, \\(y_i\\)'s. Input variables have different names like **features**, **attributes**, or **covariates**. These input variables are typically a \\(p\\)-dimentional vector, denoting for example heights and weights of different persons (in this case, \\(p=2\\). That is, \\(\mathbf{x_i}\\) is a 2-dimensional real vector corresponding to the \\(i^{th}\\) person.   
+However, input variables can be a very complex structured object, such as an image, a speech signal, a sentence, an email message, a time series, a graph, etc. On the other hand, output variables known as **response variable** or **labels** can be anything, but most methods assume that \\(y_i\\)'s are categorical or nominal variables from some finite set, i.e., \\(y_i\\) \\(\in\\) \\(\{1,2,\dots,C\}\\) in a classification problem, for example.
 #### Supervised problems come in two flavors:
   1. **Regression:** In regression problems, the output variables are continuous, i.e., \\(y_i \in \mathbb{R}\\) or \\(y_i \in \mathbb{C}\\) for \\(i=1,2,\dots, N\\).
-  2. **Classification:** In classification problems, the output variables are discrete, and they belong to a finite set (i.e., a set with a finite number of elements). That is, \\(y_i\\) \\(\in\\) \\(`\{1,2,\dots,C\}`\\) for \\(i=1,2,\dots, N\\).
+  2. **Classification:** In classification problems, the output variables are discrete, and they belong to a finite set (i.e., a set with a finite number of elements). That is, \\(y_i\\) \\(\in\\) \\(\{1,2,\dots,C\}\\) for \\(i=1,2,\dots, N\\).
 
       - **Face detection** (regression example): The input, \\(\mathbf{x}\\) is an image, where \\(p\\) is the number of pixels in the image. The output, \\(y_i\\) is the location of faces in the figure (a real value).
 
@@ -36,7 +36,7 @@ However, input variables can be a very complex structured object, such as an ima
                 poses. Classification example: Hand-written digit recognition. [K. Murphy, 2012.]</em>
          </p>
 
-      - **Digit recognition** (classification example): The input, \\(\mathbf{x}\\) is an image, where \\(p\\) is the number of pixels in the image. The output, \\(y_i\\) is one of the numbers in the set \\(`\{0,1,2,\dots,9\}`\\) (a discrete value).
+      - **Digit recognition** (classification example): The input, \\(\mathbf{x}\\) is an image, where \\(p\\) is the number of pixels in the image. The output, \\(y_i\\) is one of the numbers in the set \\(\{0,1,2,\dots,9\}\\) (a discrete value).
 
          <p align="center">
             <img width="400" alt="Screenshot 2023-07-10 at 9 26 53 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/44375613-fbb2-4f22-a502-fbed168e471a">
