@@ -1,5 +1,5 @@
 ---
-title: "Welcome to the Machine/Deep Learning course."
+title: "Welcome to the ML/DL course."
 ---
 
 ## Content
