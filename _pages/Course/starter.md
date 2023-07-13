@@ -1,12 +1,13 @@
+
 # Welcome to the Machine/Deep Learning course.
 
 ## Content
-* Module_1 -- Introduction
+* Module 1 -- Introduction
 * Mathematical background
-  * Module_2 -- Linear Algebra
-  * Module_3 -- Probability
-  * Module_4 -- Statistics
-  * Module_5 -- Optimization
+  * Module 2 -- Linear Algebra
+  * Module 3 -- Probability
+  * Module 4 -- Statistics
+  * Module 5 -- Optimization
 * Programming
   * Python
   * Numpy, Pandas, Visulization
