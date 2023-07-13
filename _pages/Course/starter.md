@@ -3,6 +3,15 @@ title: "Welcome to the ML/DL course."
 classes: wide
 ---
 
+* We start by introducing what machine learning is, and why we need to know about it. Next, we review the required mathematical background for understanding Machine Learning (ML) and Deep Learning (DL).
+* We cover the following fundamental topics:
+ 1. Linear Algebra
+ 2. Probability
+ 3. Statistics
+ 4. Optimization
+
+* Next we do a crash course in Python and Numpy.
+
 ## Content
 * Module 1 -- Introduction
 * Mathematical background
