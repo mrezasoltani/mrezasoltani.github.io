@@ -83,12 +83,17 @@ classes: wide
       
    * **_Active Learning_.** Similar to semi-supervised learning, active learning provides another way to mitigate the issue of lack of enough labeled data. In particular, active learning starts with the training of an initial model using limited labeled data. It then tries to rank the unlabeled data using a method called _aqcuisition function_. Once the unlabeled data are ranked, those with higher ranks are labeled typically by a human, and then the model is again trained with both the small labeled dataset and the newly labeled data. Depending on what acquisition function is used, there are different types of active learning algorithms.
 
-        <p align="center">
-           <img width="400" alt="Screenshot 2023-07-12 at 9 55 34 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/18727e75-2efa-4199-a894-1d76e3d74667">
-         <br>
-        <em>Active Learning. [Burr Settles et al.].</em>
-      </p>
+     <p align="center">
+        <img width="400" alt="Screenshot 2023-07-12 at 9 55 34 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/18727e75-2efa-4199-a894-1d76e3d74667">
+      <br>
+     <em>Active Learning. [Burr Settles et al.].</em>
+   </p>
      
    * **_Online Learning_.** Methods under this category try to learn from a stream or sequence of data instances ariving one by one at each time. So far, all discussed methods assume that the entire training data is available. Sometimes this is called _batch (off-line) learning_. The goal of an online learning is to maximize accuracy/correctness for the sequence of predictions based on the history of received data and predictions made so far, and possibly additional available information. In general, online learning can be fully supervised, partially supervised (with partial/limited feedback), or totally unsupervised. Those online learning problems based on the partial feedback are also called _multi-armed bandit_ problems. Online learning is a very useful learning techinque as it overcomes the drawbacks of traditional batch learning in which the model can be updated dynamically by an online learner once new training data arrives. Moreover, online learning algorithms are often easy to understand, simple to implement, and often supported by solid theoretical analysis.
   
-   * **_Reinforcement Learning_.**
+   * **_Reinforcement Learning (RL)_.** RL is another class of learning algorithms applied in scenrios where a decision should be made at each time and the infomation arrives sequentially from the environment. This scenrio is similar to the case of online learning; however, there are no full/complete labels like supervised methods. Instead , all a learner receives a feed-back (known as reward) from the environment. The second class of online learning problems (multi-armed bandit problems) is a subset of RL problem; although, in the online learning setup, the dynamic of the training environment is not explictly modeled. The following figure is a standard schematic to illusterate a RL framework.
+   <p align="center">
+        <img width="400" alt="Screenshot 2023-07-12 at 9 55 34 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/3be81d4b-64fc-4e23-a8d3-fb5823fd609a">
+      <br>
+      <em>Standard Reinforcement Learning (RL) scenrio.</em>
+   </p>
