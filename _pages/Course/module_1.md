@@ -48,6 +48,7 @@ However, input variables can be a very complex structured object, such as an ima
 * In unsupervised methods, we are only given input data without any labels. Here the goal is to discover any interesting or structure in the data (knowledge discovery). For example, discovering groups of similar examples within the data, where is called clustering. Another example is the density estimation problem, in which the goal is to estimate the distribution of data within the input space.
 
    - **Clustering (image segmentation)**: Clustering or grouping similar pixels in an image.
+
       <p align="center">
         <img width="600" alt="Screenshot 2023-07-10 at 9 57 45 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/fb9ccc46-0a7b-4eb2-9396-a34642d1ff10">
         <br>
@@ -81,6 +82,7 @@ However, input variables can be a very complex structured object, such as an ima
       </p>
       
    * **_Active Learning_.** Similar to semi-supervised learning, active learning provides another way to mitigate the issue of lack of enough labeled data. In particular, active learning starts with the training of an initial model using limited labeled data. It then tries to rank the unlabeled data using a method called _aqcuisition function_. Once the unlabeled data are ranked, those with higher ranks are labeled typically by a human, and then the model is again trained with both the small labeled dataset and the newly labeled data. Depending on what acquisition function is used, there are different types of active learning algorithms.
+
         <p align="center">
            <img width="400" alt="Screenshot 2023-07-12 at 9 55 34 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/18727e75-2efa-4199-a894-1d76e3d74667">
          <br>
