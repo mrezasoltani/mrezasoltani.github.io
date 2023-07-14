@@ -103,7 +103,7 @@ classes: wide
 * In addition to the above learning methods, you may see names like _Transfer Learning_, _Meta Learning_, _Continous or Life-Long Learning_, _Curriculum Learning_, _Teacher-Student Learning (Distillation)_ in the literature. All these methods are different types of learning which may be used in supervised/unsupervised/RL fashion. We will look at some of these in the course.
 
 ### Datasets in ML
-* As mentioned earlier, the availability of data is essential for all ML algorithms. In recent years, there are a large amount of data publicly available. Here, we briefly review some of the common datasets used in ML literature.
+* As mentioned earlier, the availability of data is essential for all ML algorithms. In recent years, there are a large amount of data publicly available for training/evaluating/testing of ML algorithms. Here, we briefly review some of the common datasets used in ML literature.
    * Small dataset for ML:
       - 1. **Mall Customers.** This dataset contains information about people visiting the mall in a particular city, including age, annual income, and spending score. 
       - 2. **IRIS.** This dataset includes 150 sample with four features with information about the flower petal.
@@ -116,7 +116,7 @@ classes: wide
   
    * Data in image domain:
       - 1. **MNIST.** This dataset contains the gray-scale of \((28\times\)) images of digits from 0 to 9. It contains 60,000 training images and 10,000 testing images.
-      - 2. **Fashion MNIST.**
+      - 2. **Fashion MNIST.** This dataset is similar to the original MNIST images, but the images are different objects, including 10 labels listed as T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Angel boot.
       - 3. **CIFAR-10/100.** The CIFAR-10 dataset contains 60,000 colorful images of \((32\times32\)) pixels. They are labeled from 0-9. The CIFAR-100 is similar to the CIFAR-10 dataset, but the difference is that it has 100 classes instead of 10.
       - 4. **ImageNet.** This dataset contains 14,197,122 annotated images according to the WordNet hierarchy. Since 2010 the dataset is used in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC), a benchmark in image classification and object detection. The training data contains 1000 categories and 1.2 million images.
       - 5. **MS COCO.** This dataset is a huge database for object detection, segmentation and image captioning tasks. It has around 1.5 million labeled images.
@@ -125,17 +125,18 @@ classes: wide
    * Data in Natural Language Processing (NLP):
       - 1. **Enron Email.** This Enron dataset contains around 0.5 million emails of over 150 users mostly from the management of Enron. The size of the data is around 432 MB.
       - 2. **Yelp.** It contains 1.2 million tips by 1.6 million users, over 1.2 million business attributes and photos for natural language processing tasks.
-      - 3. **IMDB reviews.** It contains over 50,000 movie reviews from Kaggle.
+      - 3. **IMDB Reviews.** It contains over 50,000 movie reviews from Kaggle.
       - 4. **Amazon Reviews.** This dataset contains over 45 million Amazon reviews.
-      - 5. **Rotten Tomatoes Reviews.** Archive of more than 480,000 critic reviews (fresh or rotten).
+      - 5. **Rotten Tomatoes Reviews.** The dataset includes an archive of more than 480,000 critic reviews (fresh or rotten).
       - 6. **SMS Spam Collection in English.** This dataset includes 5,574 English SMS spam messages.
 
    * Data in Speech:
-      - 1. **Libri Speech.** This Enron dataset contains around 0.5 million emails of over 150 users mostly from the management of Enron. The size of the data is around 432 MB.
-      - 2. **Yelp.** It contains 1.2 million tips by 1.6 million users, over 1.2 million business attributes and photos for natural language processing tasks.
-      - 3. **IMDB reviews.** It contains over 50,000 movie reviews from Kaggle.
-      - 4. **Amazon Reviews.** This dataset contains over 45 million Amazon reviews.
-      - 5. **Rotten Tomatoes Reviews.** Archive of more than 480,000 critic reviews (fresh or rotten).
-      - 6. **SMS Spam Collection in English.** This dataset includes 5,574 English SMS spam messages.
-       
-   
+      - 1. **LibriSpeech.** This dataset includes records for a large-scale (1000 hours) corpus of read English speech.
+      - 2. **Multilingual LibriSpeech.** The dataset is a large multilingual corpus derived from LibriVox audiobooks.
+      - 3. **HarperValleyBank.** The dataset includes simulated contact center calls to Harper Valley Bank in the Gridspace Mixer platform. The records have been labelled with human transcripts, timing information, emotion and dialog acts model outputs, etc.
+      - 4. **Common Voice.** This dataset contains 7,335 validated hours of speech in 60 languages. Each entry in the dataset consists of a unique MP3 and corresponding text file.
+      - 5. **TED-LIUM.** This is a dataset with 452 hours of audio from TED talks.
+      - 6. **AudioMNIST.** The dataset consists of 30,000 audio samples of spoken digits (\((0-9\))) of 60 different speakers.
+      - 6. **Google Speech Commands.** The dataset is consists of 65,000 one-second long utterances of 30 short words, by thousands of different people.
+      - 7. **CHiME.** The CHiME-Home dataset is a collection of annotated domestic environment audio recordings.
+      - 8. **Urban Sounds.** This dataset contains 1302 labeled sound recordings. Each recording is labeled with the start and end times of sound events from 10 classes: air_conditioner, car_horn, children_playing, dog_bark, drilling, enginge_idling, gun_shot, jackhammer, siren, and street_music.
