@@ -152,7 +152,7 @@ classes: wide
         <p align="center">
         <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/f423364f-340f-49aa-9711-cad448427520">
              <br>
-             <em>Classifying cat and dog images. [https://keras.io/examples/vision/image_classification_from_scratch/)].</em>
+             <em>Classifying cat and dog images. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
         
      3. Object Detection
