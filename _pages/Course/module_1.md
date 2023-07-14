@@ -127,8 +127,8 @@ classes: wide
       - 2. **Yelp.** It contains 1.2 million tips by 1.6 million users, over 1.2 million business attributes and photos for natural language processing tasks ([link](https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset)).
       - 3. **IMDB Reviews.** It contains over 50,000 movie reviews from Kaggle (25,000 reviews for training and 25,000 for the testing set) ([link](http://ai.stanford.edu/~amaas/data/sentiment/)).
       - 4. **Amazon Reviews.** This dataset contains over 45 million Amazon reviews ([link](https://snap.stanford.edu/data/web-Amazon.html)).
-      - 5. **Rotten Tomatoes Reviews.** The dataset includes an archive of more than 480,000 critic reviews (fresh or rotten) ([link](https://drive.google.com/file/d/1w1TsJB-gmIkZ28d1j7sf1sqcPmHXw352/view)).
-      - 6. **SMS Spam Collection in English.** This dataset includes 5,574 English SMS spam messages ([link](http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/)).
+      - 5. **Rotten Tomatoes Reviews.** The dataset includes an archive of more than 480,000 critic reviews (fresh or rotten) ([link](https://www.kaggle.com/datasets/stefanoleone992/rotten-tomatoes-movies-and-critic-reviews-dataset)).
+      - 6. **SMS Spam Collection in English.** This dataset includes 5,574 English SMS spam messages ([link](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)).
       - 7. **Twitter US Airline Sentiment.** The dataset consists of 55,000 Twitter data of major U.S. airline was scraped from February of 2015 and contributors were asked to first classify positive, negative, and neutral tweets, followed by categorizing negative reasons (such as "late flight" or "rude service") ([link](https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment)).
 
    * Data in Speech:
