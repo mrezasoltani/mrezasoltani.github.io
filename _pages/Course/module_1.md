@@ -155,7 +155,7 @@ classes: wide
      7. Video Classification
      8. Zero-Shot Image Classification
     
- * **Tasks in Natural Language Processing (NLP).** The input data for this domain includes text ccoming from books, papers, chats, blogs, websites, transcriptions, emails, etc.
+   * **Tasks in Natural Language Processing (NLP).** The input data for this domain includes text ccoming from books, papers, chats, blogs, websites, transcriptions, emails, etc.
      1. Text Classification (e.g., sentiment analysis)
      2. Table Question Answering
      3. Question Answering
