@@ -17,7 +17,7 @@ classes: wide
 
 * Course Material
  * There is no formal reference for this course. All material will be posted online the (course webpage)[https://mrezasoltani.github.io/course_modules/]. Please make sure to check the course webpage regularly as course materials will be added weekly as ww progress towards the end of the class.
- * Here is a breif list of some useful spurces to educate yourself. The full list of all sources and useful book, papers, blogs, etc can be found [here](https://mrezasoltani.github.io/links/).
+ * Here is a breif list of some useful spurces to educate yourself. The full list of all sources and useful books, papers, blogs, etc can be found [here](https://mrezasoltani.github.io/links/).
    1. G. James, D. Witten, T. Hastie, R. Tibshirani, An Introduction to Statistical Learning ([link](https://www.statlearning.com/))
    2. C. M. Bishop, Pattern Recognition and Machine Learning, 2006 ([link](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf))
    3. K. Murthy, Machine Learning: A Probabilistic Perspective, 2012 ([link](https://probml.github.io/pml-book/book0.html))
