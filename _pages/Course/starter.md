@@ -27,6 +27,14 @@ classes: wide
    7. K. Murthy, Probabilistic Machine Learning: An Introduction, 2022 ([link](https://probml.github.io/pml-book/book1.html))
    8. K. Murthy, Probabilistic Machine Learning: Advanced Topics, 2023 ([link](https://probml.github.io/pml-book/book2.html))
   
+* Most datset used in this course and in ML litrature can found through the following links:
+  1. **UCI Machine Learning Repository.** The Machine Learning Repository at UCI provides an up to date resource for open-source datasets ([lin]()).
+  2. **Google Dataset Search.** Similar to how Google Scholar works, Dataset Search lets you find datasets wherever they are hosted, whether it’s a publisher’s site, a digital library, or an author’s web page. It contains over 25 million datasets ([link](https://datasetsearch.research.google.com/)).
+  3. **Kaggle.** Kaggle provides a large container of datasets, including over 50,000 public datasets and 400,000 public notebooks for the purpose of data exploratory  analysis (EDA) ([link](https://www.kaggle.com/)).
+  4. **VisualData.** It includes computer vision datasets by category; it allows searchable queries ([link](https://visualdata.io/discovery)).
+  5. **CMU Libraries.** This database includes high-quality datasets thanks to the collection of Huajin Wang, at CMU ([link](https://guides.library.cmu.edu/machine-learning/datasets)).
+  6. **The Big Bad NLP Database.** This cool dataset contains datasets for various natural language processing tasks, created and curated by Quantum Stat ([link](https://index.quantumstat.com/)).
+  7. **Hugging Face.** This popular hub and framwork contains 46,121 dataset used in the state-of-the-art ML/DL research. This database include all modalities of data like Natural Language Processing (NLP), Computer Vision (CV), Speech, Tabular, and Multimodal ([link](https://huggingface.co/datasets)).
 
 * We start by introducing what machine learning is, and why we need to know about it. Next, we review the required mathematical background for understanding Machine Learning (ML) and Deep Learning (DL).
 * We cover the following fundamental topics:
