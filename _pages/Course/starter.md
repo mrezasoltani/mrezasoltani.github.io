@@ -13,6 +13,17 @@ classes: wide
   * Being active in the class is **VERY** important for me. This is not a spectator sport. The more you engage yourself in the course, the better understanding of concepts.
   * Always try to ask any questions you may have. There is no place to be shy.
   * Most questions and examples come with real-world datasets.
+  * To be successful in this course, you need to develop both your mathematical background and the programming skills.
+
+* Course Material
+ * There is no formal reference for this course. All material will be posted online the (course webpage)[https://mrezasoltani.github.io/course_modules/]. Please make sure to check the course webpage regularly as course materials will be added weekly as ww progress towards the end of the class.
+ * Here is a breif list of some useful spurces to educate yourself. The full list of all sources and useful book, papers, blogs, etc cab found in [here]().
+  1. K. Murthy, Machine Learning: A Probabilistic Perspective, 2022 ((link)[])
+  2. K. Murthy, Machine Learning: A Probabilistic Perspective, 2022 ((link)[])
+  3. K. Murthy, Machine Learning: A Probabilistic Perspective, 2022 ((link)[])
+  4. K. Murthy, Machine Learning: A Probabilistic Perspective, 2022 ((link)[])
+  5. K. Murthy, Machine Learning: A Probabilistic Perspective, 2022 ((link)[])
+  6. K. Murthy, Machine Learning: A Probabilistic Perspective, 2022 ((link)[])
 
 * We start by introducing what machine learning is, and why we need to know about it. Next, we review the required mathematical background for understanding Machine Learning (ML) and Deep Learning (DL).
 * We cover the following fundamental topics:
