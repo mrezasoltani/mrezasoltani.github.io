@@ -69,7 +69,7 @@ classes: wide
       * One approach to SSL is called _self-training_. The idea is to leverage the existing labels by training an initial model on a few labeled samples. This generates so-called Pseudo Labels. Next, we select more confident labels and construct a new dataset with the more confident pseudo-labeled and the limited labeled data, and train the initial model again for this new dataset. This hopefully improves the initial model. We then iteratively apply this procedure until the desired performance is met.
 
       <p align="center">
-         <img src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/e0a94596-5de6-4f1f-8a7f-6b1891dccdb6" width="400" height="300">
+         <img src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/e0a94596-5de6-4f1f-8a7f-6b1891dccdb6" width="400" height="400">
          <br> 
                <em>Self-training approach for SSL.</em>
       </p>
