@@ -142,3 +142,27 @@ classes: wide
      6. **Google Speech Commands.** The dataset is consists of 65,000 one-second long utterances of 30 short words, by thousands of different people ([link](https://ai.googleblog.com/2017/08/launching-speech-commands-dataset.html)).
      7. **CHiME.** The CHiME-Home dataset is a collection of annotated domestic environment audio recordings ([link](https://archive.org/details/chime-home)).
      8. **Urban Sounds.** This dataset contains 1302 labeled sound recordings. Each recording is labeled with the start and end times of sound events from 10 classes: air_conditioner, car_horn, children_playing, dog_bark, drilling, enginge_idling, gun_shot, jackhammer, siren, and street_music ([link](https://urbansounddataset.weebly.com/)).
+
+### Some Common Tasks in ML
+* BBefore finishing this module, we are going to list some common tasks in different domain. Please note that this is just a tiny piece of possible tasks can be accomplished with ML.
+   * **Tasks in Computer Vision (CV).** The input data for this domain includes images and videos. Of course, these types of datasets can be used in a multimodal task in which there might be other modalities like speech and text data.
+     1. Image Classification
+     2. Object Detection
+     3. Image Segmentation
+     4. Image-to-Image
+     5. Unconditional Image Generation
+     6. Depth Estimation
+     7. Video Classification
+     8. Zero-Shot Image Classification
+    
+ * **Tasks in Natural Language Processing (NLP).** The input data for this domain includes text ccoming from books, papers, chats, blogs, websites, transcriptions, emails, etc.
+     1. Text Classification (e.g., sentiment analysis)
+     2. Table Question Answering
+     3. Question Answering
+     4. Translation
+     5. Summarization
+     6. Text Generation
+     7. Text-to-Text Generation
+     8. Fill-Mask
+     9. Text Retrieval
+   
