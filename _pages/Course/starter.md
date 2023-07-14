@@ -28,7 +28,7 @@ classes: wide
    8. K. Murthy, Probabilistic Machine Learning: Advanced Topics, 2023 ([link](https://probml.github.io/pml-book/book2.html))
   
 * Most datset used in this course and in ML litrature can found through the following links:
-  1. **UCI Machine Learning Repository.** The Machine Learning Repository at UCI provides an up to date resource for open-source datasets ([lin]()).
+  1. **UCI Machine Learning Repository.** The Machine Learning Repository at UCI provides an up to date resource for open-source datasets ([lin](https://archive.ics.uci.edu/)).
   2. **Google Dataset Search.** Similar to how Google Scholar works, Dataset Search lets you find datasets wherever they are hosted, whether it’s a publisher’s site, a digital library, or an author’s web page. It contains over 25 million datasets ([link](https://datasetsearch.research.google.com/)).
   3. **Kaggle.** Kaggle provides a large container of datasets, including over 50,000 public datasets and 400,000 public notebooks for the purpose of data exploratory  analysis (EDA) ([link](https://www.kaggle.com/)).
   4. **VisualData.** It includes computer vision datasets by category; it allows searchable queries ([link](https://visualdata.io/discovery)).
