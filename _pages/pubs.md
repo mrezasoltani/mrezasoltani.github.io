@@ -2,6 +2,7 @@
 title: "Publications"
 permalink: /pubs/
 author_profile: true
+classes: wide
 ---
 - J. Dong, S. Ren, Y. Deng, O. Khatib, J. Malof, **M. Soltani**, W. Padilla, V. Tarokh, “Blaschke Product Neural Networks (BPNN): A Physics-Infused Neural Network for Phase Retrieval of Meromorphic Functions”, International Conference on Learning Representations (ICLR), April 2022.
 - C. Le, J. Dong,  **M. Soltani**, V. Tarokh, “Task Affinity with Maximum Bipartite Matching in Few-Shot Learning”, International Conference on Learning Representations (ICLR), April 2022.
