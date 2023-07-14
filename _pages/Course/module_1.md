@@ -129,6 +129,7 @@ classes: wide
       - 4. **Amazon Reviews.** This dataset contains over 45 million Amazon reviews.
       - 5. **Rotten Tomatoes Reviews.** The dataset includes an archive of more than 480,000 critic reviews (fresh or rotten).
       - 6. **SMS Spam Collection in English.** This dataset includes 5,574 English SMS spam messages.
+      - 7. **Twitter US Airline Sentiment.** The dataset consists of 55,000 Twitter data of major U.S. airline was scraped from February of 2015 and contributors were asked to first classify positive, negative, and neutral tweets, followed by categorizing negative reasons (such as "late flight" or "rude service").
 
    * Data in Speech:
       - 1. **LibriSpeech.** This dataset includes records for a large-scale (1000 hours) corpus of read English speech.
