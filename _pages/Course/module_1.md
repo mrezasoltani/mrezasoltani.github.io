@@ -165,4 +165,20 @@ classes: wide
      7. Text-to-Text Generation
      8. Fill-Mask
      9. Text Retrieval
-   
+    
+   * **Tasks in Speech/Audio.** The input data for this domain includes audios and speech files.
+     1. Automatic Speech Recognition
+     2. Text-to-Speech
+     3. Audio-to-Audio
+     4. Audio Classification
+     5. Voice Activity Detection
+     6. Source Separation
+     7. Speech Diarization
+     8. Imtent Classification
+
+   * **Tasks in Multimodal data.** The input data for this type can be any of the above modality or other things (e.g., time series).
+     1. Text-to-Image
+     2. Image-to-Text
+     3. Text-to-Video
+     4. Visual Question Answering
+     5. Graph Machine Learning
