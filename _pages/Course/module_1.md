@@ -147,13 +147,34 @@ classes: wide
 * BBefore finishing this module, we are going to list some common tasks in different domain. Please note that this is just a tiny piece of possible tasks can be accomplished with ML.
    * **Tasks in Computer Vision (CV).** The input data for this domain includes images and videos. Of course, these types of datasets can be used in a multimodal task in which there might be other modalities like speech and text data.
      1. Image Classification
-     2. Object Detection
-     3. Image Segmentation
-     4. Image-to-Image
-     5. Unconditional Image Generation
-     6. Depth Estimation
-     7. Video Classification
-     8. Zero-Shot Image Classification
+          Image Classification basically means identifying what class the object belongs to.
+        
+             <p align="center">
+                  <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/f423364f-340f-49aa-9711-cad448427520>
+                  <br>
+                     <em>Classifying cat and dog images. [https://keras.io/examples/vision/image_classification_from_scratch/)].</em>
+             </p>
+        
+     3. Object Detection
+    
+     
+     5. Image Segmentation
+    
+     
+     7. Image-to-Image
+    
+     
+     9. Unconditional Image Generation
+    
+     
+     11. Depth Estimation
+    
+     
+     13. Video Classification
+    
+      
+     15. Zero-Shot Image Classification
+    
     
    * **Tasks in Natural Language Processing (NLP).** The input data for this domain includes text ccoming from books, papers, chats, blogs, websites, transcriptions, emails, etc.
      1. Text Classification (e.g., sentiment analysis)
