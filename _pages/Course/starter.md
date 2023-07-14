@@ -17,15 +17,15 @@ classes: wide
 
 * Course Material
  * There is no formal reference for this course. All material will be posted online the (course webpage)[https://mrezasoltani.github.io/course_modules/]. Please make sure to check the course webpage regularly as course materials will be added weekly as ww progress towards the end of the class.
- * Here is a breif list of some useful spurces to educate yourself. The full list of all sources and useful book, papers, blogs, etc cab found in [here]().
-  1. G. James, D. Witten, T. Hastie, R. Tibshirani, An Introduction to Statistical Learning ((link)[https://www.statlearning.com/])
-  2. C. M. Bishop, Pattern Recognition and Machine Learning, 2006 ((link)[https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf])
-  3. K. Murthy, Machine Learning: A Probabilistic Perspective, 2012 ((link)[https://probml.github.io/pml-book/book0.html])
-  4. Andrew Ng, Machine Learning Specialization, 2012 ((link)[https://www.deeplearning.ai/courses/machine-learning-specialization/])
+ * Here is a breif list of some useful spurces to educate yourself. The full list of all sources and useful book, papers, blogs, etc can be found [here]().
+  1. G. James, D. Witten, T. Hastie, R. Tibshirani, An Introduction to Statistical Learning ([link](https://www.statlearning.com/))
+  2. C. M. Bishop, Pattern Recognition and Machine Learning, 2006 ([link](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf))
+  3. K. Murthy, Machine Learning: A Probabilistic Perspective, 2012 ([link](https://probml.github.io/pml-book/book0.html))
+  4. Andrew Ng, Machine Learning Specialization, 2012 ([link](https://www.deeplearning.ai/courses/machine-learning-specialization/))
   5. Hal Daumé III, A Course in Machine Learning, 2017 ([link](http://ciml.info/))
-  6. Andrew Ng, The Deep Learning Specialization, 2018 ((link)[https://www.deeplearning.ai/courses/deep-learning-specialization/])
-  7. K. Murthy, Probabilistic Machine Learning: An Introduction, 2022 ((link)[https://probml.github.io/pml-book/book1.html])
-  8. K. Murthy, Probabilistic Machine Learning: Advanced Topics, 2023 ((link)[https://probml.github.io/pml-book/book2.html])
+  6. Andrew Ng, The Deep Learning Specialization, 2018 ([link](https://www.deeplearning.ai/courses/deep-learning-specialization/))
+  7. K. Murthy, Probabilistic Machine Learning: An Introduction, 2022 ([link](https://probml.github.io/pml-book/book1.html))
+  8. K. Murthy, Probabilistic Machine Learning: Advanced Topics, 2023 ([link](https://probml.github.io/pml-book/book2.html))
   
 
 * We start by introducing what machine learning is, and why we need to know about it. Next, we review the required mathematical background for understanding Machine Learning (ML) and Deep Learning (DL).
