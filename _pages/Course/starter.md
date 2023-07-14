@@ -4,13 +4,13 @@ classes: wide
 ---
 
 * Websiste of the course: [https://mrezasoltani.github.io/course_modules/](https://mrezasoltani.github.io/course_modules/)
-* Some logisitcs:
+* Some logistics:
   * This course needs some extra effort as 4-6 hours/week as a minimum spending time.
   * There are weekly assignments. both theoretical and programming questions.
-  * Assignments should be done individually' however, dicussion with your friends is encouraged.
-  * Many of questions in the assignmnets may seem challenging at the first attempt, but with enough spending time, every student can solve them. 
-  * In addition to the course mateials, you may engage yourself with numerous resources out there.
-  * Being active in the class is **VERY** important for me. This is not a spectator sposrt. The more you angage yourself in the course, the better understanding of concepts.
+  * Assignments should be done individually' however, discussion with your friends is encouraged.
+  * Many of questions in the assignments may seem challenging at the first attempt, but with enough spending time, every student can solve them. 
+  * In addition to the course materials, you may engage yourself with numerous resources out there.
+  * Being active in the class is **VERY** important for me. This is not a spectator sport. The more you engage yourself in the course, the better understanding of concepts.
   * Always try to ask any questions you may have. There is no place to be shy.
   * Most questions and examples come with real-world datasets.
 
@@ -22,6 +22,7 @@ classes: wide
  4. Optimization
 
 * Next we do a crash course in Python and Numpy.
+* The tentative content is listed as follows (please note this list is subject to change).
 
 ## Content
 * Module 1 -- Introduction
