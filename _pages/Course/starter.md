@@ -18,9 +18,9 @@ classes: wide
 * Course Material
  * There is no formal reference for this course. All material will be posted online the (course webpage)[https://mrezasoltani.github.io/course_modules/]. Please make sure to check the course webpage regularly as course materials will be added weekly as ww progress towards the end of the class.
  * Here is a breif list of some useful spurces to educate yourself. The full list of all sources and useful book, papers, blogs, etc cab found in [here]().
-  1. K. Murthy, Machine Learning: A Probabilistic Perspective, 2022 ((link)[])
-  2. K. Murthy, Machine Learning: A Probabilistic Perspective, 2022 ((link)[])
-  3. K. Murthy, Machine Learning: A Probabilistic Perspective, 2022 ((link)[])
+  1. K. Murthy, Machine Learning: A Probabilistic Perspective, 2012 ((link)[https://probml.github.io/pml-book/book0.html])
+  2. K. Murthy, Probabilistic Machine Learning: An Introduction, 2022 ((link)[https://probml.github.io/pml-book/book1.html])
+  3. K. Murthy, Probabilistic Machine Learning: Advanced Topics, 2023 ((link)[https://probml.github.io/pml-book/book2.html])
   4. K. Murthy, Machine Learning: A Probabilistic Perspective, 2022 ((link)[])
   5. K. Murthy, Machine Learning: A Probabilistic Perspective, 2022 ((link)[])
   6. K. Murthy, Machine Learning: A Probabilistic Perspective, 2022 ((link)[])
