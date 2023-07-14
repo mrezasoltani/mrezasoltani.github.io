@@ -111,5 +111,9 @@ classes: wide
       - 4. MS COCO. This dataset is a huge database for object detection, segmentation and image captioning tasks. It has around 1.5 million labeled images.
       - 5. Flickr 8k. The Flickr 8k dataset contains 8,000 images and each image is labeled with 5 different captions. The dataset is used to build an image captioning.
    * Data in Natural Language Processing (NLP):
-      - 1. Enron Email. This Enron dataset contains around 0.5 million emails of over 150 users mostly from management of Enron. The size of the data is around 432Mb.
-        2. Yelp. It contains 1.2 million tips by 1.6 million users, over 1.2 million business attributes and photos for natural language processing tasks.
+      - 1. Enron Email. This Enron dataset contains around 0.5 million emails of over 150 users mostly from the management of Enron. The size of the data is around 432 MB.
+      - 2. Yelp. It contains 1.2 million tips by 1.6 million users, over 1.2 million business attributes and photos for natural language processing tasks.
+      - 3. IMDB reviews. It contains over 50,000 movie reviews from Kaggle.
+      - 4. Amazon Reviews: This dataset contains over 45 million Amazon reviews.
+      - 5. Rotten Tomatoes Reviews: Archive of more than 480,000 critic reviews (fresh or rotten).
+      - 6. SMS Spam Collection in English: This dataset includes 5,574 English SMS spam messages.
