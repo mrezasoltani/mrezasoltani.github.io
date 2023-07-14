@@ -36,7 +36,8 @@ classes: wide
  4. Optimization
 
 * Next we do a crash course in Python and Numpy.
-* The tentative content is listed as follows (please note this list is subject to change).
+
+### The tentative content of the course is listed as follows (please note that this list is subject to change).
 
 ## Content
 * Module 1 -- Introduction
