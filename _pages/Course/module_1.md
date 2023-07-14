@@ -155,7 +155,7 @@ classes: wide
              <em>Classifying cat and dog images. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
         
-     3. **Object Detection.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
+     2. **Object Detection.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
       
         <p align="center">
         <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
@@ -163,7 +163,7 @@ classes: wide
              <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
   
-     5. **Image Segmentation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
+     3. **Image Segmentation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
 
         <p align="center">
         <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
@@ -171,7 +171,7 @@ classes: wide
              <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
      
-     7. **Image-to-Image** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
+     4. **Image-to-Image** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
 
         <p align="center">
         <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
@@ -179,7 +179,7 @@ classes: wide
              <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
      
-     9. **Image Generation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
+     5. **Image Generation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
     
         <p align="center">
         <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
@@ -187,7 +187,7 @@ classes: wide
              <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
  
-     11. **Depth Estimation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
+     6. **Depth Estimation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
 
         <p align="center">
         <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
@@ -195,7 +195,7 @@ classes: wide
              <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
      
-     13. **Video Classification.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
+     7. **Video Classification.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
 
         <p align="center">
         <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
@@ -222,7 +222,7 @@ classes: wide
      5. Voice Activity Detection
      6. Source Separation
      7. Speech Diarization
-     8. Imtent Classification
+     8. Intent Classification
 
    * **Tasks in Multimodal data.** The input data for this type can be any of the above modality or other things (e.g., time series).
      1. Text-to-Image
