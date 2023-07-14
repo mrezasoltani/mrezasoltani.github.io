@@ -146,14 +146,14 @@ classes: wide
 ### Some Common Tasks in ML
 * BBefore finishing this module, we are going to list some common tasks in different domain. Please note that this is just a tiny piece of possible tasks can be accomplished with ML.
    * **Tasks in Computer Vision (CV).** The input data for this domain includes images and videos. Of course, these types of datasets can be used in a multimodal task in which there might be other modalities like speech and text data.
-     1. Image Classification
-          Image Classification basically means identifying what class the object belongs to.
+  
+     1. Image Classification. This task means identifying what class the object belongs to.
         
-             <p align="center">
-                  <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/f423364f-340f-49aa-9711-cad448427520">
-                  <br>
-                     <em>Classifying cat and dog images. [https://keras.io/examples/vision/image_classification_from_scratch/)].</em>
-             </p>
+        <p align="center">
+        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/f423364f-340f-49aa-9711-cad448427520">
+             <br>
+             <em>Classifying cat and dog images. [https://keras.io/examples/vision/image_classification_from_scratch/)].</em>
+        </p>
         
      3. Object Detection
     
