@@ -5,7 +5,7 @@ classes: wide
 
 ## What Is Machine Learning?
 * With the deluge of data, we need to find ways to discover what is in the data. ML is a set of algorithms/methods that help us learn and recognize the hidden patterns in data. ML is not a new topic. In fact, learning from data has been explored and used by many disciplines such as Statistics, Signal Processing, Control Theory, etc. What makes ML special is to provide a common formalism to the problems and algorithms. With the help of ML techniques, one can predict future data, or perform other kinds of decision-making under uncertainty.
-* There are different types of ML. Sometimes models and methods are used interchangably. However, a model is not a (learning) method/algorithm.
+* There are different types of ML. Sometimes models and methods are used interchangeably. However, a model is not a (learning) method/algorithm.
 * Two common types of categorizing ML methods:
    - 1. Supervised Learning
    - 2. Unsupervised Learning
@@ -14,7 +14,7 @@ classes: wide
    - 2. Generative 
 
 ### Supervised Learning
-* In supervised methods, we are given a set of \\(N\\) input-output pairs \\(\mathcal{D}=\\) \\(\\{(\mathbf{x_i}, y_i)\\}_{i=1}^N\\), and the goal is to learn a map from inputs, \\(\mathbf{x_i}\\)'s to outputs, \\(y_i\\)'s. Input variables have different names like **features**, **attributes**, or **covariates**. These input variables are typically a \\(p\\)-dimentional vector, denoting for example heights and weights of different persons (in this case, \\(p=2\\). That is, \\(\mathbf{x_i}\\) is a 2-dimensional real vector corresponding to the \\(i^{th}\\) person. However, input variables can be a very complex structured object, such as an image, a speech signal, a sentence, an email message, a time series, a graph, etc. On the other hand, output variables known as **response variable** or **labels** can be anything, but most methods assume that \\(y_i\\)'s are categorical or nominal variables from some finite set, i.e., \\(y_i\\) \\(\in\\) \\(\\{1,2,\dots,C\\}\\) in a classification problem, for example.
+* In supervised methods, we are given a set of \\(N\\) input-output pairs \\(\mathcal{D}=\\) \\(\\{(\mathbf{x_i}, y_i)\\}_{i=1}^N\\), and the goal is to learn a map from inputs, \\(\mathbf{x_i}\\)'s to outputs, \\(y_i\\)'s. Input variables have different names like **features**, **attributes**, or **covariates**. These input variables are typically a \\(p\\)-dimensional vector, denoting for example heights and weights of different persons (in this case, \\(p=2\\). That is, \\(\mathbf{x_i}\\) is a 2-dimensional real vector corresponding to the \\(i^{th}\\) person. However, input variables can be a very complex structured object, such as an image, a speech signal, a sentence, an email message, a time series, a graph, etc. On the other hand, output variables known as **response variable** or **labels** can be anything, but most methods assume that \\(y_i\\)'s are categorical or nominal variables from some finite set, i.e., \\(y_i\\) \\(\in\\) \\(\\{1,2,\dots,C\\}\\) in a classification problem, for example.
 
 #### Supervised Problems Come in Two Flavors:
   1. **Regression:** In regression problems, the output variables are continuous, i.e., \\(y_i \in \mathbb{R}\\) or \\(y_i \in \mathbb{C}\\) for \\(i=1,2,\dots, N\\).
@@ -49,7 +49,7 @@ classes: wide
       </p>
       
 ### Discriminative and Generative
-* A discriminative model focuses on predicting labels of the input data, while a generative model explains how the data was generated. In other words, a discriminative model learns the boundary curve to distinguish data from each other. In the probabilistic language, it learns a conditional probability distribution give by \\(\mathbb{P}(Y\|\mathbf{X})\\). Please note that \\(Y\\) and \\(\mathrm{X}\\) are written as random (uppercase) quantities; however, we understand that these are events or realization vectors (such as \\(y_i\\)'s and \\(\mathbf{x_i}\\)'s). On the other hand, a generative model learns a joint probability distribution denoted by \\(\mathbb{P}(\mathbf{X}, Y)\\) (We will talk about our mathematical notations in the mathematics background modules).
+* A discriminative model focuses on predicting labels of the input data, while a generative model explains how the data was generated. In other words, a discriminative model learns the boundary curve to distinguish data from each other. In the probabilistic language, it learns a conditional probability distribution given by \\(\mathbb{P}(Y\|\mathbf{X})\\). Please note that \\(Y\\) and \\(\mathrm{X}\\) are written as random (uppercase) quantities; however, we understand that these are events or realization vectors (such as \\(y_i\\)'s and \\(\mathbf{x_i}\\)'s). On the other hand, a generative model learns a joint probability distribution denoted by \\(\mathbb{P}(\mathbf{X}, Y)\\) (We will talk about our mathematical notations in the mathematics background modules).
    * Examples of discriminative models include Linear Regression, Logistic Regression, SVM, etc.
    * Examples of generative models include Linear Discriminant Analysis (LDA), Naive Bayes, Conditional GANs, Optical Flow Models (motion of objects in an image or a video sequence), etc.
 
@@ -73,7 +73,7 @@ classes: wide
                <em>Self-training approach for SSL.</em>
       </p>
       
-   * **_Active Learning_.** Similar to semi-supervised learning, active learning provides another way to mitigate the issue of lack of enough labeled data. In particular, active learning starts with the training of an initial model using limited labeled data. It then tries to rank the unlabeled data using a method called _aqcuisition function_. Once the unlabeled data are ranked, those with higher ranks are labeled typically by a human, and then the model is again trained with both the small labeled dataset and the newly labeled data. Depending on what acquisition function is used, there are different types of active learning algorithms.
+   * **_Active Learning_.** Similar to semi-supervised learning, active learning provides another way to mitigate the issue of lack of enough labeled data. In particular, active learning starts with training an initial model using limited labeled data. It then tries to rank the unlabeled data using a method called _aqcuisition function_. Once the unlabeled data are ranked, those with higher ranks are typically labeled by a human, and then the model is again trained with both the small labeled dataset and the newly labeled data. Depending on what acquisition function is used, there are different types of active learning algorithms.
 
   <p align="center">
      <img width="400" alt="Screenshot 2023-07-12 at 9 55 34 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/18727e75-2efa-4199-a894-1d76e3d74667">
@@ -81,22 +81,22 @@ classes: wide
   <em>Active Learning. [Burr Settles et al.].</em>
    </p>
      
-   * **_Online Learning_.** Methods under this category try to learn from a stream or sequence of data instances ariving one by one at each time. So far, all discussed methods assume that the entire training data is available. Sometimes this is called _batch (off-line) learning_. The goal of an online learning is to maximize accuracy/correctness for the sequence of predictions based on the history of received data and predictions made so far, and possibly additional available information. In general, online learning can be fully supervised, partially supervised (with partial/limited feedback), or totally unsupervised. Those online learning problems based on the partial feedback are also called _multi-armed bandit_ problems. Online learning is a very useful learning techinque as it overcomes the drawbacks of traditional batch learning in which the model can be updated dynamically by an online learner once new training data arrives. Moreover, online learning algorithms are often easy to understand, simple to implement, and often supported by solid theoretical analysis.
+   * **_Online Learning_.** Methods under this category try to learn from a stream or sequence of data instances arriving one by one at each time. So far, all discussed methods assume that the entire training data is available. Sometimes this is called _batch (off-line) learning_. The goal of online learning is to maximize accuracy/correctness for the sequence of predictions based on the history of received data and predictions made so far, and possibly additional available information. In general, online learning can be fully supervised, partially supervised (with partial/limited feedback), or totally unsupervised. Those online learning problems based on partial feedback are also called _multi-armed bandit_ problems. Online learning is a very useful learning technique as it overcomes the drawbacks of traditional batch learning in which the model can be updated dynamically by an online learner once new training data arrives. Moreover, online learning algorithms are often easy to understand, simple to implement, and often supported by solid theoretical analysis.
   
-   * **_Reinforcement Learning (RL)_.** RL is another class of learning algorithms applied in scenrios where a decision should be made at each time and the infomation arrives sequentially from the environment. This scenrio is similar to the case of online learning; however, there are no full/complete labels like supervised methods. Instead , all a learner receives a feed-back (known as reward) from the environment. The second class of online learning problems (multi-armed bandit problems) is a subset of RL problem; although, in the online learning setup, the dynamic of the training environment is not explictly modeled. The following figure is a standard schematic to illusterate a RL framework.
+   * **_Reinforcement Learning (RL)_.** RL is another class of learning algorithms applied in scenarios where a decision should be made at each time and the information arrives sequentially from the environment. This scenario is similar to the case of online learning; however, there are no full/complete labels like supervised methods. Instead, all a learner receives feedback (known as reward) from the environment. The second class of online learning problems (multi-armed bandit problems) is a subset of the RL problem; although, in the online learning setup, the dynamic of the training environment is not explicitly modeled. The following figure is a standard schematic to illustrate an RL framework.
   
    <p align="center">
         <img width="400" alt="Screenshot 2023-07-12 at 9 55 34 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/3be81d4b-64fc-4e23-a8d3-fb5823fd609a">
       <br>
-      <em>Standard Reinforcement Learning (RL) scenrio.</em>
+      <em>Standard Reinforcement Learning (RL) scenario.</em>
    </p>
 
-* The following picture summerize three important categories of ML approaches.
+* The following picture summarizes three important categories of ML approaches.
 
    <p align="center">
    <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/3352531c-7ad3-4a13-bbac-8ef853bbb068">
    <br>
-      <em>Three type of Machine Learning. [K. Murthy, 2022 & Yann LeCun at NIPS’16].</em>
+      <em>Three types of Machine Learning. [K. Murthy, 2022 & Yann LeCun at NIPS’16].</em>
    </p>
 
-* In addition to the above learning methods, you may see names like _Transfer Learning_, _Meta Learning_, Continous or Life-Long Learring, _Curriculum Leanirng_, _Teacher-Student Learning (Distillation)_ in the litrature. All these methods are different types of learning which may be used as supervised/unsupervised/RL fashion. We w'll look at some of these in the course.
+* In addition to the above learning methods, you may see names like _Transfer Learning_, _Meta Learning_, _Continous or Life-Long Learning_, _Curriculum Learning_, _Teacher-Student Learning (Distillation)_ in the literature. All these methods are different types of learning which may be used in supervised/unsupervised/RL fashion. We will look at some of these in the course.
