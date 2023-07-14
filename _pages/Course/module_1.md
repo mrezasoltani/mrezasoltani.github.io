@@ -105,15 +105,15 @@ classes: wide
 ### Datasets in ML
 * As mentioned earlier, the availability of data is essential for all ML algorithms. In recent years, there are a large amount of data publicly available. Here, we briefly review some of the common datasets used in ML literature.
    * Data in image domain:
-      - 1. MNIST. This dataset contains the gray-scale of \((28\times\)) images of digits from 0 to 9. It contains 60,000 training images and 10,000 testing images.
-      - 2. CIFAR-10/100. The CIFAR-10 dataset contains 60,000 colorful images of 32*32 pixels. They are labeled from 0-9. The CIFAR-100 is similar to the CIFAR-10 dataset, but the difference is that it has 100 classes instead of 10.
-      - 3. ImageNet. This dataset contains 14,197,122 annotated images according to the WordNet hierarchy. Since 2010 the dataset is used in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC), a benchmark in image classification and object detection. The training data contains 1000 categories and 1.2 million images.
-      - 4. MS COCO. This dataset is a huge database for object detection, segmentation and image captioning tasks. It has around 1.5 million labeled images.
-      - 5. Flickr 8k. The Flickr 8k dataset contains 8,000 images and each image is labeled with 5 different captions. The dataset is used to build an image captioning.
+      - 1. **MNIST.** This dataset contains the gray-scale of \((28\times\)) images of digits from 0 to 9. It contains 60,000 training images and 10,000 testing images.
+      - 2. **CIFAR-10/100.** The CIFAR-10 dataset contains 60,000 colorful images of 32*32 pixels. They are labeled from 0-9. The CIFAR-100 is similar to the CIFAR-10 dataset, but the difference is that it has 100 classes instead of 10.
+      - 3. **ImageNet.** This dataset contains 14,197,122 annotated images according to the WordNet hierarchy. Since 2010 the dataset is used in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC), a benchmark in image classification and object detection. The training data contains 1000 categories and 1.2 million images.
+      - 4. **MS COCO.** This dataset is a huge database for object detection, segmentation and image captioning tasks. It has around 1.5 million labeled images.
+      - 5. **Flickr 8k.** The Flickr 8k dataset contains 8,000 images and each image is labeled with 5 different captions. The dataset is used to build image captioning.
    * Data in Natural Language Processing (NLP):
-      - 1. Enron Email. This Enron dataset contains around 0.5 million emails of over 150 users mostly from the management of Enron. The size of the data is around 432 MB.
-      - 2. Yelp. It contains 1.2 million tips by 1.6 million users, over 1.2 million business attributes and photos for natural language processing tasks.
-      - 3. IMDB reviews. It contains over 50,000 movie reviews from Kaggle.
-      - 4. Amazon Reviews: This dataset contains over 45 million Amazon reviews.
-      - 5. Rotten Tomatoes Reviews: Archive of more than 480,000 critic reviews (fresh or rotten).
-      - 6. SMS Spam Collection in English: This dataset includes 5,574 English SMS spam messages.
+      - 1. **Enron Email.** This Enron dataset contains around 0.5 million emails of over 150 users mostly from the management of Enron. The size of the data is around 432 MB.
+      - 2. **Yelp.** It contains 1.2 million tips by 1.6 million users, over 1.2 million business attributes and photos for natural language processing tasks.
+      - 3. **IMDB reviews.** It contains over 50,000 movie reviews from Kaggle.
+      - 4. **Amazon Reviews.** This dataset contains over 45 million Amazon reviews.
+      - 5. **Rotten Tomatoes Reviews.** Archive of more than 480,000 critic reviews (fresh or rotten).
+      - 6. **SMS Spam Collection in English.** This dataset includes 5,574 English SMS spam messages.
