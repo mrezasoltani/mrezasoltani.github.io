@@ -105,14 +105,14 @@ classes: wide
 ### Datasets in ML
 * As mentioned earlier, the availability of data is essential for all ML algorithms. In recent years, there are a large amount of data publicly available for training/evaluating/testing of ML algorithms. Here, we briefly review some of the common datasets used in ML literature.
    * Small dataset for ML:
-      - 1. **Mall Customers.** This dataset contains information about people visiting the mall in a particular city, including age, annual income, and spending score. 
-      - 2. **IRIS.** This dataset includes 150 sample with four features with information about the flower petal.
-      - 3. **Boston Housing.** This dataset Contains information collected by the US Census Service about housing in the area of Boston Mass. The dataset is small in size with only 506 cases.
-      - 4. **Fake News Detection.** This Dataset contains 7,796 data with with four features: news, title, news text, result.
-      - 5. **Wine Quality.** The dataset contains different chemical information about the wine. Each expert graded the wine quality between 0 (very bad) and 10 (very excellent). There are 1,599 red wine samples and 4,898 white wine samples.
-      - 6. **SOCR data — Heights and Weights.** This dataset contains the height and weights of 25,000 different humans of 18 years of age.
-      - 7. **Titanic.** The dataset contains information about name, age, sex, number of siblings aboard, and other information about 891 passengers in the training set and 418 passengers in the testing set.
-      - 8. **Credit Card Fraud Detection.** The dataset contains transactions made by credit labeled as fraudulent or genuine. There are a total of 284,807 transactions, out of which only 492 are fraudulent (highly imbalanced dataset).
+      - 1. **Mall Customers.** This dataset contains information about people visiting the mall in a particular city, including age, annual income, and spending score [link](https://www.kaggle.com/shwetabh123/mall-customers). 
+      - 2. **IRIS.** This dataset includes 150 sample with four features with information about the flower petal [link](https://archive.ics.uci.edu/ml/datasets/Iris).
+      - 3. **Boston Housing.** This dataset Contains information collected by the US Census Service about housing in the area of Boston Mass. The dataset is small in size with only 506 cases [link](https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html).
+      - 4. **Fake News Detection.** This Dataset contains 7,796 data with with four features: news, title, news text, result [link](https://www.kaggle.com/c/fake-news/data).
+      - 5. **Wine Quality.** The dataset contains different chemical information about the wine. Each expert graded the wine quality between 0 (very bad) and 10 (very excellent). There are 1,599 red wine samples and 4,898 white wine samples [link](https://archive.ics.uci.edu/ml/datasets/wine+quality).
+      - 6. **SOCR data — Heights and Weights.** This dataset contains the height and weights of 25,000 different humans of 18 years of age [link](http://wiki.stat.ucla.edu/socr/index.php/SOCR_Data_Dinov_020108_HeightsWeights).
+      - 7. **Titanic.** The dataset contains information about name, age, sex, number of siblings aboard, and other information about 891 passengers in the training set and 418 passengers in the testing set [link](https://web.stanford.edu/class/archive/cs/cs109/cs109.1166/problem12.html).
+      - 8. **Credit Card Fraud Detection.** The dataset contains transactions made by credit labeled as fraudulent or genuine. There are a total of 284,807 transactions, out of which only 492 are fraudulent (highly imbalanced dataset) [link](https://www.kaggle.com/mlg-ulb/creditcardfraud).
   
    * Data in image domain:
       - 1. **MNIST.** This dataset contains the gray-scale of \((28\times\)) images of digits from 0 to 9. It contains 60,000 training images and 10,000 testing images.
@@ -132,12 +132,12 @@ classes: wide
       - 7. **Twitter US Airline Sentiment.** The dataset consists of 55,000 Twitter data of major U.S. airline was scraped from February of 2015 and contributors were asked to first classify positive, negative, and neutral tweets, followed by categorizing negative reasons (such as "late flight" or "rude service").
 
    * Data in Speech:
-      - 1. **LibriSpeech.** This dataset includes records for a large-scale (1000 hours) corpus of read English speech.
-      - 2. **Multilingual LibriSpeech.** The dataset is a large multilingual corpus derived from LibriVox audiobooks.
-      - 3. **HarperValleyBank.** The dataset includes simulated contact center calls to Harper Valley Bank in the Gridspace Mixer platform. The records have been labelled with human transcripts, timing information, emotion and dialog acts model outputs, etc.
+      - 1. **LibriSpeech.** This dataset includes records for a large-scale (1000 hours) corpus of read English speech [link](https://www.kaggle.com/shwetabh123/mall-customers).
+      - 2. **Multilingual LibriSpeech.** The dataset is a large multilingual corpus derived from LibriVox audiobooks [link]().
+      - 3. **HarperValleyBank.** The dataset includes simulated contact center calls to Harper Valley Bank in the Gridspace Mixer platform. The records have been labelled with human transcripts, timing information, emotion and dialog acts model outputs, etc [link]().
       - 4. **Common Voice.** This dataset contains 7,335 validated hours of speech in 60 languages. Each entry in the dataset consists of a unique MP3 and corresponding text file.
-      - 5. **TED-LIUM.** This is a dataset with 452 hours of audio from TED talks.
-      - 6. **AudioMNIST.** The dataset consists of 30,000 audio samples of spoken digits (\((0-9\))) of 60 different speakers.
-      - 6. **Google Speech Commands.** The dataset is consists of 65,000 one-second long utterances of 30 short words, by thousands of different people.
-      - 7. **CHiME.** The CHiME-Home dataset is a collection of annotated domestic environment audio recordings.
-      - 8. **Urban Sounds.** This dataset contains 1302 labeled sound recordings. Each recording is labeled with the start and end times of sound events from 10 classes: air_conditioner, car_horn, children_playing, dog_bark, drilling, enginge_idling, gun_shot, jackhammer, siren, and street_music.
+      - 5. **TED-LIUM.** This is a dataset with 452 hours of audio from TED talks [link]().
+      - 6. **AudioMNIST.** The dataset consists of 30,000 audio samples of spoken digits (\((0-9\))) of 60 different speakers [link]().
+      - 6. **Google Speech Commands.** The dataset is consists of 65,000 one-second long utterances of 30 short words, by thousands of different people [link]().
+      - 7. **CHiME.** The CHiME-Home dataset is a collection of annotated domestic environment audio recordings [link]().
+      - 8. **Urban Sounds.** This dataset contains 1302 labeled sound recordings. Each recording is labeled with the start and end times of sound events from 10 classes: air_conditioner, car_horn, children_playing, dog_bark, drilling, enginge_idling, gun_shot, jackhammer, siren, and street_music [link]().
