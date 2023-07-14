@@ -147,7 +147,7 @@ classes: wide
 * BBefore finishing this module, we are going to list some common tasks in different domain. Please note that this is just a tiny piece of possible tasks can be accomplished with ML.
    * **Tasks in Computer Vision (CV).** The input data for this domain includes images and videos. Of course, these types of datasets can be used in a multimodal task in which there might be other modalities like speech and text data.
   
-     1. Image Classification. This task means identifying what class the object belongs to. Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects (i.e., cat=0, dog=1)
+     1. **Image Classification.** This task means identifying what class the object belongs to. Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects (i.e., cat=0, dog=1)
         
         <p align="center">
         <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/f423364f-340f-49aa-9711-cad448427520">
@@ -155,31 +155,53 @@ classes: wide
              <em>Classifying cat and dog images. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
         
-     3. Object Detection
+     3. **Object Detection.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
       
       <p align="center">
-      <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
-           <br>
-           <em>CObject detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
+        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
+             <br>
+             <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
        </p>
   
-     5. Image Segmentation
-    
+     5. **Image Segmentation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
+
+       <p align="center">
+        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
+             <br>
+             <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
+       </p>
      
-     7. Image-to-Image
-    
+     7. **Image-to-Image** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
+
+       <p align="center">
+        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
+             <br>
+             <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
+       </p>
      
-     9. Unconditional Image Generation
+     9. **Image Generation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
     
+       <p align="center">
+        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
+             <br>
+             <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
+       </p>
+ 
+     11. **Depth Estimation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
+
+       <p align="center">
+        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
+             <br>
+             <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
+       </p>
      
-     11. Depth Estimation
-    
-     
-     13. Video Classification
-    
-      
-     15. Zero-Shot Image Classification
-    
+     13. **Video Classification.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
+
+        <p align="center">
+        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
+             <br>
+             <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
+       </p>
     
    * **Tasks in Natural Language Processing (NLP).** The input data for this domain includes text ccoming from books, papers, chats, blogs, websites, transcriptions, emails, etc.
      1. Text Classification (e.g., sentiment analysis)
