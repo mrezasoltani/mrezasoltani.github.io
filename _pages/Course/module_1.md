@@ -105,14 +105,14 @@ classes: wide
 ### Datasets in ML
 * As mentioned earlier, the availability of data is essential for all ML algorithms. In recent years, there are a large amount of data publicly available for training/evaluating/testing of ML algorithms. Here, we briefly review some of the common datasets used in ML literature.
    * Small dataset for ML:
-      - 1. **Mall Customers.** This dataset contains information about people visiting the mall in a particular city, including age, annual income, and spending score ([link](https://www.kaggle.com/shwetabh123/mall-customers)). 
-      - 2. **IRIS.** This dataset includes 150 sample with four features with information about the flower petal ([link](https://archive.ics.uci.edu/ml/datasets/Iris)).
-      - 3. **Boston Housing.** This dataset Contains information collected by the US Census Service about housing in the area of Boston Mass. The dataset is small in size with only 506 cases ([link](https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html)).
-      - 4. **Fake News Detection.** This Dataset contains 7,796 data with with four features: news, title, news text, result ([link](https://www.kaggle.com/c/fake-news/data)).
-      - 5. **Wine Quality.** The dataset contains different chemical information about the wine. Each expert graded the wine quality between 0 (very bad) and 10 (very excellent). There are 1,599 red wine samples and 4,898 white wine samples ([link](https://archive.ics.uci.edu/ml/datasets/wine+quality)).
-      - 6. **SOCR data — Heights and Weights.** This dataset contains the height and weights of 25,000 different humans of 18 years of age ([link](http://wiki.stat.ucla.edu/socr/index.php/SOCR_Data_Dinov_020108_HeightsWeights)).
-      - 7. **Titanic.** The dataset contains information about name, age, sex, number of siblings aboard, and other information about 891 passengers in the training set and 418 passengers in the testing set ([link](https://web.stanford.edu/class/archive/cs/cs109/cs109.1166/problem12.html)).
-      - 8. **Credit Card Fraud Detection.** The dataset contains transactions made by credit labeled as fraudulent or genuine. There are a total of 284,807 transactions, out of which only 492 are fraudulent (highly imbalanced dataset) ([link](https://www.kaggle.com/mlg-ulb/creditcardfraud)).
+     1. **Mall Customers.** This dataset contains information about people visiting the mall in a particular city, including age, annual income, and spending score ([link](https://www.kaggle.com/shwetabh123/mall-customers)). 
+     2. **IRIS.** This dataset includes 150 sample with four features with information about the flower petal ([link](https://archive.ics.uci.edu/ml/datasets/Iris)).
+     3. **Boston Housing.** This dataset Contains information collected by the US Census Service about housing in the area of Boston Mass. The dataset is small in size with only 506 cases ([link](https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html)).
+     4. **Fake News Detection.** This Dataset contains 7,796 data with with four features: news, title, news text, result ([link](https://www.kaggle.com/c/fake-news/data)).
+     5. **Wine Quality.** The dataset contains different chemical information about the wine. Each expert graded the wine quality between 0 (very bad) and 10 (very excellent). There are 1,599 red wine samples and 4,898 white wine samples ([link](https://archive.ics.uci.edu/ml/datasets/wine+quality)).
+     6. **SOCR data — Heights and Weights.** This dataset contains the height and weights of 25,000 different humans of 18 years of age ([link](http://wiki.stat.ucla.edu/socr/index.php/SOCR_Data_Dinov_020108_HeightsWeights)).
+     7. **Titanic.** The dataset contains information about name, age, sex, number of siblings aboard, and other information about 891 passengers in the training set and 418 passengers in the testing set ([link](https://web.stanford.edu/class/archive/cs/cs109/cs109.1166/problem12.html)).
+     8. **Credit Card Fraud Detection.** The dataset contains transactions made by credit labeled as fraudulent or genuine. There are a total of 284,807 transactions, out of which only 492 are fraudulent (highly imbalanced dataset) ([link](https://www.kaggle.com/mlg-ulb/creditcardfraud)).
   
    * Data in image domain:
       - 1. **MNIST.** This dataset contains the gray-scale of \\(28\times 28\\) images of digits from 0 to 9. It contains 60,000 training images and 10,000 testing images ([link](http://yann.lecun.com/exdb/mnist/)).
