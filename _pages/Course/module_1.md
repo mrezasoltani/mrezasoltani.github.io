@@ -156,8 +156,13 @@ classes: wide
         </p>
         
      3. Object Detection
-    
-     
+      
+      <p align="center">
+      <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
+           <br>
+           <em>CObject detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
+       </p>
+  
      5. Image Segmentation
     
      
