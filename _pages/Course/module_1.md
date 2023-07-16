@@ -198,14 +198,14 @@ classes: wide
     
    * **Tasks in Natural Language Processing (NLP).** The input data for this domain includes text coming from books, papers, chats, blogs, websites, transcriptions, emails, etc.
      1. Text Classification (e.g., sentiment analysis)
-     2. Table Question Answering
-     3. Question Answering
-     4. Translation
-     5. Summarization
-     6. Text Generation
-     7. Text-to-Text Generation
-     8. Fill-Mask
-     9. Text Retrieval
+     2. Named entity recognition
+     3. Table Question Answering
+     4. Question Answering
+     5. Translation
+     6. Summarization
+     7. Text Generation
+     8. Text-to-Text Generation
+     9. Fill-Mask
     
    * **Tasks in Speech/Audio.** The input data for this domain include audio and speech files.
      1. Automatic Speech Recognition
