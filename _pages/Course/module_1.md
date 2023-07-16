@@ -150,17 +150,17 @@ classes: wide
      1. **Image Classification.** This task means identifying what class the object belongs to. Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects (i.e., cat=0, dog=1). This task is discriminative and supervised.
         
         <p align="center">
-         <img width="635" alt="Screenshot 2023-07-16 at 11 07 51 AM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/c9d059e7-42e3-4596-85eb-474d9ad001dd">
+         <img width="640" alt="Screenshot 2023-07-16 at 11 29 17 AM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/0bb15098-6c60-44e0-8a20-316638896234">
              <br>
-             <em>Classifying cat and dog images. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
+             <em>Classifying cat and dog images.</em>
         </p>
         
-     2. **Object Detection.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
+     2. **Object Detection.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to detect, and \\(y\\), the output variable is the location of objects in the image. Hence, we have a regression task. Please note that sometimes object recognition is used to indicate both the classification and detection of an object (In this case we have a hybrid task, including both classification and regression). In this sense, the output variable also includes the type (class) of the detected objects. This task is discriminative and supervised.
       
         <p align="center">
-        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8">
+         <img width="706" alt="Screenshot 2023-07-16 at 11 26 45 AM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/ddaf1653-2ab9-4984-98b6-2b6effbec736">
              <br>
-             <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
+             <em>Object detection.</em>
         </p>
   
      3. **Image Segmentation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
