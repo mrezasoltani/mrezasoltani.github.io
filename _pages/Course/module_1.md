@@ -198,15 +198,15 @@ classes: wide
     
    * **Tasks in Natural Language Processing (NLP).** The input data for this domain includes text coming from books, papers, chats, blogs, websites, transcriptions, emails, etc.
      1. Text Classification (e.g., sentiment analysis)
-     2. Named entity recognition
+     2. Named Entity Recognition
      3. Table Question Answering
      4. Question Answering
      5. Translation
      6. Summarization
      7. **Text Generation.** Here, by providing a prompt, a model can auto-complete a piece of text by generating the remaining of it. In this task, \\(\mathbf{x}\\), the input variable is a piece of text, and \\(y\\), the output variable is some other text related to the input. This task is discriminative and supervised.
 
-             **Input: "In this course, we will teach you how to"**
-             **Output: "In this course, we will teach you how to understand and use data flow and data interchange when handling user data."**
+             Input: In this course, we will teach you how to
+             Output: In this course, we will teach you how to understand and use data flow and data interchange when handling user data.
   
      9. Text-to-Text Generation
      10. Fill-Mask
