@@ -196,7 +196,8 @@ classes: wide
         </p>
         
     
-   * **Tasks in Natural Language Processing (NLP).** The input data for this domain includes text coming from books, papers, chats, blogs, websites, transcriptions, emails, etc.
+   * **Tasks in Natural Language Processing (NLP).** The input data for this domain includes text coming from books, papers, chats, blogs, websites, transcriptions, emails, etc. Many of the following examples are from [Hugging Face](https://huggingface.co/).
+     
      1. Text Classification (e.g., sentiment analysis)
      2. Named Entity Recognition
      3. Table Question Answering
