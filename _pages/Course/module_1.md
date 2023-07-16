@@ -26,7 +26,7 @@ classes: wide
             <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/38d8dfc0-7825-49f7-9993-09db19733f41">
                <br>
             <em>(a) Input image (Murphy family, photo taken 5 August 2010). (b) The output of the classifier, which detected 5 faces at different 
-                poses. Classification example: Hand-written digit recognition. [K. Murphy, 2012.]</em>
+                poses. Classification example: Hand-written digit recognition [K. Murphy, 2012.].</em>
          </p>
 
       - **Digit Recognition** (classification example): The input, \\(\mathbf{x}\\) is an image, where \\(p\\) is the number of pixels in the image. The output, \\(y_i\\) is one of the numbers in the set \\(\{0,1,2,\dots,9\}\\) (a discrete value).
@@ -34,7 +34,7 @@ classes: wide
          <p align="center">
             <img width="400" alt="Screenshot 2023-07-10 at 9 26 53 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/44375613-fbb2-4f22-a502-fbed168e471a">
             <br>
-               <em>MNIST dataset. [http://yann.lecun.com/exdb/mnist/]</em>
+               <em>MNIST dataset [http://yann.lecun.com/exdb/mnist/].</em>
          </p>
 
 ### Unsupervised Learning
@@ -45,7 +45,7 @@ classes: wide
       <p align="center">
         <img width="600" alt="Screenshot 2023-07-10 at 9 57 45 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/fb9ccc46-0a7b-4eb2-9396-a34642d1ff10">
         <br>
-            <em>Application of the K-means clustering algorithm to image segmentation. [C. Bishop, 2006]</em>
+            <em>Application of the K-means clustering algorithm to image segmentation [C. Bishop, 2006].</em>
       </p>
       
 ### Discriminative and Generative
@@ -79,7 +79,7 @@ classes: wide
   <p align="center">
      <img width="400" alt="Screenshot 2023-07-12 at 9 55 34 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/18727e75-2efa-4199-a894-1d76e3d74667">
    <br>
-  <em>Active Learning. [Burr Settles et al.].</em>
+  <em>Active Learning [Burr Settles et al.].</em>
    </p>
      
    * **_Online Learning_.** Methods under this category try to learn from a stream or sequence of data instances arriving one by one at each time. So far, all discussed methods assume that the entire training data is available. Sometimes this is called _batch (off-line) learning_. The goal of online learning is to maximize accuracy/correctness for the sequence of predictions based on the history of received data and predictions made so far, and possibly additional available information. In general, online learning can be fully supervised, partially supervised (with partial/limited feedback), or totally unsupervised. Those online learning problems based on partial feedback are also called _multi-armed bandit_ problems. Online learning is a very useful learning technique as it overcomes the drawbacks of traditional batch learning in which the model can be updated dynamically by an online learner once new training data arrives. Moreover, online learning algorithms are often easy to understand, simple to implement, and often supported by solid theoretical analysis.
@@ -97,7 +97,7 @@ classes: wide
    <p align="center">
    <img width="600" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/3352531c-7ad3-4a13-bbac-8ef853bbb068">
    <br>
-      <em>Three types of Machine Learning. [K. Murthy, 2022 & Yann LeCun at NIPS’16].</em>
+      <em>Three types of Machine Learning [K. Murthy, 2022 & Yann LeCun at NIPS’16].</em>
    </p>
 
 * In addition to the above learning methods, you may see names like _Transfer Learning_, _Meta Learning_, _Continous or Life-Long Learning_, _Curriculum Learning_, _Teacher-Student Learning (Distillation)_ in the literature. All these methods are different types of learning which may be used in supervised/unsupervised/RL fashion. We will look at some of these in the course.
@@ -168,7 +168,7 @@ classes: wide
         <p align="center">
         <img width="770" alt="Screenshot 2023-07-16 at 12 31 19 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/4564c317-7fb7-4f2b-a56a-9325fc8737b7">
              <br>
-             <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
+             <em>Object detection [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
      
      4. **Image-to-Image** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
@@ -176,7 +176,7 @@ classes: wide
         <p align="center">
         <img width="806" alt="Screenshot 2023-07-16 at 12 50 10 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/35f577f0-7a44-4731-bba7-1ea1b725c8ee">
              <br>
-             <em>Image-to-Image task. Making girls show tw0 fingeres [ref](https://osu-nlp-group.github.io/MagicBrush/).</em>
+             <em>Image-to-Image task. Making girls show two fingers [ref](https://osu-nlp-group.github.io/MagicBrush/).</em>
         </p>
      
      5. **Image Generation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
@@ -190,9 +190,9 @@ classes: wide
      6. **Depth Estimation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
 
         <p align="center">
-        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8">
+        <img width="771" alt="Screenshot 2023-07-16 at 3 46 21 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/9a5af8af-6c82-4bf4-9858-b9c5a3d42ed0">
              <br>
-             <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
+             <em>Image depth estimation [P. Hambarde et al., 2019].</em>
         </p>
         
     
