@@ -163,10 +163,10 @@ classes: wide
              <em>Object detection.</em>
         </p>
   
-     3. **Image Segmentation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
+     3. **Image Segmentation.** This task is similar to object recognition, but one needs a very precise edge/contour detection that will segment and label all pixels that belong to an object. Here \\(\mathbf{x}\\), the input variable is an image with objects we want to segment, and \\(y\\), the output variable is the image of the segmentation process (i.e., an image with labeled all the pixels that belong to every object). There are two types of segmentation: Instance Segmentation and Semantic Segmentation. The instance segmentation outputs an image by separating every single object instance, while in semantic segmentation, the pixel of every instance of an object is labeled with the same class label. This task is considered a hybrid task, including both classification and regression, discriminative and supervised.
 
         <p align="center">
-        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8">
+        <img width="770" alt="Screenshot 2023-07-16 at 12 31 19 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/4564c317-7fb7-4f2b-a56a-9325fc8737b7">
              <br>
              <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
@@ -179,29 +179,22 @@ classes: wide
              <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
      
-     5. **Image Generation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
+     6. **Image Generation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
     
         <p align="center">
         <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8">
              <br>
-             <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
+             <em>Image segmentation [ref](https://datahacker.rs/020-overview-of-semantic-segmentation-methods/).</em>
         </p>
  
-     6. **Depth Estimation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
+     7. **Depth Estimation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
 
         <p align="center">
         <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8">
              <br>
              <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
-     
-     7. **Video Classification.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
-
-        <p align="center">
-        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8">
-             <br>
-             <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
-        </p>
+        
     
    * **Tasks in Natural Language Processing (NLP).** The input data for this domain includes text coming from books, papers, chats, blogs, websites, transcriptions, emails, etc.
      1. Text Classification (e.g., sentiment analysis)
