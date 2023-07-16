@@ -174,20 +174,20 @@ classes: wide
      4. **Image-to-Image** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
 
         <p align="center">
-        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8">
+        <img width="806" alt="Screenshot 2023-07-16 at 12 50 10 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/35f577f0-7a44-4731-bba7-1ea1b725c8ee">
              <br>
-             <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
+             <em>Image-to-Image task. Making girls show tw0 fingeres [ref](https://osu-nlp-group.github.io/MagicBrush/).</em>
         </p>
      
-     6. **Image Generation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
+     5. **Image Generation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
     
         <p align="center">
-        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8">
+        <img width="628" alt="Screenshot 2023-07-16 at 1 07 42 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/58dd864d-76ab-4f6b-b060-4e8dbf86d210">
              <br>
-             <em>Image segmentation [ref](https://datahacker.rs/020-overview-of-semantic-segmentation-methods/).</em>
+             <em>Image Generation.</em>
         </p>
  
-     7. **Depth Estimation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
+     6. **Depth Estimation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
 
         <p align="center">
         <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8">
