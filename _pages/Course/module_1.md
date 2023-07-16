@@ -106,9 +106,9 @@ classes: wide
 * As mentioned earlier, the availability of data is essential for all ML algorithms. In recent years, there are a large amount of data publicly available for training/evaluating/testing of ML algorithms. Here, we briefly review some of the common datasets used in ML literature.
    * Small dataset for ML:
      1. **Mall Customers.** This dataset contains information about people visiting the mall in a particular city, including age, annual income, and spending score ([link](https://www.kaggle.com/shwetabh123/mall-customers)). 
-     2. **IRIS.** This dataset includes 150 sample with four features with information about the flower petal ([link](https://archive.ics.uci.edu/ml/datasets/Iris)).
+     2. **IRIS.** This dataset includes 150 samples with four features with information about the flower petal ([link](https://archive.ics.uci.edu/ml/datasets/Iris)).
      3. **Boston Housing.** This dataset Contains information collected by the US Census Service about housing in the area of Boston Mass. The dataset is small in size with only 506 cases ([link](https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html)).
-     4. **Fake News Detection.** This Dataset contains 7,796 data with with four features: news, title, news text, result ([link](https://www.kaggle.com/c/fake-news/data)).
+     4. **Fake News Detection.** This Dataset contains 7,796 data with four features: news, title, news text, result ([link](https://www.kaggle.com/c/fake-news/data)).
      5. **Wine Quality.** The dataset contains different chemical information about the wine. Each expert graded the wine quality between 0 (very bad) and 10 (very excellent). There are 1,599 red wine samples and 4,898 white wine samples ([link](https://archive.ics.uci.edu/ml/datasets/wine+quality)).
      6. **SOCR Data — Heights and Weights.** This dataset contains the height and weights of 25,000 different humans of 18 years of age ([link](http://wiki.stat.ucla.edu/socr/index.php/SOCR_Data_Dinov_020108_HeightsWeights)).
      7. **Titanic.** The dataset contains information about name, age, sex, number of siblings aboard, and other information about 891 passengers in the training set and 418 passengers in the testing set ([link](https://web.stanford.edu/class/archive/cs/cs109/cs109.1166/problem12.html)).
@@ -119,91 +119,91 @@ classes: wide
      2. **Fashion MNIST.** This dataset is similar to the original MNIST images, but the images are different objects, including 10 labels listed as T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Angel boot ([link](https://www.kaggle.com/datasets/zalando-research/fashionmnist)).
      3. **CIFAR-10/100.** The CIFAR-10 dataset contains 60,000 colorful images of \\(32\times 32\\) pixels. They are labeled from 0-9. The CIFAR-100 is similar to the CIFAR-10 dataset, but the difference is that it has 100 classes instead of 10 ([link](https://www.cs.toronto.edu/~kriz/cifar.html)).
      4. **ImageNet.** This dataset contains 14,197,122 annotated images according to the WordNet hierarchy. Since 2010 the dataset is used in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC), a benchmark in image classification and object detection. The training data contains 1000 categories and 1.2 million images ([link](http://image-net.org/)).
-     5. **MS COCO.** This dataset is a huge database for object detection, segmentation and image captioning tasks. It has around 1.5 million labeled images ([link](https://cocodataset.org/#home)).
+     5. **MS COCO.** This dataset is a huge database for object detection, segmentation, and image captioning tasks. It has around 1.5 million labeled images ([link](https://cocodataset.org/#home)).
      6. **Flickr 8k.** The Flickr 8k dataset contains 8,000 images and each image is labeled with 5 different captions. The dataset is used to build image captioning ([link](https://www.kaggle.com/datasets/adityajn105/flickr8k)).
      7. **Stanford Dogs.** This Dataset contains 20,580 images and 120 different dog breed categories ([link](http://vision.stanford.edu/aditya86/ImageNetDogs/)).
   
    * Data in Natural Language Processing (NLP):
      1. **Enron Email.** This Enron dataset contains around 0.5 million emails of over 150 users mostly from the management of Enron. The size of the data is around 432 MB ([link](https://www.cs.cmu.edu/~enron/)).
-     2. **Yelp.** It contains 1.2 million tips by 1.6 million users, over 1.2 million business attributes and photos for natural language processing tasks ([link](https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset)).
+     2. **Yelp.** It contains 1.2 million tips by 1.6 million users, over 1.2 million business attributes, and photos for natural language processing tasks ([link](https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset)).
      3. **IMDB Reviews.** It contains over 50,000 movie reviews from Kaggle (25,000 reviews for training and 25,000 for the testing set) ([link](http://ai.stanford.edu/~amaas/data/sentiment/)).
      4. **Amazon Reviews.** This dataset contains over 45 million Amazon reviews ([link](https://snap.stanford.edu/data/web-Amazon.html)).
      5. **Rotten Tomatoes Reviews.** The dataset includes an archive of more than 480,000 critic reviews (fresh or rotten) ([link](https://www.kaggle.com/datasets/stefanoleone992/rotten-tomatoes-movies-and-critic-reviews-dataset)).
      6. **SMS Spam Collection in English.** This dataset includes 5,574 English SMS spam messages ([link](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)).
-     7. **Twitter US Airline Sentiment.** The dataset consists of 55,000 Twitter data of major U.S. airline was scraped from February of 2015 and contributors were asked to first classify positive, negative, and neutral tweets, followed by categorizing negative reasons (such as "late flight" or "rude service") ([link](https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment)).
+     7. **Twitter US Airline Sentiment.** The dataset consists of 55,000 Twitter data of major U.S. airlines was scraped from February of 2015 and contributors were asked to first classify positive, negative, and neutral tweets, followed by categorizing negative reasons (such as "late flight" or "rude service") ([link](https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment)).
 
    * Data in Speech:
      1. **LibriSpeech.** This dataset includes records for a large-scale (1000 hours) corpus of read English speech ([link](http://www.openslr.org/12)).
      2. **Multilingual LibriSpeech.** The dataset is a large multilingual corpus derived from LibriVox audiobooks ([link](http://www.openslr.org/94)).
-     3. **HarperValleyBank.** The dataset includes simulated contact center calls to Harper Valley Bank in the Gridspace Mixer platform. The records have been labelled with human transcripts, timing information, emotion and dialog acts model outputs, etc ([link](https://github.com/cricketclub/gridspace-stanford-harper-valley)).
+     3. **HarperValleyBank.** The dataset includes simulated contact center calls to Harper Valley Bank in the Gridspace Mixer platform. The records have been labeled with human transcripts, timing information, emotion, and dialog acts model outputs, etc ([link](https://github.com/cricketclub/gridspace-stanford-harper-valley)).
      4. **Common Voice.** This dataset contains 7,335 validated hours of speech in 60 languages. Each entry in the dataset consists of a unique MP3 and corresponding text file ([link](https://commonvoice.mozilla.org/en/datasets)).
      5. **TED-LIUM.** This is a dataset with 452 hours of audio from TED talks ([link](https://www.openslr.org/51)).
      6. **AudioMNIST.** The dataset consists of 30,000 audio samples of spoken digits (\((0-9\))) of 60 different speakers ([link](https://github.com/soerenab/AudioMNIST)).
-     6. **Google Speech Commands.** The dataset is consists of 65,000 one-second long utterances of 30 short words, by thousands of different people ([link](https://ai.googleblog.com/2017/08/launching-speech-commands-dataset.html)).
+     6. **Google Speech Commands.** The dataset consists of 65,000 one-second-long utterances of 30 short words, by thousands of different people ([link](https://ai.googleblog.com/2017/08/launching-speech-commands-dataset.html)).
      7. **CHiME.** The CHiME-Home dataset is a collection of annotated domestic environment audio recordings ([link](https://archive.org/details/chime-home)).
      8. **Urban Sounds.** This dataset contains 1302 labeled sound recordings. Each recording is labeled with the start and end times of sound events from 10 classes: air_conditioner, car_horn, children_playing, dog_bark, drilling, enginge_idling, gun_shot, jackhammer, siren, and street_music ([link](https://urbansounddataset.weebly.com/)).
 
 ### Some Common Tasks in ML
-* BBefore finishing this module, we are going to list some common tasks in different domain. Please note that this is just a tiny piece of possible tasks can be accomplished with ML.
-   * **Tasks in Computer Vision (CV).** The input data for this domain includes images and videos. Of course, these types of datasets can be used in a multimodal task in which there might be other modalities like speech and text data.
+* Before finishing this module, we are going to list some common tasks in different domains. Please note that this is just a tiny piece of possible tasks that can be accomplished with ML.
+   * **Tasks in Computer Vision (CV).** The input data for this domain include images and videos. Of course, these types of datasets can be used in a multimodal task in which there might be other modalities like speech and text data.
   
-     1. **Image Classification.** This task means identifying what class the object belongs to. Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects (i.e., cat=0, dog=1)
+     1. **Image Classification.** This task means identifying what class the object belongs to. Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects (i.e., cat=0, dog=1). This task is discriminative and supervised.
         
         <p align="center">
-        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/f423364f-340f-49aa-9711-cad448427520">
+         <img width="635" alt="Screenshot 2023-07-16 at 11 07 51 AM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/c9d059e7-42e3-4596-85eb-474d9ad001dd">
              <br>
              <em>Classifying cat and dog images. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
         
-     2. **Object Detection.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
+     2. **Object Detection.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
       
         <p align="center">
-        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
+        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8">
              <br>
              <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
   
-     3. **Image Segmentation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
+     3. **Image Segmentation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
 
         <p align="center">
-        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
+        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8">
              <br>
              <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
      
-     4. **Image-to-Image** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
+     4. **Image-to-Image** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
 
         <p align="center">
-        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
+        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8">
              <br>
              <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
      
-     5. **Image Generation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
+     5. **Image Generation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
     
         <p align="center">
-        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
+        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8">
              <br>
              <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
  
-     6. **Depth Estimation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
+     6. **Depth Estimation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
 
         <p align="center">
-        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
+        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8">
              <br>
              <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
      
-     7. **Video Classification.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the ouput variable is the label of different objects.
+     7. **Video Classification.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
 
         <p align="center">
-        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8")
+        <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d8bd108d-420c-4c9b-861d-8095e1accef8">
              <br>
              <em>Object detection. [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
     
-   * **Tasks in Natural Language Processing (NLP).** The input data for this domain includes text ccoming from books, papers, chats, blogs, websites, transcriptions, emails, etc.
+   * **Tasks in Natural Language Processing (NLP).** The input data for this domain includes text coming from books, papers, chats, blogs, websites, transcriptions, emails, etc.
      1. Text Classification (e.g., sentiment analysis)
      2. Table Question Answering
      3. Question Answering
@@ -214,7 +214,7 @@ classes: wide
      8. Fill-Mask
      9. Text Retrieval
     
-   * **Tasks in Speech/Audio.** The input data for this domain includes audios and speech files.
+   * **Tasks in Speech/Audio.** The input data for this domain include audio and speech files.
      1. Automatic Speech Recognition
      2. Text-to-Speech
      3. Audio-to-Audio
@@ -224,7 +224,7 @@ classes: wide
      7. Speech Diarization
      8. Intent Classification
 
-   * **Tasks in Multimodal data.** The input data for this type can be any of the above modality or other things (e.g., time series).
+   * **Tasks in Multimodal data.** The input data for this type can be any of the above modalities or other things (e.g., time series).
      1. Text-to-Image
      2. Image-to-Text
      3. Text-to-Video
