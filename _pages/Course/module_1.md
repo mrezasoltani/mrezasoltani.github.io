@@ -95,7 +95,7 @@ classes: wide
 * The following picture summarizes three important categories of ML approaches.
 
    <p align="center">
-   <img width="400" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/3352531c-7ad3-4a13-bbac-8ef853bbb068">
+   <img width="600" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/3352531c-7ad3-4a13-bbac-8ef853bbb068">
    <br>
       <em>Three types of Machine Learning. [K. Murthy, 2022 & Yann LeCun at NIPS’16].</em>
    </p>
