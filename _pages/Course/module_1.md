@@ -168,7 +168,7 @@ classes: wide
         <p align="center">
         <img width="770" alt="Screenshot 2023-07-16 at 12 31 19 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/0f42d816-9ea2-4a69-841b-4f53fd30055b">
              <br>
-             <em>Image Segmentation [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
+             <em>Image Segmentation [https://keras.io/examples/vision/image_classification_from_scratch/].</em>
         </p>
      
      4. **Image-to-Image** Here, the goal is to convert an input image, \\(\mathbf{x}\\) to an output image, \\(\mathbf{y}\\). The output image can be an improved version of the input image (deblurring an image, the super-resolution of the input image, image inpainting), or another image with some changes on the content of an image. This task is a supervised regression task which can be generative or discriminative.
@@ -176,7 +176,7 @@ classes: wide
         <p align="center">
         <img width="806" alt="Screenshot 2023-07-16 at 12 50 10 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/6eb093e7-b414-411d-9daf-4ae0285853c2">
              <br>
-             <em>Image-to-Image task. Making girls show two fingers [ref](https://osu-nlp-group.github.io/MagicBrush/).</em>
+             <em>Image-to-Image task. Making girls show two fingers [https://osu-nlp-group.github.io/MagicBrush/].</em>
         </p>
      
      5. **Image Generation.** Here, the goal is to generate an output image, \\(\mathbf{y}\\) from typically a lower dimensional input vector, \\(\mathbf{x}\\). This task is a supervised/unsupervised generative task.
