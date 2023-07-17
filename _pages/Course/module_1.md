@@ -208,19 +208,19 @@ classes: wide
              Input: My name is John and I work at Microsoft in Seattle.
              Output: John is a person (PER), Microsoft is an organization (ORG), and Seattle is a location (LOC).
   
-     3. **Question Answering.** Here, we are looking for answering questions using information from a given context. The input is a text (context), including some information for the answer, and another text for the question. The output variable is another text with the answer to the asked question. This is a discriminative/genrative task and typically supervised task.
+     3. **Question Answering.** Here, we are looking for answering questions using information from a given context. The input is a text (context), including some information for the answer, and another text for the question. The output variable is another text with the answer to the asked question. This is a discriminative/generative task and typically a supervised task.
         
              Input: Question="Where do I work?, context: My name is John and I work at Microsoft in Seattle.
              Output: {Score': 0.78, 'Start': 30, 'End': 38, 'Answer': 'Microsoft'}
         
      5. **Translation.** Translating from one language (e.g., English) to another language (e.g., Persian). The input is a text from the source language and the output is the desired translation. 
     
-             Input: How are you doing, Ali ?
+             Input: How are you doing, Ali?
              Output: حالت چطورهست، علی ؟
 
      7. **Summarization.** Summarization is the task of reducing a text into a shorter text while keeping most of the important parts of referenced in the text. Both input and output are texts. This may be a supervised and discriminative task.
 
-             Input: America has changed dramatically during recent years. Not only has the number
+             Input: America has changed dramatically in recent years. Not only has the number
                    of graduates in traditional engineering disciplines such as mechanical, civil, 
                    electrical, chemical, and aeronautical engineering declined, but in most of 
                    the premier American universities engineering curricula now concentrate on 
@@ -230,8 +230,8 @@ classes: wide
                    technology subjects, largely supporting increasingly complex scientific 
                    developments. While the latter is important, it should not be at the expense 
                    of more traditional engineering.
-             Output: America has changed dramatically during recent years . The 
-                     number of engineering graduates in the U.S. has declined in 
+             Output: America has changed dramatically in recent years. The 
+                     the number of engineering graduates in the U.S. has declined in 
                      traditional engineering disciplines such as mechanical, civil,
                      electrical, chemical, and aeronautical engineering.
         
