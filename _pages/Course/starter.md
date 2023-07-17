@@ -28,6 +28,12 @@ classes: wide
     7. K. Murthy, Probabilistic Machine Learning: An Introduction, 2022 ([link](https://probml.github.io/pml-book/book1.html))
     8. K. Murthy, Probabilistic Machine Learning: Advanced Topics, 2023 ([link](https://probml.github.io/pml-book/book2.html))
   * Programming:
+    1. C. Russell Severance Python for Everybody: Exploring Data in Python 3, 2016 (link)[http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf]
+    2. W. McKinney, Python for Data Analysis, 2nd Edition, 2017 (link) [https://www.oreilly.com/library/view/python-for-data/9781491957653/]
+    3. Q. Larson, Python Data Science, 2020 (link)[https://www.freecodecamp.org/news/python-data-science-course-matplotlib-pandas-numpy/]
+    4. J. Brownlee, Crash Course in Python for Machine Learning Developers, 2016 [link](https://machinelearningmastery.com/crash-course-python-machine-learning-developers/)
+    5. Become a Python Master, [link](https://programiz.pro/learn/master-python?ref=cp)
+    6. Data Science With Python Core Skills, [link](https://realpython.com/learning-paths/data-science-python-core-skills/)
 
 * Most datasets used in this course and in ML literature can be found through the following links:
   1. **UCI Machine Learning Repository.** The Machine Learning Repository at UCI provides an up-to-date resource for open-source datasets ([lin](https://archive.ics.uci.edu/)).
