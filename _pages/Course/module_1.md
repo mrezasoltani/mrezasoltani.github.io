@@ -216,7 +216,7 @@ classes: wide
      5. **Translation.** Translating from one language (e.g., English) to another language (e.g., Persian). The input is a txt from the source language and the output is the desired translation. 
     
              Input: How are you doing, Ali ?
-             Output: حالت چطورهست علی ؟
+             Output: حالت چطورهست، علی ؟
 
      7. **Summarization.** Summarization is the task of reducing a text into a shorter text while keeping most of the important parts of referenced in the text. Both input and out are texts.
 
