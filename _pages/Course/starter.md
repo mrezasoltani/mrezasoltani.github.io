@@ -5,7 +5,7 @@ classes: wide
 
 * Website of the course: [https://mrezasoltani.github.io/course_modules/](https://mrezasoltani.github.io/course_modules/)
 ### Some logistics:
-  * This course needs an effort of a minimum of 4-6 hours/week.
+  * This course needs a minimum of 4-6 hours/week of work.
   * There are weekly assignments. both theoretical and programming questions.
   * Assignments should be done individually; however, discussion with your friends is encouraged.
   * Many of the questions in the assignments may seem challenging at the first attempt, but with enough spending time, every student can solve them. 
