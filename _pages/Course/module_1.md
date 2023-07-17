@@ -218,14 +218,25 @@ classes: wide
              Input: How are you doing, Ali ?
              Output: حالت چطورهست علی ؟
 
-     7. Summarization
-     8. **Text Generation.** Here, by providing a prompt, a model can auto-complete a piece of text by generating the remaining of it. In this task, \\(\mathbf{x}\\), the input variable is a piece of text, and the output variable is some other text related to the input. This task is generative and supervised/unsupervised.
+     7. **Summarization.** Summarization is the task of reducing a text into a shorter text while keeping most of the important parts of referenced in the text. Both input and out are texts.
+
+             Input: America has changed dramatically during recent years. Not only has the number of 
+                   graduates in traditional engineering disciplines such as mechanical, civil, 
+                   electrical, chemical, and aeronautical engineering declined, but in most of 
+                   the premier American universities engineering curricula now concentrate on 
+                   and encourage largely the study of engineering science.
+             Output: America has changed dramatically during recent years . The 
+                   number of engineering graduates in the U.S. has declined in 
+                   traditional engineering disciplines such as mechanical, civil 
+                   , electrical, chemical, and aeronautical engineering.
+        
+     9. **Text Generation.** Here, by providing a prompt, a model can auto-complete a piece of text by generating the remaining of it. In this task, \\(\mathbf{x}\\), the input variable is a piece of text, and the output variable is some other text related to the input. This task is generative and supervised/unsupervised.
 
              Input: In this course, we will teach you how to
              Output: In this course, we will teach you how to understand and use data flow and data interchange when handling user data.
   
-     9. Text-to-Text Generation
-     10. Fill-Mask
+     10. Text-to-Text Generation
+     11. Fill-Mask
     
    * **Tasks in Speech/Audio.** The input data for this domain include audio and speech files.
      1. Automatic Speech Recognition
