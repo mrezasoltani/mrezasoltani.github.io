@@ -233,7 +233,7 @@ classes: wide
              Output: America has changed dramatically during recent years . The 
                      number of engineering graduates in the U.S. has declined in 
                      traditional engineering disciplines such as mechanical, civil,
-                  electrical, chemical, and aeronautical engineering.
+                     electrical, chemical, and aeronautical engineering.
         
      9. **Text Generation.** Here, by providing a prompt, a model can auto-complete a piece of text by generating the remaining of it. In this task, \\(\mathbf{x}\\), the input variable is a piece of text, and the output variable is some other text related to the input. This task is generative and supervised/unsupervised.
 
