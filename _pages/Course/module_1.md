@@ -203,7 +203,7 @@ classes: wide
              Input: The hotel I spent my time was not clean.
              Output: Negative/0.       
   
-     2. **Named Entity Recognition.** The goal here is to find which parts of the input text correspond to entities such as persons, locations, or organizations. In this task, the input is a piece of text, and \\(mathbf{y}\\), the output variable is the label of different entities in the input text. This classification task is discriminative and supervised. 
+     2. **Named Entity Recognition.** The goal here is to find which parts of the input text correspond to entities such as persons, locations, or organizations. In this task, the input is a piece of text, and \\(\mathbf{y}\\), the output variable is the label of different entities in the input text. This classification task is discriminative and supervised. 
  
              Input: My name is John and I work at Microsoft in Seattle.
              Output: John is a person (PER), Microsoft is an organization (ORG), and Seattle is a location (LOC).
