@@ -213,7 +213,7 @@ classes: wide
              Input: Question="Where do I work?, context: My name is John and I work at Microsoft in Seattle.
              Output: {Score': 0.78, 'Start': 30, 'End': 38, 'Answer': 'Microsoft'}
         
-     5. **Translation.** Translating from one language (e.g., English) to another language (e.g., Persian). The input is a txt in the source language and the output is the desired translation. 
+     5. **Translation.** Translating from one language (e.g., English) to another language (e.g., Persian). The input is a txt from the source language and the output is the desired translation. 
     
              Input: How are you doing, Ali ?
              Output: حالت چطورهست علی ؟
@@ -224,11 +224,16 @@ classes: wide
                    graduates in traditional engineering disciplines such as mechanical, civil, 
                    electrical, chemical, and aeronautical engineering declined, but in most of 
                    the premier American universities engineering curricula now concentrate on 
-                   and encourage largely the study of engineering science.
+                   and encourage largely the study of engineering science. As a result, there 
+                   are declining offerings in engineering subjects dealing with infrastructure, 
+                   the environment, and related issues, and greater concentration on high 
+                   technology subjects, largely supporting increasingly complex scientific 
+                   developments. While the latter is important, it should not be at the expense 
+                   of more traditional engineering.
              Output: America has changed dramatically during recent years . The 
-                   number of engineering graduates in the U.S. has declined in 
-                   traditional engineering disciplines such as mechanical, civil 
-                   , electrical, chemical, and aeronautical engineering.
+                     number of engineering graduates in the U.S. has declined in 
+                     traditional engineering disciplines such as mechanical, civil,
+                  electrical, chemical, and aeronautical engineering.
         
      9. **Text Generation.** Here, by providing a prompt, a model can auto-complete a piece of text by generating the remaining of it. In this task, \\(\mathbf{x}\\), the input variable is a piece of text, and the output variable is some other text related to the input. This task is generative and supervised/unsupervised.
 
