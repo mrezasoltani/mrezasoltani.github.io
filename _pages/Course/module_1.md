@@ -155,42 +155,42 @@ classes: wide
              <em>Classifying cat and dog images.</em>
         </p>
         
-     2. **Object Detection.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to detect, and \\(y\\), the output variable is the location of objects in the image. Hence, we have a regression task. Please note that sometimes object recognition is used to indicate both the classification and detection of an object (In this case we have a hybrid task, including both classification and regression). In this sense, the output variable also includes the type (class) of the detected objects. This task is discriminative and supervised.
+     2. **Object Detection.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to detect, and \\(\mathbf{y}\\), the output variable is the location of objects in the image. Hence, we have a regression task. Please note that sometimes object recognition is used to indicate both the classification and detection of an object (In this case we have a hybrid task, including both classification and regression). In this sense, the output variable also includes the type (class) of the detected objects. This task is discriminative and supervised.
       
         <p align="center">
-         <img width="706" alt="Screenshot 2023-07-16 at 11 26 45 AM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/ddaf1653-2ab9-4984-98b6-2b6effbec736">
+         <img width="706" alt="Screenshot 2023-07-16 at 11 26 45 AM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/a69ab827-d8dc-40fd-8cb3-d2baa5255d56")
              <br>
              <em>Object detection.</em>
         </p>
   
-     3. **Image Segmentation.** This task is similar to object recognition, but one needs a very precise edge/contour detection that will segment and label all pixels that belong to an object. Here \\(\mathbf{x}\\), the input variable is an image with objects we want to segment, and \\(y\\), the output variable is the image of the segmentation process (i.e., an image with labeled all the pixels that belong to every object). There are two types of segmentation: Instance Segmentation and Semantic Segmentation. The instance segmentation outputs an image by separating every single object instance, while in semantic segmentation, the pixel of every instance of an object is labeled with the same class label. This task is considered a hybrid task, including both classification and regression, discriminative and supervised.
+     3. **Image Segmentation.** This task is similar to object recognition, but one needs a very precise edge/contour detection that will segment and label all pixels that belong to an object. Here \\(\mathbf{x}\\), the input variable is an image with objects we want to segment, and \\(\mathbf{y}\\), the output variable is the image of the segmentation process (i.e., an image with labeled all the pixels that belong to every object). There are two types of segmentation: Instance Segmentation and Semantic Segmentation. The instance segmentation outputs an image by separating every single object instance, while in semantic segmentation, the pixel of every instance of an object is labeled with the same class label. This task is considered a hybrid task, including both classification and regression, discriminative and supervised.
 
         <p align="center">
-        <img width="770" alt="Screenshot 2023-07-16 at 12 31 19 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/4564c317-7fb7-4f2b-a56a-9325fc8737b7">
+        <img width="770" alt="Screenshot 2023-07-16 at 12 31 19 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/0f42d816-9ea2-4a69-841b-4f53fd30055b">
              <br>
              <em>Object detection [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
      
-     4. **Image-to-Image** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
+     4. **Image-to-Image** Here, the goal is to convert an input image, \\(\mathbf{x}\\) to an output image, \\(\mathbf{y}\\).
 
         <p align="center">
-        <img width="806" alt="Screenshot 2023-07-16 at 12 50 10 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/35f577f0-7a44-4731-bba7-1ea1b725c8ee">
+        <img width="806" alt="Screenshot 2023-07-16 at 12 50 10 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/6eb093e7-b414-411d-9daf-4ae0285853c2">
              <br>
              <em>Image-to-Image task. Making girls show two fingers [ref](https://osu-nlp-group.github.io/MagicBrush/).</em>
         </p>
      
-     5. **Image Generation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
+     5. **Image Generation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(\mathbf{y}\\), the output variable is the label of different objects.
     
         <p align="center">
-        <img width="628" alt="Screenshot 2023-07-16 at 1 07 42 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/58dd864d-76ab-4f6b-b060-4e8dbf86d210">
+        <img width="628" alt="Screenshot 2023-07-16 at 1 07 42 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/1138fbce-0bbf-4503-8b0f-f425fbaeacb0">
              <br>
              <em>Image Generation.</em>
         </p>
  
-     6. **Depth Estimation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(y\\), the output variable is the label of different objects.
+     6. **Depth Estimation.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to classify, and \\(\mathbf{y}\\), the output variable is the label of different objects.
 
         <p align="center">
-        <img width="771" alt="Screenshot 2023-07-16 at 3 46 21 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/9a5af8af-6c82-4bf4-9858-b9c5a3d42ed0">
+        <img width="771" alt="Screenshot 2023-07-16 at 3 46 21 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/53898018-d0e7-4ccf-be30-88ccc3221eba">
              <br>
              <em>Image depth estimation [P. Hambarde et al., 2019].</em>
         </p>
