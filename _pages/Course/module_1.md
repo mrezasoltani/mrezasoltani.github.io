@@ -34,7 +34,7 @@ classes: wide
          <p align="center">
             <img width="400" alt="Screenshot 2023-07-10 at 9 26 53 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/44375613-fbb2-4f22-a502-fbed168e471a">
             <br>
-             [MNIST dataset](http://yann.lecun.com/exdb/mnist/)
+             <em>MNIST dataset [http://yann.lecun.com/exdb/mnist/].</em>
          </p>
 
 ### Unsupervised Learning
