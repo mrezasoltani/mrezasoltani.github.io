@@ -155,7 +155,7 @@ classes: wide
              <em>Classifying cat and dog images.</em>
         </p>
         
-     2. **Object Detection.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to detect, and \\(\mathbf{y}\\), the output variable is the location of objects in the image. Hence, we have a regression task. Please note that sometimes object recognition is used to indicate both the classification and detection of an object (In this case we have a hybrid task, including both classification and regression). In this sense, the output variable also includes the type (class) of the detected objects. This task is discriminative and supervised.
+     2. **Object Detection.** Here \\(\mathbf{x}\\), the input variable is an image with objects we want to detect, and \\(\mathbf{y}\\) (please note we are using a bold letter to indicate that the output is a vector), the output variable is the location of objects in the image. Hence, we have a regression task. Please note that sometimes object recognition is used to indicate both the classification and detection of an object (In this case we have a hybrid task, including both classification and regression). In this sense, the output variable also includes the type (class) of the detected objects. This task is discriminative and supervised.
       
         <p align="center">
          <img width="706" alt="Screenshot 2023-07-16 at 11 26 45 AM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/a69ab827-d8dc-40fd-8cb3-d2baa5255d56">
@@ -168,7 +168,7 @@ classes: wide
         <p align="center">
         <img width="770" alt="Screenshot 2023-07-16 at 12 31 19 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/0f42d816-9ea2-4a69-841b-4f53fd30055b">
              <br>
-             <em>Object detection [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
+             <figcaption>Object detection [ref](https://keras.io/examples/vision/image_classification_from_scratch/).<figcaption>
         </p>
      
      4. **Image-to-Image** Here, the goal is to convert an input image, \\(\mathbf{x}\\) to an output image, \\(\mathbf{y}\\).
