@@ -213,15 +213,15 @@ classes: wide
              Input: Question="Where do I work?, context: My name is John and I work at Microsoft in Seattle.
              Output: {Score': 0.78, 'Start': 30, 'End': 38, 'Answer': 'Microsoft'}
         
-     5. **Translation.** Translating from one language (e.g., English) to another language (e.g., Persian). The input is a txt from the source language and the output is the desired translation. 
+     5. **Translation.** Translating from one language (e.g., English) to another language (e.g., Persian). The input is a text from the source language and the output is the desired translation. 
     
              Input: How are you doing, Ali ?
              Output: حالت چطورهست، علی ؟
 
-     7. **Summarization.** Summarization is the task of reducing a text into a shorter text while keeping most of the important parts of referenced in the text. Both input and out are texts.
+     7. **Summarization.** Summarization is the task of reducing a text into a shorter text while keeping most of the important parts of referenced in the text. Both input and output are texts. This may be a supervised and discriminative task.
 
-             Input: America has changed dramatically during recent years. Not only has the number of 
-                   graduates in traditional engineering disciplines such as mechanical, civil, 
+             Input: America has changed dramatically during recent years. Not only has the number
+                   of graduates in traditional engineering disciplines such as mechanical, civil, 
                    electrical, chemical, and aeronautical engineering declined, but in most of 
                    the premier American universities engineering curricula now concentrate on 
                    and encourage largely the study of engineering science. As a result, there 
@@ -240,8 +240,10 @@ classes: wide
              Input: In this course, we will teach you how to
              Output: In this course, we will teach you how to understand and use data flow and data interchange when handling user data.
   
-     10. Text-to-Text Generation
-     11. Fill-Mask
+     10. **Fill-Mask.** Here, the goal is to fill in the blanks in a given text. The input is a text with a word(s) masked and the output is the desired missing word. This task is typically a generative task and supervised.
+     
+             Input: This course will teach you about <mask> models.
+             Output: <mask> = Machine learning
     
    * **Tasks in Speech/Audio.** The input data for this domain include audio and speech files.
      1. Automatic Speech Recognition
