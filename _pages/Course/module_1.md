@@ -167,6 +167,7 @@ classes: wide
 
         <p align="center">
         <img width="770" alt="Screenshot 2023-07-16 at 12 31 19 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/0f42d816-9ea2-4a69-841b-4f53fd30055b">
+             <br>
              <em>Object detection [ref](https://keras.io/examples/vision/image_classification_from_scratch/).</em>
         </p>
      
