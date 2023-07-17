@@ -198,18 +198,34 @@ classes: wide
     
    * **Tasks in Natural Language Processing (NLP).** The input data for this domain includes text coming from books, papers, chats, blogs, websites, transcriptions, emails, etc. Many of the following examples are from [Hugging Face](https://huggingface.co/).
      
-     1. Text Classification (e.g., sentiment analysis)
-     2. Named Entity Recognition
-     3. Question Answering
-     4. Translation
-     5. Summarization
-     6. **Text Generation.** Here, by providing a prompt, a model can auto-complete a piece of text by generating the remaining of it. In this task, \\(\mathbf{x}\\), the input variable is a piece of text, and \\(y\\), the output variable is some other text related to the input. This task is generative and supervised/unsupervised.
+     1. **Text Classification (e.g., sentiment analysis).** Here the goal is to obtain the sentiment of a review (e.g., positive or negative), detecting if an email is spam, or determining if a sentence is grammatically correct. Here,  the input is a text, and the output variable is the class label we are looking for. This classification task is discriminative and supervised. 
+      
+             Input: The hotel I spent my time was not clean.
+             Output: Negative/0.       
+  
+     2. **Named Entity Recognition.** The goal here is to find which parts of the input text correspond to entities such as persons, locations, or organizations. In this task, the input is a piece of text, and \\(mathbf{y}\\), the output variable is the label of different entities in the input text. This classification task is discriminative and supervised. 
+ 
+             Input: My name is John and I work at Microsoft in Seattle.
+             Output: John is a person (PER), Microsoft is an organization (ORG), and Seattle is a location (LOC).
+  
+     3. **Question Answering.** Here, we are looking for answering questions using information from a given context. The input is a text (context), including some information for the answer, and another text for the question. The output variable is another text with the answer to the asked question. This is a discriminative/genrative task and typically supervised task.
+        
+             Input: Question="Where do I work?, context: My name is John and I work at Microsoft in Seattle.
+             Output: {Score': 0.78, 'Start': 30, 'End': 38, 'Answer': 'Microsoft'}
+        
+     5. **Translation.** Translating from one language (e.g., English) to another language (e.g., Persian). The input is a txt in the source language and the output is the desired translation. 
+    
+             Input: How are you doing, Ali ?
+             Output: حالت چطورهست علی ؟
+
+     7. Summarization
+     8. **Text Generation.** Here, by providing a prompt, a model can auto-complete a piece of text by generating the remaining of it. In this task, \\(\mathbf{x}\\), the input variable is a piece of text, and the output variable is some other text related to the input. This task is generative and supervised/unsupervised.
 
              Input: In this course, we will teach you how to
              Output: In this course, we will teach you how to understand and use data flow and data interchange when handling user data.
   
-     7. Text-to-Text Generation
-     8. Fill-Mask
+     9. Text-to-Text Generation
+     10. Fill-Mask
     
    * **Tasks in Speech/Audio.** The input data for this domain include audio and speech files.
      1. Automatic Speech Recognition
