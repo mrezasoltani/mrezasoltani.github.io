@@ -244,7 +244,8 @@ classes: wide
      
              Input: This course will teach you about <mask> models.
              Output: <mask> = Machine learning
-    
+
+
    * **Tasks in Speech/Audio.** The input data for this domain include audio and speech files.
      1. Automatic Speech Recognition
      2. Text-to-Speech
