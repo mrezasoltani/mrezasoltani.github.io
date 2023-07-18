@@ -294,6 +294,11 @@ classes: wide
 
      7. **Speech Diarization.**
     
+         <p align="center">
+          <img width="1000" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/49b217c7-8fe5-4a3a-9f12-e709f5a9a7b1">
+          <br>
+             <em>Speech Diarization [https://www.assemblyai.com/].</em>
+          </p>
 
 
      8. **Intent Classification.**
