@@ -271,7 +271,7 @@ classes: wide
          - In Source Separation, the goal is to separate multiple speeches from their superposition.
         
           <p align="center">
-          <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src=https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/3bb9cfd9-a533-49ed-bd76-e068e31de596">
+          <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/3bb9cfd9-a533-49ed-bd76-e068e31de596">
           <br>
              <em>Speech separation. The input is the superposition of two sources, and the output contains two sources individually.</em>
           </p>
