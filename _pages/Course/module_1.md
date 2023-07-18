@@ -252,7 +252,7 @@ classes: wide
 
           <p align="center">
              <img width="725" alt="Screenshot 2023-07-17 at 9 45 44 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/be762f1b-21a0-4825-a4ff-dd54011fa326">
-             <be>
+             <br>
              <em>Text-to-Speech (ASR).</em>
           </p>
         
