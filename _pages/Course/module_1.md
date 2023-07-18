@@ -292,7 +292,7 @@ classes: wide
           </p>
   
 
-     7. **Speech Diarization.** who spoke when? Speaker diarization is the task of splitting audio based on the speaker's identity.
+     7. **Speech Diarization.** Who spoke when? Speaker diarization is the task of splitting audio based on the speaker's identity.
     
          <p align="center">
           <img width="1200" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/6efeeec7-d262-4a38-9da0-fc654ade0553">
