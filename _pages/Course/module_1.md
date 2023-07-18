@@ -250,11 +250,15 @@ classes: wide
      
      1. **Automatic Speech Recognition (ASR).** The goal of ASR is to transcribe speech audio recordings into text. ASR task has many practical applications, from creating closed captions for videos to enabling voice commands for virtual assistants. The input data is an audio file and the output is its transcription text. This task is a supervised and discriminative task.
 
-
+          <p align="center">
+             <img width="747" alt="Screenshot 2023-07-17 at 9 31 16 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/420b17ee-799d-45bb-9d87-22475dbf2650">
+               <br>
+                  <em>Text-to-Speech (ASR).</em>
+          </p>
         
      2. **Text-to-Speech.**
-
-
+          
+          
   
      3. **Audio-to-Audio.**
  
