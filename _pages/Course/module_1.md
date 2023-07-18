@@ -246,15 +246,40 @@ classes: wide
              Output: <mask> = Machine learning
 
 
-   * **Tasks in Speech/Audio.** The input data for this domain include audio and speech files.
-     1. Automatic Speech Recognition
-     2. Text-to-Speech
-     3. Audio-to-Audio
-     4. Audio Classification
-     5. Voice Activity Detection
-     6. Source Separation
-     7. Speech Diarization
-     8. Intent Classification
+   * **Tasks in Speech/Audio.** The input data for this domain include audio and speech files, coming from recorded speeches, meetings, movies, news, call centers, etc.
+     
+     1. **Automatic Speech Recognition (ASR).** The goal of ASR is to transcribe speech audio recordings into text. ASR task has many practical applications, from creating closed captions for videos to enabling voice commands for virtual assistants. The input data is an audio file and the output is its transcription text. This task is a supervised and discriminative task.
+
+
+        
+     2. **Text-to-Speech.**
+
+
+  
+     3. **Audio-to-Audio.**
+ 
+
+
+     4. **Audio Classification.**
+    
+
+  
+     5. **Voice Activity Detection.**
+    
+
+  
+     6. **Source Separation.**
+    
+
+
+     7. **Speech Diarization.**
+    
+
+
+     8. **Intent Classification.**
+
+
+
 
    * **Tasks in Multimodal data.** The input data for this type can be any of the above modalities or other things (e.g., time series).
      1. Text-to-Image
