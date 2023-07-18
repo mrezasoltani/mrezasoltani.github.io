@@ -267,20 +267,23 @@ classes: wide
              <em>Text-to-Speech.</em>
         </p>
   
-     3. **Audio-to-Audio.**
- 
+     3. **Audio-to-Audio.** This is a family of tasks in which the input is an audio, and the output is one or multiple generated audios. Some example tasks are **speech enhancement** and **Source Separation (SS).**. Theses task are regression tasks and can be discriminative/generative and supervised/unsupervised.
+         - In Source Separation, the goal is to separate multiple speeches from their superposition.
+        
+          <p align="center">
+          <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src=https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/3bb9cfd9-a533-49ed-bd76-e068e31de596">
+          <br>
+             <em>Speech separation. The input is the superposition of two sources, and the output contains two sources individually.</em>
+          </p>
 
 
-     4. **Audio Classification.**
+
+     5. **Audio Classification.**
     
 
   
-     5. **Voice Activity Detection.**
-    
-
+     6. **Voice Activity Detection.**
   
-     6. **Source Separation.**
-    
 
 
      7. **Speech Diarization.**
