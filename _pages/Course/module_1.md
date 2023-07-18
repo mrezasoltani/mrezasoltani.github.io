@@ -283,7 +283,7 @@ classes: wide
     
 
   
-     6. **Voice Activity Detection (VAD).**- In VAD, the goal is to determine which part of a speech signal is is an actual speech (it is not silent, noise, etc). The input is the speech signal, and the output is a binary mask for each time sample (0-1 signal in time). This is typically a supervised and dsicriminative classification task.
+     6. **Voice Activity Detection (VAD).**- In VAD, the goal is to determine which part of a speech signal is an actual speech (it is not silent, noise, etc.). The input is the speech signal, and the output is a binary mask for each time sample (0-1 signal in time). This is typically a supervised and discriminative classification task.
        
          <p align="center">
           <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/66a738f4-5d74-4834-b6b3-607958216b4e">
