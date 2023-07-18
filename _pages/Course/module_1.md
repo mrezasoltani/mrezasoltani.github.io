@@ -248,17 +248,21 @@ classes: wide
 
    * **Tasks in Speech/Audio.** The input data for this domain include audio and speech files, coming from recorded speeches, meetings, movies, news, call centers, etc.
      
-     1. **Automatic Speech Recognition (ASR).** The goal of ASR is to transcribe speech audio recordings into text. ASR task has many practical applications, from creating closed captions for videos to enabling voice commands for virtual assistants. The input data is an audio file and the output is its transcription text. This task is a supervised and discriminative task.
+     1. **Automatic Speech Recognition (ASR).** The goal of ASR is to transcribe speech audio recordings into text. ASR task has many practical applications, from creating closed captions for videos to enabling voice commands for virtual assistants. The input data is an audio file and the output is its transcription text. This is a supervised and discriminative task.
 
         <p align="center">
         <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/878033d2-4584-40a8-aa0a-acc61bf23b70">
              <br>
-             <em>Text-to-Speech (ASR).</em>
+             <em>Speech-to-Text (ASR).</em>
         </p>
         
-     2. **Text-to-Speech.**
+     2. **Text-to-Speech.** This is the reverse task of ASR. given a text, we want to generate a similar human speech. This is typically a supervised and discriminative task.
           
-          
+          <p align="center">
+          <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b9df411e-61d5-4693-a1f4-e84ae4ff6cc5">
+          <br>
+             <em>Text-to-Speech.</em>
+        </p>
   
      3. **Audio-to-Audio.**
  
