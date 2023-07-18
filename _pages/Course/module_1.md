@@ -271,20 +271,26 @@ classes: wide
          - In Source Separation, the goal is to separate multiple speeches from their superposition.
         
           <p align="center">
-          <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/3bb9cfd9-a533-49ed-bd76-e068e31de596">
+          <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/8ffd1f55-79a6-427f-b284-a3664a866bdf">
           <br>
              <em>Speech separation. The input is the superposition of two sources, and the output contains two sources individually.</em>
           </p>
-
+          
+         
 
 
      5. **Audio Classification.**
     
 
   
-     6. **Voice Activity Detection.**
+     6. **Voice Activity Detection (VAD).**- In VAD, the goal is to determine which part of a speech signal is is an actual speech (it is not silent, noise, etc). The input is the speech signal, and the output is a binary mask for each time sample (0-1 signal in time). This is typically a supervised and dsicriminative classification task.
+       
+         <p align="center">
+          <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/66a738f4-5d74-4834-b6b3-607958216b4e">
+          <br>
+             <em>Speech separation. The input is the superposition of two sources, and the output contains two sources individually.</em>
+          </p>
   
-
 
      7. **Speech Diarization.**
     
