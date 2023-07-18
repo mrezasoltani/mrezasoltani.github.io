@@ -275,6 +275,8 @@ classes: wide
           <br>
              <em>Speech separation. The input is the superposition of two sources, and the output contains two sources individually.</em>
           </p>
+ 
+          - In Speech Enhancement, the goal is to clean (denoise) an audio, so it can be heard and possibly understood in a better way.
           
      4. **Voice Activity Detection (VAD).**- In VAD, the goal is to determine which part of a speech signal is an actual speech (it is not silent, noise, etc.). The input is the speech signal, and the output is a binary mask for each time sample (0-1 signal in time). This is typically a supervised and discriminative classification task.
        
