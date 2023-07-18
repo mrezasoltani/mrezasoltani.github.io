@@ -276,14 +276,7 @@ classes: wide
              <em>Speech separation. The input is the superposition of two sources, and the output contains two sources individually.</em>
           </p>
           
-         
-
-
-     5. **Audio Classification.**
-    
-
-  
-     6. **Voice Activity Detection (VAD).**- In VAD, the goal is to determine which part of a speech signal is an actual speech (it is not silent, noise, etc.). The input is the speech signal, and the output is a binary mask for each time sample (0-1 signal in time). This is typically a supervised and discriminative classification task.
+     4. **Voice Activity Detection (VAD).**- In VAD, the goal is to determine which part of a speech signal is an actual speech (it is not silent, noise, etc.). The input is the speech signal, and the output is a binary mask for each time sample (0-1 signal in time). This is typically a supervised and discriminative classification task.
        
          <p align="center">
           <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/66a738f4-5d74-4834-b6b3-607958216b4e">
@@ -292,7 +285,7 @@ classes: wide
           </p>
   
 
-     7. **Speech Diarization.** Who spoke when? Speaker diarization is the task of splitting audio based on the speaker's identity.
+     5. **Speech Diarization.** Who spoke when? Speaker diarization is the task of splitting audio based on the speaker's identity.
     
          <p align="center">
           <img width="1200" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/6efeeec7-d262-4a38-9da0-fc654ade0553">
@@ -300,11 +293,13 @@ classes: wide
              <em>Speech Diarization [https://www.assemblyai.com/].</em>
           </p>
 
+     6. **Intent Classification.** Here, the goal is classifying the input speech according to its intent. Typically, this task is modeled as a classification task which labels each input audio sample with a set of non-binary properties as shown in the following figure.
 
-     8. **Intent Classification.**
-
-
-
+          <p align="center">
+          <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/89e59100-738f-43fb-9051-55c96d483a7b">
+          <br>
+             <em>A multiclass-multioutput classification (aka multitask classification).</em>
+          </p>
 
    * **Tasks in Multimodal data.** The input data for this type can be any of the above modalities or other things (e.g., time series).
      1. Text-to-Image
