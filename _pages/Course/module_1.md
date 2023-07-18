@@ -57,7 +57,7 @@ classes: wide
    * Examples of discriminative models include Linear Regression, Logistic Regression, SVM, etc.
    * Examples of generative models include Linear Discriminant Analysis (LDA), Naive Bayes, Conditional GANs, Optical Flow Models (motion of objects in an image or a video sequence), etc.
 
-### All Combinations Are Possible !!!
+### All Combinations !!!
 
 * There is a misconception that all generative models are unsupervised, or all discriminative models are supervised. This is obviously an incorrect statement.
    
