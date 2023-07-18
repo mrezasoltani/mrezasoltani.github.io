@@ -259,7 +259,7 @@ classes: wide
              <em>Speech-to-Text (ASR).</em>
         </p>
         
-     2. **Text-to-Speech.** This is the reverse task of ASR. given a text, we want to generate a similar human speech. This is typically a supervised and discriminative task.
+     2. **Text-to-Speech.** This is the reverse task of ASR. Given a text, we want to generate a similar human speech. This is typically a supervised and discriminative task.
           
           <p align="center">
           <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b9df411e-61d5-4693-a1f4-e84ae4ff6cc5">
