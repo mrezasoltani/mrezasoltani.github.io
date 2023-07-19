@@ -312,7 +312,7 @@ classes: wide
              <em>Text-to-Image [https://imagen.research.google/].</em>
           </p>
 
-     2. Image-to-Text
+     2. **Image-to-Text.**
  
          <p align="center">
           <img width="776" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b9cfc7b4-d2af-418a-94d3-3490b1479fbf">
@@ -320,5 +320,11 @@ classes: wide
              <em>Image-to-Text [A. Das and d S. Saha, 2020].</em>
           </p>
         
-     4. Text-to-Video
-     6. Graph Machine Learning
+     4. **Visual Question Answering (VQA).** This is a task in computer vision that involves answering questions about an image. The goal of VQA is to learn a model to understand the content of an image and answer questions about it in natural language.
+    <p align="center">
+          <img width="776" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/9b3f352e-9047-4da1-91ea-69fefb973b06">
+          <br>
+             <em>Visual Question Answering (VQA) [https://huggingface.co/tasks/visual-question-answering].</em>
+          </p>
+
+     5. **Graph Machine Learning (GML).** A graph is a description of items linked by relations such as social networks, molecules, knowledge graphs. Graph machine learning (GML) is the application of machine learning to graphs specifically for predictive and prescriptive tasks. GML has a variety of use cases across supply chain, fraud detection, recommendations, customer 360, drug discovery, etc. One of GML’s primary purposes is to compress large sparse graph data structures to enable feasible prediction and inference. GML can be accomplished either by supervised methods or using unsupervised approaches. One example of GML is to predict interactions or collaborations between employees in an organization. This is called _link prediction_ problem. Here, the objective is to predict whether there would be a link between any two unconnected nodes. This is classification/regression supervised and discrimination task.
