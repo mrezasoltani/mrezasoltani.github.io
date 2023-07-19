@@ -304,10 +304,11 @@ classes: wide
           </p>
 
    * **Tasks in Multimodal data.** The input data for this type can be any of the above modalities or other things (e.g., time series).
-     1. Text-to-Image
+     
+     1. **Text-to-Image.**
         
           <p align="center">
-          <img width="790" alt="Screenshot 2023-07-18 at 10 58 05 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/5a0ebd06-2e98-44f1-99a4-22122e10d381">
+          <img width="790" alt="Screenshot 2023-07-18 at 10 58 05 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/0f8ebf9c-2445-459d-8b37-8ecbff1588a9">
            <br>
              <em>Text-to-Image [https://imagen.research.google/].</em>
           </p>
