@@ -322,8 +322,8 @@ classes: wide
         
      4. **Visual Question Answering (VQA).** This is a task in computer vision that involves answering questions about an image. The goal of VQA is to learn a model to understand the content of an image and answer questions about it in natural language.
     <p align="center">
-          <img width="776" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/9b3f352e-9047-4da1-91ea-69fefb973b06">
-          <br>
+          <img width="776" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/cc054c7d-fb3c-4519-b80d-cd1e80c80a78">
+
              <em>Visual Question Answering (VQA) [https://huggingface.co/tasks/visual-question-answering].</em>
           </p>
 
