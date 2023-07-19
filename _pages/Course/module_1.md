@@ -254,7 +254,7 @@ classes: wide
      1. **Automatic Speech Recognition (ASR).** The goal of ASR is to transcribe speech audio recordings into text. ASR task has many practical applications, from creating closed captions for videos to enabling voice commands for virtual assistants. The input data is an audio file and the output is its transcription text. This is a supervised and discriminative task.
 
         <p align="center">
-        <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/878033d2-4584-40a8-aa0a-acc61bf23b70">
+        <img width="700" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b274ac5e-1790-4301-ba50-bbc16d261b82">
              <br>
              <em>Speech-to-Text (ASR).</em>
         </p>
@@ -262,7 +262,7 @@ classes: wide
      2. **Text-to-Speech.** This is the reverse task of ASR. Given a text, we want to generate a similar human speech. This is typically a supervised and discriminative task.
           
           <p align="center">
-          <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b9df411e-61d5-4693-a1f4-e84ae4ff6cc5">
+          <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/349a30b0-69bf-4edd-a025-f83f407963f1">
           <br>
              <em>Text-to-Speech.</em>
         </p>
@@ -308,7 +308,7 @@ classes: wide
      1. **Text-to-Image.**
         
           <p align="center">
-          <img width="790" alt="Screenshot 2023-07-18 at 10 58 05 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b753ba77-1016-443d-9cd9-96e03a1ca55c">
+          <img width="690" alt="Screenshot 2023-07-18 at 10 58 05 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b753ba77-1016-443d-9cd9-96e03a1ca55c">
            <br>
              <em>Text-to-Image [https://imagen.research.google/].</em>
           </p>
@@ -316,14 +316,14 @@ classes: wide
      2. **Image-to-Text.**
  
          <p align="center">
-          <img width="776" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b9cfc7b4-d2af-418a-94d3-3490b1479fbf">
+          <img width="700" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b9cfc7b4-d2af-418a-94d3-3490b1479fbf">
            <br>
              <em>Image-to-Text [A. Das and d S. Saha, 2020].</em>
           </p>
         
      4. **Visual Question Answering (VQA).** This is a task in computer vision that involves answering questions about an image. The goal of VQA is to learn a model to understand the content of an image and answer questions about it in natural language.
          <p align="center">
-          <img width="776" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/cc054c7d-fb3c-4519-b80d-cd1e80c80a78">
+          <img width="700" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/cc054c7d-fb3c-4519-b80d-cd1e80c80a78">
             <br>
              <em>Visual Question Answering (VQA) [https://huggingface.co/tasks/visual-question-answering].</em>
           </p>
@@ -335,4 +335,11 @@ classes: wide
           <br>
              <em>Predicting interactions between people. [https://www.analyticsvidhya.com/blog/].</em>
         </p>
+       
+   * **Other Tasks.** Here we consider tw more tasks in RL and recommendation systems.
+     
+     1. **The Cart-Pole problem using Reinformcement Learning.**
+    
 
+
+     2. **Netflix Movie Recommendation Problem.**
