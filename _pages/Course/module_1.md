@@ -357,7 +357,7 @@ classes: wide
       3. **Predicting Stock Prices.**
 
          <p align="center">
-          <img width="600" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b69ba691-1a71-4bad-8fe5-27ee164cddc6">
+          <img width="500" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b69ba691-1a71-4bad-8fe5-27ee164cddc6">
          <br>
              <em>Predicting Tesla stock price [https://towardsdatascience.com/lstm-time-series-forecasting-predicting-stock-prices-using-an-lstm-model-6223e9644a2f].</em>
          </p>
