@@ -305,7 +305,15 @@ classes: wide
 
    * **Tasks in Multimodal data.** The input data for this type can be any of the above modalities or other things (e.g., time series).
      1. Text-to-Image
-     2. Image-to-Text
-     3. Text-to-Video
-     4. Visual Question Answering
-     5. Graph Machine Learning
+        
+          <p align="center">
+          <iwidth="790" alt="Screenshot 2023-07-18 at 10 58 05 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/5a0ebd06-2e98-44f1-99a4-22122e10d381">
+           <br>
+             <em>Text-to-Image [https://imagen.research.google/].</em>
+          </p>
+
+        
+     3. Image-to-Text
+     4. Text-to-Video
+     5. Visual Question Answering
+     6. Graph Machine Learning
