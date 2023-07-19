@@ -254,7 +254,7 @@ classes: wide
      1. **Automatic Speech Recognition (ASR).** The goal of ASR is to transcribe speech audio recordings into text. ASR task has many practical applications, from creating closed captions for videos to enabling voice commands for virtual assistants. The input data is an audio file and the output is its transcription text. This is a supervised and discriminative task.
 
         <p align="center">
-        <img width="700" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b274ac5e-1790-4301-ba50-bbc16d261b82">
+        <img width="700" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/a4a6743e-959a-46f2-9c76-e796cd05de71">
              <br>
              <em>Speech-to-Text (ASR).</em>
         </p>
@@ -262,7 +262,7 @@ classes: wide
      2. **Text-to-Speech.** This is the reverse task of ASR. Given a text, we want to generate a similar human speech. This is typically a supervised and discriminative task.
           
           <p align="center">
-          <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/349a30b0-69bf-4edd-a025-f83f407963f1">
+          <img width="690" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/349a30b0-69bf-4edd-a025-f83f407963f1">
           <br>
              <em>Text-to-Speech.</em>
         </p>
@@ -271,7 +271,7 @@ classes: wide
          - In Source Separation, the goal is to separate multiple speeches from their superposition.
         
           <p align="center">
-          <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/8ffd1f55-79a6-427f-b284-a3664a866bdf">
+          <img width="800" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/8ffd1f55-79a6-427f-b284-a3664a866bdf">
           <br>
              <em>Speech separation. The input is the superposition of two sources, and the output contains two sources individually.</em>
           </p>
@@ -346,4 +346,11 @@ classes: wide
              <em>A Cart-Pole Problem. We can move the cart either to the left or right. When we move the cart to the left, the pole tends to fall to the right side, and vice versa for the other direction.</em>
          </p>
 
-     1. **Netflix Movie Recommendation Problem.**
+     2. **Netflix Movie Recommendation Problem.**
+    
+         <p align="center">
+          <img width="600" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/1e3e8eed-0ae2-4616-a7fd-06cade2bebb0">
+         <br>
+             <em>Reviewing 5 movies by 4 users.Given avialble revies what will be the votes for the "?".</em>
+         </p>
+
