@@ -312,8 +312,13 @@ classes: wide
              <em>Text-to-Image [https://imagen.research.google/].</em>
           </p>
 
+     2. Image-to-Text
+ 
+         <p align="center">
+          <img width="776" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b9cfc7b4-d2af-418a-94d3-3490b1479fbf">
+           <br>
+             <em>Image-to-Text [A. Das and d S. Saha, 2020].</em>
+          </p>
         
-     3. Image-to-Text
      4. Text-to-Video
-     5. Visual Question Answering
      6. Graph Machine Learning
