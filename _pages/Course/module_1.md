@@ -328,3 +328,10 @@ classes: wide
           </p>
 
      5. **Graph Machine Learning (GML).** A graph is a description of items linked by relations such as social networks, molecules, knowledge graphs. Graph machine learning (GML) is the application of machine learning to graphs specifically for predictive and prescriptive tasks. GML has a variety of use cases across supply chain, fraud detection, recommendations, customer 360, drug discovery, etc. One of GML’s primary purposes is to compress large sparse graph data structures to enable feasible prediction and inference. GML can be accomplished either by supervised methods or using unsupervised approaches. One example of GML is to predict interactions or collaborations between employees in an organization. This is called _link prediction_ problem. Here, the objective is to predict whether there would be a link between any two unconnected nodes. This is classification/regression supervised and discrimination task.
+
+        <p align="center">
+          <img width="776" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/47f5fcf8-01cf-410f-86f6-90f930e145d5">
+          <br>
+             <em>Predicting interactions between people. [https://www.analyticsvidhya.com/blog/].</em>
+        </p>
+
