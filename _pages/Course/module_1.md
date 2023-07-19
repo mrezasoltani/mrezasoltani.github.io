@@ -307,7 +307,7 @@ classes: wide
      1. Text-to-Image
         
           <p align="center">
-          <iwidth="790" alt="Screenshot 2023-07-18 at 10 58 05 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/5a0ebd06-2e98-44f1-99a4-22122e10d381">
+          <img width="790" alt="Screenshot 2023-07-18 at 10 58 05 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/5a0ebd06-2e98-44f1-99a4-22122e10d381">
            <br>
              <em>Text-to-Image [https://imagen.research.google/].</em>
           </p>
