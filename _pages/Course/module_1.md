@@ -345,10 +345,10 @@ classes: wide
        
    * **Other Tasks.** Here we consider two more tasks in RL and recommendation systems.
      
-     1. **The Cart-Pole problem using Reinformcement Learning.** Cart-Pole problem is an inverted pendulum problem where a rod/stick is balanced upright on a cart. The goal is to learn an agent/learner to keep the stick from falling over by moving the cart right or left. At each timestep, if the agent can hold the stick upright, it receievs a positive reward (e.g., +1); otherwise, it receives a negative reward (e.g., -1). Using RL, The objective is to maximize the total reward by preventing the stick from falling over.
+     1. **The Cart-Pole problem using Reinformcement Learning.** The Cart-Pole problem is an inverted pendulum problem where a rod/stick is balanced upright on a cart. The goal is to learn an agent/learner to keep the stick from falling over by moving the cart right or left. At each timestep, if the agent can hold the stick upright, it receievs a positive reward (e.g., +1); otherwise, it receives a negative reward (e.g., -1). Using RL, The objective is to maximize the total reward by preventing the stick from falling over.
  
          <p align="center">
-          <img width="700" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/0fb960ef-95b6-49e2-9864-7c965fc2d511">
+          <img width="600" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/0fb960ef-95b6-49e2-9864-7c965fc2d511">
          <br>
              <em>A Cart-Pole Problem. We can move the cart either to the left or right. When we move the cart to the left, the pole tends to fall to the right side, and vice versa for the other direction.</em>
          </p>
