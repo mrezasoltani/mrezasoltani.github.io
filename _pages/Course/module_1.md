@@ -23,7 +23,7 @@ classes: wide
   1. **Regression:** In regression problems, the output variables are continuous, i.e., \\(y_i \in \mathbb{R}\\) or \\(y_i \in \mathbb{C}\\) for \\(i=1,2,\dots, N\\).
   2. **Classification:** In classification problems, the output variables are discrete, and they belong to a finite set (i.e., a set with a finite number of elements). That is, \\(y_i\\) \\(\in\\) \\(\\{1,2,\dots,C\\}\\) for \\(i=1,2,\dots, N\\).
 
-      - **Face Detection** (regression example): The input, \\(\mathbf{x}\\) is an image, where \\(p\\) is the number of pixels in the image. The output, \\(y_i\\) is the location of faces in the figure (a real value).
+      - **Face Detection** (regression example): The input, \\(\mathbf{x}\\) is an image, where \\(p\\) is the number of pixels in the image. The output, \\(y_i\\) is the location of faces in the figure (a real value). Here, the goal is to find the location of faces in an input image by drawing a _bounding-box_ around each detected face.
 
          <p align="center">
             <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/38d8dfc0-7825-49f7-9993-09db19733f41">
@@ -32,7 +32,7 @@ classes: wide
                 poses. Classification example: Hand-written digit recognition [K. Murphy, 2012.].</em>
          </p>
 
-      - **Digit Recognition** (classification example): The input, \\(\mathbf{x}\\) is an image, where \\(p\\) is the number of pixels in the image. The output, \\(y_i\\) is one of the numbers in the set \\(\{0,1,2,\dots,9\}\\) (a discrete value).
+      - **Digit Recognition** (classification example): The input, \\(\mathbf{x}\\) is an image, where \\(p\\) is the number of pixels in the image. The output, \\(y_i\\) is one of the numbers in the set \\(\{0,1,2,\dots,9\}\\) (a discrete value). Here, the goal is to classify an input image to one of \((10\)) possible classes. 
 
          <p align="center">
             <img width="400" alt="Screenshot 2023-07-10 at 9 26 53 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/44375613-fbb2-4f22-a502-fbed168e471a">
@@ -48,7 +48,7 @@ classes: wide
       <p align="center">
         <img width="600" alt="Screenshot 2023-07-10 at 9 57 45 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/fb9ccc46-0a7b-4eb2-9396-a34642d1ff10">
         <br>
-            <em>Application of the K-means clustering algorithm to image segmentation [C. Bishop, 2006].</em>
+            <em>Application of the K-means clustering algorithm to the image segmentation [C. Bishop, 2006].</em>
       </p>
       
 ### Discriminative and Generative
