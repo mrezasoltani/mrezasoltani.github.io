@@ -359,7 +359,7 @@ classes: wide
          <p align="center">
           <img width="600" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/1e3e8eed-0ae2-4616-a7fd-06cade2bebb0">
          <br>
-             <em>Reviewing 5 movies by 4 users.Given avialble revies what will be the votes for the "?".</em>
+             <em>Reviewing 5 movies by 4 users.Given avialble reviews what the votes will be for the "?".</em>
          </p>
 
       3. **Predicting Stock Prices.**
