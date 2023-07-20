@@ -312,7 +312,7 @@ classes: wide
 
    * **Tasks in Multimodal data.** The input data for this type can be any of the above modalities or other things (e.g., time series).
      
-     1. **Text-to-Image.**
+     1. **Text-to-Image.** Here, the goal is to teach a model to create an image from a description of a given text. This is a generative task.
         
           <p align="center">
           <img width="690" alt="Screenshot 2023-07-18 at 10 58 05 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b753ba77-1016-443d-9cd9-96e03a1ca55c">
@@ -320,7 +320,7 @@ classes: wide
              <em>Text-to-Image [https://imagen.research.google/].</em>
           </p>
 
-     2. **Image-to-Text.**
+     2. **Image-to-Text.** This is the reverse of the previous task. The input is an image, and the output is a text describing the content of the image. Image captioning is popular application of this generative/discriminative task.
  
          <p align="center">
           <img width="700" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b9cfc7b4-d2af-418a-94d3-3490b1479fbf">
