@@ -36,9 +36,9 @@ classes: wide
       - **Digit Recognition** (classification example): The input, \\(\mathbf{x}\\) is an image, where \\(p\\) is the number of pixels in the image. The output, \\(y_i\\) is one of the numbers in the set \\(\{0,1,2,\dots,9\}\\) (a discrete value). Here, the goal is to classify an input image to one of \((10\)) possible classes. 
 
          <p align="center">
-            <img width="400" alt="Screenshot 2023-07-10 at 9 26 53 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/44375613-fbb2-4f22-a502-fbed168e471a">
-            <br>
-             <em>MNIST dataset [http://yann.lecun.com/exdb/mnist/].</em>
+            <img width="600" alt="Screenshot 2023-07-10 at 9 26 53 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/44375613-fbb2-4f22-a502-fbed168e471a">
+              <br>
+            <em>MNIST dataset [http://yann.lecun.com/exdb/mnist/].</em>
          </p>
 
 ### Unsupervised Learning
