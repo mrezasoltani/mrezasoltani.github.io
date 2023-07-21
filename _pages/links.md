@@ -32,7 +32,7 @@ classes: wide
     3. Shakir Mohamed'blog with many learning resources in ML/DL ([link](http://blog.shakirm.com/))
     4. A blog affiliated with Ermon’s research group at Stanford with some advanced topics in ML ([link](https://ermongroup.github.io/blog/flow-gan/)]
     5. A research blog for Zico Kolter’s research group at CMU with theoretical topics ([link](https://locuslab.github.io/))
-    6. Off the Convex Path, a blog with concepts in optimization methods [link](https://www.offconvex.org/))
+    6. Off the Convex Path, a blog with concepts in optimization methods ([link](https://www.offconvex.org/))
     7. ([link](https://www.cse.wustl.edu/~garnett/cse515t/spring_2017/))
     8. ([link](https://www.groundai.com/))
     9. ([link](https://blog.evjang.com/2018/01/nf1.html))
