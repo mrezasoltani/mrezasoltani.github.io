@@ -354,7 +354,7 @@ classes: wide
              <em>A Cart-Pole Problem. We can move the cart either to the left or right. When we move the cart to the left, the pole tends to fall to the right side, and vice versa for the other direction.</em>
          </p>
 
-     2. **Netflix Movie Recommendation Problem.**
+     2. **Netflix Movie Recommendation Problem.** In 2006, Netflix challenged the machine learning communities to develop an algorithm that could show the better accuracy of its recommendation system, Cinematch. Netflix released a dataset of 100 million anonymous movie ratings for this challenge and offered one million dollars for improving the accuracy of Cinematch by 10%. Following figure shows a schematic of the Netflix dataset. The green checks denote the available reviews for the users and movies. The challenge here is to predict those without any vote. This problem is also called _Matrix completion_ as the goal is to complete those empty entries of a data matrix using other filled entries. This problem is a supervised and discriminative task. 
     
          <p align="center">
           <img width="600" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/1e3e8eed-0ae2-4616-a7fd-06cade2bebb0">
