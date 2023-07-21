@@ -25,7 +25,7 @@ classes: wide
       - **Face Detection** (regression example): The input, \\(\mathbf{x}\\) is an image, where \\(p\\) is the number of pixels in the image. The output, \\(y_i\\) is the location of faces in the figure (a real value). Here, the goal is to find the location of faces in an input image by drawing a _bounding-box_ around each detected face.
 
          <p align="center">
-            <img width="400" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/38d8dfc0-7825-49f7-9993-09db19733f41">
+            <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/38d8dfc0-7825-49f7-9993-09db19733f41">
                <br>
             <em>(a) Input image (Murphy family, photo taken 5 August 2010). (b) The output of the classifier, which detected 5 faces at different 
                 poses. Classification example: Hand-written digit recognition [K. Murphy, 2012.].</em>
@@ -36,7 +36,7 @@ classes: wide
       - **Digit Recognition** (classification example): The input, \\(\mathbf{x}\\) is an image, where \\(p\\) is the number of pixels in the image. The output, \\(y_i\\) is one of the numbers in the set \\(\{0,1,2,\dots,9\}\\) (a discrete value). Here, the goal is to classify an input image to one of \((10\)) possible classes. 
 
          <p align="center">
-            <img width="600" alt="Screenshot 2023-07-10 at 9 26 53 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/44375613-fbb2-4f22-a502-fbed168e471a">
+            <img width="400" alt="Screenshot 2023-07-10 at 9 26 53 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/44375613-fbb2-4f22-a502-fbed168e471a">
               <br>
             <em>MNIST dataset [http://yann.lecun.com/exdb/mnist/].</em>
          </p>
