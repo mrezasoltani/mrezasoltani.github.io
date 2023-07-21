@@ -57,7 +57,7 @@ classes: wide
      <p align="center">
         <img width="1500" alt="Screenshot 2023-07-10 at 9 57 45 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/1a0d5fa5-cca6-4809-bb0b-5db2991ddf44">
         <br>
-            <em>Application of the PCA for visulization. Images from [https://www.robots.ox.ac.uk/~vgg/data/flowers/102/]</em>
+            <em>Application of the PCA for visulization. Images from [https://www.robots.ox.ac.uk/~vgg/data/flowers/102/].</em>
       </p>
      
 ### Discriminative and Generative
