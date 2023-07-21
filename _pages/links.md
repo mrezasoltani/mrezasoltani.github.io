@@ -6,7 +6,7 @@ author_profile: true
 classes: wide
 ---
 
-## The list of all sources for learning ML/DL, including  useful books, papers, blogs, etc:
+## The list of all sources for learning ML/DL and programming, including  useful books, papers, blogs, etc:
 
 * ML books:
     1. G. James, D. Witten, T. Hastie, R. Tibshirani, An Introduction to Statistical Learning ([link](https://www.statlearning.com/))
@@ -25,6 +25,28 @@ classes: wide
     4. J. Brownlee, Crash Course in Python for Machine Learning Developers, 2016 ([link](https://machinelearningmastery.com/crash-course-python-machine-learning-developers/))
     5. Become a Python Master ([link](https://programiz.pro/learn/master-python?ref=cp))
     6. Data Science With Python Core Skills ([link](https://realpython.com/learning-paths/data-science-python-core-skills/))
+
+* ML blogs:
+    1. Lilian's blog with many intersting learning notes ([link](https://lilianweng.github.io/lil-log/))
+    2. Distill, a scientific journal which operated 2016-2021 with many well explained ML concepts ([link](https://distill.pub/)).
+    3. Shakir Mohamed'blog with many learning resources in ML/DL ([link](http://blog.shakirm.com/))
+    4. A blog affiliated with Ermon’s research group at Stanford with some advances topics in MLg ([link](https://ermongroup.github.io/blog/flow-gan/)]
+    5. ([link](https://locuslab.github.io/2019-07-09-uniform-convergence/))
+    6. ([link](https://www.offconvex.org/))
+    7. ([link](https://www.cse.wustl.edu/~garnett/cse515t/spring_2017/))
+    8. ([link](https://www.groundai.com/))
+    9. ([link](https://blog.evjang.com/2018/01/nf1.html))
+    10. ([link](https://francisbach.com/))
+    11. ([link](https://ruder.io/))
+    12. ([link](https://www.inference.vc/))
+    13. ([link](https://blog.floydhub.com/attention-mechanism/))
+    14. ([link](https://dsgissin.github.io/blog/))
+    15. ([link](https://www.determined.ai/blog))
+    16. ([link](https://blog.ml.cmu.edu/#))
+    17. ([link](https://heartbeat.fritz.ai/))
+    18. ([link](https://hunch.net/?cat=6))
+    19. ([link](https://lorenlugosch.github.io/posts/2020/11/transducer/))    ## for speech
+    20. ([link](https://jonathanbgn.com/2021/06/29/illustrated-wav2vec.html))   ## wavetovec
 
 * Most datasets used in ML literature:
   1. **UCI Machine Learning Repository.** The Machine Learning Repository at UCI provides an up-to-date resource for open-source datasets ([link](https://archive.ics.uci.edu/)).
