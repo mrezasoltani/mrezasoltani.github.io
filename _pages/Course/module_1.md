@@ -55,7 +55,7 @@ classes: wide
    - **Principle Component Analysis (PCA).** PCA is used to decompose a multivariate dataset into components that explain a maximum amount of the variance. What does this means? In many cases we want to get some idea about the data we are dealing with. For example, we want to visualize a data, or understand which attributes of data has more information. Consider you are given a set of flower images, where each image is a 1 mega pixel colorful image (an image with size (\\(1024\times 1024\times 3\\)). You can think of each image sample is living in a huge space (i.e., a space with dimension (\\(3,145,728=1024\times 1024\times 3\\)). Obviously, we cannot visualize this huge space. What if we can represent each image in a 3-d or even 2-d space such that only most important attributes of data appear in this reduced-dimensionality space (please note that the meaning of _most important attributes_ needs to be defined carefully, but for now think about some attributes helping us to distinguish flower images by looking their representation in the new 2/3-d space). This is exactly what PCA can do for us; by projecting an image to a 2/3-d space such that only those 2/3 components explain the most important information about the flower image.
  
      <p align="center">
-        <img width="600" alt="Screenshot 2023-07-10 at 9 57 45 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/51c8a751-ec11-4dfd-9d88-12b9ba089a5e">
+        <img width="800" alt="Screenshot 2023-07-10 at 9 57 45 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/51c8a751-ec11-4dfd-9d88-12b9ba089a5e">
         <br>
             <em>Application of the PCA for visulization.</em>
       </p>
