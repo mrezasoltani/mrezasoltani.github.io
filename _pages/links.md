@@ -30,8 +30,8 @@ classes: wide
     1. Lilian's blog with many intersting learning notes ([link](https://lilianweng.github.io/lil-log/))
     2. Distill, a scientific journal which operated 2016-2021 with many well explained ML concepts ([link](https://distill.pub/)).
     3. Shakir Mohamed'blog with many learning resources in ML/DL ([link](http://blog.shakirm.com/))
-    4. A blog affiliated with Ermon’s research group at Stanford with some advances topics in MLg ([link](https://ermongroup.github.io/blog/flow-gan/)]
-    5. ([link](https://locuslab.github.io/2019-07-09-uniform-convergence/))
+    4. A blog affiliated with Ermon’s research group at Stanford with some advanced topics in ML ([link](https://ermongroup.github.io/blog/flow-gan/)]
+    5. A research blog for Zico Kolter’s research group at CMU with theoretical topics([link](https://locuslab.github.io/))
     6. ([link](https://www.offconvex.org/))
     7. ([link](https://www.cse.wustl.edu/~garnett/cse515t/spring_2017/))
     8. ([link](https://www.groundai.com/))
