@@ -72,13 +72,22 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 \begin{aligned}
   \mathrm{X} =  
     \begin{bmatrix}
-      ---  & \mathrm{X_{1:}}^T & --- \\\\\\\\
-      ---  & \mathrm{X_{2:}}^T & --- \\\\\\\\
+      ---  & \mathrm{X_{1:}}^T & ---  \\\\\\\\
+      ---  & \mathrm{X_{2:}}^T & ---  \\\\\\\\
        & \vdots & \\\\\\\\
-      ---  & \mathrm{X_{m:}}^T & ---
+      ---  & \mathrm{X_{m:}}^T & --- 
     \end{bmatrix} =
     \begin{bmatrix}
       \mathrm{X_{1:}} & \mathrm{X_{2:}} & \ldots & \mathrm{X_{m:}}
     \end{bmatrix}
 \end{aligned}
 \end{equation}
+
+### Transpose of Matrix:
+* BY exchanging the rows and columns of a matrix, we obtain the transpose of the matrix. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\),
+its transpose, written \\(\mathrm{X}T \in \mathbb{R}^{n\times m}\\).
+* **Properties of transposition operation.** 
+  1. Given two matrices of \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{m\times n}\\), we have:
+     \\((\mathrm{X} + \mathrm{Y})^T = \\\mathrm{X}^T + \\\mathrm{Y}^T
+  3. Given two matrices of \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), we have
+     \\((\mathrm{X}\mathrm{Y})^T = \\\mathrm{Y}^T + \\\mathrm{X}^T
