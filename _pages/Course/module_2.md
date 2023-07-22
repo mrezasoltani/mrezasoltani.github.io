@@ -5,7 +5,16 @@ classes: wide
 
 Linear algebra is the study of matrices and vectors. In this module, we start with some basic concepts in linear algebra, and toward the end of this part, we will see more advanced tools. 
 
-* A vector \\(\mathbf{x} \in \mathbb{R}^n \\) is a collection of \\(n\\) numbers defined on real, \\(\mathbb{R}\\) or complex, \\(\mathbb{C}\\) field. In this course, we use a column vector to denote a vector \\(x\\). Also, A matrix \\(\mathbf{X} \in \mathbb{R}^{m\times n}\\) is a 2-d array of \\(mn\\) numbers, arranged in \\(m\\) rows and \\(n\\) columns:
+* **Math Notations**. Throughout this course, we use the following conventions:
+
+  |              | Generative             |
+   | -------------| ---------------------- |
+   | **Deterministic scalar variable**   | \\(x\\) |
+   | **Random scalar variable** | \\(\textnormal{X}\\)|
+   | **Deterministic vector** | \\(\mathbf{x}\\)|
+   | **Random vector** | \\(\textnormal{X}\\)|
+
+* A vector \\(\mathbf{x} \in \mathbb{R}^n \\) is a collection of \\(n\\) numbers defined on real, \\(\mathbb{R}\\) or complex, \\(\mathbb{C}\\) field. In this course, we use a column vector to denote a vector \\(\mathbf{x}\\). Also, a matrix \\(\mathbf{X} \in \mathbb{R}^{m\times n}\\) is a 2-d array of \\(mn\\) numbers, arranged in \\(m\\) rows and \\(n\\) columns:
 
 \begin{equation}
 \begin{aligned}
