@@ -24,6 +24,9 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **Element \\(i\\) of vector** \\(x\\) | \\(x_i\\) |
    | **All elements of vector** vector** \\(x\\) **except for element** \\(i\\) of  | \\(x_{-i}\\) |
    | \\(i^{th}\\) **row (column) of a matrix** \\(\mathrm{X}\\) | \\(\mathrm{X_{i:}}\\)(\\(\mathrm{X_{:i}}\\)) |
+   | **A probability distribution over a discrete variable (pmf)** | \\(P(x)\\) |
+   | **A probability distribution over a continuous variable (pdf)** | \\(p(x)\\) |
+   | \\(L^p\\)) **norm of** x | \\(||x||_p\\) |
 
 * A vector \\(\mathbf{x} \in \mathbb{R}^n \\) is a collection of \\(n\\) numbers defined on real, \\(\mathbb{R}\\) or complex, \\(\mathbb{C}\\) field. In this course, we use a column vector to denote a vector \\(\mathbf{x}\\). Also, a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) is a 2-d array of \\(mn\\) numbers, arranged in \\(m\\) rows and \\(n\\) columns:
 
