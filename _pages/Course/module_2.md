@@ -9,20 +9,19 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 
   |       Variable type       | Symbol             |
    | -------------| ---------------------- |
-   | **Deterministic Scalar Variable**   | \\(x\\) |
-   | **Random Scalar Variable** | \\(X\\)|
-   | **Deterministic Vector** | \\(\mathbf{x}\\)|
-   | **Random Vector** | \\(\mathbf{X}\\)|
-   | **Deterministic Matrix/Tensor** | \\(\mathrm{X}\\)|
-   | **Random Matrix/Tensor** | \\(\mathbfit{X}\\)|
-   | **Graph and Operator** | \\(\mathcal{X}\\)|
+   | **Deterministic scalar variable**   | \\(x\\) |
+   | **Random scalar variable** | \\(X\\)|
+   | **Deterministic vector** | \\(\mathbf{x}\\)|
+   | **Random vector** | \\(\mathbf{X}\\)|
+   | **Deterministic matrix/tensor** | \\(\mathrm{X}\\)|
+   | **Random matrix/tensor** | \\(\mathbfit{X}\\)|
+   | **Graph and operator** | \\(\mathcal{X}\\)|
    | **A square, diagonal matrix with diagonal entries given by** \\(\mathbf{x}\\) | \\(diag(a)\\) |
-   | **Real Set** | \\(\mathbb{R}\\)|
-   | **Complex Set** | \\(\mathbb{C}\\)|
-   | **Standard/Canonical Basis Vector with only 1 in** \\(i^{th}\\) **position** | \\(\e_i=(0, 0, \ldots, 0, 1, 0, \dots, 0 )\\)|
-   | **Graph and Operator** | \\(\mathcal{X}\\)|
-   | **Element \\(i\\) of vector** \\(x\\) | \\(x_i\\) |
-   | **All elements of vector** vector** \\(x\\) **except for element** \\(i\\) of  | \\(x_{-i}\\) |
+   | **Real set** | \\(\mathbb{R}\\)|
+   | **Complex set** | \\(\mathbb{C}\\)|
+   | **Standard/Canonical basis vector with only 1 in** \\(i^{th}\\) **position** | \\(e_i=(0, 0, \ldots, 0, 1, 0, \dots, 0 )\\)|
+   | **Element \\(i\\) of vector** \\(\mathbf{x}\\) | \\(x_i\\) |
+   | **All elements of vector** \\(\mathbf{x}\\) **except for element** \\(i\\) of  | \\(x_{-i}\\) |
    | \\(i^{th}\\) **row (column) of a matrix** \\(\mathrm{X}\\) | \\(\mathrm{X_{i:}}\\)(\\(\mathrm{X_{:i}}\\)) |
    | **A probability distribution over a discrete variable (pmf)** | \\(P(x)\\) |
    | **A probability distribution over a continuous variable (pdf)** | \\(p(x)\\) |
