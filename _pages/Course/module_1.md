@@ -3,12 +3,23 @@ title: "Module 1 - Introduction"
 classes: wide
 ---
 
-Every day we hear many buzzwords and similar words like Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL), and Data Science (DS). Let me ask Google what these mean by typing "ml dl ai data science data engineering". Google returns results with a newly added search results based on _Generative AI_ (The date of this search in Google is July 21, 2023). Under the hood, Google is running my search question on its experimental conversational AI service, powered by LaMDA, called Bard to get back me (later in this course we will talk about these technologies). This is what I get from Google:
+Every day we hear many buzzwords and similar words like Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL), and Data Science (DS). Let me ask Google what these mean by typing "ml dl ai data science data engineering". Google returns results with newly added search results based on _Generative AI_ (The date of this search in Google is July 21, 2023). Under the hood, Google is running my search question on its experimental conversational AI service, powered by LaMDA, called Bard to get back to me (later in this course we will talk about these technologies). This is what I get from Google:
 
    <p align="center">
             <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/40958e51-1fb0-47f3-a83a-cb522321144a">
     <br>
-            <em>Google search result for query "ml dl ai data science data engineering".</em>
+            <em>Google search result for the query "ml dl ai data science data engineering".</em>
+     </p>
+
+How does Google do this? The answer to this question is in this course. In a nutshell, Google uses a model trained on millions or billions of data to enable its conversational service for accurate answers. Starting by the end of 2022, and with the release of ChatGPT from OpneAI, generative AI and _Large Language Model (LLM)_ have shown a significant improvement in conversational AI with many applications. 
+
+In this course, our goal is to understand ML concepts from scratch, so we can have enough background to grasp more advanced concepts like the above conversational AI models. Before diving into a more formal definition of ML concepts, it is worth seeing the relation between all the disciplines we used in the above example as a Van diagram. 
+
+   <p align="center">
+               <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" 
+    src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/aa5924ad-98a6-4fc7-8351-663a7397c338">
+       <br>
+            <em>The relation between AI, ML, DL, DL, and DS [https://iq.opengenus.org/relation-of-data-science/].</em>
      </p>
 
 
