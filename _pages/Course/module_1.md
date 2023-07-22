@@ -19,7 +19,7 @@ In this course, our goal is to understand ML concepts from scratch, so we can ha
                <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" 
     src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/aa5924ad-98a6-4fc7-8351-663a7397c338">
        <br>
-            <em>The relation between AI, ML, DL, DL, and DS [https://iq.opengenus.org/relation-of-data-science/].</em>
+            <em>The relation between AI, ML, DL, DL, and DS [https://iq.opengenus.org/].</em>
      </p>
 
 
