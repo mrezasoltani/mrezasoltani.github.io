@@ -49,15 +49,15 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 \end{aligned}
 \end{equation}
 
-* If \\(m=n\\)\\, then the matrix is called a _square_ matrix. We can also show a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) either by its columns, or by rows:
+* If \\(m=n\\), then the matrix is called a _square_ matrix. We can also show a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) either by its columns, or by rows:
 
 \begin{equation}
 \begin{aligned}
   \mathrm{X} =  
     \begin{bmatrix}
-      | & | & \dots & |\\\\\\\\
+      \\| & \\| & \dots & \\| \\\\\\\\
       \mathrm{X_{:1} & \mathrm{X_{:2}} & \ldots & \mathrm{X_{:n}} \\\\\\\\
-      | & | & \dots & |\\\\\\\\
+      \\| & \\| & \dots & \\| \\\\\\\\
     \end{bmatrix} , & & & &
   \mathrm{X} = 
     \begin{bmatrix}
