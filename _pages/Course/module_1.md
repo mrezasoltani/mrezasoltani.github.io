@@ -3,7 +3,7 @@ title: "Module 1 - Introduction"
 classes: wide
 ---
 
-Every day we hear many buzzwords and similar words like Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL), and Data Science (DS). Let me ask Google what these mean by typing "ml dl ai data science data engineering". Google returns results with newly added search results based on _Generative AI_ (The date of this search in Google is July 21, 2023).
+Every day we hear many buzzwords and similar terms like Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL), and Data Science (DS). Let me ask Google what these mean by typing "ml dl ai data science data engineering". Google returns results with newly added search results based on _Generative_ _AI_ (The date of this search in Google is July 21, 2023).
 
    <p align="center">
             <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/40958e51-1fb0-47f3-a83a-cb522321144a">
