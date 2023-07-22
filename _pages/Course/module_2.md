@@ -11,9 +11,9 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | -------------| ---------------------- |
    | **Deterministic Scalar Variable**   | \\(x\\) |
    | **Random Scalar Variable** | \\(\textnormal{X}\\)|
-   | **Deterministic Vector** | \\(\bm{x}\\)|
+   | **Deterministic Vector** | \\(\mathbf{x}\\)|
    | **Random Vector** | \\(\textnormal{X}\\)|
-   | **Deterministic Matrix** | \\(\bm{X}\\)|
+   | **Deterministic Matrix** | \\(\mathrm{X}\\)|
    | **Random Matrix** | \\(\textnormal{X}\\)|
    | **Deterministic Tensor** | \\(\mathbf{X}\\)|
    | **Random Tensor** | \\(\textnormal{X}\\)|
