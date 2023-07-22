@@ -59,9 +59,8 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
       \mathrm{X_{:1}} & \mathrm{X_{:2}} & \ldots & \mathrm{X_{:n}} \\\\\\\\
       | & | & \ldots & | \\\\\\\\
     \end{bmatrix} =
-  \mathrm{X} =  
     \begin{bmatrix}
-      \mathrm{X_{:1}}, & \mathrm{X_{:2}}, & \ldots & \mathrm{X_{:n}}
+      \mathrm{X_{:1}} & \mathrm{X_{:2}} & \ldots & \mathrm{X_{:n}}
     \end{bmatrix}
 \end{aligned}
 \end{equation}
