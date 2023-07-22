@@ -19,13 +19,13 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **A square, diagonal matrix with diagonal entries given by** \\(\mathbf{x}\\) | \\(diag(a)\\) |
    | **Real set** | \\(\mathbb{R}\\)|
    | **Complex set** | \\(\mathbb{C}\\)|
-   | **Standard/Canonical basis vector with only 1 in** \\(i^{th}\\) **position** | \\(e_i=[0, 0, \ldots, 0, 1, 0, \dots, 0 ]\\)|
+   | **Standard/Canonical basis vector with only 1 in** \\(i^{th}\\) **position** | \\(e_i=[0, 0, \ldots, 0, 1, 0, \dots, 0 ]^T\\)|
    | **Element \\(i\\) of vector** \\(\mathbf{x}\\) | \\(x_i\\) |
    | **All elements of vector** \\(\mathbf{x}\\) **except for element** \\(i\\)  | \\(\mathbf{x_{-i}}\\) |
    | \\(i^{th}\\) **row (column) of a matrix** \\(\mathrm{X}\\) | \\(\mathrm{X_{i:}}\\) (\\(\mathrm{X_{:i}}\\)) |
    | **A probability distribution over a discrete variable (pmf)** | \\(P(x)\\) |
    | **A probability distribution over a continuous variable (pdf)** | \\(p(x)\\) |
-   | \\(L^p\\) **norm of vector** \\(\mathbf{x}\\) | \\(\norm{\mathbf{x}}_p\\) |
+   | \\(L^p\\) **norm of vector** \\(\mathbf{x}\\) | \\(\\|\\|\mathbf{x}\\|\\|_p\\) |
 
 * A vector \\(\mathbf{x} \in \mathbb{R}^n \\) is a collection of \\(n\\) numbers defined on real, \\(\mathbb{R}\\) or complex, \\(\mathbb{C}\\) field. In this course, we use a column vector to denote a vector \\(\mathbf{x}\\). Also, a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) is a 2-d array of \\(mn\\) numbers, arranged in \\(m\\) rows and \\(n\\) columns:
 
