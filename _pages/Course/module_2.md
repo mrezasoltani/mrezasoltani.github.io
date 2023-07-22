@@ -59,12 +59,11 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
       \mathrm{X_{:1}} & \mathrm{X_{:2}} & \ldots & \mathrm{X_{:n}} \\\\\\\\
       | & | & \ldots & | \\\\\\\\
     \end{bmatrix}, & & & &
-  \mathrm{X} = 
+  \mathrm{X} =  
     \begin{bmatrix}
-      x_{11} & x_{12} & \ldots & x_{1n} \\\\\\\\
-      x_{21} & x_{22} & \ldots & x_{2n} \\\\\\\\
-      \vdots & \vdots & \ddots & \vdots \\\\\\\\
-      x_{m1} & x_{m2} & \ldots & x_{mn}
-    \end{bmatrix} 
+      | & | & \ldots & | \\\\\\\\
+      \mathrm{X_{:1}} & \mathrm{X_{:2}} & \ldots & \mathrm{X_{:n}} \\\\\\\\
+      | & | & \ldots & | \\\\\\\\
+    \end{bmatrix}, & & & &
 \end{aligned}
 \end{equation}
