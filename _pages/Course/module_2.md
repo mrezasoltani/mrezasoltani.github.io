@@ -72,13 +72,13 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 \begin{aligned}
   \mathrm{X} =  
     \begin{bmatrix}
-      --  & \mathrm{X_{1:}}^T & -- \\\\\\\\
-      --  & \mathrm{X_{2:}}^T & -- \\\\\\\\
+      ---  & \mathrm{X_{1:}}^T & --- \\\\\\\\
+      ---  & \mathrm{X_{2:}}^T & --- \\\\\\\\
        & \vdots & \\\\\\\\
-      --  & \mathrm{X_{m:}}^T & --
+      ---  & \mathrm{X_{m:}}^T & ---
     \end{bmatrix} =
     \begin{bmatrix}
-      \mathrm{X_{1:}} & \mathrm{X_{2:}} & \ldots & \mathrm{X_{n:}}
+      \mathrm{X_{1:}} & \mathrm{X_{2:}} & \ldots & \mathrm{X_{m:}}
     \end{bmatrix}
 \end{aligned}
 \end{equation}
