@@ -23,7 +23,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **Standard/Canonical basis vector with only 1 in** \\(i^{th}\\) **position** | \\(e_i=[0, 0, \ldots, 0, 1, 0, \dots, 0 ]^T\\)|
    | **Element \\(i\\) of vector** \\(\mathbf{x}\\) | \\(x_i\\) |
    | **All elements of vector** \\(\mathbf{x}\\) **except for element** \\(i\\)  | \\(\mathbf{x_{-i}}\\) |
-   | **Entry in** \\(i^{th}\\) **row and** \\(j^{th}\\) **column of a matrix** \\(\mathrm{X}\\) | \\(x_{ij}\)) |
+   | **Entry in** \\(i^{th}\\) **row and** \\(j^{th}\\) **column of a matrix** \\(\mathrm{X}\\) | \\(x_{ij}\\) |
    | \\(i^{th}\\) **row (column) of a matrix** \\(\mathrm{X}\\) | \\(\mathrm{X_{i:}}\\) (\\(\mathrm{X_{:i}}\\)) |
    | **A probability distribution over a discrete variable (pmf)** | \\(P(x)\\) |
    | **A probability distribution over a continuous variable (pdf)** | \\(p(x)\\) |
