@@ -12,9 +12,9 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **Deterministic Scalar Variable**   | \\(x\\) |
    | **Random Scalar Variable** | \\(X\\)|
    | **Deterministic Vector** | \\(\mathbf{x}\\)|
-   | **Random Vector** | \\(\mathrm{X}\\)|
+   | **Random Vector** | \\(\mathbf{X}\\)|
    | **Deterministic Matrix/Tensor** | \\(\mathrm{X}\\)|
-   | **Random Matrix/Tensor** | \\(\textnormal{X}\\)|
+   | **Random Matrix/Tensor** | \\(\mathbfit{X}\\)|
    | **Graph and Operator** | \\(\mathcal{X}\\)|
 
 * A vector \\(\mathbf{x} \in \mathbb{R}^n \\) is a collection of \\(n\\) numbers defined on real, \\(\mathbb{R}\\) or complex, \\(\mathbb{C}\\) field. In this course, we use a column vector to denote a vector \\(\mathbf{x}\\). Also, a matrix \\(\mathbf{X} \in \mathbb{R}^{m\times n}\\) is a 2-d array of \\(mn\\) numbers, arranged in \\(m\\) rows and \\(n\\) columns:
