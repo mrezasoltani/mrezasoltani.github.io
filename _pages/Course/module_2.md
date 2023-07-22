@@ -95,7 +95,7 @@ its transpose, written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
      \\((\mathrm{X}\mathrm{Y})^T = \mathrm{Y}^T\mathrm{X}^T \in \mathbb{R}^{p\times m}\\)
   3. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\), we have:
      \\((\mathrm{X}^T)^T = \mathrm{X}\\)
-  4. Given a complex matrix \\(\mathrm{X} \in \mathbb{C}^{m\times n}\\, the transpose operation is defined by exchanging the rows and columns and conjugate them, and denoted by \\(\mathrm{X}^H (conjugate transpose).
+  4. Given a complex matrix \\(\mathrm{X} \in \mathbb{C}^{m\times n}\\), the transpose operation is defined by exchanging the rows and columns and conjugating them, and denoted by \\(\mathrm{X}^H\\) (conjugate transpose).
   5. If for a real (complex) matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) (\\(\in \mathbb{C}^{m\times n}\\)), we have \\(\mathrm{X}=(\mathrm{X})^T\\) (\\(\mathrm{X}=(\mathrm{X})^H\\)), then the matrix is called _Symmetric_ (_Hermitian_).
   6. The set of all symmetric (Hermitian) matrices is denoted as \\(\mathbb{S}^n\\) (\\(\mathbb{H}^n\\)).
 
