@@ -8,10 +8,12 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 
 \begin{equation}
 \begin{aligned}
-  {\sigma}_{1} =  
+  \mathbb{x} =  
   \begin{pmatrix}
-    0 & 1 \\\\\\\\
-    1 & 0
+    x_1 \\\\\\\\
+    x_2 \\\\\\\\
+    \vdots \\\\\\\\
+    x_n
   \end{pmatrix} 
 \end{aligned}
 \end{equation}
