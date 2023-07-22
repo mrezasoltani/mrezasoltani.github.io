@@ -4,7 +4,7 @@ classes: wide
 ---
 
 Linear algebra is the study of matrices and vectors. In this module, we start with some basic concepts in linear algebra, and toward the end of this part, we will see more advanced tools. 
-* A vector \\(\mathbf{x} \in \mathbb{R}^n \\) is a collection of \\(n\\) numbers. In this course, we use a column vector to denote vector \\(x\\). Also, A matrix \\(\mathbf{X} \in \mathbb{R}^{m\times n}\\) is a a 2d array of \\(mn\\) numbers, arranged in \\(m\\) rows and \\(n\\) columns:
+* A vector \\(\mathbf{x} \in \mathbb{R}^n \\) is a collection of \\(n\\) numbers. In this course, we use a column vector to denote vector \\(x\\). Also, A matrix \\(\mathbf{X} \in \mathbb{R}^{m\times n}\\) is a 2-d array of \\(mn\\) numbers, arranged in \\(m\\) rows and \\(n\\) columns:
 
 \begin{equation}
 \begin{aligned}
@@ -14,7 +14,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
     x_2 \\\\\\\\
     \vdots \\\\\\\\
     x_n
-  \end{pmatrix} & & & &
+  \end{pmatrix}, & & & &
   \mathbf{X} = 
     \begin{pmatrix}
       x_{11} & x_{12} & \ldots & x_{1n} \\\\\\\\
