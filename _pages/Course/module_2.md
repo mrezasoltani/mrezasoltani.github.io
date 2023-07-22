@@ -88,9 +88,9 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 its transpose, written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * **Properties of transposition operation.** 
   1. Given two matrices of \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{m\times n}\\), we have:
-     \\((\mathrm{X} + \mathrm{Y})^T = \mathrm{X}^T + \mathrm{Y}^T
+     \\((\mathrm{X} + \mathrm{Y})^T = \mathrm{X}^T + \mathrm{Y}^T\\)
   2. Given two matrices of \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), we have:
-     \\((\mathrm{X}\mathrm{Y})^T = \mathrm{Y}^T\mathrm{X}^T
+     \\((\mathrm{X}\mathrm{Y})^T = \mathrm{Y}^T\mathrm{X}^T\\)
   3. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\), we have:
-     \\((\mathrm{X}^T)^T = \mathrm{X}
+     \\((\mathrm{X}^T)^T = \mathrm{X}\\)
 ## Tensor:
