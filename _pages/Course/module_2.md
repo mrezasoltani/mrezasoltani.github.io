@@ -86,15 +86,18 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 \end{equation}
 
 ## Transpose of Matrix:
-* BY exchanging the rows and columns of a matrix, we obtain the transpose of the matrix. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\),
+* By exchanging the rows and columns of a matrix, we obtain the transpose of the matrix. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\),
 its transpose, written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * Properties of transposition operation.
   1. Given two matrices of \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{m\times n}\\), we have:
      \\((\mathrm{X} + \mathrm{Y})^T = \mathrm{X}^T + \mathrm{Y}^T\\)
   2. Given two matrices of \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), we have:
-     \\((\mathrm{X}\mathrm{Y})^T = \mathrm{Y}^T\mathrm{X}^T\\)
+     \\((\mathrm{X}\mathrm{Y})^T = \mathrm{Y}^T\mathrm{X}^T \in \mathbb{R}^{p\times m}\\)
   3. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\), we have:
      \\((\mathrm{X}^T)^T = \mathrm{X}\\)
+  4. Given a complex matrix \\(\mathrm{X} \in \mathbb{C}^{m\times n}\\, the transpose operation is defined by exchanging the rows and columns and conjugate them, and denoted by \\(\mathrm{X}^H (conjugate transpose).
+  5. If for a real (complex) matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) (\\(\in \mathbb{C}^{m\times n}\\)), we have \\(\mathrm{X}=(\mathrm{X})^T\\) (\\(\mathrm{X}=(\mathrm{X})^H\\)), then the matrix is called _Symmetric_ (_Hermitian_).
+  6. The set of all symmetric (Hermitian) matrices is denoted as \\(\mathbb{S}^n\\) (\\(\mathbb{H}^n\\)).
 
 ## Tensor:
 * A tensor (in machine learning terminology) is just a generalization of a 2d array to more than 2 dimensions,
