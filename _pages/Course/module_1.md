@@ -5,8 +5,8 @@ classes: wide
 
 ## What Is Machine Learning?
 * Machine learning is an application of AI that enables systems to learn and improve from experience without being explicitly programmed. With the deluge of data, we need to find ways to discover what is in the data. ML is a set of algorithms/methods that help us learn and recognize the hidden patterns in data. ML is not a new topic. In fact, learning from data has been explored and used by many disciplines such as Statistics, Signal Processing, Control Theory, etc. What makes ML special is to provide a common formalism to the problems and algorithms. With the help of ML techniques, one can predict future data, or perform other kinds of decision-making under uncertainty.
-* For solving a problem using ML techniques, we alsways need to have some data related to the task/problem we want to solve. In fact, data is one of the most important pieces in all ML algorithm/methods. Before jumping to the ML concept, we need to introduce some terminologies regarding the data.
-* Remember that data is a starting point for every ML technique. With the help of data, we can so-called _**Train**_ a model to do our desired goal. As a result, we need to have a set of _**Training Data**_ to teach a model. After training a model, we need to test our _**Trained**_ model. Hence, there should be another set of _**Test Data**_ to see the performance of our trained model. From this, we immediately see that these two datasets should be somehow related. but not the same. The former means that there should be something common between the training and test data. Later we will formalize this by saying that these two datasets should be independent samples from the same probability distribution. The second condition (not being the same) is necessary because we want to see how a trained model perform on unseen data; otherwise, it will be cheating if we evaluate the performance of a model on the same data it has been trained for. We will look at these things later in the course
+* For solving a problem using ML techniques, we always need to have some data related to the task/problem we want to solve. In fact, data is one of the most important pieces in all ML algorithms/methods. Before jumping to the ML concept, we need to introduce some terminologies regarding the data.
+* Remember that data is a starting point for every ML technique. With the help of data, we can so-called _**Train**_ a model to do our desired goal. As a result, we need to have a set of _**Training Data**_ to teach a model. After training a model, we need to test our _**Trained**_ model. Hence, there should be another set of _**Test Data**_ to see the performance of our trained model. From this, we immediately see that these two datasets should be somehow related. but not the same. The former means that there should be something common between the training and test data. Later we will formalize this by saying that these two datasets should be independent samples from the same probability distribution. The second condition (not being the same) is necessary because we want to see how a trained model performs on unseen data; otherwise, it will be cheating if we evaluate the performance of a model on the same data it has been trained for. We will look at these things later in the course
  
 * There are different types of ML. Sometimes models and methods are used interchangeably. However, a model is not a (learning) method/algorithm.
 * Two common types of categorizing ML methods:
@@ -42,9 +42,9 @@ classes: wide
          </p>
 
 ### Unsupervised Learning
-* In unsupervised methods, we are only given input data without any labels. Here the goal is to discover any interesting or structure in the data (knowledge discovery). For example, discovering groups of similar examples within the data, where is called clustering. Another example is the density estimation problem, in which the goal is to estimate the distribution of data within the input space. One more important example of unsupervised tasks is to decompose a data/signal to simpler or more interpretable components. Two common tasks in this category are the _Factor Analysis_ methods and _Manifold Learning_ for linear and non-linear data, respectively (linear and non-linear data means that features/attributes underlying the data show a linear (non-linear) relationship or trend. We will talk more about this later).
+* In unsupervised methods, we are only given input data without any labels. Here the goal is to discover any interesting structure in the data (knowledge discovery). For example, discovering groups of similar examples within the data, where is called clustering. Another example is the density estimation problem, in which the goal is to estimate the distribution of data within the input space. One more important example of unsupervised tasks is to decompose data/signals into simpler or more interpretable components. Two common tasks in this category are the _Factor Analysis_ methods and _Manifold Learning_ for linear and non-linear data, respectively (linear and non-linear data means that features/attributes underlying the data show a linear (non-linear) relationship or trend. We will talk more about this later).
 
-   - **Clustering** (image segmentation): Clustering or grouping similar pixels in an image. Consider a task of grouping similar pixels of an image. For example, in the following figure, we are asked to divide pixels of the image into \\(K=2, 3, 10\\) groups. However, we have not been provided with any other information such as the label of the image, or some other information about the content of the image. Hence, our unsupervised algorithm (clustering algorithm) needs somehow to explore the similarity between pixels of the input image and group them in \\(K\\) groups/clusters. What similarity means is a broad concept. For instance, similar pixels means those pixels whose values are close to each other. In this example, \\(K\\) clusters have been shown by different color (e.g., for \\(K=2\\), there are only 2 types of pixels: blue or dark).
+   - **Clustering** (image segmentation): Clustering or grouping similar pixels in an image. Consider a task of grouping similar pixels of an image. For example, in the following figure, we are asked to divide pixels of the image into \\(K=2, 3, 10\\) groups. However, we have not been provided with any other information such as the label of the image, or some other information about the content of the image. Hence, our unsupervised algorithm (clustering algorithm) needs somehow to explore the similarity between pixels of the input image and group them in \\(K\\) groups/clusters. What similarity means is a broad concept. For instance, similar pixels mean those pixels whose values are close to each other. In this example, \\(K\\) clusters have been shown by different colors (e.g., for \\(K=2\\), there are only 2 types of pixels: blue or dark).
 
       <p align="center">
         <img width="600" alt="Screenshot 2023-07-10 at 9 57 45 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/fb9ccc46-0a7b-4eb2-9396-a34642d1ff10">
@@ -52,12 +52,12 @@ classes: wide
             <em>Application of the K-means clustering algorithm to the image segmentation [C. Bishop, 2006]</em>
       </p>
       
-   - **Principle Component Analysis (PCA)** (dimensionality reduction and visualization): PCA is used to decompose a multivariate dataset into components that explain a maximum amount of the variance. What does this means? In many cases we want to get some idea about the data we are dealing with. For example, we want to visualize a data, or understand which attributes of data has more information. Consider you are given a set of flower images, where each image is a 1 mega pixel colorful image (an image with size (\\(667\times 500\times 3\\)). You can think of each image sample is living in a huge space (i.e., a space with dimension (\\(1,000,500=667\times 500\times 3\\)). Obviously, we cannot visualize this huge space. What if we can represent each image in a 3-d or even 2-d space such that only most important attributes of data appear in this reduced-dimensionality space (please note that the meaning of _most important attributes_ needs to be defined carefully, but for now think about some attributes helping us to distinguish flower images by looking their representation in the new 2/3-d space). This is exactly what PCA can do for us; by projecting an image to a 2/3-d space such that only those 2/3 components explain the most important information about flower images. As we can see, only the first two components from the PCA can show three clear classes of the input images which originally have more than 1 M dimension.
+   - **Principle Component Analysis (PCA)** (dimensionality reduction and visualization): PCA is used to decompose a multivariate dataset into components that explain a maximum amount of the variance. What does this mean? In many cases, we want to get some idea about the data we are dealing with. For example, we want to visualize data or understand which attributes of data have more information. Consider you are given a set of flower images, where each image is a 1-megapixel colorful image (an image with size (\\(667\times 500\times 3\\)). You can think of each image sample as living in a huge space (i.e., a space with dimension (\\(1,000,500=667\times 500\times 3\\)). Obviously, we cannot visualize this huge space. What if we can represent each image in a 3-d or even 2-d space such that only the most important attributes of data appear in this reduced-dimensionality space (please note that the meaning of _most important attributes_ needs to be defined carefully, but for now think about some attributes helping us to distinguish flower images by looking their representation in the new 2/3-d space). This is exactly what PCA can do for us; by projecting an image to a 2/3-d space such that only those 2/3 components explain the most important information about flower images. As we can see, only the first two components from the PCA can show three clear classes of the input images which originally have more than 1 M dimension.
  
      <p align="center">
         <img width="1500" alt="Screenshot 2023-07-10 at 9 57 45 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/1a0d5fa5-cca6-4809-bb0b-5db2991ddf44">
         <br>
-            <em>Application of the PCA for visulization. Images from [https://www.robots.ox.ac.uk/~vgg/data/flowers/102/].</em>
+            <em>Application of the PCA for visualization. Images from [https://www.robots.ox.ac.uk/~vgg/data/flowers/102/].</em>
       </p>
      
 ### Discriminative and Generative
@@ -175,7 +175,7 @@ classes: wide
              <em>Object detection.</em>
         </p>
   
-     3. **Image Segmentation.** This task is similar to object recognition, but with a very precise edge/contour detection. Image segmentaiton algorithms will segment and label all pixels that belong to an object. Here \\(\mathbf{x}\\), the input variable is an image with objects we want to segment, and \\(\mathbf{y}\\), the output variable is the image of the segmentation process (i.e., an image with labeled all the pixels that belong to every object). There are two types of segmentation: Instance Segmentation and Semantic Segmentation. The instance segmentation outputs an image by separating every single object instance, while in semantic segmentation, the pixels of every instance of an object are labeled with the same class label. This task is considered a hybrid task, including both classification and regression, discriminative and supervised.
+     3. **Image Segmentation.** This task is similar to object recognition but with very precise edge/contour detection. Image segmentation algorithms will segment and label all pixels that belong to an object. Here \\(\mathbf{x}\\), the input variable is an image with objects we want to segment, and \\(\mathbf{y}\\), the output variable is the image of the segmentation process (i.e., an image with labeled all the pixels that belong to every object). There are two types of segmentation: Instance Segmentation and Semantic Segmentation. An instance segmentation model outputs an image by separating every single object instance, while in semantic segmentation, the pixels of every instance of an object are labeled with the same class label. This task is considered a hybrid task, including both classification and regression, discriminative and supervised.
 
         <p align="center">
         <img width="770" alt="Screenshot 2023-07-16 at 12 31 19 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/0f42d816-9ea2-4a69-841b-4f53fd30055b">
@@ -183,7 +183,7 @@ classes: wide
              <em>Image Segmentation [https://keras.io/examples/vision/image_classification_from_scratch/].</em>
         </p>
      
-     4. **Image-to-Image** Here, the goal is to convert an input image, \\(\mathbf{x}\\) to an output image, \\(\mathbf{y}\\). The output image can be an improved version of the input image (deblurring an image, the super-resolution of the input image, image inpainting), or another image with some changes on the content of an image. This task is a supervised regression task which can be generative or discriminative.
+     4. **Image-to-Image** Here, the goal is to convert an input image, \\(\mathbf{x}\\) to an output image, \\(\mathbf{y}\\). The output image can be an improved version of the input image (deblurring an image, the super-resolution of the input image, image inpainting), or another image with some changes to the content of an image. This task is a supervised regression task which can be generative or discriminative.
 
         <p align="center">
         <img width="806" alt="Screenshot 2023-07-16 at 12 50 10 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/6eb093e7-b414-411d-9daf-4ae0285853c2">
@@ -276,7 +276,7 @@ classes: wide
              <em>Text-to-Speech.</em>
         </p>
   
-     3. **Audio-to-Audio.** This is a family of tasks in which the input is an audio, and the output is one or multiple generated audios. Some example tasks are **speech enhancement** and **Source Separation (SS).**. Theses task are regression tasks and can be discriminative/generative and supervised/unsupervised.
+     3. **Audio-to-Audio.** This is a family of tasks in which the input is audio, and the output is one or multiple generated audios. Some example tasks are **speech enhancement** and **Source Separation (SS).**. These tasks are regression tasks and can be discriminative/generative and supervised/unsupervised.
          - In Source Separation, the goal is to separate multiple speeches from their superposition.
         
           <p align="center">
@@ -285,12 +285,12 @@ classes: wide
              <em>Speech Separation (SS). The input is the superposition of two sources, and the output contains two sources individually.</em>
           </p>
  
-          - In Speech Enhancement, the goal is to clean (denoise) an audio, so it can be heard and possibly understood in a better way.
+          - In Speech Enhancement, the goal is to clean (denoise) audio, so it can be heard and possibly understood in a better way.
        
            <p align="center">
            <img width="800" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/7f6100ae-02a9-41e3-be19-28fc4eaca7ee">
           <br>
-             <em>Speech Enhancement. The input is a noisy audio, and the output is the clean (denoised) version of the input.</em>
+             <em>Speech Enhancement. The input is noisy audio, and the output is the clean (denoised) version of the input.</em>
           </p>
 
           
@@ -311,7 +311,7 @@ classes: wide
              <em>Speech Diarization [https://www.assemblyai.com/].</em>
           </p>
 
-     6. **Intent Classification.** Here, the goal is classifying the input speech according to its intent. Typically, this task is modeled as a classification task which labels each input audio sample with a set of non-binary properties as shown in the following figure.
+     6. **Intent Classification.** Here, the goal is to classify the input speech according to its intent. Typically, this task is modeled as a classification task which labels each input audio sample with a set of non-binary properties as shown in the following figure.
 
           <p align="center">
           <img width="757" alt="Screenshot 2023-07-17 at 9 49 36 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/89e59100-738f-43fb-9051-55c96d483a7b">
@@ -329,7 +329,7 @@ classes: wide
              <em>Text-to-Image [https://imagen.research.google/].</em>
           </p>
 
-     2. **Image-to-Text.** This is the reverse of the previous task. The input is an image, and the output is a text describing the content of the image. Image captioning is popular application of this generative/discriminative task.
+     2. **Image-to-Text.** This is the reverse of the previous task. The input is an image, and the output is a text describing the content of the image. Image captioning is a popular application of this generative/discriminative task.
  
          <p align="center">
           <img width="700" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b9cfc7b4-d2af-418a-94d3-3490b1479fbf">
@@ -344,7 +344,7 @@ classes: wide
              <em>Visual Question Answering (VQA) [https://huggingface.co/tasks/visual-question-answering].</em>
           </p>
 
-     5. **Graph Machine Learning (GML).** A graph is a description of items linked by relations such as social networks, molecules, knowledge graphs. Graph machine learning (GML) is the application of machine learning to graphs specifically for predictive and prescriptive tasks. GML has a variety of use cases across supply chain, fraud detection, recommendations, customer 360, drug discovery, etc. One of GML’s primary purposes is to compress large sparse graph data structures to enable feasible prediction and inference. GML can be accomplished either by supervised methods or using unsupervised approaches. One example of GML is to predict interactions or collaborations between employees in an organization. This is called _link prediction_ problem. Here, the objective is to predict whether there would be a link between any two unconnected nodes. This is classification/regression supervised and discrimination task.
+     5. **Graph Machine Learning (GML).** A graph is a description of items linked by relations such as social networks, molecules, and knowledge graphs. Graph machine learning (GML) is the application of machine learning to graphs specifically for predictive and prescriptive tasks. GML has a variety of use cases across the supply chain, fraud detection, recommendations, customer 360, drug discovery, etc. One of GML’s primary purposes is to compress large sparse graph data structures to enable feasible prediction and inference. GML can be accomplished either by supervised methods or using unsupervised approaches. One example of GML is to predict interactions or collaborations between employees in an organization. This is called _link prediction_ problem. Here, the objective is to predict whether there would be a link between any two unconnected nodes. This is a classification/regression supervised and discrimination task.
 
         <p align="center">
           <img width="776" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/47f5fcf8-01cf-410f-86f6-90f930e145d5">
@@ -354,7 +354,7 @@ classes: wide
        
    * **Other Tasks.** Here we consider two more tasks in RL and recommendation systems.
      
-     1. **The Cart-Pole problem using Reinformcement Learning.** The Cart-Pole problem is an inverted pendulum problem where a rod/stick is balanced upright on a cart. The goal is to learn an agent/learner to keep the stick from falling over by moving the cart right or left. At each timestep, if the agent can hold the stick upright, it receievs a positive reward (e.g., +1); otherwise, it receives a negative reward (e.g., -1). Using RL, The objective is to maximize the total reward by preventing the stick from falling over.
+     1. **The Cart-Pole problem using Reinforcement Learning.** The Cart-Pole problem is an inverted pendulum problem where a rod/stick is balanced upright on a cart. The goal is to learn an agent/learner to keep the stick from falling over by moving the cart right or left. At each timestep, if the agent can hold the stick upright, it receives a positive reward (e.g., +1); otherwise, it receives a negative reward (e.g., -1). Using RL, The objective is to maximize the total reward by preventing the stick from falling over.
  
          <p align="center">
           <img width="600" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/0fb960ef-95b6-49e2-9864-7c965fc2d511">
@@ -362,18 +362,18 @@ classes: wide
              <em>A Cart-Pole Problem. We can move the cart either to the left or right. When we move the cart to the left, the pole tends to fall to the right side, and vice versa for the other direction.</em>
          </p>
 
-     2. **Netflix Movie Recommendation Problem.** In 2006, Netflix challenged the machine learning communities to develop an algorithm that could show the better accuracy of its recommendation system, Cinematch. Netflix released a dataset of 100 million anonymous movie ratings for this challenge and offered one million dollars for improving the accuracy of Cinematch by 10%. Following figure shows a schematic of the Netflix dataset. The green checks denote the available reviews for the users and movies. The challenge here is to predict (some of) empty entries (tose with "?" sign) without any vote. This problem is also called _Matrix completion_ as the goal is to complete empty entries of a data matrix using other filled/given entries. This problem is a supervised and discriminative task. 
+     2. **Netflix Movie Recommendation Problem.** In 2006, Netflix challenged the machine learning communities to develop an algorithm that could show the better accuracy of its recommendation system, Cinematch. Netflix released a dataset of 100 million anonymous movie ratings for this challenge and offered one million dollars for improving the accuracy of Cinematch by 10%. The following figure shows a schematic of the Netflix dataset. The green checks denote the available reviews for the users and movies. The challenge here is to predict (some of) empty entries (tose with "?" sign) without any vote. This problem is also called _Matrix completion_ as the goal is to complete empty entries of a data matrix using other filled/given entries. This problem is a supervised and discriminative task. 
     
          <p align="center">
           <img width="600" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/1e3e8eed-0ae2-4616-a7fd-06cade2bebb0">
          <br>
-             <em>Reviewing 5 movies by 4 users.Given avialble reviews what the votes will be for the "?".</em>
+             <em>Reviewing 5 movies by 4 users. Given available reviews what will the votes be for "?".</em>
          </p>
 
-      3. **Predicting Stock Prices.** This is a common problem in many financial companies like Fidelity. Given the stock price of a company in some period, can we predict the stock price of future time? Following figure shows such a task using Tesla stock price.
+      3. **Predicting Stock Prices.** This is a common problem in many financial companies like Fidelity. Given the stock price of a company in some period, can we predict the stock price in the future time? The following figure shows such a task using Tesla stock price.
 
          <p align="center">
-          <img width="500" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b69ba691-1a71-4bad-8fe5-27ee164cddc6">
+          <img width="700" alt="Screenshot 2023-07-18 at 11 21 41 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/b69ba691-1a71-4bad-8fe5-27ee164cddc6">
          <br>
              <em>Predicting Tesla stock price [https://towardsdatascience.com/lstm-time-series-forecasting-predicting-stock-prices-using-an-lstm-model-6223e9644a2f].</em>
          </p>
