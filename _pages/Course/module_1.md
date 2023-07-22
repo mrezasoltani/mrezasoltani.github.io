@@ -3,6 +3,15 @@ title: "Module 1 - Introduction"
 classes: wide
 ---
 
+Every day we hear many buzzwords and similar words like Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL), and Data Science (DS). Let me ask Google what these mean by typing "ml dl ai data science data engineering". Google returns results with a newly added search results based on _Generative AI_ (The date of this search in Google is July 21, 2023). Under the hood, Google is running my search question on its experimental conversational AI service, powered by LaMDA, called Bard to get back me (later in this course we will talk about these technologies). This is what I get from Google:
+
+   <p align="center">
+            <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/40958e51-1fb0-47f3-a83a-cb522321144a">
+    <br>
+            <em>Google search result for query "ml dl ai data science data engineering".</em>
+     </p>
+
+
 ## What Is Machine Learning?
 * Machine learning is an application of AI that enables systems to learn and improve from experience without being explicitly programmed. With the deluge of data, we need to find ways to discover what is in the data. ML is a set of algorithms/methods that help us learn and recognize the hidden patterns in data. ML is not a new topic. In fact, learning from data has been explored and used by many disciplines such as Statistics, Signal Processing, Control Theory, etc. What makes ML special is to provide a common formalism to the problems and algorithms. With the help of ML techniques, one can predict future data, or perform other kinds of decision-making under uncertainty.
 * For solving a problem using ML techniques, we always need to have some data related to the task/problem we want to solve. In fact, data is one of the most important pieces in all ML algorithms/methods. Before jumping to the ML concept, we need to introduce some terminologies regarding the data.
