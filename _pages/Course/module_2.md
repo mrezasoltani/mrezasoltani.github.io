@@ -87,7 +87,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 
 ## Transpose of Matrix:
 * By exchanging the rows and columns of a matrix, we obtain the transpose of the matrix. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\),
-its transpose, written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
+its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * Properties of transposition operation.
   1. Given two matrices of \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{m\times n}\\), we have
      \\((\mathrm{X} + \mathrm{Y})^T = \mathrm{X}^T + \mathrm{Y}^T\\).
