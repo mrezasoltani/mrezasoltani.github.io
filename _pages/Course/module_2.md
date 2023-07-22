@@ -64,18 +64,19 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
     \end{bmatrix}
 \end{aligned}
 \end{equation}
+
 * Matrix vies by its rows:
 \begin{equation}
 \begin{aligned}
   \mathrm{X} =  
     \begin{bmatrix}
-      \vert  & \mathrm{X_{1:}}^T & \vert \\\\\\\\
-      \vert  & \mathrm{X_{2:}}^T & \vert \\\\\\\\
+      -  & \mathrm{X_{1:}}^T & - \\\\\\\\
+      -  & \mathrm{X_{2:}}^T & - \\\\\\\\
        & \vdots & \\\\\\\\
-      \vert  & \mathrm{X_{m:}}^T & \vert
+      -  & \mathrm{X_{m:}}^T & -
     \end{bmatrix} =
     \begin{bmatrix}
-      \mathrm{X_{1:}}; & \mathrm{X_{2:}}; & \ldots & \mathrm{X_{n:}}
+      \mathrm{X_{1:}} & \mathrm{X_{2:}} & \ldots & \mathrm{X_{n:}}
     \end{bmatrix}
 \end{aligned}
 \end{equation}
