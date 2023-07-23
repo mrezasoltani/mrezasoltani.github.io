@@ -108,7 +108,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
       x_{21}\pm y_{21} & x_{22}\pm y_{22} & \ldots & x_{2n}\pm y_{2n} \\\\\\\\
       \vdots & \vdots & \ddots & \vdots \\\\\\\\
       x_{m1}\pm y_{m1} & x_{m2}\pm y_{m2} & \ldots & x_{mn}\pm y_{mn}
-    \end{bmatrix}, & & & &
+    \end{bmatrix}, & &
   \mathrm{\alpha X} = 
     \begin{bmatrix}
       \alpha x_{11} & \alpha x_{12} & \ldots & \alpha x_{1n} \\\\\\\\
