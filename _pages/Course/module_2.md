@@ -8,7 +8,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 ## Math Notations 
 * Throughout this course, we use the following conventions:
 
-  |       Variable type       | Symbol             |
+  |       Variable Type       | Symbol             |
    | -------------| ---------------------- |
    | **Deterministic scalar variable**   | \\(x\\) |
    | **Random scalar variable** | \\(X\\)|
@@ -95,18 +95,25 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
     <br>
       <em> Addition, subtraction, and scaling of vectors.</em>
     </p>
-* Alegbriaclly, given two vectors of \\(\mathbf{x}\\), \\(\mathbf{y} \in \mathbb{R}^{n} \\), their addition is given by \\(\mathbf{x} + \mathbf{y} = [x_1+y_1 ~~ x_2+y_2 ~~ \ldots ~~ x_n+y_n]^T \in \mathbb{C}^{n} \\). Also, \\(\alpha\mathbf{x} = [\alpha x_1 ~~ \alpha x_2 ~~\dots ~~\alpha x_n]^T \in \mathbb{C}^{n} \\) for some \\(\alpha \in \mathbb{C}\\).
-* Addition, subtraction, and scaling of matrices are simialr to the vectors (vector is a specila matrix). Alegbriaclly, given two matrices of \\(\mathrm{X}\\), \\(\mathrm{Y} \in \mathbb{R}^{m\times n} \\):
+* Alegbriaclly, given two vectors of \\(\mathbf{x}\\), \\(\mathbf{y} \in \mathbb{R}^{n} \\), their addition is given by \\(\mathbf{x} + \mathbf{y} = [x_1+y_1 ~~ x_2+y_2 ~~ \ldots ~~ x_n+y_n]^T \in \mathbb{R}^{n} \\). Also, \\(\alpha\mathbf{x} = [\alpha x_1 ~~ \alpha x_2 ~~\dots ~~\alpha x_n]^T \in \mathbb{R}^{n} \\) for some \\(\alpha \in \mathbb{R}\\).
+* Addition, subtraction, and scaling of matrices are simialr to the vectors (vector is a specila matrix). Alegbriaclly, given two matrices of \\(\mathrm{X}\\), \\(\mathrm{Y} \in \mathbb{R}^{m\times n} \\) and for any scalar \\(alpha \in \mathbb{R}\\):
 
 \begin{equation}
 \begin{aligned}
   \mathrm{X} \pm \mathrm{Y} =  
     \begin{bmatrix}
-      x_{11}\pm x_{11} & x_{12}\pm y_{12} & \ldots & x_{1n}\pm y_{12} \\\\\\\\
+      x_{11}\pm x_{11} & x_{12}\pm y_{12} & \ldots & x_{1n}\pm y_{1n} \\\\\\\\
       x_{21}\pm y_{21} & x_{22}\pm y_{22} & \ldots & x_{2n}\pm y_{2n} \\\\\\\\
       \vdots & \vdots & \ddots & \vdots \\\\\\\\
       x_{m1}\pm y_{m1} & x_{m2}\pm y_{m2} & \ldots & x_{mn}\pm y_{mn}
-    \end{bmatrix}    
+    \end{bmatrix}, & & & &
+  \mathrm{\alpha X} = 
+    \begin{bmatrix}
+      \alphax_{11} & \alphax_{12} & \ldots & \alphax_{1n} \\\\\\\\
+      \alphax_{21} & \alphax_{22} & \ldots & \alphax_{2n} \\\\\\\\
+      \vdots & \vdots & \ddots & \vdots \\\\\\\\
+      \alphax_{m1} & \alphax_{m2} & \ldots & \alphax_{mn}
+    \end{bmatrix}
 \end{aligned}
 \end{equation}
 
