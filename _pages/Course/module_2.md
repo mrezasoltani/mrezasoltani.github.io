@@ -123,7 +123,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 * For any two vectors \\(\mathbf{x} \in \mathbb{R}^{n}\\) and \\(\mathbf{y} \in \mathbb{R}^{n}\\), their (inner) product is a scaler given by \\(\mathbf{x}.\mathbf{y} = \sum_{i=1}^{n}x_iy_i\\). Geometrically, the inner product is interpreted as the projection of one vector onto another one as depicted in the following figure. Accordingly, we also have another (geometric formula) for the inner product of two vectors: \\(\mathbf{x}.\mathbf{y} = \\|\mathbf{x}\\|_2\\|\mathbf{y}\\|_2\cos(\theta)\\), where \\(\theta\\) is the angle between two vectors.
 
   <p align="center">
-    <img width="842" alt="Screenshot 2023-07-22 at 11 54 22 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/ff61f836-7b63-43ff-b11b-ced6e7b0cd54">
+    <img width="400" alt="Screenshot 2023-07-22 at 11 54 22 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/ff61f836-7b63-43ff-b11b-ced6e7b0cd54">
     <br>
     <em>Ineer product of two vectors.</em>
   </p>
