@@ -206,7 +206,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   7. Multiplicative identity: there exist an element in \\(F\\) denoted by \\(1\\) such that \\(\alpha \cdot 1 =\alpha\\)
   8. Multiplicative inverse: \\(\forall \alpha\neq 0 \in F\\), there exist an element in \\(F\\) denoted by \\(\alpha^{-1}\\) such that \\(\alpha\cdot\alpha^{-1} = 1\\)
   9. Distributive property: \\(\alpha \cdot(\beta+\gamma) = \alpha \cdot \beta + \alpha \cdot \gamma\\)
-  * **Definition.** Let F be a field and let $S$ be a set equipped with an operation [eq11], called vector addition and denoted by $+$, and another operation [eq12], called scalar multiplication and denoted by $cdot $. The set $S$ is said to be a linear space (or vector space) over F if and only if, for any $s,t,uin S$ and any $a,bin F$, the following properties hold:
+  * **Definition.** Let \\(F\\) be a field and \\(S\\) be a set equipped with a vector addition defined on \\(S\time S\rightarrow S\\) denoted by \\(+\\), and a scalar multiplication another operation defined on \\(F\time S\rightarrow S\\) denoted by \\(\cdot\\). The set \\(S\\) is said to be a linear space (or vector space) over field \\(F\\) if and only if, for any $\mathbf{x}, ~\mathbf{y}, ~\mathbf{z} \in S$ and any \\(\alpha, ~\beta \in F\\), the following properties hold:
   1. Associativity of vector addition:
   2. Commutativity of vector addition: $s+t=t+s$
   3. Additive identity: there exists a vector [eq14], such that $s+0=s$
