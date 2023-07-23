@@ -123,6 +123,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ## Linear independence, Spans, and Basis
 
+* A set of vectors \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) is said to be linearly independent if \\(\Sum_{i=1}^{n} \alhpa_i x_i = 0\\), then \\(\alpha_1 = \alpha_2 = \dots = \alpha_n = 0\\). 
 
 
 
