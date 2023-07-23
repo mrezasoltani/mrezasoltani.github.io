@@ -86,6 +86,8 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 \end{aligned}
 \end{equation}
 
+* **Definition.** Consider a set of \\(p\\) matrices (vectors) \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) with dimension \\(\mathbb{R}^{m\times n}\\)  \\((\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) with dimension \\(\mathbb{R}^{p})\\). A matrix (vector) \\(\mathrm{Y} \in \mathbb{R}^{m\times n}\\) \\((\mathbf{y} \in  \mathbb{R}^{n})\\) is a _linear combination_ of \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) ( \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) ) if and only if there exist \\(p\\) scalars coefficients \\(\\{\alpha_1, \alpha_1, \ldots, \alpha_1\\}\\) such that \\(\mathrm{Y} = \sum_{i=1}^{p} \alpha_i \mathrm{X_i}\\) \\((\mathbf{y} = \sum_{i=1}^{p} \alpha_i \mathbf{x_i})\\).
+
 ## Addition, Subtraction, and Scaling Vectors
 
 * Addition, subtraction, and scaling vectors have been illustrated in the following figure.
@@ -117,7 +119,12 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 \end{aligned}
 \end{equation}
 
-* **Definition.** Consider a set of \\(p\\) matrices (vectors) \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) with dimension \\(\mathbb{R}^{m\times n}\\)  \\((\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) with dimension \\(\mathbb{R}^{p})\\). A matrix (vector) \\(\mathrm{Y} \in \mathbb{R}^{m\times n}\\) \\((\mathbf{y} \in  \mathbb{R}^{n})\\) is a _linear combination_ of \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) ( \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) ) if and only if there exist \\(p\\) scalars coefficients \\(\\{\alpha_1, \alpha_1, \ldots, \alpha_1\\}\\) such that \\(\mathrm{Y} = \sum_{i=1}^{p} \alpha_i \mathrm{X_i}\\) \\((\mathbf{y} = \sum_{i=1}^{p} \alpha_i \mathbf{x_i})\\).
+## Inner product of Two Vectors
+* For any two vectors \\(\mathbf{x} \in \mathbb{R}^{n}\\) and \\(\mathbf{n} \in \mathbb{R}^{n}\\), their (inner) product is a scaler given by \\(\mathbf{x}.\mathbf{y} = \sum_{i=1}^{n}x_iy_i\\). Geometrically, the inner product is interpreted as the projection of one vector onto another one as depicted in the following figure. Accordingly, we also have another (geometric formula) for the inner product of two vectors: \\(\mathbf{x}.\mathbf{y} = \\||\mathbf{x}\\||_2\\||\mathbf{y}\\||_2\cos(\theta)\\), where \\(theta\\) is the angle between two vectors. 
+
+## Matrix Multiplicaiton
+* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\in \mathbb{R}^{m\times p}\\) is defined as \\( (\mathrm{X}\mathrm{Y})_{ij} = \sum_{k=1}^{n}x_{ik}y_{kj}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\)) column of the product is obtained by the inner product of (i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\)) column of matrix \\(\mathrm{Y}\\).
+  
 
 ## Propoerties of Matrices
 * **Aassociativity.** Multiplication of a matrix by a scalar is associative: for any matrix \\(mathrm{X}\\) and for any scalars \\(alpha\\) and \\(\beta\\), we have \\(\alpha (\beta \mathrm{X}) = (\alpha \beta)\mathrm{X}\\).
