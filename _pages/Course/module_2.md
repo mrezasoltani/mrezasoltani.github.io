@@ -100,4 +100,11 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   6. The set of all symmetric (Hermitian) matrices is denoted as \\(\mathbb{S}^n\\) (\\(\mathbb{H}^n\\)).
 
 ## Tensor:
-* A tensor (in machine learning terminology) is just a generalization of a 2d array to more than 2 dimensions,
+* In a simple term, a tensor is just a generalization of a 2-d array to more than 2 dimensions. We can think of a vector as a 1-d tensor, matrix as a 2-d tensor. The following picture show a 3-d tensor.
+
+ <p>
+  <img width="811" alt="Screenshot 2023-07-22 at 11 21 29 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/f297d14b-115c-4489-b701-f2e7c5e7b76d">
+  <be>
+    <em> Four types of tensors. </em>
+  </p>
+
