@@ -98,7 +98,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
       <em> Addition, subtraction, and scaling of vectors.</em>
     </p>
 * Alegbriaclly, given two vectors of \\(\mathbf{x}\\), \\(\mathbf{y} \in \mathbb{R}^{n} \\), their addition is given by \\(\mathbf{x} + \mathbf{y} = [x_1+y_1 ~~ x_2+y_2 ~~ \ldots ~~ x_n+y_n]^T \in \mathbb{R}^{n} \\). Also, \\(\alpha\mathbf{x} = [\alpha x_1 ~~ \alpha x_2 ~~\dots ~~\alpha x_n]^T \in \mathbb{R}^{n} \\) for some \\(\alpha \in \mathbb{R}\\).
-* Addition, subtraction, and scaling of matrices are simialr to the vectors (vector is a specila matrix). Alegbriaclly, given two matrices of \\(\mathrm{X}\\), \\(\mathrm{Y} \in \mathbb{R}^{m\times n} \\) and for any scalar \\(alpha \in \mathbb{R}\\):
+* Addition, subtraction, and scaling of matrices are simialr to the vectors (vector is a specila matrix). Alegbriaclly, given two matrices of \\(\mathrm{X}\\), \\(\mathrm{Y} \in \mathbb{R}^{m\times n} \\) and for any scalar \\(\alpha \in \mathbb{R}\\):
 
 \begin{equation}
 \begin{aligned}
@@ -120,7 +120,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 \end{equation}
 
 ## Inner Product of Two Vectors
-* For any two vectors \\(\mathbf{x} \in \mathbb{R}^{n}\\) and \\(\mathbf{y} \in \mathbb{R}^{n}\\), their (inner) product is a scaler given by \\(\mathbf{x}.\mathbf{y} = \sum_{i=1}^{n}x_iy_i\\). Geometrically, the inner product is interpreted as the projection of one vector onto another one as depicted in the following figure. Accordingly, we also have another (geometric formula) for the inner product of two vectors: \\(\mathbf{x}.\mathbf{y} = \\|\\|\mathbf{x}\\|\\|_2\\|\\|\mathbf{y}\\|\\|_2\cos(\theta)\\), where \\(theta\\) is the angle between two vectors. 
+* For any two vectors \\(\mathbf{x} \in \mathbb{R}^{n}\\) and \\(\mathbf{y} \in \mathbb{R}^{n}\\), their (inner) product is a scaler given by \\(\mathbf{x}.\mathbf{y} = \sum_{i=1}^{n}x_iy_i\\). Geometrically, the inner product is interpreted as the projection of one vector onto another one as depicted in the following figure. Accordingly, we also have another (geometric formula) for the inner product of two vectors: \\(\mathbf{x}.\mathbf{y} = \\|\mathbf{x}\\|_2\\|\mathbf{y}\\|_2\cos(\theta)\\), where \\(\theta\\) is the angle between two vectors. 
 
 ## Matrix Multiplicaiton
 * For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\in \mathbb{R}^{m\times p}\\) is defined as \\( (\mathrm{X}\mathrm{Y})_{ij} = \sum_{k=1}^{n}x_{ik}y_{kj}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\)) column of the product is obtained by the inner product of (i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\)) column of matrix \\(\mathrm{Y}\\).
