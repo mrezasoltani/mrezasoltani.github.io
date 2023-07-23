@@ -131,7 +131,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
   </p>
 
 ## Matrix Multiplicaiton
-* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as \\( (\mathrm{X} \mathrm{Y}) _{ij} = \sum_{k=1}^{n} x_{ik} y_{kj}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\)) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\)) column of matrix \\(\mathrm{Y}\\).
+* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as \\( (\mathrm{X} \mathrm{Y})\\)\\(_{ij} = \sum_{k=1}^{n} x_{ik} y_{kj}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\)) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\)) column of matrix \\(\mathrm{Y}\\).
   
 
 ## Propoerties of Matrices
@@ -200,12 +200,22 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   1. Associativity of addition: \\(\alpha + (\beta+\gamma) = (\alpha + \beta)+\gamma\\)
   2. Commutativity of addition: \\(\alpha+\beta = \beta+\alpha\\)
   3. Additive identity: there exist an elemnt in \\(F\\) denoted by \\(0\\) such that \\(\alpha + 0 =\alpha\\)
-  4. Additive inverse: \\(\forall \alpha \in F\\), there exist an elemnt in \\(F\\) denoted by \\(-\alpha\\) such that \\(\alpha-\alpha = 0\\)
+  4. Additive inverse: \\(\forall \alpha \in F\\), there exist an elemnt in \\(F\\) denoted by \\(-\alpha\\) such that \\(\alpha +(-\alpha) = 0\\)
   5. Associativity of multiplication: \\(\alpha \cdot (\beta\cdot\gamma) = (\alpha \cdot \beta)\cdot\gamma\\)
   6. Commutativity of multiplication: \\(\alpha\cdot\beta = \beta\cdot\alpha\\)
   7. Multiplicative identity: there exist an element in \\(F\\) denoted by \\(1\\) such that \\(\alpha \cdot 1 =\alpha\\)
   8. Multiplicative inverse: \\(\forall \alpha\neq 0 \in F\\), there exist an element in \\(F\\) denoted by \\(\alpha^{-1}\\) such that \\(\alpha\cdot\alpha^{-1} = 1\\)
   9. Distributive property: \\(\alpha \cdot(\beta+\gamma) = \alpha \cdot \beta + \alpha \cdot \gamma\\)
+  * **Definition.** Let F be a field and let $S$ be a set equipped with an operation [eq11], called vector addition and denoted by $+$, and another operation [eq12], called scalar multiplication and denoted by $cdot $. The set $S$ is said to be a linear space (or vector space) over F if and only if, for any $s,t,uin S$ and any $a,bin F$, the following properties hold:
+  1. Associativity of vector addition:
+  2. Commutativity of vector addition: $s+t=t+s$
+  3. Additive identity: there exists a vector [eq14], such that $s+0=s$
+  4. Additive inverse: for each $s$, there exists an element of $S$, denoted by $-s$, such that [eq15]
+  5. Compatibility of multiplications:
+  6. Multiplicative identity: if $1in F$ is the multiplicative identity in F, then $1cdot s=s$
+  7. Distributive property w.r.t. vector addition:
+  8. Distributive property w.r.t. field addition:
+* **Definition.** Let $S$ be a linear space and $S_{1}$ a subset of $S$. $S_{1}$ is a linear subspace of $S$ if and only if $S_{1}$ is itself a linear space, that is, if and only if, for any two vectors $A,Bin S_{1}$ and any two scalars $lpha $ and $eta $, the linear combination
 
 ## Linear independence, Spans, and Basis
 
