@@ -117,7 +117,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
     <p align="center">
     <img width="842" alt="Screenshot 2023-07-22 at 11 54 22 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/746371b3-d4d8-49b1-baa4-b441865919b6">
     <br>
-      <em> Addition, subtraction, and scaling of vectors \\(\mathbf{x}\\) and \\(\mathbf{y}\\). </em>
+      <em> Addition, subtraction, and scaling of vectors.</em>
     </p>
 * Alegbriaclly, given two vectors of \\(\mathbf{x}\\), \\(\mathbf{y} \in \mathbb{R}^{n} \\), their addition is given by \\(\mathbf{x} + \mathbf{y} = [x_1+y_1 ~~ x_2+y_2 ~~ \ldots ~~ x_n+y_n]^T \in \mathbb{R}^{n} \\). Also, \\(\alpha\mathbf{x} = [\alpha x_1 ~~ \alpha x_2 ~~\dots ~~\alpha x_n]^T \in \mathbb{R}^{n} \\) for some \\(\alpha \in \mathbb{C}\\).
 
