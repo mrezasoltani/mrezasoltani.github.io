@@ -131,14 +131,13 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
   </p>
 
 ## Matrix Multiplicaiton
-* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as \\( (\mathrm{X} \mathrm{Y})_{ij}= \sum_{k=1}^{n} x_{ik} y_{kj}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\)) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\)) column of matrix \\(\mathrm{Y}\\).
-* \\\mathrm{Y}_{ij}\\)
+* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as \\(\mathrm{X} \mathrm{Y_{ij}} = \sum_{k=1}^{n} x_{ik} y_{kj}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\)) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\)) column of matrix \\(\mathrm{Y}\\).
   
 
 ## Propoerties of Matrices
 * **Aassociativity.** Multiplication of a matrix by a scalar is associative: for any matrix \\(mathrm{X}\\) and for any scalars \\(alpha\\) and \\(\beta\\), we have \\(\alpha (\beta \mathrm{X}) = (\alpha \beta)\mathrm{X}\\).
-* **Distributivity w.r.t addition.** Multiplication of a matrix by a scalar is distributive with respect to matrix addition: for any matrices \\(\mathrm{X}\\) and \\(\mathrm{Y}\\) and for any scalar \\(alpha\\), we have \\(\alpha (\mathrm{X}+\mathrm{Y}) = \alpha \mathrm{X} + \alpha \mathrm{Y}\\).
-* **Distributive property w.r.t multiplication.** Multiplication of a matrix by a scalar is distributive with respect to the addition of scalars: for any matrix \\(\mathrm{X}\\) and for any scalars \\(\alpha\\) and \\(\beta\\), we have \\((\alpha+\beta)\mathrm{X} = \alpha\mathrm{X} + \beta\mathrm{Y}\\).
+* **Distributivity w.r.t. addition.** Multiplication of a matrix by a scalar is distributive with respect to matrix addition: for any matrices \\(\mathrm{X}\\) and \\(\mathrm{Y}\\) and for any scalar \\(alpha\\), we have \\(\alpha (\mathrm{X}+\mathrm{Y}) = \alpha \mathrm{X} + \alpha \mathrm{Y}\\).
+* **Distributive property w.r.t. multiplication.** Multiplication of a matrix by a scalar is distributive with respect to the addition of scalars: for any matrix \\(\mathrm{X}\\) and for any scalars \\(\alpha\\) and \\(\beta\\), we have \\((\alpha+\beta)\mathrm{X} = \alpha\mathrm{X} + \beta\mathrm{Y}\\).
 
 
 ## Diagonal and Off-diagonal Entries of a Matrix
@@ -211,12 +210,14 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * **Definition.** Let \\(F\\) be a field and \\(S\\) be a set equipped with a vector addition defined on \\(S\time S\rightarrow S\\) denoted by \\(+\\), and a scalar multiplication another operation defined on \\(F\time S\rightarrow S\\) denoted by \\(\cdot\\). The set \\(S\\) is said to be a linear space (or vector space) over field \\(F\\) if and only if, for any \\(\mathbf{x}, ~\mathbf{y}, ~\mathbf{z} \in S\\) and any \\(\alpha, ~\beta \in F\\), the following properties hold:
   1. Associativity of vector addition: \\(\mathbf{x} + (\mathbf{y} + \mathbf{z}) = (\mathbf{x} + \mathbf{y}) + \mathbf{z}\\)
   2. Commutativity of vector addition: \\(\mathbf{x} + \mathbf{y} = \mathbf{y} + \mathbf{x}\\)
-  3. Additive identity: there exists a vector [eq14], such that $s+0=s$
-  4. Additive inverse: for each $s$, there exists an element of $S$, denoted by $-s$, such that [eq15]
-  5. Compatibility of multiplications:
-  6. Multiplicative identity: if $1in F$ is the multiplicative identity in F, then $1cdot s=s$
-  7. Distributive property w.r.t. vector addition:
-  8. Distributive property w.r.t. field addition:
+  3. Additive identity: there exists a vector \\(0\in S\\), such that \\(\mathbf{x}+0=\mathbf{x}\\)
+  4. Additive inverse: \\(\forall \mathbf{x}\in S\\), there exists an element of \\(S\\), denoted by \\(-\mathbf{x}\\), such that \\(\mathbf{x}+(-\mathbf{x})=0\\)
+  5. Compatibility of multiplications: \\(\mathbf{x} \cdot (\mathbf{y}\cdot \mathbf{z}) = (\mathbf{x}\cdot \mathbf{y}) \cdot \mathbf{z}\\)
+  6. Multiplicative identity: Let \\1 \in F$ be the multiplicative identity in \\(F\\), then \\1\cdot \mathbf{x}=\mathbf{x}\\)
+  7. Distributive property w.r.t. _vector_ addition: \\(\mathbf{x} \cdot(\mathbf{y}+\mathbf{z}) = \mathbf{x} \cdot \mathbf{y} + \mathbf{x} \cdot \mathbf{z}\\)
+  8. Distributive property w.r.t. _field_ addition:
+  
+*The elements of a vector space are called vectors and those of its associated field are called scalars.
 
 * **Definition.** Let $S$ be a linear space and $S_{1}$ a subset of $S$. $S_{1}$ is a linear subspace of $S$ if and only if $S_{1}$ is itself a linear space, that is, if and only if, for any two vectors $A,Bin S_{1}$ and any two scalars $lpha $ and $eta $, the linear combination
 
