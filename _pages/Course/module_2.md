@@ -120,7 +120,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
       <em> Addition, subtraction, and scaling of vectors \\(\mathbf{x}\\) and \\(\mathbf{y}\\). </em>
     </p>
 * Alegbriaclly, given two vectors of \\(\mathbf{x}\\), \\(\mathbf{y} \in \mathbb{R}^{n} \\), their addition is given by \\(\mathbf{x} + \mathbf{y} = [x_1+y_1 ~ x_2+y_2 ~ \ldots ~ x_n+y_n]^T \in \mathbb{R}^{n} \\). Also, \\(\alpha\mathbf{x} = [\alpha x_1 \alpha x_2 \dots \alpha x_n]^T \in \mathbb{R}^{n} \\).
-* 
+
 ## Linear independence, Spans, and Basis
 
 
