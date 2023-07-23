@@ -199,12 +199,12 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * **Definition.** Consider a set \\(F\\) together with two binary operations, the addition, denoted by \\(+\\) and the multiplication, denoted by \((cdot\\). The set \\(F\\) is said to be a field if and only if, for any\\(\alpha, \beta \gamma \in F\\), all the following properties hold:
   1. Associativity of addition: \\(\alpha + (\beta+\gamma) = (\alpha + \beta)+\gamma\\)
   2. Commutativity of addition: \\(\alpha+\beta = \beta+\alpha\\)
-  3. Additive identity: \\(\exists 0 \in F\\) such that \\(\alpha + 0 =\alpha\\)
-  4. Additive inverse: \\(\forall \alpha \in F, \exists -\alpha \in F\\) such that \\(\alpha-\alpha = 0\\)
+  3. Additive identity: there exist an elemnt \\(\in F\\) denoted by \\(0\\) such that \\(\alpha + 0 =\alpha\\)
+  4. Additive inverse: \\(\forall \alpha \in F, there exist an elemnt \\(\in F\\) denoted by \\(-\alpha\\) such that \\(\alpha-\alpha = 0\\)
   5. Associativity of multiplication: \\(\alpha \cdot (\beta\cdot\gamma) = (\alpha \cdot \beta)\cdot\gamma\\)
   6. Commutativity of multiplication: \\(\alpha\cdot\beta = \beta\cdot\alpha\\)
-  7. Multiplicative identity: \\(\exists 1 \in F\\) such that \\(\alpha \cdot 1 =\alpha\\)
-  8. Multiplicative inverse: \\(\forall \alpha \in F, \exists \dfrac{1}{\alpha} \in F\\) such that \\(\alpha\cdot\dfrac{1}{\alpha} = 1\\)
+  7. Multiplicative identity: there exist an element \\(\in F\\) denoted by \\(1\\) such that \\(\alpha \cdot 1 =\alpha\\)
+  8. Multiplicative inverse: \\(\forall \alpha\neq 0 \in F\\), there exist an element \\(\in F\\) denoted by \\(\alpha^{-1}\\) such that \\(\alpha\cdot\alpha^{-1} = 1\\)
   9. Distributive property: \\(\alpha \cdot(\beta+\gamma) = \alpha \cdot \beta + \alpha \cdot \gamma\\)
 
 ## Linear independence, Spans, and Basis
