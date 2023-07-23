@@ -207,7 +207,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   8. Multiplicative inverse: \\(\forall \alpha\neq 0 \in F\\), there exist an element in \\(F\\) denoted by \\(\alpha^{-1}\\) such that \\(\alpha\cdot\alpha^{-1} = 1\\)
   9. Distributive property: \\(\alpha \cdot(\beta+\gamma) = \alpha \cdot \beta + \alpha \cdot \gamma\\)
       
-* **Definition.** Let \\(F\\) be a field and \\(S\\) be a set equipped with a vector addition defined on \\(S\time S\rightarrow S\\) denoted by \\(+\\), and a scalar multiplication another operation defined on \\(F\time S\rightarrow S\\) denoted by \\(\cdot\\). The set \\(S\\) is said to be a linear space (or vector space) over field \\(F\\) if and only if, for any \\(\mathbf{x}, ~\mathbf{y}, ~\mathbf{z} \in S\\) and any \\(\alpha, ~\beta \in F\\), the following properties hold:
+* **Definition.** Let \\(F\\) be a field and \\(S\\) be a set equipped with a vector addition defined on \\(S\times S\rightarrow S\\) denoted by \\(+\\), and a scalar multiplication another operation defined on \\(F\times S\rightarrow S\\) denoted by \\(\cdot\\). The set \\(S\\) is said to be a linear space (or vector space) over field \\(F\\) if and only if, for any \\(\mathbf{x}, ~\mathbf{y}, ~\mathbf{z} \in S\\) and any \\(\alpha, ~\beta \in F\\), the following properties hold:
   1. Associativity of vector addition: \\(\mathbf{x} + (\mathbf{y} + \mathbf{z}) = (\mathbf{x} + \mathbf{y}) + \mathbf{z}\\)
   2. Commutativity of vector addition: \\(\mathbf{x} + \mathbf{y} = \mathbf{y} + \mathbf{x}\\)
   3. Additive identity: there exists a vector \\(0\in S\\), such that \\(\mathbf{x}+0=\mathbf{x}\\)
@@ -215,15 +215,15 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   5. Compatibility of multiplications: \\(\mathbf{x} \cdot (\mathbf{y}\cdot \mathbf{z}) = (\mathbf{x}\cdot \mathbf{y}) \cdot \mathbf{z}\\)
   6. Multiplicative identity: Let \\1 \in F$ be the multiplicative identity in \\(F\\), then \\1\cdot \mathbf{x}=\mathbf{x}\\)
   7. Distributive property w.r.t. _vector_ addition: \\(\mathbf{x} \cdot(\mathbf{y}+\mathbf{z}) = \mathbf{x} \cdot \mathbf{y} + \mathbf{x} \cdot \mathbf{z}\\)
-  8. Distributive property w.r.t. _field_ addition: \\(\alpha +\beta)\cdot\mathbf{x} = \alpha\cdot\mathbf{x} + \beta\cdot\mathbf{x}\\)
+  8. Distributive property w.r.t. _field_ addition: \\((\alpha +\beta)\cdot\mathbf{x} = \alpha\cdot\mathbf{x} + \beta\cdot\mathbf{x}\\)
   
 * Given the above definition, the elements of a vector space \\(S\\) and its associated field \\(F\\) are called vectors and scalars, respectively.
 
-* **Definition.** Let $S$ be a linear space and $S_{1}$ a subset of $S$. $S_{1}$ is a linear subspace of $S$ if and only if $S_{1}$ is itself a linear space, that is, if and only if, for any two vectors $A,Bin S_{1}$ and any two scalars $lpha $ and $eta $, the linear combination
+* **Definition.** A (linear) subspace of a linear space \\(S\\) is a set which is subset of \\(S)\\) and itself is a linear space.
 
 ## Linear independence, Spans, and Basis
 
-* A set of vectors \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) is said to be linearly independent if \\(\sum_{i=1}^{n} \alpha_i \mathbf{x_i} = 0\\), then \\(\alpha_1 = \alpha_2 = \dots = \alpha_n = 0\\). 
+* A set of vectors \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) is said to be linearly independent if \\(\sum_{i=1}^{n} \alpha_i \mathbf{x_i} = 0\\), then \\(\alpha_1 = \alpha_2 = \dots = \alpha_n = 0\\). This means no vectors in set \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) can be represented as a linear combination of the remaining vectors. Conversely, a vector which can be represented as a linear combination of the remaining vectors is said to be linearly dependent.
 
 
 
