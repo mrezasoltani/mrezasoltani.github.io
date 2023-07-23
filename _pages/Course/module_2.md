@@ -29,6 +29,8 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **A probability distribution over a discrete variable (pmf)** | \\(P(x)\\) |
    | **A probability distribution over a continuous variable (pdf)** | \\(p(x)\\) |
    | \\(L^p\\) **norm of vector** \\(\mathbf{x}\\) | \\(\\|\\|\mathbf{x}\\|\\|_p\\) |
+   | **Dot product of two vectors** | \\(\mathbf{x}.\mathbf{y}\\) |
+   | **Hadamard (element-wise) product of two vectors/matrx** | \\(\mathbf{x}\odot\mathbf{y} (\mathrm{X}\odot\mathrm{Y})\\) |
 
 ## Vector and Matrix
 * A vector \\(\mathbf{x} \in \mathbb{R}^n \\) is a collection of \\(n\\) numbers defined on real, \\(\mathbb{R}\\) or complex, \\(\mathbb{C}\\) field. In this course, we use a column vector to denote a vector \\(\mathbf{x}\\). In the above table, we have shown the Canonical basis vector, \\(e_i\\) with a superscript \\(T\\) to denote the transpose of a row vector is a column one. A matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) is a 2-d array of \\(mn\\) numbers, arranged in \\(m\\) rows and \\(n\\) columns:
@@ -108,7 +110,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
       x_{21}\pm y_{21} & x_{22}\pm y_{22} & \ldots & x_{2n}\pm y_{2n} \\\\\\\\
       \vdots & \vdots & \ddots & \vdots \\\\\\\\
       x_{m1}\pm y_{m1} & x_{m2}\pm y_{m2} & \ldots & x_{mn}\pm y_{mn}
-    \end{bmatrix}, & &
+    \end{bmatrix}, &
   \mathrm{\alpha X} = 
     \begin{bmatrix}
       \alpha x_{11} & \alpha x_{12} & \ldots & \alpha x_{1n} \\\\\\\\
@@ -125,7 +127,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
   <p align="center">
     <img width="400" alt="Screenshot 2023-07-22 at 11 54 22 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/ff61f836-7b63-43ff-b11b-ced6e7b0cd54">
     <br>
-    <em>Ineer product of two vectors.</em>
+    <em>Inner product of two vectors.</em>
   </p>
 
 ## Matrix Multiplicaiton
