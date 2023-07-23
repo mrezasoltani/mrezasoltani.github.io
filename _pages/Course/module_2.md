@@ -215,9 +215,9 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   5. Compatibility of multiplications: \\(\mathbf{x} \cdot (\mathbf{y}\cdot \mathbf{z}) = (\mathbf{x}\cdot \mathbf{y}) \cdot \mathbf{z}\\)
   6. Multiplicative identity: Let \\1 \in F$ be the multiplicative identity in \\(F\\), then \\1\cdot \mathbf{x}=\mathbf{x}\\)
   7. Distributive property w.r.t. _vector_ addition: \\(\mathbf{x} \cdot(\mathbf{y}+\mathbf{z}) = \mathbf{x} \cdot \mathbf{y} + \mathbf{x} \cdot \mathbf{z}\\)
-  8. Distributive property w.r.t. _field_ addition:
+  8. Distributive property w.r.t. _field_ addition: \\(\alpha +\beta)\cdot\mathbf{x} = \alpha\cdot\mathbf{x} + \beta\cdot\mathbf{x}\\)
   
-*The elements of a vector space are called vectors and those of its associated field are called scalars.
+* Given the above definition, the elements of a vector space \\(S\\) and its associated field \\(F\\) are called vectors and scalars, respectively.
 
 * **Definition.** Let $S$ be a linear space and $S_{1}$ a subset of $S$. $S_{1}$ is a linear subspace of $S$ if and only if $S_{1}$ is itself a linear space, that is, if and only if, for any two vectors $A,Bin S_{1}$ and any two scalars $lpha $ and $eta $, the linear combination
 
