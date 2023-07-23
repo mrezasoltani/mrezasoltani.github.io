@@ -229,8 +229,8 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 \\[span(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}) = \\{\sum_{i=1}^{n} \alpha_i \mathbf{x_i} | \alpha_i \in \mathbb{R}\\}\\]
 * Let \\(S\\) be a linear space. Consider a set of \\(n\\) linearly independent vectors \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\). Then, this set is a **_basis_** for \\(S\\) if and only if, for any \\(\mathbf{x} \in S\\), there exist \\(n\\) scalars \\(\alpha_1,\alpha_2, \dots, \alpha_n\\) such that \\(\mathbf{x} = \sum_{i=1}^{n} \alpha_i \mathbf{x_i}\\). It is sometime said that the basis spans the set \\(S\\). In this case, \\(span(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}) = \mathbb{R}^n\\).
 * Every finite-dimensional linear space has a basis. This can be seen from the _Steinitz exchange lemma_.
-* **Proposition.** Let \\(U=\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_k}\\}\\) be a set of \\(k\\) linearly independent vectors belonging to a linear space \\(S\\). Also, consider a finite set of vectors \\(V=\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) that span \\(S\\). If these \\(k\\) linearly independent vectors does not form a basis for \\(S\\), then one can form a basis by adjoining some elements of \\V\\) to set \\(U\\).
-* \\(\mathrm{X}_{i}\\)
+* **Proposition.** Let \\(U=\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_k}\\}\\) be a set of \\(k\\) linearly independent vectors belonging to a linear space \\(S\\). Also, consider a finite set of vectors \\(V=\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) that span \\(S\\). If these \\(k\\) linearly independent vectors does not form a basis for \\(S\\), then one can form a basis by adjoining some elements of \\(V\\) to set \\(U\\).
+* \\(\mathrm{X}_{ij}\\)
 
 
 
