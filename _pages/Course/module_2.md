@@ -87,7 +87,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 \end{equation}
 
 ## Diagonal and Off-diagonal Entries
-* Let \\(\mathrm{X}\\) be a square matrix. The diagonal (or main diagonal of \\(\mathrm{X}\\)) is the set of all entries \\(\mathrm{X}_{i,j}\\) such that $i=lj$. The entries on the main diagonal are called diagonal entries, and all the other entries are called off-diagonal entries. In the following \\(3\times 3\\) square matrix, \\(daig(\mathrm{X}\\) = \\{1, 5, 9\\}\\), and off-diagonal entries are given by \\(\\{2, 3, 4, 6, 7, 8\\}\\).
+* Let \\(\mathrm{X}\\) be a square matrix. The diagonal (or main diagonal of \\(\mathrm{X}\\)) is the set of all entries \\(\mathrm{X}_{i,j}\\) such that \\(i=j\\). The entries on the main diagonal are called diagonal entries, and all the other entries are called off-diagonal entries. In the following \\(3\times 3\\) square matrix, \\(daig(\mathrm{X})= \\{1, 5, 9\\}\\), and off-diagonal entries are given by \\(\\{2, 3, 4, 6, 7, 8\\}\\).
 
 \begin{equation}
 \begin{aligned}
@@ -95,7 +95,8 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
     \begin{bmatrix}
       1 & 2 & 2  \\\\\\\\
       4 & 5 & 6  \\\\\\\\
-      7 & 8 & 9  \\\\\\\\
+      7 & 8 & 9  
+    \end{bmatrix}
 \end{aligned}
 \end{equation}
 
@@ -110,6 +111,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
       0  & 1 & 0 & \ldots & 0  \\\\\\\\
       \vdots & \vdots & \ddots & \vdots & \vdots \\\\\\\\
       0  & 0 & 0 & \ldots & 1
+    \end{bmatrix}
   \end{aligned}
 \end{equation}
 
