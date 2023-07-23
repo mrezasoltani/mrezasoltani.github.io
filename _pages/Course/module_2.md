@@ -52,7 +52,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 \end{equation}
 
 * If \\(m=n\\), then the matrix is called a _square_ matrix. We can also show a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) either by its columns, or by rows:
-* Column view of a Matrix:
+* Column view of a matrix:
 
 \begin{equation}
 \begin{aligned}
@@ -68,7 +68,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 \end{aligned}
 \end{equation}
 
-* Row view of a Matrix:
+* Row view of a matrix:
 
 \begin{equation}
 \begin{aligned}
@@ -80,10 +80,12 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
       ---  & \mathrm{X_{m:}}^T & --- 
     \end{bmatrix} =
     \begin{bmatrix}
-      \mathrm{X_{1:}} & \mathrm{X_{2:}} & \ldots & \mathrm{X_{m:}}
+      \mathrm{X_{1:}}; & \mathrm{X_{2:}}; & ;\ldots; & \mathrm{X_{m:}}
     \end{bmatrix}
 \end{aligned}
 \end{equation}
+
+  Please note that the colon notation is borrowed from Matlab.
 
 ## Transpose of Matrix:
 * By exchanging the rows and columns of a matrix, we obtain the transpose of the matrix. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\),
