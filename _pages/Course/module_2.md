@@ -86,6 +86,23 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 \end{aligned}
 \end{equation}
 
+## Addition, Subtraction, and Scaling Vectors
+
+* Addition, subtraction, and scaling vectors have been illustrated in the following figure.
+
+    <p align="center">
+    <img width="842" alt="Screenshot 2023-07-22 at 11 54 22 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/746371b3-d4d8-49b1-baa4-b441865919b6">
+    <br>
+      <em> Addition, subtraction, and scaling of vectors.</em>
+    </p>
+* Alegbriaclly, given two vectors of \\(\mathbf{x}\\), \\(\mathbf{y} \in \mathbb{R}^{n} \\), their addition is given by \\(\mathbf{x} + \mathbf{y} = [x_1+y_1 ~~ x_2+y_2 ~~ \ldots ~~ x_n+y_n]^T \in \mathbb{C}^{n} \\). Also, \\(\alpha\mathbf{x} = [\alpha x_1 ~~ \alpha x_2 ~~\dots ~~\alpha x_n]^T \in \mathbb{C}^{n} \\) for some \\(\alpha \in \mathbb{C}\\).
+
+## Propoerties of Matrices
+* **Aassociativity.** Multiplication of a matrix by a scalar is associative: for any matrix \\(mathrm{X}\\) and for any scalars \\(alpha\\) and \\(\beta\\), we have \\(\alpha (\beta \mathrm{X}) = (\alpha \beta)\mathrm{X}\\).
+* **Distributivity w.r.t addition.** Multiplication of a matrix by a scalar is distributive with respect to matrix addition: for any matrices \\(mathrm{X}\\) and \\(\mathrm{Y}\\) and for any scalar \\(alpha\\), we have \\(\alpha (\mathrm{X}+\mathrm{Y}) = \alpha \mathrm{X} + \alpha \mathrm{Y}\\).
+* **Distributive property w.r.t multiplication** 2) Multiplication of a matrix by a scalar is distributive with respect to the addition of scalars: for any matrix \\(mathrm{X}\\) and for any scalars \\(alpha\\) and \\(\beta\\), we have \\((\alpha+\beta)\mathrm{X} = \alpha\mathrm{X} + \beta\mathrm{X}\\).
+
+
 ## Diagonal and Off-diagonal Entries
 * Let \\(\mathrm{X}\\) be a square matrix. The diagonal (or main diagonal of \\(\mathrm{X}\\)) is the set of all entries \\(\mathrm{X}_{i,j}\\) such that \\(i=j\\). The entries on the main diagonal are called diagonal entries, and all the other entries are called off-diagonal entries. In the following \\(3\times 3\\) square matrix, \\(daig(\mathrm{X})= \\{1, 5, 9\\}\\), and off-diagonal entries are given by \\(\\{2, 3, 4, 6, 7, 8\\}\\).
 
@@ -100,12 +117,12 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 \end{aligned}
 \end{equation}
 
-## Identity matrix
-* An identity matrix denoted vt \\(\mathrm{I_n}\\) is a square matrix where its all diagonal entries are equal to \\(1\\) and all its off-diagonal entries are equal to 0.
+## Identity Matrix
+* An identity matrix denoted by \\(\mathrm{I_n}\\) is a square matrix where its all diagonal entries are equal to \\(1\\) and all its off-diagonal entries are equal to 0.
 
 \begin{equation}
 \begin{aligned}
-  \mathrm{I_3} =  
+  \mathrm{I_n} =  
     \begin{bmatrix}
       1  & 0 & 0 & \ldots & 0  \\\\\\\\
       0  & 1 & 0 & \ldots & 0  \\\\\\\\
@@ -140,16 +157,6 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 * One common operator on tensors (as we will see in our programming module) is flattening a matrix or multi-dimensional tensor to a lower-dimensional tensor. For example, we can flatten a matrix to a vector. This flattening can be done in _row-major_ order or _column-major_ order. In row-major order (used by languages such as Python and C++)), we _vetorize_ a matrix by arranging rows of the matrix back-to-back in a vector; while columns of the matrix are placed in a vector in column-major order (used by languages such as Julia, Matlab, R, and Fortran). We use \\(vec(\mathrm{X})\\) for vectorizing operation.
 
-## Addition, Subtraction, and Scaling Vectors
-
-* Addition, subtraction, and scaling vectors have been illustrated in the following figure.
-
-    <p align="center">
-    <img width="842" alt="Screenshot 2023-07-22 at 11 54 22 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/746371b3-d4d8-49b1-baa4-b441865919b6">
-    <br>
-      <em> Addition, subtraction, and scaling of vectors.</em>
-    </p>
-* Alegbriaclly, given two vectors of \\(\mathbf{x}\\), \\(\mathbf{y} \in \mathbb{R}^{n} \\), their addition is given by \\(\mathbf{x} + \mathbf{y} = [x_1+y_1 ~~ x_2+y_2 ~~ \ldots ~~ x_n+y_n]^T \in \mathbb{H}^{n} \\). Also, \\(\alpha\mathbf{x} = [\alpha x_1 ~~ \alpha x_2 ~~\dots ~~\alpha x_n]^T \in \mathbb{H}^{n} \\) for some \\(\alpha \in \mathbb{C}\\).
 
 ## Linear independence, Spans, and Basis
 
