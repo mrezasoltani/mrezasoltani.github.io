@@ -109,13 +109,15 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
     \end{bmatrix}, & & & &
   \mathrm{\alpha X} = 
     \begin{bmatrix}
-      \alphax_{11} & \alphax_{12} & \ldots & \alphax_{1n} \\\\\\\\
-      \alphax_{21} & \alphax_{22} & \ldots & \alphax_{2n} \\\\\\\\
+      \alpha x_{11} & \alpha x_{12} & \ldots & \alpha x_{1n} \\\\\\\\
+      \alpha x_{21} & \alpha x_{22} & \ldots & \alpha x_{2n} \\\\\\\\
       \vdots & \vdots & \ddots & \vdots \\\\\\\\
-      \alphax_{m1} & \alphax_{m2} & \ldots & \alphax_{mn}
+      \alpha x_{m1} & \alpha x_{m2} & \ldots & \alpha x_{mn}
     \end{bmatrix}
 \end{aligned}
 \end{equation}
+
+* **Definition.** Consider a set of \\(p\\) matrices (vectors) \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) with dimension \\(\mathbb{R}^{m\times n}\\) ( \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) with dimension \\(\mathbb{R}^{p}\\)). A matrix \\(\mathrm{Y} \in \mathbb{R}^{m\times n}\\) ( (vector \\(\mathbf{y} \in  \mathbb{R}^{p}\\) ) is a _linear combination_ of \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_n}\\}\\) ( \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) ) if and only if there exist \\(p\\) scalars coefficients \\(\\{\alpha_1, \alpha_1, \ldots, \alpha_1\\}\\)  such that \\(\mathrm{Y} = \\(\sum_{i=1}^{p} \alpha_i \mathrm{X_i}\\) (\\(\sum_{i=1}^{p} \alpha_i \mathbf{x_i} = 0\\)).
 
 ## Propoerties of Matrices
 * **Aassociativity.** Multiplication of a matrix by a scalar is associative: for any matrix \\(mathrm{X}\\) and for any scalars \\(alpha\\) and \\(\beta\\), we have \\(\alpha (\beta \mathrm{X}) = (\alpha \beta)\mathrm{X}\\).
@@ -180,7 +182,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ## Linear independence, Spans, and Basis
 
-* A set of vectors \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) is said to be linearly independent if \\(\sum_{i=1}^{n} \alpha_i x_i = 0\\), then \\(\alpha_1 = \alpha_2 = \dots = \alpha_n = 0\\). 
+* A set of vectors \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) is said to be linearly independent if \\(\sum_{i=1}^{n} \alpha_i \mathbf{x_i} = 0\\), then \\(\alpha_1 = \alpha_2 = \dots = \alpha_n = 0\\). 
 
 
 
