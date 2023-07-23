@@ -17,7 +17,8 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **Deterministic matrix/tensor** | \\(\mathrm{X}\\)|
    | **Random matrix/tensor** | \\(\mathbfit{X}\\)|
    | **Graph and operator** | \\(\mathcal{X}\\)|
-   | **A square, diagonal matrix with diagonal entries given by** \\(\mathbf{x}\\) | \\(diag(\mathbf{x})\\) |
+   | **A square, diagonal matrix with diagonal entries given by a vector** \\(\mathbf{x}\\) | \\(diag(\mathbf{x})\\) |
+   | **Vector of a diagonal entries of a matrix** \\(\mathrm{X}\\) | \\(diag(\mathrm{X})\\) |
    | **Real set** | \\(\mathbb{R}\\)|
    | **Complex set** | \\(\mathbb{C}\\)|
    | **Standard/Canonical basis vector with only 1 in** \\(i^{th}\\) **position** | \\(e_i=[0, 0, \ldots, 0, 1, 0, \dots, 0 ]^T\\)|
