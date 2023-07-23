@@ -80,12 +80,37 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
       ---  & \mathrm{X_{m:}}^T & --- 
     \end{bmatrix} =
     \begin{bmatrix}
-      \mathrm{X_{1:}}; & \mathrm{X_{2:}}; & ;\ldots; & \mathrm{X_{m:}}
-    \end{bmatrix}
+      \mathrm{X_{1:}} & \mathrm{X_{2:}} & \ldots & \mathrm{X_{m:}}
+    \end{bmatrix}^T
 \end{aligned}
 \end{equation}
 
-  Please note that the colon notation is borrowed from Matlab.
+## Diagonal and Off-diagonal Entries
+* Let \\(\mathrm{X}\\) be a square matrix. The diagonal (or main diagonal of \\(\mathrm{X}\\)) is the set of all entries \\(\mathrm{X}_{i,j}\\) such that $i=lj$. The entries on the main diagonal are called diagonal entries, and all the other entries are called off-diagonal entries. In the following \\(3\times 3\\) square matrix, \\(daig(\mathrm{X}\\) = \\{1, 5, 9\\}\\), and off-diagonal entries are given by \\(\\{2, 3, 4, 6, 7, 8\\}\\).
+
+\begin{equation}
+\begin{aligned}
+  \mathrm{X} =  
+    \begin{bmatrix}
+      1 & 2 & 2  \\\\\\\\
+      4 & 5 & 6  \\\\\\\\
+      7 & 8 & 9  \\\\\\\\
+\end{aligned}
+\end{equation}
+
+## Identity matrix
+* An identity matrix denoted vt \\(\mathrm{I_n}\\) is a square matrix where its all diagonal entries are equal to \\(1\\) and all its off-diagonal entries are equal to 0.
+
+\begin{equation}
+\begin{aligned}
+  \mathrm{I_3} =  
+    \begin{bmatrix}
+      1  & 0 & 0 & \ldots & 0  \\\\\\\\
+      0  & 1 & 0 & \ldots & 0  \\\\\\\\
+      \vdots & \vdots & \ddots & \vdots & \vdots \\\\\\\\
+      0  & 0 & 0 & \ldots & 1
+  \end{aligned}
+\end{equation}
 
 ## Transpose of Matrix:
 * By exchanging the rows and columns of a matrix, we obtain the transpose of the matrix. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\),
@@ -121,7 +146,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
     <br>
       <em> Addition, subtraction, and scaling of vectors.</em>
     </p>
-* Alegbriaclly, given two vectors of \\(\mathbf{x}\\), \\(\mathbf{y} \in \mathbb{R}^{n} \\), their addition is given by \\(\mathbf{x} + \mathbf{y} = [x_1+y_1 ~~ x_2+y_2 ~~ \ldots ~~ x_n+y_n]^T \in \mathbb{R}^{n} \\). Also, \\(\alpha\mathbf{x} = [\alpha x_1 ~~ \alpha x_2 ~~\dots ~~\alpha x_n]^T \in \mathbb{R}^{n} \\) for some \\(\alpha \in \mathbb{C}\\).
+* Alegbriaclly, given two vectors of \\(\mathbf{x}\\), \\(\mathbf{y} \in \mathbb{R}^{n} \\), their addition is given by \\(\mathbf{x} + \mathbf{y} = [x_1+y_1 ~~ x_2+y_2 ~~ \ldots ~~ x_n+y_n]^T \in \mathbb{H}^{n} \\). Also, \\(\alpha\mathbf{x} = [\alpha x_1 ~~ \alpha x_2 ~~\dots ~~\alpha x_n]^T \in \mathbb{H}^{n} \\) for some \\(\alpha \in \mathbb{C}\\).
 
 ## Linear independence, Spans, and Basis
 
