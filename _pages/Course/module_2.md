@@ -96,14 +96,27 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
       <em> Addition, subtraction, and scaling of vectors.</em>
     </p>
 * Alegbriaclly, given two vectors of \\(\mathbf{x}\\), \\(\mathbf{y} \in \mathbb{R}^{n} \\), their addition is given by \\(\mathbf{x} + \mathbf{y} = [x_1+y_1 ~~ x_2+y_2 ~~ \ldots ~~ x_n+y_n]^T \in \mathbb{C}^{n} \\). Also, \\(\alpha\mathbf{x} = [\alpha x_1 ~~ \alpha x_2 ~~\dots ~~\alpha x_n]^T \in \mathbb{C}^{n} \\) for some \\(\alpha \in \mathbb{C}\\).
+* Addition, subtraction, and scaling of matrices are simialr to the vectors (vector is a specila matrix). Alegbriaclly, given two matrices of \\(\mathrm{X}\\), \\(\mathrm{Y} \in \mathbb{R}^{m\times n} \\):
+
+\begin{equation}
+\begin{aligned}
+  \mathrm{X} \pm \mathrm{Y} =  
+    \begin{bmatrix}
+      x_{11}\pm x_{11} & x_{12}\pm y_{12} & \ldots & x_{1n}\pm y_{12} \\\\\\\\
+      x_{21}\pm y_{21} & x_{22}\pm y_{22} & \ldots & x_{2n}\pm y_{2n} \\\\\\\\
+      \vdots & \vdots & \ddots & \vdots \\\\\\\\
+      x_{m1}\pm y_{m1} & x_{m2}\pm y_{m2} & \ldots & x_{mn}\pm y_{mn}
+    \end{bmatrix}    
+\end{aligned}
+\end{equation}
 
 ## Propoerties of Matrices
 * **Aassociativity.** Multiplication of a matrix by a scalar is associative: for any matrix \\(mathrm{X}\\) and for any scalars \\(alpha\\) and \\(\beta\\), we have \\(\alpha (\beta \mathrm{X}) = (\alpha \beta)\mathrm{X}\\).
-* **Distributivity w.r.t addition.** Multiplication of a matrix by a scalar is distributive with respect to matrix addition: for any matrices \\(mathrm{X}\\) and \\(\mathrm{Y}\\) and for any scalar \\(alpha\\), we have \\(\alpha (\mathrm{X}+\mathrm{Y}) = \alpha \mathrm{X} + \alpha \mathrm{Y}\\).
-* **Distributive property w.r.t multiplication** 2) Multiplication of a matrix by a scalar is distributive with respect to the addition of scalars: for any matrix \\(mathrm{X}\\) and for any scalars \\(alpha\\) and \\(\beta\\), we have \\((\alpha+\beta)\mathrm{X} = \alpha\mathrm{X} + \beta\mathrm{X}\\).
+* **Distributivity w.r.t addition.** Multiplication of a matrix by a scalar is distributive with respect to matrix addition: for any matrices \\(\mathrm{X}\\) and \\(\mathrm{Y}\\) and for any scalar \\(alpha\\), we have \\(\alpha (\mathrm{X}+\mathrm{Y}) = \alpha \mathrm{X} + \alpha \mathrm{Y}\\).
+* **Distributive property w.r.t multiplication.** Multiplication of a matrix by a scalar is distributive with respect to the addition of scalars: for any matrix \\(\mathrm{X}\\) and for any scalars \\(\alpha\\) and \\(\beta\\), we have \\((\alpha+\beta)\mathrm{X} = \alpha\mathrm{X} + \beta\mathrm{Y}\\).
 
 
-## Diagonal and Off-diagonal Entries
+## Diagonal and Off-diagonal Entries of a Matrix
 * Let \\(\mathrm{X}\\) be a square matrix. The diagonal (or main diagonal of \\(\mathrm{X}\\)) is the set of all entries \\(\mathrm{X}_{i,j}\\) such that \\(i=j\\). The entries on the main diagonal are called diagonal entries, and all the other entries are called off-diagonal entries. In the following \\(3\times 3\\) square matrix, \\(daig(\mathrm{X})= \\{1, 5, 9\\}\\), and off-diagonal entries are given by \\(\\{2, 3, 4, 6, 7, 8\\}\\).
 
 \begin{equation}
