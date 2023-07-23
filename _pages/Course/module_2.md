@@ -196,7 +196,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ## Linear spaces
 * Informally, a given set \\(S\\) is a linear space (ana vector space) if its elements can be multiplied by scalars and added together, and the results of these operations belong to \\(S\\). In order to have a more formal definition, we need the following definitio of _field_.
-* **Definition.** Consider a set \\(F\\) together with two binary operations, the addition, denoted by \\(+\\) and the multiplication, denoted by \((cdot\\). The set \\(F\\) is said to be a field if and only if, for any\\(\alpha, \beta \gamma \in F\\), all the following properties hold:
+* **Definition.** Consider a set \\(F\\) together with two binary operations, the addition, denoted by \\(+\\) and the multiplication, denoted by \((\cdot\\). The set \\(F\\) is said to be a field if and only if, for any \\(\alpha, ~\beta  ~\gamma \in F\\), all the following properties hold:
   1. Associativity of addition: \\(\alpha + (\beta+\gamma) = (\alpha + \beta)+\gamma\\)
   2. Commutativity of addition: \\(\alpha+\beta = \beta+\alpha\\)
   3. Additive identity: there exist an elemnt \\(\in F\\) denoted by \\(0\\) such that \\(\alpha + 0 =\alpha\\)
