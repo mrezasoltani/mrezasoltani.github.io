@@ -21,7 +21,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **Vector of a diagonal entries of a matrix** \\(\mathrm{X}\\) | \\(diag(\mathrm{X})\\) |
    | **Real set** | \\(\mathbb{R}\\)|
    | **Complex set** | \\(\mathbb{C}\\)|
-   | **Standard/Canonical basis vector with only 1 in** \\(i^{th}\\) **position** | \\(e_i=[0, 0, \ldots, 0, 1, 0, \dots, 0 ]^T\\)|
+   | **The** \\(i^{th}\\) element of **standard/Canonical basis vector with only 1 in** \\(i^{th}\\) **position and 0s in other positions** | \\(\mathrbf{e}_i=[0, 0, \ldots, 0, 1, 0, \dots, 0 ]^T\\)|
    | **Element \\(i\\) of vector** \\(\mathbf{x}\\) | \\(x_i\\) |
    | **All elements of vector** \\(\mathbf{x}\\) **except for element** \\(i\\)  | \\(\mathbf{x_{-i}}\\) |
    | **Entry in** \\(i^{th}\\) **row and** \\(j^{th}\\) **column of a matrix** \\(\mathrm{X}\\) | \\(x_{ij}\\) |
@@ -235,6 +235,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * **Proposition.** Let \\(S\\) be a finite-dimensional linear space. Then,  \\(S\\) possesses at least one basis.
 * **Dimension theorem.** Let \\(S\\) be a finite-dimensional linear space. Consider two set of vectors given by \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) and \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_k}\\}\\). Then, \\(p=k\\).
 * **Definition.** Let \\(S\\) be a finite-dimensional linear space, and \\(n\\) be the the number of elements of any its bases (\\(n\\) is called cardinality of that bases). Then, \\(n\\) is called the dimension of \\(S\\).
+* **Definition.** Let \\(S\\) be the space of all \\(K\\)-dimensional vectors. Then, the set of \\(K\\) vectors given by \\(\\{\mathbf{e_1}, \mathbf{e_2}, \ldots, \mathbf{e_K}\\}\\) is called the standard/canonical basis of $S$(recall our notion for the canonical basis vector)
 
 
 
