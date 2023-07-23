@@ -30,7 +30,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **A probability distribution over a continuous variable (pdf)** | \\(p(x)\\) |
    | \\(L^p\\) **norm of vector** \\(\mathbf{x}\\) | \\(\\|\\|\mathbf{x}\\|\\|_p\\) |
    | **Dot product of two vectors** | \\(\mathbf{x}.\mathbf{y}\\) |
-   | **Hadamard (element-wise) product of two vectors/matrx** | \\(\mathbf{x}\odot\mathbf{y} (\mathrm{X}\odot\mathrm{Y})\\) |
+   | **Hadamard (element-wise) product of two vectors (matrices)** | \\(\mathbf{x}\odot\mathbf{y} (\mathrm{X}\odot\mathrm{Y})\\) |
 
 ## Vector and Matrix
 * A vector \\(\mathbf{x} \in \mathbb{R}^n \\) is a collection of \\(n\\) numbers defined on real, \\(\mathbb{R}\\) or complex, \\(\mathbb{C}\\) field. In this course, we use a column vector to denote a vector \\(\mathbf{x}\\). In the above table, we have shown the Canonical basis vector, \\(e_i\\) with a superscript \\(T\\) to denote the transpose of a row vector is a column one. A matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) is a 2-d array of \\(mn\\) numbers, arranged in \\(m\\) rows and \\(n\\) columns:
@@ -131,7 +131,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
   </p>
 
 ## Matrix Multiplicaiton
-* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\in \mathbb{R}^{m\times p}\\) is defined as \\( (\mathrm{X}\mathrm{Y})_{ij} = \sum_{k=1}^{n}x_{ik}y_{kj}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\)) column of the product is obtained by the inner product of (i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\)) column of matrix \\(\mathrm{Y}\\).
+* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\in \mathbb{R}^{m\times p}\\) is defined as \\( \mathrm{X}\mathrm{Y}_{ij} = \sum_{k=1}^{n}x_{ik}y_{kj}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\)) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\)) column of matrix \\(\mathrm{Y}\\).
   
 
 ## Propoerties of Matrices
@@ -194,6 +194,19 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 * One common operator on tensors (as we will see in our programming module) is flattening a matrix or multi-dimensional tensor to a lower-dimensional tensor. For example, we can flatten a matrix to a vector. This flattening can be done in _row-major_ order or _column-major_ order. In row-major order (used by languages such as Python and C++)), we _vetorize_ a matrix by arranging rows of the matrix back-to-back in a vector; while columns of the matrix are placed in a vector in column-major order (used by languages such as Julia, Matlab, R, and Fortran). We use \\(vec(\mathrm{X})\\) for vectorizing operation.
 
+## Linear spaces
+* Informally, a given set \\(S\\) is a linear space (ana vector space) if its elements can be multiplied by scalars and added together, and the results of these operations belong to \\(S\\). In order to have a more formal definition, we need the following definitio of _field_.
+* **Definition.** Consider a set \\(F\\) together with two binary operations, the addition, denoted by $+$ and the multiplication, denoted by $cdot $. The set \\(F\\) is said to be a field if and only if, for any\\(\alpha, \beta \in F\\), all the following properties hold:
+  1. Associativity of addition:
+  2. Commutativity of addition: $a+b=b+a$
+  3. Additive identity: there exists an element of F, denoted by 0, such that $a+0=a$
+  4. Additive inverse: for each a, there exists an element of F, denoted by $-a$, such that
+  5. Associativity of multiplication: 
+  6. Commutativity of multiplication: $acdot b=bcdot a$
+  7. Multiplicative identity: there exists an element of F, denoted by 1, such that $1cdot a=a$
+  8. Multiplicative inverse: for each  there exists an element of F, denoted by $a^{-1}$, such that $a^{-1}cdot a=1$
+
+Distributive property: [eq10]
 
 ## Linear independence, Spans, and Basis
 
