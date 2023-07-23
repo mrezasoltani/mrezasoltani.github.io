@@ -108,3 +108,21 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
       <em> Four types of tensors. </em>
     </p>
 
+* One common operator on tensors (as we will see in our programming module) is flattening a matrix or multi-dimensional tensor to a lower-dimensional tensor. For example, we can flatten a matrix to a vector. This flattening can be done in _row-major_ order or _column-major_ order. In row-major order (used by languages such as Python and C++)), we _vetorize_ a matrix by arranging rows of the matrix back-to-back in a vector; while columns of the matrix are placed in a vector in column-major order (used by languages such as Julia, Matlab, R, and Fortran). We use \\(vec(\mathrm{X})\\) for vectorizing operation.
+
+## Addition, Subtraction, and Scaling Vectors
+
+* Addition, subtraction, and scaling vectors have been illustrated in the following figure.
+
+    <p align="center">
+    <img width="842" alt="Screenshot 2023-07-22 at 11 54 22 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/746371b3-d4d8-49b1-baa4-b441865919b6">
+    <br>
+      <em> Addition, subtraction, and scaling of vectors \\(\mathbf{x}\\) and \\(\mathbf{y}\\). </em>
+    </p>
+
+
+
+
+
+
+
