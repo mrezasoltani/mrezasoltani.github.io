@@ -220,14 +220,14 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   
 * Given the above definition, the elements of a vector space \\(S\\) and its associated field \\(F\\) are called vectors and scalars, respectively.
 
-* **Definition.** A (linear) subspace of a linear space \\(S\\) is a set which is subset of \\(S)\\) and itself is a linear space.
+* **Definition.** A (linear) subspace of a linear space \\(S\\) is a set which is subset of \\(S\\) and itself is a linear space.
 
 ## Linear independence, Spans, and Basis
 
 * A set of vectors \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) is said to be linearly independent if \\(\sum_{i=1}^{n} \alpha_i \mathbf{x_i} = 0\\), then \\(\alpha_1 = \alpha_2 = \dots = \alpha_n = 0\\). This means no vectors in set \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) can be represented as a linear combination of the remaining vectors. Conversely, a vector which can be represented as a linear combination of the remaining vectors is said to be linearly dependent.
 * The span of a set of vectors  \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) is the set of all vectors that can be expressed as a linear combination of  \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\). That is,
 \\[span(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}) = \\{\sum_{i=1}^{n} \alpha_i \mathbf{x_i} | \alpha_i \in \mathbb{R}\\}\\]
-* 
+* Let \\(S\\) be a linear space. Consider a set of \\(n\\) linearly independent vectors \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\). Then, this set is a **_basis_** for \\(S\\) if and only if, for any \\(\mathbf{x} \in S\\), there exist \\(n\\) scalars \\(\alpha_1,\alpha_2, \dots, \alpha_n\\) such that \\(\mathbf{x} = \sum_{i=1}^{n} \alpha_i \mathbf{x_i}\\). It is sometime said that the basis spans the set \\(S\\). In this case, \\(span(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}) = \mathbb{R}^n\\).
 
 
 
