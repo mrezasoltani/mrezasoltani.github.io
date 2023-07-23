@@ -131,7 +131,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
   </p>
 
 ## Matrix Multiplicaiton
-* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as \\( \mathrm{X} \mathrm{Y} = \sum_{k=1}^{n} x_{ik} y_{kj}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\)) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\)) column of matrix \\(\mathrm{Y}\\).
+* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as \\( (\mathrm{X} \mathrm{Y}) = \sum_{k=1}^{n} x_{ik} y_{kj}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\)) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\)) column of matrix \\(\mathrm{Y}\\).
   
 
 ## Propoerties of Matrices
@@ -199,12 +199,12 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * **Definition.** Consider a set \\(F\\) together with two binary operations, the addition, denoted by \\(+\\) and the multiplication, denoted by \((\cdot\\). The set \\(F\\) is said to be a field if and only if, for any \\(\alpha, ~\beta  ~\gamma \in F\\), all the following properties hold:
   1. Associativity of addition: \\(\alpha + (\beta+\gamma) = (\alpha + \beta)+\gamma\\)
   2. Commutativity of addition: \\(\alpha+\beta = \beta+\alpha\\)
-  3. Additive identity: there exist an elemnt \\(\in F\\) denoted by \\(0\\) such that \\(\alpha + 0 =\alpha\\)
-  4. Additive inverse: \\(\forall \alpha \in F, there exist an elemnt \\(\in F\\) denoted by \\(-\alpha\\) such that \\(\alpha-\alpha = 0\\)
+  3. Additive identity: there exist an elemnt in \\(F\\) denoted by \\(0\\) such that \\(\alpha + 0 =\alpha\\)
+  4. Additive inverse: \\(\forall \alpha \in F\\), there exist an elemnt in \\(F\\) denoted by \\(-\alpha\\) such that \\(\alpha-\alpha = 0\\)
   5. Associativity of multiplication: \\(\alpha \cdot (\beta\cdot\gamma) = (\alpha \cdot \beta)\cdot\gamma\\)
   6. Commutativity of multiplication: \\(\alpha\cdot\beta = \beta\cdot\alpha\\)
-  7. Multiplicative identity: there exist an element \\(\in F\\) denoted by \\(1\\) such that \\(\alpha \cdot 1 =\alpha\\)
-  8. Multiplicative inverse: \\(\forall \alpha\neq 0 \in F\\), there exist an element \\(\in F\\) denoted by \\(\alpha^{-1}\\) such that \\(\alpha\cdot\alpha^{-1} = 1\\)
+  7. Multiplicative identity: there exist an element in \\(F\\) denoted by \\(1\\) such that \\(\alpha \cdot 1 =\alpha\\)
+  8. Multiplicative inverse: \\(\forall \alpha\neq 0 \in F\\), there exist an element in \\(F\\) denoted by \\(\alpha^{-1}\\) such that \\(\alpha\cdot\alpha^{-1} = 1\\)
   9. Distributive property: \\(\alpha \cdot(\beta+\gamma) = \alpha \cdot \beta + \alpha \cdot \gamma\\)
 
 ## Linear independence, Spans, and Basis
