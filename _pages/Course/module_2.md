@@ -32,6 +32,8 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **Dot product of two vectors** | \\(\mathbf{x}.\mathbf{y}\\) |
    | **Hadamard (element-wise) product of two vectors (matrices)** | \\(\mathbf{x}\odot\mathbf{y} (\mathrm{X}\odot\mathrm{Y})\\) |
 
+* Here, we mostly present results for real field. In some place, we give the corresponding results for the complex field.
+
 ## Vector and Matrix
 * A vector \\(\mathbf{x} \in \mathbb{R}^n \\) is a collection of \\(n\\) numbers defined on real, \\(\mathbb{R}\\) or complex, \\(\mathbb{C}\\) field. In this course, we use a column vector to denote a vector \\(\mathbf{x}\\). In the above table, we have shown the Canonical basis vector, \\(e_i\\) with a superscript \\(T\\) to denote the transpose of a row vector is a column one. A matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) is a 2-d array of \\(mn\\) numbers, arranged in \\(m\\) rows and \\(n\\) columns:
 
@@ -131,7 +133,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
   </p>
 
 ## Matrix Multiplicaiton
-* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as \\(\\(\mathrm{X} \mathrm{Y}\\)_{ij} = \sum_{k=1}^{n} x_{ik} y_{kj}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\)) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\)) column of matrix \\(\mathrm{Y}\\).
+* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as \\(\mathrm{X} \mathrm{Y{ij}} = \sum_{k=1}^{n} x_{ik} y_{kj}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\)) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\)) column of matrix \\(\mathrm{Y}\\).
 
 ## Propoerties of Matrices
 * **Aassociativity.** Multiplication of a matrix by a scalar is associative: for any matrix \\(mathrm{X}\\) and for any scalars \\(alpha\\) and \\(\beta\\), we have \\(\alpha (\beta \mathrm{X}) = (\alpha \beta)\mathrm{X}\\).
@@ -212,7 +214,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   3. Additive identity: there exists a vector \\(0\in S\\), such that \\(\mathbf{x}+0=\mathbf{x}\\)
   4. Additive inverse: \\(\forall \mathbf{x}\in S\\), there exists an element of \\(S\\), denoted by \\(-\mathbf{x}\\), such that \\(\mathbf{x}+(-\mathbf{x})=0\\)
   5. Compatibility of multiplications: \\(\mathbf{x} \cdot (\mathbf{y}\cdot \mathbf{z}) = (\mathbf{x}\cdot \mathbf{y}) \cdot \mathbf{z}\\)
-  6. Multiplicative identity: Let \\1 \in F$ be the multiplicative identity in \\(F\\), then \\1\cdot \mathbf{x}=\mathbf{x}\\)
+  6. Multiplicative identity: Let \\(1 \in F\\) be the multiplicative identity in \\(F\\), then \\1\cdot \mathbf{x}=\mathbf{x}\\)
   7. Distributive property w.r.t. _vector_ addition: \\(\mathbf{x} \cdot(\mathbf{y}+\mathbf{z}) = \mathbf{x} \cdot \mathbf{y} + \mathbf{x} \cdot \mathbf{z}\\)
   8. Distributive property w.r.t. _field_ addition: \\((\alpha +\beta)\cdot\mathbf{x} = \alpha\cdot\mathbf{x} + \beta\cdot\mathbf{x}\\)
   
@@ -223,6 +225,9 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 ## Linear independence, Spans, and Basis
 
 * A set of vectors \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) is said to be linearly independent if \\(\sum_{i=1}^{n} \alpha_i \mathbf{x_i} = 0\\), then \\(\alpha_1 = \alpha_2 = \dots = \alpha_n = 0\\). This means no vectors in set \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) can be represented as a linear combination of the remaining vectors. Conversely, a vector which can be represented as a linear combination of the remaining vectors is said to be linearly dependent.
+* The span of a set of vectors  \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) is the set of all vectors that can be expressed as a linear combination of  \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\). That is,
+\\[span(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}) = \\{\sum_{i=1}^{n} \alpha_i \mathbf{x_i} | \alpha_i \in \mathbb{R}\\}\\]
+* 
 
 
 
