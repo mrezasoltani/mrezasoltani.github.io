@@ -267,7 +267,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 4. **Left Null Space** The fourth fundamental space is the kernel of of matrix \\(\mathrm{X}^T\\) defined as follows:
 \\[\mathcal{N}(\mathrm{X}^T) = \\{u \in \mathbb{R}^m \| \mathrm{X}^Tu=0 \\}\\]
 
-
-
+## Norm
+* Let V be a vector space. Informally, norm is a measure of the _length_ of the vector. To be more specific, function \\(f : \mathbb{V} \rightarrow \mathbb{R}\\) is called a norm on \\(\mathbb{V}\\) if it satisfoes the 3 following properties:
 
 
