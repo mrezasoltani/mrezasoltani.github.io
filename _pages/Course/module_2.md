@@ -179,7 +179,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
   5. **Cyclic Permutation Property.** \\(Tr(\mathrm{X}\mathrm{Y}\mathrm{Z})) = Tr(\mathrm{Y}\mathrm{Z}\mathrm{X})) = Tr(\mathrm{Z}\mathrm{X}\mathrm{Y}))
   6. **Trace Trick.** \\(\mathbf{u}^T\mathrm{X}\mathbf{u} = Tr(\mathbf{u}^T\mathrm{X}\mathbf{u}) = Tr(\mathrm{X}\mathbf{u}\mathbf{u}^T\\)
 
-## Transpose of Matrices:
+## Transpose of a Matrix:
 * By exchanging the rows and columns of a matrix, we obtain the transpose of the matrix. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\),
 its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * Properties of transposition operation.
