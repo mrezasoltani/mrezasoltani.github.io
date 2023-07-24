@@ -29,7 +29,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **A probability distribution over a discrete variable (pmf)** | \\(P(x)\\) |
    | **A probability distribution over a continuous variable (pdf)** | \\(p(x)\\) |
    | \\(L^p\\) **norm of vector** \\(\mathbf{x}\\) | \\(\\|\\|\mathbf{x}\\|\\|_p\\) |
-   | **Dot product of two vectors** | \\(\mathbf{x}.\mathbf{y}\\) |
+   | **Dot product of two vectors** | \\(\mathbf{x}\cdot\mathbf{y}\\) |
    | **Hadamard (element-wise) product of two vectors (matrices)** | \\(\mathbf{x}\odot\mathbf{y} (\mathrm{X}\odot\mathrm{Y})\\) |
 
 * Here, we mostly present results for the real field. We often give the corresponding results for the complex field.
