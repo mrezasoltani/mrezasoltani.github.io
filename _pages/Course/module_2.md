@@ -92,6 +92,21 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 
 * **Definition.** Consider a set of \\(p\\) matrices (vectors) \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) with dimension \\(\mathbb{R}^{m\times n}\\)  \\((\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) with dimension \\(\mathbb{R}^{p})\\). A matrix (vector) \\(\mathrm{Y} \in \mathbb{R}^{m\times n}\\) \\((\mathbf{y} \in  \mathbb{R}^{n})\\) is a _linear combination_ of \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) ( \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) ) if and only if there exist \\(p\\) scalars coefficients \\(\\{\alpha_1, \alpha_1, \ldots, \alpha_1\\}\\) such that \\(\mathrm{Y} = \sum_{i=1}^{p} \alpha_i \mathrm{X_i}\\) \\((\mathbf{y} = \sum_{i=1}^{p} \alpha_i \mathbf{x_i})\\).
 
+## Identity Matrix
+* An identity matrix denoted by \\(\mathrm{I_n}\\) is a square matrix where its all diagonal entries are equal to \\(1\\) and all its off-diagonal entries are equal to 0.
+
+\begin{equation}
+\begin{aligned}
+  \mathrm{I_n} =  
+    \begin{bmatrix}
+      1  & 0 & 0 & \ldots & 0  \\\\\\\\
+      0  & 1 & 0 & \ldots & 0  \\\\\\\\
+      \vdots & \vdots & \ddots & \vdots & \vdots \\\\\\\\
+      0  & 0 & 0 & \ldots & 1
+    \end{bmatrix}
+  \end{aligned}
+\end{equation}
+
 ## Addition, Subtraction, and Scaling Vectors
 
 * Addition, subtraction, and scaling vectors have been illustrated in the following figure.
@@ -132,13 +147,13 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
     <em>Inner product of two vectors.</em>
   </p>
 
-## Matrix Multiplicaiton
+## Matrix Multiplicaiton and its Properties
 * For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as \\(\mathrm{X}\mathrm{Y_{ij}} = \sum_{k=1}^{n}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\) column of matrix \\(\mathrm{Y}\\).
     
-## Propoerties of Matrices
-* **Aassociativity.** Multiplication of a matrix by a scalar is associative: for any matrix \\(mathrm{X}\\) and for any scalars \\(alpha\\) and \\(\beta\\), we have \\(\alpha (\beta \mathrm{X}) = (\alpha \beta)\mathrm{X}\\).
-* **Distributivity w.r.t. addition.** Multiplication of a matrix by a scalar is distributive with respect to matrix addition: for any matrices \\(\mathrm{X}\\) and \\(\mathrm{Y}\\) and for any scalar \\(alpha\\), we have \\(\alpha (\mathrm{X}+\mathrm{Y}) = \alpha \mathrm{X} + \alpha \mathrm{Y}\\).
-* **Distributive property w.r.t. multiplication.** Multiplication of a matrix by a scalar is distributive with respect to the addition of scalars: for any matrix \\(\mathrm{X}\\) and for any scalars \\(\alpha\\) and \\(\beta\\), we have \\((\alpha+\beta)\mathrm{X} = \alpha\mathrm{X} + \beta\mathrm{X}\\).
+  * Propoerties of Matrices
+    * **Aassociativity.** Multiplication of a matrix by a scalar is associative: for any matrix \\(mathrm{X}\\) and for any scalars \\(alpha\\) and \\(\beta\\), we have \\(\alpha (\beta \mathrm{X}) = (\alpha \beta)\mathrm{X}\\).
+    * **Distributivity w.r.t. addition.** Multiplication of a matrix by a scalar is distributive with respect to matrix addition: for any matrices \\(\mathrm{X}\\) and \\(\mathrm{Y}\\) and for any scalar \\(alpha\\), we have \\(\alpha (\mathrm{X}+\mathrm{Y}) = \alpha \mathrm{X} + \alpha \mathrm{Y}\\).
+    * **Distributive property w.r.t. multiplication.** Multiplication of a matrix by a scalar is distributive with respect to the addition of scalars: for any matrix \\(\mathrm{X}\\) and for any scalars \\(\alpha\\) and \\(\beta\\), we have \\((\alpha+\beta)\mathrm{X} = \alpha\mathrm{X} + \beta\mathrm{X}\\).
 
 ## Diagonal and Off-diagonal Entries of a Matrix
 * Let \\(\mathrm{X}\\) be a square matrix. The diagonal (or main diagonal of \\(\mathrm{X}\\)) is the set of all entries \\(\mathrm{X}_{i,j}\\) such that \\(i=j\\). The entries on the main diagonal are called diagonal entries, and all the other entries are called off-diagonal entries. In the following \\(3\times 3\\) square matrix, \\(daig(\mathrm{X})= \\{1, 5, 9\\}\\), and off-diagonal entries are given by \\(\\{2, 3, 4, 6, 7, 8\\}\\).
@@ -152,21 +167,6 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
       7 & 8 & 9  
     \end{bmatrix}
 \end{aligned}
-\end{equation}
-
-## Identity Matrix
-* An identity matrix denoted by \\(\mathrm{I_n}\\) is a square matrix where its all diagonal entries are equal to \\(1\\) and all its off-diagonal entries are equal to 0.
-
-\begin{equation}
-\begin{aligned}
-  \mathrm{I_n} =  
-    \begin{bmatrix}
-      1  & 0 & 0 & \ldots & 0  \\\\\\\\
-      0  & 1 & 0 & \ldots & 0  \\\\\\\\
-      \vdots & \vdots & \ddots & \vdots & \vdots \\\\\\\\
-      0  & 0 & 0 & \ldots & 1
-    \end{bmatrix}
-  \end{aligned}
 \end{equation}
 
 ## Transpose of a Matrix:
