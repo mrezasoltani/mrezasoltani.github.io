@@ -289,7 +289,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
     \begin{cases}
       1, & x\in \mathbb{A}  \\\\\\\\
       & \\\\\\\\
-      0, & x\notin \mathbb{A} \\\\\\\\
+      0, & x\notin \mathbb{A} 
     \end{cases}
 \end{aligned}
 \end{equation}
