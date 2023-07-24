@@ -283,12 +283,12 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
    This is a pseudo norm, since it does not satisfy the homogeneity property. It counts the number of non-zero elements in \\(\mathbf{x}\\).
 * Here, \\(\mathbb{1} _{x \in \mathbb{A}}: \mathbb{A}\rightarrow \\{0,1\\}\\) denotes the indicator function defined as follows:
 
-  \begin{equation}
+\begin{equation}
 \begin{aligned}
   \mathbb{1} _{x \in \mathbb{A}} =
     \begin{cases}
       1, & x\in \mathbb{A}  \\\\\\\\
-      0, & x\notin \mathbb{A}
+      0, & x\notin \mathbb{A} \\\\\\\\
     \end{cases}
 \end{aligned}
 \end{equation}
