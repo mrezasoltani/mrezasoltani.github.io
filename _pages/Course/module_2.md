@@ -269,5 +269,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ## Norm
 * Let V be a vector space. Informally, norm is a measure of the _length_ of the vector. To be more specific, function \\(f : \mathbb{V} \rightarrow \mathbb{R}\\) is called a norm on \\(\mathbb{V}\\) if it satisfoes the 3 following properties:
-
+  1. **Positivity.** \\(f(\mathbf{x}) \geq 0\\), \\(f(\mathbf{x} = 0\\) iff \\(\mathbf{x}=0\\)
+  2. **Homogeneity.** \\(f(\alpha\mathbf{x}) = \|x\|f(\mathbf{x}) \forall \alpha \in \mathbb{R}\\)
+  3. **Triangle Inequality.** \\(f(\mathbf{x}) + \mathbf{y}) \leq f(\mathbf{x}) + f(\mathbf{x}) \\) 
 
