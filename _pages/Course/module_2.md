@@ -201,7 +201,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   3. \\(\|\mathrm{X}\mathrm{Y}\| = \|\mathrm{X}\|\|\mathrm{Y}\|\\)
   4. \\(\|\mathrm{X}\| = 0\\) iff \\(\mathrm{X}\\) is not-invetible (singular).
   5. \\(\|\mathrm{X}^{-1}\| = \dfrac{1}{\|\mathrm{X}\|}\\) if \\(\mathrm{X}\\) is invetible (non-singular)
-  6.  \\(\|\mathrm{X}\| = \prod_{i=1}^{n}x_{ii}\\)
+  6.  \\(\|\mathrm{X}\| = \prod_{i=1}^{n}x_{ii}\\), if ((\mathrm{X}\\) is a diagonal matrix.
 
 ## Tensor:
 * In simple terms, a tensor is just a generalization of a 2-d array to more than 2 dimensions. We can think of a vector as a 1-d tensor and a matrix as a 2-d tensor. The following picture shows a scalar as 0 rank tensor, a vector as rank 1, a matrix as rank 2, and a 3-d tensor.
@@ -281,5 +281,16 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 4. \\(\infty\\)-norm (\\(\ell_{\infty}\\)-norm): \\(\\|\mathbf{x}\\|_{\infty} = \max _{i\geq 1}\|x_i\|\\)
 5. \\(0\\)-norm (\\(\ell_{0}\\)-norm): \\(\sum _{i=1}^n \mathbb{1} _{x_i\neq 0}\\)
    This is a pseudo norm, since it does not satisfy the homogeneity property. It counts the number of non-zero elements in \\(\mathbf{x}\\).
+* Here, \\(\mathbb{1} _{x \in \mathbb{A}}: \mathbb{A}\rightarrow \\{0,1\\}\\) denote the indicator function defined as follows:
+
+  \begin{equation}
+\begin{aligned}
+  \mathbb{1} _{x \in \mathbb{A}} =  
+    \begin{array}
+      1 & x\in \mathbb{A}  \\\\\\\\
+      0 & x\notin \mathbb{A}
+    \end{array}
+\end{aligned}
+\end{equation}
 
 ## Matrix Norm
