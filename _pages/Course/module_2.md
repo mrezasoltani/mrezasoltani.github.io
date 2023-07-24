@@ -275,4 +275,4 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * Norm function is denotd by \\(\\|.\\|\\) notation.
 
 ## Vector Norm
-1. \\(p\\)-norm (\\(\ell_p\\)-norm): \\(\\|\mathbf{x}\\|_p = \|x_i\| \\), \\(\forall p\geq 1\\)
+1. \\(p\\)-norm (\\(\ell_p\\)-norm): \\(\\|\mathbf{x}\\|_p = \sum \|x_i\| \\), \\(\forall p\geq 1\\)
