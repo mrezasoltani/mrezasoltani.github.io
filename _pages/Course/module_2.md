@@ -196,11 +196,11 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 ## Determinant of a Square Matrix
 * Informally, the determinant of a square matrix, denoted by \\(det(A)\\) or \\(\|A\|\\), is a measure of how much it changes a unit volume when viewed as a linear transformation.
 * Properties of the determinant (in all these properties \\(\mathrm{X}, ~\mathrm{Y}, ~\mathrm{Z} \in \mathbb{R}^{n\times n}, ~\mathbf{u} \in \mathbb{R}^n\\), and \\(\alpha \in \mathbb{R}\\)):
-  1. \\(\\|\mathrm{X}\\| = \\|\mathrm{X}^T\\|\\)
-  2. \\(\\|\alpha\mathrm{X}\\| = \alpha^n\\|\mathrm{X}^T\\|\\)
-  3. \\(\\|\mathrm{X}\mathrm{Y}\\| = \\|\mathrm{X}\\|\\|\mathrm{Y}\\|\\)
-  4. \\(\\|\mathrm{X}\\| = 0\\) iff \\(\mathrm{X}\\) is not-invetible (singular).
-  5. \\(\\|\mathrm{X}^{-1]\\| = \dfrac{1}{\\|\mathrm{X}\\|}\\) if \\(\mathrm{X}\\) is invetible (non-singular)
+  1. \\(\|\mathrm{X}\| = \|\mathrm{X}^T\|\\)
+  2. \\(\|\alpha\mathrm{X}\| = \alpha^n\|\mathrm{X}^T\|\\)
+  3. \\(\|\mathrm{X}\mathrm{Y}\| = \|\mathrm{X}\|\|\mathrm{Y}\|\\)
+  4. \\(\|\mathrm{X}\| = 0\\) iff \\(\mathrm{X}\\) is not-invetible (singular).
+  5. \\(\|\mathrm{X}^{-1]\| = \dfrac{1}{\|\mathrm{X}\|}\\) if \\(\mathrm{X}\\) is invetible (non-singular)
 
 ## Tensor:
 * In simple terms, a tensor is just a generalization of a 2-d array to more than 2 dimensions. We can think of a vector as a 1-d tensor and a matrix as a 2-d tensor. The following picture shows a scalar as 0 rank tensor, a vector as rank 1, a matrix as rank 2, and a 3-d tensor.
