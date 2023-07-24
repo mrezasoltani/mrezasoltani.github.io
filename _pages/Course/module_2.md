@@ -276,3 +276,4 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ## Vector Norm
 1. \\(p\\)-norm (\\(\ell_p\\)-norm): \\(\\|\mathbf{x}\\|_p = (\sum _{i=1}^n \|x_i\|^p)^{\dfrac{1}{p}} \\), \\(\forall p\geq 1\\)
+2. \\(2\\)-norm (\\(\ell_2\\)-norm): \\(\\|\mathbf{x}\\|_2 = \sqrt{\sum _{i=1}^n \|x_i\|^2)}\\)
