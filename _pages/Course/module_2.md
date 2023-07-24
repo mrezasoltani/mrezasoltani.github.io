@@ -194,7 +194,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   6. **Trace Trick.** \\(\mathbf{u}^T\mathrm{X}\mathbf{u} = Tr(\mathbf{u}^T\mathrm{X}\mathbf{u}) = Tr(\mathrm{X}\mathbf{u}\mathbf{u}^T)\\)
 
 ## Determinant of a Square Matrix
-* Informally, the determinant of a square matrix, denoted by \\(det(A)\\) or \\(|A|\\), is a measure of how much it changes a unit volume when viewed as a linear transformation.
+* Informally, the determinant of a square matrix, denoted by \\(det(A)\\) or \\(\|A\|\\), is a measure of how much it changes a unit volume when viewed as a linear transformation.
 * Properties of the determinant (in all these properties \\(\mathrm{X}, ~\mathrm{Y}, ~\mathrm{Z} \in \mathbb{R}^{n\times n}, ~\mathbf{u} \in \mathbb{R}^n\\), and \\(\alpha \in \mathbb{R}\\)):
   1. \\(\\|\mathrm{X}\\| = \\|\mathrm{X}^T\\|\\)
   2. \\(\\|\alpha\mathrm{X}\\| = \alpha^n\\|\mathrm{X}^T\\|\\)
