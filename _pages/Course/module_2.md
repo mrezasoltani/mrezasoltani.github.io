@@ -135,13 +135,11 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 ## Matrix Multiplicaiton
 * For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as . 
 \\((\mathrm{X}\mathrm{Y})_{ij} \sum_{k=1}^{n} \\) That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\) column of matrix \\(\mathrm{Y}\\).
-
     
 ## Propoerties of Matrices
 * **Aassociativity.** Multiplication of a matrix by a scalar is associative: for any matrix \\(mathrm{X}\\) and for any scalars \\(alpha\\) and \\(\beta\\), we have \\(\alpha (\beta \mathrm{X}) = (\alpha \beta)\mathrm{X}\\).
 * **Distributivity w.r.t. addition.** Multiplication of a matrix by a scalar is distributive with respect to matrix addition: for any matrices \\(\mathrm{X}\\) and \\(\mathrm{Y}\\) and for any scalar \\(alpha\\), we have \\(\alpha (\mathrm{X}+\mathrm{Y}) = \alpha \mathrm{X} + \alpha \mathrm{Y}\\).
 * **Distributive property w.r.t. multiplication.** Multiplication of a matrix by a scalar is distributive with respect to the addition of scalars: for any matrix \\(\mathrm{X}\\) and for any scalars \\(\alpha\\) and \\(\beta\\), we have \\((\alpha+\beta)\mathrm{X} = \alpha\mathrm{X} + \beta\mathrm{X}\\).
-
 
 ## Diagonal and Off-diagonal Entries of a Matrix
 * Let \\(\mathrm{X}\\) be a square matrix. The diagonal (or main diagonal of \\(\mathrm{X}\\)) is the set of all entries \\(\mathrm{X}_{i,j}\\) such that \\(i=j\\). The entries on the main diagonal are called diagonal entries, and all the other entries are called off-diagonal entries. In the following \\(3\times 3\\) square matrix, \\(daig(\mathrm{X})= \\{1, 5, 9\\}\\), and off-diagonal entries are given by \\(\\{2, 3, 4, 6, 7, 8\\}\\).
@@ -171,6 +169,9 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
     \end{bmatrix}
   \end{aligned}
 \end{equation}
+
+## Trace of a Square Matrix
+* The trace of a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\) denoted by \\(Tr(\mathrm{X}\\) is the sum of diagonal elements in the matrix. That is, \\(Tr(\mathrm{X}) = \sum_{i=1}^{n} x_{ii}\\).
 
 ## Transpose of Matrices:
 * By exchanging the rows and columns of a matrix, we obtain the transpose of the matrix. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\),
