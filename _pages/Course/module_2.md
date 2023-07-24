@@ -262,6 +262,12 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 \\[\mathcal{R}(\mathrm{X}) = \\{\mathrm{X}u \in \mathbb{R}^m \| u \in\mathbb{R}^n \\}\\]
 2. **Null Space** It is also called _kernel_ of matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and it is defined as follows:
 \\[\mathcal{N}(\mathrm{X}) = \\{u \in \mathbb{R}^n \| \mathrm{X}u=0 \\}\\]
+3. **Row space** The third fundamental subspace is the range of matrix \\(\mathrm{X}^T\\) defined as follows:
+\\[\mathcal{R}(\mathrm{X}^T) = \\{\mathrm{X}^Tu \in \mathbb{R}^n \| u \in\mathbb{R}^m \\}\\]
+4. **Left Null Space** The fourth fundamental space is the kernel of of matrix \\(\mathrm{X}^T\\) defined as follows:
+\\[\mathcal{N}(\mathrm{X}^T) = \\{u \in \mathbb{R}^m \| \mathrm{X}^Tu=0 \\}\\]
+
+
 
 
 
