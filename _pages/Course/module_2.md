@@ -258,7 +258,10 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * The rows and columns of \\(\mathrm{I}_K\\), a \\(K\times K\\) identity matrix are standard basis of the space of all \\(K\\)-dimensional vectors.
 
 ## Four Fundumental Spaces of a Matrix
-Suppose we view a matrix A 2 Rmn as a set of n vectors in Rm. The range (sometimes also called the column space) of this matrix is the span of the columns of A. In other words,
+1. **Column Space** It is also called _range_ of matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and it is defined as the span of the columns of \\(\mathrm{X}\\)
+\\[\mathcal{R}(\mathrm{X}) = \{\mathrm{X}u \in \mathbb{R}^m \| u \in\mathbb{R}^n \}\\]
+2. **Null Space** It is also called _kernel_ of matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and it is defined as
+\\[\mathcal{N}(\mathrm{X}) = \{u \in \mathbb{R}^n \| \mathrm{X}u=0 \}\\]
 
 
 
