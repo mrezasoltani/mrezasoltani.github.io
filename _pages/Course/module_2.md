@@ -148,7 +148,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
   </p>
 
 ## Matrix Multiplicaiton and its Properties
-* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as \\(\mathrm{X}\mathrm{Y_{ij}} = \sum_{k=1}^{n}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\) column of matrix \\(\mathrm{Y}\\).
+* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as \\((\mathrm{X}\mathrm{Y}) _{ij} = \sum _{k=1}^{n}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\) column of matrix \\(\mathrm{Y}\\).
     
   * Propoerties of Matrices
     * **Aassociativity.** Multiplication of a matrix by a scalar is associative: for any matrix \\(mathrm{X}\\) and for any scalars \\(alpha\\) and \\(\beta\\), we have \\(\alpha (\beta \mathrm{X}) = (\alpha \beta)\mathrm{X}\\).
@@ -278,8 +278,8 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 1. \\(p\\)-norm (\\(\ell_p\\)-norm): \\(\\|\mathbf{x}\\|_p = (\sum _{i=1}^n \|x_i\|^p)^{\dfrac{1}{p}} \\), \\(\forall p\geq 1\\)
 2. \\(2\\)-norm (\\(\ell_2\\)-norm): \\(\\|\mathbf{x}\\|_2 = \sqrt{\sum _{i=1}^n \|x_i\|^2} = \sqrt{\mathbf{x}^T\mathbf{x}}\\)
 3. \\(1\\)-norm (\\(\ell_1\\)-norm): \\(\\|\mathbf{x}\\|_1 = \sum _{i=1}^n \|x_i\|\\)
-4. \\(\infty\\)-norm (\\(\ell_{\infty}\\)-norm): \\(\\|\mathbf{x}\\|_{\infty} = \max _{i\geq1}(\|x_i\|)\\)
-5. \\(0\\)-norm (\\(\ell_{0}\\)-norm): \\(\sum _{i=1}^n \mathbb{1}_{x_i\neq 0}\\}\\)
+4. \\(\infty\\)-norm (\\(\ell_{\infty}\\)-norm): \\(\\|\mathbf{x}\\|_{\infty} = \max _{i\geq1}\|x_i\|)\\
+5. \\(0\\)-norm (\\(\ell_{0}\\)-norm): \\(\sum _{i=1}^n \mathbb{1} _{x_i\neq 0}\\}\\)
    This is a pseudo norm, since it does not satisfy the homogeneity property. It counts the number of non-zero elements in \\(\mathbf{x}\\).
 
 ## Matrix Norm
