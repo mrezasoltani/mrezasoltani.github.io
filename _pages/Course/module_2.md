@@ -170,9 +170,14 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 \end{equation}
 
 ## Trace of a Square Matrix
-* The trace of a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\) denoted by \\(Tr(\mathrm{X}\\) is the sum of its diagonal entries. That is, \\(Tr(\mathrm{X}) = \sum_{i=1}^{n} x_{ii}\\).
-* Properties of the trace:
-  1. 
+* The trace of a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\) denoted by \\(Tr(\mathrm{X})\\) is the sum of its diagonal entries. That is, \\(Tr(\mathrm{X}) = \sum_{i=1}^{n} x_{ii}\\).
+* Properties of the trace (in all these properties \\(\mathrm{X}, ~\mathrm{Y}, ~\mathrm{Z} \in \mathbb{R}^{n\times n}, ~\mathbf{u} \in \mathbb{R}^n\\), and \\(\alpha \in \mathbb{R}\\)):
+  1. \\(Tr(\mathrm{X}^{T}) = Tr(\mathrm{X})\\)
+  2. \\(Tr(\mathrm{X} + \mathrm{Y}) = Tr(\mathrm{X}) + Tr(\mathrm{Y})\\)
+  3. \\(Tr(\mathrm{\alpha X}) = \alpha Tr(\mathrm{X})\\)
+  4. \\(Tr(\mathrm{X}\mathrm{Y}) = Tr(\mathrm{Y}\mathrm{X})\\)
+  5. **Cyclic Permutation Property.** \\(Tr(\mathrm{X}\mathrm{Y}\mathrm{Z})) = Tr(\mathrm{Y}\mathrm{Z}\mathrm{X})) = Tr(\mathrm{Z}\mathrm{X}\mathrm{Y}))
+  6. **Trace Trick.** \\(\mathbf{u}^T\mathrm{X}\mathbf{u} = Tr(\mathbf{u}^T\mathrm{X}\mathbf{u}) = Tr(\mathrm{X}\mathbf{u}\mathbf{u}^T\\)
 
 ## Transpose of Matrices:
 * By exchanging the rows and columns of a matrix, we obtain the transpose of the matrix. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\),
