@@ -190,11 +190,17 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   2. \\(Tr(\mathrm{X} + \mathrm{Y}) = Tr(\mathrm{X}) + Tr(\mathrm{Y})\\)
   3. \\(Tr(\mathrm{\alpha X}) = \alpha Tr(\mathrm{X})\\)
   4. \\(Tr(\mathrm{X}\mathrm{Y}) = Tr(\mathrm{Y}\mathrm{X})\\)
-  5. **Cyclic Permutation Property.** \\(Tr(\mathrm{X}\mathrm{Y}\mathrm{Z})) = Tr(\mathrm{Y}\mathrm{Z}\mathrm{X})) = Tr(\mathrm{Z}\mathrm{X}\mathrm{Y})\\)
+  5. **Cyclic Permutation Property.** \\(Tr(\mathrm{X}\mathrm{Y}\mathrm{Z}) = Tr(\mathrm{Y}\mathrm{Z}\mathrm{X}) = Tr(\mathrm{Z}\mathrm{X}\mathrm{Y})\\)
   6. **Trace Trick.** \\(\mathbf{u}^T\mathrm{X}\mathbf{u} = Tr(\mathbf{u}^T\mathrm{X}\mathbf{u}) = Tr(\mathrm{X}\mathbf{u}\mathbf{u}^T)\\)
 
 ## Determinant of a Square Matrix
-* Informally, the determinant of a square matrix, denoted by \\(det(A)\\) or \\(\\|A\\|\\), is a measure of how much it changes a unit volume when viewed as a linear transformation. 
+* Informally, the determinant of a square matrix, denoted by \\(det(A)\\) or \\(\\|A\\|\\), is a measure of how much it changes a unit volume when viewed as a linear transformation.
+* Properties of the determinant (in all these properties \\(\mathrm{X}, ~\mathrm{Y}, ~\mathrm{Z} \in \mathbb{R}^{n\times n}, ~\mathbf{u} \in \mathbb{R}^n\\), and \\(\alpha \in \mathbb{R}\\)):
+  1. \\(\\|\mathrm{X}\\| = \\|\mathrm{X}^T\\|\\)
+  2. \\(\\|\alpha\mathrm{X}\\| = \alpha^n\\|\mathrm{X}^T\\|\\)
+  3. \\(\\|\mathrm{X}\mathrm{Y}\\| = \\|\mathrm{X}\\|\\|\mathrm{Y}\\|\\)
+  4. \\(\\|\mathrm{X}\\| = 0\\) iff \\(\mathrm{X}\\) is not-invetible (singular).
+  5. \\(\\|\mathrm{X}^{-1]\\| = \dfrac{1}{\\|\mathrm{X}\\|}\\) if \\(\mathrm{X}\\) is invetible (non-singular)
 
 ## Tensor:
 * In simple terms, a tensor is just a generalization of a 2-d array to more than 2 dimensions. We can think of a vector as a 1-d tensor and a matrix as a 2-d tensor. The following picture shows a scalar as 0 rank tensor, a vector as rank 1, a matrix as rank 2, and a 3-d tensor.
