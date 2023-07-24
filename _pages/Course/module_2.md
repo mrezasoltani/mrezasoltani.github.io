@@ -131,10 +131,10 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
     <br>
     <em>Inner product of two vectors.</em>
   </p>
-\\(=\sum_{k=1}^{n}x_{ik} y_{kj}\\)                                                                                                                                                                                            
+\\((\mathrm{X}\mathrm{Y})=\sum_{k=1}^{n}x_{ik} y_{kj}\\)                                                                                                                                                                                            
 ## Matrix Multiplicaiton
-* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as . That is
-\\((\mathrm{X}\mathrm{Y})_{ij} \sum_{k=1}^{n} \\) the entry in \\(i^{th}\\) row and \\(j^{th}\\) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\) column of matrix \\(\mathrm{Y}\\).
+* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as . 
+\\((\mathrm{X}\mathrm{Y})_{ij} \sum_{k=1}^{n} \\) That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\) column of matrix \\(\mathrm{Y}\\).
 
     
 ## Propoerties of Matrices
@@ -236,8 +236,12 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * **Proposition.** Let \\(S\\) be a finite-dimensional linear space. Then,  \\(S\\) possesses at least one basis.
 * **Dimension theorem.** Let \\(S\\) be a finite-dimensional linear space. Consider two set of vectors given by \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) and \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_k}\\}\\). Then, \\(p=k\\).
 * **Definition.** Let \\(S\\) be a finite-dimensional linear space, and \\(n\\) be the the number of elements of any its bases (\\(n\\) is called cardinality of that bases). Then, \\(n\\) is called the dimension of \\(S\\).
-* **Definition.** Let \\(S\\) be the space of all \\(K\\)-dimensional vectors. Then, the set of \\(K\\) vectors given by \\(\\{\mathbf{e_1}, \mathbf{e_2}, \ldots, \mathbf{e_K}\\}\\) is called the standard/canonical basis of $S$(recall our notion for the canonical basis vector)
+* **Definition.** Let \\(S\\) be the space of all \\(K\\)-dimensional vectors. Then, the set of \\(K\\) vectors given by \\(\\{\mathbf{e_1}, \mathbf{e_2}, \ldots, \mathbf{e_K}\\}\\) is called the standard/canonical basis of \\(S\\) (recall our notion for the canonical basis vector)
 * **Proposition.** The standard basis is a basis of the space of all \\(K\\)-dimensional vectors.
+* The rows and columns of \\(\mathrm{I}_K\\), a \\(K\times K\\) identity matrix are standard basis of the space of all \\(K\\)-dimensional vectors.
+
+## Four Fundumental Spaces of a Matrix
+Suppose we view a matrix A 2 Rmn as a set of n vectors in Rm. The range (sometimes also called the column space) of this matrix is the span of the columns of A. In other words,
 
 
 
