@@ -200,7 +200,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   2. \\(\|\alpha\mathrm{X}\| = \alpha^n\|\mathrm{X}^T\|\\)
   3. \\(\|\mathrm{X}\mathrm{Y}\| = \|\mathrm{X}\|\|\mathrm{Y}\|\\)
   4. \\(\|\mathrm{X}\| = 0\\) iff \\(\mathrm{X}\\) is not-invetible (singular).
-  5. \\(\|\mathrm{X}^{-1]\| = \dfrac{1}{\|\mathrm{X}\|}\\) if \\(\mathrm{X}\\) is invetible (non-singular)
+  5. \\(\|\mathrm{X}^{-1}\| = \dfrac{1}{\|\mathrm{X}\|}\\) if \\(\mathrm{X}\\) is invetible (non-singular)
   6.  \\(\|\mathrm{X}\| = \prod_{i=1}^{n}x_{ii}\\)
 
 ## Tensor:
