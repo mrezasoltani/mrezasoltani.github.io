@@ -201,7 +201,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   3. \\(\|\mathrm{X}\mathrm{Y}\| = \|\mathrm{X}\|\|\mathrm{Y}\|\\)
   4. \\(\|\mathrm{X}\| = 0\\) iff \\(\mathrm{X}\\) is not-invetible (singular).
   5. \\(\|\mathrm{X}^{-1]\| = \dfrac{1}{\|\mathrm{X}\|}\\) if \\(\mathrm{X}\\) is invetible (non-singular)
-  6.  \\(\|\mathrm{X}\| = \pi_{i=1}^{n}x_{ii}\\)
+  6.  \\(\|\mathrm{X}\| = \prod{i=1}^{n}x_{ii}\\)
 
 ## Tensor:
 * In simple terms, a tensor is just a generalization of a 2-d array to more than 2 dimensions. We can think of a vector as a 1-d tensor and a matrix as a 2-d tensor. The following picture shows a scalar as 0 rank tensor, a vector as rank 1, a matrix as rank 2, and a 3-d tensor.
@@ -258,10 +258,10 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * The rows and columns of \\(\mathrm{I}_K\\), a \\(K\times K\\) identity matrix are standard basis of the space of all \\(K\\)-dimensional vectors.
 
 ## Four Fundumental Spaces of a Matrix
-1. **Column Space** It is also called _range_ of matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and it is defined as the span of the columns of \\(\mathrm{X}\\)
-\\[\mathcal{R}(\mathrm{X}) = \{\mathrm{X}u \in \mathbb{R}^m \| u \in\mathbb{R}^n \}\\]
-2. **Null Space** It is also called _kernel_ of matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and it is defined as
-\\[\mathcal{N}(\mathrm{X}) = \{u \in \mathbb{R}^n \| \mathrm{X}u=0 \}\\]
+1. **Column Space** It is also called _range_ of matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and it is defined as the span of the columns of \\(\mathrm{X}\\):
+\\[\mathcal{R}(\mathrm{X}) = \\{\mathrm{X}u \in \mathbb{R}^m \| u \in\mathbb{R}^n \\}\\]
+2. **Null Space** It is also called _kernel_ of matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and it is defined as follows:
+\\[\mathcal{N}(\mathrm{X}) = \\{u \in \mathbb{R}^n \| \mathrm{X}u=0 \\}\\]
 
 
 
