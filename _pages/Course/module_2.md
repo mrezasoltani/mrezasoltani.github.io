@@ -272,4 +272,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   1. **Positivity.** \\(f(\mathbf{x}) \geq 0\\, ~ f(\mathbf{x}) = 0\\) iff \\(\mathbf{x}=0\\)
   2. **Homogeneity.** \\(f(\alpha\mathbf{x}) = \|\alpha\|f(\mathbf{x}), ~ \forall \alpha \in \mathbb{R}\\)
   3. **Triangle Inequality.** \\(f(\mathbf{x} + \mathbf{y}) \leq f(\mathbf{x}) + f(\mathbf{x}) \\) 
+* Norm function is denotd by \\(\\|.\\|\\) notation.
 
+## Vector Norm
+1. \\(p\\)-norm (\\(\ell_p\\)-norm: \\(\\|\mathbf{x}\\|_p = \sum_{i=1}^n \|x_i\|^p)^{\dfrac{1}{p}} \\), \\(forall p\geq 1\\)
