@@ -148,7 +148,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
   </p>
 
 ## Matrix Multiplicaiton and its Properties
-* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as \\((\mathrm{X}\mathrm{Y}) _{ij} = \sum _{k=1}^{n}x_{ik}y_{kj}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\) column of matrix \\(\mathrm{Y}\\).
+* For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as \\((\mathrm{X}\mathrm{Y}) _{ij} = \sum _{k=1}^{n} x _{ik} y _{kj}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\) column of matrix \\(\mathrm{Y}\\).
     
   * Propoerties of Matrices
     * **Aassociativity.** Multiplication of a matrix by a scalar is associative: for any matrix \\(mathrm{X}\\) and for any scalars \\(alpha\\) and \\(\beta\\), we have \\(\alpha (\beta \mathrm{X}) = (\alpha \beta)\mathrm{X}\\).
