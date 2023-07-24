@@ -201,6 +201,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   3. \\(\|\mathrm{X}\mathrm{Y}\| = \|\mathrm{X}\|\|\mathrm{Y}\|\\)
   4. \\(\|\mathrm{X}\| = 0\\) iff \\(\mathrm{X}\\) is not-invetible (singular).
   5. \\(\|\mathrm{X}^{-1]\| = \dfrac{1}{\|\mathrm{X}\|}\\) if \\(\mathrm{X}\\) is invetible (non-singular)
+  6.  \\(\|\mathrm{X}\| = \pi_{i=1}^{n}x_{ii}\\)
 
 ## Tensor:
 * In simple terms, a tensor is just a generalization of a 2-d array to more than 2 dimensions. We can think of a vector as a 1-d tensor and a matrix as a 2-d tensor. The following picture shows a scalar as 0 rank tensor, a vector as rank 1, a matrix as rank 2, and a 3-d tensor.
