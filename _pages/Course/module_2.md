@@ -169,16 +169,6 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
   \end{aligned}
 \end{equation}
 
-## Trace of a Square Matrix
-* The trace of a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\) denoted by \\(Tr(\mathrm{X})\\) is the sum of its diagonal entries. That is, \\(Tr(\mathrm{X}) = \sum_{i=1}^{n} x_{ii}\\).
-* Properties of the trace (in all these properties \\(\mathrm{X}, ~\mathrm{Y}, ~\mathrm{Z} \in \mathbb{R}^{n\times n}, ~\mathbf{u} \in \mathbb{R}^n\\), and \\(\alpha \in \mathbb{R}\\)):
-  1. \\(Tr(\mathrm{X}^{T}) = Tr(\mathrm{X})\\)
-  2. \\(Tr(\mathrm{X} + \mathrm{Y}) = Tr(\mathrm{X}) + Tr(\mathrm{Y})\\)
-  3. \\(Tr(\mathrm{\alpha X}) = \alpha Tr(\mathrm{X})\\)
-  4. \\(Tr(\mathrm{X}\mathrm{Y}) = Tr(\mathrm{Y}\mathrm{X})\\)
-  5. **Cyclic Permutation Property.** \\(Tr(\mathrm{X}\mathrm{Y}\mathrm{Z})) = Tr(\mathrm{Y}\mathrm{Z}\mathrm{X})) = Tr(\mathrm{Z}\mathrm{X}\mathrm{Y}))
-  6. **Trace Trick.** \\(\mathbf{u}^T\mathrm{X}\mathbf{u} = Tr(\mathbf{u}^T\mathrm{X}\mathbf{u}) = Tr(\mathrm{X}\mathbf{u}\mathbf{u}^T\\)
-
 ## Transpose of a Matrix:
 * By exchanging the rows and columns of a matrix, we obtain the transpose of the matrix. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\),
 its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
@@ -192,6 +182,19 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   4. Given a complex matrix \\(\mathrm{X} \in \mathbb{C}^{m\times n}\\), the transpose operation is defined by exchanging the rows and columns and conjugating them, and denoted by \\(\mathrm{X}^H\\) (conjugate transpose).
   5. If for a real (complex) matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) (\\(\in \mathbb{C}^{m\times n}\\)), we have \\(\mathrm{X}=(\mathrm{X})^T\\) (\\(\mathrm{X}=(\mathrm{X})^H\\)), then the matrix is called _Symmetric_ (_Hermitian_).
   6. The set of all symmetric (Hermitian) matrices is denoted as \\(\mathbb{S}^n\\) (\\(\mathbb{H}^n\\)).
+
+## Trace of a Square Matrix
+* The trace of a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\) denoted by \\(Tr(\mathrm{X})\\) is the sum of its diagonal entries. That is, \\(Tr(\mathrm{X}) = \sum_{i=1}^{n} x_{ii}\\).
+* Properties of the trace (in all these properties \\(\mathrm{X}, ~\mathrm{Y}, ~\mathrm{Z} \in \mathbb{R}^{n\times n}, ~\mathbf{u} \in \mathbb{R}^n\\), and \\(\alpha \in \mathbb{R}\\)):
+  1. \\(Tr(\mathrm{X}^{T}) = Tr(\mathrm{X})\\)
+  2. \\(Tr(\mathrm{X} + \mathrm{Y}) = Tr(\mathrm{X}) + Tr(\mathrm{Y})\\)
+  3. \\(Tr(\mathrm{\alpha X}) = \alpha Tr(\mathrm{X})\\)
+  4. \\(Tr(\mathrm{X}\mathrm{Y}) = Tr(\mathrm{Y}\mathrm{X})\\)
+  5. **Cyclic Permutation Property.** \\(Tr(\mathrm{X}\mathrm{Y}\mathrm{Z})) = Tr(\mathrm{Y}\mathrm{Z}\mathrm{X})) = Tr(\mathrm{Z}\mathrm{X}\mathrm{Y})\\)
+  6. **Trace Trick.** \\(\mathbf{u}^T\mathrm{X}\mathbf{u} = Tr(\mathbf{u}^T\mathrm{X}\mathbf{u}) = Tr(\mathrm{X}\mathbf{u}\mathbf{u}^T)\\)
+
+## Determinant of a Square Matrix
+* Informally, the determinant of a square matrix, denoted by \\(det(A)\\) or \\(\\|A\\|\\), is a measure of how much it changes a unit volume when viewed as a linear transformation. 
 
 ## Tensor:
 * In simple terms, a tensor is just a generalization of a 2-d array to more than 2 dimensions. We can think of a vector as a 1-d tensor and a matrix as a 2-d tensor. The following picture shows a scalar as 0 rank tensor, a vector as rank 1, a matrix as rank 2, and a 3-d tensor.
