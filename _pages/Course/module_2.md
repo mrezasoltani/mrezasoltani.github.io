@@ -144,7 +144,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
   <p align="center">
     <img width="400" alt="Screenshot 2023-07-22 at 11 54 22 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/ff61f836-7b63-43ff-b11b-ced6e7b0cd54">
     <br>
-    <em>Inner product of two vectors.</em>
+    <em>Inner product as the projection of one vector on the other one.</em>
   </p>
 
 ## Matrix Multiplicaiton and its Properties
