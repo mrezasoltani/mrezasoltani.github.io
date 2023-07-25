@@ -371,6 +371,6 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * Consider a ,atrix \\(\mathbf{X} \in \mathbb{R}^{n\times n}\\ with rank \\(r\\). If we re-write the eigenvector-eigenvalue equation as \\(\mathbf{X}\mathbf{u} -\lambda\mathbf{u} = 0, ~ \mathbf{u}\neq 0\\), it follows that in order to have a non-zero (non-trivial) solution, we need that the matrix \\(\mathbf{X}\mathbf{u} - \lambda\mathbf{u}\\\) to be non-singular. That is, \\(det(\mathbf{X} - \lambda\mathrm{I_n})=0\\).
 * This resulting equation from \\(det(\mathbf{X} - \lambda\mathrm{I_n})=0\\) is a polynoimia equation in \\(\lambda\\) and is called the _characteristic equation_ of \mathbf{X}\\). From algebra, we know that this polynomial equation has \\(n\\) possibly complex-valued solutions, which are eigenvalues of \\(\mathbf{X}\\), denoted by \\(\lambda_i\\)'s, and \\(\mathbf{u}_i\\)'s are the corresponding eigenvectors.
 * Typically, all eigenvectors are sorted in order of their eigenvalues, with the largest magnitude ones first.
-  properties:
-    1. The trace of a matrix is equal to the sum of its eigenvalues, \\(Tr(\mathrm{X}) = \sum _{i=1}^r \lambda_i\\)
-    2. The determinant of matrix \\(\mathbf{X}\\) is equal to the product of its eigenvalues, \\(det(\mathrm{X}) = \prod _{i=1}^r \lambda_i\\)
+    Properties:
+      1. The trace of a matrix is equal to the sum of its eigenvalues, \\(Tr(\mathrm{X}) = \sum _{i=1}^r \lambda_i\\)
+      2. The determinant of matrix \\(\mathbf{X}\\) is equal to the product of its eigenvalues, \\(det(\mathrm{X}) = \prod _{i=1}^r \lambda_i\\)
