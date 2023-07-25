@@ -403,7 +403,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ## Eigen Value Decomposition (EVD)
 * Let the matrix \\(\mathrm{X}\\) be a diagonalizable matrix, then we can decompose matrix \\(\mathrm{X} = \mathrm{U}\mathrm{\Lambda}\mathrm{U}^{T}\\).
-  Here, we have used the fact that matrix \\(mathrm{U}\\ is a Orthogonal (Hermitian) matrix, i.e., \\(\\(mathrm{U}^T = \\(mathrm{U}^{-1} \\)
+  Here, we have used the fact that matrix \\(mathrm{U}\\) is a Orthogonal (Hermitian) matrix, i.e., \\(mathrm{U}^T =\mathrm{U}^{-1} \\)
 
 \begin{equation}
 \begin{aligned}
@@ -424,6 +424,6 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
       ---  & \mathrm{U_2}^T & ---  \\\\\\\\
        & \vdots & \\\\\\\\
       ---  & \mathrm{U_n}^T & --- 
-    \end{bmatrix} =
+    \end{bmatrix}
 \end{aligned}
 \end{equation}
