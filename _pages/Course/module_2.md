@@ -270,6 +270,12 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ## Rank of a Matrix:
 * The column rank of a matrix \\(\mathrm{X}\\) is the dimension of its column space (\\(\mathcal{R}(\mathrm{X})\\) (i.e., the space spanned by its columns), and the row rank is the dimension of its row space (\\(\mathcal{R}(\mathrm{X}^T)\\) (i.e., the space spanned by its rows). It can be shown that for any matrix \\(\mathrm{X}\\), **_column rank equals row rank_**. This quantity is referred to as the **_rank of_** \\(\mathrm{X}\\), denoted as \\(rank(\mathrm{X})\\).
+  Properties of rank:
+    Consider matrices \\(\mathrm{X}, ~ \mathrm{Y} \in \mathbb{R}^{m\times n}\\).
+     1. \\(rank(\mathrm{X}) \leq \min(m, n)\\). If \\(rank(\mathrm{X}) = \min(m, n)\\), then \\(\mathrm{X}\\) is called full rank. Otherwise it is called rank deficient.
+     2. \\(rank(\mathrm{X}) = rank(\mathrm{X}^T) = rank(\mathrm{X}^T\mathrm{X}) = ank(\mathrm{X}\mathrm{X})^T\\).
+     3. \\(rank(\mathrm{X}\mathrm{Y}) \leq  \min(rank(\mathrm{X}), rank(\mathrm{Y}))\\)
+     4. \\(rank(\mathrm{X} + \mathrm{Y}) \leq  rank(\mathrm{X}) + rank(\mathrm{Y}) \\).
 
 ## Norm
 * Let \mathbb{V} be a vector space. Informally, the norm is a measure of the _length_ of the vector. To be more specific, function \\(f : \mathbb{V} \rightarrow \mathbb{R}\\) is called a norm on \\(\mathbb{V}\\) if it satisfies the following 3 properties:
@@ -302,7 +308,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ### Matrix Norm
 * We can think of a matrix as a vector; hence, defining the matrix norm in terms of a vector norm. \\(\\|\mathrm{X}\\| = \\|vec(A)\\|\\). If the vector norm is the 2-norm, the corresponding matrix norm is called the _Frobenius_ norm:
-  \\[ \\|\mathrm{X}\\| = \sqrt{\sum _{i=1}^m \sum _{j=1}^n x_{ij}^2} = \sqrt{Tr(\mathrm{X}^T\mathrm{X})} = \\|vec(\mathrm{X})\\|_2 \\]
+  \\[ \\|\mathrm{X}\\|_F =  = \sqrt{Tr(\mathrm{X}^T\mathrm{X})} = \\|vec(\mathrm{X})\\|_2 \\]
 * We can also define norms for matrices. In particular, we can define the _induced norm_ of matrix \\(\mathrm{X}\\) as the maximum amount by which any unit-norm input can be lengthened:
 \\[ \\|\mathrm{X}\\|_p = \max _{\mathbf{u}\neq}\dfrac{\\|\mathrm{X}\mathbf{u}\\|_p}{\\|\mathbf{u}\\|_p} = \max _{\\|\mathbf{u}\\|_p=1}\\|\mathrm{X}\mathbf{u}\\|_p \\]
 * Consider a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\). We can define _Schatten_ \\(p\\)-norm as follows:
