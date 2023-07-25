@@ -205,7 +205,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   6.  \\(\|\mathrm{X}\| = \prod_{i=1}^{n}x_{ii}\\), if \\(\mathrm{X}\\) is a diagonal matrix.
 
 ## Tensor:
-* In simple terms, a tensor is just a generalization of a 2-d array to more than 2 dimensions. We can think of a vector as a 1-d tensor and a matrix as a 2-d tensor. The following picture shows a scalar as 0 rank tensor, a vector as rank 1, a matrix as rank 2, and a 3-d tensor.
+* In simple terms, a tensor is just a generalization of a \\(2\\)-d array to more than 2 dimensions. We can think of a vector as a \\(1\\)-d tensor and a matrix as a \\(2\\)-d tensor. The following picture shows a scalar as 0 rank tensor, a vector as rank 1, a matrix as rank 2, and a 3-d tensor.
 
    <p align="center">
     <img width="700" alt="Screenshot 2023-07-22 at 11 21 29 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/f297d14b-115c-4489-b701-f2e7c5e7b76d">
@@ -258,7 +258,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * **Proposition.** The standard basis is a basis of the space of all \\(K\\)-dimensional vectors.
 * The rows and columns of \\(\mathrm{I}_K\\), a \\(K\times K\\) identity matrix are standard basis of the space of all \\(K\\)-dimensional vectors.
 
-## Four Fundumental Spaces of a Matrix
+## Four Fundamental Spaces of a Matrix
 1. **Column Space** It is also called _range_ of matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and it is defined as the span of the columns of \\(\mathrm{X}\\):
 \\[\mathcal{R}(\mathrm{X}) = \\{\mathrm{X}u \in \mathbb{R}^m \| u \in\mathbb{R}^n \\}\\]
 2. **Null Space** It is also called _kernel_ of matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and it is defined as follows:
@@ -298,7 +298,9 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 \end{equation}
 
 ### Matrix Norm
-* Similar to vectors, we can also define norms for matrices. In particular, we can define the _induced norm_ of matrix \\(\mathrm{X}\\) as the maximum amount by which any unit-norm input can be lengthened:
+* We can think of a matrix as a vector; hence, defining the matrix norm in terms of a vector norm. \\(\\|\mathrm{X}\\| = \\|vec(A)\\|\\). If the vector norm is the 2-norm, the corresponding matrix norm is called the _Frobenius_ norm:
+  \\[ \\|\mathrm{X]\\|_F = \sqrt{\sum _{i=1}^m\sum _{j=1}^n x_{ij}^2} = \sqrt{Tr(\mathrm{X}^T\mathrm{X}) = \\|vec(\mathrm{X})\\|_2 \\]
+* We can also define norms for matrices. In particular, we can define the _induced norm_ of matrix \\(\mathrm{X}\\) as the maximum amount by which any unit-norm input can be lengthened:
 \\[ \\|\mathrm{X}\\|_p = \max _{\mathbf{u}\neq}\dfrac{\\|\mathrm{X}\mathbf{u}\\|_p}{\\|\mathbf{u}\\|_p} = \max _{\\|\mathbf{u}\\|_p=1}\\|\mathrm{X}\mathbf{u}\\|_p \\]
 * Consider a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\). We can define _Schatten_ \\(p\\)-norm
 \\[ \\|\mathrm{X}\\|_p = (\sum _{i=1}^r \sigma _i^p(\mathrm{X}))^{\dfrac{1}{p}} \\]
