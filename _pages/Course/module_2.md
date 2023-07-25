@@ -400,5 +400,30 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * From above, we immidiately see that if matrix \\(\mathrm{U}\\) to be invertible, or eigenvectors, \\(\mathbf{u_i}\\)'s to be linearly independent, then we decompose \\(\mathrm{X}\\) as follows:
 \\[\mathrm{X} = \mathrm{U}\mathrm{\Lambda}\mathrm{U}^{-1}\\]
 * A matrix that can be written in the above form is called _diagonalizable_.
-## Eigen Value Decomposition (EVD)
 
+## Eigen Value Decomposition (EVD)
+* Let the matrix \\(\mathrm{X}\\) be a diagonalizable matrix, then we can decompose matrix \\(\mathrm{X} = \mathrm{U}\mathrm{\Lambda}\mathrm{U}^{T}\\).
+  Here, we have used the fact that matrix \\(mathrm{U}\\ is a Orthogonal (Hermitian) matrix, i.e., \\(\\(mathrm{U}^T = \\(mathrm{U}^{-1} \\)
+
+\begin{equation}
+\begin{aligned}
+  \mathrm{X} = \mathrm{U}\mathrm{\Lambda}\mathrm{U}^{T}=
+    \begin{bmatrix}
+      | & | & \ldots & | \\\\\\\\
+      \mathrm{U_1} & \mathrm{U_2} & \ldots & \mathrm{U_n} \\\\\\\\
+      | & | & \ldots & |
+    \end{bmatrix}
+    \begin{bmatrix}
+        \lambda_1 & 0 & \ldots & 0 \\\\\\\\
+        0 & \lambda_2 & \ldots & 0 \\\\\\\\
+        \vdots & \vdots & \ddots & \vdots \\\\\\\\
+        0 & 0 & \ldots & \lambda_n
+    \end{bmatrix}
+    \begin{bmatrix}
+      ---  & \mathrm{U_1}^T & ---  \\\\\\\\
+      ---  & \mathrm{U_2}^T & ---  \\\\\\\\
+       & \vdots & \\\\\\\\
+      ---  & \mathrm{U_n}^T & --- 
+    \end{bmatrix} =
+\end{aligned}
+\end{equation}
