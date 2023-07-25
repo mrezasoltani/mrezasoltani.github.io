@@ -399,3 +399,6 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 \end{equation}
 * From above, we immidiately see that if matrix \\(\mathrm{U}\\) to be invertible, or eigenvectors, \\(\mathbf{u_i}\\)'s to be linearly independent, then we decompose \\(\mathrm{X}\\) as follows:
 \\[\mathrm{X} = \mathrm{U}\mathrm{\Lambda}\mathrm{U}^{-1}\\]
+* A matrix that can be written in the above form is called _diagonalizable_.
+## Eigen Value Decomposition (EVD)
+
