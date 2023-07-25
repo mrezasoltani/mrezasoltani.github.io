@@ -29,6 +29,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **A probability distribution over a discrete variable (pmf)** | \\(P(x)\\) |
    | **A probability distribution over a continuous variable (pdf)** | \\(p(x)\\) |
    | \\(L^p\\) **norm of vector** \\(\mathbf{x}\\) | \\(\\|\\|\mathbf{x}\\|\\|_p\\) |
+   | \\(p\\ **induced norm of a matrix** | \\(\\|\mathrm{X}\\|_p\\) |
    | **Dot product of two vectors** | \\(\mathbf{x}\cdot\mathbf{y}\\) |
    | **Hadamard (element-wise) product of two vectors (matrices)** | \\(\mathbf{x}\odot\mathbf{y} (\mathrm{X}\odot\mathrm{Y})\\) |
 
@@ -299,8 +300,10 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 ### Matrix Norm
 * Similar to vectors, we can also define norms for matrices. In particular, we can define the _induced norm_ of matrix \\(\mathrm{X}\\) as the maximum amount by which any unit-norm input can be lengthened:
 \\[ \\|\mathrm{X}\\|_p = \max _{\mathbf{u}\neq}\dfrac{\\|\mathrm{X}\mathbf{u}\\|_p}{\\|\mathbf{u}\\|_p} = \max _{\\|\mathbf{u}\\|_p=1}\\|\mathrm{X}\mathbf{u}\\|_p \\]
-* Consider a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\). We have two important cases:
+* Consider a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\). We can define _Schatten_ \\(p\\)-norm
+\\[ \\|\mathrm{X}\\_p = (\sum _{i=1}^r \sigma _i^p(\mathrm{X}))^{\dfrac{1}{p}} \\]
+* We have two important cases:
   1. Spectral norm (induced \\(2\\)-norm). If \\(p=2\\), then we have:
      \\[\\|\mathrm{X}\\|_2 = \sqrt{\lambda _{max}(\mathrm{X}^T\mathrm{X})} = \max _i \sigma_i \\]
-  2. Nuclear (Trace) norm ((induced \\(2\\)-norm)). If \\(p=1\\), then we have:
-     \\[ \\|\mathrm{X}\\|_* = Tr(\sqrt{\mathrm{X}^T\mathrm{X}}) = \sum _{i=1}^n \sigma_i = \\|\mathbf{\sigma}\\|_1\\]
+  2. Nuclear (Trace) norm ((induced \\(1\\)-norm)). If \\(p=1\\), then we have:
+     \\[ \\|\mathrm{X}\\|_* = Tr(\sqrt{\mathrm{X}^T\mathrm{X}}) = \sum _{i=1}^r \sigma_i = \\|\mathbf{\sigma}\\|_1\\]
