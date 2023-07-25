@@ -317,6 +317,14 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   \end{aligned}
   \end{equation}
 
+## **The (Moore-Penrose) Pseudo-Inverse** 
+* In some case, we can generalize the concept of inverse matrix to the rectangular matrices. In particular, _Pseudo-Inverse_ of a matrix \\(\mathrm{X}\\) denoted by \\(\mathrm{X}^{\dag}\\) is defined as the unique matrix that satisfies the following 4 properties:
+  1. \\[\mathrm{X}\mathrm{X}^{\dag}\mathrm{X} = \mathrm{X}^{\dag}\\]
+  2. \\[\mathrm{X}^{\dag}\mathrm{X}\mathrm{X}^{\dag} =  \mathrm{X}^{\dag}\\]
+  3. \\[ (\mathrm{X}\mathrm{X}^{\dag})^T\\] =  \mathrm{X}\mathrm{X}^{\dag} \\]
+  4. \\[ (\mathrm{X}^{\dag}\mathrm{X})^T\\] =  \mathrm{X}^{\dag}\mathrm{X}\\]
+
+
 ### Vector Norm
 * Consider a vector \\(\mathbf{x} \in \mathbb{R}^n\\). We have the following different norm functions.
   
