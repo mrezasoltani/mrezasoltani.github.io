@@ -318,11 +318,11 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   \end{equation}
 
 ## **The (Moore-Penrose) Pseudo-Inverse** 
-* In some case, we can generalize the concept of inverse matrix to the rectangular matrices. In particular, _Pseudo-Inverse_ of a matrix \\(\mathrm{X}\\) denoted by \\(\mathrm{X}^{\dag}\\) is defined as the unique matrix that satisfies the following 4 properties:
+* In some case, we can generalize the concept of inverse matrix to the rectangular matrices. In particular, _Pseudo-Inverse_ of a matrix \\(\mathrm{X}\\) denoted by \\(\mathrm{X}^{\dagger}\\) is defined as the unique matrix that satisfies the following 4 properties:
   1. \\[\mathrm{X}\mathrm{X}^{\dagger}\mathrm{X} = \mathrm{X}\\]
   2. \\[\mathrm{X}^{\dagger}\mathrm{X}\mathrm{X}^{\dag} =  \mathrm{X}^{\dagger}\\]
-  3. \\[ (\mathrm{X}\mathrm{X}^{\dag})^T\\] = \mathrm{X}\mathrm{X} ^{\dagger} \\]
-  4. \\[ (\mathrm{X}^{\dagger}\mathrm{X})^T\\] = \mathrm{X} ^{\dagger}\mathrm{X}\\]
+  3. \\[ (\mathrm{X}\mathrm{X}^{\dagger})^T = \mathrm{X}\mathrm{X} ^{\dagger} \\]
+  4. \\[ (\mathrm{X}^{\dagger}\mathrm{X})^T = \mathrm{X} ^{\dagger}\mathrm{X}\\]
 
 
 ### Vector Norm
