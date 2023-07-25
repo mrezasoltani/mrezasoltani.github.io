@@ -323,7 +323,9 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   2. \\[\mathrm{X}^{\dagger}\mathrm{X}\mathrm{X}^{\dagger} =  \mathrm{X}^{\dagger}\\]
   3. \\[ (\mathrm{X}\mathrm{X}^{\dagger})^T = \mathrm{X}\mathrm{X} ^{\dagger} \\]
   4. \\[ (\mathrm{X}^{\dagger}\mathrm{X})^T = \mathrm{X} ^{\dagger}\mathrm{X}\\]
-
+* If \\(\mathrm{X}\\) is a square \\(\n\times n\\) full-rank matrix, then Pseudo-Inverse is given by standard inverse of a matrix, i.e., \\(\mathrm{X}^{\dagger} = \mathrm{X}^{-1}\\).
+* If \\(\mathrm{X}\\) is a \\(\m\times n\\) full-column rank matrix where \\(m > n\\) (a thin/tall matrix), then the Pseudo-Inverse is given by \\(\mathrm{X}^{\dagger} = (\mathrm{X}^T\mathrm{X})^{-1}\mathrm{X}^T\\).
+* If \\(\mathrm{X}\\) is a \\(\m\times n\\) full-row rank matrix where \\(m < n\\) (a fat matrix), then the Pseudo-Inverse is given by \\(\mathrm{X}^{\dagger} = \mathrm{X}^T(\mathrm{X})\mathrm{X}^T)^{-1}\\).
 
 ### Vector Norm
 * Consider a vector \\(\mathbf{x} \in \mathbb{R}^n\\). We have the following different norm functions.
