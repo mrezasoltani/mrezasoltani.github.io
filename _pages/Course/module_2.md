@@ -292,7 +292,17 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   1. \\((\mathrm{X}^{-1}) ^-1 = \mathrm{X}\\)
   2. \\((\mathrm{X}\mathrm{Y}) ^{-1}) = \mathrm{Y}^{-1}\mathrm{X}^{-1}\\)
   3. \\((\mathrm{X}^{T}) ^{-1} = (\mathrm{X}^{-T})\\)
-  4. For a block diagonal matrix, the inverse is obtained by inverting each block separately:
+  4. Let \\(\mathrm{X}\\) be a \\(2\times 2\\) invertible matrix, then
+  \begin{equation}
+  \begin{aligned}
+    \mathrm{X} ^{-1} =  \frac{1}{det(\mathrm{X})}
+     \begin{bmatrix}
+        x_{22} & -x_{12}  \\\\\\\\
+        -x_{21} & x_{11} 
+      \end{bmatrix}
+  \end{aligned}
+  \end{equation}
+  6. For a block diagonal matrix, the inverse is obtained by inverting each block separately:
   \begin{equation}
   \begin{aligned}
     \mathrm{X} ^{-1} =  
@@ -302,7 +312,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
       \end{bmatrix} =
        \begin{bmatrix}
         \mathrm{A} ^{-1} & \mathrm{0}  \\\\\\\\
-        \mathrm{0} & \mathrm{b} ^{-1} 
+        \mathrm{0} & \mathrm{B} ^{-1} 
       \end{bmatrix}
   \end{aligned}
   \end{equation}
