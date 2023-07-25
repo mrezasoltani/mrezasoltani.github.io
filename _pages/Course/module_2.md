@@ -378,5 +378,5 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ### Diagonalization
 * If we stack all eigenvalues and eigenvectors of a matrix \\(\mathbf{X}\\), in the matrix notation, we can write:
-\\[\mathrm{X} \mathrm{U} = \mathrm{U}\mathrm{\Lambda}\]]
+\\[\mathrm{X} \mathrm{U} = \mathrm{U}\mathrm{\Lambda}\\]
   
