@@ -268,6 +268,9 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 4. **Left Null Space** The fourth fundamental space is the kernel of of matrix \\(\mathrm{X}^T\\) defined as follows:
 \\[\mathcal{N}(\mathrm{X}^T) = \\{u \in \mathbb{R}^m \| \mathrm{X}^Tu=0 \\}\\]
 
+## Rank of a Matrix:
+* The column rank of a matrix \\(\mathbb{X}\\) is the dimension of its column space (\\(\mathcal{R}(\mathrm{X})\\) (i.e., the space spanned by its columns), and the row rank is the dimension of its row space (\\(\mathcal{R}(\mathrm{X}^T)\\) (i.e., the space spanned by its rows). It can be shown that for any matrix \\(\mathbb{X}\\), **_column rank equals row rank_**. This quantity is referred to as the **_rank of_** \\(\mathbb{X}\\), denoted as \\(rank(\mathbb{X})\\).
+
 ## Norm
 * Let \mathbb{V} be a vector space. Informally, the norm is a measure of the _length_ of the vector. To be more specific, function \\(f : \mathbb{V} \rightarrow \mathbb{R}\\) is called a norm on \\(\mathbb{V}\\) if it satisfies the following 3 properties:
   1. **Positivity.** \\(f(\mathbf{x}) \geq 0\\, ~ f(\mathbf{x}) = 0\\) iff \\(\mathbf{x}=0\\)
@@ -299,10 +302,10 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ### Matrix Norm
 * We can think of a matrix as a vector; hence, defining the matrix norm in terms of a vector norm. \\(\\|\mathrm{X}\\| = \\|vec(A)\\|\\). If the vector norm is the 2-norm, the corresponding matrix norm is called the _Frobenius_ norm:
-  \\[ \\|\mathrm{X]\\|_F = \sqrt{\sum _{i=1}^m \sum _{j=1}^n x_{ij}^2} = \sqrt{Tr(\mathrm{X}^T\mathrm{X})} = \\|vec(\mathrm{X})\\|_2 \\]
+  \\[ \\|\mathrm{X}\\|_F = \sqrt{\sum _{i=1}^m \sum _{j=1}^n x_{ij}^2} = \sqrt{Tr(\mathrm{X}^T\mathrm{X})} = \\|vec(\mathrm{X})\\|_2 \\]
 * We can also define norms for matrices. In particular, we can define the _induced norm_ of matrix \\(\mathrm{X}\\) as the maximum amount by which any unit-norm input can be lengthened:
 \\[ \\|\mathrm{X}\\|_p = \max _{\mathbf{u}\neq}\dfrac{\\|\mathrm{X}\mathbf{u}\\|_p}{\\|\mathbf{u}\\|_p} = \max _{\\|\mathbf{u}\\|_p=1}\\|\mathrm{X}\mathbf{u}\\|_p \\]
-* Consider a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\). We can define _Schatten_ \\(p\\)-norm
+* Consider a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\). We can define _Schatten_ \\(p\\)-norm as follows:
 \\[ \\|\mathrm{X}\\|_p = (\sum _{i=1}^r \sigma _i^p(\mathrm{X}))^{\dfrac{1}{p}} \\]
 * We have two important cases:
   1. Spectral norm (induced \\(2\\)-norm). If \\(p=2\\), then we have:
