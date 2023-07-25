@@ -353,4 +353,5 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
      \\[ \\|\mathrm{X}\\|_* = Tr(\sqrt{\mathrm{X}^T\mathrm{X}}) = \sum _{i=1}^r \sigma_i = \\|\mathbf{\sigma}\\|_1\\]
 
 ## Eigenvalues and Eigenvectors of a Matrix
+* Given a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\time n}\\), \\(\lambda\\) is called an eigenvalue of \\(\mathrm{X}\\) and \\\mathbf{u} \in \mathbb{R}^n(\\) is called the corresponding eigenvector if \\(\mathbf{X}\mathbf{u} = \lambda\mathbf{u}, ~ \mathbf{u}\neq 0\\).
 * 
