@@ -299,7 +299,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ### Matrix Norm
 * We can think of a matrix as a vector; hence, defining the matrix norm in terms of a vector norm. \\(\\|\mathrm{X}\\| = \\|vec(A)\\|\\). If the vector norm is the 2-norm, the corresponding matrix norm is called the _Frobenius_ norm:
-  \\[ \\|\mathrm{X]\\|_F = \sqrt{\sum _{i=1}^m\sum _{j=1}^n x_{ij}^2} = \sqrt{Tr(\mathrm{X}^T\mathrm{X}) = \\|vec(\mathrm{X})\\|_2 \\]
+  \\[ \\|\mathrm{X]\\|_F = \sqrt{\sum _{i=1}^m \sum _{j=1}^n x_{ij}^2} = \sqrt{Tr(\mathrm{X}^T\mathrm{X})} = \\|vec(\mathrm{X})\\|_2 \\]
 * We can also define norms for matrices. In particular, we can define the _induced norm_ of matrix \\(\mathrm{X}\\) as the maximum amount by which any unit-norm input can be lengthened:
 \\[ \\|\mathrm{X}\\|_p = \max _{\mathbf{u}\neq}\dfrac{\\|\mathrm{X}\mathbf{u}\\|_p}{\\|\mathbf{u}\\|_p} = \max _{\\|\mathbf{u}\\|_p=1}\\|\mathrm{X}\mathbf{u}\\|_p \\]
 * Consider a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\). We can define _Schatten_ \\(p\\)-norm
