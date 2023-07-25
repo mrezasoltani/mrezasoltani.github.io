@@ -368,9 +368,15 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * From the relation of \\(\alpha\mathbf{X}\mathbf{u} = \mathbf{X}(\alpha\mathbf{u}) = \lambda(\alpha\mathbf{u}) \\), we see that if \\(\mathbf{u}\\) is the eigenvector corresponding to the eigenvalue \\(\lambda\\), then \\(\alpha\mathbf{u}\\) is also another eigenvector corresponding to the eigenvalue \\(\lambda\\). As a result, we have eigenvectors corresponding to a eigenvalue. This motivates us to talk about the normalized eigenvector, where \\(\\|\mathbf{u}\\|_2=1\\). However, this does not completely remove the non-uniqueness of the eigenvectors since both \\(\mathbf{u}\\) and \\(\mathbf{u}\\) have unit norm, but they are pointing to the opposite direction.
 
 ### Characteristic Equation of a Matrix
-* Consider a ,atrix \\(\mathbf{X} \in \mathbb{R}^{n\times n}\\ with rank \\(r\\). If we re-write the eigenvector-eigenvalue equation as \\(\mathbf{X}\mathbf{u} -\lambda\mathbf{u} = 0, ~ \mathbf{u}\neq 0\\), it follows that in order to have a non-zero (non-trivial) solution, we need that the matrix \\(\mathbf{X}\mathbf{u} - \lambda\mathbf{u}\\\) to be non-singular. That is, \\(det(\mathbf{X} - \lambda\mathrm{I_n})=0\\).
+* Consider a matrix \\(\mathbf{X} \in \mathbb{R}^{n\times n}\\ with rank \\(r\\). If we re-write the eigenvector-eigenvalue equation as \\(\mathbf{X}\mathbf{u} -\lambda\mathbf{u} = 0, ~ \mathbf{u}\neq 0\\), it follows that in order to have a non-zero (non-trivial) solution, we need that the matrix \\(\mathbf{X}\mathbf{u} - \lambda\mathbf{u}\\\) to be non-singular. That is, \\(det(\mathbf{X} - \lambda\mathrm{I_n})=0\\).
 * This resulting equation from \\(det(\mathbf{X} - \lambda\mathrm{I_n})=0\\) is a polynoimia equation in \\(\lambda\\) and is called the _characteristic equation_ of \mathbf{X}\\). From algebra, we know that this polynomial equation has \\(n\\) possibly complex-valued solutions, which are eigenvalues of \\(\mathbf{X}\\), denoted by \\(\lambda_i\\)'s, and \\(\mathbf{u}_i\\)'s are the corresponding eigenvectors.
 * Typically, all eigenvectors are sorted in order of their eigenvalues, with the largest magnitude ones first.
     Properties:
-      1. The trace of a matrix is equal to the sum of its eigenvalues, \\(Tr(\mathrm{X}) = \sum _{i=1}^r \lambda_i\\)
-      2. The determinant of matrix \\(\mathbf{X}\\) is equal to the product of its eigenvalues, \\(det(\mathrm{X}) = \prod _{i=1}^r \lambda_i\\)
+      1. The rank of matrix \\(\mathbf{X}\\) is equal to the number of non-zero eigenvalues of \\(\mathbf{X}\\).
+      2. The trace of a matrix is equal to the sum of its eigenvalues, \\(Tr(\mathrm{X}) = \sum _{i=1}^r \lambda_i\\)
+      3. The determinant of matrix \\(\mathbf{X}\\) is equal to the product of its eigenvalues, \\(det(\mathrm{X}) = \prod _{i=1}^r \lambda_i\\)
+
+### Diagonalization
+* If we stack all eigenvalues and eigenvectors of a matrix \\(\mathbf{X}\\), in the matrix notation, we can write:
+\\[\mathrm{X}\mathrm{U} = \mathrm{U}\mathrm{Lambda}\]]
+  
