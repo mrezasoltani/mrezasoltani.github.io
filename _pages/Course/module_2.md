@@ -117,7 +117,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
       <em> Addition, subtraction, and scaling of vectors.</em>
     </p>
 * Alegbriaclly, given two vectors of \\(\mathbf{x}\\), \\(\mathbf{y} \in \mathbb{R}^{n} \\), their addition is given by \\(\mathbf{x} + \mathbf{y} = [x_1+y_1 ~~ x_2+y_2 ~~ \ldots ~~ x_n+y_n]^T \in \mathbb{R}^{n} \\). Also, \\(\alpha\mathbf{x} = [\alpha x_1 ~~ \alpha x_2 ~~\dots ~~\alpha x_n]^T \in \mathbb{R}^{n} \\) for some \\(\alpha \in \mathbb{R}\\).
-* Addition, subtraction, and scaling of matrices are simialr to the vectors (vector is a specila matrix). Alegbriaclly, given two matrices of \\(\mathrm{X}\\), \\(\mathrm{Y} \in \mathbb{R}^{m\times n} \\) and for any scalar \\(\alpha \in \mathbb{R}\\):
+* Addition, subtraction, and scaling of matrices are similar to the vectors (vector is a special matrix). Alegbriaclly, given two matrices of \\(\mathrm{X}\\), \\(\mathrm{Y} \in \mathbb{R}^{m\times n} \\) and for any scalar \\(\alpha \in \mathbb{R}\\):
 
 \begin{equation}
 \begin{aligned}
@@ -147,11 +147,11 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
     <em>Inner product as the projection of one vector on the other one.</em>
   </p>
 
-## Matrix Multiplicaiton and its Properties
+## Matrix Multiplication and its Properties
 * For any two matrices \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), their (inner) product, belonging \\(\mathbb{R}^{m\times p}\\) is defined as \\((\mathrm{X}\mathrm{Y}) _{ij} = \sum _{k=1}^{n} x _{ik} y _{kj}\\). That is, the entry in \\(i^{th}\\) row and \\(j^{th}\\) column of the product is obtained by the inner product of \\(i^{th}\\) row of matrix \\(\mathrm{X}\\) and \\(j^{th}\\) column of matrix \\(\mathrm{Y}\\).
     
   * Propoerties of Matrices
-    * **Aassociativity.** Multiplication of a matrix by a scalar is associative: for any matrix \\(mathrm{X}\\) and for any scalars \\(alpha\\) and \\(\beta\\), we have \\(\alpha (\beta \mathrm{X}) = (\alpha \beta)\mathrm{X}\\).
+    * **Associativity.** Multiplication of a matrix by a scalar is associative: for any matrix \\(mathrm{X}\\) and for any scalars \\(alpha\\) and \\(\beta\\), we have \\(\alpha (\beta \mathrm{X}) = (\alpha \beta)\mathrm{X}\\).
     * **Distributivity w.r.t. addition.** Multiplication of a matrix by a scalar is distributive with respect to matrix addition: for any matrices \\(\mathrm{X}\\) and \\(\mathrm{Y}\\) and for any scalar \\(alpha\\), we have \\(\alpha (\mathrm{X}+\mathrm{Y}) = \alpha \mathrm{X} + \alpha \mathrm{Y}\\).
     * **Distributive property w.r.t. multiplication.** Multiplication of a matrix by a scalar is distributive with respect to the addition of scalars: for any matrix \\(\mathrm{X}\\) and for any scalars \\(\alpha\\) and \\(\beta\\), we have \\((\alpha+\beta)\mathrm{X} = \alpha\mathrm{X} + \beta\mathrm{X}\\).
 
@@ -200,7 +200,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   2. \\(\|\alpha\mathrm{X}\| = \alpha^n\|\mathrm{X}^T\|\\)
   3. \\(\|\mathrm{X}\mathrm{Y}\| = \|\mathrm{X}\|\|\mathrm{Y}\|\\)
   4. \\(\|\mathrm{X}\| = 0\\) iff \\(\mathrm{X}\\) is not-invetible (singular).
-  5. \\(\|\mathrm{X}^{-1}\| = \dfrac{1}{\|\mathrm{X}\|}\\) if \\(\mathrm{X}\\) is invetible (non-singular)
+  5. \\(\|\mathrm{X}^{-1}\| = \dfrac{1}{\|\mathrm{X}\|}\\) if \\(\mathrm{X}\\) is invertible (non-singular)
   6.  \\(\|\mathrm{X}\| = \prod_{i=1}^{n}x_{ii}\\), if \\(\mathrm{X}\\) is a diagonal matrix.
 
 ## Tensor:
@@ -215,12 +215,12 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * One common operator on tensors (as we will see in our programming module) is flattening a matrix or multi-dimensional tensor to a lower-dimensional tensor. For example, we can flatten a matrix to a vector. This flattening can be done in _row-major_ order or _column-major_ order. In row-major order (used by languages such as Python and C++)), we _vetorize_ a matrix by arranging rows of the matrix back-to-back in a vector; while columns of the matrix are placed in a vector in column-major order (used by languages such as Julia, Matlab, R, and Fortran). We use \\(vec(\mathrm{X})\\) for vectorizing operation.
 
 ## Linear spaces
-* Informally, a given set \\(S\\) is a linear space (ana vector space) if its elements can be multiplied by scalars and added together, and the results of these operations belong to \\(S\\). In order to have a more formal definition, we need the following definitio of _field_.
-* **Definition.** Consider a set \\(F\\) together with two binary operations, the addition, denoted by \\(+\\) and the multiplication, denoted by \\(\cdot\\). The set \\(F\\) is said to be a field if and only if, for any \\(\alpha, ~\beta,  ~\gamma \in F\\), all the following properties hold:
+* Informally, a given set \\(S\\) is a linear space (ana vector space) if its elements can be multiplied by scalars and added together, and the results of these operations belong to \\(S\\). In order to have a more formal definition, we need the following definition of _field_.
+* **Definition.** Consider a set \\(F\\) together with two binary operations, the addition, denoted by \\(+\\), and the multiplication, denoted by \\(\cdot\\). The set \\(F\\) is said to be a field if and only if, for any \\(\alpha, ~\beta,  ~\gamma \in F\\), all the following properties hold:
   1. Associativity of addition: \\(\alpha + (\beta+\gamma) = (\alpha + \beta)+\gamma\\)
   2. Commutativity of addition: \\(\alpha+\beta = \beta+\alpha\\)
-  3. Additive identity: there exist an elemnt in \\(F\\) denoted by \\(0\\) such that \\(\alpha + 0 =\alpha\\)
-  4. Additive inverse: \\(\forall \alpha \in F\\), there exist an elemnt in \\(F\\) denoted by \\(-\alpha\\) such that \\(\alpha +(-\alpha) = 0\\)
+  3. Additive identity: there exist an element in \\(F\\) denoted by \\(0\\) such that \\(\alpha + 0 =\alpha\\)
+  4. Additive inverse: \\(\forall \alpha \in F\\), there exist an element in \\(F\\) denoted by \\(-\alpha\\) such that \\(\alpha +(-\alpha) = 0\\)
   5. Associativity of multiplication: \\(\alpha \cdot (\beta\cdot\gamma) = (\alpha \cdot \beta)\cdot\gamma\\)
   6. Commutativity of multiplication: \\(\alpha\cdot\beta = \beta\cdot\alpha\\)
   7. Multiplicative identity: there exist an element in \\(F\\) denoted by \\(1\\) such that \\(\alpha \cdot 1 =\alpha\\)
@@ -243,16 +243,16 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ## Linear independence, Span, and Basis
 
-* A set of vectors \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) is said to be linearly independent if \\(\sum_{i=1}^{n} \alpha_i \mathbf{x_i} = 0\\), then \\(\alpha_1 = \alpha_2 = \dots = \alpha_n = 0\\). This means no vectors in set \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) can be represented as a linear combination of the remaining vectors. Conversely, a vector which can be represented as a linear combination of the remaining vectors is said to be linearly dependent.
+* A set of vectors \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) is said to be linearly independent if \\(\sum_{i=1}^{n} \alpha_i \mathbf{x_i} = 0\\), then \\(\alpha_1 = \alpha_2 = \dots = \alpha_n = 0\\). This means no vectors in set \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) can be represented as a linear combination of the remaining vectors. Conversely, a vector representing a linear combination of the remaining vectors is said to be linearly dependent.
 * The span of a set of vectors  \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) is the set of all vectors that can be expressed as a linear combination of  \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\). That is,
 \\[span(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}) = \\{\sum_{i=1}^{n} \alpha_i \mathbf{x_i} | \alpha_i \in \mathbb{R}\\}\\]
 * Let \\(S\\) be a linear space. Consider a set of \\(n\\) linearly independent vectors \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\). Then, this set is a **_basis_** for \\(S\\) if and only if, for any \\(\mathbf{x} \in S\\), there exist \\(n\\) scalars \\(\alpha_1,\alpha_2, \dots, \alpha_n\\) such that \\(\mathbf{x} = \sum_{i=1}^{n} \alpha_i \mathbf{x_i}\\). It is sometime said that the basis spans the set \\(S\\). In this case, \\(span(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}) = \mathbb{R}^n\\).
 * Every finite-dimensional linear space has a basis. This can be seen from the _Steinitz exchange lemma_.
-* **Proposition.** Let \\(U=\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_k}\\}\\) be a set of \\(k\\) linearly independent vectors belonging to a linear space \\(S\\). Also, consider a finite set of vectors \\(V=\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) that span \\(S\\). If these \\(k\\) linearly independent vectors does not form a basis for \\(S\\), then one can form a basis by adding some elements of \\(V\\) to set \\(U\\).
-* A linear space is finite-dimensional space if it has a finite spanning set.
+* **Proposition.** Let \\(U=\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_k}\\}\\) be a set of \\(k\\) linearly independent vectors belonging to a linear space \\(S\\). Also, consider a finite set of vectors \\(V=\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) that span \\(S\\). If these \\(k\\) linearly independent vectors do not form a basis for \\(S\\), then one can form a basis by adding some elements of \\(V\\) to set \\(U\\).
+* A linear space is a finite-dimensional space if it has a finite spanning set.
 * **Proposition.** Let \\(S\\) be a finite-dimensional linear space. Then,  \\(S\\) possesses at least one basis.
 * **Dimension theorem.** Let \\(S\\) be a finite-dimensional linear space. Consider two set of vectors given by \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) and \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_k}\\}\\). Then, \\(p=k\\).
-* **Definition.** Let \\(S\\) be a finite-dimensional linear space, and \\(n\\) be the the number of elements of any its bases (\\(n\\) is called cardinality of that bases). Then, \\(n\\) is called the dimension of \\(S\\).
+* **Definition.** Let \\(S\\) be a finite-dimensional linear space, and \\(n\\) be the number of elements of any its bases (\\(n\\) is called cardinality of that bases). Then, \\(n\\) is called the dimension of \\(S\\).
 * **Definition.** Let \\(S\\) be the space of all \\(K\\)-dimensional vectors. Then, the set of \\(K\\) vectors given by \\(\\{\mathbf{e_1}, \mathbf{e_2}, \ldots, \mathbf{e_K}\\}\\) is called the standard/canonical basis of \\(S\\) (recall our notion for the canonical basis vector)
 * **Proposition.** The standard basis is a basis of the space of all \\(K\\)-dimensional vectors.
 * The rows and columns of \\(\mathrm{I}_K\\), a \\(K\times K\\) identity matrix are standard basis of the space of all \\(K\\)-dimensional vectors.
@@ -268,21 +268,21 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 \\[\mathcal{N}(\mathrm{X}^T) = \\{u \in \mathbb{R}^m \| \mathrm{X}^Tu=0 \\}\\]
 
 ## Norm
-* Let \mathbb{V} be a vector space. Informally, norm is a measure of the _length_ of the vector. To be more specific, function \\(f : \mathbb{V} \rightarrow \mathbb{R}\\) is called a norm on \\(\mathbb{V}\\) if it satisfies the following 3 properties:
+* Let \mathbb{V} be a vector space. Informally, the norm is a measure of the _length_ of the vector. To be more specific, function \\(f : \mathbb{V} \rightarrow \mathbb{R}\\) is called a norm on \\(\mathbb{V}\\) if it satisfies the following 3 properties:
   1. **Positivity.** \\(f(\mathbf{x}) \geq 0\\, ~ f(\mathbf{x}) = 0\\) iff \\(\mathbf{x}=0\\)
   2. **Homogeneity.** \\(f(\alpha\mathbf{x}) = \|\alpha\|f(\mathbf{x}), ~ \forall \alpha \in \mathbb{R}\\)
   3. **Triangle Inequality.** \\(f(\mathbf{x} + \mathbf{y}) \leq f(\mathbf{x}) + f(\mathbf{x}) \\) 
 * Norm function is denotd by \\(\\|.\\|\\) notation.
 
 ## Vector Norm
-* Consider a vector \\(\mathbf{x} \in \mathbb{R}^n\\). We have the following different nrm functions.
+* Consider a vector \\(\mathbf{x} \in \mathbb{R}^n\\). We have the following different norm functions.
   
 1. \\(p\\)-norm (\\(\ell_p\\)-norm): \\(\\|\mathbf{x}\\|_p = (\sum _{i=1}^n \|x_i\|^p)^{\dfrac{1}{p}} \\), \\(\forall p\geq 1\\)
 2. \\(2\\)-norm (\\(\ell_2\\)-norm): \\(\\|\mathbf{x}\\|_2 = \sqrt{\sum _{i=1}^n \|x_i\|^2} = \sqrt{\mathbf{x}^T\mathbf{x}}\\)
 3. \\(1\\)-norm (\\(\ell_1\\)-norm): \\(\\|\mathbf{x}\\|_1 = \sum _{i=1}^n \|x_i\|\\)
 4. \\(\infty\\)-norm (\\(\ell_{\infty}\\)-norm): \\(\\|\mathbf{x}\\|_{\infty} = \max _{i\geq 1}\|x_i\|\\)
 5. \\(0\\)-norm (\\(\ell_{0}\\)-norm): \\(\sum _{i=1}^n \mathbb{1} _{x_i\neq 0}\\)
-   This is a pseudo norm, since it does not satisfy the homogeneity property. It counts the number of non-zero elements in \\(\mathbf{x}\\).
+   This is a pseudo norm since it does not satisfy the homogeneity property. It counts the number of non-zero elements in \\(\mathbf{x}\\).
 * Here, \\(\mathbb{1} _{x \in \mathbb{A}}: \mathbb{A}\rightarrow \\{0,1\\}\\) denotes the indicator function defined as follows:
 
 \begin{equation}
@@ -297,3 +297,5 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 \end{equation}
 
 ## Matrix Norm
+* Similar to vectors, we can also define norms for matrices. In particular, we can define the _induced norm_ of matrix \\(\mathrm{X}\\) as the maximum amount by which any unit-norm input can be lengthened:
+\\[ \\|\mathrm{X}\\|_p = \max _{\mathbf{u}}\dfrac{\\|\mathrm{X}\mathbf{u}\\|}{\\\mathbf{u}\\|} \\]
