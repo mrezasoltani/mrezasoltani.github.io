@@ -285,7 +285,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * Norm function is denotd by \\(\\|.\\|\\) notation.
 
 ## Inverse of a Matrix:
-* Let \\(\mathrm{X}\\) be a \\(n \times	n\\) matrix. The inverse of \\(\mathrm{X}\\), if it exists, is another \\(n \times	n\\) matrix such that \\(\mathrm{X}^{-1}\mathrm{X} = \mathrm{I}_n\\). If \\(\mathrm{X}^{-1}\\) exists, then matrix \\(\mathrm{X}\\) is called _invertible_.
+* Let \\(\mathrm{X}\\) be a \\(n \times	n\\) matrix. The inverse of \\(\mathrm{X}\\), if it exists, is another \\(n \times	n\\) matrix such that \\(\mathrm{X}^{-1} \mathrm{X} = \mathrm{I} _n\\). If \\(\mathrm{X}^{-1}\\) exists, then matrix \\(\mathrm{X}\\) is called _invertible_.
 * **Proposition.** If the inverse of a \\(n \times	n\\) matrix exists, then it is unique.
 * **Proposition.** Let \\(\mathrm{X} \in \mathbb{R}^{n\times	n}\\) be a matrix. Then \\(\mathrm{X}\\) is an invertible matrix if and only if it is full-rank.
 
