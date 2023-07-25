@@ -353,5 +353,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
      \\[ \\|\mathrm{X}\\|_* = Tr(\sqrt{\mathrm{X}^T\mathrm{X}}) = \sum _{i=1}^r \sigma_i = \\|\mathbf{\sigma}\\|_1\\]
 
 ## Eigenvalues and Eigenvectors of a Matrix
-* Given a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\), \\(\lambda\\) is called an eigenvalue of \\(\mathrm{X}\\) and \\(mathbf{u} \in \mathbb{R}^n\\) is called the corresponding eigenvector if \\(\mathbf{X}\mathbf{u} = \lambda\mathbf{u}, ~ \mathbf{u}\neq 0\\).
+* Given a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\), \\(\lambda\\) is called an eigenvalue of \\(\mathrm{X}\\) and \\(\mathbf{u} \in \mathbb{R}^n\\) is called the corresponding eigenvector if \\(\mathbf{X}\mathbf{u} = \lambda\mathbf{u}, ~ \mathbf{u}\neq 0\\).
+* The above equation means that eigenvector of a matrix is the direction if matrix \\(\mathrm{X}\\) is multiplied by the vector \\mathbf{u}\\) results in a new vector that with the same direction as \\mathbf{u}\\) and scaled by the eigenvalue, \\(\lambda\\).
 * 
+points in the same direction as u, but is scaled by a factor .
