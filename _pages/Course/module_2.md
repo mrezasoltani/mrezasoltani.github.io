@@ -377,9 +377,9 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
     3. The determinant of matrix \\(\mathbf{X}\\) is equal to the product of its eigenvalues, \\(det(\mathrm{X}) = \prod _{i=1}^r \lambda_i\\)
 
 ### Diagonalization
-* If we stack all eigenvalues and eigenvectors of a matrix \\(\mathbf{X}\\), in the matrix notation, we can write:
+* If we stack all eigenvalues and eigenvectors of a matrix \\(\mathrm{X}\\), in the matrix notation, we can write:
 \\[\mathrm{X} \mathrm{U} = \mathrm{U}\mathrm{\Lambda}\\]
-  Here, we group all eigenvectors of \\(\mathrm{X}\\) as the columns of matrix \\(mathrm{U}\\), and corresponding eigenvalues in a diagonal matrix \\(\mathrm{Lambda}\\), that is
+  Here, we group all eigenvectors of \\(\mathrm{X}\\) as the columns of matrix \\(\mathrm{U}\\), and corresponding eigenvalues in a diagonal matrix \\(\mathrm{\Lambda}\\), that is
   \begin{equation}
 \begin{aligned}
   \mathrm{U} =  
@@ -388,7 +388,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
       \mathrm{U_1} & \mathrm{U_2} & \ldots & \mathrm{U_n} \\\\\\\\
       | & | & \ldots & |
     \end{bmatrix},
-  \mathrm{Lmbda} = 
+  \mathrm{\Lmbda} = 
     \begin{bmatrix}
         \lambda_1 & 0 & \ldots & 0 \\\\\\\\
         0 & \lambda_2 & \ldots & 0 \\\\\\\\
@@ -397,5 +397,5 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
     \end{bmatrix}
 \end{aligned}
 \end{equation}
-* From above, we immidiately see that if matrix \\(\mathrm{U}\\) to be invertible, or eigenvectors, \\(\mathbf{u_i}\\)'s to be linearly independent, then we decompose \\(matrix{X}\\) as follows:
+* From above, we immidiately see that if matrix \\(\mathrm{U}\\) to be invertible, or eigenvectors, \\(\mathbf{u_i}\\)'s to be linearly independent, then we decompose \\(\mathrm{X}\\) as follows:
 \\[\mathrm{X} = \mathrm{U}\mathrm{\Lambda}\mathrm{U}^{-1}\\]
