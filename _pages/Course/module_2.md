@@ -366,5 +366,10 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * Given a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\), \\(\lambda\\) is called an eigenvalue of \\(\mathrm{X}\\) and \\(\mathbf{u} \in \mathbb{R}^n\\) is called the corresponding eigenvector if \\(\mathbf{X}\mathbf{u} = \lambda\mathbf{u}, ~ \mathbf{u}\neq 0\\).
   The above equation means that eigenvector of a matrix is the direction if matrix \\(\mathrm{X}\\) is multiplied by the vector \\(\mathbf{u}\\) results in a new vector that with the same direction as \\(\mathbf{u}\\) and scaled by the eigenvalue, \\(\lambda\\).
 * From the relation of \\(\alpha\mathbf{X}\mathbf{u} = \mathbf{X}(\alpha\mathbf{u}) = \lambda(\alpha\mathbf{u}) \\), we see that if \\(\mathbf{u}\\) is the eigenvector corresponding to the eigenvalue \\(\lambda\\), then \\(\alpha\mathbf{u}\\) is also another eigenvector corresponding to the eigenvalue \\(\lambda\\). As a result, we have eigenvectors corresponding to a eigenvalue. This motivates us to talk about the normalized eigenvector, where \\(\\|\mathbf{u}\\|_2=1\\). However, this does not completely remove the non-uniqueness of the eigenvectors since both \\(\mathbf{u}\\) and \\(\mathbf{u}\\) have unit norm, but they are pointing to the opposite direction.
+
 ### Characteristic Equation of a Matrix
-*
+* If we re-write the eigenvector-eigenvalue equation as \\(\mathbf{X}\mathbf{u} -\lambda\mathbf{u} = 0, ~ \mathbf{u}\neq 0\\), it follows that in order to have a non-zero (non-trivial) solution, we need that the matrix \\(\mathbf{X}\mathbf{u} - \lambda\mathbf{u}\\\) to be non-singular. That is, \\(det(\mathbf{X}\mathbf{u} - \lambda\mathbf{u})=0\\).
+* This resulting equation from \\(det(\mathbf{X}\mathbf{u} - \lambda\mathbf{u})=0\\) is a polynoimia equation in \\(\lambda\\) and is called the _characteristic equation_ of \mathbf{X}\\). From algebra, we know that this polynomial equation has \\(n\\) possibly complex-valued solutions, which are eigenvalues of \\(\mathbf{X}\\), denoted by \\(\lambda_i\\)'s, and \\(\mathbf{u}_i\\)'s are the corresponding eigenvectors.
+* Typically, all eigenvectors are sorted in order of their eigenvalues, with the largest magnitude ones first.
+  properties:
+    1. The trace of a matrix is equal to the sum of its eigenvalues, \\(Tr(\mathrm{X}) = \sum _{i=1}^r \lambda_i\\)
