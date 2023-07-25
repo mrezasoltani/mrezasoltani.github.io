@@ -387,7 +387,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
       | & | & \ldots & | \\\\\\\\
       \mathrm{U_1} & \mathrm{U_2} & \ldots & \mathrm{U_n} \\\\\\\\
       | & | & \ldots & |
-    \end{bmatrix}, &
+    \end{bmatrix}, & &
   \mathrm{\Lambda} = 
     \begin{bmatrix}
         \lambda_1 & 0 & \ldots & 0 \\\\\\\\
