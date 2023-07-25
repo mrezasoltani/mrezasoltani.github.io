@@ -379,4 +379,23 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 ### Diagonalization
 * If we stack all eigenvalues and eigenvectors of a matrix \\(\mathbf{X}\\), in the matrix notation, we can write:
 \\[\mathrm{X} \mathrm{U} = \mathrm{U}\mathrm{\Lambda}\\]
-  
+  Here, we group all eigenvectors of \\(\mathrm{X}\\) as the columns of matrix \\(mathrm{U}\\, and corresponding eigenvalues in a diagonal matrix \\(\mathrm{Lambda}\\), that is
+  \begin{equation}
+\begin{aligned}
+  \mathrm{U} =  
+    \begin{bmatrix}
+      | & | & \ldots & | \\\\\\\\
+      \mathrm{U_1} & \mathrm{U_2} & \ldots & \mathrm{U_n} \\\\\\\\
+      | & | & \ldots & |
+    \end{bmatrix},
+    \begin{bmatrix}
+      \mathrm{U} = 
+        \lambda_1 & 0 & \ldots & 0 \\\\\\\\
+        0 & \lambda_2 & \ldots & 0 \\\\\\\\
+        \vdots & \vdots & \ddots & \vdots \\\\\\\\
+        0 & 0 & \ldots & \lambda_n
+    \end{bmatrix}
+\end{aligned}
+\end{equation}
+* From above, we immidiately see that if matrix \\(\mathrm{U}\\) to be invertible, or eigenvectors, \\(\mathrm{U_1}\\)'s to be linearly independent, then we decompose \\(matrix{X}\\) as follows:
+\\[\mathrm{X} = \mathrm{U}\mathrm{\Lambda}\mathrm{U}^{-1}\\]
