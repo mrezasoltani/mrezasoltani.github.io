@@ -300,5 +300,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * Similar to vectors, we can also define norms for matrices. In particular, we can define the _induced norm_ of matrix \\(\mathrm{X}\\) as the maximum amount by which any unit-norm input can be lengthened:
 \\[ \\|\mathrm{X}\\|_p = \max _{\mathbf{u}\neq}\dfrac{\\|\mathrm{X}\mathbf{u}\\|_p}{\\|\mathbf{u}\\|_p} = \max _{\\|\mathbf{u}\\|_p=1}\\|\mathrm{X}\mathbf{u}\\|_p \\]
 * We have two important cases:
-  1. Spectral (Induce) norm. If \\(p=2\\), then we have:
+  1. Spectral norm (induced \\(2\\)-norm). If \\(p=2\\), then we have:
      \\[\\|\mathrm{X}\\|_2 = \sqrt{\lambda _{max}(\mathrm{X}^T\mathrm{X})} = \max _i \sigma_i \\]
+  2. Nuclear (Trace) norm ((induced \\(2\\)-norm)). If \\(p=1\\), then we have:
+     \\[ \\|\mathrm{X}\\|_* = Tr(\sqrt(\mathrm{X}^T\mathrm{X})) = \sum _{i=1}^n \sigma_i = \\|\mathbf{\sigma}\\|_1\\]
