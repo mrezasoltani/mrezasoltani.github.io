@@ -303,4 +303,4 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   1. Spectral norm (induced \\(2\\)-norm). If \\(p=2\\), then we have:
      \\[\\|\mathrm{X}\\|_2 = \sqrt{\lambda _{max}(\mathrm{X}^T\mathrm{X})} = \max _i \sigma_i \\]
   2. Nuclear (Trace) norm ((induced \\(2\\)-norm)). If \\(p=1\\), then we have:
-     \\[ \\|\mathrm{X}\\|_* = Tr(\sqrt(\mathrm{X}^T\mathrm{X})) = \sum _{i=1}^n \sigma_i = \\|\mathbf{\sigma}\\|_1\\]
+     \\[ \\|\mathrm{X}\\|_* = Tr(\sqrt{\mathrm{X}^T\mathrm{X}}) = \sum _{i=1}^n \sigma_i = \\|\mathbf{\sigma}\\|_1\\]
