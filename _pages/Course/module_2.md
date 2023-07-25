@@ -29,7 +29,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **A probability distribution over a discrete variable (pmf)** | \\(P(x)\\) |
    | **A probability distribution over a continuous variable (pdf)** | \\(p(x)\\) |
    | \\(L^p\\) **norm of vector** \\(\mathbf{x}\\) | \\(\\|\\|\mathbf{x}\\|\\|_p\\) |
-   | \\(p\\) **induced norm of a matrix** | \\(\\|\\|\mathrm{X}\\|\\|_p\\) |
+   | \\(p\\) **-induced norm of a matrix** | \\(\\|\\|\mathrm{X}\\|\\|_p\\) |
    | **Dot product of two vectors** | \\(\mathbf{x}\cdot\mathbf{y}\\) |
    | **Hadamard (element-wise) product of two vectors (matrices)** | \\(\mathbf{x}\odot\mathbf{y} (\mathrm{X}\odot\mathrm{Y})\\) |
 
@@ -242,7 +242,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 * **Definition.** A (linear) subspace of a linear space \\(S\\) is a set which is subset of \\(S\\) and itself is a linear space.
 
-## Linear independence, Span, and Basis
+## Linear Independence, Span, and Basis
 
 * A set of vectors \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) is said to be linearly independent if \\(\sum_{i=1}^{n} \alpha_i \mathbf{x_i} = 0\\), then \\(\alpha_1 = \alpha_2 = \dots = \alpha_n = 0\\). This means no vectors in set \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) can be represented as a linear combination of the remaining vectors. Conversely, a vector representing a linear combination of the remaining vectors is said to be linearly dependent.
 * The span of a set of vectors  \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) is the set of all vectors that can be expressed as a linear combination of  \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\). That is,
@@ -285,9 +285,27 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * Norm function is denotd by \\(\\|.\\|\\) notation.
 
 ## Inverse of a Matrix:
-* Let \\(\mathrm{X}\\) be a \\(n \times	n\\) matrix. The inverse of \\(\mathrm{X}\\), if it exists, is another \\(n \times	n\\) matrix such that \\(\mathrm{X}^{-1}\mathrm{X} = \mathrm{I_n}\\). If \\(\mathrm{X}^{-1}\\) exists, then matrix \\(\mathrm{X}\\) is called _invertible_.
+* Let \\(\mathrm{X}\\) be a \\(n \times	n\\) matrix. The inverse of \\(\mathrm{X}\\), if it exists, is another \\(n \times	n\\) matrix such that \\(\mathrm{X}^{-1}\mathrm{X} = \mathrm{X}\mathrm{X}^{-1} = \mathrm{I_n}\\). If \\(\mathrm{X}^{-1}\\) exists, then matrix \\(\mathrm{X}\\) is called _invertible_.
 * **Proposition.** If the inverse of a \\(n \times	n\\) matrix exists, then it is unique.
 * **Proposition.** Let \\(\mathrm{X} \in \mathbb{R}^{n\times	n}\\) be a matrix. Then \\(\mathrm{X}\\) is an invertible matrix if and only if it is full-rank.
+* Properties:
+  1. \\((\mathrm{X}^{-1}) ^-1 = \mathrm{X}\\)
+  2. \\((\mathrm{X}\mathrm{Y}) ^{-1}) = \mathrm{Y}^{-1}\mathrm{X}^{-1}\\)
+  3. \\((\mathrm{X}^{T}) ^{-1} = (\mathrm{X}^{-T})\\)
+  4. For a block diagonal matrix, the inverse is obtained by inverting each block separately:
+  \begin{equation}
+  \begin{aligned}
+    \mathrm{X} ^{-1} =  
+      \begin{bmatrix}
+        \mathrm{A} & \mathrm{0}  \\\\\\\\
+        \mathrm{0} & \mathrm{B} 
+      \end{bmatrix} =
+       \begin{bmatrix}
+        \mathrm{A} ^{-1} & \mathrm{0}  \\\\\\\\
+        \mathrm{0} & \mathrm{b} ^{-1} 
+      \end{bmatrix}
+  \end{aligned}
+  \end{equation}
 
 ### Vector Norm
 * Consider a vector \\(\mathbf{x} \in \mathbb{R}^n\\). We have the following different norm functions.
