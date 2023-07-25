@@ -354,6 +354,6 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ## Eigenvalues and Eigenvectors of a Matrix
 * Given a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\), \\(\lambda\\) is called an eigenvalue of \\(\mathrm{X}\\) and \\(\mathbf{u} \in \mathbb{R}^n\\) is called the corresponding eigenvector if \\(\mathbf{X}\mathbf{u} = \lambda\mathbf{u}, ~ \mathbf{u}\neq 0\\).
-* The above equation means that eigenvector of a matrix is the direction if matrix \\(\mathrm{X}\\) is multiplied by the vector \\mathbf{u}\\) results in a new vector that with the same direction as \\mathbf{u}\\) and scaled by the eigenvalue, \\(\lambda\\).
+  The above equation means that eigenvector of a matrix is the direction if matrix \\(\mathrm{X}\\) is multiplied by the vector \\(\mathbf{u}\\) results in a new vector that with the same direction as \\(\mathbf{u}\\) and scaled by the eigenvalue, \\(\lambda\\).
+* From the relation of \\(\alpha\mathbf{X}\mathbf{u} = \mathbf{X}(\alpha\mathbf{u}) = \lambda(\alpga\mathbf{u}) \\), we see that if \\(\mathbf{u}\\) is the eigenvector corresponding to the eigenvalue \\(\lambda\\), then \\(\alpha\mathbf{u}\\) is also another eigenvector corresponding to the eigenvalue \\(\lambda\\). As a result, we have eigenvectors corresponding to a eigenvalue. This motivates we talk about the normalized eigenvector where \\(\\|\mathbf{u}\\|_2=1\\). However, this does not completely remove the non-uniqueness of the eigenvectors since both \\(\mathbf{u}\\) and \\(\mathbf{u}\\) have unit norm, but they are pointing to the opposite direction.
 * 
-points in the same direction as u, but is scaled by a factor .
