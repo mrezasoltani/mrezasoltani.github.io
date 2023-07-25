@@ -278,11 +278,16 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
      4. \\(rank(\mathrm{X} + \mathrm{Y}) \leq  rank(\mathrm{X}) + rank(\mathrm{Y}) \\).
 
 ## Norm
-* Let \mathbb{V} be a vector space. Informally, the norm is a measure of the _length_ of the vector. To be more specific, function \\(f : \mathbb{V} \rightarrow \mathbb{R}\\) is called a norm on \\(\mathbb{V}\\) if it satisfies the following 3 properties:
+* Let \\(\mathbb{V}\\) be a vector space. Informally, the norm is a measure of the _length_ of the vector. To be more specific, function \\(f : \mathbb{V} \rightarrow \mathbb{R}\\) is called a norm on \\(\mathbb{V}\\) if it satisfies the following 3 properties:
   1. **Positivity.** \\(f(\mathbf{x}) \geq 0\\, ~ f(\mathbf{x}) = 0\\) iff \\(\mathbf{x}=0\\)
   2. **Homogeneity.** \\(f(\alpha\mathbf{x}) = \|\alpha\|f(\mathbf{x}), ~ \forall \alpha \in \mathbb{R}\\)
   3. **Triangle Inequality.** \\(f(\mathbf{x} + \mathbf{y}) \leq f(\mathbf{x}) + f(\mathbf{x}) \\) 
 * Norm function is denotd by \\(\\|.\\|\\) notation.
+
+## Inverse of a Matrix:
+* Let \\(\mathrm{X}\\) be a \\(n \times	n\\) matrix. The inverse of \\(\mathrm{X}\\), if it exists, is another \\(n \times	n\\) matrix such that \\(\mathrm{X}^{-1}\mathrm{X} = \mathrm{I}_n\\). If \\(\mathrm{X}^{-1}\\) exists, then matrix \\(\mathrm{X}\\) is called _invertible_.
+* **Proposition.** If the inverse of a \\(n \times	n\\) matrix exists, then it is unique.
+* **Proposition.** Let \\(\mathrm{X} \in \mathbb{R}^{n\times	n}\\) be a matrix. Then \\(\mathrm{X}\\) is an invertible matrix if and only if it is full-rank.
 
 ### Vector Norm
 * Consider a vector \\(\mathbf{x} \in \mathbb{R}^n\\). We have the following different norm functions.
@@ -316,5 +321,5 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * We have two important cases:
   1. Spectral norm (induced \\(2\\)-norm). If \\(p=2\\), then we have:
      \\[\\|\mathrm{X}\\|_2 = \sqrt{\lambda _{max}(\mathrm{X}^T\mathrm{X})} = \max _i \sigma_i \\]
-  2. Nuclear (Trace) norm ((induced \\(1\\)-norm)). If \\(p=1\\), then we have:
+  2. Nuclear (Trace) norm (induced \\(1\\)-norm). If \\(p=1\\), then we have:
      \\[ \\|\mathrm{X}\\|_* = Tr(\sqrt{\mathrm{X}^T\mathrm{X}}) = \sum _{i=1}^r \sigma_i = \\|\mathbf{\sigma}\\|_1\\]
