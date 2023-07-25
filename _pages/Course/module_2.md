@@ -298,7 +298,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ## Matrix Norm
 * Similar to vectors, we can also define norms for matrices. In particular, we can define the _induced norm_ of matrix \\(\mathrm{X}\\) as the maximum amount by which any unit-norm input can be lengthened:
-\\[ \\|\mathrm{X}\\|_p = \max _{\mathbf{u}\neq}\dfrac{\\|\mathrm{X}\mathbf{u}\\|_p}{\\|\mathbf{u}\\|_p} = \max _{\\|\mathbf{u}\\|_p=1\\|\mathrm{X}\mathbf{u}\\|_p\\]
+\\[ \\|\mathrm{X}\\|_p = \max _{\mathbf{u}\neq}\dfrac{\\|\mathrm{X}\mathbf{u}\\|_p}{\\|\mathbf{u}\\|_p} = \max _{\\|\mathbf{u}\\|_p=1}\\|\mathrm{X}\mathbf{u}\\|_p \\]
 * We have two important cases:
   1. Spectral (Induce) norm. If \\(p=2\\), then we have:
-     \\[\\|\mathrm{X}\\|_2 = \srt{\lambda _{max}(\mathrm{X}^T\mathrm{X})} = \max _i \sigma_i \\]
+     \\[\\|\mathrm{X}\\|_2 = \sqrt{\lambda _{max}(\mathrm{X}^T\mathrm{X})} = \max _i \sigma_i \\]
