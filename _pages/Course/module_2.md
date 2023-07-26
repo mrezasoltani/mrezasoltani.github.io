@@ -317,6 +317,9 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   \end{aligned}
   \end{equation}
 
+## Quadratic Form of a Matrix
+* A quadratic form of a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\)is given by scalar \\(\mathbf{u}^T\mathrm{X}\mathbf{u}\\), where \\(\mathbf{u} \in \mathbb{R}^n\\). 
+
 ## **The (Moore-Penrose) Pseudo-Inverse** 
 * In some case, we can generalize the concept of inverse matrix to the rectangular matrices. In particular, _Pseudo-Inverse_ of a matrix \\(\mathrm{X}\\) denoted by \\(\mathrm{X}^{\dagger}\\) is defined as the unique matrix that satisfies the following 4 properties:
   1. \\[\mathrm{X}\mathrm{X}^{\dagger}\mathrm{X} = \mathrm{X}\\]
@@ -403,7 +406,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ## Eigen Value Decomposition (EVD)
 * Let the matrix \\(\mathrm{X}\\) be a diagonalizable matrix, then we can decompose matrix \\(\mathrm{X} = \mathrm{U}\mathrm{\Lambda}\mathrm{U}^{T}\\).
-  Here, we have used the fact that matrix \\(\mathrm{U}\\) is a Orthogonal (Hermitian) matrix, i.e., \\(\mathrm{U}^T =\mathrm{U}^{-1} \\)
+  Here, we have used the fact that matrix \\(\mathrm{U}\\) is a Orthogonal (Hermitian) matrix, i.e., \\(\mathrm{U}^T =\mathrm{U}^{-1} \\).
 
 \begin{equation}
 \begin{aligned}
@@ -427,3 +430,10 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
     \end{bmatrix}
 \end{aligned}
 \end{equation}
+
+## Positive Definite Matrices
+* A symmetric matrix \\(\mathrm{X}\\) is _positive definite (PD)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} > 0\\). In this case, we write \\(\mathbf{X} \suc 0\\).
+* A symmetric matrix \\(\mathrm{X}\\) is  _positive _semidefinite (PSD)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \geq 0\\). In this case, we write \\(\mathbf{X} \\succe 0\\).
+* A symmetric matrix \\(\mathrm{X}\\) is _negative definite (ND)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} < 0\\). In this case, we write \\(\mathbf{X} \\pre 0\\).
+* A symmetric matrix \\(\mathrm{X}\\) is  _positive _semidefinitedefinite (NSD)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \geq 0\\). In this case, we write \\(\mathbf{X} \\\prece 0\\).
+* A symmetric matrix  \\(\mathrm{X}\\) is _indefinite_, if it is neither positive semidefinite nor negative semidefinite. That is, there exist  \\(\mathbf{u_1}, ~\mathbf{u_2} \in \mathbb{R}^n\\) such that \\(\mathbf{u_1}^T\mathrm{X}\mathbf{u_1} < 0\\) and \\(\mathbf{u_1}^T\mathrm{X}\mathbf{u_1} > 0\\).
