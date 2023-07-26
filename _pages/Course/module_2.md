@@ -324,7 +324,10 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * A quadratic form of a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\)is given by scalar \\(\mathbf{u}^T\mathrm{X}\mathbf{u}\\) where \\(\mathbf{u} \in \mathbb{R}^n\\).
 
 ## Orthogonal and Unitary Matrices
-
+* Two vectors x; y 2 Rn are orthogonal if xTy = 0.
+* A vector x 2 Rn is normalized if kxk2 = 1. A set of vectors that is pairwise orthogonal and normalized is called orthonormal.
+* A square matrix U 2 Rn n is orthogonal if all its columns are orthonormal.
+* If U is complex matrix, we use the term unitary instead of orthogonal.
 
 ## Norm
 * Let \\(\mathbb{V}\\) be a vector space. Informally, the norm is a measure of the _length_ of the vector. To be more specific, function \\(f : \mathbb{V} \rightarrow \mathbb{R}\\) is called a norm on \\(\mathbb{V}\\) if it satisfies the following 3 properties:
@@ -444,3 +447,5 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * A symmetric matrix \\(\mathrm{X}\\) is  _positive _semidefinitedefinite (NSD)_ iff for all \\(\mathbf{u}\in \mathbb{R}^n, ~\mathbf{u}\neq 0\\), the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \leq 0\\). In this case, we write \\(\mathbf{X} \\preceq 0\\).
   A symmetric matrix is negative semidefinite iff its eigenvalues are non-positive.
 * A symmetric matrix  \\(\mathrm{X}\\) is _indefinite_, if it is neither positive semidefinite nor negative semidefinite. That is, there exist  \\(\mathbf{u_1}, ~\mathbf{u_2} \in \mathbb{R}^n\\) such that \\(\mathbf{u_1}^T\mathrm{X}\mathbf{u_1} < 0\\) and \\(\mathbf{u_2}^T\mathrm{X}\mathbf{u_2} > 0\\).
+
+  ## Vector/Matrix Calculus
