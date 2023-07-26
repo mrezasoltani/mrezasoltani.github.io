@@ -277,13 +277,6 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
      3. \\(rank(\mathrm{X}\mathrm{Y}) \leq  \min(rank(\mathrm{X}), rank(\mathrm{Y}))\\)
      4. \\(rank(\mathrm{X} + \mathrm{Y}) \leq  rank(\mathrm{X}) + rank(\mathrm{Y}) \\).
 
-## Norm
-* Let \\(\mathbb{V}\\) be a vector space. Informally, the norm is a measure of the _length_ of the vector. To be more specific, function \\(f : \mathbb{V} \rightarrow \mathbb{R}\\) is called a norm on \\(\mathbb{V}\\) if it satisfies the following 3 properties:
-  1. **Positivity.** \\(f(\mathbf{x}) \geq 0\\, ~ f(\mathbf{x}) = 0\\) iff \\(\mathbf{x}=0\\)
-  2. **Homogeneity.** \\(f(\alpha\mathbf{x}) = \|\alpha\|f(\mathbf{x}), ~ \forall \alpha \in \mathbb{R}\\)
-  3. **Triangle Inequality.** \\(f(\mathbf{x} + \mathbf{y}) \leq f(\mathbf{x}) + f(\mathbf{x}) \\) 
-* Norm function is denotd by \\(\\|.\\|\\) notation.
-
 ## Inverse of a Matrix:
 * Let \\(\mathrm{X}\\) be a \\(n \times	n\\) matrix. The inverse of \\(\mathrm{X}\\), if it exists, is another \\(n \times	n\\) matrix such that \\(\mathrm{X}^{-1}\mathrm{X} = \mathrm{X}\mathrm{X}^{-1} = \mathrm{I_n}\\). If \\(\mathrm{X}^{-1}\\) exists, then matrix \\(\mathrm{X}\\) is called _invertible_.
 * **Proposition.** If the inverse of a \\(n \times	n\\) matrix exists, then it is unique.
@@ -329,6 +322,13 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * If \\(\mathrm{X}\\) is a square \\(n\times n\\) full-rank matrix, then Pseudo-Inverse is given by the standard inverse of a matrix, i.e., \\(\mathrm{X}^{\dagger} = \mathrm{X}^{-1}\\).
 * If \\(\mathrm{X}\\) is a \\(m\times n\\) full-column rank matrix where \\(m > n\\) (a thin/tall/skinny matrix), then the Pseudo-Inverse is given by, left inverse \\(\mathrm{X}^{\dagger} = (\mathrm{X}^T\mathrm{X})^{-1}\mathrm{X}^T\\).
 * If \\(\mathrm{X}\\) is a \\(m\times n\\) full-row rank matrix where \\(m < n\\) (a fat/short matrix), then the Pseudo-Inverse is given by right inverse, \\(\mathrm{X}^{\dagger} = \mathrm{X}^T(\mathrm{X}\mathrm{X}^T)^{-1}\\).
+
+## Norm
+* Let \\(\mathbb{V}\\) be a vector space. Informally, the norm is a measure of the _length_ of the vector. To be more specific, function \\(f : \mathbb{V} \rightarrow \mathbb{R}\\) is called a norm on \\(\mathbb{V}\\) if it satisfies the following 3 properties:
+  1. **Positivity.** \\(f(\mathbf{x}) \geq 0\\, ~ f(\mathbf{x}) = 0\\) iff \\(\mathbf{x}=0\\)
+  2. **Homogeneity.** \\(f(\alpha\mathbf{x}) = \|\alpha\|f(\mathbf{x}), ~ \forall \alpha \in \mathbb{R}\\)
+  3. **Triangle Inequality.** \\(f(\mathbf{x} + \mathbf{y}) \leq f(\mathbf{x}) + f(\mathbf{x}) \\) 
+* Norm function is denotd by \\(\\|.\\|\\) notation.
 
 ### Vector Norm
 * Consider a vector \\(\mathbf{x} \in \mathbb{R}^n\\). We have the following different norm functions.
@@ -432,12 +432,12 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 \end{equation}
 
 ## Positive Definite Matrices
-* A symmetric matrix \\(\mathrm{X}\\) is _positive definite (PD)_ iff for all \\(\mathbf{u}\in \mathbb{R}^n, ~\mathbf{u}\neq 0\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} > 0\\). In this case, we write \\(\mathbf{X} \\succ 0\\).
+* A symmetric matrix \\(\mathrm{X}\\) is _positive definite (PD)_ iff for all \\(\mathbf{u}\in \mathbb{R}^n, ~\mathbf{u}\neq 0\\), the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} > 0\\). In this case, we write \\(\mathbf{X} \\succ 0\\).
   A symmetric matrix is positive definite iff its eigenvalues are positive.
-* A symmetric matrix \\(\mathrm{X}\\) is  _positive _semidefinite (PSD)_ iff for all \\(\mathbf{u}\in \mathbb{R}^n, ~\mathbf{u}\neq 0\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \geq 0\\). In this case, we write \\(\mathbf{X} \succeq 0\\).
+* A symmetric matrix \\(\mathrm{X}\\) is  _positive _semidefinite (PSD)_ iff for all \\(\mathbf{u}\in \mathbb{R}^n, ~\mathbf{u}\neq 0\\), the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \geq 0\\). In this case, we write \\(\mathbf{X} \succeq 0\\).
   A symmetric matrix is positive semidefinite iff its eigenvalues are non-negative.
-* A symmetric matrix \\(\mathrm{X}\\) is _negative definite (ND)_ iff for all \\(\mathbf{u}\in \mathbb{R}^n, ~\mathbf{u}\neq 0\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} < 0\\). In this case, we write \\(\mathbf{X} \prec 0\\).
+* A symmetric matrix \\(\mathrm{X}\\) is _negative definite (ND)_ iff for all \\(\mathbf{u}\in \mathbb{R}^n, ~\mathbf{u}\neq 0\\), the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} < 0\\). In this case, we write \\(\mathbf{X} \prec 0\\).
   A symmetric matrix is negative definite iff its eigenvalues are negative.
-* A symmetric matrix \\(\mathrm{X}\\) is  _positive _semidefinitedefinite (NSD)_ iff for all \\(\mathbf{u}\in \mathbb{R}^n, ~\mathbf{u}\neq 0\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \leq 0\\). In this case, we write \\(\mathbf{X} \\preceq 0\\).
+* A symmetric matrix \\(\mathrm{X}\\) is  _positive _semidefinitedefinite (NSD)_ iff for all \\(\mathbf{u}\in \mathbb{R}^n, ~\mathbf{u}\neq 0\\), the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \leq 0\\). In this case, we write \\(\mathbf{X} \\preceq 0\\).
   A symmetric matrix is negative semidefinite iff its eigenvalues are non-positive.
 * A symmetric matrix  \\(\mathrm{X}\\) is _indefinite_, if it is neither positive semidefinite nor negative semidefinite. That is, there exist  \\(\mathbf{u_1}, ~\mathbf{u_2} \in \mathbb{R}^n\\) such that \\(\mathbf{u_1}^T\mathrm{X}\mathbf{u_1} < 0\\) and \\(\mathbf{u_2}^T\mathrm{X}\mathbf{u_2} > 0\\).
