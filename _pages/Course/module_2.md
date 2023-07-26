@@ -310,11 +310,8 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   \end{aligned}
   \end{equation}
 
-## Quadratic Form of a Matrix
-* A quadratic form of a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\)is given by scalar \\(\mathbf{u}^T\mathrm{X}\mathbf{u}\\), where \\(\mathbf{u} \in \mathbb{R}^n\\). 
-
 ## **The (Moore-Penrose) Pseudo-Inverse** 
-* In some case, we can generalize the concept of inverse matrix to the rectangular matrices. In particular, _Pseudo-Inverse_ of a matrix \\(\mathrm{X}\\) denoted by \\(\mathrm{X}^{\dagger}\\) is defined as the unique matrix that satisfies the following 4 properties:
+* In some cases, we can generalize the concept of inverse matrix to rectangular matrices. In particular, _Pseudo-Inverse_ of a matrix \\(\mathrm{X}\\) denoted by \\(\mathrm{X}^{\dagger}\\) is defined as the unique matrix that satisfies the following 4 properties:
   1. \\[\mathrm{X}\mathrm{X}^{\dagger}\mathrm{X} = \mathrm{X}\\]
   2. \\[\mathrm{X}^{\dagger}\mathrm{X}\mathrm{X}^{\dagger} =  \mathrm{X}^{\dagger}\\]
   3. \\[ (\mathrm{X}\mathrm{X}^{\dagger})^T = \mathrm{X}\mathrm{X} ^{\dagger} \\]
@@ -322,6 +319,12 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * If \\(\mathrm{X}\\) is a square \\(n\times n\\) full-rank matrix, then Pseudo-Inverse is given by the standard inverse of a matrix, i.e., \\(\mathrm{X}^{\dagger} = \mathrm{X}^{-1}\\).
 * If \\(\mathrm{X}\\) is a \\(m\times n\\) full-column rank matrix where \\(m > n\\) (a thin/tall/skinny matrix), then the Pseudo-Inverse is given by, left inverse \\(\mathrm{X}^{\dagger} = (\mathrm{X}^T\mathrm{X})^{-1}\mathrm{X}^T\\).
 * If \\(\mathrm{X}\\) is a \\(m\times n\\) full-row rank matrix where \\(m < n\\) (a fat/short matrix), then the Pseudo-Inverse is given by right inverse, \\(\mathrm{X}^{\dagger} = \mathrm{X}^T(\mathrm{X}\mathrm{X}^T)^{-1}\\).
+
+## Quadratic Form of a Matrix
+* A quadratic form of a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\)is given by scalar \\(\mathbf{u}^T\mathrm{X}\mathbf{u}\\) where \\(\mathbf{u} \in \mathbb{R}^n\\).
+
+## Orthogonal and Unitary Matrices
+
 
 ## Norm
 * Let \\(\mathbb{V}\\) be a vector space. Informally, the norm is a measure of the _length_ of the vector. To be more specific, function \\(f : \mathbb{V} \rightarrow \mathbb{R}\\) is called a norm on \\(\mathbb{V}\\) if it satisfies the following 3 properties:
