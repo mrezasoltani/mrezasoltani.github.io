@@ -91,7 +91,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 \end{aligned}
 \end{equation}
 
-* **Definition.** Consider a set of \\(p\\) matrices (vectors) \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) with dimension \\(\mathbb{R}^{m\times n}\\)  \\((\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) with dimension \\(\mathbb{R}^{p})\\). A matrix (vector) \\(\mathrm{Y} \in \mathbb{R}^{m\times n}\\) \\((\mathbf{y} \in  \mathbb{R}^{n})\\) is a _linear combination_ of \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) ( \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) ) if and only if there exist \\(p\\) scalars coefficients \\(\\{\alpha_1, \alpha_1, \ldots, \alpha_1\\}\\) such that \\(\mathrm{Y} = \sum_{i=1}^{p} \alpha_i \mathrm{X_i}\\) \\((\mathbf{y} = \sum_{i=1}^{p} \alpha_i \mathbf{x_i})\\).
+* **Definition.** Consider a set of \\(p\\) matrices (vectors) \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) with dimension \\(\mathbb{R}^{m\times n}\\)  \\((\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) with dimension \\(\mathbb{R}^{p})\\). A matrix (vector) \\(\mathrm{Y} \in \mathbb{R}^{m\times n}\\) \\((\mathbf{y} \in  \mathbb{R}^{n})\\) is a _linear combination_ of \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) ( \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) ) if and only if there exist \\(p\\) scalars coefficients \\(\\{\alpha_1, \alpha_1, \ldots, \alpha_1\\}\\) such that \\(\mathrm{Y} = \sum_{i=1}^{p} \alpha_i \mathrm{X_i}\\) \\((\mathbf{y} = \sum_{i=1}^{p} \alpha_i \mathbf{x_i})\\).
 
 ## Identity Matrix
 * An identity matrix denoted by \\(\mathrm{I_n}\\) is a square matrix where its all diagonal entries are equal to \\(1\\) and all its off-diagonal entries are equal to 0.
@@ -108,7 +108,21 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
   \end{aligned}
 \end{equation}
 
-## Addition, Subtraction, and Scaling Vectors
+## Transpose of a Matrix:
+* By exchanging the rows and columns of a matrix, we obtain the transpose of the matrix. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\),
+its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
+* Properties of transposition operation.
+  1. Given two matrices of \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{m\times n}\\), we have
+     \\((\mathrm{X} + \mathrm{Y})^T = \mathrm{X}^T + \mathrm{Y}^T\\).
+  2. Given two matrices of \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), we have
+     \\((\mathrm{X}\mathrm{Y})^T = \mathrm{Y}^T\mathrm{X}^T \in \mathbb{R}^{p\times m}\\).
+  3. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\), we have
+     \\((\mathrm{X}^T)^T = \mathrm{X}\\).
+  4. Given a complex matrix \\(\mathrm{X} \in \mathbb{C}^{m\times n}\\), the transpose operation is defined by exchanging the rows and columns and conjugating them, and denoted by \\(\mathrm{X}^H\\) (conjugate transpose).
+  5. If for a real (complex) matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) (\\(\in \mathbb{C}^{m\times n}\\)), we have \\(\mathrm{X}=(\mathrm{X})^T\\) (\\(\mathrm{X}=(\mathrm{X})^H\\)), then the matrix is called _Symmetric_ (_Hermitian_).
+  6. The set of all symmetric (Hermitian) matrices is denoted as \\(\mathbb{S}^n\\) (\\(\mathbb{H}^n\\)).
+
+## Addition, Subtraction, and Scaling Vectors/Matrices
 
 * Addition, subtraction, and scaling vectors have been illustrated in the following figure.
 
@@ -169,20 +183,6 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
     \end{bmatrix}
 \end{aligned}
 \end{equation}
-
-## Transpose of a Matrix:
-* By exchanging the rows and columns of a matrix, we obtain the transpose of the matrix. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\),
-its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
-* Properties of transposition operation.
-  1. Given two matrices of \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{m\times n}\\), we have
-     \\((\mathrm{X} + \mathrm{Y})^T = \mathrm{X}^T + \mathrm{Y}^T\\).
-  2. Given two matrices of \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) and \\(\mathrm{Y} \in \mathbb{R}^{n\times p}\\), we have
-     \\((\mathrm{X}\mathrm{Y})^T = \mathrm{Y}^T\mathrm{X}^T \in \mathbb{R}^{p\times m}\\).
-  3. Given a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\), we have
-     \\((\mathrm{X}^T)^T = \mathrm{X}\\).
-  4. Given a complex matrix \\(\mathrm{X} \in \mathbb{C}^{m\times n}\\), the transpose operation is defined by exchanging the rows and columns and conjugating them, and denoted by \\(\mathrm{X}^H\\) (conjugate transpose).
-  5. If for a real (complex) matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) (\\(\in \mathbb{C}^{m\times n}\\)), we have \\(\mathrm{X}=(\mathrm{X})^T\\) (\\(\mathrm{X}=(\mathrm{X})^H\\)), then the matrix is called _Symmetric_ (_Hermitian_).
-  6. The set of all symmetric (Hermitian) matrices is denoted as \\(\mathbb{S}^n\\) (\\(\mathbb{H}^n\\)).
 
 ## Trace of a Square Matrix
 * The trace of a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\) denoted by \\(Tr(\mathrm{X})\\) is the sum of its diagonal entries. That is, \\(Tr(\mathrm{X}) = \sum_{i=1}^{n} x_{ii}\\).
