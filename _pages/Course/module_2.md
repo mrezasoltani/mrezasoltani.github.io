@@ -338,7 +338,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 3. \\(1\\)-norm (\\(\ell_1\\)-norm): \\(\\|\mathbf{x}\\|_1 = \sum _{i=1}^n \|x_i\|\\)
 4. \\(\infty\\)-norm (\\(\ell_{\infty}\\)-norm): \\(\\|\mathbf{x}\\|_{\infty} = \max _{i\geq 1}\|x_i\|\\)
 5. \\(0\\)-norm (\\(\ell_{0}\\)-norm): \\(\sum _{i=1}^n \mathbb{1} _{x_i\neq 0}\\)
-   This is a pseudo norm since it does not satisfy the homogeneity property. It counts the number of non-zero elements in \\(\mathbf{x}\\).
+   This is a pseudo norm since it does not satisfy the homogeneity property. It counts the number of non-zero entries in \\(\mathbf{x}\\).
 * Here, \\(\mathbb{1} _{x \in \mathbb{A}}: \mathbb{A}\rightarrow \\{0,1\\}\\) denotes the indicator function defined as follows:
 
 \begin{equation}
