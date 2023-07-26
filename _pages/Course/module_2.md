@@ -91,7 +91,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 \end{aligned}
 \end{equation}
 
-* **Definition.** Consider a set of \\(p\\) matrices (vectors) \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) with dimension \\(\mathbb{R}^{m\times n}\\)  \\((\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) with dimension \\(\mathbb{R}^{p})\\). A matrix (vector) \\(\mathrm{Y} \in \mathbb{R}^{m\times n}\\) \\((\mathbf{y} \in  \mathbb{R}^{n})\\) is a _linear combination_ of \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) ( \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) ) if and only if there exist \\(p\\) scalars coefficients \\(\\{\alpha_1, \alpha_1, \ldots, \alpha_1\\}\\) such that \\(\mathrm{Y} = \sum_{i=1}^{p} \alpha_i \mathrm{X_i}\\) \\((\mathbf{y} = \sum_{i=1}^{p} \alpha_i \mathbf{x_i})\\).
+* **Definition.** Consider a set of \\(p\\) matrices (vectors) \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) with dimension \\(\mathbb{R}^{m\times n}\\)  \\((\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) with dimension \\(\mathbb{R}^{n})\\). A matrix (vector) \\(\mathrm{Y} \in \mathbb{R}^{m\times n}\\) \\((\mathbf{y} \in  \mathbb{R}^{n})\\) is a _linear combination_ of \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) ( \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) ) if and only if there exist \\(p\\) scalars coefficients \\(\\{\alpha_1, \alpha_1, \ldots, \alpha_1\\}\\) such that \\(\mathrm{Y} = \sum_{i=1}^{p} \alpha_i \mathrm{X_i}\\) \\((\mathbf{y} = \sum_{i=1}^{p} \alpha_i \mathbf{x_i})\\).
 
 ## Addition, Subtraction, and Scaling Vectors/Matrices
 
