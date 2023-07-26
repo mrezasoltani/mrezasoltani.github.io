@@ -370,8 +370,8 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * A vector \\(\mathbf{x} \in \mathbb{R}^n\\) is normalized if \\(\\|x\\| _2 = 1\\).
 * If two vectors have both normalized and they are orthogonal to each other, then we say that they are orthonormal. Also, a set of vectors that is pairwise orthogonal and normalized is called orthonormal.
 * A square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\) is called orthogonal if all its columns and rows are orthonormal. If \\(\mathrm{X}\\) is a complex matrix, then it is called _unitary_ matrix.
-* A matrix \\(\mathrm{X}\\) is orthogonal (unitary) iff \\(\mathrm{X} ^T\mathrm{X}  =\mathrm{X} \mathrm{X} ^t = \mathrm{I_n} \\)
-  \\(\mathrm{X} ^T = \mathrm{X} ^{-1}\\) (\\(\mathrm{X} ^H = \mathrm{X} ^{-1}\\)).
+* A matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\) is orthogonal (unitary) iff \\(\mathrm{X} ^T\mathrm{X}  =\mathrm{X} \mathrm{X} ^T = \mathrm{I_n} \\)
+    \\(\mathrm{X} ^T = \mathrm{X} ^{-1}\\) (\\(\mathrm{X} ^H = \mathrm{X} ^{-1}\\)).
 
 ## Eigenvalues and Eigenvectors of a Matrix
 * Given a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\), \\(\lambda\\) is called an eigenvalue of \\(\mathrm{X}\\) and \\(\mathbf{u} \in \mathbb{R}^n\\) is called the corresponding eigenvector if \\(\mathbf{X}\mathbf{u} = \lambda\mathbf{u}, ~ \mathbf{u}\neq 0\\).
