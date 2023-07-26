@@ -272,7 +272,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * The column rank of a matrix \\(\mathrm{X}\\) is the dimension of its column space (\\(\mathcal{R}(\mathrm{X})\\) (i.e., the space spanned by its columns), and the row rank is the dimension of its row space (\\(\mathcal{R}(\mathrm{X}^T)\\) (i.e., the space spanned by its rows). It can be shown that for any matrix \\(\mathrm{X}\\), **_column rank equals row rank_**. This quantity is referred to as the **_rank of_** \\(\mathrm{X}\\), denoted as \\(rank(\mathrm{X})\\).
   Properties of rank:
     Consider matrices \\(\mathrm{X}, ~ \mathrm{Y} \in \mathbb{R}^{m\times n}\\).
-     1. \\(rank(\mathrm{X}) \leq \min(m, n)\\). If \\(rank(\mathrm{X}) = \min(m, n)\\), then \\(\mathrm{X}\\) is called full rank. Otherwise it is called rank deficient.
+     1. \\(rank(\mathrm{X}) \leq \min(m, n)\\). If \\(rank(\mathrm{X}) = \min(m, n)\\), then \\(\mathrm{X}\\) is called full rank. Otherwise, it is called rank deficient.
      2. \\(rank(\mathrm{X}) = rank(\mathrm{X}^T) = rank(\mathrm{X}^T\mathrm{X}) = rank(\mathrm{X}\mathrm{X}^T)\\).
      3. \\(rank(\mathrm{X}\mathrm{Y}) \leq  \min(rank(\mathrm{X}), rank(\mathrm{Y}))\\)
      4. \\(rank(\mathrm{X} + \mathrm{Y}) \leq  rank(\mathrm{X}) + rank(\mathrm{Y}) \\).
@@ -326,7 +326,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   2. \\[\mathrm{X}^{\dagger}\mathrm{X}\mathrm{X}^{\dagger} =  \mathrm{X}^{\dagger}\\]
   3. \\[ (\mathrm{X}\mathrm{X}^{\dagger})^T = \mathrm{X}\mathrm{X} ^{\dagger} \\]
   4. \\[ (\mathrm{X}^{\dagger}\mathrm{X})^T = \mathrm{X} ^{\dagger}\mathrm{X}\\]
-* If \\(\mathrm{X}\\) is a square \\(n\times n\\) full-rank matrix, then Pseudo-Inverse is given by standard inverse of a matrix, i.e., \\(\mathrm{X}^{\dagger} = \mathrm{X}^{-1}\\).
+* If \\(\mathrm{X}\\) is a square \\(n\times n\\) full-rank matrix, then Pseudo-Inverse is given by the standard inverse of a matrix, i.e., \\(\mathrm{X}^{\dagger} = \mathrm{X}^{-1}\\).
 * If \\(\mathrm{X}\\) is a \\(m\times n\\) full-column rank matrix where \\(m > n\\) (a thin/tall/skinny matrix), then the Pseudo-Inverse is given by, left inverse \\(\mathrm{X}^{\dagger} = (\mathrm{X}^T\mathrm{X})^{-1}\mathrm{X}^T\\).
 * If \\(\mathrm{X}\\) is a \\(m\times n\\) full-row rank matrix where \\(m < n\\) (a fat/short matrix), then the Pseudo-Inverse is given by right inverse, \\(\mathrm{X}^{\dagger} = \mathrm{X}^T(\mathrm{X}\mathrm{X}^T)^{-1}\\).
 
@@ -367,8 +367,8 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ## Eigenvalues and Eigenvectors of a Matrix
 * Given a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\), \\(\lambda\\) is called an eigenvalue of \\(\mathrm{X}\\) and \\(\mathbf{u} \in \mathbb{R}^n\\) is called the corresponding eigenvector if \\(\mathbf{X}\mathbf{u} = \lambda\mathbf{u}, ~ \mathbf{u}\neq 0\\).
-  The above equation means that eigenvector of a matrix is the direction if matrix \\(\mathrm{X}\\) is multiplied by the vector \\(\mathbf{u}\\) results in a new vector that with the same direction as \\(\mathbf{u}\\) and scaled by the eigenvalue, \\(\lambda\\).
-* From the relation of \\(\alpha\mathbf{X}\mathbf{u} = \mathbf{X}(\alpha\mathbf{u}) = \lambda(\alpha\mathbf{u}) \\), we see that if \\(\mathbf{u}\\) is the eigenvector corresponding to the eigenvalue \\(\lambda\\), then \\(\alpha\mathbf{u}\\) is also another eigenvector corresponding to the eigenvalue \\(\lambda\\). As a result, we have eigenvectors corresponding to a eigenvalue. This motivates us to talk about the normalized eigenvector, where \\(\\|\mathbf{u}\\|_2=1\\). However, this does not completely remove the non-uniqueness of the eigenvectors since both \\(\mathbf{u}\\) and \\(\mathbf{u}\\) have unit norm, but they are pointing to the opposite direction.
+  The above equation means that the eigenvector of a matrix is the direction if matrix \\(\mathrm{X}\\) is multiplied by the vector \\(\mathbf{u}\\) resulting in a new vector with the same direction as \\(\mathbf{u}\\) and scaled by the eigenvalue, \\(\lambda\\).
+* From the relation of \\(\alpha\mathbf{X}\mathbf{u} = \mathbf{X}(\alpha\mathbf{u}) = \lambda(\alpha\mathbf{u}) \\), we see that if \\(\mathbf{u}\\) is the eigenvector corresponding to the eigenvalue \\(\lambda\\), then \\(\alpha\mathbf{u}\\) is also another eigenvector corresponding to the eigenvalue \\(\lambda\\). As a result, we have eigenvectors corresponding to an eigenvalue. This motivates us to talk about the normalized eigenvector, where \\(\\|\mathbf{u}\\|_2=1\\). However, this does not completely remove the non-uniqueness of the eigenvectors since both \\(\mathbf{u}\\) and \\(\mathbf{u}\\) have a unit norm, but they are pointing to the opposite direction.
 
 ### Characteristic Equation of a Matrix
 * Consider a matrix \\(\mathbf{X} \in \mathbb{R}^{n\times n}\\) with rank \\(r\\). If we re-write the eigenvector-eigenvalue equation as \\(\mathbf{X}\mathbf{u} -\lambda\mathbf{u} = 0, ~ \mathbf{u}\neq 0\\), it follows that in order to have a non-zero (non-trivial) solution, we need that the matrix \\(\mathbf{X}\mathbf{u} - \lambda\mathbf{u}\\\) to be non-singular. That is, \\(det(\mathbf{X} - \lambda\mathrm{I_n})=0\\).
@@ -432,8 +432,8 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 \end{equation}
 
 ## Positive Definite Matrices
-* A symmetric matrix \\(\mathrm{X}\\) is _positive definite (PD)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} > 0\\). In this case, we write \\(\mathbf{X} \suc 0\\).
-* A symmetric matrix \\(\mathrm{X}\\) is  _positive _semidefinite (PSD)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \geq 0\\). In this case, we write \\(\mathbf{X} \succe 0\\).
-* A symmetric matrix \\(\mathrm{X}\\) is _negative definite (ND)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} < 0\\). In this case, we write \\(\mathbf{X} \pre 0\\).
-* A symmetric matrix \\(\mathrm{X}\\) is  _positive _semidefinitedefinite (NSD)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \leq 0\\). In this case, we write \\(\mathbf{X} \prece 0\\).
-* A symmetric matrix  \\(\mathrm{X}\\) is _indefinite_, if it is neither positive semidefinite nor negative semidefinite. That is, there exist  \\(\mathbf{u_1}, ~\mathbf{u_2} \in \mathbb{R}^n\\) such that \\(\mathbf{u_1}^T\mathrm{X}\mathbf{u_2} < 0\\) and \\(\mathbf{u_1}^T\mathrm{X}\mathbf{u_1} > 0\\).
+* A symmetric matrix \\(\mathrm{X}\\) is _positive definite (PD)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} > 0\\). In this case, we write \\(\mathbf{X} \\suc 0\\).
+* A symmetric matrix \\(\mathrm{X}\\) is  _positive _semidefinite (PSD)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \geq 0\\). In this case, we write \\(\mathbf{X} \succeq 0\\).
+* A symmetric matrix \\(\mathrm{X}\\) is _negative definite (ND)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} < 0\\). In this case, we write \\(\mathbf{X} \prec 0\\).
+* A symmetric matrix \\(\mathrm{X}\\) is  _positive _semidefinitedefinite (NSD)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \leq 0\\). In this case, we write \\(\mathbf{X} \\prece 0\\).
+* A symmetric matrix  \\(\mathrm{X}\\) is _indefinite_, if it is neither positive semidefinite nor negative semidefinite. That is, there exist  \\(\mathbf{u_1}, ~\mathbf{u_2} \in \mathbb{R}^n\\) such that \\(\mathbf{u_1}^T\mathrm{X}\mathbf{u_1} < 0\\) and \\(\mathbf{u_2}^T\mathrm{X}\mathbf{u_2} > 0\\).
