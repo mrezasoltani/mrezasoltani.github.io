@@ -369,7 +369,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * Two vectors \\(\mathbf{x}, ~\mathbf{y} \in \mathbb{R}^n\\) are orthogonal if \\(\mathbf{x}\cdot \mathbf{y} = 0\\). Sometimes, we use \\(\mathbf{x}\bot \mathbf{y}\\) to denote the orthogonality of two vectors.
 * A vector \\(\mathbf{x} \in \mathbb{R}^n\\) is normalized if \\(\\|x\\| _2 = 1\\).
 * If two vectors have both normalized and they are orthogonal to each other, then we say that they are orthonormal. Also, a set of vectors that is pairwise orthogonal and normalized is called orthonormal.
-* A square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\) is called orthogonal if all its columns and rows are orthonormal. If \\(\mathrm{X} is a complex matrix, then it is called _unitary_ matrix.
+* A square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\) is called orthogonal if all its columns and rows are orthonormal. If \\(\mathrm{X}\\) is a complex matrix, then it is called _unitary_ matrix.
 
 ## Eigenvalues and Eigenvectors of a Matrix
 * Given a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\), \\(\lambda\\) is called an eigenvalue of \\(\mathrm{X}\\) and \\(\mathbf{u} \in \mathbb{R}^n\\) is called the corresponding eigenvector if \\(\mathbf{X}\mathbf{u} = \lambda\mathbf{u}, ~ \mathbf{u}\neq 0\\).
