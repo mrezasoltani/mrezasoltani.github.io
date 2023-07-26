@@ -323,12 +323,6 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 ## Quadratic Form of a Matrix
 * A quadratic form of a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\)is given by scalar \\(\mathbf{u}^T\mathrm{X}\mathbf{u}\\) where \\(\mathbf{u} \in \mathbb{R}^n\\).
 
-## Orthogonal and Unitary Matrices
-* Two vectors x; y 2 Rn are orthogonal if xTy = 0.
-* A vector x 2 Rn is normalized if kxk2 = 1. A set of vectors that is pairwise orthogonal and normalized is called orthonormal.
-* A square matrix U 2 Rn n is orthogonal if all its columns are orthonormal.
-* If U is complex matrix, we use the term unitary instead of orthogonal.
-
 ## Norm
 * Let \\(\mathbb{V}\\) be a vector space. Informally, the norm is a measure of the _length_ of the vector. To be more specific, function \\(f : \mathbb{V} \rightarrow \mathbb{R}\\) is called a norm on \\(\mathbb{V}\\) if it satisfies the following 3 properties:
   1. **Positivity.** \\(f(\mathbf{x}) \geq 0\\, ~ f(\mathbf{x}) = 0\\) iff \\(\mathbf{x}=0\\)
@@ -371,6 +365,12 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   2. Nuclear (Trace) norm (induced \\(1\\)-norm). If \\(p=1\\), then we have:
      \\[ \\|\mathrm{X}\\|_* = Tr(\sqrt{\mathrm{X}^T\mathrm{X}}) = \sum _{i=1}^r \sigma_i = \\|\mathbf{\sigma}\\|_1\\]
 
+## Orthogonal and Unitary Matrices
+* Two vectors \\(\mathbf{x}, ~\mathbf{y} \in \mathbb{R}^n\\) are orthogonal if \\(\mathbf{x}\cdot \mathbf{y} = 0\\). Sometimes, we use \\(\mathbf{x}\bot \mathbf{y}\\) to denote the orthogonality of two vectors.
+* A vector \\(\mathbf{x} \in \mathbb{R}^n\\) is normalized if \\(\\|x\\| _2 = 1\\).
+* If two vectors have both normalized and they are orthogonal to each other, then we say that they are orthonormal. Also, a set of vectors that is pairwise orthogonal and normalized is called orthonormal.
+* A square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\) is called orthogonal if all its columns and rows are orthonormal. If \\(\mathrm{X} is a complex matrix, then it is called _unitary_ matrix.
+
 ## Eigenvalues and Eigenvectors of a Matrix
 * Given a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\), \\(\lambda\\) is called an eigenvalue of \\(\mathrm{X}\\) and \\(\mathbf{u} \in \mathbb{R}^n\\) is called the corresponding eigenvector if \\(\mathbf{X}\mathbf{u} = \lambda\mathbf{u}, ~ \mathbf{u}\neq 0\\).
   The above equation means that the eigenvector of a matrix is the direction if matrix \\(\mathrm{X}\\) is multiplied by the vector \\(\mathbf{u}\\) resulting in a new vector with the same direction as \\(\mathbf{u}\\) and scaled by the eigenvalue, \\(\lambda\\).
@@ -411,7 +411,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * A matrix that can be written in the above form is called _diagonalizable_.
 
 ## Eigen Value Decomposition (EVD)
-* Let the matrix \\(\mathrm{X}\\) be a diagonalizable matrix, then we can decompose matrix \\(\mathrm{X} = \mathrm{U}\mathrm{\Lambda}\mathrm{U}^{T}\\).
+* Let matrix \\(\mathrm{X}\\) be diagonalizable, then we can decompose matrix \\(\mathrm{X} = \mathrm{U}\mathrm{\Lambda}\mathrm{U}^{T}\\).
   Here, we have used the fact that matrix \\(\mathrm{U}\\) is a Orthogonal (Hermitian) matrix, i.e., \\(\mathrm{U}^T =\mathrm{U}^{-1} \\).
 
 \begin{equation}
