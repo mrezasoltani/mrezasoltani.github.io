@@ -432,8 +432,8 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 \end{equation}
 
 ## Positive Definite Matrices
-* A symmetric matrix \\(\mathrm{X}\\) is _positive definite (PD)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} > 0\\). In this case, we write \\(\mathbf{X} \\suc 0\\).
+* A symmetric matrix \\(\mathrm{X}\\) is _positive definite (PD)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} > 0\\). In this case, we write \\(\mathbf{X} \\succ 0\\).
 * A symmetric matrix \\(\mathrm{X}\\) is  _positive _semidefinite (PSD)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \geq 0\\). In this case, we write \\(\mathbf{X} \succeq 0\\).
 * A symmetric matrix \\(\mathrm{X}\\) is _negative definite (ND)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} < 0\\). In this case, we write \\(\mathbf{X} \prec 0\\).
-* A symmetric matrix \\(\mathrm{X}\\) is  _positive _semidefinitedefinite (NSD)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \leq 0\\). In this case, we write \\(\mathbf{X} \\prece 0\\).
+* A symmetric matrix \\(\mathrm{X}\\) is  _positive _semidefinitedefinite (NSD)_ if for all \\(u\in \mathbb{R}^n\\) the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \leq 0\\). In this case, we write \\(\mathbf{X} \\preceq 0\\).
 * A symmetric matrix  \\(\mathrm{X}\\) is _indefinite_, if it is neither positive semidefinite nor negative semidefinite. That is, there exist  \\(\mathbf{u_1}, ~\mathbf{u_2} \in \mathbb{R}^n\\) such that \\(\mathbf{u_1}^T\mathrm{X}\mathbf{u_1} < 0\\) and \\(\mathbf{u_2}^T\mathrm{X}\mathbf{u_2} > 0\\).
