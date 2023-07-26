@@ -356,7 +356,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * We can think of a matrix as a vector; hence, defining the matrix norm in terms of a vector norm. \\(\\|\mathrm{X}\\| = \\|vec(A)\\|\\). If the vector norm is the 2-norm, the corresponding matrix norm is called the _Frobenius_ norm:
   \\[ \\|\mathrm{X}\\|_F = \sqrt{\sum _{i=1}^m\sum _{j=1}^{n}  x _{ij}^2} = \sqrt{Tr(\mathrm{X}^T\mathrm{X})} = \\|vec(\mathrm{X})\\|_2 \\]
 * We can also define norms for matrices. In particular, we can define the _induced norm_ of matrix \\(\mathrm{X}\\) as the maximum amount by which any unit-norm input can be lengthened:
-\\[ \\|\mathrm{X}\\|_p = \max _{\mathbf{u}\neq}\dfrac{\\|\mathrm{X}\mathbf{u}\\|_p}{\\|\mathbf{u}\\|_p} = \max _{\\|\mathbf{u}\\|_p=1}\\|\mathrm{X}\mathbf{u}\\|_p \\]
+\\[ \\|\mathrm{X}\\|_p = \max _{\mathbf{u}\neq}\frac{\\|\mathrm{X}\mathbf{u}\\|_p}{\\|\mathbf{u}\\|_p} = \max _{\\|\mathbf{u}\\|_p=1}\\|\mathrm{X}\mathbf{u}\\|_p \\]
 * Consider a matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) with rank \\(r\\). We can define _Schatten_ \\(p\\)-norm as follows:
 \\[ \\|\mathrm{X}\\|_p = (\sum _{i=1}^r \sigma _i^p(\mathrm{X}))^{\dfrac{1}{p}} \\]
 * We have two important cases:
@@ -370,6 +370,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * A vector \\(\mathbf{x} \in \mathbb{R}^n\\) is normalized if \\(\\|x\\| _2 = 1\\).
 * If two vectors have both normalized and they are orthogonal to each other, then we say that they are orthonormal. Also, a set of vectors that is pairwise orthogonal and normalized is called orthonormal.
 * A square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\) is called orthogonal if all its columns and rows are orthonormal. If \\(\mathrm{X}\\) is a complex matrix, then it is called _unitary_ matrix.
+* If matrix \\(\mathbf{x}\\ is orthogonal (unitary), then \\(\mathbf{x}^T=\mathbf{x}^{-1}\\).
 
 ## Eigenvalues and Eigenvectors of a Matrix
 * Given a square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\), \\(\lambda\\) is called an eigenvalue of \\(\mathrm{X}\\) and \\(\mathbf{u} \in \mathbb{R}^n\\) is called the corresponding eigenvector if \\(\mathbf{X}\mathbf{u} = \lambda\mathbf{u}, ~ \mathbf{u}\neq 0\\).
