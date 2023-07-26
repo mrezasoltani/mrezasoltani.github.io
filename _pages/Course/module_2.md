@@ -93,21 +93,6 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 
 * **Definition.** Consider a set of \\(p\\) matrices (vectors) \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) with dimension \\(\mathbb{R}^{m\times n}\\)  \\((\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_n}\\}\\) with dimension \\(\mathbb{R}^{p})\\). A matrix (vector) \\(\mathrm{Y} \in \mathbb{R}^{m\times n}\\) \\((\mathbf{y} \in  \mathbb{R}^{n})\\) is a _linear combination_ of \\(\\{\mathrm{X_1}, \mathrm{X_1}, \dots, \mathrm{X_p}\\}\\) ( \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) ) if and only if there exist \\(p\\) scalars coefficients \\(\\{\alpha_1, \alpha_1, \ldots, \alpha_1\\}\\) such that \\(\mathrm{Y} = \sum_{i=1}^{p} \alpha_i \mathrm{X_i}\\) \\((\mathbf{y} = \sum_{i=1}^{p} \alpha_i \mathbf{x_i})\\).
 
-## Identity Matrix
-* An identity matrix denoted by \\(\mathrm{I_n}\\) is a square matrix where its all diagonal entries are equal to \\(1\\) and all its off-diagonal entries are equal to 0.
-
-\begin{equation}
-\begin{aligned}
-  \mathrm{I_n} =  
-    \begin{bmatrix}
-      1  & 0 & 0 & \ldots & 0  \\\\\\\\
-      0  & 1 & 0 & \ldots & 0  \\\\\\\\
-      \vdots & \vdots & \ddots & \vdots & \vdots \\\\\\\\
-      0  & 0 & 0 & \ldots & 1
-    \end{bmatrix}
-  \end{aligned}
-\end{equation}
-
 ## Addition, Subtraction, and Scaling Vectors/Matrices
 
 * Addition, subtraction, and scaling vectors have been illustrated in the following figure.
@@ -168,6 +153,21 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
       7 & 8 & 9  
     \end{bmatrix}
 \end{aligned}
+\end{equation}
+
+## Identity Matrix
+* An identity matrix denoted by \\(\mathrm{I_n}\\) is a square matrix where its all diagonal entries are equal to \\(1\\) and all its off-diagonal entries are equal to 0.
+
+\begin{equation}
+\begin{aligned}
+  \mathrm{I_n} =  
+    \begin{bmatrix}
+      1  & 0 & 0 & \ldots & 0  \\\\\\\\
+      0  & 1 & 0 & \ldots & 0  \\\\\\\\
+      \vdots & \vdots & \ddots & \vdots & \vdots \\\\\\\\
+      0  & 0 & 0 & \ldots & 1
+    \end{bmatrix}
+  \end{aligned}
 \end{equation}
 
 ## Transpose of a Matrix:
