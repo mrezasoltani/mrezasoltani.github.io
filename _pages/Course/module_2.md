@@ -148,7 +148,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 \begin{aligned}
   \mathrm{X} =  
     \begin{bmatrix}
-      1 & 2 & 2  \\\\\\\\
+      1 & 2 & 3  \\\\\\\\
       4 & 5 & 6  \\\\\\\\
       7 & 8 & 9  
     \end{bmatrix}
