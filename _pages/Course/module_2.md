@@ -367,7 +367,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ## Orthogonal and Unitary Matrices
 * Two vectors \\(\mathbf{x}, ~\mathbf{y} \in \mathbb{R}^n\\) are orthogonal if \\(\mathbf{x}\cdot \mathbf{y} = 0\\). Sometimes, we use \\(\mathbf{x}\bot \mathbf{y}\\) to denote the orthogonality of two vectors.
-* A vector \\(\mathbf{x} \in \mathbb{R}^n\\) is normalized if \\(\\|x\\| _2 = 1\\).
+* A vector \\(\mathbf{x} \in \mathbb{R}^n\\) is (unit-\\(2\\)) normalized if \\(\\|x\\| _2 = 1\\).
 * If two vectors have both normalized and they are orthogonal to each other, then we say that they are orthonormal. Also, a set of vectors that is pairwise orthogonal and normalized is called orthonormal.
 * A square matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\) is called orthogonal if all its columns and rows are orthonormal. If \\(\mathrm{X}\\) is a complex matrix, then it is called _unitary_ matrix.
 * A matrix \\(\mathrm{X} \in \mathbb{R}^{n\times n}\\) is orthogonal (unitary) iff \\(\mathrm{X} ^T\mathrm{X}  =\mathrm{X} \mathrm{X} ^T = \mathrm{I_n} \\)
