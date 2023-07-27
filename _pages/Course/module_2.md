@@ -252,7 +252,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * **Proposition.** Let \\(U=\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_k}\\}\\) be a set of \\(k\\) linearly independent vectors belonging to a linear space \\(S\\). Also, consider a finite set of vectors \\(V=\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) that span \\(S\\). If these \\(k\\) linearly independent vectors do not form a basis for \\(S\\), then one can form a basis by adding some elements of \\(V\\) to set \\(U\\).
 * A linear space is a finite-dimensional space if it has a finite spanning set.
 * **Proposition.** Let \\(S\\) be a finite-dimensional linear space. Then,  \\(S\\) possesses at least one basis.
-* **Dimension theorem.** Let \\(S\\) be a finite-dimensional linear space. Consider two set of vectors given by \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) and \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_k}\\}\\). Then, \\(p=k\\).
+* **Dimension theorem.** Let \\(S\\) be a finite-dimensional linear space. Consider two bases of \\(S\\) given by \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_p}\\}\\) and \\(\\{\mathbf{x_1}, \mathbf{x_2}, \ldots, \mathbf{x_k}\\}\\). Then, \\(p=k\\).
 * **Definition.** Let \\(S\\) be a finite-dimensional linear space, and \\(n\\) be the number of elements of any its bases (\\(n\\) is called cardinality of that bases). Then, \\(n\\) is called the dimension of \\(S\\).
 * **Definition.** Let \\(S\\) be the space of all \\(K\\)-dimensional vectors. Then, the set of \\(K\\) vectors given by \\(\\{\mathbf{e_1}, \mathbf{e_2}, \ldots, \mathbf{e_K}\\}\\) is called the standard/canonical basis of \\(S\\) (recall our notion for the canonical basis vector)
 * **Proposition.** The standard basis is a basis of the space of all \\(K\\)-dimensional vectors.
@@ -442,11 +442,11 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 ## Positive Definite Matrices
 * A symmetric matrix \\(\mathrm{X}\\) is _positive definite (PD)_ iff for all \\(\mathbf{u}\in \mathbb{R}^n, ~\mathbf{u}\neq 0\\), the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} > 0\\). In this case, we write \\(\mathbf{X} \\succ 0\\).
   A symmetric matrix is positive definite iff its eigenvalues are positive.
-* A symmetric matrix \\(\mathrm{X}\\) is  _positive _semidefinite (PSD)_ iff for all \\(\mathbf{u}\in \mathbb{R}^n, ~\mathbf{u}\neq 0\\), the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \geq 0\\). In this case, we write \\(\mathbf{X} \succeq 0\\).
+* A symmetric matrix \\(\mathrm{X}\\) is  _positive semidefinite (PSD)_ iff for all \\(\mathbf{u}\in \mathbb{R}^n, ~\mathbf{u}\neq 0\\), the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \geq 0\\). In this case, we write \\(\mathbf{X} \succeq 0\\).
   A symmetric matrix is positive semidefinite iff its eigenvalues are non-negative.
 * A symmetric matrix \\(\mathrm{X}\\) is _negative definite (ND)_ iff for all \\(\mathbf{u}\in \mathbb{R}^n, ~\mathbf{u}\neq 0\\), the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} < 0\\). In this case, we write \\(\mathbf{X} \prec 0\\).
   A symmetric matrix is negative definite iff its eigenvalues are negative.
-* A symmetric matrix \\(\mathrm{X}\\) is  _positive _semidefinitedefinite (NSD)_ iff for all \\(\mathbf{u}\in \mathbb{R}^n, ~\mathbf{u}\neq 0\\), the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \leq 0\\). In this case, we write \\(\mathbf{X} \\preceq 0\\).
+* A symmetric matrix \\(\mathrm{X}\\) is  _negative semidefinite (NSD)_ iff for all \\(\mathbf{u}\in \mathbb{R}^n, ~\mathbf{u}\neq 0\\), the quadratic form, \\(\mathbf{u}^T\mathrm{X}\mathbf{u} \leq 0\\). In this case, we write \\(\mathbf{X} \\preceq 0\\).
   A symmetric matrix is negative semidefinite iff its eigenvalues are non-positive.
 * A symmetric matrix  \\(\mathrm{X}\\) is _indefinite_, if it is neither positive semidefinite nor negative semidefinite. That is, there exist vectors \\(\mathbf{u_1}, ~\mathbf{u_2} \in \mathbb{R}^n\\) such that \\(\mathbf{u_1}^T\mathrm{X}\mathbf{u_1} < 0\\) and \\(\mathbf{u_2}^T\mathrm{X}\mathbf{u_2} > 0\\).
 
