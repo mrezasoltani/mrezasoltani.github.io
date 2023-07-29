@@ -8,7 +8,7 @@ classes: wide
 
 ## The list of all sources for learning ML/DL and programming, including  useful books, papers, blogs, etc:
 
-* ML books:
+* **ML books:**
     1. G. James, D. Witten, T. Hastie, R. Tibshirani, An Introduction to Statistical Learning ([link](https://www.statlearning.com/))
     2. C. M. Bishop, Pattern Recognition and Machine Learning, 2006 ([link](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf))
     3. K. Murthy, Machine Learning: A Probabilistic Perspective, 2012 ([link](https://probml.github.io/pml-book/book0.html))
@@ -16,7 +16,7 @@ classes: wide
     5. K. Murthy, Probabilistic Machine Learning: An Introduction, 2022 ([link](https://probml.github.io/pml-book/book1.html))
     6. K. Murthy, Probabilistic Machine Learning: Advanced Topics, 2023 ([link](https://probml.github.io/pml-book/book2.html))
 
-* Programming:
+* **Programming:**
     1. C. Russell Severance Python for Everybody: Exploring Data in Python 3, 2016 ([link](http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf))
     2. W. McKinney, Python for Data Analysis, 2nd Edition, 2017 ([link](https://www.oreilly.com/library/view/python-for-data/9781491957653/))
     3. Q. Larson, Python Data Science, 2020 ([link](https://www.freecodecamp.org/news/python-data-science-course-matplotlib-pandas-numpy/))
@@ -24,7 +24,7 @@ classes: wide
     5. Become a Python Master ([link](https://programiz.pro/learn/master-python?ref=cp))
     6. Data Science With Python Core Skills ([link](https://realpython.com/learning-paths/data-science-python-core-skills/))
 
-* ML blogs:
+* **ML blogs:**
     1. Lilian's blog with many intersting learning notes ([link](https://lilianweng.github.io/lil-log/))
     2. Distill, a scientific journal which operated 2016-2021 with many well explained ML concepts ([link](https://distill.pub/)).
     3. Shakir Mohamed'blog with many learning resources in ML/DL ([link](http://blog.shakirm.com/))
@@ -44,13 +44,13 @@ classes: wide
     18. A blog about transformers by Jonathan Bgn ([link](https://jonathanbgn.com/2021/06/29/illustrated-wav2vec.html))
     19. Jay Alammar's blog about BERT, GPT, etc ([link](https://jalammar.github.io/about/))
 
-* Course:
+* **Courses:**
   1. Andrew Ng, Machine Learning Specialization, 2012 ([link](https://www.deeplearning.ai/courses/machine-learning-specialization/))
   2. Hal Daumé III, A Course in Machine Learning, 2017 ([link](http://ciml.info/))
   3. Andrew Ng, The Deep Learning Specialization, 2018 ([link](https://www.deeplearning.ai/courses/deep-learning-specialization/))
   4. Bayesian Methods in Machine Learning by Roman Garnett (Washington University in St. Louis) ([link](https://www.cse.wustl.edu/~garnett/cse515t/spring_2017/))
 
-* Most datasets used in ML literature:
+* **Most datasets used in ML literature:**
   1. **UCI Machine Learning Repository.** The Machine Learning Repository at UCI provides an up-to-date resource for open-source datasets ([link](https://archive.ics.uci.edu/)).
   2. **Google Dataset Search.** Similar to how Google Scholar works, Dataset Search lets you find datasets wherever they are hosted, whether it’s a publisher’s site, a digital library, or an author’s web page. It contains over 25 million datasets ([link](https://datasetsearch.research.google.com/)).
   3. **Kaggle.** Kaggle provides a large container of datasets, including over 50,000 public datasets and 400,000 public notebooks for the purpose of data exploratory  analysis (EDA) ([link](https://www.kaggle.com/)).
