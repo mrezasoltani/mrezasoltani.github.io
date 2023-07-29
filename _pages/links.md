@@ -33,20 +33,21 @@ classes: wide
     4. A blog affiliated with Ermon’s research group at Stanford with some advanced topics in ML ([link](https://ermongroup.github.io/blog/flow-gan/)]
     5. A research blog for Zico Kolter’s research group at CMU with theoretical topics ([link](https://locuslab.github.io/))
     6. Off the Convex Path, a blog with concepts in optimization methods ([link](https://www.offconvex.org/))
-    7. ([link](https://www.cse.wustl.edu/~garnett/cse515t/spring_2017/))
-    8. ([link](https://www.groundai.com/))
-    9. ([link](https://blog.evjang.com/2018/01/nf1.html))
-    10. ([link](https://francisbach.com/))
-    11. ([link](https://ruder.io/))
-    12. ([link](https://www.inference.vc/))
-    13. ([link](https://blog.floydhub.com/attention-mechanism/))
-    14. ([link](https://dsgissin.github.io/blog/))
-    15. ([link](https://www.determined.ai/blog))
-    16. ([link](https://blog.ml.cmu.edu/#))
-    17. ([link](https://heartbeat.fritz.ai/))
-    18. ([link](https://hunch.net/?cat=6))
-    19. ([link](https://lorenlugosch.github.io/posts/2020/11/transducer/))    ## for speech
-    20. ([link](https://jonathanbgn.com/2021/06/29/illustrated-wav2vec.html))   ## wavetovec
+    7. A blog by Eric Jang with technical material in ML/DL ([link](https://blog.evjang.com/2018/01/nf1.html))
+    8. Machine Learning Research Blog Francis Bach([link](https://francisbach.com/))
+    9. A blog about NLP and ML, highlighting many research papers ([link](https://ruder.io/))
+    10. Posts on machine learning, statistics by Ferenc Huszár ([link](https://www.inference.vc/))
+    11. A blog with materials on DL, AI, and Cloud GPUs([link](https://blog.floydhub.com/attention-mechanism/))
+    12. Daniel Gissin's blog about optimization ([link](https://dsgissin.github.io/blog/))
+    13. Determined AI with introductory and advanced materials in ML/DL ([link](https://www.determined.ai/blog))
+    14. The CMU ML blog for general-audience medium for CMU researchers ([link](https://blog.ml.cmu.edu/#))
+    15. Machine learning and learning theory research ([link](https://hunch.net/?cat=6))
+    17. A blog about DL methods in Speech by Loren Lugosch ([link](https://lorenlugosch.github.io/posts/2020/11/transducer/))
+    18. A blog about transformers by Jonathan Bgn ([link](https://jonathanbgn.com/2021/06/29/illustrated-wav2vec.html))
+    19. Jay Alammar's blog about BERT, GPT, etc ([link](https://jalammar.github.io/about/))
+
+* Course:
+  1. Bayesian Methods in Machine Learning by Roman Garnett (Washington University in St. Louis) ([link](https://www.cse.wustl.edu/~garnett/cse515t/spring_2017/))
 
 * Most datasets used in ML literature:
   1. **UCI Machine Learning Repository.** The Machine Learning Repository at UCI provides an up-to-date resource for open-source datasets ([link](https://archive.ics.uci.edu/)).
