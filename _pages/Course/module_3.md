@@ -13,5 +13,5 @@ classes: wide
   2. **Aleatoric (Data) Uncertainty.** The uncertainty is due to the intrinsic variability in the data and cannot be reduced even more collection of data. This is derived from the Latin word for “dice”.
 
 ## Review of Some Concepts
-* **Sample Space*.* Set of all possible outcomes in a random experiment is called _sample space_ and denoted by \\(\mathbb{\Omega}\\). For example, in rolling a die, there are \\(6\\) possible outcomes, so \\(\mathbb{\mathbb{\Omega} = \\{1,2,3,4,5,6\\}\\).
-* ** Event.** A subset of the sample space is an _event_, i.e., \\(\mathrm{A}\subeq \mathbb{\Omega}\\). 
+* **Sample Space*.** Set of all possible outcomes in a random experiment is called _sample space_ and denoted by \\(\mathbb{\Omega}\\). For example, in rolling a die, there are \\(6\\) possible outcomes, so \\(\mathbb{\Omega} = \\{1,2,3,4,5,6\\}\\).
+* **Event.** A subset of the sample space is an _event_, i.e., \\(\mathrm{A}\\subsete \Omega\\). 
