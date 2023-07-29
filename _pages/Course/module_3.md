@@ -4,7 +4,7 @@ classes: wide
 ---
 ## What Is Probability?
 * Probability is a critical tool for modern data analysis. It arises in dealing with uncertainty, randomized algorithms, and Bayesian analysis. Generally, we can interpret probability in two ways; the **_fequentist_** interpretation and **_Bayesian_** interpretation.
-* In the frequentist view, probabilities represent long-run frequencies of events that can happen multiple times. For example, when we say a fair coin has a \\(50%\\) chance of turning tail, we mean that if we toss the coin many times, we expect that it lands tail half of the time.
+* In the frequentist view, probabilities represent long-run frequencies of events that can happen multiple times. For example, when we say a fair coin has a \\(50/%\\) chance of turning tail, we mean that if we toss the coin many times, we expect that it lands tail half of the time.
 * In Bayesian interpretation, probability is used to quantify our ignorance or uncertainty about something. This viewpoint is more related to information rather than repeated trials. In the above flipping a fair coin, Bayesian interpretation states our belief that the coin is equally likely to land heads or tails on the next toss.
 * Bayesian interpretation can be used to model our uncertainty about events that do not have long-term frequencies [K. Murthy, 2022].
 ### Type of Uncertainty
