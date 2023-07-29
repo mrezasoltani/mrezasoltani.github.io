@@ -26,7 +26,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **All elements of vector** \\(\mathbf{x}\\) **except for element** \\(i\\)  | \\(\mathbf{x_{-i}}\\) |
    | **Entry in** \\(i^{th}\\) **row and** \\(j^{th}\\) **column of a matrix** \\(\mathrm{X}\\) | \\(x_{ij}\\) |
    | \\(i^{th}\\) **row (column) of a matrix** \\(\mathrm{X}\\) | \\(\mathrm{X_{i:}}\\) (\\(\mathrm{X_{:i}}\\)) |
-   | **A probability distribution over a discrete variable (pmf)** | \\(P(x)\\) |
+   | **A probability distribution over a discrete variable (or both continuous and discrete) (pmf)** | \\(P(x)\\) |
    | **A probability distribution over a continuous variable (pdf)** | \\(p(x)\\) |
    | \\(L^p\\) **norm of vector** \\(\mathbf{x}\\) | \\(\\|\\|\mathbf{x}\\|\\|_p\\) |
    | \\(p\\) **-induced norm of a matrix** | \\(\\|\\|\mathrm{X}\\|\\|_p\\) |
