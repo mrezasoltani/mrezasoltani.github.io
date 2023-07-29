@@ -77,7 +77,7 @@ In this course, our goal is to understand ML concepts from scratch, so we can ha
      <p align="center">
         <img width="1500" alt="Screenshot 2023-07-10 at 9 57 45 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/a88a7265-fe1e-4629-82be-546a49245676">
         <br>
-            <em>Application of the PCA for visualization. Images from [https://www.robots.ox.ac.uk/~vgg/data/flowers/102/].</em>
+            <em>Application of the PCA for visualization. Flower images from [https://www.robots.ox.ac.uk/~vgg/data/flowers/102/].</em>
       </p>
      
 ### Discriminative and Generative
