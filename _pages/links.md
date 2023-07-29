@@ -25,17 +25,17 @@ classes: wide
     6. Data Science With Python Core Skills ([link](https://realpython.com/learning-paths/data-science-python-core-skills/))
 
 * **ML blogs:**
-    1. Lilian's blog with many intersting learning notes ([link](https://lilianweng.github.io/lil-log/))
-    2. Distill, a scientific journal which operated 2016-2021 with many well explained ML concepts ([link](https://distill.pub/)).
+    1. Lilian's blog with many interesting learning notes ([link](https://lilianweng.github.io/lil-log/))
+    2. Distill, a scientific journal that operated from 2016-2021 with many well-explained ML concepts ([link](https://distill.pub/)).
     3. Shakir Mohamed'blog with many learning resources in ML/DL ([link](http://blog.shakirm.com/))
     4. A blog affiliated with Ermon’s research group at Stanford with some advanced topics in ML ([link](https://ermongroup.github.io/blog/flow-gan/)]
     5. A research blog for Zico Kolter’s research group at CMU with theoretical topics ([link](https://locuslab.github.io/))
     6. Off the Convex Path, a blog with concepts in optimization methods ([link](https://www.offconvex.org/))
     7. A blog by Eric Jang with technical material in ML/DL ([link](https://blog.evjang.com/2018/01/nf1.html))
-    8. Machine Learning Research Blog Francis Bach([link](https://francisbach.com/))
+    8. Machine Learning Research Blog Francis Bach ([link](https://francisbach.com/))
     9. A blog about NLP and ML, highlighting many research papers ([link](https://ruder.io/))
     10. Posts on machine learning, statistics by Ferenc Huszár ([link](https://www.inference.vc/))
-    11. A blog with materials on DL, AI, and Cloud GPUs([link](https://blog.floydhub.com/attention-mechanism/))
+    11. A blog with materials on DL, AI, and Cloud GPUs ([link](https://blog.floydhub.com/attention-mechanism/))
     12. Daniel Gissin's blog about optimization ([link](https://dsgissin.github.io/blog/))
     13. Determined AI with introductory and advanced materials in ML/DL ([link](https://www.determined.ai/blog))
     14. The CMU ML blog for general-audience medium for CMU researchers ([link](https://blog.ml.cmu.edu/#))
