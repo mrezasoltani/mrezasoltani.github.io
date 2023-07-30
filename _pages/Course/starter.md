@@ -16,7 +16,7 @@ classes: wide
   * To be successful in this course, you need to develop both your mathematical background and programming skills.
 
 ### Course Material
- * There is no formal reference for this course. All material will be posted online on the (course webpage)[https://mrezasoltani.github.io/course_modules/]. Please make sure to check the course webpage regularly as course materials will be added weekly as we progress toward the end of the class.
+ * There is no formal reference for this course. All material will be posted online on the [course webpage](https://mrezasoltani.github.io/course_modules/). Please make sure to check the course webpage regularly as course materials will be added weekly as we progress toward the end of the class.
  * Here is a brief list of some useful sources to educate yourself. The full list of all sources and useful books, papers, blogs, etc can be found [here](https://mrezasoltani.github.io/links/).
   * Machine/Deep Learning:
     1. G. James, D. Witten, T. Hastie, R. Tibshirani, An Introduction to Statistical Learning ([link](https://www.statlearning.com/))
