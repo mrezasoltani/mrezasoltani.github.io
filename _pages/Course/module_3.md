@@ -30,7 +30,7 @@ Here, we review most important concepts in the probability theory without mathem
   - **Pairwise Independence.** For \\(n \geq 3\\), events \\(A_{1},A_2,\dots,A_{n}\\) are pairwise independent if \\(A_i \cap A_j = 0, ~\forall 1\leq i,j\leq n\\).
     - Please note that Pairwise Independence does not imply Mutual Independence.
 * **Conditional Probability.** The conditional probability of happening an event \\(A\\) given that another event \\(B\\) has occurred is given by \\(P(A\|B) = \frac{p(A, B)}{p(B)}, ~ P(B)\neq 0\\).
-* **Conditional Independency.** If two events \\(A\\) and \\(B\\) are independent given another event \\(C\\), we say that \\(A\\) and \\(B\\) are _conditionally independent_ given \\(C\\), this is denoted by \\(A \perp B \| C \\). Many events are dependent on each other, but it is possible when a relevant information is known, then two event become independent.
+* **Conditional Independency.** If two events \\(A\\) and \\(B\\) are independent given another event \\(C\\), we say that \\(A\\) and \\(B\\) are _conditionally independent_ given \\(C\\), this is denoted by \\(A \perp B \| C \\). In this case, \\(P(A, B\|C) = P(A\|C)\cdot P(B\|C)\\). Many events are dependent on each other, but it is possible when a relevant information is known, then two event become independent.
 * **Random Variable.** A random variable (r.v.) \\(X: \Omega\rightarrow \mathbb{R}\\) is a function from the sample space to the real line.
   - **Discrete random variables.** If the sample space X is finite or countably infinite, then X is called a discrete random variable. In this case, we denote the probability of the event that X has value x
   - **Continious random variables.**
