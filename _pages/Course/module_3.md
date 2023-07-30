@@ -35,19 +35,20 @@ Here, we review most important concepts in the probability theory without mathem
   \\[P(B) = \sum _{i=1}^{n} P(B\|A_i)P(A_i)\\]
   <details>
   <summary>Proof</summary>
-    
+    \begin{proof}
       we have: 
       \begin{equation}
         B = B\cap\Omega = B\cap(\cup _{i=1}^n A_i ) = \cup _{i=1}^n(B\cap A_i)
       \end{equation}
   
-      We note that \begin{equation} B\cap A_i\end{equation} are disjoint events by the auumption on \(A_1, A_2,\ldots, A_{n}\) being a partition of the sample space. Hence, applying the third axioms of probability, we have:
+      We note that \(B\cap A_i\) are disjoint events by the auumption on \(A_1, A_2,\ldots, A_{n}\) being a partition of the sample space. Hence, applying the third axioms of probability, we have:
   
       \begin{equation}
       P(B\cap A_i)= \sum _{i=1}^{n} P(B\cap A_i) = \sum _{i=1}^{n} P(B|A_i)P(A_i)
       \end{equation}
   
-      For the last eqaulity we have used the conditional probabilit rule. 
+      For the last eqaulity we have used the conditional probabilit rule.
+   \end{proof}
   </details>
   
 * **Bayes Rule (Bayes’ theorem).** Let \\(A\\) and \\(B\\) be two events with positive probabilities, i.e., \\(P(A)>0\\) and \\(P(B) >0\\). From the definition of conditional probability, we can derive Bayes’ rule:
