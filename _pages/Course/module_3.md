@@ -13,6 +13,7 @@ classes: wide
   2. **Aleatoric (Data) Uncertainty.** The uncertainty is due to the intrinsic variability in the data and cannot be reduced even more collection of data. This is derived from the Latin word for “dice”.
 
 ## Informal Review of Some Concepts
+Here, we review most important concepts in the probability theory without mathematical rigorous. Later, we make these concepts more formal by defining them by the language of Measure Theory.
 * **Sample Space.** Set of all possible outcomes in a random experiment is called _sample space_ and denoted by \\(\Omega\\). For example, in rolling a die, there are \\(6\\) possible outcomes, so \\(\Omega = \\{1,2,3,4,5,6\\}\\). An outcome is an element of a sample space, e.g., \\(\omega = 3\\). This example shows a discrete sample space. A sample space can also be a continous space. For example, consider waiting time for arrving a bus is a random experiment. An outcome is any non-negative real number. 
 * **Event.** A subset of the sample space is an _event_, i.e., \\(A\subseteq \Omega\\). For example, in the rolling of a die, an event can be defined as _facing an odd number_, i.e., \\(A=\\{1,3,5\\}\\). For a sample space with \\(n\\) outcomes, we can have \\(2^n\\) events.
 * **Probability.** Informally, a probability is a measure from the set of events to the real numbers in \\(\[0,1\]\\) such that:
@@ -25,8 +26,13 @@ classes: wide
 * **Joint Probability.** A joint probability of happening two events \\(A\\) and \\(B\\) is defined as \\(P(A\cup B)\\).
 * **Independency.** If two events \\(A\\) and \\(B\\) are independent, then their join probability is given by their product, i.e., \\(P(A\cup B) = P(A)P(B)\\). This means that occurring the event \\(A\\) does not have any effect in happening or not happening of the event \\(B\\). For example, consider a random experiment defined as follows: choosing two numbers uniformly at random from a set \\(X\\{1,2,3,4\\}\\). Let \\(A\\) be an event that the first number belongs to the set \\(\\{3\\}\\), and \\(B\\) be an event that the second number belongs to the set \\(\\{1, 2, 4\\}\\), then these two event are independent from each other; hence, \\(P(A\cup B) = P(A)P(B) = \frac{1}{4}\cdot\frac{2}{4} = \frac{1}{8}\\).
   - It is very important to note that in independency of two events does not imply their mutually exclusive and vice versa.
+  - **Mutual Independence.** Let \\(A_{1},A_2,\dots,A_{n}\\) be \\(n\\) events. \\(A_{1},A_2,\dots,A_{n}\\) are mutually independent (jointly independent ) if and only if for any sub-collection of \\(k\\) events (\\(k\leq n\\)) \\(A_{1},A_2,\dots,A_{k}\\), \\(P(\cap _{i=1}^{k} A_i) = \prod _{i=1}^{k} P(A_i)\\).
+  - **Pairwise Independence.** For \\(n \geq 3\\), events \\(A_{1},A_2,\dots,A_{n}\\) are pairwise independent if \\(A_i \cap A_j = 0, ~\forall 1\leq i,j\leq n\\).
+    - Please note that Pairwise Independence does not imply Mutual Independence.
 * **Conditional Probability.** The conditional probability of happening an event \\(A\\) given that another event \\(B\\) has occurred is given by \\(P(A\|B) = \frac{p(A, B)}{p(B)}, ~ P(B)\neq 0\\).
 * **Conditional Independency.** If two events \\(A\\) and \\(B\\) are independent given another event \\(C\\), we say that \\(A\\) and \\(B\\) are _conditionally independent_ given \\(C\\), this is denoted by \\(A \perp B \| C \\). Many events are dependent on each other, but it is possible when a relevant information is known, then two event become independent.
 * **Random Variable.** A random variable (r.v.) \\(X: \Omega\rightarrow \mathbb{R}\\) is a function from the sample space to the real line.
+  - **Discrte random variables.**
+  - **Continious random variables.**
 * **Expectation.**
 * **Variance.**
