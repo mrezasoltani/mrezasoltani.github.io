@@ -35,9 +35,10 @@ Here, we review most important concepts in the probability theory without mathem
   \\[P(B) = \sum _{i=1}^{n} P(B\|A_i)P(A_i)\\]
   <details>
   <summary>Proof</summary>
-  
-  BODY CONTENT
-
+  \begin{equation}
+  B = B\cap\Omega = B\cap(\cup _{i=1}^n A_i ) = \\\\
+    = \cup _{i=1}^n(B\cap A_i)
+  \end{equation}
   </details>
 * **Bayes Rule.**
 * **Random Variables.** A random variable (r.v.) \\(X: \Omega\rightarrow \mathbb{R}\\) is a function from the sample space to the real line.
