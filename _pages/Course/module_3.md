@@ -36,9 +36,9 @@ Here, we review most important concepts in the probability theory without mathem
     - \\(P(x)\\) is called **probability mass function (pmf)** and satisfies the following conditions:
      - \\(0 \leq P(x) \leq 1\\)
      - \\(\sum _{x\in \Omega}P(x) = 1\\)
-    - **Cumulative distribution function (cdf).** We define a cdf of a r.v. as \\(Pr_(x) = Pr_X(x) =  Pr(X\leq x) = \sum _{\alpha \in \Omega, \alpha\leq x} P(\alpha)\\). From this definition, we immidiately see that \\(Pr(\alpha \leq x \leq \beta) = Pr(\beta) - P(\alpha)\\).
-  - **Continious random variables.** If the sample space \\(\Omega\\) over which a random variable \\(X\\) is defined is infinit (e.g., \\(\mathbb{R}\\), then \\(X\\) is called a Continious random variable. Here, we cannot consider a set of finit/countable values for \\(X\\). However, we can choose a set of inervals in \\(mathbb{R}\\), for example, and define the probability of \\(X\\) taking on a specific value by infinitesimal interval containing that value.
+    - **Cumulative distribution function (cdf).** We define a cdf of a r.v. as \\(Pr(x) = Pr_X(x) =  Pr(X\leq x) = \sum _{\alpha \in \Omega, \alpha\leq x} P(\alpha)\\). From this definition, we immidiately see that \\(Pr(\alpha \leq x \leq \beta) = Pr(\beta) - P(\alpha)\\).
+  - **Continious random variables.** If the sample space \\(\Omega\\) over which a random variable \\(X\\) is defined is infinit (e.g., \\(\mathbb{R}\\), then \\(X\\) is called a Continious random variable. Here, we cannot consider a set of finit/countable values for \\(X\\). However, we can choose a set of inervals in \\(\mathbb{R}\\), for example, and define the probability of \\(X\\) taking on a specific value by infinitesimal interval containing that value.
     - **Probability density function (pdf)** For the a continious r.v., we can define the pdf as \\(p(x)=\frac{dPr(x)}{dx}\\), assuming this derivative exists. 
-    - Simialr to the discrete case, the cdf function for a continious r.v. is defined by \\(Pr_(x) = Pr_X(x) =  Pr(X\leq x) = \int _{u \in \Omega, \alpha\leq x}p(u)du\\), where \\(p(u)\\) is called _probability density function (pdf)_ and 
+    - Simialr to the discrete case, the cdf function for a continious r.v. is defined by \\(Pr_(x) = Pr_X(x) =  Pr(X\leq x) = \sum _{u \in \Omega, \alpha\leq x}p(u)du\\), where \\(p(u)\\) is called _probability density function (pdf)_.
 * **Moments of a Distribution**
   - * **Expectation (Mean).**
