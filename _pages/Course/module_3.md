@@ -31,8 +31,14 @@ Here, we review most important concepts in the probability theory without mathem
     - Please note that Pairwise Independence does not imply Mutual Independence.
 * **Conditional Probability.** The conditional probability of happening an event \\(A\\) given that another event \\(B\\) has occurred is given by \\(P(A\|B) = \frac{p(A, B)}{p(B)}, ~ P(B)\neq 0\\).
 * **Conditional Independency.** If two events \\(A\\) and \\(B\\) are independent given another event \\(C\\), we say that \\(A\\) and \\(B\\) are _conditionally independent_ given \\(C\\), this is denoted by \\(A \perp B \| C \\). In this case, \\(P(A, B\|C) = P(A\|C)\cdot P(B\|C)\\). Many events are dependent on each other, but it is possible when a relevant information is known, then two event become independent.
-* **Law of Total Probability.** Let \\(A_{1},A_2,\dots,A_{n}\\) be \\(n\\) be a partition of sample space \\(\Omega\\). That is, \\(\cup _{i=1}^n A_i = \Omega, ~ A_i\cap A_j =0 ~ \forall 0\leq i,j\leq n\\). Then for any set \\(B\subseteq\Omega\\), we have:
+* **Law of Total Probability.** Let \\(A_{1},A_2,\dots,A_{n}\\) be \\(n\\) be a partition of sample space \\(\Omega\\). That is, \\(\cup _{i=1}^n A_i = \Omega, ~ A_i\cap A_j =0, ~ \forall ~ 0\leq i,j\leq n\\). Then for any set \\(B\subseteq\Omega\\), we have:
   \\[P(B) = \sum _{i=1}^{n} P(B\|A_i)P(A_i)\\]
+  <details>
+  <summary>Proof</summary>
+  
+  BODY CONTENT
+
+  </details>
 * **Bayes Rule.**
 * **Random Variables.** A random variable (r.v.) \\(X: \Omega\rightarrow \mathbb{R}\\) is a function from the sample space to the real line.
   - **Discrete random variables.** If the sample space \\(\Omega\\) over which a random variable \\(X\\) is defined is finite or countably infinite, then \\(X\\) is called a discrete random variable. Any possible realization of \\X\\) is an event, hence, the probability of the event that \\(X\\) has value \\(x\\) is given by \\(P(X=x)\\) (Most of the time for simplicity of notation, we write \\(P(x)\\)).
