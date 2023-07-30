@@ -13,15 +13,17 @@ classes: wide
   2. **Aleatoric (Data) Uncertainty.** The uncertainty is due to the intrinsic variability in the data and cannot be reduced even more collection of data. This is derived from the Latin word for “dice”.
 
 ## Informal Review of Some Concepts
-* **Sample Space.** Set of all possible outcomes in a random experiment is called _sample space_ and denoted by \\(\Omega\\). For example, in rolling a die, there are \\(6\\) possible outcomes, so \\(\Omega = \\{1,2,3,4,5,6\\}\\). An outcome is an element of a sample space, e.g., \\(\omega = 3\\). 
+* **Sample Space.** Set of all possible outcomes in a random experiment is called _sample space_ and denoted by \\(\Omega\\). For example, in rolling a die, there are \\(6\\) possible outcomes, so \\(\Omega = \\{1,2,3,4,5,6\\}\\). An outcome is an element of a sample space, e.g., \\(\omega = 3\\). This example shows a discrete sample space. A sample space can also be a continous space. For example, consider waiting time for arrving a bus is a random experiment. An outcome is any non-negative real number. 
 * **Event.** A subset of the sample space is an _event_, i.e., \\(A\subseteq \Omega\\). For example, in the rolling of a die, an event can be defined as _facing an odd number_, i.e., \\(A=\\{1,3,5\\}\\). For a sample space with \\(n\\) outcomes, we can have \\(2^n\\) events.
 * **Probability.** Informally, a probability is a measure from the set of events to the real numbers in \\(\[0,1\]\\) such that:
   1. For any event \\(A\subseteq \Omega\\), \\(~ 0 \leq P(A) \leq 1\\)
   2. \\(p(\Omega) = 1\\)
   3. For any sequence \\(A_1, A_2, \ldots\\), such that \\(\forall i,j, ~ A_i \cap A_j = 0 \\) (i.e, pairwise disjoint sets):
      \\[P(\cup _{i=1}^{\infty} A_i) = \sum _{i=1}^{\infty} P(A_i)\\]
+     The disjoin sets assumption in the third property means that events \\(A\\) and \\(B\\) cannot happen at the same time, that is, they are mutually exclusive. For example, in flipping a coin, the event of facing with a tail does not have any intersection with the event that the coin lands the head. 
 * **Random Variable.** A random variable (r.v.) \\(X: \Omega\rightarrow \mathbb{R}\\) is a function from the sample space to the real line.
-* **Joint Probability.**
-* **Conditioanal Probability.**
-* **Independency.**
+* **Joint Probability.** A joint probability of happening two events \\(A\\) and \\(B\\) is defined as \\(P(A\cup B)\\).
+* **Independency.** If two events \\(A\\) and \\(B\\) are independent, then their join probability is given by their product, i.e., \\(P(A\cup B) = P(A)P(B)\\). This means that occurring the event \\(A\\) does not have any effect in happening or not happening of the event \\(B\\). For example, consider a random experiment defined as follows: choosing two numbers unformly at random from a set \\(X\\{1,2,3,4\\}\\). Let \\(A\\) be an event that the first number belongs to the set \\(\\{3\\}\\), and \\(B\\) be an event that the second number belongs to the set \\(\\{1, 2, 4\\}\\), then these two event are independent from each other; hence, \\(P(A\cup B) = P(A)P(B) = \frac{1}{4]\frac{2}{4} = \frac{1}{8}\\).
+    It is very important to note that in independency of two events does not imply their mutually exclusive and vice versa. 
+* **Conditional Probability.**
 * **Conditional Independency.**
