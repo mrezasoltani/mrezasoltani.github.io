@@ -36,9 +36,12 @@ Here, we review most important concepts in the probability theory without mathem
   <details>
   <summary>Proof</summary>
   \begin{equation}
-  B = B\cap\Omega = B\cap(\cup _{i=1}^n A_i ) = \\\\
+  B = B\cap\Omega = B\cap(\cup _{i=1}^n A_i ) \\\\
     = \cup _{i=1}^n(B\cap A_i)
   \end{equation}
+    We note that \\(B\cap A_i\\) are disjoint matrices by the auumption on \\(A_{1},A_2,\dots,A_{n}\\) being a partition of sample space. Hence, applying the third axioms of probability, we have:
+    \\[P(B\cap A_i) = \sum _{i=1}^{n} P(B\cap A_i) = \sum _{i=1}^{n} P(B\|A_i)P(A_i)\\]
+    For the last eqaulity we have used the conditional probabilit rule. 
   </details>
 * **Bayes Rule.**
 * **Random Variables.** A random variable (r.v.) \\(X: \Omega\rightarrow \mathbb{R}\\) is a function from the sample space to the real line.
