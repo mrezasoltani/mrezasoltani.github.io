@@ -37,11 +37,11 @@ Here, we review most important concepts in the probability theory without mathem
 
   The relation between sets \\(\Omega\\), \\(B\\), \\(A_i\\)'s in the Law of Total Probability is illustrated in the following figure:
     <p align="center">
-            <img width="600" alt="Screenshot 2023-07-30 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/40958e51-1fb0-47f3-a83a-cb522321144a">
+            <img width="600" alt="Screenshot 2023-07-30 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/7738d6f3-301a-4d38-acdd-7d4bf15b0147">
     <br>
             <em>Google search result for the query "ml dl ai data science data engineering".</em>
     </p>
-
+    
   <details>
   <summary>Proof</summary>
     
