@@ -62,7 +62,7 @@ Here, we review most important concepts in the probability theory without mathem
     - **Cumulative distribution function (cdf).** We define a cdf of a r.v. as \\(Pr(x) = Pr_X(x) =  Pr(X\leq x) = \sum _{\alpha \in \Omega, \alpha\leq x} P(\alpha)\\). From this definition, we immediately see that \\(Pr(\alpha \leq X \leq \beta) = Pr(\beta) - Pr(\alpha)\\).
     - The cdf is a monotonically increasing function, and is always continuous **_only_** from the right.
     - Assume that a r.v. \\(X\\) can have \\(K\\) values as \\(\\{1,2,\dots,K\\}\\). Then the Bayes rule is given by:
-      \\[P(X=i\|B) = \frac{P(B\|X=i)P(X=i)}{P(B)} = \frac{P(B\|X=i)P(X=i)}{sum _{k=1}^{K} P(B\|X=k)P(X=k)}\\]
+      \\[P(X=i\|B) = \frac{P(B\|X=i)P(X=i)}{P(B)} = \frac{P(B\|X=i)P(X=i)}{\sum _{k=1}^{K} P(B\|X=k)P(X=k)}\\]
     - \\(P(X=i\|B)\\) is called the _Posterior probability_. \\(P(B\|X=i)\\) is called the _Likelihood_,\\(P(X=i)\\) is the _Prior Probability_, and \\(P(B)\\) is the _Normalization Constant (Marginal Likelihood)_.
   - **Continuous random variables.** If the sample space \\(\Omega\\) over which a random variable \\(X\\) is defined is infinite (e.g., \\(\mathbb{R}\\)), then \\(X\\) is called a Continuous random variable. Here, we cannot consider a set of finite/countable values for \\(X\\). However, we can choose a set of intervals in \\(\mathbb{R}\\), for example, and define the probability of \\(X\\) taking on a specific value by infinitesimal interval containing that value.
     - **Probability density function (pdf)** For the a continuous r.v., we can define the pdf as \\(p(x)=\frac{dPr(x)}{dx}\\), assuming this derivative exists. 
@@ -71,7 +71,7 @@ Here, we review most important concepts in the probability theory without mathem
     - If the above interval is an infinitesimal interval, from calculus, \\(Pr(x \leq X \leq x+\Delta x) \approx p(x)dx\\). So, the product of the density at \\(x\\) and the width of the intervalt gives he probability of \\(X\\) being in a small interval around \\(x\\).
     - The cdf is a monotonically increasing function and for a continuous r.v. is always a continuous function.
     - The Bayes rule is given by
-      \\[p(X=x\|B) = \frac{p(B\|X=x)p(X=x)}{p(B)} = \frac{p(B\|X=x)p(X=x)}{int _{x\in \Omega} p(B\|X=x)p(X=x)dx}\\]
+      \\[p(X=x\|B) = \frac{p(B\|X=x)p(X=x)}{p(B)} = \frac{p(B\|X=x)p(X=x)}{\int _{x\in \Omega} p(B\|X=x)p(X=x)dx}\\]
 * **Quantiles.**
 * **Moments of a Distribution**
   - * **Expectation (Mean).**
