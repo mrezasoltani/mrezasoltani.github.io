@@ -33,7 +33,7 @@ Here, we review most important concepts in the probability theory without mathem
 * **Conditional Independency.** If two events \\(A\\) and \\(B\\) are independent given another event \\(C\\), we say that \\(A\\) and \\(B\\) are _conditionally independent_ given \\(C\\), this is denoted by \\(A \perp B \| C \\). In this case, \\(P(A, B\|C) = P(A\|C)\cdot P(B\|C)\\). Many events are dependent on each other, but it is possible when a relevant information is known, then two event become independent.
 * **Law of Total Probability.**
 * **Bayes Rule.**
-* **Random Variable.** A random variable (r.v.) \\(X: \Omega\rightarrow \mathbb{R}\\) is a function from the sample space to the real line.
+* **Random Variables.** A random variable (r.v.) \\(X: \Omega\rightarrow \mathbb{R}\\) is a function from the sample space to the real line.
   - **Discrete random variables.** If the sample space \\(\Omega\\) over which a random variable \\(X\\) is defined is finite or countably infinite, then \\(X\\) is called a discrete random variable. Any possible realization of \\X\\) is an event, hence, the probability of the event that \\(X\\) has value \\(x\\) is given by \\(P(X=x)\\) (Most of the time for simplicity of notation, we write \\(P(x)\\)).
     - \\(P(x)\\) is called **probability mass function (pmf)** and satisfies the following conditions:
      - \\(0 \leq P(x) \leq 1\\)
@@ -46,6 +46,6 @@ Here, we review most important concepts in the probability theory without mathem
       \\[Pr(\alpha \leq X \leq \beta) = Pr(\beta) - Pr(\alpha) = \int _{\alpha}^{\beta}p(u)du \\]
     - If the above interval is an infinitesimal interval, from calculus, \\(Pr(x \leq X \leq x+\Delta x) \approx p(x)dx\\). So, the product of the density at \\(x\\) and the width of the intervalt gives he probability of \\(X\\) being in a small interval around \\(x\\).
     - The cdf is a monotonically increasing function and for a continuous r.v. is always continuous from the right.
-* **Quantile.**
+* **Quantiles.**
 * **Moments of a Distribution**
   - * **Expectation (Mean).**
