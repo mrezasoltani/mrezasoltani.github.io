@@ -41,7 +41,7 @@ Here, we review most important concepts in the probability theory without mathem
         B = B\cap\Omega = B\cap(\cup _{i=1}^n A_i ) = \cup _{i=1}^n(B\cap A_i)
       \end{equation}
   
-      We note that \(B\cap A_i, ~i=1,2,\ldots,n\) are disjoint events by the assumption on \(A_1, A_2,\ldots, A_{n}\) being a partition of the sample space. Hence, applying the third axioms of probability, we have:
+      We note that \(B\cap A_i, ~i=1,2,\ldots,n\) are disjoint events by the assumption on \(A_1, A_2,\ldots, A_{n}\) being a partition of the sample space. Hence, applying the third axiom of probability, we have:
   
       \begin{equation}
       P(B\cap A_i)= \sum _{i=1}^{n} P(B\cap A_i) = \sum _{i=1}^{n} P(B|A_i)P(A_i)
@@ -71,7 +71,7 @@ Here, we review most important concepts in the probability theory without mathem
     - If the above interval is an infinitesimal interval, from calculus, \\(Pr(x \leq X \leq x+\Delta x) \approx p(x)dx\\). So, the product of the density at \\(x\\) and the width of the intervalt gives he probability of \\(X\\) being in a small interval around \\(x\\).
     - The cdf is a monotonically increasing function and for a continuous r.v. is always a continuous function.
     - The Bayes rule is given by
-      \\[p(X=x\|B) = \frac{p(B\|X=x)p(X=x)}{p(B)} = \frac{p(B\|X=x)p(X=x)}{int _{x\in \Omega} p(B\|X=x)p(X=x)dx\\]
+      \\[p(X=x\|B) = \frac{p(B\|X=x)p(X=x)}{p(B)} = \frac{p(B\|X=x)p(X=x)}{int _{x\in \Omega} p(B\|X=x)p(X=x)dx}\\]
 * **Quantiles.**
 * **Moments of a Distribution**
   - * **Expectation (Mean).**
