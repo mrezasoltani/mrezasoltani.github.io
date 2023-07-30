@@ -5,12 +5,11 @@ classes: wide
 ---
 
 I am currently a Principal Data Scientist at Fidelity Investments, working on speech and text data to design a conversational
-AI technology. Previously, I was a Speech Research Scientist in 3M/M*Modal, where I was part of the
-research and development group for speech enhancement and recognition for medical applications. Before
-joining 3M/M*Modal, I was a Postdoctoral Associate in the Department of Electrical and Computer
+AI technology. Previously, I was a Speech Research Scientist in 3M/M*Modal, where I was part of the research and development group for speech enhancement and recognition for medical applications. Before that 
+I was a Postdoctoral Associate in the Department of Electrical and Computer
 Engineering (ECE) at Duke University, where I was working with Prof. Vahid Tarokh. I obtained my
 Ph.D. degree in Electrical and Computer Engineering (ECE) from Iowa State University (ISU) under the
-supervision of Dr. Chinmay Hegde. 
+supervision of Dr. Chinmay Hegde.
 
 My research interests lie in the intersection of machine/deep learning, statistics, signal processing, and
 computational mathematics. In my postdoc, I was working on different projects, including deep neural
