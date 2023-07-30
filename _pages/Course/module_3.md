@@ -13,7 +13,7 @@ classes: wide
   2. **Aleatoric (Data) Uncertainty.** The uncertainty is due to the intrinsic variability in the data and cannot be reduced even more collection of data. This is derived from the Latin word for “dice”.
 
 ## Informal Review of Some Concepts
-Here, we review most important concepts in the probability theory without mathematical rigorous. Later, we make these concepts more formal by defining them by the language of Measure Theory.
+Here, we review most important concepts in the probability theory without mathematical rigorous. Later, we make these concepts more formal by defining them using  the language of Measure Theory.
 * **Sample Space.** Set of all possible outcomes in a random experiment is called _sample space_ and denoted by \\(\Omega\\). For example, in rolling a die, there are \\(6\\) possible outcomes, so \\(\Omega = \\{1,2,3,4,5,6\\}\\). An outcome is an element of a sample space, e.g., \\(\omega = 3\\). This example shows a discrete sample space. A sample space can also be a continous space. For example, consider waiting time for arrving a bus is a random experiment. An outcome is any non-negative real number. 
 * **Event.** A subset of the sample space is an _event_, i.e., \\(A\subseteq \Omega\\). For example, in the rolling of a die, an event can be defined as _facing an odd number_, i.e., \\(A=\\{1,3,5\\}\\). For a sample space with \\(n\\) outcomes, we can have \\(2^n\\) events.
 * **Probability.** Informally, a probability is a measure from the set of events to the real numbers in \\(\[0,1\]\\) such that:
@@ -32,7 +32,11 @@ Here, we review most important concepts in the probability theory without mathem
 * **Conditional Probability.** The conditional probability of happening an event \\(A\\) given that another event \\(B\\) has occurred is given by \\(P(A\|B) = \frac{p(A, B)}{p(B)}, ~ P(B)\neq 0\\).
 * **Conditional Independency.** If two events \\(A\\) and \\(B\\) are independent given another event \\(C\\), we say that \\(A\\) and \\(B\\) are _conditionally independent_ given \\(C\\), this is denoted by \\(A \perp B \| C \\). In this case, \\(P(A, B\|C) = P(A\|C)\cdot P(B\|C)\\). Many events are dependent on each other, but it is possible when a relevant information is known, then two event become independent.
 * **Random Variable.** A random variable (r.v.) \\(X: \Omega\rightarrow \mathbb{R}\\) is a function from the sample space to the real line.
-  - **Discrete random variables.** If the sample space X is finite or countably infinite, then X is called a discrete random variable. In this case, we denote the probability of the event that X has value x
-  - **Continious random variables.**
-* **Expectation.**
-* **Variance.**
+  - **Discrete random variables.** If the sample space \\(\Omega\\ over which a random variable \\(X\\) is defined is finite or countably infinite, then \\(X\\ is called a discrete random variable. Any possible realization of \\X\\) is an event, hence, the probability of the event that \\(X\\) has value \\(x\\) is given by \\(P(X=x)\\) (Most of the time for simplicity of notation, we write \\(P(x)\\)).
+    - \\(P(x)\\) is called **probability mass function (pmf)** and satisfies the following conditions:
+     - \\(0 \leq P(x) \leq 1\\)
+     - \\(\sum _{x\in \Omega}P(x) = 1\\)
+    - **Cumulative distribution function (cdf).** We define a cdf of a r.v. as \\(Pr_X(x) =  Pr(X\leq x) = \sum _{\alpha \in X, \alpha\leq x} P(\alpha)\\).
+  - **Continious random variables.** If the sample space \\(\Omega\\ over which a random variable \\(X\\) is defined is infinit (e.g., \\(mathbb{R}\\), then \\(X\\ is called a Continious random variable. Here, we cannot consider a set of finit/countable values for \\(X\\). However, we can choose a set of inervals in \\mathbb{R}, for example, and define the probability of \\(X\\) taking on a specific value by infinitesimal interval containing that value.
+* **Moments of a Distribution**
+  - * **Expectation (Mean).**
