@@ -34,10 +34,18 @@ Here, we review most important concepts in the probability theory without mathem
 * **Conditional Independency.** If two events \\(A\\) and \\(B\\) are independent given another event \\(C\\), we say that \\(A\\) and \\(B\\) are _conditionally independent_ given \\(C\\), this is denoted by \\(A \perp B \| C \\). In this case, \\(P(A, B\|C) = P(A\|C)\cdot P(B\|C)\\). Many events are dependent on each other, but it is possible when a relevant information is known, then two event become independent.
 * **Law of Total Probability.** Let \\(A_{1},A_2,\dots,A_{n}\\) be a partition of sample space \\(\Omega\\). That is, \\(\cup _{i=1}^n A_i = \Omega, ~ A_i\cap A_j =0, ~ \forall ~ 0\leq i,j\leq n\\). Then for any set \\(B\subseteq\Omega\\), we have:
   \\[P(B) = \sum _{i=1}^{n} P(B\|A_i)P(A_i)\\]
+
+  The relation between sets \\(\Omega\\), \\(B\\), \\(A_i\\)'s in the Law of Total Probability is illustrated in the following figure:
+    <p align="center">
+            <img width="600" alt="Screenshot 2023-07-30 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/40958e51-1fb0-47f3-a83a-cb522321144a">
+    <br>
+            <em>Google search result for the query "ml dl ai data science data engineering".</em>
+    </p>
+
   <details>
   <summary>Proof</summary>
     
-      we have: 
+      We have: 
       \begin{equation}
         B = B\cap\Omega = B\cap(\cup _{i=1}^n A_i ) = \cup _{i=1}^n(B\cap A_i)
       \end{equation}
