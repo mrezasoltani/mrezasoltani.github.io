@@ -14,7 +14,8 @@ classes: wide
     3. K. Murthy, Machine Learning: A Probabilistic Perspective, 2012 ([link](https://probml.github.io/pml-book/book0.html))
     4. Hal Daumé III, A Course in Machine Learning, 2017 ([link](http://ciml.info/))
     5. K. Murthy, Probabilistic Machine Learning: An Introduction, 2022 ([link](https://probml.github.io/pml-book/book1.html))
-    6. K. Murthy, Probabilistic Machine Learning: Advanced Topics, 2023 ([link](https://probml.github.io/pml-book/book2.html))
+    6. A. Lindholm, Niklas Wahlström, F. Lindsten, T. Schön, Machine Learning, A First Course for Engineers and Scientists ([link](http://smlbook.org/book/sml-book-draft-latest.pdf))
+    7. K. Murthy, Probabilistic Machine Learning: Advanced Topics, 2023 ([link](https://probml.github.io/pml-book/book2.html))
 
 * **Programming:**
     1. C. Russell Severance Python for Everybody: Exploring Data in Python 3, 2016 ([link](http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf))
