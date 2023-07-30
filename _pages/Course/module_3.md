@@ -37,8 +37,9 @@ Here, we review most important concepts in the probability theory without mathem
      - \\(0 \leq P(x) \leq 1\\)
      - \\(\sum _{x\in \Omega}P(x) = 1\\)
     - **Cumulative distribution function (cdf).** We define a cdf of a r.v. as \\(Pr(x) = Pr_X(x) =  Pr(X\leq x) = \sum _{\alpha \in \Omega, \alpha\leq x} P(\alpha)\\). From this definition, we immidiately see that \\(Pr(\alpha \leq x \leq \beta) = Pr(\beta) - P(\alpha)\\).
-  - **Continious random variables.** If the sample space \\(\Omega\\) over which a random variable \\(X\\) is defined is infinit (e.g., \\(\mathbb{R}\\), then \\(X\\) is called a Continious random variable. Here, we cannot consider a set of finit/countable values for \\(X\\). However, we can choose a set of inervals in \\(\mathbb{R}\\), for example, and define the probability of \\(X\\) taking on a specific value by infinitesimal interval containing that value.
+  - **Continious random variables.** If the sample space \\(\Omega\\) over which a random variable \\(X\\) is defined is infinit (e.g., \\(\mathbb{R}\\)), then \\(X\\) is called a Continious random variable. Here, we cannot consider a set of finit/countable values for \\(X\\). However, we can choose a set of inervals in \\(\mathbb{R}\\), for example, and define the probability of \\(X\\) taking on a specific value by infinitesimal interval containing that value.
     - **Probability density function (pdf)** For the a continious r.v., we can define the pdf as \\(p(x)=\frac{dPr(x)}{dx}\\), assuming this derivative exists. 
-    - Simialr to the discrete case, the cdf function for a continious r.v. is defined by \\(Pr(x) = Pr_X(x) =  Pr(X\leq x) = \int _{u \in \Omega} p(u)du\\), where \\(p(u)\\) is the probability density function (pdf).
+    - Simialr to the discrete case, the cdf function for a continious r.v. is defined by \\(Pr(x) = Pr_X(x) =  Pr(X\leq x) = \int _{u \in \Omega, u\leq x} p(u)du\\), where \\(p(u)\\) is the probability density function (pdf). If \\(\Omega = \mathbb{R}\\), then \\(Pr(x) = \int _{-\infty}^{x}p(u)du\\).
+    - The cdf is monotonically increasing function and for a continuous r.v. is always continuous from the right.
 * **Moments of a Distribution**
   - * **Expectation (Mean).**
