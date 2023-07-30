@@ -41,18 +41,19 @@ Here, we review most important concepts in the probability theory without mathem
         B = B\cap\Omega = B\cap(\cup _{i=1}^n A_i ) = \cup _{i=1}^n(B\cap A_i)
       \end{equation}
   
-      We note that \(B\cap A_i\) are disjoint events by the auumption on \(A_1, A_2,\ldots, A_{n}\) being a partition of the sample space. Hence, applying the third axioms of probability, we have:
+      We note that \(B\cap A_i, ~i=1,2,\ldots,n\) are disjoint events by the assumption on \(A_1, A_2,\ldots, A_{n}\) being a partition of the sample space. Hence, applying the third axioms of probability, we have:
   
       \begin{equation}
       P(B\cap A_i)= \sum _{i=1}^{n} P(B\cap A_i) = \sum _{i=1}^{n} P(B|A_i)P(A_i)
       \end{equation}
   
-      For the last eqaulity we have used the conditional probabilit rule. \(\blacksquare\)
+      For the last equality we have used the conditional probability rule. \(\blacksquare\)
    
   </details>
   
-* **Bayes Rule (Bayes’ theorem).** Let \\(A\\) and \\(B\\) be two events with positive probabilities, i.e., \\(P(A)>0\\) and \\(P(B) >0\\). From the definition of conditional probability, we can derive Bayes’ rule:
+* **Bayes Rule (Bayes’ Theorem).** Let \\(A\\) and \\(B\\) be two events with positive probabilities, i.e., \\(P(A)>0\\) and \\(P(B) >0\\). From the definition of conditional probability, we can derive Bayes’ rule:
   \\[P(A\|B) = \frac{P(B\|A)\cdot P(A)}{P(B)}\\]
+  
 * **Random Variables.** A random variable (r.v.) \\(X: \Omega\rightarrow \mathbb{R}\\) is a function from the sample space to the real line.
   - **Discrete random variables.** If the sample space \\(\Omega\\) over which a random variable \\(X\\) is defined is finite or countably infinite, then \\(X\\) is called a discrete random variable. Any possible realization of \\X\\) is an event, hence, the probability of the event that \\(X\\) has value \\(x\\) is given by \\(P(X=x)\\) (Most of the time for simplicity of notation, we write \\(P(x)\\)).
     - \\(P(x)\\) is called **probability mass function (pmf)** and satisfies the following conditions:
@@ -60,12 +61,17 @@ Here, we review most important concepts in the probability theory without mathem
      - \\(\sum _{x\in \Omega}P(x) = 1\\)
     - **Cumulative distribution function (cdf).** We define a cdf of a r.v. as \\(Pr(x) = Pr_X(x) =  Pr(X\leq x) = \sum _{\alpha \in \Omega, \alpha\leq x} P(\alpha)\\). From this definition, we immediately see that \\(Pr(\alpha \leq X \leq \beta) = Pr(\beta) - Pr(\alpha)\\).
     - The cdf is a monotonically increasing function, and is always continuous **_only_** from the right.
+    - Assume that a r.v. \\(X\\) can have \\(K\\) values as \\(\\{1,2,\dots,K\\}\\). Then the Bayes rule is given by:
+      \\[P(X=i\|B) = \frac{P(B\|X=i)P(X=i)}{P(B)} = \frac{P(B\|X=i)P(X=i)}{sum _{k=1}^{K} P(B\|X=k)P(X=k)}\\]
+    - \\(P(X=i\|B)\\) is called the _Posterior probability_. \\(P(B\|X=i)\\) is called the _Likelihood_,\\(P(X=i)\\) is the _Prior Probability_, and \\(P(B)\\) is the _Normalization Constant (Marginal Likelihood)_.
   - **Continuous random variables.** If the sample space \\(\Omega\\) over which a random variable \\(X\\) is defined is infinite (e.g., \\(\mathbb{R}\\)), then \\(X\\) is called a Continuous random variable. Here, we cannot consider a set of finite/countable values for \\(X\\). However, we can choose a set of intervals in \\(\mathbb{R}\\), for example, and define the probability of \\(X\\) taking on a specific value by infinitesimal interval containing that value.
     - **Probability density function (pdf)** For the a continuous r.v., we can define the pdf as \\(p(x)=\frac{dPr(x)}{dx}\\), assuming this derivative exists. 
     - Similar to the discrete case, the cdf function for a continuous r.v. is defined by \\(Pr(x) = Pr_X(x) =  Pr(X\leq x) = \int _{u \in \Omega, u\leq x} p(u)du\\), where \\(p(u)\\) is the probability density function (pdf). If \\(\Omega = \mathbb{R}\\), then \\(Pr(x) = \int _{-\infty}^{x}p(u)du\\). From this, we can compute the probability of a continuous variable being in a finite interval \\(\[\alpha, \beta\]\\) as follows:
       \\[Pr(\alpha \leq X \leq \beta) = Pr(\beta) - Pr(\alpha) = \int _{\alpha}^{\beta}p(u)du \\]
     - If the above interval is an infinitesimal interval, from calculus, \\(Pr(x \leq X \leq x+\Delta x) \approx p(x)dx\\). So, the product of the density at \\(x\\) and the width of the intervalt gives he probability of \\(X\\) being in a small interval around \\(x\\).
     - The cdf is a monotonically increasing function and for a continuous r.v. is always a continuous function.
+    - The Bayes rule is given by
+      \\[p(X=x\|B) = \frac{p(B\|X=x)p(X=x)}{p(B)} = \frac{p(B\|X=x)p(X=x)}{int _{x\in \Omega} p(B\|X=x)p(X=x)dx\\]
 * **Quantiles.**
 * **Moments of a Distribution**
   - * **Expectation (Mean).**
