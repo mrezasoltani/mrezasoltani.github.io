@@ -25,5 +25,5 @@ classes: wide
 * **Joint Probability.** A joint probability of happening two events \\(A\\) and \\(B\\) is defined as \\(P(A\cup B)\\).
 * **Independency.** If two events \\(A\\) and \\(B\\) are independent, then their join probability is given by their product, i.e., \\(P(A\cup B) = P(A)P(B)\\). This means that occurring the event \\(A\\) does not have any effect in happening or not happening of the event \\(B\\). For example, consider a random experiment defined as follows: choosing two numbers unformly at random from a set \\(X\\{1,2,3,4\\}\\). Let \\(A\\) be an event that the first number belongs to the set \\(\\{3\\}\\), and \\(B\\) be an event that the second number belongs to the set \\(\\{1, 2, 4\\}\\), then these two event are independent from each other; hence, \\(P(A\cup B) = P(A)P(B) = \frac{1}{4]\frac{2}{4} = \frac{1}{8}\\).
     It is very important to note that in independency of two events does not imply their mutually exclusive and vice versa. 
-* **Conditional Probability.**
+* **Conditional Probability.** The conditional probability of happening an event \\(A\\) given that another event \\(B\\) has occurred is give by \\(P(A\|B) = \frac{p(A, B)}{p(b)}\\)
 * **Conditional Independency.**
