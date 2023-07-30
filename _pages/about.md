@@ -33,8 +33,7 @@ models for real-time applications such as object detection in videos.
 
 In addition to doing research, I have a valuable experience in mentoring both undergrad and grad students
 for their class projects and master/Ph.D. thesis. I have also taught a variety of courses. In particular, 
-I am teaching a machine learning course as a AI mentor program in Fidelity.  
-During my postdoc at Duke, I was also an instructor for the Multivariable Calculus course in the Department of Mathematics and the head TA for courses such as Signal and Systems, and Advanced/Introductory
+I am teaching a machine learning course as a AI mentor program in Fidelity. During my postdoc at Duke, I was also an instructor for the Multivariable Calculus course in the Department of Mathematics and the head TA for courses such as Signal and Systems, and Advanced/Introductory
 course in Deep Learning in the ECE Department. Moreover, in my graduate studies, I have served as
 a teaching assistant for courses such as Signal and Systems, Deep Learning, and Electrical/Electronics
 Circuits. Via this opportunity, I have gained a great experience in interacting with and mentoring young
