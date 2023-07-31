@@ -112,7 +112,7 @@ Here, we review most important concepts in the probability theory without mathem
 
   \begin{equation}
       \begin{aligned}
-        p(x_i) = \sum _{\mathbf{x}} p(x_1, x_2, \ldots, x_n)
+        p(x_i) = \sum _{\mathbf{x}}_{-i} p(x_1, x_2, \ldots, x_n)
       \end{aligned}
   \end{equation}
 
