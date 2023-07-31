@@ -83,13 +83,13 @@ Here, we review most important concepts in the probability theory without mathem
               0.27, & x=2  \\\\\\\\
               0.24, & x=3  \\\\\\\\
               0.28, & x=4  \\\\\\\\
-              0, & O.W.
+              0, & o.w
             \end{cases}
         \end{aligned}
         \end{equation}
     
         <p align="center">
-            <img width="400" alt="Screenshot 2023-07-30 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/a4fb0f96-6142-4eaf-ae96-494613b7bdca">
+            <img width="600" alt="Screenshot 2023-07-30 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/a4fb0f96-6142-4eaf-ae96-494613b7bdca">
         <br>
           <em>PMF and CDF of a categorical random variable.</em>
         </p>
