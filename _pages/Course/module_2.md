@@ -1,5 +1,5 @@
 ---
-title: "Module 2 -- Linear Algebra"
+title: "Module 3 -- Linear Algebra"
 classes: wide
 ---
 
