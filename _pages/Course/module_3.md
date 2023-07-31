@@ -89,7 +89,7 @@ Here, we review most important concepts in the probability theory without mathem
         \end{equation}
     
         <p align="center">
-            <img width="900" alt="Screenshot 2023-07-30 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/a4fb0f96-6142-4eaf-ae96-494613b7bdca">
+            <img width="1000" alt="Screenshot 2023-07-30 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/a4fb0f96-6142-4eaf-ae96-494613b7bdca">
         <br>
           <em>PMF and CDF of a categorical random variable.</em>
         </p>
@@ -104,7 +104,7 @@ Here, we review most important concepts in the probability theory without mathem
       \\[p(X=x\|B) = \frac{p(B\|X=x)p(X=x)}{p(B)} = \frac{p(B\|X=x)p(X=x)}{\int _{x\in \Omega} p(B\|X=x)p(X=x)dx}\\]
     - The following figures show the pdf and cdf of a standard Gaussian random variable, \\(\mathcal{N}(0,1)\\).
         <p align="center">
-            <img width="400" alt="Screenshot 2023-07-30 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/75016f02-6145-4625-8172-235bd2dbf811">
+            <img width="500" alt="Screenshot 2023-07-30 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/75016f02-6145-4625-8172-235bd2dbf811">
         <br>
           <em>PDf and CDF of a standard Gaussian random variable.</em>
         </p>
