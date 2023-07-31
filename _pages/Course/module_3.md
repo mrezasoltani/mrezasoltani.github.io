@@ -115,4 +115,4 @@ Here, we review most important concepts in the probability theory without mathem
     - The value \\(P^{-1}(0.5)\\) is _the median of a distribution_. The median is the point where half of the probability mass is on the left, and half on the right.
     - The values \\(P^{-1}(0.25)\\) and \\(P^{-1}(0.75)\\) are the lower and upper quartiles.
 * **Moments of a Distribution**
-  - * **Expectation (Mean).**
+  - **Expectation (Mean).**
