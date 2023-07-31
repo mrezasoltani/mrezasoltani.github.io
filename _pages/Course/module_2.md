@@ -495,10 +495,10 @@ where \\(\mathrm{U} \in \mathbb{R}^{m\times m}\\) is orthogonal matirx stacking 
       | & | & \ldots & |
     \end{bmatrix}
     \begin{bmatrix}
-        \sigma_1 & 0 & 0 & \ldots & 0 & 0\\\\\\\\
-        0 & \sigma_2 & 0 & \ldots & 0 & 0\\\\\\\\
-        \vdots & \vdots & \ddots & \vdots & \vdots & vdots \\\\\\\\
-        0 & 0 & \ldots & \sigma_m & \ldots & 0
+        \sigma_1 & 0 & 0 & \ldots & 0 & \dots & 0\\\\\\\\
+        0 & \sigma_2 & 0 & \ldots & 0 & \ldots & 0\\\\\\\\
+        \vdots & \vdots & \ddots & \vdots & \vdots & \ddots & 0\\\\\\\\
+        0 & 0 & \ldots & \sigma_m & 0 & \ldots & 0
     \end{bmatrix}
     \begin{bmatrix}
       ---  & \mathrm{V_1}^T & ---  \\\\\\\\
