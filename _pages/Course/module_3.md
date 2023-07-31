@@ -83,7 +83,7 @@ Here, we review most important concepts in the probability theory without mathem
               0.27, & x=2  \\\\\\\\
               0.24, & x=3  \\\\\\\\
               0.28, & x=4  \\\\\\\\
-              0, & o.w
+              0.0, & o.w
             \end{cases}
         \end{aligned}
         \end{equation}
@@ -112,7 +112,7 @@ Here, we review most important concepts in the probability theory without mathem
 
   \begin{equation}
       \begin{aligned}
-        p(x_i) = \sum _{\mathbf{x}_-i} p(x_1, x_2, \ldots, x_n)
+        p(x_i) = \int _{\mathbf{x}_i} p(x_1, x_2, \ldots, x_n)d\mathbf{x _{-i}} = \sum _{\mathbf{x} _{-i}} p(x_1, x_2, \ldots, x_n)
       \end{aligned}
   \end{equation}
   - This is also called _**sum rule**_ or the _**rule of total probability**_.
