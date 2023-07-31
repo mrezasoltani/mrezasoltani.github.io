@@ -111,10 +111,11 @@ Here, we review most important concepts in the probability theory without mathem
 * **Marginalization.** Given a joint pdf (pmf) of \\(n\\) random variables, we can obtain pdf (pmf) of one or other number of variables through marginalization, that is
     \begin{equation}
         \begin{aligned}
-        p(x_i) = \int _{\mathbf{x} _{-i}} p(x_1, x_2, \ldots, x_n)d\mathbf{x _{-i}} & \text{or} p(x_i)\sum _{\mathbf{x} _{-i}} p(x_1, x_2, \ldots, x_n)
-    \end{aligned}
-        \end{equation}
+        p(x_i) = \int _{\mathbf{x} _{-i}} p(x_1, x_2, \ldots, x_n)d\mathbf{x _{-i}} ~~ \text{or} ~~ p(x_i)\sum _{\mathbf{x} _{-i}} p(x_1, x_2, \ldots, x_n)
+        \end{aligned}
+    \end{equation}
   - This is also called _**sum rule**_ or the _**rule of total probability**_.
+  - Please note that in the above integral, we take inegral over \\(n-1\\) variables (all but \\(x_i\\)) denoted by vector \\(\mathbf{x_{-i}}\\). So, this is mutlple inegral.
   
 * **Chain Rule.** A very important result in probability is _Chain Rule_:
   \\[p(x_1, x_2, \ldots, x_n) = p(x_1)p(x_2 \| x_1)p(x_3 \| x_1, x_2)\ldots p(x_n\|x_1,x_2,\ldots,x_{n-1})\\]
