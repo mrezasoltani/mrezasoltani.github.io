@@ -108,17 +108,24 @@ Here, we review most important concepts in the probability theory without mathem
         <br>
           <em>PDf and CDF of a standard Gaussian random variable.</em>
         </p>
+* **Independent and Identically Distributed (IID) Random Variables.** A set of random variables is said to be iid if they are mutually independent of each other and are drawn from the same probability distribution. We denoted \\(n\\) iid random variables drawn from a distribution \\(p\) as \\(x_1, x_2, \ldots, x_n \sim p\\).
 * **Marginalization.** Given a joint pdf (pmf) of \\(n\\) random variables, we can obtain pdf (pmf) of one or other number of variables through marginalization, that is
     \begin{equation}
         \begin{aligned}
-        p(x_i) = \int _{\mathbf{x} _{-i}} p(x_1, x_2, \ldots, x_n)d\mathbf{x _{-i}} ~~ \text{or} ~~ p(x_i)\sum _{\mathbf{x} _{-i}} p(x_1, x_2, \ldots, x_n)
+        p(x_i) = \int _{\mathbf{x} _{-i}} p(x_1, x_2, \ldots, x_n)d\mathbf{x _{-i}} ~~ \text{or} ~~ p(x_i) = \sum _{\mathbf{x} _{-i}} p(x_1, x_2, \ldots, x_n)
         \end{aligned}
     \end{equation}
   - This is also called _**sum rule**_ or the _**rule of total probability**_.
-  - Please note that in the above integral, we take inegral over \\(n-1\\) variables (all but \\(x_i\\)) denoted by vector \\(\mathbf{x_{-i}}\\). So, this is mutlple inegral.
+  - Please note that in the above integral, we take integral over \\(n-1\\) variables (all but \\(x_i\\)) denoted by vector \\(\mathbf{x_{-i}}\\). So, this is a multiple integral problem.
   
 * **Chain Rule.** A very important result in probability is _Chain Rule_:
   \\[p(x_1, x_2, \ldots, x_n) = p(x_1)p(x_2 \| x_1)p(x_3 \| x_1, x_2)\ldots p(x_n\|x_1,x_2,\ldots,x_{n-1})\\]
+
+* **Exchangability.** Consider a sequence of random variables \\(x_1, x_2, \ldots, x_n\\). If for any \\(n\\), the joint probability of these r.v.'s is invariant to permutation of indices, then the sequence is said to be _infinitely exchangeable_. That is, \\(p(x_1, x_2, \ldots, x_n) = p(x_{\pi_1}, x_{\pi_2}, \ldots, x_{\pi_n})~\\), where \\(\pi\\) is a permutation of the index set \\(\\{1,2,\ldots,n\\}\\). The following theorem states the condition for exchangeability (here we state the theorem for continuous r.v.'s, but the same thing is true for discrete case).
+ - **De Finetti’s Theorem.** A sequence of random variables \\(x_1, x_2, \ldots, x_n\\) is infinitely exchangeable if and only if, for all \\(n\\),
+   \\[p(x_1, x_2, \ldots, x_n) = \int \prod _{i=1}^n p(x_i\|\mathbf{theta})p(\mathbf{theta})d\mathbf{theta}\\]
+   - where \\(\mathbf{theta}\\) is some hidden random variable (possibly infinite dimensional) which is common to all variables. This means that is, \\(x_1, x_2, \ldots, x_n\\) are iid r.v.'s conditional on \\(\mathbf{theta}\\).
+
 * **Quantiles.**
   - If the cdf is strictly monotonically increasing, then it is invertible and its inverse is called the _**inverse cdf, or percent point function (ppf), or quantile function**_.
   - The \\(q^{th}\\) quantile of the cdf of a random variable \\(X\\) denoted by \\(x_q\\) and is defined by \\(P^{-1}(q)\\) where \\( Pr(X \leq x_q) = q \\).
