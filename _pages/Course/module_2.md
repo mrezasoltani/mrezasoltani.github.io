@@ -509,6 +509,6 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 \end{aligned}
 \end{equation}
 
-Here, matrices \\(U\\) and \\(V\\) are as before, but the matrix \\(\Sigma \in \mathbb{R}^{m\times n}\\) is consist of a diagonal matrix up to column \\(m\\), including singular value, and \\(m \times (n-m)\\) zero-matrix as the rest of its columns.
+  - Here, matrices \\(U\\) and \\(V\\) are as before, but the matrix \\(\Sigma \in \mathbb{R}^{m\times n}\\) is consist of a diagonal matrix up to column \\(m\\), including singular value, and \\(m \times (n-m)\\) zero-matrix as the rest of its columns.
 
 ## Vector/Matrix Calculus
