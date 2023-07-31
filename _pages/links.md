@@ -44,6 +44,7 @@ classes: wide
     17. A blog about DL methods in Speech by Loren Lugosch ([link](https://lorenlugosch.github.io/posts/2020/11/transducer/))
     18. A blog about transformers by Jonathan Bgn ([link](https://jonathanbgn.com/2021/06/29/illustrated-wav2vec.html))
     19. Jay Alammar's blog about BERT, GPT, etc ([link](https://jalammar.github.io/about/))
+    20. A blog about mathematical concepts in ML by Gregory Gundersen ([link](https://gregorygundersen.com/))
 
 * **Courses:**
   1. Andrew Ng, Machine Learning Specialization, 2012 ([link](https://www.deeplearning.ai/courses/machine-learning-specialization/))
