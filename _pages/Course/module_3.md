@@ -1,5 +1,5 @@
 ---
-title: "Module 2 -- Probability"
+title: "Module 3 -- Probability"
 classes: wide
 ---
 ## What Is Probability?
