@@ -95,6 +95,7 @@ Here, we review most important concepts in the probability theory without mathem
         </p>
 
   - **Continuous random variables.** If the sample space \\(\Omega\\) over which a random variable \\(X\\) is defined is infinite (e.g., \\(\mathbb{R}\\)), then \\(X\\) is called a Continuous random variable. Here, we cannot consider a set of finite/countable values for \\(X\\). However, we can choose a set of intervals in \\(\mathbb{R}\\), for example, and define the probability of \\(X\\) taking on a specific value by infinitesimal interval containing that value.
+  
     - **Probability density function (pdf)** For the a continuous r.v., we can define the pdf as \\(p(x)=\frac{dPr(x)}{dx}\\), assuming this derivative exists. 
     - Similar to the discrete case, the cdf function for a continuous r.v. is defined by \\(Pr(x) = Pr_X(x) =  Pr(X\leq x) = \int _{u \in \Omega, u\leq x} p(u)du\\), where \\(p(u)\\) is the probability density function (pdf). If \\(\Omega = \mathbb{R}\\), then \\(Pr(x) = \int _{-\infty}^{x}p(u)du\\). From this, we can compute the probability of a continuous variable being in a finite interval \\(\[\alpha, \beta\]\\) for some \\(\alpha,\beta \in \mathbb{R}\\) as follows:
       \\[Pr(\alpha \leq X \leq \beta) = Pr(\beta) - Pr(\alpha) = \int _{\alpha}^{\beta}p(u)du \\]
@@ -122,9 +123,9 @@ Here, we review most important concepts in the probability theory without mathem
   \\[p(x_1, x_2, \ldots, x_n) = p(x_1)p(x_2 \| x_1)p(x_3 \| x_1, x_2)\ldots p(x_n\|x_1,x_2,\ldots,x_{n-1})\\]
 
 * **Exchangability.** Consider a sequence of random variables \\(x_1, x_2, \ldots, x_n\\). If for any \\(n\\), the joint probability of these r.v.'s is invariant to permutation of indices, then the sequence is said to be _infinitely exchangeable_. That is, \\(p(x_1, x_2, \ldots, x_n) = p(x_{\pi_1}, x_{\pi_2}, \ldots, x_{\pi_n})~\\), where \\(\pi\\) is a permutation of the index set \\(\\{1,2,\ldots,n\\}\\). The following theorem states the condition for exchangeability (here we state the theorem for continuous r.v.'s, but the same thing is true for discrete case).
- - **De Finetti’s Theorem.** A sequence of random variables \\(x_1, x_2, \ldots, x_n\\) is infinitely exchangeable if and only if for all \\(n\\), we have
-   \\[p(x_1, x_2, \ldots, x_n) = \int \prod _{i=1}^n p(x_i\|\mathbf{\theta})p(\mathbf{\theta})d\bm{\theta}\\]
-   - where \\(\mathbf{\theta}\\) is some hidden random variable (possibly infinite dimensional) which is common to all variables. This means that is, \\(x_1, x_2, \ldots, x_n\\) are iid r.v.'s conditional on \\(\mathbf{\theta}\\).
+   - **De Finetti’s Theorem.** A sequence of random variables \\(x_1, x_2, \ldots, x_n\\) is infinitely exchangeable if and only if for all \\(n\\), we have
+   \\[p(x_1, x_2, \ldots, x_n) = \int \prod _{i=1}^n p(x_i\|\mathbf{\theta})p(\mathbf{\theta})d\pmb{\theta}\\]
+     - where \\(\mathbf{\theta}\\) is some hidden random variable (possibly infinite dimensional) which is common to all variables. This means that is, \\(x_1, x_2, \ldots, x_n\\) are iid r.v.'s conditional on \\(\mathbf{\theta}\\).
 
 * **Quantiles.**
   - If the cdf is strictly monotonically increasing, then it is invertible and its inverse is called the _**inverse cdf, or percent point function (ppf), or quantile function**_.
