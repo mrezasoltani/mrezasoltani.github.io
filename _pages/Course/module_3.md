@@ -109,9 +109,11 @@ Here, we review most important concepts in the probability theory without mathem
           <em>PDf and CDF of a standard Gaussian random variable.</em>
         </p>
 * **Marginalization.** Given a joint pdf (pmf) of \\(n\\) random variables, we can obtain pdf (pmf) of one or other number of variables through marginalization, that is
-
-        \\[p(x_i) = \int _{\mathbf{x} _{-i}} p(x_1, x_2, \ldots, x_n)d\mathbf{x _{-i}}~\\] or \\[~p(x_i)\sum _{\mathbf{x} _{-i}} p(x_1, x_2, \ldots, x_n)\\]
-
+    \begin{equation}
+        \begin{aligned}
+        p(x_i) = \int _{\mathbf{x} _{-i}} p(x_1, x_2, \ldots, x_n)d\mathbf{x _{-i}} & \text{or} p(x_i)\sum _{\mathbf{x} _{-i}} p(x_1, x_2, \ldots, x_n)
+    \end{aligned}
+        \end{equation}
   - This is also called _**sum rule**_ or the _**rule of total probability**_.
   
 * **Chain Rule.** A very important result in probability is _Chain Rule_:
