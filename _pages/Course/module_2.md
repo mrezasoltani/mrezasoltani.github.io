@@ -454,7 +454,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ## Singular Value Decomposition (SVD)
 * As oppeses to the EVD applicable to only special square matrices, the singular value decomposition (SVD) can be applied to all matrices and it always existsis and unique. That is why it is a central matrix decomposition method in linear algebra, and it has been referred to as the ``fundamental theorem of linear algebra” (Strang, 1993).
-* Let \\(X\\) be a \\(m\times n\\) matrix with rank \\(r)\\). Then the SVD of \\(X\\) for \\(m > n\\) (for tall matrices) is given by:
+* Let \\(X\\) be a \\(m\times n\\) matrix with rank \\(r\\). Then the SVD of \\(X\\) for \\(m \geq n\\) (for tall matrices) is given by:
   
 \begin{equation}
 \begin{aligned}
@@ -482,5 +482,31 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 \end{aligned}
 \end{equation}
 
-where \\(\mathrm{U} \in \mathbb{R}^{m\times m}\\) is orthogonal matirx stacking _left singlar vectors_ as its column, \\(\mathrm{V} \in \mathbb{R}^{n\times n}\\) is orthogonal matirx stacking _right singlar vectors_ as its rows, and \\(\Sigma \in \mathbb{R}^{m\times n}\\) is consist of a diagonal matrix up to row \\(n\\), and \\(m-n \times n\\) zero matrix (a matrix with all zero entries) as the rest of its rows. The non-zero entries are called _singula values_ and arranged as \\(\sigma_1\geq \sigma_2\geq\ldots\geq\sigma_r\\).
+where \\(\mathrm{U} \in \mathbb{R}^{m\times m}\\) is orthogonal matirx stacking _left singlar vectors_ as its column, \\(\mathrm{V} \in \mathbb{R}^{n\times n}\\) is orthogonal matirx stacking _right singlar vectors_ as its rows, and \\(\Sigma \in \mathbb{R}^{m\times n}\\) is consist of a diagonal matrix up to row \\(n\\), and \\(m-n \times n\\) zero matrix (a matrix with all zero entries) as the rest of its rows. The non-zero entries are called _singula values_ and arranged as \\(\sigma_1\geq \sigma_2\geq\ldots\geq\sigma_r\\) for \\(r\leq \min(m,n)\\).
+
+* The SVD for a fat matrix with \\(m\leq n\\) is given by:
+
+\begin{equation}
+\begin{aligned}
+  \mathrm{X} = \mathrm{U}\mathrm{\Sigma}\mathrm{V}^{T}=
+    \begin{bmatrix}
+      | & | & \ldots & | \\\\\\\\
+      \mathrm{U_1} & \mathrm{U_2} & \ldots & \mathrm{U_m} \\\\\\\\
+      | & | & \ldots & |
+    \end{bmatrix}
+    \begin{bmatrix}
+        \sigma_1 & 0 & 0 & \ldots & 0 & 0\\\\\\\\
+        0 & \sigma_2 & 0 & \ldots & 0 & 0\\\\\\\\
+        \vdots & \vdots & \ddots & \vdots & \vdots & vdots \\\\\\\\
+        0 & 0 & \ldots & \sigma_m & \ldots & 0
+    \end{bmatrix}
+    \begin{bmatrix}
+      ---  & \mathrm{V_1}^T & ---  \\\\\\\\
+      ---  & \mathrm{V_2}^T & ---  \\\\\\\\
+       & \vdots & \\\\\\\\
+      ---  & \mathrm{V_n}^T & --- 
+    \end{bmatrix}
+\end{aligned}
+\end{equation}
+
 ## Vector/Matrix Calculus
