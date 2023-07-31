@@ -73,6 +73,27 @@ Here, we review most important concepts in the probability theory without mathem
     - Assume that a r.v. \\(X\\) can have \\(K\\) values as \\(\\{1,2,\dots,K\\}\\). Then the Bayes rule is given by:
       \\[P(X=i\|B) = \frac{P(B\|X=i)P(X=i)}{P(B)} = \frac{P(B\|X=i)P(X=i)}{\sum _{k=1}^{K} P(B\|X=k)P(X=k)}\\]
     - \\(P(X=i\|B)\\) is called the _**Posterior Probability**_. \\(P(B\|X=i)\\) is called the _**Likelihood**_,\\(P(X=i)\\) is the _**Prior Probability**_, and \\(P(B)\\) is the _**Normalization Constant, Evidence, or Marginal Likelihood**_.
+     - The following figures show the pmf and cdf of a  a categorical random variable with the following pmf:
+   
+       \begin{equation}
+        \begin{aligned}
+          P(x) =
+            \begin{cases}
+              0.21, & x=1  \\\\\\\\
+              0.27, & x=2  \\\\\\\\
+              0.24, & x=3  \\\\\\\\
+              0.28, & x=4  \\\\\\\\
+              0, & O.W.
+            \end{cases}
+        \end{aligned}
+        \end{equation}
+    
+        <p align="center">
+            <img width="600" alt="Screenshot 2023-07-30 at 7 21 57 PM" src=(https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/a4fb0f96-6142-4eaf-ae96-494613b7bdca">
+        <br>
+          <em>PMF and CDF of a categorical random variable.</em>
+        </p>
+
   - **Continuous random variables.** If the sample space \\(\Omega\\) over which a random variable \\(X\\) is defined is infinite (e.g., \\(\mathbb{R}\\)), then \\(X\\) is called a Continuous random variable. Here, we cannot consider a set of finite/countable values for \\(X\\). However, we can choose a set of intervals in \\(\mathbb{R}\\), for example, and define the probability of \\(X\\) taking on a specific value by infinitesimal interval containing that value.
     - **Probability density function (pdf)** For the a continuous r.v., we can define the pdf as \\(p(x)=\frac{dPr(x)}{dx}\\), assuming this derivative exists. 
     - Similar to the discrete case, the cdf function for a continuous r.v. is defined by \\(Pr(x) = Pr_X(x) =  Pr(X\leq x) = \int _{u \in \Omega, u\leq x} p(u)du\\), where \\(p(u)\\) is the probability density function (pdf). If \\(\Omega = \mathbb{R}\\), then \\(Pr(x) = \int _{-\infty}^{x}p(u)du\\). From this, we can compute the probability of a continuous variable being in a finite interval \\(\[\alpha, \beta\]\\) for some \\(\alpha,\beta \in \mathbb{R}\\) as follows:
@@ -81,11 +102,11 @@ Here, we review most important concepts in the probability theory without mathem
     - The cdf is a monotonically increasing (not necessarily  strictly) function and for a continuous r.v. is always a continuous function.
     - The Bayes rule is given by
       \\[p(X=x\|B) = \frac{p(B\|X=x)p(X=x)}{p(B)} = \frac{p(B\|X=x)p(X=x)}{\int _{x\in \Omega} p(B\|X=x)p(X=x)dx}\\]
-    - The following figures show the pdf and cdf of a standard Gaussian random variable, \\(\mathcal{N}(9,1)\\).
+    - The following figures show the pdf and cdf of a standard Gaussian random variable, \\(\mathcal{N}(0,1)\\).
         <p align="center">
-            <img width="600" alt="Screenshot 2023-07-30 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/75016f02-6145-4625-8172-235bd2dbf811">
+            <img width="400" alt="Screenshot 2023-07-30 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/75016f02-6145-4625-8172-235bd2dbf811">
         <br>
-          <em>PDf and CDF of a a standard Gaussian random variable.</em>
+          <em>PDf and CDF of a standard Gaussian random variable.</em>
         </p>
 
 * **Quantiles.**
