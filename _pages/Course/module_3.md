@@ -89,7 +89,7 @@ Here, we review most important concepts in the probability theory without mathem
         \end{equation}
     
         <p align="center">
-            <img width="600" alt="Screenshot 2023-07-30 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/a4fb0f96-6142-4eaf-ae96-494613b7bdca">
+            <img width="900" alt="Screenshot 2023-07-30 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/a4fb0f96-6142-4eaf-ae96-494613b7bdca">
         <br>
           <em>PMF and CDF of a categorical random variable.</em>
         </p>
