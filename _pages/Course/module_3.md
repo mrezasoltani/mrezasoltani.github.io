@@ -37,7 +37,7 @@ Here, we review most important concepts in the probability theory without mathem
 
   The relation between sets \\(\Omega\\), \\(B\\), \\(A_i\\)'s in the Law of Total Probability is illustrated in the following figure:
     <p align="center">
-            <img width="600" alt="Screenshot 2023-07-30 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/7738d6f3-301a-4d38-acdd-7d4bf15b0147">
+            <img width="500" alt="Screenshot 2023-07-30 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/7738d6f3-301a-4d38-acdd-7d4bf15b0147">
     <br>
             <em>A venn diagram to show the Law of Total Probability".</em>
     </p>
@@ -112,7 +112,7 @@ Here, we review most important concepts in the probability theory without mathem
 
   \begin{equation}
       \begin{aligned}
-        p(x_i) = \sum _{\mathbf{x}} _{-i} p(x_1, x_2, \ldots, x_n)
+        p(x_i) = \sum _{\mathbf{x}_i} p(x_1, x_2, \ldots, x_n)
       \end{aligned}
   \end{equation}
   - This is also called _**sum rule**_ or the _**rule of total probability**_.
