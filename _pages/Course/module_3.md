@@ -109,7 +109,7 @@ Here, we review most important concepts in the probability theory without mathem
         <br>
           <em>PDf and CDF of a standard Gaussian random variable.</em>
         </p>
-  - **Multivariate Random variables.** A cdf of a real vlaued random vector \\(\mathbf{X} \in \amthbb{R}^{p}\\) (aka multivariate real-valued random variable) is give by:
+  - **Multivariate Random variables.** A cdf of a real vlaued random vector \\(\mathbf{X} \in \\mathbb{R}^{p}\\) (aka multivariate real-valued random variable) is give by:
     \\[F(x) = Pr(\mathbf{x}) = Pr_{\mathbf{X}}(\mathbf{x}) = Pr(X_1\leq x_1, X_2\leq x_2, \ldots, X_n\leq x_n)\\]
 * **Independent and Identically Distributed (IID) Random Variables.** A set of random variables is said to be iid if they are mutually independent of each other and are drawn from the same probability distribution. We denoted \\(n\\) iid random variables drawn from a distribution \\(p\\) as \\(x_1, x_2, \ldots, x_n \stackrel{iid}{\sim} p\\).
 * **Marginalization.** Given a joint pdf (pmf) of \\(n\\) random variables, we can obtain pdf (pmf) of one or other number of variables through marginalization, that is
