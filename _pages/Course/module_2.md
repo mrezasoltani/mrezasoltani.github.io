@@ -482,7 +482,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 \end{aligned}
 \end{equation}
 
-where \\(\mathrm{U} \in \mathbb{R}^{m\times m}\\) is an orthogonal matrix stacking _left singular vectors_ as its column, \\(\mathrm{V} \in \mathbb{R}^{n\times n}\\) is an orthogonal matrix stacking _right singlar vectors_ as its rows, and \\(\Sigma \in \mathbb{R}^{m\times n}\\) is consist of a diagonal matrix up to row \\(n\\), and \\((m-n) \times n\\) zero-matrix (a matrix with all zero entries) as the rest of its rows. The non-zero entries are called _singular values_ and arranged as \\(\sigma_1\geq \sigma_2\geq\ldots\geq\sigma_r\\) for \\(r\leq \min(m,n)\\).
+  - Here,\\(\mathrm{U} \in \mathbb{R}^{m\times m}\\) is an orthogonal matrix stacking _left singular vectors_ as its column, \\(\mathrm{V} \in \mathbb{R}^{n\times n}\\) is an orthogonal matrix stacking _right singlar vectors_ as its rows, and \\(\Sigma \in \mathbb{R}^{m\times n}\\) is consist of a diagonal matrix up to row \\(n\\), and \\((m-n) \times n\\) zero-matrix (a matrix with all zero entries) as the rest of its rows. The non-zero entries are called _singular values_ and arranged as \\(\sigma_1\geq \sigma_2\geq\ldots\geq\sigma_r\\) for \\(r\leq \min(m,n)\\).
 
 * The SVD for a fat matrix with \\(m\leq n\\) is given by:
 
