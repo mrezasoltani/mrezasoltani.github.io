@@ -482,7 +482,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 \end{aligned}
 \end{equation}
 
-  - Here,\\(\mathrm{U} \in \mathbb{R}^{m\times m}\\) is an orthogonal matrix stacking _left singular vectors_ as its column, \\(\mathrm{V} \in \mathbb{R}^{n\times n}\\) is an orthogonal matrix stacking _right singlar vectors_ as its rows, and \\(\Sigma \in \mathbb{R}^{m\times n}\\) is consist of a diagonal matrix up to row \\(n\\), and \\((m-n) \times n\\) zero-matrix (a matrix with all zero entries) as the rest of its rows. The non-zero entries are called _singular values_ and arranged as \\(\sigma_1\geq \sigma_2\geq\ldots\geq\sigma_r\\) for \\(r\leq \min(m,n)\\).
+  - Here,\\(~\mathrm{U} \in \mathbb{R}^{m\times m}\\) is an orthogonal (Hermitian) matrix stacking _left singular vectors_ as its column, \\(\mathrm{V} \in \mathbb{R}^{n\times n}\\) is an orthogonal (Hermitian) matrix stacking _right singlar vectors_ as its rows, and \\(\Sigma \in \mathbb{R}^{m\times n}\\) is consist of a diagonal matrix up to row \\(n\\), and \\((m-n) \times n\\) zero-matrix (a matrix with all zero entries) as the rest of its rows. The non-zero entries called _singular values_ are **positive real numbers** and arranged as \\(\sigma_1\geq \sigma_2\geq\ldots\geq\sigma_r\\) for \\(r\leq \min(m,n)\\).
 
 * The SVD for a fat matrix with \\(m\leq n\\) is given by:
 
@@ -510,5 +510,29 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 \end{equation}
 
   - Here, matrices \\(U\\) and \\(V\\) are as before, but the matrix \\(\Sigma \in \mathbb{R}^{m\times n}\\) is consist of a diagonal matrix up to column \\(m\\), including singular value, and \\(m \times (n-m)\\) zero-matrix as the rest of its columns.
+
+* **Economy (Reduced) SVD** Economy SVD uses the fact a matrix with rank \\(r\\) has only \\(r\\) non-zero singular values and corresponding left and right singular vectors. Thus, we can decompose a matrix \\(X\\) using reduced SVD:
+\begin{equation}
+\begin{aligned}
+  \mathrm{X} = \mathrm{U}\mathrm{\Sigma}\mathrm{V}^{T}=
+    \begin{bmatrix}
+      | & | & \ldots & | \\\\\\\\
+      \mathrm{U_1} & \mathrm{U_2} & \ldots & \mathrm{U_r} \\\\\\\\
+      | & | & \ldots & |
+    \end{bmatrix}
+    \begin{bmatrix}
+        \sigma_1 & 0 & \ldots & 0 \\\\\\\\
+        0 & \sigma_2 & \ldots & 0 \\\\\\\\
+        \vdots & \vdots & \ddots & \vdots \\\\\\\\
+        0 & 0 & \ldots & \sigma_r
+    \end{bmatrix}
+    \begin{bmatrix}
+      ---  & \mathrm{V_1}^T & ---  \\\\\\\\
+      ---  & \mathrm{V_2}^T & ---  \\\\\\\\
+       & \vdots & \\\\\\\\
+      ---  & \mathrm{V_r}^T & --- 
+    \end{bmatrix}
+\end{aligned}
+\end{equation}
 
 ## Vector/Matrix Calculus
