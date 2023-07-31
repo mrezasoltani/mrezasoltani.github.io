@@ -6,7 +6,7 @@ classes: wide
 Linear algebra is the study of matrices and vectors. In this module, we start with some basic concepts in linear algebra, and toward the end of this part, we will see more advanced tools. 
 
 ## Math Notations 
-* Throughout this course, we use the following conventions:
+* Throughout this course, we use the following mathematical notations:
 
   |       Variable Type       | Symbol             |
    | -------------| ---------------------- |
