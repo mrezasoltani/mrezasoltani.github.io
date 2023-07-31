@@ -112,7 +112,7 @@ Here, we review most important concepts in the probability theory without mathem
   - **Multivariate Random variables.** A cdf of a real vlaued random vector \\(\mathbf{X} \in \\mathbb{R}^{p}\\) (aka multivariate real-valued random variable) is given by:
     \\[F_{\mathbf{X}}(x) = Pr(\mathbf{x}) = Pr_{\mathbf{X}}(\mathbf{x}) = Pr(X_1\leq x_1, X_2\leq x_2, \ldots, X_p\leq x_p)\\]
     - For the continous case, the cdf can be expressed also as the integral of the pdf \\(p(\mathbf{x})\\) as follows:
-      \\[Pr(\mathbf{x}) = \int _{\mathbf{x} \in \mathbb{R}^pn}p(\mathbf{x})d\mathbf{x} = \int _{-infty}^{x_p} \int _{-infty}^{x _{p-1}}\ldots \int _{-infty}^{x_1}dx_1 x_2 \ldots x_p p(x_1, x_2, \ldots, x_p)\\]
+      \\[Pr(\mathbf{x}) = \int _{\mathbf{x} \in \mathbb{R}^p}p(\mathbf{x})d\mathbf{x} = \int _{-\infty}^{x_p} \int _{-\infty}^{x _{p-1}}\ldots \int _{-\infty}^{x_1}dx_1 dx_2 \ldots dx_p p(x_1, x_2, \ldots, x_p)\\]
 * **Independent and Identically Distributed (IID) Random Variables.** A set of random variables is said to be iid if they are mutually independent of each other and are drawn from the same probability distribution. We denoted \\(n\\) iid random variables drawn from a distribution \\(p\\) as \\(x_1, x_2, \ldots, x_n \stackrel{iid}{\sim} p\\).
 * **Marginalization.** Given a joint pdf (pmf) of \\(n\\) random variables, we can obtain pdf (pmf) of one or other number of variables through marginalization, that is
     \begin{equation}
