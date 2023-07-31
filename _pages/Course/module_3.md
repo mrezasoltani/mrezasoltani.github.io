@@ -81,6 +81,8 @@ Here, we review most important concepts in the probability theory without mathem
     - The cdf is a monotonically increasing (not necessarily  strictly) function and for a continuous r.v. is always a continuous function.
     - The Bayes rule is given by
       \\[p(X=x\|B) = \frac{p(B\|X=x)p(X=x)}{p(B)} = \frac{p(B\|X=x)p(X=x)}{\int _{x\in \Omega} p(B\|X=x)p(X=x)dx}\\]
+    - The following figures show the pdf and cdf of a standard Gaussian random variable, \\(\mathcal{N}(9,1)\\).
+    - 
 * **Quantiles.**
   - If the cdf is strictly monotonically increasing, then it is invertible and its inverse is called the _**inverse cdf, or percent point function (ppf), or quantile function**_.
   - The \\(q^{th}\\) quantile of the cdf of a random variable \\(X\\) denoted by \\(x_q\\) and is defined by \\(P^{-1}(q)\\) where \\( Pr(X \leq x_q) = q \\).
