@@ -453,7 +453,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 * A symmetric matrix  \\(\mathrm{X}\\) is _indefinite_, if it is neither positive semidefinite nor negative semidefinite. That is, there exist vectors \\(\mathbf{u_1}, ~\mathbf{u_2} \in \mathbb{R}^n\\) such that \\(\mathbf{u_1}^T\mathrm{X}\mathbf{u_1} < 0\\) and \\(\mathbf{u_2}^T\mathrm{X}\mathbf{u_2} > 0\\).
 
 ## Singular Value Decomposition (SVD)
-* As oppeses to the EVD applicable to only special square matrices, the singular value decomposition (SVD) can be applied to all matrices and it always existsis and unique. That is why it is a central matrix decomposition method in linear algebra, and it has been referred to as the ``fundamental theorem of linear algebra” (Strang, 1993).
+* As oppeses to the EVD applicable to only special square matrices, the singular value decomposition (SVD) can be applied to all matrices and it always existsis and unique. That is why it is a central matrix decomposition method in linear algebra, and it has been referred to as the "fundamental theorem of linear algebra" (Strang, 1993).
 * Let \\(X\\) be a \\(m\times n\\) matrix with rank \\(r\\). Then the SVD of \\(X\\) for \\(m \geq n\\) (for tall matrices) is given by:
   
 \begin{equation}
@@ -482,7 +482,7 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 \end{aligned}
 \end{equation}
 
-where \\(\mathrm{U} \in \mathbb{R}^{m\times m}\\) is orthogonal matirx stacking _left singlar vectors_ as its column, \\(\mathrm{V} \in \mathbb{R}^{n\times n}\\) is orthogonal matirx stacking _right singlar vectors_ as its rows, and \\(\Sigma \in \mathbb{R}^{m\times n}\\) is consist of a diagonal matrix up to row \\(n\\), and \\(m-n \times n\\) zero matrix (a matrix with all zero entries) as the rest of its rows. The non-zero entries are called _singula values_ and arranged as \\(\sigma_1\geq \sigma_2\geq\ldots\geq\sigma_r\\) for \\(r\leq \min(m,n)\\).
+where \\(\mathrm{U} \in \mathbb{R}^{m\times m}\\) is an orthogonal matirx stacking _left singlar vectors_ as its column, \\(\mathrm{V} \in \mathbb{R}^{n\times n}\\) is an orthogonal matirx stacking _right singlar vectors_ as its rows, and \\(\Sigma \in \mathbb{R}^{m\times n}\\) is consist of a diagonal matrix up to row \\(n\\), and \\(m-n \times n\\) zero-matrix (a matrix with all zero entries) as the rest of its rows. The non-zero entries are called _singular values_ and arranged as \\(\sigma_1\geq \sigma_2\geq\ldots\geq\sigma_r\\) for \\(r\leq \min(m,n)\\).
 
 * The SVD for a fat matrix with \\(m\leq n\\) is given by:
 
@@ -497,7 +497,7 @@ where \\(\mathrm{U} \in \mathbb{R}^{m\times m}\\) is orthogonal matirx stacking 
     \begin{bmatrix}
         \sigma_1 & 0 & 0 & \ldots & 0 & \dots & 0\\\\\\\\
         0 & \sigma_2 & 0 & \ldots & 0 & \ldots & 0\\\\\\\\
-        \vdots & \vdots & \ddots & \vdots & \vdots & \ddots & 0\\\\\\\\
+        \vdots & \vdots & \ddots & \vdots & \vdots & \ddots & \vdots\\\\\\\\
         0 & 0 & \ldots & \sigma_m & 0 & \ldots & 0
     \end{bmatrix}
     \begin{bmatrix}
@@ -508,5 +508,7 @@ where \\(\mathrm{U} \in \mathbb{R}^{m\times m}\\) is orthogonal matirx stacking 
     \end{bmatrix}
 \end{aligned}
 \end{equation}
+
+Here, matrices \\(U\\) and \\(V\\) are as before, but the matrix \in \mathbb{R}^{m\times n}\\) is consist of a diagonal matrix up to colum \\(m\\), and \\(m \times n-m\\) zero-matrix as the rest of its columns.
 
 ## Vector/Matrix Calculus
