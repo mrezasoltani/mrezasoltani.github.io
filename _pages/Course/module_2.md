@@ -454,11 +454,11 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 
 ## Singular Value Decomposition (SVD)
 * As oppeses to the EVD applicable to only special square matrices, the singular value decomposition (SVD) can be applied to all matrices and it always existsis and unique. That is why it is a central matrix decomposition method in linear algebra, and it has been referred to as the ``fundamental theorem of linear algebra” (Strang, 1993).
-* Let \\(X\\) be a \\(m\times n\) matrix with rank \\(r). Then the SVD of \\(X\\) for \\(m > n\\) (for tall matrices) is given by:
+* Let \\(X\\) be a \\(m\times n\) matrix with rank \\(r)\\). Then the SVD of \\(X\\) for \\(m > n\\) (for tall matrices) is given by:
   
 \begin{equation}
 \begin{aligned}
-  \mathrm{X} = \mathrm{U}\mathrm{\Lambda}\mathrm{V}^{T}=
+  \mathrm{X} = \mathrm{U}\mathrm{\Sigma}\mathrm{V}^{T}=
     \begin{bmatrix}
       | & | & \ldots & | \\\\\\\\
       \mathrm{U_1} & \mathrm{U_2} & \ldots & \mathrm{U_m} \\\\\\\\
@@ -482,4 +482,5 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
 \end{aligned}
 \end{equation}
 
+where \\(\mathrm{U} \in \mathbb{R}^{m\times m}\\) is orthogonal matirx stacking _left singlar vectors_ as its column, \\(\mathrm{V} \in \mathbb{R}^{n\times n}\\) is orthogonal matirx stacking _right singlar vectors_ as its rows, and \\(\Sigma \in \mathbb{R}^{m\times n}\\) is consist of a diagonal matrix up to row \\(n\\), and \\(m-n \time n\\) zero matrix (a matrix with all zero entries) as the rest of its rows. The non-zero entries are called _singula values_ and arranged as \\(\sigma_1\leq sigma_2\leq\ldot\leq\sigma_r\\).
 ## Vector/Matrix Calculus
