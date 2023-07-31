@@ -16,7 +16,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **Random vector** | \\(\mathbf{X}\\)|
    | **Deterministic matrix/tensor** | \\(\mathrm{X}\\)|
    | **Random matrix/tensor** | \\(\mathbfit{X}\\)|
-   | **Graph and operator** | \\(\mathcal{X}\\)|
+   | **Graph, operator, an a general set** | \\(\mathcal{X}\\)|
    | **A square, diagonal matrix with diagonal entries given by a vector** \\(\mathbf{x}\\) | \\(diag(\mathbf{x})\\) |
    | **Vector of a diagonal entries of a matrix** \\(\mathrm{X}\\) | \\(diag(\mathrm{X})\\) |
    | **Real set** | \\(\mathbb{R}\\)|
@@ -35,6 +35,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **Hadamard (element-wise) product of two vectors (matrices)** | \\(\mathbf{x}\odot\mathbf{y} (\mathrm{X}\odot\mathrm{Y})\\) |
 
 * Here, we mostly present results for the real field. We often give the corresponding results for the complex field.
+* If the context is clear, we may represent coulmns or rows of a matrix without colon notation, e.g.,  \\(\mathrm{X_i}\\).
 
 ## Vector and Matrix
 * A vector \\(\mathbf{x} \in \mathbb{R}^n \\) is a collection of \\(n\\) numbers defined on real, \\(\mathbb{R}\\) or complex, \\(\mathbb{C}\\) field. In this course, we use a column vector to denote a vector \\(\mathbf{x}\\). In the above table, we have shown the Canonical basis vector, \\(e_i\\) with a superscript \\(T\\) to denote the transpose of a row vector is a column one. A matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) is a 2-d array of \\(mn\\) numbers, arranged in \\(m\\) rows and \\(n\\) columns:
@@ -451,4 +452,34 @@ its transpose written \\(\mathrm{X}^T \in \mathbb{R}^{n\times m}\\).
   A symmetric matrix is negative semidefinite iff its eigenvalues are non-positive.
 * A symmetric matrix  \\(\mathrm{X}\\) is _indefinite_, if it is neither positive semidefinite nor negative semidefinite. That is, there exist vectors \\(\mathbf{u_1}, ~\mathbf{u_2} \in \mathbb{R}^n\\) such that \\(\mathbf{u_1}^T\mathrm{X}\mathbf{u_1} < 0\\) and \\(\mathbf{u_2}^T\mathrm{X}\mathbf{u_2} > 0\\).
 
-  ## Vector/Matrix Calculus
+## Singular Value Decomposition (SVD)
+* As oppeses to the EVD applicable to only special square matrices, the singular value decomposition (SVD) can be applied to all matrices and it always existsis and unique. That is why it is a central matrix decomposition method in linear algebra, and it has been referred to as the ``fundamental theorem of linear algebra” (Strang, 1993).
+* Let \\(X\\) be a \\(m\times n\) matrix with rank \\(r). Then the SVD of \\(X\\) for \\(m > n\\) (for tall matrices) is given by:
+  
+\begin{equation}
+\begin{aligned}
+  \mathrm{X} = \mathrm{U}\mathrm{\Lambda}\mathrm{V}^{T}=
+    \begin{bmatrix}
+      | & | & \ldots & | \\\\\\\\
+      \mathrm{U_1} & \mathrm{U_2} & \ldots & \mathrm{U_m} \\\\\\\\
+      | & | & \ldots & |
+    \end{bmatrix}
+    \begin{bmatrix}
+        \sigma_1 & 0 & \ldots & 0 \\\\\\\\
+        0 & \sigma_2 & \ldots & 0 \\\\\\\\
+        \vdots & \vdots & \ddots & \vdots \\\\\\\\
+        0 & 0 & \ldots & \sigma_n \\\\\\\\
+        0 & 0 & \ldots & 0 \\\\\\\\
+        \vdots & \vdots & \ddots & \vdots \\\\\\\\
+        0 & 0 & \ldots & 0 
+    \end{bmatrix}
+    \begin{bmatrix}
+      ---  & \mathrm{V_1}^T & ---  \\\\\\\\
+      ---  & \mathrm{V_2}^T & ---  \\\\\\\\
+       & \vdots & \\\\\\\\
+      ---  & \mathrm{V_n}^T & --- 
+    \end{bmatrix}
+\end{aligned}
+\end{equation}
+
+## Vector/Matrix Calculus
