@@ -108,7 +108,7 @@ Here, we review most important concepts in the probability theory without mathem
         <br>
           <em>PDf and CDF of a standard Gaussian random variable.</em>
         </p>
-* **Independent and Identically Distributed (IID) Random Variables.** A set of random variables is said to be iid if they are mutually independent of each other and are drawn from the same probability distribution. We denoted \\(n\\) iid random variables drawn from a distribution \\(p\) as \\(x_1, x_2, \ldots, x_n \sim p\\).
+* **Independent and Identically Distributed (IID) Random Variables.** A set of random variables is said to be iid if they are mutually independent of each other and are drawn from the same probability distribution. We denoted \\(n\\) iid random variables drawn from a distribution \\(p\\) as \\(x_1, x_2, \ldots, x_n \stackrel{iid}{\sim} p\\).
 * **Marginalization.** Given a joint pdf (pmf) of \\(n\\) random variables, we can obtain pdf (pmf) of one or other number of variables through marginalization, that is
     \begin{equation}
         \begin{aligned}
@@ -123,8 +123,8 @@ Here, we review most important concepts in the probability theory without mathem
 
 * **Exchangability.** Consider a sequence of random variables \\(x_1, x_2, \ldots, x_n\\). If for any \\(n\\), the joint probability of these r.v.'s is invariant to permutation of indices, then the sequence is said to be _infinitely exchangeable_. That is, \\(p(x_1, x_2, \ldots, x_n) = p(x_{\pi_1}, x_{\pi_2}, \ldots, x_{\pi_n})~\\), where \\(\pi\\) is a permutation of the index set \\(\\{1,2,\ldots,n\\}\\). The following theorem states the condition for exchangeability (here we state the theorem for continuous r.v.'s, but the same thing is true for discrete case).
  - **De Finetti’s Theorem.** A sequence of random variables \\(x_1, x_2, \ldots, x_n\\) is infinitely exchangeable if and only if, for all \\(n\\),
-   \\[p(x_1, x_2, \ldots, x_n) = \int \prod _{i=1}^n p(x_i\|\mathbf{theta})p(\mathbf{theta})d\mathbf{theta}\\]
-   - where \\(\mathbf{theta}\\) is some hidden random variable (possibly infinite dimensional) which is common to all variables. This means that is, \\(x_1, x_2, \ldots, x_n\\) are iid r.v.'s conditional on \\(\mathbf{theta}\\).
+   \\[p(x_1, x_2, \ldots, x_n) = \int \prod _{i=1}^n p(x_i\|\mathbf{theta})p(\mathbf{\theta})d\mathbf{\theta}\\]
+   - where \\(\mathbf{\theta}\\) is some hidden random variable (possibly infinite dimensional) which is common to all variables. This means that is, \\(x_1, x_2, \ldots, x_n\\) are iid r.v.'s conditional on \\(\mathbf{\theta}\\).
 
 * **Quantiles.**
   - If the cdf is strictly monotonically increasing, then it is invertible and its inverse is called the _**inverse cdf, or percent point function (ppf), or quantile function**_.
