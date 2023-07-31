@@ -108,7 +108,10 @@ Here, we review most important concepts in the probability theory without mathem
         <br>
           <em>PDf and CDF of a standard Gaussian random variable.</em>
         </p>
-
+* **Marginalization.** Given a joint pdf (pmf) of \\(n\\) random variables, we can obtain pdf (pmf) of one or other number of variables through marginalization, that is
+  \\[p(x_i) = \int _{\mathbf{x}_{-i}}p(x_1, x_2, \dots, x_n)d\mathbf{x}_{-i} = \sum _{j\neq i}p(x_1, x_2, \dots, x_n)\\]
+* **Chain Rule.** A very important result in probability is _Chain Rule_:
+  \\[p(x_1, x_2, \dots, x_n) = p(x_1)p(x_2 \| x_1)p(x_3 \| x_1, x_2)\ldots p(x_n\|x_1,x_2,\ldots,x_{n-1})\\]
 * **Quantiles.**
   - If the cdf is strictly monotonically increasing, then it is invertible and its inverse is called the _**inverse cdf, or percent point function (ppf), or quantile function**_.
   - The \\(q^{th}\\) quantile of the cdf of a random variable \\(X\\) denoted by \\(x_q\\) and is defined by \\(P^{-1}(q)\\) where \\( Pr(X \leq x_q) = q \\).
