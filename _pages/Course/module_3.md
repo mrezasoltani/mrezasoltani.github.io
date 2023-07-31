@@ -112,10 +112,11 @@ Here, we review most important concepts in the probability theory without mathem
 
   \begin{equation}
       \begin{aligned}
-        p(x_i) = \sum _{\mathbf{x}}_{-i} p(x_1, x_2, \ldots, x_n)
+        p(x_i) = \sum _{\mathbf{x}} _{-i} p(x_1, x_2, \ldots, x_n)
       \end{aligned}
   \end{equation}
-
+  - This is also called _**sum rule**_ or the _**rule of total probability**_.
+  
 * **Chain Rule.** A very important result in probability is _Chain Rule_:
   \\[p(x_1, x_2, \ldots, x_n) = p(x_1)p(x_2 \| x_1)p(x_3 \| x_1, x_2)\ldots p(x_n\|x_1,x_2,\ldots,x_{n-1})\\]
 * **Quantiles.**
