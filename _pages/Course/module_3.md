@@ -109,10 +109,10 @@ Here, we review most important concepts in the probability theory without mathem
           <em>PDf and CDF of a standard Gaussian random variable.</em>
         </p>
 * **Marginalization.** Given a joint pdf (pmf) of \\(n\\) random variables, we can obtain pdf (pmf) of one or other number of variables through marginalization, that is
-* 
+
   \begin{equation}
       \begin{aligned}
-        p(x_i) = \sum _{\mathbf{x}_{-i}} p(x_1, x_2, \ldots, x_n)
+        p(x_i) = \sum _{\mathbf{x}} p(x_1, x_2, \ldots, x_n)
       \end{aligned}
   \end{equation}
 
