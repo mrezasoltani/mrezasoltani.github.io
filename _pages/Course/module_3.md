@@ -13,8 +13,8 @@ classes: wide
   2. **Aleatoric (Data) Uncertainty.** The uncertainty is due to the intrinsic variability in the data and cannot be reduced even more collection of data. This is derived from the Latin word for “dice”.
 
 ## Informal Review of Some Concepts
-Here, we review most important concepts in the probability theory without mathematical rigorous. Later, we make these concepts more formal by defining them using  the language of Measure Theory.
-* **Sample Space.** Set of all possible outcomes in a random experiment is called _sample space_ and denoted by \\(\Omega\\). For example, in rolling a die, there are \\(6\\) possible outcomes, so \\(\Omega = \\{1,2,3,4,5,6\\}\\). An outcome is an element of a sample space, e.g., \\(\omega = 3\\). This example shows a discrete sample space. A sample space can also be a continous space. For example, consider waiting time for arrving a bus is a random experiment. An outcome is any non-negative real number. 
+Here, we review the most important concepts in probability theory without mathematical rigor. Later, we make these concepts more formal by defining them using  the language of Measure Theory.
+* **Sample Space.** Set of all possible outcomes in a random experiment is called _sample space_ and denoted by \\(\Omega\\). For example, in rolling a die, there are \\(6\\) possible outcomes, so \\(\Omega = \\{1,2,3,4,5,6\\}\\). An outcome is an element of a sample space, e.g., \\(\omega = 3\\). This example shows a discrete sample space. A sample space can also be a continuous space. For example, the waiting time for arriving at a bus is a random experiment. An outcome of this random experiment is any non-negative real number. 
 * **Event.** A subset of the sample space is an _event_, i.e., \\(A\subseteq \Omega\\). For example, in the rolling of a die, an event can be defined as _facing an odd number_, i.e., \\(A=\\{1,3,5\\}\\). For a sample space with \\(n\\) outcomes, we can have \\(2^n\\) events.
 * **Probability.** Informally, a probability is a measure from the set of events to the real numbers in \\(\[0,1\]\\) such that (axioms of probability, Kolmogorov axioms):
   1. For any event \\(A\subseteq \Omega\\), \\(~ 0 \leq P(A) \leq 1\\)
@@ -24,14 +24,14 @@ Here, we review most important concepts in the probability theory without mathem
      - The disjoin sets assumption in the third property means that events \\(A\\) and \\(B\\) cannot happen at the same time, that is, they are mutually exclusive. For example, in flipping a coin, the event of facing with a tail does not have any intersection with the event that the coin lands the head.
      - **Probability of union of two events (addition rule).** The probability of event A or B happening is given by \\(P(A\cup B) = P(A) + P(B) - P(A\cap B)\\).
 * **Joint Probability.** A joint probability of happening two events \\(A\\) and \\(B\\) is defined as \\(P(A, B) = P(A\cap B)\\).
-* **Independency.** If two events \\(A\\) and \\(B\\) are independent, then their join probability is given by their product, i.e., \\(P(A\cap B) = P(A)\cdot P(B)\\). This means that occurring the event \\(A\\) does not have any effect in happening or not happening of the event \\(B\\). For example, consider a random experiment defined as follows: choosing two numbers uniformly at random from a set \\(X\\{1,2,3,4\\}\\). Let \\(A\\) be an event that the first number belongs to the set \\(\\{3\\}\\), and \\(B\\) be an event that the second number belongs to the set \\(\\{1, 2, 4\\}\\), then these two event are independent from each other; hence, \\(P(A\cap B) = P(A)\cdot P(B) = \frac{1}{4}\cdot\frac{2}{4} = \frac{1}{8}\\).
+* **Independency.** If two events \\(A\\) and \\(B\\) are independent, then their join probability is given by their product, i.e., \\(P(A\cap B) = P(A)\cdot P(B)\\). This means that occurring the event \\(A\\) does not have any effect on the happening or not happening of the event \\(B\\). For example, consider a random experiment defined as follows: choosing two numbers uniformly at random from a set \\(X\\{1,2,3,4\\}\\). Let \\(A\\) be an event that the first number belongs to the set \\(\\{3\\}\\), and \\(B\\) be an event that the second number belongs to the set \\(\\{1, 2, 4\\}\\), then these two events are independent of each other; hence, \\(P(A\cap B) = P(A)\cdot P(B) = \frac{1}{4}\cdot\frac{2}{4} = \frac{1}{8}\\).
   - It is very important to note that in independency of two events does not imply their mutually exclusive and vice versa.
   - **Mutual Independence.** Let \\(A_{1},A_2,\dots,A_{n}\\) be \\(n\\) events. \\(A_{1},A_2,\dots,A_{n}\\) are mutually independent (jointly independent ) if and only if for any sub-collection of \\(k\\) events (\\(k\leq n\\)) \\(A_{1},A_2,\dots,A_{k}\\), \\(P(\cap _{i=1}^{k} A_i) = \prod _{i=1}^{k} P(A_i)\\).
   - **Pairwise Independence.** For \\(n \geq 3\\), events \\(A_{1},A_2,\dots,A_{n}\\) are pairwise independent if \\(A_i \cap A_j = 0, ~\forall 1\leq i,j\leq n\\).
     - Please note that Pairwise Independence does not imply Mutual Independence.
 * **Conditional Probability.** The conditional probability of happening an event \\(A\\) given that another event \\(B\\) has occurred is given by \\(P(A\|B) = \frac{P(A, B)}{P(B)}, ~ P(B)\neq 0\\).
   - **Product Rule.** From the above relation, we can wrtie \\(p(A, B) = P(A\|B)\cdot P(B)\\). This is called the product rule.
-* **Conditional Independency.** If two events \\(A\\) and \\(B\\) are independent given another event \\(C\\), we say that \\(A\\) and \\(B\\) are _conditionally independent_ given \\(C\\), this is denoted by \\(A \perp B \| C \\). In this case, \\(P(A, B\|C) = P(A\|C)\cdot P(B\|C)\\). Many events are dependent on each other, but it is possible when a relevant information is known, then two event become independent.
+* **Conditional Independency.** If two events \\(A\\) and \\(B\\) are independent given another event \\(C\\), we say that \\(A\\) and \\(B\\) are _conditionally independent_ given \\(C\\), this is denoted by \\(A \perp B \| C \\). In this case, \\(P(A, B\|C) = P(A\|C)\cdot P(B\|C)\\). Many events are dependent on each other, but it is possible when relevant information is known, the two events become independent.
 * **Law of Total Probability.** Let \\(A_{1},A_2,\dots,A_{n}\\) be a partition of sample space \\(\Omega\\). That is, \\(\cup _{i=1}^n A_i = \Omega, ~ A_i\cap A_j =0, ~ \forall ~ 0\leq i,j\leq n\\). Then for any set \\(B\subseteq\Omega\\), we have:
   \\[P(B) = \sum _{i=1}^{n} P(B\|A_i)\cdot P(A_i)\\]
 
@@ -39,7 +39,7 @@ Here, we review most important concepts in the probability theory without mathem
     <p align="center">
             <img width="500" alt="Screenshot 2023-07-30 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/7738d6f3-301a-4d38-acdd-7d4bf15b0147">
     <br>
-            <em>A venn diagram to show the Law of Total Probability.</em>
+            <em>A Venn diagram to show the Law of Total Probability.</em>
     </p>
     
   <details>
@@ -56,7 +56,7 @@ Here, we review most important concepts in the probability theory without mathem
       P(B\cap A_i)= \sum _{i=1}^{n} P(B\cap A_i) = \sum _{i=1}^{n} P(B|A_i)P(A_i)
       \end{equation}
   
-      For the last equality we have used the conditional probability rule. \(\blacksquare\)
+      For the last equality, we have used the conditional probability rule. \(\blacksquare\)
    
   </details>
   
@@ -69,11 +69,11 @@ Here, we review most important concepts in the probability theory without mathem
      - \\(0 \leq P(x) \leq 1\\)
      - \\(\sum _{x\in \Omega}P(x) = 1\\)
     - **Cumulative distribution function (cdf).** We define a cdf of a r.v. as \\(F(x) = Pr(x) = Pr_X(x) =  Pr(X\leq x) = \sum _{\alpha \in \Omega, \alpha\leq x} P(\alpha)\\). From this definition, we immediately see that \\(Pr(\alpha \leq X \leq \beta) = Pr(\beta) - Pr(\alpha)\\).
-    - The cdf is a monotonically increasing (not necessarily  strictly) function, and is always continuous **_only_** from the right.
+    - The cdf is a monotonically increasing (not necessarily  strictly) function and is always continuous **_only_** from the right.
     - Assume that a r.v. \\(X\\) can have \\(K\\) values as \\(\\{1,2,\dots,K\\}\\). Then the Bayes rule is given by:
       \\[P(X=i\|B) = \frac{P(B\|X=i)P(X=i)}{P(B)} = \frac{P(B\|X=i)P(X=i)}{\sum _{k=1}^{K} P(B\|X=k)P(X=k)}\\]
     - \\(P(X=i\|B)\\) is called the _**Posterior Probability**_. \\(P(B\|X=i)\\) is called the _**Likelihood**_,\\(P(X=i)\\) is the _**Prior Probability**_, and \\(P(B)\\) is the _**Normalization Constant, Evidence, or Marginal Likelihood**_.
-     - The following figures show the pmf and cdf of a  a categorical random variable with the following pmf:
+     - The following figures show the pmf and cdf of a  categorical random variable with the following pmf:
    
        \begin{equation}
         \begin{aligned}
@@ -94,12 +94,12 @@ Here, we review most important concepts in the probability theory without mathem
           <em>PMF and CDF of a categorical random variable.</em>
         </p>
 
-  - **Continuous random variables.** If the sample space \\(\Omega\\) over which a random variable \\(X\\) is defined is infinite (e.g., \\(\mathbb{R}\\)), then \\(X\\) is called a Continuous random variable. Here, we cannot consider a set of finite/countable values for \\(X\\). However, we can choose a set of intervals in \\(\mathbb{R}\\), for example, and define the probability of \\(X\\) taking on a specific value by infinitesimal interval containing that value.
+  - **Continuous random variables.** If the sample space \\(\Omega\\) over which a random variable \\(X\\) is defined is infinite (e.g., \\(\mathbb{R}\\)), then \\(X\\) is called a Continuous random variable. Here, we cannot consider a set of finite/countable values for \\(X\\). However, we can choose a set of intervals in \\(\mathbb{R}\\), for example, and define the probability of \\(X\\) taking on a specific value by an infinitesimal interval containing that value.
   
     - **Probability density function (pdf)** For the a continuous r.v., we can define the pdf as \\(p(x)=\frac{dPr(x)}{dx}\\), assuming this derivative exists. 
     - Similar to the discrete case, the cdf function for a continuous r.v. is defined by \\(F_X(x) = Pr(x) = Pr_X(x) =  Pr(X\leq x) = \int _{u \in \Omega, u\leq x} p(u)du\\), where \\(p(u)\\) is the probability density function (pdf). If \\(\Omega = \mathbb{R}\\), then \\(Pr(x) = \int _{-\infty}^{x}p(u)du\\). From this, we can compute the probability of a continuous variable being in a finite interval \\(\[\alpha, \beta\]\\) for some \\(\alpha,\beta \in \mathbb{R}\\) as follows:
       \\[Pr(\alpha \leq X \leq \beta) = Pr(\beta) - Pr(\alpha) = \int _{\alpha}^{\beta}p(u)du \\]
-    - If the above interval is an infinitesimal interval, from calculus, \\(Pr(x \leq X \leq x+\Delta x) \approx p(x)dx\\). So, the product of the density at \\(x\\) and the width of the intervalt gives he probability of \\(X\\) being in a small interval around \\(x\\).
+    - If the above interval is an infinitesimal interval, from calculus, \\(Pr(x \leq X \leq x+\Delta x) \approx p(x)dx\\). So, the product of the density at \\(x\\) and the width of the interval gives the probability of \\(X\\) being in a small interval around \\(x\\).
     - The cdf is a monotonically increasing (not necessarily  strictly) function and for a continuous r.v. is always a continuous function.
     - The Bayes rule is given by
       \\[p(X=x\|B) = \frac{p(B\|X=x)p(X=x)}{p(B)} = \frac{p(B\|X=x)p(X=x)}{\int _{x\in \Omega} p(B\|X=x)p(X=x)dx}\\]
@@ -109,12 +109,12 @@ Here, we review most important concepts in the probability theory without mathem
         <br>
           <em>PDf and CDF of a standard Gaussian random variable.</em>
         </p>
-  - **Multivariate Random variables.** A cdf of a real vlaued random vector \\(\mathbf{X} \in \\mathbb{R}^{p}\\) (aka multivariate real-valued random variable) is given by:
+  - **Multivariate Random variables.** A cdf of a real-valued random vector \\(\mathbf{X} \in \\mathbb{R}^{p}\\) (aka multivariate real-valued random variable) is given by:
     \\[F_{\mathbf{X}}(x) = Pr(\mathbf{x}) = Pr_{\mathbf{X}}(\mathbf{x}) = Pr(X_1\leq x_1, X_2\leq x_2, \ldots, X_p\leq x_p)\\]
-    - For the continous case, the cdf can be expressed as the integral of the pdf \\(p(\mathbf{x})\\):
+    - For the continuous case, the cdf can be expressed as the integral of the pdf \\(p(\mathbf{x})\\):
       \\[Pr(\mathbf{x}) = \int _{\mathbf{x} \in \mathbb{R}^p}p(\mathbf{x})d\mathbf{x} = \int _{-\infty}^{x_p} \int _{-\infty}^{x _{p-1}}\ldots \int _{-\infty}^{x_1}dx_1 dx_2 \ldots dx_p p(x_1, x_2, \ldots, x_p)\\]
-* **Independent and Identically Distributed (IID) Random Variables.** A set of random variables is said to be iid if they are mutually independent of each other and are drawn from the same probability distribution. We denoted \\(n\\) iid random variables drawn from a distribution \\(p\\) as \\(x_1, x_2, \ldots, x_n \stackrel{iid}{\sim} p\\).
-* **Marginalization.** Given a joint pdf (pmf) of \\(n\\) random variables, we can obtain pdf (pmf) of one or other number of variables through marginalization, that is
+* **Independent and Identically Distributed (IID) Random Variables.** A set of random variables is said to be iid if they are mutually independent and drawn from the same probability distribution. We denoted \\(n\\) iid random variables drawn from a distribution \\(p\\) as \\(x_1, x_2, \ldots, x_n \stackrel{iid}{\sim} p\\).
+* **Marginalization.** Given a joint pdf (pmf) of \\(n\\) random variables, we can obtain pdf (pmf) of one or any number of variables through marginalization. That is,
     \begin{equation}
         \begin{aligned}
         p(x_i) = \int _{\mathbf{x} _{-i}} p(x_1, x_2, \ldots, x_n)d\mathbf{x _{-i}} ~~ \text{or} ~~ p(x_i) = \sum _{\mathbf{x} _{-i}} p(x_1, x_2, \ldots, x_n)
@@ -126,15 +126,20 @@ Here, we review most important concepts in the probability theory without mathem
 * **Chain Rule.** A very important result in probability is _Chain Rule_:
   \\[p(x_1, x_2, \ldots, x_n) = p(x_1)p(x_2 \| x_1)p(x_3 \| x_1, x_2)\ldots p(x_n\|x_1,x_2,\ldots,x_{n-1})\\]
 
-* **Exchangability.** Consider a sequence of random variables \\(x_1, x_2, \ldots, x_n\\). If for any \\(n\\), the joint probability of these r.v.'s is invariant to permutation of indices, then the sequence is said to be _infinitely exchangeable_. That is, \\(p(x_1, x_2, \ldots, x_n) = p(x_{\pi_1}, x_{\pi_2}, \ldots, x_{\pi_n})~\\), where \\(\pi\\) is a permutation of the index set \\(\\{1,2,\ldots,n\\}\\). The following theorem states the condition for exchangeability (here we state the theorem for continuous r.v.'s, but the same thing is true for discrete case).
+* **Exchangability.** Consider a sequence of random variables \\(x_1, x_2, \ldots, x_n\\). If for any \\(n\\), the joint probability of these r.v.'s is invariant to permutation of indices, then the sequence is said to be _infinitely exchangeable_. That is, \\(p(x_1, x_2, \ldots, x_n) = p(x_{\pi_1}, x_{\pi_2}, \ldots, x_{\pi_n})~\\), where \\(\pi\\) is a permutation of the index set \\(\\{1,2,\ldots,n\\}\\). The following theorem states the condition for exchangeability (here we state the theorem for continuous r.v.'s, but the same is true for discrete cases).
    - **De Finetti’s Theorem.** A sequence of random variables \\(x_1, x_2, \ldots, x_n\\) is infinitely exchangeable if and only if for all \\(n\\), we have
    \\[p(x_1, x_2, \ldots, x_n) = \int \prod _{i=1}^n p(x_i\|\pmb{\theta})p(\pmb{\theta})d\pmb{\theta}\\]
-     - where \\(\pmb{\theta}\\) is some hidden random variable (possibly infinite dimensional) which is common to all variables. This means that is, \\(x_1, x_2, \ldots, x_n\\) are iid r.v.'s conditional on \\(\pmb{\theta}\\).
+     - where \\(\pmb{\theta}\\) is some hidden random variable (possibly infinite-dimensional) which is common to all variables. This means that is, \\(x_1, x_2, \ldots, x_n\\) are iid r.v.'s conditional on \\(\pmb{\theta}\\).
 
 * **Quantiles.**
   - If the cdf is strictly monotonically increasing, then it is invertible and its inverse is called the _**inverse cdf, or percent point function (ppf), or quantile function**_.
   - The \\(q^{th}\\) quantile of the cdf of a random variable \\(X\\) denoted by \\(x_q\\) and is defined by \\(P^{-1}(q)\\) where \\( Pr(X \leq x_q) = q \\).
-    - The value \\(P^{-1}(0.5)\\) is _the median of a distribution_. The median is the point where half of the probability mass is on the left, and half on the right.
+    - The value \\(P^{-1}(0.5)\\) is _the median of a distribution_. The median is the point where half of the probability mass is on the left and half on the right.
     - The values \\(P^{-1}(0.25)\\) and \\(P^{-1}(0.75)\\) are the lower and upper quartiles.
 * **Moments of a Distribution**
+* Moment in probability and momentum in physics are similar concepts. In fact, both of these words come from the Latin word "movimentum", meaning to move, set in motion, or change [G. Gundersen, 2020]. Since momentum in physics is concerned with torque, and force, it is inherently related to the distribution of mass in objects. Similarly, in probability, moments of a distribution helps us to undestand how the mass of data is distributed. In particular, moments reveal the _location_, _scale_, and _shape_ of a distribution.
+* Generally, \\(K^{th}\\) moment can be defined in different ways (we only state the formulas for the continuous case. The discrete case is has the same formula by replacing "inegral" with "sum"):
+* Consider a random variable \\(X\\) with support \\(\mathcal{X}\\).
+  1. \(K^{th}\\) Raw Moment: \\(\mu_k = \mathbb{E}(X^k) = \int _{x\in \mathcal{X}} X^k p(x)dx\\)
+  2. 
   - **Expectation (Mean).**
