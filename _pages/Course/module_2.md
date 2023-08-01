@@ -21,7 +21,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **Vector of a diagonal entries of a matrix** \\(\mathrm{X}\\) | \\(diag(\mathrm{X})\\) |
    | **Real set** | \\(\mathbb{R}\\)|
    | **Complex set** | \\(\mathbb{C}\\)|
-   | **The** \\(i^{th}\\) **element of standard/Canonical basis vector with only 1 in** \\(i^{th}\\) **position and 0s in other positions** | \\(\mathbf{e}_i=[0, 0, \ldots, 0, 1, 0, \dots, 0 ]^T\\)|
+   | **The** \\(i^{th}\\) **vector of standard/Canonical basis with only 1 in** \\(i^{th}\\) **position and 0s in other positions** | \\(\mathbf{e}_i=[0, 0, \ldots, 0, 1, 0, \dots, 0 ]^T\\)|
    | **Element \\(i\\) of vector** \\(\mathbf{x}\\) | \\(x_i\\) |
    | **All elements of vector** \\(\mathbf{x}\\) **except for element** \\(i\\)  | \\(\mathbf{x_{-i}}\\) |
    | **Entry in** \\(i^{th}\\) **row and** \\(j^{th}\\) **column of a matrix** \\(\mathrm{X}\\) | \\(x_{ij}\\) |
