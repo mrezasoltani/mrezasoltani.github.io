@@ -53,7 +53,7 @@ Here, we review the most important concepts in probability theory without mathem
       We note that \(B\cap A_i, ~i=1,2,\ldots,n\) are disjoint events by the assumption on \(A_1, A_2,\ldots, A_{n}\) being a partition of the sample space. Hence, applying the third axiom of probability, we have:
   
       \begin{equation}
-      P(B\cap A_i)= \sum _{i=1}^{n} P(B\cap A_i) = \sum _{i=1}^{n} P(B|A_i)P(A_i)
+      P(B\cap A_i)= \sum _{i=1}^{n} P(B\cap A_i) = \sum _{i=1}^{n} P(B|A_i)\cdot P(A_i)
       \end{equation}
   
       For the last equality, we have used the conditional probability rule. \(\blacksquare\)
