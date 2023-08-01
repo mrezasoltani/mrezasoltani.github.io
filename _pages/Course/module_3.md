@@ -138,22 +138,22 @@ Here, we review the most important concepts in probability theory without mathem
     - The value \\(P^{-1}(0.5)\\) is _the median of a distribution_. The median is the point where half of the probability mass is on the left and half on the right.
     - The values \\(P^{-1}(0.25)\\) and \\(P^{-1}(0.75)\\) are the lower and upper quartiles.
 * **Moments of a Distribution**
-* Moment in probability and momentum in physics are similar concepts. In fact, both of these words come from the Latin word "movimentum", meaning to move, set in motion, or change [G. Gundersen, 2020]. Since momentum in physics is concerned with torque, and force, it is inherently related to the distribution of mass in objects. Similarly, in probability, moments of distribution help us to understand how the mass of data is distributed. In particular, moments reveal the _location_, _scale_, and _shape_ of a distribution.
-* Generally, \\(K^{th}\\) moment can be defined in different ways (here, we only state the formulas for the continuous case. The discrete case has the same formula by replacing "integral" with "sum"):
-* Consider a random variable \\(X\\) with support \\(\mathcal{X}\\).
-  1. \\(K^{th}\\) Raw Moment: \\(\mu_k = \mathbb{E}(X^k) = \int _{x\in \mathcal{X}} X^k p(x)dx\\)
-  2. \\(K^{th}\\) central Moment:
-  3. \\(K^{th}\\) Standardized Moment:
-  4. \\(K^{th}\\) Sample Moment about \\(C\\):
+  * Moment in probability and momentum in physics are similar concepts. In fact, both of these words come from the Latin word "movimentum", meaning to move, set in motion, or change [G. Gundersen, 2020]. Since momentum in physics is concerned with torque, and force, it is inherently related to the distribution of mass in objects. Similarly, in probability, moments of distribution help us to understand how the mass of data is distributed. In particular, moments reveal the _location_, _scale_, and _shape_ of a distribution.
+  * Generally, \\(K^{th}\\) moment can be defined in different ways (here, we only state the formulas for the continuous case. The discrete case has the same formula by replacing "integral" with "sum"):
+  * Consider a random variable \\(X\\) with support \\(\mathcal{X}\\).
+    1. \\(K^{th}\\) Raw Moment: \\(\mu_k = \mathbb{E}(X^k) = \int _{x\in \mathcal{X}} X^k p(x)dx\\)
+    2. \\(K^{th}\\) central Moment:
+    3. \\(K^{th}\\) Standardized Moment:
+    4. \\(K^{th}\\) Sample Moment about \\(C\\):
 
-  - **Expectation (Mean).**
+- **Expectation (Mean).**
 
 ## Common Discrete Random Variables
 * **Bernoulli**
 * **Multinouli (Categorical)**
 * **Binomial**
 * **Multinomial**
-* Poisson
+* **Poisson**
 
 ## Common Continous Random Variables
 * **Gaussian (Normal)**
