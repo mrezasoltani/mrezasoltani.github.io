@@ -57,7 +57,7 @@ classes: wide
   3. Andrew Ng, The Deep Learning Specialization, 2018 ([link](https://www.deeplearning.ai/courses/deep-learning-specialization/))
   4. Bayesian Methods in Machine Learning by Roman Garnett (Washington University in St. Louis) ([link](https://www.cse.wustl.edu/~garnett/cse515t/spring_2017/))
 
-* **Most datasets used in ML literature:**
+* **Date repositories used in ML literature:**
   1. **UCI Machine Learning Repository.** The Machine Learning Repository at UCI provides an up-to-date resource for open-source datasets ([link](https://archive.ics.uci.edu/)).
   2. **Google Dataset Search.** Similar to how Google Scholar works, Dataset Search lets you find datasets wherever they are hosted, whether it’s a publisher’s site, a digital library, or an author’s web page. It contains over 25 million datasets ([link](https://datasetsearch.research.google.com/)).
   3. **Kaggle.** Kaggle provides a large container of datasets, including over 50,000 public datasets and 400,000 public notebooks for the purpose of data exploratory  analysis (EDA) ([link](https://www.kaggle.com/)).
