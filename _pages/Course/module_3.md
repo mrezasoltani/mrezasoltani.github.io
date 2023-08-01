@@ -147,3 +147,19 @@ Here, we review the most important concepts in probability theory without mathem
   4. \\(K^{th}\\) Sample Moment about \\(C\\):
 
   - **Expectation (Mean).**
+
+## Common Discrete Random Variables
+* **Bernoulli**
+* **Multinouli (Categorical)**
+* **Binomial**
+* **Multinomial**
+* Poisson
+
+## Common Continous Random Variables
+* **Gaussian (Normal)**
+* **Exponential**
+* **Student-t**
+* **Gamma**
+* **Chi-Squared**
+* **Beta**
+* **Wishart**
