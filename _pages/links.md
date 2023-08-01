@@ -45,6 +45,11 @@ classes: wide
     18. A blog about transformers by Jonathan Bgn ([link](https://jonathanbgn.com/2021/06/29/illustrated-wav2vec.html))
     19. Jay Alammar's blog about BERT, GPT, etc ([link](https://jalammar.github.io/about/))
     20. A blog about mathematical concepts in ML by Gregory Gundersen ([link](https://gregorygundersen.com/))
+    21. Columbia Advanced Machine Learning Seminar ([link](https://casmls.github.io/))
+
+* **Data Science**
+  1. KDnuggets, courses/blogs in Data Science, Machine Learning, AI & Analytics ([link](https://www.kdnuggets.com/courses/index.html)
+  2. Analytics Vidhya, Courses/blogs/books in Data Science, Machine Learning ([link](https://courses.analyticsvidhya.com/))
 
 * **Courses:**
   1. Andrew Ng, Machine Learning Specialization, 2012 ([link](https://www.deeplearning.ai/courses/machine-learning-specialization/))
@@ -63,3 +68,6 @@ classes: wide
   8. **Data.world.** This is yet another data source. Data.world calls itself a "collaborative data community" and holds over 100,000 datasets ranging from crime to social media ([link](http://data.world/search?q=type%3Adataset&type=resources)).
   9. **Data.gov.** This is a database for the US Government's open data as an attempt to be more transparent. This database hosts over 300,000 datasets from different fields such as environment, ocean, and agriculture ([link](http://catalog.data.gov/dataset)).
   10. **Earthdata.** Earthdata has been created by NASA as a part of its Earth Science Data Systems Program called Earth Observing System Data and Information System (EOSDIS) ([link](http://search.earthdata.nasa.gov/search)).
+  11. **Europeana Data.** Open metadata on 20 million texts, images, videos and sounds gathered by Europeana ([link](http://data.europeana.eu/))
+  12. **Data Planet.** The largest repository of standardized and structured statistical data ([link](http://www.data-planet.com/))
+
