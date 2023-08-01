@@ -49,7 +49,7 @@ classes: wide
 
 * **Data Science**
   1. KDnuggets, courses/blogs in Data Science, Machine Learning, AI & Analytics ([link](https://www.kdnuggets.com/courses/index.html)
-  2. Analytics Vidhya, Courses/blogs/books in Data Science, Machine Learning ([link](https://courses.analyticsvidhya.com/))
+  2. Analytics Vidhya, courses/blogs/books in Data Science, Machine Learning ([link](https://courses.analyticsvidhya.com/))
 
 * **Courses:**
   1. Andrew Ng, Machine Learning Specialization, 2012 ([link](https://www.deeplearning.ai/courses/machine-learning-specialization/))
