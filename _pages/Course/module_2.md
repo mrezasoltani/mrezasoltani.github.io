@@ -29,6 +29,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | **A probability distribution over a discrete variable (pmf) or a mixture of continuous and discrete variables** | \\(P(x)\\) |
    | **A probability distribution over a continuous variable (pdf)** | \\(p(x)\\) |
    | **Cumulative distribution function for both discrete and continuous random variables (cdf)** | \\(Pr(x)\\) or \\(F(x)\\) |
+   | **Expectation of a random variable** | \\(\mathbb{E}(X)\\) |
    | \\(L^p\\) **norm of a vector** \\(\mathbf{x}\\) | \\(\\|\\|\mathbf{x}\\|\\|_p\\) |
    | \\(p\\) **-induced norm of a matrix** | \\(\\|\\|\mathrm{X}\\|\\|_p\\) |
    | **Dot product of two vectors** | \\(\mathbf{x}\cdot\mathbf{y}\\) |
