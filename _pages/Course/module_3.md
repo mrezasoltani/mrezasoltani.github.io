@@ -143,8 +143,8 @@ Here, we review the most important concepts in probability theory without mathem
   * Generally, \\(K^{th}\\) moment can be defined in different ways (here, we only state the formulas for the continuous case. The discrete case has the same formula by replacing "integral" with "sigma"):
   * Consider a random variable \\(X\\) with support \\(\mathcal{X}\\).
     1. \\(K^{th}\\) Raw Moment: \\(\mu_k = \mathbb{E}(X^k) = \int _{x\in \mathcal{X}} X^k p(x)dx\\)
-    2. \\(K^{th}\\) central Moment:
-    3. \\(K^{th}\\) Standardized Moment:
+    2. \\(K^{th}\\) central Moment: \\(m_k = \mathbb{E}(X-\mu_k)^K\\)
+    3. \\(K^{th}\\) Standardized Moment: \\(\bar{m_k} = (frac{X-\mu_k}{\sigma_x})^k\\)
     4. \\(K^{th}\\) Sample Moment about \\(C\\):
 
 - **Expectation (Mean).**
