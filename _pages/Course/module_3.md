@@ -143,9 +143,9 @@ Here, we review the most important concepts in probability theory without mathem
   * Generally, \\(K^{th}\\) moment can be defined in different ways (here, we only state the formulas for the continuous case. The discrete case has the same formula by replacing "integral" with "sigma"):
   * Consider a random variable \\(X\\) with support \\(\mathcal{X}\\).
     1. \\(k^{th}\\) Raw Moment: \\(\mu_k = \mathbb{E}(X^k) = \int _{x\in \mathcal{X}} x^k p(x)dx\\)
-    2. \\(k^{th}\\) central Moment: \\(m_k = \mathbb{E}(X-\mu_k)^K = \int _{x\in \mathcal{X}} (x-\mu_k)^K p(x)dx\\)
-    3. \\(k^{th}\\) Standardized Moment: \\(\bar{m} _k = (\frac{X-\mu_k}{\sigma_x})^k\\)
-    4. \\(k^{th}\\) Sample Moment about \\(\tilde{m} _k = (C\\):\frac{1}{N}\sum _{i=1}^{n}(X_i-C)^k\\)
+    2. \\(k^{th}\\) central Moment: \\(m_k = \mathbb{E}((X-\mu_k)^K) = \int _{x\in \mathcal{X}} (x-\mu_k)^K p(x)dx\\)
+    3. \\(k^{th}\\) Standardized Moment: \\(\bar{m} _k = \mathbb{E}((\frac{X-\mu_k}{\sigma_x})^k) = \\)
+    4. \\(k^{th}\\) Sample Moment about \\(\tilde{m} _k = (C\\): \\(\frac{1}{N}\sum _{i=1}^{n}(X_i-C)^k\\)
 
 - **Expectation (Mean).**
   
