@@ -140,8 +140,8 @@ Here, we review the most important concepts in probability theory without mathem
     - The values \\(P^{-1}(0.25)\\) and \\(P^{-1}(0.75)\\) are the lower and upper quartiles.
 - **Expectation (Mean).** Mean, or expected value of a random variable is the first moment of distribution (see below for more details), often denoted by \\(\mu_x\\) or \\(\mu_1\\). For a continuous r.v. with the support \\(\mathcal{\Omega}\\), the mean is defined as follows (if the integral is not finite, the mean is not defined):
   \\[\mu_x = \mu_1 = \mathbb{E}(X) = \int _{x\in \mathcal{\Omega}} x^k p(x)dx\\]
-  - Expectation is a linear operator, i.e., let \\(X\\) be a random variable (discrete/continous) and \\(a\\) and \\(b\\) be two constants, \\(E(aX+b) = aE(X) + b\\). More generally, \\(\mathbb{E}\[\sum _{i-1}^n X_i = \sum _{i=1}^n \mathbb{E}X_i\\), where \\(X_1, X_2, \ldots X_n\\) are \\(n\\) random variables (discrete/continous) .
-  - Let \\(X_1, X_2, \ldots X_n\\) be independent random variables. Then, \\(\mathbb{E}\[\pi _{i=1}^n\] = \pi _{i=1}^n\mathbb{E}X_i\\).
+  - Expectation is a linear operator, i.e., let \\(X\\) be a random variable (discrete/continous) and \\(a\\) and \\(b\\) be two constants, \\(E(aX+b) = aE(X) + b\\). More generally, \\(\mathbb{E}\[\sum _{i-1}^n X_i\] = \sum _{i=1}^n \mathbb{E}X_i\\), where \\(X_1, X_2, \ldots X_n\\) are \\(n\\) random variables (discrete/continous) .
+  - Let \\(X_1, X_2, \ldots X_n\\) be independent random variables. Then, \\(\mathbb{E}\[\prod _{i=1}^n\] = \prod _{i=1}^n\mathbb{E}X_i\\).
 - **Variance.** 
 
 * **Moments of a Distribution**
