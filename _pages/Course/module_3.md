@@ -138,16 +138,20 @@ Here, we review the most important concepts in probability theory without mathem
   - The \\(q^{th}\\) quantile of the cdf of a random variable \\(X\\) denoted by \\(x_q\\) and is defined by \\(P^{-1}(q)\\) where \\( Pr(X \leq x_q) = q \\).
     - The value \\(P^{-1}(0.5)\\) is _the median of a distribution_. The median is the point where half of the probability mass is on the left and half on the right.
     - The values \\(P^{-1}(0.25)\\) and \\(P^{-1}(0.75)\\) are the lower and upper quartiles.
+- **Expectation (Mean).** Mean, or expected value of a random variable is the first moment of distribution (see below for more details), often denoted by \\(\mu_x\\) or \\(\mu_1\\). For a continuous r.v. with the support \\(\mathcal{\Omega}\\), the mean is defined as follows (if the integral is not finite, the mean is not defined):
+  \\[\mu_x = \mu_1 = \mathbb{E}(X) = \int _{x\in \mathcal{\Omega}} x^k p(x)dx\\]
+  - Expectation is a linear operator, i.e., let \\(X\\) be a random variable (discrete/continous) and \\(a\\) and \\(b\\) be two constants, \\(E(aX+b) = aE(X) + b\\). More generally, \\(\mathbb{E}\[\sum _{i-1}^n X_i = \sum _{i=1}^n \mathbb{E}X_i\\), where \\(X_1, X_2, \ldots X_n\\) are \\(n\\) random variables (discrete/continous) .
+  - Let \\(X_1, X_2, \ldots X_n\\) be independent random variables. Then, \\(\mathbb{E}\[\pi _{i=1}^n\] = \pi _{i=1}^n\mathbb{E}X_i\\).
+- **Variance.** 
+
 * **Moments of a Distribution**
   * Moment in probability and momentum in physics are similar concepts. In fact, both of these words come from the Latin word "movimentum", meaning to move, set in motion, or change [G. Gundersen, 2020]. Since momentum in physics is concerned with torque, and force, it is inherently related to the distribution of mass in objects. Similarly, in probability, moments of distribution help us to understand how the mass of data is distributed. In particular, moments reveal the _location_, _scale_, and _shape_ of a distribution.
   * Generally, \\(K^{th}\\) moment can be defined in different ways (here, we only state the formulas for the continuous case. The discrete case has the same formula by replacing "integral" with "sigma"):
   * Consider a random variable \\(X\\) with support \\(\mathcal{X}\\).
     1. \\(k^{th}\\) Raw Moment: \\(\mu_k = \mathbb{E}(X^k) = \int _{x\in \mathcal{X}} x^k p(x)dx\\)
-    2. \\(k^{th}\\) central Moment: \\(m_k = \mathbb{E}(\[(X-\mu_k)^K\] = \int _{x\in \mathcal{X}} (x-\mu_k)^k p(x)dx\\)
+    2. \\(k^{th}\\) central Moment: \\(m_k = \mathbb{E}\[(X-\mu_k)^K\] = \int _{x\in \mathcal{X}} (x-\mu_k)^k p(x)dx\\)
     3. \\(k^{th}\\) Standardized Moment: \\(\overline{m} _k = \mathbb{E}\[\frac{X-\mu_k}{\sigma_x})^k\] = \int _{x\in \mathcal{X}} \frac{x-\mu_k}{\sigma_x})^k p(x)dx\\)
     4. \\(k^{th}\\) Sample Moment about \\(C\\): \\(\tilde{m} _k = \frac{1}{N}\sum _{i=1}^{n}(X_i-C)^k\\)
-
-- **Expectation (Mean).**
   
 ## Common Discrete Random Variables
 * **Bernoulli**
