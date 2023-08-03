@@ -150,7 +150,7 @@ Here, we review the most important concepts in probability theory without mathem
   * Consider a random variable \\(X\\) with support \\(\mathcal{X}\\).
     1. \\(k^{th}\\) Raw Moment: \\(\mu_k = \mathbb{E}(X^k) = \int _{x\in \mathcal{X}} x^k p(x)dx\\)
     2. \\(k^{th}\\) central Moment: \\(m_k = \mathbb{E}\[(X-\mu_k)^K\] = \int _{x\in \mathcal{X}} (x-\mu_k)^k p(x)dx\\)
-    3. \\(k^{th}\\) Standardized Moment: \\(\overline{m} _k = \mathbb{E}\[\frac{X-\mu_k}{\sigma_x})^k\] = \int _{x\in \mathcal{X}} \frac{x-\mu_k}{\sigma_x})^k p(x)dx\\)
+    3. \\(k^{th}\\) Standardized Moment: \\(\overline{m} _k = \mathbb{E}\[\frac{X-\mu_k}{\sigma_x})^k\] = \int _{x\in \mathcal{X}} (\frac{x-\mu_k}{\sigma_x})^k p(x)dx\\)
     4. \\(k^{th}\\) Sample Moment about \\(C\\): \\(\tilde{m} _k = \frac{1}{N}\sum _{i=1}^{n}(X_i-C)^k\\)
   
 ## Common Discrete Random Variables
