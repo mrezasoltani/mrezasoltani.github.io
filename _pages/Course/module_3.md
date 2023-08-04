@@ -147,16 +147,27 @@ Here, we review the most important concepts in probability theory without mathem
 - **Variance.** 
 
 * **Moments of a Distribution**
-  * Moment in probability and momentum in physics are similar concepts. In fact, both of these words come from the Latin word "movimentum", meaning to move, set in motion, or change [G. Gundersen, 2020]. Since momentum in physics is concerned with torque, and force, it is inherently related to the distribution of mass in objects. Similarly, in probability, moments of distribution help us to understand how the mass of data is distributed. In particular, moments reveal the _location_, _scale_, and _shape_ of a distribution.
+  * Moment in probability and momentum in physics are similar concepts. In fact, both of these words come from the Latin word "movimentum", meaning to move, set in motion, or change [G. Gundersen, 2020]. Since momentum in physics is concerned with torque, and force, it is inherently related to the distribution of mass in objects. Similarly, in probability, moments of distribution help us to understand how the mass of data is distributed. In particular, moments reveal a distribution's _location_, _scale_, and _shape_.
   * Generally, \\(K^{th}\\) moment can be defined in different ways (here, we only state the formulas for the continuous case. The discrete case has the same formula by replacing "integral" with "sigma"):
   * Consider a random variable \\(X\\) with support \\(\mathcal{X}\\).
     1. \\(k^{th}\\) Raw Moment: \\(\mu_k = \mathbb{E}(X^k) = \int _{x\in \mathcal{X}} x^k p(x)dx\\)
     2. \\(k^{th}\\) central Moment: \\(m_k = \mathbb{E}\[(X-\mu_k)^K\] = \int _{x\in \mathcal{X}} (x-\mu_k)^k p(x)dx\\)
-    3. \\(k^{th}\\) Standardized Moment: \\(\overline{m} _k = \mathbb{E}\[\frac{X-\mu_k}{\sigma_x})^k\] = \int _{x\in \mathcal{X}} (\frac{x-\mu_k}{\sigma_x})^k p(x)dx\\)
+    3. \\(k^{th}\\) Standardized Moment: \\(\overline{m} _k = \mathbb{E}\[(\frac{X-\mu_k}{\sigma_x})^k\] = \int _{x\in \mathcal{X}} (\frac{x-\mu_k}{\sigma_x})^k p(x)dx\\)
     4. \\(k^{th}\\) Sample Moment about \\(C\\): \\(\tilde{m} _k = \frac{1}{N}\sum _{i=1}^{n}(X_i-C)^k\\)
   
 ## Common Discrete Random Variables
-* **Bernoulli**
+* **Bernoulli** A Bernoulli random variable with parameter \\(0 \leq \theta \leq 1\\) is a binary discrete r.v. with the following pmf:
+  \begin{equation}
+        \begin{aligned}
+          Ber(x|\theta) =
+            \begin{cases}
+              ~ \theta, & x=1  \\\\\\\\
+              1-\theta, & x=0
+            \end{cases}
+        \end{aligned}
+        \end{equation}
+    - Please note that 0 and 1 values can be any other numbers.
+
 * **Multinomial (Categorical)**
 * **Binomial**
 * **Multinomial**
