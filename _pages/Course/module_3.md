@@ -170,7 +170,7 @@ Here, we review the most important concepts in probability theory without mathem
 * **Multinomial (Categorical).** 
 * **Binomial** Consiider \\(n\\) random variables \\(X_i\stackrel{iid}\sim Ber(x|\theta), ~ i=1,2,\ldots,n\\). The sum of these random variables, \\(y=\sum _{i=1}^n X_i\\) is called Binomial r.v. with parameters \\((n, \theta)\\), and is defined as follows:
   \\[Bin(y\|n, \theta) = \binom ni \theta^{i}(1-\theta)^{n-i}\\]
-    - \\(\binom ni = \frac{n!}{(n-i)!i!}\\) is the number of ways to choose \\(i\\) objects from \\(n\) objects.
+    - \\(\binom ni = \frac{n!}{(n-i)!i!}\\) is the number of ways to choose \\(i\\) objects from \\(n\\) objects.
 * **Multinomial**
 * **Poisson**
 
