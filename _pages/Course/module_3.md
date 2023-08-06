@@ -148,7 +148,7 @@ Here, we review the most important concepts in probability theory without mathem
   \\[\sigma_x^2 = m_2 = var(X) = \mathbb{E}\[(X-\mu_x)^2 \]=\int _{x\in \mathcal{\Omega}} (x-\mu_x)^2 p(x)dx\\]
    - We can simplify the above relation as follows;
      \\[\sigma_x^2 = \mathbb{E}(X^2) + \mu^2 -2\mathbb{E}(X)\mu_x = \mathbb{E}(X^2) + \mu^2 -2\mu_x^2 = \mathbb{E}(X^2) - \mu^2 = \mathbb{E}(X^2) -\mathbb{E}(X)^2\\]
-   - Since \\(var(X)\geq 0\\), we immiadiately see that \\(\mathbb{E}(X^2) \geq \mathbb{X}^2\\).
+   - Since \\(var(X)\geq 0\\), we immiadiately see that \\(\mathbb{E}(X^2) \geq (\mathbb{E}(X))^2\\).
    - The square root of variance is called _standard deviation_, \\(std(X) = \sigma_x = \sqrt{var(x)}\\).
    - Let \\(\alpha\\) and \\(\beta~\\) be two constants (determonistic variables), then \\(var(\alpha X + \beta) =\alpha^2var(X)\\).
    - Let \\(X_1, X_2, \ldots X_n\\) be independent random variables. Then, the variance of their sum is given by \\(var\[\[\prod _{i=1}^nX_i\] = \prod _{i=1}^n var(X_i)\\).
