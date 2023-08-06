@@ -138,12 +138,15 @@ Here, we review the most important concepts in probability theory without mathem
   - The \\(q^{th}\\) quantile of the cdf of a random variable \\(X\\) denoted by \\(x_q\\) and is defined by \\(P^{-1}(q)\\) where \\( Pr(X \leq x_q) = q \\).
     - The value \\(P^{-1}(0.5)\\) is _the median of a distribution_. The median is the point where half of the probability mass is on the left and half on the right.
     - The values \\(P^{-1}(0.25)\\) and \\(P^{-1}(0.75)\\) are the lower and upper quartiles.
+
 - **Expectation (Mean).** Mean, or expected value of a random variable is the first moment of distribution (see below for more details), often denoted by \\(\mu_x\\) or \\(\mu_1\\). For a continuous r.v. with the support \\(\mathcal{\Omega}\\), the mean is defined as follows (if the integral is not finite, the mean is not defined):
   \\[\mu_x = \mu_1 = \mathbb{E}(X) = \int _{x\in \mathcal{\Omega}} x p(x)dx\\]
   And for a discrete r.v. with the support \\(\mathcal{\Omega}\\):
   \\[\mu_x = \mu_1 = \mathbb{E}(X) = \sum _{x\in \mathcal{\Omega}} x P(x)\\]
   - Expectation is a linear operator, i.e., let \\(X\\) be a random variable (discrete/continous) and \\(a\\) and \\(b\\) be two constants, \\(E(aX+b) = aE(X) + b\\). More generally, \\(\mathbb{E}\[\sum _{i-1}^n X_i\] = \sum _{i=1}^n \mathbb{E}X_i\\), where \\(X_1, X_2, \ldots X_n\\) are \\(n\\) random variables (discrete/continous).
   - Let \\(X_1, X_2, \ldots X_n\\) be independent random variables. Then, \\(\mathbb{E}\[\prod _{i=1}^nX_i\] = \prod _{i=1}^n\mathbb{E}X_i\\).
+  - **Law of Iterated Expectations (Law of Total Expectation**
+    
 - **Variance.** Variance of a random variable is the second moment of distribution (see below for more details), often denoted by \\(\\sigma_x^2\\), \\(m_2\\), \\(var(X)\\). For a continuous r.v. with the support \\(\mathcal{\Omega}\\), the variance is defined as follows (if the integral is not finite, the variance is not defined):
   \\[\sigma_x^2 = m_2 = var(X) = \mathbb{E}\[(X-\mu_x)^2 \]=\int _{x\in \mathcal{\Omega}} (x-\mu_x)^2 p(x)dx\\]
    - We can simplify the above relation as follows;
@@ -160,7 +163,12 @@ Here, we review the most important concepts in probability theory without mathem
            \prod _{i=1}^n(\sigma_x^2 + \mu_x^2) - \prod _{i=1}^n\mu_x^2
          \end{aligned}
       \end{equation}
-
+    - **Law of Total Variance (Conditional Variance Formula)**
+  
+- **Mode.** The mode of a distribution is the value in which the probability mass function or probability density function are maximized:
+  \\[x^* = \argmax_x p(x)\\]
+  - If the distribution is multimodal, the solution to the above maximization problem may not be unique.
+  
 * **Moments of a Distribution**
   * Moment in probability and momentum in physics are similar concepts. In fact, both of these words come from the Latin word "movimentum", meaning to move, set in motion, or change [G. Gundersen, 2020]. Since momentum in physics is concerned with torque, and force, it is inherently related to the distribution of mass in objects. Similarly, in probability, moments of distribution help us to understand how the mass of data is distributed. In particular, moments reveal a distribution's _location_, _scale_, and _shape_. The location is captured by the first moment or mean of the distribution and it tells us how far away from the origin the center of mass is. The scale is captured by the second moment and shows how spread out a distribution is. The shape of a distribution is revealed by a higher moment.
   * Generally, \\(k^{th}\\) moment can be defined in different ways (here, we only state the formulas for the continuous case. The discrete case has the same formula by replacing "integral" with "sigma"):
