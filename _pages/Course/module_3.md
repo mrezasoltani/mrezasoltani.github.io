@@ -145,10 +145,16 @@ Here, we review the most important concepts in probability theory without mathem
   - Expectation is a linear operator, i.e., let \\(X\\) be a random variable (discrete/continous) and \\(a\\) and \\(b\\) be two constants, \\(E(aX+b) = aE(X) + b\\). More generally, \\(\mathbb{E}\[\sum _{i-1}^n X_i\] = \sum _{i=1}^n \mathbb{E}X_i\\), where \\(X_1, X_2, \ldots X_n\\) are \\(n\\) random variables (discrete/continous) .
   - Let \\(X_1, X_2, \ldots X_n\\) be independent random variables. Then, \\(\mathbb{E}\[\prod _{i=1}^nX_i\] = \prod _{i=1}^n\mathbb{E}X_i\\).
 - **Variance.** Variance of a random variable is the second moment of distribution (see below for more details), often denoted by \\(\\sigma_x^2\\), \\(m_2\\), \\(var(X)\\). For a continuous r.v. with the support \\(\mathcal{\Omega}\\), the variance is defined as follows (if the integral is not finite, the variance is not defined):
-  \\[\sigma_x^2 = m_2 = var(X) = \int _{x\in \mathcal{\Omega}} (x-\mu_x)^2 p(x)dx\\]
+  \\[\sigma_x^2 = m_2 = var(X) = \mathbb{E}\[(X-\mu_x)^2 = \]\int _{x\in \mathcal{\Omega}} (x-\mu_x)^2 p(x)dx\\]
+   - We can simplify the above relation as follows;
+     \\[\sigma_x^2 = \mathbb{E}(X^2) + \mu^2 -2\mathbb{E}(X)\mu_x = \mathbb{E}(X^2) + \mu^2 -2\mu_x^2 = \mathbb{E}(X^2) - \mu^2 = \mathbb{E}(X^2) -\mathbb{X}^2\\]
+   - Since \\(var(X)\leq 0\\), we immiadiately see that \\(\mathbb{E}(X^2) \leq \mathbb{X}^2\\).
+   - The square root of variance is called _standard deviation_, \\(std(X) = \sigma_x = \sqrt{var(x)}\\).
+   - Let \\(\alpha\\) and \\(\beta\\) be two constants (determonistic variables), then \\(var(\alpha X + \beta) =\alpha^2var(X)\\).
+   -  
 
 * **Moments of a Distribution**
-  * Moment in probability and momentum in physics are similar concepts. In fact, both of these words come from the Latin word "movimentum", meaning to move, set in motion, or change [G. Gundersen, 2020]. Since momentum in physics is concerned with torque, and force, it is inherently related to the distribution of mass in objects. Similarly, in probability, moments of distribution help us to understand how the mass of data is distributed. In particular, moments reveal a distribution's _location_, _scale_, and _shape_. The location is captured by the first moment or mean of the distribution and it tells us how far away from the origin the center of mass is. The scale is captured by the second moment and shows how spread out a distribution is. The shape os a distribution is revealed by a higher moment.
+  * Moment in probability and momentum in physics are similar concepts. In fact, both of these words come from the Latin word "movimentum", meaning to move, set in motion, or change [G. Gundersen, 2020]. Since momentum in physics is concerned with torque, and force, it is inherently related to the distribution of mass in objects. Similarly, in probability, moments of distribution help us to understand how the mass of data is distributed. In particular, moments reveal a distribution's _location_, _scale_, and _shape_. The location is captured by the first moment or mean of the distribution and it tells us how far away from the origin the center of mass is. The scale is captured by the second moment and shows how spread out a distribution is. The shape of a distribution is revealed by a higher moment.
   * Generally, \\(k^{th}\\) moment can be defined in different ways (here, we only state the formulas for the continuous case. The discrete case has the same formula by replacing "integral" with "sigma"):
   * Consider a random variable \\(X\\) with support \\(\mathcal{X}\\).
     1. \\(k^{th}\\) Raw Moment: \\(\mu_k = \mathbb{E}(X^k) = \int _{x\in \mathcal{X}} x^k p(x)dx\\)
@@ -158,7 +164,7 @@ Here, we review the most important concepts in probability theory without mathem
     3. \\(k^{th}\\) Standardized Moment: \\(\overline{m} _k = \mathbb{E}\[(\frac{X-\mu_k}{\sigma_x})^k\] = \int _{x\in \mathcal{X}} (\frac{x-\mu_k}{\sigma_x})^k p(x)dx\\).
        - \\(Z=\frac{X-\mu_k}{\sigma_x}\\) is called the standard score or z-score.
        - With \\(k=1\\), we obtain the _skeness of a random variable.
-       - The skewness is positive for longer right tails (right skewed or positively skewed distribution) and negative for longer left tails (left skewed or negatively skewed distribution).
+       - The skewness is positive for longer right tails (right-skewed or positively skewed distribution) and negative for longer left tails (left-skewed or negatively skewed distribution).
        - A symmetric random variable has a zero skewness, but the opposite is not always true.
        - With \\(k=4\\), we obtain the _kurtosis_ of a distribution. Kurtosis is a measure, describing how the tails of a distribution differ from the tails of a normal distribution. There are three types of kurtosis: mesokurtic (Distributions with medium tails), leptokurtic (distributions with fat tails), and platykurtic (distributions with thin tails).
     5. \\(k^{th}\\) Sample Moment about \\(C\\): \\(\tilde{m} _k = \frac{1}{N}\sum _{i=1}^{n}(X_i-C)^k\\)
