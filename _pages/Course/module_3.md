@@ -153,7 +153,7 @@ Here, we review the most important concepts in probability theory without mathem
   * Consider a random variable \\(X\\) with support \\(\mathcal{X}\\).
     1. \\(k^{th}\\) Raw Moment: \\(\mu_k = \mathbb{E}(X^k) = \int _{x\in \mathcal{X}} x^k p(x)dx\\)
        - With \\(k=1\\), we obtain the expectation or the mean of a random variable. 
-    2. \\(k^{th}\\) central Moment: \\(m_k = \mathbb{E}\[(X-\mu_k)^K\] = \int _{x\in \mathcal{X}} (x-\mu_k)^k p(x)dx\\)
+    2. \\(k^{th}\\) Central Moment: \\(m_k = \mathbb{E}\[(X-\mu_k)^K\] = \int _{x\in \mathcal{X}} (x-\mu_k)^k p(x)dx\\)
        - With \\(k=1\\), we obtain the variance of a random variable.
     3. \\(k^{th}\\) Standardized Moment: \\(\overline{m} _k = \mathbb{E}\[(\frac{X-\mu_k}{\sigma_x})^k\] = \int _{x\in \mathcal{X}} (\frac{x-\mu_k}{\sigma_x})^k p(x)dx\\).
        - \\(Z=\frac{X-\mu_k}{\sigma_x}\\) is called the standard score or z-score.
