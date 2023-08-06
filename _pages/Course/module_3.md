@@ -156,7 +156,7 @@ Here, we review the most important concepts in probability theory without mathem
      \begin{equation}
         \begin{aligned}
            var(\prod _{i=1}^n X_i) = \mathbb{E}\[(\prod _{i=1}^n X_i)^2\] - (\mathbb{E}\[\prod _{i=1}^n X_i\])^2 \\\\\\\\
-           \prod _{i=1}^n\mathbb{E}(Xi^2) - (\prod _{i=1}^n\mathbb{E}X_i)^2 \\\\\\\\
+           \prod _{i=1}^n\mathbb{E}(X_i^2) - (\prod _{i=1}^n\mathbb{E}X_i)^2 \\\\\\\\
            \prod _{i=1}^n(\sigma_x^2 + \mu_x^2) - \prod _{i=1}^n\mu_x^2
          \end{aligned}
       \end{equation}
