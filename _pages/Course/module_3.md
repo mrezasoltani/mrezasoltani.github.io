@@ -149,7 +149,7 @@ Here, we review the most important concepts in probability theory without mathem
 
 * **Moments of a Distribution**
   * Moment in probability and momentum in physics are similar concepts. In fact, both of these words come from the Latin word "movimentum", meaning to move, set in motion, or change [G. Gundersen, 2020]. Since momentum in physics is concerned with torque, and force, it is inherently related to the distribution of mass in objects. Similarly, in probability, moments of distribution help us to understand how the mass of data is distributed. In particular, moments reveal a distribution's _location_, _scale_, and _shape_. The location is captured by the first moment or mean of the distribution and it tells us how far away from the origin the center of mass is. The scale is captured by the second moment and shows how spread out a distribution is. The shape os a distribution is revealed by a higher moment.
-  * Generally, \\(K^{th}\\) moment can be defined in different ways (here, we only state the formulas for the continuous case. The discrete case has the same formula by replacing "integral" with "sigma"):
+  * Generally, \\(k^{th}\\) moment can be defined in different ways (here, we only state the formulas for the continuous case. The discrete case has the same formula by replacing "integral" with "sigma"):
   * Consider a random variable \\(X\\) with support \\(\mathcal{X}\\).
     1. \\(k^{th}\\) Raw Moment: \\(\mu_k = \mathbb{E}(X^k) = \int _{x\in \mathcal{X}} x^k p(x)dx\\)
        - With \\(k=1\\), we obtain the expectation or the mean of a random variable. 
