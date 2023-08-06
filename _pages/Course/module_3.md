@@ -150,7 +150,7 @@ Here, we review the most important concepts in probability theory without mathem
 - **Variance.** Variance of a random variable is the second moment of distribution (see below for more details), often denoted by \\(\\sigma_x^2\\), \\(m_2\\), \\(var(X)\\). For a continuous r.v. with the support \\(\mathcal{\Omega}\\), the variance is defined as follows (if the integral is not finite, the variance is not defined):
   \\[\sigma_x^2 = m_2 = var(X) = \mathbb{E}\[(X-\mu_x)^2 \]=\int _{x\in \mathcal{\Omega}} (x-\mu_x)^2 p(x)dx\\]
    - We can simplify the above relation as follows;
-     \\[\sigma_x^2 = \mathbb{E}(X^2) + \mu^2 -2\mathbb{E}(X)\mu_x = \mathbb{E}(X^2) + \mu^2 -2\mu_x^2 = \mathbb{E}(X^2) - \mu^2 = \mathbb{E}(X^2) -\mathbb{E}(X)^2\\]
+     \\[\sigma_x^2 = \mathbb{E}(X^2) + \mu^2 -2\mathbb{E}(X)\mu_x = \mathbb{E}(X^2) - \mu^2 = \mathbb{E}(X^2) -\mathbb{E}(X)^2\\]
    - Since \\(var(X)\geq 0\\), we immiadiately see that \\(\mathbb{E}(X^2) \geq \mathbb{E}(X)^2\\).
    - The square root of variance is called _standard deviation_, \\(std(X) = \sigma_x = \sqrt{var(x)}\\).
    - Let \\(\alpha\\) and \\(\beta~\\) be two constants (determonistic variables), then \\(var(\alpha X + \beta) =\alpha^2var(X)\\).
