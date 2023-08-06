@@ -166,7 +166,7 @@ Here, we review the most important concepts in probability theory without mathem
     - **Law of Total Variance (Conditional Variance Formula)**
   
 - **Mode.** The mode of a distribution is the value in which the probability mass function or probability density function are maximized:
-  \\[x^* = \argmax_x p(x)\\]
+  \\[x^* = argmax_x p(x)\\]
   - If the distribution is multimodal, the solution to the above maximization problem may not be unique.
   
 * **Moments of a Distribution**
