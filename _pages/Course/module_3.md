@@ -147,14 +147,20 @@ Here, we review the most important concepts in probability theory without mathem
 - **Variance.** 
 
 * **Moments of a Distribution**
-  * Moment in probability and momentum in physics are similar concepts. In fact, both of these words come from the Latin word "movimentum", meaning to move, set in motion, or change [G. Gundersen, 2020]. Since momentum in physics is concerned with torque, and force, it is inherently related to the distribution of mass in objects. Similarly, in probability, moments of distribution help us to understand how the mass of data is distributed. In particular, moments reveal a distribution's _location_, _scale_, and _shape_.
+  * Moment in probability and momentum in physics are similar concepts. In fact, both of these words come from the Latin word "movimentum", meaning to move, set in motion, or change [G. Gundersen, 2020]. Since momentum in physics is concerned with torque, and force, it is inherently related to the distribution of mass in objects. Similarly, in probability, moments of distribution help us to understand how the mass of data is distributed. In particular, moments reveal a distribution's _location_, _scale_, and _shape_. The location is captured by the first moment or mean of the distribution and it tells us how far away from the origin the center of mass is. The scale is captured by the second moment and shows how spread out a distribution is. The shape os a distribution is revealed by a higher moment.
   * Generally, \\(K^{th}\\) moment can be defined in different ways (here, we only state the formulas for the continuous case. The discrete case has the same formula by replacing "integral" with "sigma"):
   * Consider a random variable \\(X\\) with support \\(\mathcal{X}\\).
     1. \\(k^{th}\\) Raw Moment: \\(\mu_k = \mathbb{E}(X^k) = \int _{x\in \mathcal{X}} x^k p(x)dx\\)
        - With \\(k=1\\), we obtain the expectation or the mean of a random variable. 
     2. \\(k^{th}\\) central Moment: \\(m_k = \mathbb{E}\[(X-\mu_k)^K\] = \int _{x\in \mathcal{X}} (x-\mu_k)^k p(x)dx\\)
-    3. \\(k^{th}\\) Standardized Moment: \\(\overline{m} _k = \mathbb{E}\[(\frac{X-\mu_k}{\sigma_x})^k\] = \int _{x\in \mathcal{X}} (\frac{x-\mu_k}{\sigma_x})^k p(x)dx\\)
-    4. \\(k^{th}\\) Sample Moment about \\(C\\): \\(\tilde{m} _k = \frac{1}{N}\sum _{i=1}^{n}(X_i-C)^k\\)
+       - With \\(k=1\\), we obtain the variance of a random variable.
+    3. \\(k^{th}\\) Standardized Moment: \\(\overline{m} _k = \mathbb{E}\[(\frac{X-\mu_k}{\sigma_x})^k\] = \int _{x\in \mathcal{X}} (\frac{x-\mu_k}{\sigma_x})^k p(x)dx\\).
+       - \\(Z=\frac{X-\mu_k}{\sigma_x}\\) is called the standard score or z-score.
+       - With \\(k=1\\), we obtain the _skeness of a random variable.
+       - The skewness is positive for longer right tails (right skewed or positively skewed distribution) and negative for longer left tails (left skewed or negatively skewed distribution).
+       - A symmetric random variable has a zero skewness, but the opposite is not always true.
+       - With \\(k=4\\), we obtain the _kurtosis_ of a distribution. Kurtosis is a measure, describing how the tails of a distribution differ from the tails of a normal distribution. There are three types of kurtosis: mesokurtic (Distributions with medium tails), leptokurtic (distributions with fat tails), and platykurtic (distributions with thin tails).
+    5. \\(k^{th}\\) Sample Moment about \\(C\\): \\(\tilde{m} _k = \frac{1}{N}\sum _{i=1}^{n}(X_i-C)^k\\)
   
 ## Common Discrete Random Variables
 * **Bernoulli.** A Bernoulli random variable with parameter \\(0 \leq \theta \leq 1\\) is a binary discrete r.v. with the following pmf:
