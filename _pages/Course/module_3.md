@@ -147,11 +147,11 @@ Here, we review the most important concepts in probability theory without mathem
 - **Variance.** Variance of a random variable is the second moment of distribution (see below for more details), often denoted by \\(\\sigma_x^2\\), \\(m_2\\), \\(var(X)\\). For a continuous r.v. with the support \\(\mathcal{\Omega}\\), the variance is defined as follows (if the integral is not finite, the variance is not defined):
   \\[\sigma_x^2 = m_2 = var(X) = \mathbb{E}\[(X-\mu_x)^2 = \]\int _{x\in \mathcal{\Omega}} (x-\mu_x)^2 p(x)dx\\]
    - We can simplify the above relation as follows;
-     \\[\sigma_x^2 = \mathbb{E}(X^2) + \mu^2 -2\mathbb{E}(X)\mu_x = \mathbb{E}(X^2) + \mu^2 -2\mu_x^2 = \mathbb{E}(X^2) - \mu^2 = \mathbb{E}(X^2) -\mathbb{X}^2\\]
-   - Since \\(var(X)\leq 0\\), we immiadiately see that \\(\mathbb{E}(X^2) \leq \mathbb{X}^2\\).
+     \\[\sigma_x^2 = \mathbb{E}(X^2) + \mu^2 -2\mathbb{E}(X)\mu_x = \mathbb{E}(X^2) + \mu^2 -2\mu_x^2 = \mathbb{E}(X^2) - \mu^2 = \mathbb{E}(X^2) -\mathbb{E}(X)^2\\]
+   - Since \\(var(X)\geq 0\\), we immiadiately see that \\(\mathbb{E}(X^2) \geq \mathbb{X}^2\\).
    - The square root of variance is called _standard deviation_, \\(std(X) = \sigma_x = \sqrt{var(x)}\\).
-   - Let \\(\alpha\\) and \\(\beta\\) be two constants (determonistic variables), then \\(var(\alpha X + \beta) =\alpha^2var(X)\\).
-   -  
+   - Let \\(\alpha\\) and \\(\beta~\\) be two constants (determonistic variables), then \\(var(\alpha X + \beta) =\alpha^2var(X)\\).
+   - Let \\(X_1, X_2, \ldots X_n\\) be independent random variables. Then, \\(var\[\[\prod _{i=1}^nX_i\] = \prod _{i=1}^n var(X_i)\\).
 
 * **Moments of a Distribution**
   * Moment in probability and momentum in physics are similar concepts. In fact, both of these words come from the Latin word "movimentum", meaning to move, set in motion, or change [G. Gundersen, 2020]. Since momentum in physics is concerned with torque, and force, it is inherently related to the distribution of mass in objects. Similarly, in probability, moments of distribution help us to understand how the mass of data is distributed. In particular, moments reveal a distribution's _location_, _scale_, and _shape_. The location is captured by the first moment or mean of the distribution and it tells us how far away from the origin the center of mass is. The scale is captured by the second moment and shows how spread out a distribution is. The shape of a distribution is revealed by a higher moment.
