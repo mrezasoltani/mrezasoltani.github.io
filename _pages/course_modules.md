@@ -7,3 +7,4 @@ title: "Course"
 * [Module 1](Course/module_1.md)
 * [Module 2](Course/module_2.md)
 * [Module 3](Course/module_3.md)
+* [Module 4](Course/module_4.md)
