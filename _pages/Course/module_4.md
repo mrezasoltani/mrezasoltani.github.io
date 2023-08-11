@@ -13,5 +13,5 @@ classes: wide
 ### Point Estimation
 * Here we focus on parametric methods and assume that our unknown underlying distribution is parametrized by parameter \\(\pmb{\theta}\\). The process of estimating \\(\pmb{\theta}\\) from the set of data is called model fitting, or training, and is a central problem in machine learning.
 * In the point estimation problems, we want to estimate our parameters, and we don't quantify how confident we are about the estimation. 
-* The most common approach to parameter estimation is to choose the parameters that assign the highest probability to the observed data samples; this is called __**maximum likelihood estimation or MLE**_.
+* The most common approach to parameter estimation is to choose the parameters that assign the highest probability to the observed data samples; this is called _**maximum likelihood estimation or MLE**_.
 * 
