@@ -48,6 +48,6 @@ classes: wide
     \begin{equation}
      \begin{aligned}
           \Longrightarrow \frac{\theta-1}{\theta} = \frac{\sum _{i=1}^n\mathbb{1} _{\\{X_i=0\\}}}{\sum _{i=1}^n\mathbb{1} _{\\{X_i=1\\}}} \\\\\\\\
-          \Longrightarrow \hat{\theta} _{mle} = frac{\sum _{i=1}^n \mathbb{1} _{\\{X_i=1\\}}}{\sum _{i=1}^n \mathbb{1} _{\\{X_i=1\\}} + \mathbb{1} _{\\{X_i=0\\}}}
+          \Longrightarrow \hat{\theta} _{mle} = \frac{\sum _{i=1}^n \mathbb{1} _{\\{X_i=1\\}}}{\sum _{i=1}^n \mathbb{1} _{\\{X_i=1\\}} + \mathbb{1} _{\\{X_i=0\\}}}
         \end{aligned}
     \end{equation}
