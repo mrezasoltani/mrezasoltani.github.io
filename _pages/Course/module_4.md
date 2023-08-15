@@ -30,6 +30,6 @@ classes: wide
  \\[D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta})) = \mathbb{E}\[ \log \frac{q(\mathbf{x})}{p(\mathbf{x} \| \pmb{\theta})}\] = \int _{\mathbf{x} \in \mathcal{X}} \log\frac{q(\mathbf{x})}{p(\mathbf{x} \| \pmb{\theta})}q(\mathbf{x})d\mathbf{x}\\]
   - KL divergence is always non-negative, \\(D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta}))\geq 0\\) with equality holds iff \\(q(\mathbf{x}) = p(\mathbf{x} \| \pmb{\theta})\\).
 * The MLE denoted by \\(\hat{\pmb{\theta}}_n is obtained by the following optimization problem:
-  \\[\hat{\pmb{\theta}}_n = argmin_{\pmb{\theta}} -\log p(\mathbf{x} \| \pmb{\theta})\\]
-* It can be shown that the MLE is equivalent to the minimization of D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta}))\geq 0\\).
+  \\[\hat{\pmb{\theta}}_n = argmin _{\pmb{\theta}} -\log p(\mathbf{x} \| \pmb{\theta})\\]
+* It can be shown that the MLE is equivalent to the minimization of KL Divergence, \\(D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta}))\geq 0\\).
 
