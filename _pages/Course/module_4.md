@@ -27,5 +27,5 @@ classes: wide
 * In parametric point estimation, we focus on a parametric family of probability distributions, and try to find a closest parametric distribution as the best proxy for the true distribution, \\(q(x)\\). We denote this parametric distribution by \\(p(\mathbf{x} \| \pmb{\theta})\\).
 * In order to charecteristic "the closest", we need to define the followings:
   - There are many ways to formulate the distance/similarity between two probability distributions. Here we consider the most commom measure of simialrity known as _Kullback Leibler Divergence (KL)_. This measure is not quite a distance as it is not symmetric. We'll elaborate on this later. The KL between two probability distributions of \\(q(x)\\) and \\( p(\mathbf{x} \| \pmb{\theta})\\) is defined as follows:
- \\[D(q(x) \\| p(\mathbf{x} \| \pmb{\theta})) = \mathbb{E}\[ \frac{\log q(x)}{\log p(\mathbf{x} \| \pmb{\theta})}\] = \int _{x\in \mathcal{X}} \frac{\log q(x)}{\log p(\mathbf{x} \| \pmb{\theta})}q(x)dx)\\]
+ \\[D(q(x) \\| p(\mathbf{x} \| \pmb{\theta})) = \mathbb{E}\[ \log \frac{q(x)}{p(\mathbf{x} \| \pmb{\theta})}\] = \int _{x\in \mathcal{X}} \log\frac{q(x)}{p(\mathbf{x} \| \pmb{\theta})}q(x)dx\\]
   - KL diveregnce is always non-negative, \\(D(q(x) \\| p(\mathbf{x} \| \pmb{\theta}))\geq 0\\).
