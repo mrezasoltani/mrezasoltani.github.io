@@ -47,6 +47,6 @@ classes: wide
     \\[\frac{d}{\theta}NLL(d\theta) = -\sum _{i=1}^n \mathbb{1} _{\\{X_i=1\\}}\frac{1}{\theta} + \mathbb{1} _{\\{X_i=0\\}}\frac{-1}{1-\theta} = 0 \\]
     \begin{equation}
      \begin{aligned}
-          \frac{1-\theta}{\theta} = \frac{\sum _{i=1}^n\mathbb{1} _{\\{X_i=0\\}}}{\sum _{i=1}^n\mathbb{1} _{\\{X_i=1\\}}}
+          \Longrightarrow \frac{1-\theta}{\theta} = \frac{\sum _{i=1}^n\mathbb{1} _{\\{X_i=0\\}}}{\sum _{i=1}^n\mathbb{1} _{\\{X_i=1\\}}}
         \end{aligned}
     \end{equation}
