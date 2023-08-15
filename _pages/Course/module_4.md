@@ -29,7 +29,13 @@ classes: wide
   - There are many ways to formulate the distance/similarity between two probability distributions. Here we consider the most commom measure of simialrity known as _Kullback Leibler Divergence (KL)_. This measure is not quite a distance as it is not symmetric. We'll elaborate on this later. The KL between two probability distributions of \\(q(\mathbf{x})\\) and \\( p(\mathbf{x} \| \pmb{\theta})\\) is defined as follows:
  \\[D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta})) = \mathbb{E}\[ \log \frac{q(\mathbf{x})}{p(\mathbf{x} \| \pmb{\theta})}\] = \int _{\mathbf{x} \in \mathcal{X}} \log\frac{q(\mathbf{x})}{p(\mathbf{x} \| \pmb{\theta})}q(\mathbf{x})d\mathbf{x}\\]
   - KL divergence is always non-negative, \\(D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta}))\geq 0\\) with equality holds iff \\(q(\mathbf{x}) = p(\mathbf{x} \| \pmb{\theta})\\).
-* The MLE denoted by \\(\hat{\pmb{\theta}}_n is obtained by the following optimization problem:
-  \\[\hat{\pmb{\theta}}_n = argmin _{\pmb{\theta}} -\log p(\mathbf{x} \| \pmb{\theta})\\]
+* The MLE denoted by \\(\hat{\pmb{\theta}}_n\\) is obtained by the following optimization problem:
+  \\[\hat{\pmb{\theta}}_{mle} = \hat{\pmb{\theta}}_n = argmin _{\pmb{\theta}} -\log p(\mathbf{x} \| \pmb{\theta})\\]
+  - Here, \\(-\log p(\mathbf{x} \| \pmb{\theta})\\) is denoted by \\(NLL(\pmb{\theta})\\) and called _negative log-likelihood or NLL_.
 * It can be shown that the MLE is equivalent to the minimization of KL Divergence, \\(D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta}))\geq 0\\).
+* The log-likelihood of \\(n\\) i.i.d data samples is given by
+  \\[NLL(\pmb{\theta}) = \log(\prod _{i=1}^n p(\mathbf{x_i} \| \pmb{\theta})) =-\sum _{i=1}^{n}\log p(\mathbf{x_i} \| \pmb{\theta}) \\]
+* **Example.** MLE for the Bernoulli distribution
+  - Consider tossing a coin experiment. Here, we don't know what the probability of landing head is; hence, we'd like to estimate it using \\(n\\) observations. That is, we to ss the coin for \\(n\\) times and every time we record what has been landed. To formulate this mathematically, let \\X\\) be a Bernoulli r.v. such that \\(X=1\\) is the event of landing a head and \\(X=0\\) be the event of landing tail. Let \\(P(X=1) = \theta\\); hence, \\(P(X=0) = 1-\theta\\). We now use MLE to estimate our parameter \\(theta\\) which is the probability of seeing a head. As a result,
+    \\[NLL(\theta) = -\log \prod _[i=1}^n P(X_i) = -\log \prod _[i=1}^n \theta^{ \mathbb{1} _{X_i=1} }(1-\theta)^{\mathbb{1} _{X_i=0}}= -\sum _{i=1}^n \\] 
 
