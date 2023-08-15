@@ -51,4 +51,4 @@ classes: wide
           \Longrightarrow \hat{\theta} _{mle} = \frac{\sum _{i=1}^n \mathbb{1} _{\\{X_i=1\\}}}{\sum _{i=1}^n \mathbb{1} _{\\{X_i=1\\}} + \mathbb{1} _{\\{X_i=0\\}}} =\frac{1}{n}\sum _{i=1}^n \mathbb{1} _{\\{X_i=1\\}}
         \end{aligned}
     \end{equation}
-  - What this says is quite intuitive; out of \\n\\) observations, the probability of seeing a head is the ratio of number of observed heads to total number of trials, \\(n\\). We expect that if the coin is a fait coin, half of the time we see head, and half of the time tail; hence, we say that the probability of a head in tossing a coin is \\(0.5\\).
+  - What this says is quite intuitive; out of \\n\\) observations, the probability of seeing a head is the ratio of number of observed heads to total number of trials, \\(n\\). We expect that if the coin is a fair one, half of the time we see head, and half of the time tail; hence, we say that the probability of a head in tossing a coin is \\(0.5\\).
