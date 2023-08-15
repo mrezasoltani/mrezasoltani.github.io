@@ -28,5 +28,8 @@ classes: wide
 * In order to charecteristic "the closest", we need to define the followings:
   - There are many ways to formulate the distance/similarity between two probability distributions. Here we consider the most commom measure of simialrity known as _Kullback Leibler Divergence (KL)_. This measure is not quite a distance as it is not symmetric. We'll elaborate on this later. The KL between two probability distributions of \\(q(\mathbf{x})\\) and \\( p(\mathbf{x} \| \pmb{\theta})\\) is defined as follows:
  \\[D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta})) = \mathbb{E}\[ \log \frac{q(\mathbf{x})}{p(\mathbf{x} \| \pmb{\theta})}\] = \int _{\mathbf{x} \in \mathcal{X}} \log\frac{q(\mathbf{x})}{p(\mathbf{x} \| \pmb{\theta})}q(\mathbf{x})d\mathbf{x}\\]
-  - KL diveregnce is always non-negative, \\(D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta}))\geq 0\\) with equality holds iff \\(q(\mathbf{x}) = p(\mathbf{x} \| \pmb{\theta})\\).
-  - 
+  - KL divergence is always non-negative, \\(D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta}))\geq 0\\) with equality holds iff \\(q(\mathbf{x}) = p(\mathbf{x} \| \pmb{\theta})\\).
+* The MLE denoted by \\(\hat{\pmb{\theta}}_n is obtained by the following optimization problem:
+  \\[\hat{\pmb{\theta}}_n = argmin_{\pmb{\theta}} -\log p(\mathbf{x} \| \pmb{\theta})\\]
+* It can be shown that the MLE is equivalent to the minimization of D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta}))\geq 0\\).
+
