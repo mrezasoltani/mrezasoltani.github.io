@@ -44,9 +44,9 @@ classes: wide
         \end{aligned}
     \end{equation}
   - Now we are looking for a \\(\theta\\) to minimize this (\\(\hat{\theta} _{mle}\\)). From calculous, we can find this \\(\theta\\) by taking derivative of the NLL and equating it with zero:
-    \\[\frac{d}{d\theta}NLL(\theta) = -\sum _{i=1}^n \mathbb{1} _{\\{X_i=1\\}}\frac{1}{\theta} + \mathbb{1} _{\\{X_i=0\\}}\frac{-1}{1-\theta} = 0 \\]
+    \\[\frac{d}{d\theta}NLL(\theta) = -\sum _{i=1}^n \mathbb{1} _{\\{X_i=1\\}}\frac{1}{\theta} + \mathbb{1} _{\\{X_i=0\\}}\frac{1}{\theta-1} = 0 \\]
     \begin{equation}
      \begin{aligned}
-          \Longrightarrow \frac{1-\theta}{\theta} = \frac{\sum _{i=1}^n\mathbb{1} _{\\{X_i=0\\}}}{\sum _{i=1}^n\mathbb{1} _{\\{X_i=1\\}}}
+          \Longrightarrow \frac{\theta-1}{\theta} = \frac{\sum _{i=1}^n\mathbb{1} _{\\{X_i=0\\}}}{\sum _{i=1}^n\mathbb{1} _{\\{X_i=1\\}}}
         \end{aligned}
     \end{equation}
