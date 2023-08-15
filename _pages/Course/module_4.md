@@ -21,6 +21,6 @@ classes: wide
 * The common risk minimization are given the by _mean absolute error (MAE)_ risk by choosing the loss function as \\(\ell_1\\) norm, and the _mean squared error (MSE)_ by choosing the loss function as \\(\ell_2\\) norm. The square root of the mean squared error is called the root mean squared error (RMSE).
 * There are different ways to evaluate the estimators. Two common criteria for evaluating estimators are unbiasedness and consistency.
   - Unbiasedness. An estimator is an unbiasedness estimator iff \\(\mathbb{E}(\hat{\pmb{\theta}}) = \pmb{\theta}\\).
-  - Consistency. An estimator is a consistent estimator iff the estimator converges to the ground-truth parameter \\(\pmb{\theta}\\) when the sample size goes to infinity, i.e., \\(\lim_{n \rightarrow \infty} \hat{\pmb{\theta}} = \pmb{\theta}\\) in probability. Here \\(n\\) is the sample size used to estimate parameter \\(\pmb{\theta}\\).
+  - Consistency. An estimator is a consistent estimator (or weakly consistent) iff the estimator converges to the ground-truth parameter \\(\pmb{\theta}\\) when the sample size goes to infinity, i.e., \\(\lim_{n \rightarrow \infty} \hat{\pmb{\theta}} = \pmb{\theta}\\) in probability. Here \\(n\\) is the sample size used to estimate parameter \\(\pmb{\theta}\\).
 * The most common approach to parameter estimation is to choose the parameters that assign the highest probability to the observed data samples; this is called _**maximum likelihood estimation or MLE**_.
 * 
