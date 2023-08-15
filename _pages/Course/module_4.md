@@ -12,8 +12,8 @@ classes: wide
   - Point estimation produces a single estimate which is an approximation of the true parameter.  In set estimation, we produce a set of estimates which is supposed to include the ground-truth parameter with high probability.
 
 ### Point Estimation
-* Here we focus on parametric methods and assume that our unknown underlying distribution is parametrized by parameter \\(\pmb{\theta}\\). The process of estimating \\(\pmb{\theta}\\) from the data set is called model fitting, or training, and is a central problem in machine learning.
-  - An estimator of the parameter \\(\pmb{\theta}\\) is a function of the given data samples with size \\(n\\), i.e., parameter \\(\hat{\pmb{\theta}}_n = \hat{\pmb{\theta}} = \pmb{\theta}(\mathrm{x})\\).
+* Here we focus on parametric methods and assume that our unknown underlying distribution is parametrized by parameter \\(\pmb{\theta}\\). The process of estimating \\(\pmb{\theta}\\) from the data set is called model fitting, or training, and is a central problem in machine learning (we state our results for the continuous random variables. The same thing holds for the discrete case).
+  - Let \\(\mathbf{x}\in\mathcal{X}\\) be a realization from a random vector \\(\mathbf{X}\sim p(x)\\). An estimator of the parameter \\(\pmb{\theta}\\) is a function of the given data samples with size \\(n\\), i.e., parameter \\(\hat{\pmb{\theta}}_n = \hat{\pmb{\theta}} _n(\mathbf{x}) = \hat{\pmb{\theta}} = \pmb{\theta}\\).
 * In the point estimation problems, we want to estimate our parameters, and we don't quantify how confident we are about the estimation.
 * Since \\(\hat{\pmb{\theta}}\\) is an estimate of the ground-truth parameter \\(\pmb{\theta}\\), there is going to be (inevitably) an error. That is, the error vector is given by \\(\pmb{e} = \pmb{\theta} - \hat{\pmb{\theta}}\\). The goal of statistical models is to minimize this error in some sense.
 * To capture the notion of minimization of the error, we use the concept of a loss function, i.e., the loss incurred due to the error in estimating the ground truth parameter \\(\pmb{\theta}\\). This is denoted by \\(\mathcal{L}(\pmb{\theta}, \hat{\pmb{\theta}})\\). Depending on the nature of the problem, there are different loss functions. Two most common of these are \\(\ell_2 = \\| \pmb{\theta}- \hat{\pmb{\theta}} \\| _2^2\\) loss and \\(\ell_1 = \\| \pmb{\theta}- \hat{\pmb{\theta}} \\| _1\\) loss functions.
@@ -21,7 +21,7 @@ classes: wide
 * In principle, point estimation is guided by risk minimization, that is, by the search for estimators that minimize the risk.
 * The common risk minimization are given the by _mean absolute error (MAE)_ risk by choosing the loss function as \\(\ell_1\\) norm, and the _mean squared error (MSE)_ by choosing the loss function as \\(\ell_2\\) norm. The square root of the mean squared error is called the _root mean squared error (RMSE)_.
 * There are different ways to evaluate the estimators. Two common criteria for evaluating estimators are unbiasedness and consistency.
-  - Unbiasedness. An estimator is an unbiasedness estimator iff \\(\mathbb{E}(\hat{\pmb{\theta}}) = \pmb{\theta}\\).
+  - Unbiasedness. An estimator is an unbiasedness estimator iff \\(\mathbb{E}(\hat{\pmb{\theta(\mathrm{x})}}) = \pmb{\theta}\\).
   - Consistency. An estimator is a consistent estimator (or weakly consistent) iff the estimator converges to the ground-truth parameter \\(\pmb{\theta}\\) when the sample size goes to infinity, i.e., \\(\lim_{n \rightarrow \infty} \hat{\pmb{\theta}} = \pmb{\theta}\\) in probability. Here \\(n\\) is the sample size used to estimate parameter \\(\pmb{\theta}\\).
 * The most common approach to parameter estimation is to choose the parameters that assign the highest probability to the observed data samples; this is called _**maximum likelihood estimation or MLE**_.
 * 
