@@ -143,7 +143,7 @@ Here, we review the most important concepts in probability theory without mathem
   \\[\mu_x = \mu_1 = \mathbb{E}(X) = \int _{x\in \mathcal{\Omega}} x p(x)dx\\]
   And for a discrete r.v. with the support \\(\mathcal{\Omega}\\):
   \\[\mu_x = \mu_1 = \mathbb{E}(X) = \sum _{x\in \mathcal{\Omega}} x P(x)\\]
-  - Expectation is a linear operator, i.e., let \\(X\\) be a random variable (discrete/continous) and \\(a\\) and \\(b\\) be two constants, \\(E(aX+b) = aE(X) + b\\). More generally, \\(\mathbb{E}\[\sum _{i-1}^n X_i\] = \sum _{i=1}^n \mathbb{E}X_i\\), where \\(X_1, X_2, \ldots X_n\\) are \\(n\\) random variables (discrete/continous).
+  - Expectation is a linear operator, i.e., let \\(X\\) be a random variable (discrete/continous) and \\(a\\) and \\(b\\) be two constants, \\(\mathbb{E}(aX+b) = a\mathbb{E}(X) + b\\). More generally, \\(\mathbb{E}\[\sum _{i-1}^n X_i\] = \sum _{i=1}^n \mathbb{E}X_i\\), where \\(X_1, X_2, \ldots X_n\\) are \\(n\\) random variables (discrete/continous).
   - Let \\(X_1, X_2, \ldots X_n\\) be independent random variables. Then, \\(\mathbb{E}\[\prod _{i=1}^nX_i\] = \prod _{i=1}^n\mathbb{E}X_i\\).
   - **Law of Iterated Expectations (Law of Total Expectation**
     
