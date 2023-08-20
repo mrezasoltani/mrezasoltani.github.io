@@ -24,9 +24,9 @@ classes: wide
   - Unbiasedness. An estimator is an unbiasedness estimator iff \\(\mathbb{E}(\hat{\pmb{\theta}}(\mathbf{x})) = \pmb{\theta}\\).
   - Consistency. An estimator is a consistent estimator (or weakly consistent) iff the estimator converges to the ground-truth parameter \\(\pmb{\theta}\\) when the sample size goes to infinity, i.e., \\(\lim_{n \rightarrow \infty} \hat{\pmb{\theta}} = \pmb{\theta}\\) in probability. Here \\(n\\) is the sample size used to estimate parameter \\(\pmb{\theta}\\).
 * The most common approach to parameter estimation is to choose the parameters that assign the highest probability to the observed data samples; this is called _**maximum likelihood estimation or MLE**_. So the problem can be formulated as follows: let \\(\mathbf{x} _i\stackrel{iid}{\sim} q(\mathbf{x})\\) for \\(i=1,2,\ldots,n\\). Here \\(q(\mathbf{x})\\) is the **unknown** underlying probability distribution that generates data samples, including the realization samples, \\(\mathbf{x} _i\\)'s.
-* In parametric point estimation, we focus on a parametric family of probability distributions, and try to find a closest parametric distribution as the best proxy for the true distribution, \\(q(\mathbf{x})\\). We denote this parametric distribution by \\(p(\mathbf{x} \| \pmb{\theta})\\).
-* In order to charecteristic "the closest", we need to define the followings:
-  - There are many ways to formulate the distance/similarity between two probability distributions. Here we consider the most commom measure of simialrity known as _Kullback Leibler Divergence (KL)_. This measure is not quite a distance as it is not symmetric. We'll elaborate on this later. The KL between two probability distributions of \\(q(\mathbf{x})\\) and \\( p(\mathbf{x} \| \pmb{\theta})\\) is defined as follows:
+* In parametric point estimation, we focus on a parametric family of probability distributions and try to find the closest parametric distribution as the best proxy for the true distribution, \\(q(\mathbf{x})\\). We denote this parametric distribution by \\(p(\mathbf{x} \| \pmb{\theta})\\).
+* In order to characteristic "the closest", we need to define the followings:
+  - There are many ways to formulate the distance/similarity between two probability distributions. Here we consider the most common measure of similarity known as _Kullback Leibler Divergence (KL)_. This measure is not quite a distance as it is not symmetric. We'll elaborate on this later. The KL between two probability distributions of \\(q(\mathbf{x})\\) and \\( p(\mathbf{x} \| \pmb{\theta})\\) is defined as follows:
  \\[D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta})) = \mathbb{E}\[ \log \frac{q(\mathbf{x})}{p(\mathbf{x} \| \pmb{\theta})}\] = \int _{\mathbf{x} \in \mathcal{X}} \log\frac{q(\mathbf{x})}{p(\mathbf{x} \| \pmb{\theta})}q(\mathbf{x})d\mathbf{x}\\]
   - KL divergence is always non-negative, \\(D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta}))\geq 0\\) with equality holds iff \\(q(\mathbf{x}) = p(\mathbf{x} \| \pmb{\theta})\\).
 * The MLE denoted by \\(\hat{\pmb{\theta}}_n\\) is obtained by the following optimization problem:
@@ -36,14 +36,14 @@ classes: wide
 * The log-likelihood of \\(n\\) i.i.d data samples is given by
   \\[NLL(\pmb{\theta}) = \log(\prod _{i=1}^n p(\mathbf{x_i} \| \pmb{\theta})) =-\sum _{i=1}^{n}\log p(\mathbf{x_i} \| \pmb{\theta}) \\]
 * **Example.** MLE for the Bernoulli distribution
-  - Consider tossing a coin experiment. Here, we don't know what the probability of landing head is; hence, we'd like to estimate it using \\(n\\) observations. That is, we toss the coin for \\(n\\) times and every time we record what has been landed. To formulate this mathematically, let \\(X\\) be a Bernoulli r.v. such that \\(X=1\\) is the event of landing a head and \\(X=0\\) be the event of landing a tail. Let \\(P(X=1) = \theta\\); hence, \\(P(X=0) = 1-\theta\\). We now use MLE to estimate our parameter \\(\theta\\) which is the probability of seeing a head. As a result,
+  - Consider tossing a coin experiment. Here, we don't know what the probability of landing head is; hence, we'd like to estimate it using \\(n\\) observations. That is, we toss the coin for \\(n\\) times, and every time we record what has been landed. To formulate this mathematically, let \\(X\\) be a Bernoulli r.v. such that \\(X=1\\) is the event of landing a head and \\(X=0\\) be the event of landing a tail. Let \\(P(X=1) = \theta\\); hence, \\(P(X=0) = 1-\theta\\). We now use MLE to estimate our parameter \\(\theta\\) which is the probability of seeing a head. As a result,
     \begin{equation}
         \begin{aligned}
           NLL(\theta) = -\log \prod _{i=1}^n P(X_i) = -\log \prod _{i=1}^n \theta^{ \mathbb{1} _{\\{X_i=1\\}} }(1-\theta)^{\mathbb{1} _{\\{X_i=0\\}}} \\\\\\\\
                       = -\sum _{i=1}^n \mathbb{1} _{\\{X_i=1\\}}\log \theta + \mathbb{1} _{\\{X_i=0\\}}\log(1-\theta)
         \end{aligned}
     \end{equation}
-  - Now we are looking for a \\(\theta\\) to minimize this (\\(\hat{\theta} _{mle}\\)). From calculous, we can find this \\(\theta\\) by taking derivative of the NLL and equating it with zero:
+  - Now we are looking for a \\(\theta\\) to minimize this (\\(\hat{\theta} _{mle}\\)). From calculus, we can find this \\(\theta\\) by taking the derivative of the NLL and equating it with zero:
     \\[\frac{d}{d\theta}NLL(\theta) = -\sum _{i=1}^n \mathbb{1} _{\\{X_i=1\\}}\frac{1}{\theta} + \mathbb{1} _{\\{X_i=0\\}}\frac{1}{\theta-1} = 0 \\]
     \begin{equation}
      \begin{aligned}
@@ -51,4 +51,4 @@ classes: wide
           \Longrightarrow \hat{\theta} _{mle} = \frac{\sum _{i=1}^n \mathbb{1} _{\\{X_i=1\\}}}{\sum _{i=1}^n \mathbb{1} _{\\{X_i=1\\}} + \mathbb{1} _{\\{X_i=0\\}}} =\frac{1}{n}\sum _{i=1}^n \mathbb{1} _{\\{X_i=1\\}}
         \end{aligned}
     \end{equation}
-  - What this says is quite intuitive; out of \\n\\) observations, the probability of seeing a head is the ratio of number of observed heads to total number of trials, \\(n\\). We expect that if the coin is a fair one, half of the time we see head, and half of the time tail; hence, we say that the probability of a head in tossing a coin is \\(0.5\\).
+  - What this says is quite intuitive; out of \\(n\\) observations, the probability of seeing a head is the ratio of the number of observed heads to the total number of trials, \\(n\\). We expect that if the coin is a fair one, half of the time we see a head and half of the time tail; hence, we say that the probability of a head in tossing a coin is \\(0.5\\).
