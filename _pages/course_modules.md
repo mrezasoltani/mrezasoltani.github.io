@@ -8,3 +8,4 @@ title: "Course"
 * [Module 2](Course/module_2.md)
 * [Module 3](Course/module_3.md)
 * [Module 4](Course/module_4.md)
+* [Module 5](Course/module_5.md)
