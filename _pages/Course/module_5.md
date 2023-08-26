@@ -12,7 +12,7 @@ classes: wide
     \\[\exists \delta > 0, ~ \forall \theta ~~ s.t. \|\|\pmb{\theta}-\pmb{\theta}^*\|\|, \mathcal{L}(\pmb{\theta}) \leq \mathcal{L}(\pmb{\theta}) \\]
   - It is possible (in fact this is very common in ML) to have more than one local minimum  with the same objective value; this
 is known as a flat local minimum.
-  - For a continuous and differentiable function, a **_stationary point**_ is a point for which the gradient is zero, i.e., \\(\pmb{\theta}^*\\) is stationary point iff \\(\nabla_{\pmb{\theta}} \mathcal{L}(\theta) = 0\\) for \\(\pmb{\theta} = \pmb{\theta} ^*\\)
+  - For a continuous and differentiable function, a **_stationary point_** is a point for which the gradient is zero, i.e., \\(\pmb{\theta}^*\\) is stationary point iff \\(\nabla_{\pmb{\theta}} \mathcal{L}(\theta) = 0\\) for \\(\pmb{\theta} = \pmb{\theta} ^*\\)
 
 * In machine learning fitting a model to the given data samples is a core problem which essentially means solving an optimization problem. An ML model is optimized to produce the best prediction (smallest error). As we will see in the linear regression problems, we try to fit a linear model by optimizing its parameters such that the output model can be as close as possible to the observed samples.
 * 
