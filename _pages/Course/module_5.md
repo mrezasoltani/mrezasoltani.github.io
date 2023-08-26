@@ -22,8 +22,9 @@ is known as a flat local minimum.
     <br>
             <em>Global and local minimums and maximums of a continuous and differentiable function.</em>
      </p>
-  - The following conditions provide the necessary and sufficient conditions for a local minimum:
-    - **Necessary Condition.** \\(\pmb{\theta}^{\*}\\) is a local minimum if the gradient evaluated at \\(\pmb{\theta}^{\*}\\), i.e.,  \\(\nabla\mathcal{L}(\pmb{\theta}^{\*}) = 0\\) (s stationary point), and the Hessian is a PSD matrix, i.e., \\(\nabla^2 \mathcal{L}(\pmb{\theta}^{\*}) \succeq 0\\).
+  - The following conditions provide the necessary and sufficient conditions for a local minimum assuming the function is a continuous and twice differentiable:
+    - **Necessary Condition.** \\(\pmb{\theta}^{\*}\\) is a local minimum if the gradient evaluated at \\(\pmb{\theta}^{\*}\\), i.e.,  \\(\nabla\mathcal{L}(\pmb{\theta}^{\*}) = 0\\) (a stationary point), and the Hessian at \\(\pmb{\theta}^{\*}\\) is a PSD matrix, i.e., \\(\nabla^2 \mathcal{L}(\pmb{\theta}^{\*}) \succeq 0\\).
+    - **Sufficient condition.** If (\nabla\mathcal{L}(\pmb{\theta}^{\*}) = 0\\) and  \\(\nabla^2 \mathcal{L}(\pmb{\theta}^{\*}) \succ 0\\), i.e., the Hessian is a positive definite (PD), then \\(\pmb{\theta}^{\*}\\) is a local minimum.
   
 * In machine learning fitting a model to the given data samples is a core problem which essentially means solving an optimization problem. An ML model is optimized to produce the best prediction (smallest error). For example (as we will see later), in the linear regression problems, we try to fit a linear model by optimizing its parameters such that the output model can be as close as possible to the observed samples.
 * 
