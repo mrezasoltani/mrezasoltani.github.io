@@ -34,9 +34,11 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | \\(p\\) **-induced norm of a matrix** | \\(\\|\\|\mathrm{X}\\|\\|_p\\) |
    | **Dot product of two vectors** | \\(\mathbf{x}\cdot\mathbf{y}\\) |
    | **Hadamard (element-wise) product of two vectors (matrices)** | \\(\mathbf{x}\odot\mathbf{y} (\mathrm{X}\odot\mathrm{Y})\\) |
+   | **Gradient of a multivariable function** \\(f(\nathbf{x}) \mathbb{R}^p\rightarrow \mathbb{R}\\) | \\(\nabla _{\mathbf{x}} f(\nathbf{x}) = \nabla f(\nathbf{x})\\) |
+   | **Hessian of a multivariable function** \\(f(\nathbf{x}) \mathbb{R}^p\rightarrow \mathbb{R}\\) | \\(\nabla _{\mathbf{x}}^2 f(\nathbf{x}) = \nabla^2 f(\nathbf{x})\\) |
 
 * Here, we mostly present results for the real field. We often give the corresponding results for the complex field.
-* If the context is clear, we may represent coulmns or rows of a matrix without colon notation, e.g.,  \\(\mathrm{X_i}\\).
+* If the context is clear, we may represent columns or rows of a matrix without colon notation, e.g.,  \\(\mathrm{X_i}\\).
 
 ## Vector and Matrix
 * A vector \\(\mathbf{x} \in \mathbb{R}^n \\) is a collection of \\(n\\) numbers defined on real, \\(\mathbb{R}\\) or complex, \\(\mathbb{C}\\) field. In this course, we use a column vector to denote a vector \\(\mathbf{x}\\). In the above table, we have shown the Canonical basis vector, \\(e_i\\) with a superscript \\(T\\) to denote the transpose of a row vector is a column one. A matrix \\(\mathrm{X} \in \mathbb{R}^{m\times n}\\) is a 2-d array of \\(mn\\) numbers, arranged in \\(m\\) rows and \\(n\\) columns:
