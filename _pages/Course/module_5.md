@@ -16,8 +16,7 @@ is known as a flat local minimum.
   - The following figure shows the global and local minimums and maximums.
 
     <p align="center">
-            <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/4149331b-b489-4384-a027-e3e720d13a26">
-      
+            <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/88e20434-99a4-4e5c-8ec7-2dbf12413c2c">
     <br>
             <em>Global and local minimums and maximums of a continuous and differentiable function.</em>
      </p>
