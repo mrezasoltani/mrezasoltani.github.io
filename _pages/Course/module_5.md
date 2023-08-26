@@ -10,9 +10,11 @@ classes: wide
   - However, in most cases, we are looking for **_local optimum(s)_** which are the points with smaller (larger) or equal loss function than _nearby_ points for minimization (maximization) problems. This can be expressed as following: \\(\pmb{\theta^*}\\) is called a local minimum if
  
     \\[\exists \delta > 0, ~ \forall \theta ~~ s.t. \|\|\pmb{\theta}-\pmb{\theta}^*\|\|, ~ \mathcal{L}(\pmb{\theta}^* ) \leq \mathcal{L}(\pmb{\theta}) \\]
+    
   - It is possible (in fact this is very common in ML) to have more than one local minimum  with the same objective value; this
 is known as a flat local minimum.
-  - For a continuous and differentiable function, a **_stationary point_** is a point for which the gradient is zero, i.e., \\(\pmb{\theta^*}\\) is stationary point iff \\(\nabla_{\pmb{\theta}} \mathcal{L}(\pmb{\theta}) = 0\\) for \\(\pmb{\theta} = \pmb{\theta^*}\\)
+
+  - For a continuous and differentiable function, a **_stationary point_** is a point for which the gradient is zero, i.e., \\(\pmb{\theta^*}\\) is stationary point iff \\(\nabla_{\pmb{\theta}} \mathcal{L}(\pmb{\theta}) = 0\\) for \\(\pmb{\theta}=\\) \\(\pmb{\theta^*}\\)
   - The following figure shows the global and local minimums and maximums.
 
     <p align="center">
