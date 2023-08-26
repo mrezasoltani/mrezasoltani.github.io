@@ -2,7 +2,7 @@
 title: "Module 5 -- Optimization"
 classes: wide
 ---
-# What is Optimization?
+## What is Optimization?
 * Optimization is a mathematical framework for finding the best solution for maximization or minimization problems. For example, we have learned from the statistics section that we need to find the best parameter \\(\pmb{\theta}\\) for a distribution that can explain the observed data with the highest probability. In this case, the maximum likelihood estimation boils down to an optimization problem in which our goal is to minimize the negative likelihood (NLL), known as _loss (cost) function_ denoted by \\(\mathcal{L}(\pmb{\theta})\\). Hence, we can write our optimization problem as:
   \\[\pmb{\theta}^* = \text{argmin} _{\theta\in \mathbb{\Theta}}~\mathcal{L}(\pmb{\theta})\\]
   - Here, we assume that the parameter space is a continuous \\(p\\)-dimensional space such that \\(\pmb{\theta}\in \mathbb{\Theta}\\); hence, we deal with continuous optimization. Later in this course, we talk about discrete optimization problems.
