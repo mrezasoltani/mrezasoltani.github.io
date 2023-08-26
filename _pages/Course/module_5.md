@@ -9,7 +9,7 @@ classes: wide
   - A point that satisfies the above equation is called a global minimum, which is typically computationally hard to compute.
   - However, in most cases, we are looking for _local optimum(s)_ which are the points with smaller (larger) or equal loss function than _nearby_ points for minimization (maximization) problems. This can be expressed as following: \\(\pmb{\theta}^*\\) is called a local minimum if
  
-    \\[\exists \delta > 0, ~~ s.t. \|\|\pmb{\theta}-\pmb{\theta}^*\|\|, \mathcal{L}(\pmb{\theta}^*) \leq \mathcal{L}(\pmb{\theta}) \\]
+    \\[\exists \delta > 0, ~~ s.t. \|\|\pmb{\theta}-\pmb{\theta}^*\|\|, \mathcal{L}(\pmb{\theta}) \leq \mathcal{L}(\pmb{\theta}) \\]
 
 * In machine learning fitting a model to the given data samples is a core problem which essentially means solving an optimization problem. An ML model is optimized to produce the best prediction (smallest error). As we will see in the linear regression problems, we try to fit a linear model by optimizing its parameters such that the output model can be as close as possible to the observed samples.
 * 
