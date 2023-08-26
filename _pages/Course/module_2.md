@@ -34,8 +34,8 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | \\(p\\) **-induced norm of a matrix** | \\(\\|\\|\mathrm{X}\\|\\|_p\\) |
    | **Dot product of two vectors** | \\(\mathbf{x}\cdot\mathbf{y}\\) |
    | **Hadamard (element-wise) product of two vectors (matrices)** | \\(\mathbf{x}\odot\mathbf{y} (\mathrm{X}\odot\mathrm{Y})\\) |
-   | **Gradient of a multivariable function** \\(f(\nathbf{x}) \mathbb{R}^p\rightarrow \mathbb{R}\\) | \\(\nabla _{\mathbf{x}} f(\nathbf{x}) = \nabla f(\nathbf{x})\\) |
-   | **Hessian of a multivariable function** \\(f(\nathbf{x}) \mathbb{R}^p\rightarrow \mathbb{R}\\) | \\(\nabla _{\mathbf{x}}^2 f(\nathbf{x}) = \nabla^2 f(\nathbf{x})\\) |
+   | **Gradient of a multivariable function** \\(f(\mathbf{x}) \mathbb{R}^p\rightarrow \mathbb{R}\\) | \\(\nabla _{\mathbf{x}} f(\mathbf{x}) = \nabla f(\mathbf{x})\\) |
+   | **Hessian of a multivariable function** \\(f(\mathbf{x}) \mathbb{R}^p\rightarrow \mathbb{R}\\) | \\(\nabla _{\mathbf{x}}^2 f(\mathbf{x}) = \nabla^2 f(\mathbf{x})\\) |
 
 * Here, we mostly present results for the real field. We often give the corresponding results for the complex field.
 * If the context is clear, we may represent columns or rows of a matrix without colon notation, e.g.,  \\(\mathrm{X_i}\\).
