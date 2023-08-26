@@ -16,11 +16,10 @@ is known as a flat local minimum.
   - The following figure shows the global and local minimums and maximums.
 
     <p align="center">
-            <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/e20890d9-4173-4e9b-86fa-8ed3bb4f99ea">
+            <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/407e159d-89c1-4497-af8d-f16c1d8336aa)">
     <br>
             <em>Global and local minimums and maximums of a continuous and differentiable function.</em>
      </p>
   
-
 * In machine learning fitting a model to the given data samples is a core problem which essentially means solving an optimization problem. An ML model is optimized to produce the best prediction (smallest error). For example (as we will see later), in the linear regression problems, we try to fit a linear model by optimizing its parameters such that the output model can be as close as possible to the observed samples.
 * 
