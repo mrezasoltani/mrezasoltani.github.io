@@ -15,7 +15,7 @@ classes: wide
 is known as a flat local minimum.
 
   - For a continuous and differentiable function, a **_stationary point_** is a point for which the gradient is zero, i.e., \\(\pmb{\theta^*}\\) is stationary point iff \\(\nabla_{\pmb{\theta}} \mathcal{L}(\pmb{\theta}) = 0\\) for \\(\pmb{\theta}=\\) \\(\pmb{\theta}^{\*}\\)
-  - The following figure shows the global and local minimums and maximums.
+  - The following figure shows the global and local minimums and maximums:
 
     <p align="center">
             <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/88e20434-99a4-4e5c-8ec7-2dbf12413c2c">
