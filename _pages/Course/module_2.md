@@ -33,7 +33,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | \\(L^p\\) **norm of a vector** \\(\mathbf{x}\\) | \\(\\|\\|\mathbf{x}\\|\\|_p\\) |
    | \\(p\\) **-induced norm of a matrix** | \\(\\|\\|\mathrm{X}\\|\\|_p\\) |
    | **Dot product of two vectors** | \\(\mathbf{x}\cdot\mathbf{y}\\) |
-   | **Hadamard (element-wise) product of two vectors (matrices)** | \\(\mathbf{x}\odot\mathbf{y} (\mathrm{X}\odot\mathrm{Y})\\) |
+   | **Hadamard (element-wise) product of two vectors (matrices)** | \\(\mathbf{x}\odot\mathbf{y} ~ (\mathrm{X}\odot\mathrm{Y})\\) |
    | **Gradient of a multivariable function** \\(f(\mathbf{x}):~ \mathbb{R}^p\rightarrow \mathbb{R}\\) | \\(\nabla _{\mathbf{x}} f(\mathbf{x}) = \nabla f(\mathbf{x})\\) |
    | **Hessian of a multivariable function** \\(f(\mathbf{x}):~ \mathbb{R}^p\rightarrow \mathbb{R}\\) | \\(\nabla _{\mathbf{x}}^2 f(\mathbf{x}) = \nabla^2 f(\mathbf{x})\\) |
 
