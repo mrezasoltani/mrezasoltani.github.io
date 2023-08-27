@@ -145,7 +145,8 @@ Here, we review the most important concepts in probability theory without mathem
   \\[\mu_x = \mu_1 = \mathbb{E}(X) = \sum _{x\in \mathcal{\Omega}} x P(x)\\]
   - Expectation is a linear operator, i.e., let \\(X\\) be a random variable (discrete/continous) and \\(a\\) and \\(b\\) be two constants, \\(\mathbb{E}(aX+b) = a\mathbb{E}(X) + b\\). More generally, \\(\mathbb{E}\[\sum _{i-1}^n X_i\] = \sum _{i=1}^n \mathbb{E}X_i\\), where \\(X_1, X_2, \ldots X_n\\) are \\(n\\) random variables (discrete/continous).
   - Let \\(X_1, X_2, \ldots X_n\\) be independent random variables. Then, \\(\mathbb{E}\[\prod _{i=1}^nX_i\] = \prod _{i=1}^n\mathbb{E}X_i\\).
-  - **Law of Iterated Expectations (Law of Total Expectation**
+  - **Law of Iterated Expectations (Law of Total Expectation).** When ther are two or more dependent random variables, we can use conditional expectation to compute the moments of one given knowledge of the other. For example, if \\(X\\) and \\(Y\\) are two dependent radom variables, then the expectation of \\(X\\) can be computed as \\(\mathbb{E}X = \mathbba{E}_Y\mathbb{E}(X\|Y)\\). It is very straight forward to show this:
+    \\[\mathbba{E}_Y\mathbb{E}(X\|Y) = \mathbba{E}_Y\sum _{x}xP(x\|Y) = \sum _y\sum _xP(x\|y)P(y) = \sum _{x,y}xP(x,y)\\]
     
 - **Variance.** Variance of a random variable is the second moment of distribution (see below for more details), often denoted by \\(\\sigma_x^2\\), \\(m_2\\), or \\(var(X)\\). For a continuous r.v. with the support \\(\mathcal{\Omega}\\), the variance is defined as follows (if the integral is not finite, the variance is not defined):
   \\[\sigma_x^2 = m_2 = var(X) = \mathbb{E}\[(X-\mu_x)^2 \]=\int _{x\in \mathcal{\Omega}} (x-\mu_x)^2 p(x)dx\\]
@@ -197,7 +198,7 @@ Here, we review the most important concepts in probability theory without mathem
         \end{aligned}
         \end{equation}
 
-* **multinoulli (Categorical).** 
+* **Multinoulli (Categorical).** 
 * **Binomial.** Consiider \\(n\\) random variables \\(X_i\stackrel{iid}\sim Ber(x|\theta), ~ i=1,2,\ldots,n\\). The sum of these random variables, \\(Y=\sum _{i=1}^n X_i\\) is called Binomial r.v. with parameters \\((n, \theta)\\), and is defined as follows:
   \\[Bin(y\|n, \theta) = \binom ni \theta^{i}(1-\theta)^{n-i}\\]
     - \\(\binom ni = \frac{n!}{(n-i)!i!}\\) is the number of ways to choose \\(i\\) items from \\(n\\) (aka binomial coefficient).
