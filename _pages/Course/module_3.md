@@ -145,8 +145,9 @@ Here, we review the most important concepts in probability theory without mathem
   \\[\mu_x = \mu_1 = \mathbb{E}(X) = \sum _{x\in \mathcal{\Omega}} x P(x)\\]
   - Expectation is a linear operator, i.e., let \\(X\\) be a random variable (discrete/continous) and \\(a\\) and \\(b\\) be two constants, \\(\mathbb{E}(aX+b) = a\mathbb{E}(X) + b\\). More generally, \\(\mathbb{E}\[\sum _{i-1}^n X_i\] = \sum _{i=1}^n \mathbb{E}X_i\\), where \\(X_1, X_2, \ldots X_n\\) are \\(n\\) random variables (discrete/continous).
   - Let \\(X_1, X_2, \ldots X_n\\) be independent random variables. Then, \\(\mathbb{E}\[\prod _{i=1}^nX_i\] = \prod _{i=1}^n\mathbb{E}X_i\\).
-  - **Law of Iterated Expectations (Law of Total Expectation).** When ther are two or more dependent random variables, we can use conditional expectation to compute the moments of one given knowledge of the other. For example, if \\(X\\) and \\(Y\\) are two dependent radom variables, then the expectation of \\(X\\) can be computed as \\(\mathbb{E}X = \mathbba{E}_Y\mathbb{E}(X\|Y)\\). It is very straight forward to show this:
-    \\[\mathbba{E}_Y\mathbb{E}(X\|Y) = \mathbba{E}_Y\sum _{x}xP(x\|Y) = \sum _y\sum _xP(x\|y)P(y) = \sum _{x,y}xP(x,y)\\]
+  - **Law of Iterated Expectations (Law of Total Expectation).** When there are two or more dependent random variables, we can use conditional expectation to compute the moments of one given knowledge of the other. For example, if \\(X\\) and \\(Y\\) are two dependent random variables, then the expectation of \\(X\\) can be computed as \\(\mathbb{E}X = \mathbb{E}_Y\mathbb{E}(X\|Y)\\). It is very straight forward to show this:
+    \\[\mathbb{E}_Y\mathbb{E}(X\|Y) = \mathbb{E}_Y(\sum _{x}xP(x\|Y)) = \sum _y\sum _xP(x\|y)P(y) = \sum _{x,y}xP(x,y)\\]
+      - For example, consider a person plays a slot machine with two buttons in a casino. The person expects if he chooses the first button, he can earn $2, and if he selects the second button, he will lose $1. Now assume that the person choose two buttons randomly without any preference, how much can he expects to win or lose ? The Law of Iterated Expectations can easily answer this question for us. Let \\(Y\\) be a r.v. with two possible values of 1 and 0 such that 1 means choosing the fist button, and 0 means choosing the second button. Thus, \\(P(Y=0) = P(Y=1)= 0.5\\). Now, consider another r.v. to model the amount of money the person can earn/loose and denote it by \\(X\\). From above, we know that \\(\mathbb{E)(X|Y=0) = 2\\) and  \\(\mathbb{E)(X|Y=1) = -1\\). As a results, \\(\mathbb{E)X = \mathbb{E}_Y\mathbb{E}(X\|Y)\\) = 0.5\times 2 + 0.5\times (-1) = 0.5\\). That is, we expect that the person can win 50 cents!!!
     
 - **Variance.** Variance of a random variable is the second moment of distribution (see below for more details), often denoted by \\(\\sigma_x^2\\), \\(m_2\\), or \\(var(X)\\). For a continuous r.v. with the support \\(\mathcal{\Omega}\\), the variance is defined as follows (if the integral is not finite, the variance is not defined):
   \\[\sigma_x^2 = m_2 = var(X) = \mathbb{E}\[(X-\mu_x)^2 \]=\int _{x\in \mathcal{\Omega}} (x-\mu_x)^2 p(x)dx\\]
@@ -164,7 +165,8 @@ Here, we review the most important concepts in probability theory without mathem
            \prod _{i=1}^n(\sigma_x^2 + \mu_x^2) - \prod _{i=1}^n\mu_x^2
          \end{aligned}
       \end{equation}
-    - **Law of Total Variance (Conditional Variance Formula)**
+    - **Law of Total Variance (Conditional Variance Formula).** Simialr to the Law of Total Expectation, we can express a formula for the conditional variances between two dependet variables. That is,
+      \\[\text{Var}(X) = \mathbb{E} _Y(\text{Var}(X|Y)) + \text{Var} _Y(\mathbb{E}(X|Y))\\]
   
 - **Mode.** The mode of a distribution is the value in which the probability mass function or probability density function are maximized:
   \\[x^* = \text{argmax} _x p(x)\\]
