@@ -161,8 +161,8 @@ Here, we review the most important concepts in probability theory without mathem
      \begin{equation}
         \begin{aligned}
            var(\prod _{i=1}^n X_i) = \mathbb{E}\[(\prod _{i=1}^n X_i)^2\] - (\mathbb{E}\[\prod _{i=1}^n X_i\])^2 \\\\\\\\
-           \prod _{i=1}^n\mathbb{E}(X_i^2) - (\prod _{i=1}^n\mathbb{E}X_i)^2 \\\\\\\\
-           \prod _{i=1}^n(\sigma_x^2 + \mu_x^2) - \prod _{i=1}^n\mu_x^2
+           =\prod _{i=1}^n\mathbb{E}(X_i^2) - (\prod _{i=1}^n\mathbb{E}X_i)^2 \\\\\\\\
+           =\prod _{i=1}^n(\sigma_x^2 + \mu_x^2) - \prod _{i=1}^n\mu_x^2
          \end{aligned}
       \end{equation}
     - **Law of Total Variance (Conditional Variance Formula).** Simialr to the Law of Total Expectation, we can express a formula for the conditional variances between two dependet variables. That is,
