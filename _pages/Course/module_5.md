@@ -7,7 +7,7 @@ classes: wide
   \\[\pmb{\theta}^* = \text{argmin} _{\pmb{\theta}\in \mathcal{\Theta}}~\mathcal{L}(\pmb{\theta})\\]
   - Here, we assume that the parameter space is a continuous \\(p\\)-dimensional space such that \\(\pmb{\theta}\in \mathcal{\Theta}\\); hence, we deal with continuous optimization. Later in this course, we talk about discrete optimization problems.
   -When \\(\mathcal{\Theta}\\) is the domain of the objective function, then the optimization problem is called **_unconstrained optimization_**. For example,  \\(\mathcal{\Theta} = \mathbb{R}^p\\). However, in ML optimization problems are **_constrained_**. It is common to show the set of constraints as a set of \\(m\\) equalities, e.g., \\(h_k(\pmb{\theta}) = 0\\) for \\(k=1,2,\ldots, m\\), and a set of \\(n\\) inequalities, e.g.,  \\(g_k(\pmb{\theta}) \leq 0\\) for \\(k=1,2,\ldots, n\\). Hence, for a constrained optimization problem, we write the problem as:
-  \\[\pmb{\theta}^* = \text{argmin} _{\pmb{\theta}\in \mathcal{C}}~\mathcal{L}(\pmb{\theta})\\]
+  \\[\pmb{\theta}^* = \text{argmin} _{\pmb{\theta}\in \mathcal{S}}~\mathcal{L}(\pmb{\theta})\\]
   - **Feasible Set (Solution).** The feasible set is a subset of the parameter space that satisfies all constraints:
     \\[\mathcal{S} = \{\pmb{\theta}): h_k(\pmb{\theta}) = 0, ~ k=1,2,\ldots, m, g_k(\pmb{\theta}) \leq 0, ~ k=1,2,\ldots, n\}\\]
   - A point that satisfies the above equation is called a **_global minimum_**, which is typically computationally hard to compute.
