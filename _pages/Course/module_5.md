@@ -15,9 +15,7 @@ classes: wide
  
     \\[\exists \delta > 0, ~ \forall \theta ~~ s.t. \|\|\pmb{\theta}-\pmb{\theta}^*\|\|, ~ \mathcal{L}(\pmb{\theta} ^{\*}) \leq \mathcal{L}(\pmb{\theta}) \\]
   - Similaer definition holds for the local maximum.
-  - 
   - It is possible (in fact this is very common in ML) to have more than one local minimum  with the same objective value; this is known as a flat local minimum.
-
   - For a continuous and differentiable function, a **_stationary point_** is a point for which the gradient is zero, i.e., \\(\pmb{\theta^*}\\) is stationary point iff \\(\nabla_{\pmb{\theta}} \mathcal{L}(\pmb{\theta}) = 0\\) for \\(\pmb{\theta}=\\) \\(\pmb{\theta}^{\*}\\).
   - The following figure shows the global and local minimums and maximums:
 
