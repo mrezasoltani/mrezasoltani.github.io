@@ -6,15 +6,19 @@ classes: wide
 * Optimization is a mathematical framework for finding the best solution for maximization or minimization problems. For example, we have learned from the statistics section that we need to find the best parameter \\(\pmb{\theta}\\) for a distribution that can explain the observed data with the highest probability. In this case, the maximum likelihood estimation boils down to an optimization problem in which our goal is to minimize the negative likelihood (NLL), known as _loss (cost) function or objective function_ denoted by \\(\mathcal{L}(\pmb{\theta})\\). Hence, we can write our optimization problem as:
   \\[\pmb{\theta}^* = \text{argmin} _{\pmb{\theta}\in \mathcal{\Theta}}~\mathcal{L}(\pmb{\theta})\\]
   - Here, we assume that the parameter space is a continuous \\(p\\)-dimensional space such that \\(\pmb{\theta}\in \mathcal{\Theta}\\); hence, we deal with continuous optimization. Later in this course, we talk about discrete optimization problems.
-  -When \\(\mathcal{\Theta}\\) is the domain of the objective function, then the optimization problem is called **unconstrained optimization_**. For example,  \\(\mathcal{\Theta} = \mathbb{R}^p\\). However, in ML optimization problems are **_constrained_**. It is common to show the set of constraints as a set of \\(m\\) equalities, e.g., \\(h_k(\pmb{\theta}) = 0\\) for \\(k=1,2,\ldots, m\\), and a set of \\n\\) inequalities, e.g.,  \\(g_k(\pmb{\theta}) = 0\\) for \\(k=1,2,\ldots, n\\).
+  -When \\(\mathcal{\Theta}\\) is the domain of the objective function, then the optimization problem is called **_unconstrained optimization_**. For example,  \\(\mathcal{\Theta} = \mathbb{R}^p\\). However, in ML optimization problems are **_constrained_**. It is common to show the set of constraints as a set of \\(m\\) equalities, e.g., \\(h_k(\pmb{\theta}) = 0\\) for \\(k=1,2,\ldots, m\\), and a set of \\n\\) inequalities, e.g.,  \\(g_k(\pmb{\theta}) leq 0\\) for \\(k=1,2,\ldots, n\\). Hence, for a constrained optimization problem, we write the problem as:
+  \\[\pmb{\theta}^* = \text{argmin} _{\pmb{\theta}\in \mathcal{C}}~\mathcal{L}(\pmb{\theta})\\]
+  - **Feasible Set (Solution).** The feasible set is a subset of the parameter space that satisfies all constraints:
+    \\[\mathcal{S} = \{\pmb{\theta}): h_k(\pmb{\theta}) = 0, ~\\(k=1,2,\ldots, m, g_k(\pmb{\theta}) leq 0, ~k=1,2,\ldots, n\\]
   - A point that satisfies the above equation is called a **_global minimum_**, which is typically computationally hard to compute.
   - However, in most cases, we are looking for **_local optimum(s)_** which are the points with smaller (larger) or equal loss function than _nearby_ points for minimization (maximization) problems. This can be expressed as following: \\(\pmb{\theta^*}\\) is called a local minimum if
  
     \\[\exists \delta > 0, ~ \forall \theta ~~ s.t. \|\|\pmb{\theta}-\pmb{\theta}^*\|\|, ~ \mathcal{L}(\pmb{\theta} ^{\*}) \leq \mathcal{L}(\pmb{\theta}) \\]
   - Similaer definition holds for the local maximum.
+  - 
   - It is possible (in fact this is very common in ML) to have more than one local minimum  with the same objective value; this is known as a flat local minimum.
 
-  - For a continuous and differentiable function, a **_stationary point_** is a point for which the gradient is zero, i.e., \\(\pmb{\theta^*}\\) is stationary point iff \\(\nabla_{\pmb{\theta}} \mathcal{L}(\pmb{\theta}) = 0\\) for \\(\pmb{\theta}=\\) \\(\pmb{\theta}^{\*}\\)
+  - For a continuous and differentiable function, a **_stationary point_** is a point for which the gradient is zero, i.e., \\(\pmb{\theta^*}\\) is stationary point iff \\(\nabla_{\pmb{\theta}} \mathcal{L}(\pmb{\theta}) = 0\\) for \\(\pmb{\theta}=\\) \\(\pmb{\theta}^{\*}\\).
   - The following figure shows the global and local minimums and maximums:
 
     <p align="center">
