@@ -36,14 +36,15 @@ classes: wide
 ## Convex vs. Non-convex Optimization
 * Optimization problems can be classified into different categories in terms of their complexity. One broad criterion is to distinguish optimization problems if they are convex or not.
   _ **Convex Optimization.** Before defining what a convex optimization problem is we need to understand the convex sets and convex functions.
-    - **Convex Set.** a 
+    - **Convex Set.** a Set \\(\mathcal{S}\\) is convext set if for any \\(\pmb{\theta}_1 and \pmb{\theta}_2 \in \mathcal{S}\\) and for any \\(\lambda\in \[0,\1]\\), we have \\(\lambda\pmb{\theta}_1 + (1-\lambda)\pmb{\theta}_2 \in \mathcal{S}\\).
+    - This means that any point connecting two points in the set is also in the set. The following figure shows a convex and a non-convex set.
 
 
 * A main problem in machine learning is fitting a model to given data samples, essentially solving an optimization problem. An ML model is optimized to produce the best prediction (smallest error). For example (as we will see later), in the linear regression problems, we try to fit a linear model by optimizing its parameters such that the output model can be as close as possible to the observed samples.
 
 ## Gradient Decent
 * Gradient Descent (GD) is an optimization algorithm used to minimize (or maximize) a function by iteratively adjusting the decision variables in the direction that leads to the steepest rate of change (e.g., decrease for the minimization problems) of the function. It's a fundamental technique and versatile algorithm that underlies many machine learning techniques and models, especially in training models such as linear regression, support vector machines, and neural networks.
-*While the basic concept is relatively simple, there are many nuances and variations that can impact its performance, convergence speed, and robustness.
+* While the basic concept is relatively simple, there are many nuances and variations that can impact its performance, convergence speed, and robustness.
 * The main components of a GD algorithm are as follows:
   - **Initialization.** Initialize the parameters (θ) with some initial values. This could be random or based on domain knowledge.
   - For a minimization problem, the gradient of the objective function with respect to its decision variables represents the direction of the steepest decrease in the function. It points to the direction in which the function's output decreases the most. As a result, to minimize the function, we move in the opposite direction of the gradient.
