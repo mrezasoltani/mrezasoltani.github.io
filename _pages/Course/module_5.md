@@ -37,16 +37,18 @@ classes: wide
 * Optimization problems can be classified into different categories in terms of their complexity. One broad criterion is to distinguish optimization problems if they are convex or not.
   _ **Convex Optimization.** Before defining what a convex optimization problem is we need to understand the convex sets and convex functions.
     - **Convex Set.** a Set \\(\mathcal{S}\\) is convext set if for any \\(\pmb{\theta}_1, ~ \pmb{\theta}_2 \in \mathcal{S}\\) and for any \\(\lambda\in \[0,1\]\\), we have \\(\lambda\pmb{\theta}_1 + (1-\lambda)\pmb{\theta}_2 \in \mathcal{S}\\).
-    - This means that any point connecting two points in the set is also in the set. The following figure shows a convex and a non-convex set.
+    - This means that any point connecting two points in the set is also in the set. The following figure shows convex and non-convex sets.
 
     <p align="center">
             <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM"       
-              src="">
+              src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/00fbc2dd-b936-41c2-9608-fe06f2ebc06a">
         <br>
-            <em>Convex and  Non-convex sets.</em>
+            <em>Convex and Non-convex sets.</em>
      </p>
-     
-
+    - **Convex Functions.** A function \\(f(\pmb{\theta})\\) is called a convex function if its domain is a convex set and for any two points \\(\pmb{\theta}_1, ~ \pmb{\theta}_2 \\) in its domain, we have:
+    \\[f(\lambda\pmb{\theta}_1 + (1-\lambda)\pmb{\theta}_2) \leq \lambda f(\pmb{\theta}_1) + (1-\lambda)f(\pmb{\theta}_2)\\]
+      - If the above inequality is a strict inequality, the function \\(f\\) is called strictly convex.
+      
 * A main problem in machine learning is fitting a model to given data samples, essentially solving an optimization problem. An ML model is optimized to produce the best prediction (smallest error). For example (as we will see later), in the linear regression problems, we try to fit a linear model by optimizing its parameters such that the output model can be as close as possible to the observed samples.
 
 ## Gradient Decent
@@ -62,6 +64,6 @@ classes: wide
 
   - **Convergence Criteria.** You repeat the iterative updates until a convergence criterion is met. This could be a predefined number of iterations or until the change in the objective function's value between iterations becomes very small.
 
-Batch Gradient Descent vs. Stochastic Gradient Descent. There are variations of Gradient Descent. Batch Gradient Descent computes the gradient using the entire training dataset in each iteration, which can be slow for large datasets. Stochastic Gradient Descent (SGD) computes the gradient using only a single data point (or a small batch) in each iteration, making it faster but leading to more noisy updates.
+  - Batch Gradient Descent vs. Stochastic Gradient Descent. There are variations of Gradient Descent. Batch Gradient Descent computes the gradient using the entire training dataset in each iteration, which can be slow for large datasets. Stochastic Gradient Descent (SGD) computes the gradient using only a single data point (or a small batch) in each iteration, making it faster but leading to more noisy updates.
 
-Mini-Batch Gradient Descent. Mini-Batch Gradient Descent combines the benefits of both batch and stochastic versions. It computes the gradient using a small randomly selected subset (mini-batch) of the training dataset.
+  - Mini-Batch Gradient Descent. Mini-Batch Gradient Descent combines the benefits of both batch and stochastic versions. It computes the gradient using a small randomly selected subset (mini-batch) of the training dataset.
