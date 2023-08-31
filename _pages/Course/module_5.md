@@ -37,7 +37,7 @@ classes: wide
   
 ## Convex vs. Non-convex Optimization
 * Optimization problems can be classified into different categories in terms of their complexity. One broad criterion is to distinguish optimization problems if they are convex or not.
-  _ **Convex Optimization.** Before defining what a convex optimization problem is we need to understand the convex sets and convex functions.
+  - **Convex Optimization.** Before defining what a convex optimization problem is we need to understand the convex sets and convex functions.
     - **Convex Set.** a Set \\(\mathcal{S}\\) is convext set if for any \\(\pmb{\theta}_1, ~ \pmb{\theta}_2 \in \mathcal{S}\\) and for any \\(\lambda\in \[0,1\]\\), we have \\(\lambda\pmb{\theta}_1 + (1-\lambda)\pmb{\theta}_2 \in \mathcal{S}\\).
     - This means that any point connecting two points in the set is also in the set. The following figure shows convex and non-convex sets.
 
