@@ -62,7 +62,7 @@ classes: wide
             <em>Epigraph of a function, a convex function, and a non-convex function.</em>
         </p>
      
-      - If \\f(\pmb{\theta})(\\) is a convex function, \\(-f(\pmb{\theta})\\) is a **_concave_** function. 
+      - If \\(f(\pmb{\theta})\\) is a convex function, \\(-f(\pmb{\theta})\\) is a **_concave_** function. 
 * A main problem in machine learning is fitting a model to given data samples, essentially solving an optimization problem. An ML model is optimized to produce the best prediction (smallest error). For example (as we will see later), in the linear regression problems, we try to fit a linear model by optimizing its parameters such that the output model can be as close as possible to the observed samples.
 
 ## Gradient Decent
