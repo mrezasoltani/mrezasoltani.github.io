@@ -39,16 +39,28 @@ classes: wide
     - **Convex Set.** a Set \\(\mathcal{S}\\) is convext set if for any \\(\pmb{\theta}_1, ~ \pmb{\theta}_2 \in \mathcal{S}\\) and for any \\(\lambda\in \[0,1\]\\), we have \\(\lambda\pmb{\theta}_1 + (1-\lambda)\pmb{\theta}_2 \in \mathcal{S}\\).
     - This means that any point connecting two points in the set is also in the set. The following figure shows convex and non-convex sets.
 
-    <p align="center">
+     <p align="center">
             <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM"       
-              src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/00fbc2dd-b936-41c2-9608-fe06f2ebc06a">
+              src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/f34d9183-1997-4324-9914-57b75542fed3">
         <br>
             <em>Convex and Non-convex sets.</em>
      </p>
-    - **Convex Functions.** A function \\(f(\pmb{\theta})\\) is called a convex function if its domain is a convex set and for any two points \\(\pmb{\theta}_1, ~ \pmb{\theta}_2 \\) in its domain, we have:
+
+    - **Convex Functions.** A function \\(f(\pmb{\theta})\\) is called a convex function if its domain is a convex set and for any two points \\(\pmb{\theta}_1, \pmb{\theta}_2 \\) in its domain, we have:
     \\[f(\lambda\pmb{\theta}_1 + (1-\lambda)\pmb{\theta}_2) \leq \lambda f(\pmb{\theta}_1) + (1-\lambda)f(\pmb{\theta}_2)\\]
       - If the above inequality is a strict inequality, the function \\(f\\) is called strictly convex.
+      - Equivalently, a function is convex if the set of all points above the graph of the function called _epigraph_ denoted by \\(\text{epi}(f)\\) is a convex set. That is, the following set is a convex set.
+        \\[\text{epi{f) = \{(\pmb{\theta}, t):  f(\pmb{\theta}) \leq t\}\\]
+      - The following figure shows the epigraph of a function, a convex function, and a non-convex function.
       
+        <p align="center">
+            <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM"       
+              src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/f4f06eb6-944d-40d8-9991-8de17d1bd139">
+         <br>
+            <em>Epigraph of a function, a convex function, and a non-convex function.</em>
+        </p>
+     
+      - If \\f(\pmb{\theta})(\\) is a convex function, \\(-f(\pmb{\theta})\\) is a **_concave_** function. 
 * A main problem in machine learning is fitting a model to given data samples, essentially solving an optimization problem. An ML model is optimized to produce the best prediction (smallest error). For example (as we will see later), in the linear regression problems, we try to fit a linear model by optimizing its parameters such that the output model can be as close as possible to the observed samples.
 
 ## Gradient Decent
