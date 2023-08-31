@@ -40,10 +40,10 @@ classes: wide
     - **Convex Set.** a Set \\(\mathcal{S}\\) is convext set if for any \\(\pmb{\theta}_1, ~ \pmb{\theta}_2 \in \mathcal{S}\\) and for any \\(\lambda\in \[0,1\]\\), we have \\(\lambda\pmb{\theta}_1 + (1-\lambda)\pmb{\theta}_2 \in \mathcal{S}\\).
     - This means that any point connecting two points in the set is also in the set. The following figure shows convex and non-convex sets.
 
-     <p align="center">
-            <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM"       
-              src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/f34d9183-1997-4324-9914-57b75542fed3">
-        <br>
+    <p align="center">
+          <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM"   
+            src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d9d60965-0448-427c-936f-14e5a53fb515">
+      <br>
             <em>Convex and Non-convex sets.</em>
      </p>
 
