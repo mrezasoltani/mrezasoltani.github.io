@@ -28,7 +28,7 @@ classes: wide
 * **ML blogs:**
     1. Lilian's blog with many interesting learning notes ([link](https://lilianweng.github.io/lil-log/))
     2. Distill, a scientific journal that operated from 2016-2021 with many well-explained ML concepts ([link](https://distill.pub/)).
-    3. Shakir Mohamed'blog with many learning resources in ML/DL ([link](http://blog.shakirm.com/))
+    3. Shakir Mohamed's blog with many learning resources in ML/DL ([link](http://blog.shakirm.com/))
     4. A blog affiliated with Ermon’s research group at Stanford with some advanced topics in ML ([link](https://ermongroup.github.io/blog/flow-gan/)]
     5. A research blog for Zico Kolter’s research group at CMU with theoretical topics ([link](https://locuslab.github.io/))
     6. Off the Convex Path, a blog with concepts in optimization methods ([link](https://www.offconvex.org/))
