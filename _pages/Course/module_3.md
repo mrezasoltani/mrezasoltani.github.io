@@ -161,7 +161,7 @@ Here, we review the most important concepts in probability theory without mathem
    - Let \\(X_1, X_2, \ldots X_n\\) be independent random variables. Then, the variance of their product is given by
      \begin{equation}
         \begin{aligned}
-           \text{Var}(X)(\prod _{i=1}^n X_i) = \mathbb{E}\[(\prod _{i=1}^n X_i)^2\] - (\mathbb{E}\[\prod _{i=1}^n X_i\])^2 \\\\\\\\
+           \text{Var}\big{(}\prod _{i=1}^n X_i\big{)} = \mathbb{E}\[(\prod _{i=1}^n X_i)^2\] - (\mathbb{E}\[\prod _{i=1}^n X_i\])^2 \\\\\\\\
            =\prod _{i=1}^n\mathbb{E}(X_i^2) - (\prod _{i=1}^n\mathbb{E}X_i)^2 \\\\\\\\
            =\prod _{i=1}^n(\sigma_x^2 + \mu_x^2) - \prod _{i=1}^n\mu_x^2
          \end{aligned}
