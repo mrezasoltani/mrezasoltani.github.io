@@ -18,10 +18,11 @@ classes: wide
   - The following figure shows the global and local minimums and maximums:
 
     <p align="center">
-            <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/88e20434-99a4-4e5c-8ec7-2dbf12413c2c">
+            <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d9d60965-0448-427c-936f-14e5a53fb515">
     <br>
             <em>Global and local minimums and maximums of a continuous and differentiable function.</em>
      </p>
+
   - The following conditions provide the necessary and sufficient conditions for a local minimum assuming the function is continuous and twice differentiable:
     - **Necessary Condition.** \\(\pmb{\theta}^{\*}\\) is a local minimum if the gradient evaluated at \\(\pmb{\theta}^{\*}\\), i.e.,  \\(\nabla\mathcal{L}(\pmb{\theta}^{\*}) = 0\\) (a stationary point), and the Hessian at \\(\pmb{\theta}^{\*}\\) is a PSD matrix, i.e., \\(\nabla^2 \mathcal{L}(\pmb{\theta}^{\*}) \succeq 0\\).
     - **Sufficient condition.** If \\(\nabla\mathcal{L}(\pmb{\theta}^{\*}) = 0\\) and  \\(\nabla^2 \mathcal{L}(\pmb{\theta}^{\*}) \succ 0\\), i.e., the Hessian is a positive definite (PD) matrix, then \\(\pmb{\theta}^{\*}\\) is a local minimum.
