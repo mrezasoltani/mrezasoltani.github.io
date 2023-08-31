@@ -18,8 +18,9 @@ classes: wide
   - The following figure shows the global and local minimums and maximums:
 
     <p align="center">
-            <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/d9d60965-0448-427c-936f-14e5a53fb515">
-    <br>
+            <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM" 
+              src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/05c5bc8c-c75b-4338-9669-c94215fb5f38">
+        <br>
             <em>Global and local minimums and maximums of a continuous and differentiable function.</em>
      </p>
 
