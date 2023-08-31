@@ -36,9 +36,16 @@ classes: wide
 ## Convex vs. Non-convex Optimization
 * Optimization problems can be classified into different categories in terms of their complexity. One broad criterion is to distinguish optimization problems if they are convex or not.
   _ **Convex Optimization.** Before defining what a convex optimization problem is we need to understand the convex sets and convex functions.
-    - **Convex Set.** a Set \\(\mathcal{S}\\) is convext set if for any \\(\pmb{\theta}_1 \text{and} ~ \pmb{\theta}_2 \in \mathcal{S}\\) and for any \\(\lambda\in \[0,1\]\\), we have \\(\lambda\pmb{\theta}_1 + (1-\lambda)\pmb{\theta}_2 \in \mathcal{S}\\).
+    - **Convex Set.** a Set \\(\mathcal{S}\\) is convext set if for any \\(\pmb{\theta}_1, ~ \pmb{\theta}_2 \in \mathcal{S}\\) and for any \\(\lambda\in \[0,1\]\\), we have \\(\lambda\pmb{\theta}_1 + (1-\lambda)\pmb{\theta}_2 \in \mathcal{S}\\).
     - This means that any point connecting two points in the set is also in the set. The following figure shows a convex and a non-convex set.
 
+    <p align="center">
+            <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM"       
+              src="">
+        <br>
+            <em>Convex and  Non-convex sets.</em>
+     </p>
+     
 
 * A main problem in machine learning is fitting a model to given data samples, essentially solving an optimization problem. An ML model is optimized to produce the best prediction (smallest error). For example (as we will see later), in the linear regression problems, we try to fit a linear model by optimizing its parameters such that the output model can be as close as possible to the observed samples.
 
