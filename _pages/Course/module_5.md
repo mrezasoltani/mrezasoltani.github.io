@@ -52,7 +52,7 @@ classes: wide
     \\[f(\lambda\pmb{\theta}_1 + (1-\lambda)\pmb{\theta}_2) \leq \lambda f(\pmb{\theta}_1) + (1-\lambda)f(\pmb{\theta}_2)\\]
       - If the above inequality is a strict inequality, the function \\(f\\) is called strictly convex.
       - Equivalently, a function is convex if the set of all points above the graph of the function called _epigraph_ denoted by \\(\text{epi}(f)\\) is a convex set. That is, the following set is a convex set.
-        \\[\text{epi}(f) = \{(\pmb{\theta}, t):  f(\pmb{\theta}) \leq t\}\\]
+        \\[\text{epi}(f) = \\{(\pmb{\theta}, t):  f(\pmb{\theta}) \leq t\\}\\]
       - The following figure shows the epigraph of a function, a convex function, and a non-convex function.
       
         <p align="center">
