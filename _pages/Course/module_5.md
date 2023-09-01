@@ -87,11 +87,11 @@ classes: wide
     
      <p align="center">
             <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM"       
-              src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/81da80f8-822b-4e68-8665-d502f312bf34">
+              src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/a1547d67-5791-4174-ae98-afc7eaa924bd">
          <br>
             <em>Gradient Descent Algorithm.</em>
       </p>
-
+      
   - This update decreases the value of the objective function, bringing the optimization variables closer to the optimal values (i.e., local minima).
 
   - **Convergence Criteria.** You repeat the iterative updates until a convergence criterion is met. This could be a predefined number of iterations or until the change in the objective function's value between iterations becomes very small.
