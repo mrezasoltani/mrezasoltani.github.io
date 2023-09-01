@@ -1,8 +1,6 @@
 ---
 title: "Module 5 -- Optimization"
 classes: wide
-header-includes:
-  - \usepackage[ruled,vlined,linesnumbered]{algorithm}
 ---
 ## What is Optimization?
 * Optimization is a mathematical framework for finding the best solution for maximization or minimization problems. For example, we have learned from the statistics section that we need to find the best parameter \\(\pmb{\theta}\\) for a distribution that can explain the observed data with the highest probability. In this case, the maximum likelihood estimation boils down to an optimization problem in which our goal is to minimize the negative likelihood (NLL), known as _loss (cost) function or objective function_ denoted by \\(\mathcal{L}(\pmb{\theta})\\). Hence, we can write our optimization problem as:
@@ -78,7 +76,7 @@ header-includes:
         - If the convex function is twice differentiable, then the function is a strongly convex function if \\(\nabla^2f(\pmb{\theta}) \succeq m\mathrm{I}~\\) for all \\(\pmb{\theta}~\\) in the domain of \\(f\\).
 * A main problem in machine learning is fitting a model to given data samples, essentially solving an optimization problem. An ML model is optimized to produce the best prediction (smallest error). For example (as we will see later), in the linear regression problems, we try to fit a linear model by optimizing its parameters such that the output model can be as close as possible to the observed samples.
 
-## Gradient Decent
+## Gradient Descent
 * Gradient Descent (GD) is an optimization algorithm used to minimize (or maximize) a function by iteratively adjusting the decision variables in the direction that leads to the steepest rate of change (e.g., decrease for the minimization problems) of the function. It's a fundamental technique and versatile algorithm that underlies many machine learning techniques and models, especially in training models such as linear regression, support vector machines, and neural networks.
 * While the basic concept is relatively simple, there are many nuances and variations that can impact its performance, convergence speed, and robustness.
 * The main components of a GD algorithm are as follows:
@@ -86,49 +84,13 @@ header-includes:
   - For a minimization problem, the gradient of the objective function with respect to its decision variables represents the direction of the steepest decrease in the function. It points to the direction in which the function's output decreases the most. As a result, to minimize the function, we move in the opposite direction of the gradient.
   - **Learning Rate**. The learning rate is a hyperparameter that determines the step size taken in each iteration of the algorithm. It scales the gradient vector and controls the speed of convergence. A small learning rate may cause slow convergence, while a large one might cause overshooting or even divergence.
   - **Iterative Update.** The core of Gradient Descent is the iterative update of the parameters. In each iteration, you compute the gradient of the objective function with respect to the current parameters, multiply it by the learning rate, and subtract it from the current parameters to update them. The update equation for a single parameter might look like this:
-
-\begin{algorithm}[H]
-\DontPrintSemicolon
-\SetAlgoLined
-\KwResult{Write here the result}
-\SetKwInOut{Input}{Input}\SetKwInOut{Output}{Output}
-\Input{Write here the input}
-\Output{Write here the output}
-\BlankLine
-\While{While condition}{
-    instructions\;
-    \eIf{condition}{
-        instructions1\;
-        instructions2\;
-    }{
-        instructions3\;
-    }
-}
-\caption{While loop with If/Else condition}
-\end{algorithm} 
-
-ALGORITHM FindMax(array)
-
-INPUT: array - an array of numbers
-OUTPUT: the maximum value in the array
-
-BEGIN
-
-  // Initialize the maximum value to the first element in the array
-  maxValue = array[0]
-
-  // Iterate through the rest of the elements in the array
-  for i = 1 to array.length - 1
-
-    // If the current element is greater than the maximum value, update the maximum value
-    if array[i] > maxValue
-      maxValue = array[i]
-
-  // Return the maximum value
-  return maxValue
-
-END 
-
+    
+     <p align="center">
+            <img width="600" alt="Screenshot 2023-07-10 at 7 21 57 PM"       
+              src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/81da80f8-822b-4e68-8665-d502f312bf34">
+         <br>
+            <em>Gradient Descent Algorithm.</em>
+      </p>
 
   - This update decreases the value of the objective function, bringing the optimization variables closer to the optimal values (i.e., local minima).
 
