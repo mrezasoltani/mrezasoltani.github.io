@@ -107,6 +107,27 @@ header-includes:
 \caption{While loop with If/Else condition}
 \end{algorithm} 
 
+ALGORITHM FindMax(array)
+
+INPUT: array - an array of numbers
+OUTPUT: the maximum value in the array
+
+BEGIN
+
+  // Initialize the maximum value to the first element in the array
+  maxValue = array[0]
+
+  // Iterate through the rest of the elements in the array
+  for i = 1 to array.length - 1
+
+    // If the current element is greater than the maximum value, update the maximum value
+    if array[i] > maxValue
+      maxValue = array[i]
+
+  // Return the maximum value
+  return maxValue
+
+END 
 
 
   - This update decreases the value of the objective function, bringing the optimization variables closer to the optimal values (i.e., local minima).
