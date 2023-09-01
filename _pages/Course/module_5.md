@@ -98,9 +98,9 @@ classes: wide
     
      <p align="center">
             <img width="700" alt="Screenshot 2023-07-10 at 7 21 57 PM"       
-              src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/c0786afd-c5a3-4e47-9c0c-cb44afae2ff">
+              src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/f6ffcca5-3b32-46c2-9377-121f3544302b">
          <br>
-            <em>Steepest descent on a convex function, starting from (0, 0), for 20 steps, using a fixed step size [K. Murphy, 2012.].</em>
+            <em>Steepest descent on a convex function, starting from (0, 0), for 20 steps, using a fixed step size [K. Murphy, 2022.].</em>
       </p>
 
   - **Convergence Criteria.** The iterative updates are repeated until a convergence criterion is met. This could be a predefined number of iterations or until the change in the objective function's value between iterations becomes very small.
