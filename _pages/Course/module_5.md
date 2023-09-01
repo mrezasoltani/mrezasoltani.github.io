@@ -64,12 +64,16 @@ classes: wide
      
       - If \\(f(\pmb{\theta})\\) is a convex function, \\(-f(\pmb{\theta})\\) is a **_concave_** function.
       - Convex functions are bowl-shaped functions.
-      - Some common examples of 1-d convex functions include \\(x^2, e^x, -\log(x), x\log(x)\\).
+      - Some common examples of 1-D convex functions are as follows:
+          \\[x^2, e^x, -\log(x), x\log(x)\\]
       - One important property of the convex functions is that all local minimums are global minimums.
       - For convex functions, the above sufficient condition for a point to be a local minimum is also a necessary condition.
         - **Theorem.** Suppose \\(f : \mathbb{R}^n \rightarrow \mathbb{R}\\) is twice differentiable function. Then \\(f\\) is convex iff the 
             Hessian, \\(H = \nabla^2f\\) is a positive semi-definite matrix. Furthermore, \\(f\\) is strictly convex if \\(H\\) is a positive 
             definite matrix.
+      - A differentiable convex function \\(f\\) is _**strongly convex**_ with parameter \\(m > 0\\) if for all \\(\pmb{\theta}_1, \pmb{\theta}_2\\) in domain \\(f\\), we have:
+        \\[(\nabla f(\pmb{\theta}_1) - \nabla f(\pmb{\theta}_2))^T(\pmb{\theta}_1 - \pmb{\theta}_2) \leq m\|\|\pmb{\theta}_1 - \pmb{\theta}_2\|\|_2^2\\]
+        - If the convex function is twice differentiable, then the function is a strongly convex function if \\(\|\|f(\pmb(\theta))\|\|_2^2 \sucseq m\mathbb{I}\\) for all \\(\pmb{\theta}_2\\) in the domain of \\(f\\).
 * A main problem in machine learning is fitting a model to given data samples, essentially solving an optimization problem. An ML model is optimized to produce the best prediction (smallest error). For example (as we will see later), in the linear regression problems, we try to fit a linear model by optimizing its parameters such that the output model can be as close as possible to the observed samples.
 
 ## Gradient Decent
