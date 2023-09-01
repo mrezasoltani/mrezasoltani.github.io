@@ -72,7 +72,7 @@ classes: wide
             Hessian, \\(H = \nabla^2f\\) is a positive semi-definite matrix. Furthermore, \\(f\\) is strictly convex if \\(H\\) is a positive 
             definite matrix.
       - A differentiable convex function \\(f\\) is _**strongly convex**_ with parameter \\(m > 0\\) if for all \\(\pmb{\theta}_1, \pmb{\theta}_2\\) in domain \\(f\\), we have:
-        \\[(\nabla f(\pmb{\theta}_1) - \nabla f(\pmb{\theta}_2))^T(\pmb{\theta}_1 - \pmb{\theta}_2) \leq m\|\|\pmb{\theta}_1 - \pmb{\theta}_2\|\|_2^2\\]
+        \\[(\nabla f(\pmb{\theta}_1) - \nabla f(\pmb{\theta}_2))^T(\pmb{\theta}_1 - \pmb{\theta}_2) \geq m\|\|\pmb{\theta}_1 - \pmb{\theta}_2\|\|_2^2\\]
         - If the convex function is twice differentiable, then the function is a strongly convex function if \\(f(\pmb{\theta}) \succeq m\mathrm{I}~\\) for all \\(\pmb{\theta}~\\) in the domain of \\(f\\).
 * A main problem in machine learning is fitting a model to given data samples, essentially solving an optimization problem. An ML model is optimized to produce the best prediction (smallest error). For example (as we will see later), in the linear regression problems, we try to fit a linear model by optimizing its parameters such that the output model can be as close as possible to the observed samples.
 
