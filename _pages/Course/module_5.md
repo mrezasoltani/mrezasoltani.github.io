@@ -86,7 +86,7 @@ classes: wide
   - **Iterative Update.** The core of Gradient Descent is the iterative update of the parameters. In each iteration, you compute the gradient of the objective function with respect to the current parameters, multiply it by the learning rate, and subtract it from the current parameters to update them. The update equation for a single parameter might look like this:
     
      <p align="center">
-            <img width="800" alt="Screenshot 2023-07-10 at 7 21 57 PM"       
+            <img width="700" alt="Screenshot 2023-07-10 at 7 21 57 PM"       
               src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/90f4f844-8232-4672-b763-f2de4f6905fb">
          <br>
             <em>Gradient Descent Algorithm.</em>
