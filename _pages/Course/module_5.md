@@ -80,10 +80,10 @@ classes: wide
 * Gradient Descent (GD) is an optimization algorithm used to minimize (or maximize) a function by iteratively adjusting the decision variables in the direction that leads to the steepest rate of change (e.g., decrease for the minimization problems) of the function. It's a fundamental technique and versatile algorithm that underlies many machine learning techniques and models, especially in training models such as linear regression, support vector machines, and neural networks.
 * While the basic concept is relatively simple, there are many nuances and variations that can impact its performance, convergence speed, and robustness.
 * The main components of a GD algorithm are as follows:
-  - **Initialization.** Initialize the parameters (θ) with some initial values. This could be random or based on domain knowledge.
-  - For a minimization problem, the gradient of the objective function with respect to its decision variables represents the direction of the steepest decrease in the function. It points to the direction in which the function's output decreases the most. As a result, to minimize the function, we move in the opposite direction of the gradient.
-  - **Learning Rate**. The learning rate is a hyperparameter that determines the step size taken in each iteration of the algorithm. It scales the gradient vector and controls the speed of convergence. A small learning rate may cause slow convergence, while a large one might cause overshooting or even divergence.
-  - **Iterative Update.** The core of Gradient Descent is the iterative update of the parameters. In each iteration, you compute the gradient of the objective function with respect to the current parameters, multiply it by the learning rate, and subtract it from the current parameters to update them. The update equation for a single parameter might look like this:
+  - **Initialization.** Initialize the decision variables, \\(\pmb{\theta}\\) with some initial values. This could be random or based on domain knowledge.
+  - For a minimization problem, the gradient of the objective function with respect to its decision variables represents the direction of the steepest increase in the function. It points to the direction in which the function's output increase the most. As a result, to minimize the function, we move in **the opposite direction of the gradient**.
+  - **Learning Rate**. The learning rate is a hyperparameter that determines the step size taken in each iteration of the algorithm. It scales the gradient and controls the speed of convergence. A small learning rate may cause slow convergence, while a large one might cause overshooting or even divergence.
+  - **Iterative Update.** The core of Gradient Descent is the iterative update of the parameters. In each iteration, the gradient of the objective function is computed with respect to the current decision variables, multiply it by the learning rate, and subtract it from the current the current decision variables to update them. The pseudocode algorithm might look like this:
     
      <p align="center">
             <img width="700" alt="Screenshot 2023-07-10 at 7 21 57 PM"       
@@ -94,8 +94,8 @@ classes: wide
 
   - This update decreases the value of the objective function, bringing the optimization variables closer to the optimal values (i.e., local minima).
 
-  - **Convergence Criteria.** You repeat the iterative updates until a convergence criterion is met. This could be a predefined number of iterations or until the change in the objective function's value between iterations becomes very small.
+  - **Convergence Criteria.** The iterative updates are repeated until a convergence criterion is met. This could be a predefined number of iterations or until the change in the objective function's value between iterations becomes very small.
 
-  - Batch Gradient Descent vs. Stochastic Gradient Descent. There are variations of Gradient Descent. Batch Gradient Descent computes the gradient using the entire training dataset in each iteration, which can be slow for large datasets. Stochastic Gradient Descent (SGD) computes the gradient using only a single data point (or a small batch) in each iteration, making it faster but leading to more noisy updates.
+  - **Batch Gradient Descent (BGD) vs. Stochastic Gradient Descent (SGD).** There are variations of Gradient Descent. Batch Gradient Descent computes the gradient using the entire training dataset in each iteration, which can be slow for large datasets. Stochastic Gradient Descent (SGD) computes the gradient using only a single data point in each iteration, making it faster but leading to more noisy updates.
 
-  - Mini-Batch Gradient Descent. Mini-Batch Gradient Descent combines the benefits of both batch and stochastic versions. It computes the gradient using a small randomly selected subset (mini-batch) of the training dataset.
+  - **Mini-Batch Gradient Descent**. Mini-Batch Gradient Descent combines the benefits of both batch and stochastic versions. It computes the gradient using a small randomly selected subset (mini-batch) of the training dataset. Often, whwn we talk SGD,  we mean the latter version.
