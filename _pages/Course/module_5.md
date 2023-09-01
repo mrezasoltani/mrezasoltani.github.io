@@ -74,6 +74,8 @@ classes: wide
       - A differentiable convex function \\(f\\) is _**strongly convex**_ with parameter \\(m > 0\\) if for all \\(\pmb{\theta}_1, \pmb{\theta}_2\\) in domain \\(f\\), we have:
         \\[(\nabla f(\pmb{\theta}_1) - \nabla f(\pmb{\theta}_2))^T(\pmb{\theta}_1 - \pmb{\theta}_2) \geq m\|\|\pmb{\theta}_1 - \pmb{\theta}_2\|\|_2^2\\]
         - If the convex function is twice differentiable, then the function is a strongly convex function if \\(\nabla^2f(\pmb{\theta}) \succeq m\mathrm{I}~\\) for all \\(\pmb{\theta}~\\) in the domain of \\(f\\).
+       - Convex analysis provides us a powerful mathematical framework to find the global minimum of convex functions. Hence, if we can recognize a function is convex, we can either use analytical solution (using linear algebra techniques) or 
+         numerical approaches to find the global minimum(s).
 * A main problem in machine learning is fitting a model to given data samples, essentially solving an optimization problem. An ML model is optimized to produce the best prediction (smallest error). For example (as we will see later), in the linear regression problems, we try to fit a linear model by optimizing its parameters such that the output model can be as close as possible to the observed samples.
 
 ## Gradient Descent
@@ -92,7 +94,13 @@ classes: wide
             <em>Gradient Descent Algorithm.</em>
       </p>
 
-  - This update decreases the value of the objective function, bringing the optimization variables closer to the optimal values (i.e., local minima).
+  - This update decreases the value of the objective function, bringing the optimization variables closer to the optimal values (i.e., local minima). The following figure shows the gradient step towards the global minimum of the function \\(F(x,y) = 0.5 (x^2 - y)^2 + 0.5 (x-1)^2\\).
+     <p align="center">
+            <img width="700" alt="Screenshot 2023-07-10 at 7 21 57 PM"       
+              src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/c0786afd-c5a3-4e47-9c0c-cb44afae2ff">
+         <br>
+            <em>Steepest descent on a convex function, starting from (0, 0), for 20 steps, using a fixed step size [K. Murphy, 2012.].</em>
+      </p>
 
   - **Convergence Criteria.** The iterative updates are repeated until a convergence criterion is met. This could be a predefined number of iterations or until the change in the objective function's value between iterations becomes very small.
 
