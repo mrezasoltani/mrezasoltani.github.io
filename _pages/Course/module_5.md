@@ -95,6 +95,7 @@ classes: wide
       </p>
 
   - This update decreases the value of the objective function, bringing the optimization variables closer to the optimal values (i.e., local minima). The following figure shows the gradient step towards the global minimum of the function \\(F(x,y) = 0.5 (x^2 - y)^2 + 0.5 (x-1)^2\\).
+    
      <p align="center">
             <img width="700" alt="Screenshot 2023-07-10 at 7 21 57 PM"       
               src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/c0786afd-c5a3-4e47-9c0c-cb44afae2ff">
