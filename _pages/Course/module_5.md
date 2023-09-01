@@ -73,7 +73,7 @@ classes: wide
             definite matrix.
       - A differentiable convex function \\(f\\) is _**strongly convex**_ with parameter \\(m > 0\\) if for all \\(\pmb{\theta}_1, \pmb{\theta}_2\\) in domain \\(f\\), we have:
         \\[(\nabla f(\pmb{\theta}_1) - \nabla f(\pmb{\theta}_2))^T(\pmb{\theta}_1 - \pmb{\theta}_2) \leq m\|\|\pmb{\theta}_1 - \pmb{\theta}_2\|\|_2^2\\]
-        - If the convex function is twice differentiable, then the function is a strongly convex function if \\(f(\pmb(\theta)) \sucseq m\mathrm{I}\\) for all \\(\pmb{\theta}\\) in the domain of \\(f\\).
+        - If the convex function is twice differentiable, then the function is a strongly convex function if \\(f(\pmb{\theta}) \sucseq m\mathrm{I}\\) for all \\(\pmb{\theta}\\) in the domain of \\(f\\).
 * A main problem in machine learning is fitting a model to given data samples, essentially solving an optimization problem. An ML model is optimized to produce the best prediction (smallest error). For example (as we will see later), in the linear regression problems, we try to fit a linear model by optimizing its parameters such that the output model can be as close as possible to the observed samples.
 
 ## Gradient Decent
@@ -83,7 +83,7 @@ classes: wide
   - **Initialization.** Initialize the parameters (θ) with some initial values. This could be random or based on domain knowledge.
   - For a minimization problem, the gradient of the objective function with respect to its decision variables represents the direction of the steepest decrease in the function. It points to the direction in which the function's output decreases the most. As a result, to minimize the function, we move in the opposite direction of the gradient.
   - **Learning Rate**. The learning rate is a hyperparameter that determines the step size taken in each iteration of the algorithm. It scales the gradient vector and controls the speed of convergence. A small learning rate may cause slow convergence, while a large one might cause overshooting or even divergence.
-  - **Iterative Update.** The core of Gradient Descent is the iterative update of the parameters. In each iteration, you compute the gradient of the objective function with respect to the current parameters, multiply it by the learning rate, and subtract it from the current parameters to update them. The update equation for a single parameter might look like:
+  - **Iterative Update.** The core of Gradient Descent is the iterative update of the parameters. In each iteration, you compute the gradient of the objective function with respect to the current parameters, multiply it by the learning rate, and subtract it from the current parameters to update them. The update equation for a single parameter might look like this:
  
     - This update decreases the value of the objective function, bringing the optimization variables closer to the optimal values (i.e., local minima).
 
