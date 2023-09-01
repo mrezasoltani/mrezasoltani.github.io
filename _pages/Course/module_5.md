@@ -109,7 +109,7 @@ header-includes:
 
 
 
-    - This update decreases the value of the objective function, bringing the optimization variables closer to the optimal values (i.e., local minima).
+  - This update decreases the value of the objective function, bringing the optimization variables closer to the optimal values (i.e., local minima).
 
   - **Convergence Criteria.** You repeat the iterative updates until a convergence criterion is met. This could be a predefined number of iterations or until the change in the objective function's value between iterations becomes very small.
 
