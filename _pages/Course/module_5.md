@@ -1,6 +1,8 @@
 ---
 title: "Module 5 -- Optimization"
 classes: wide
+header-includes:
+  - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
 ---
 ## What is Optimization?
 * Optimization is a mathematical framework for finding the best solution for maximization or minimization problems. For example, we have learned from the statistics section that we need to find the best parameter \\(\pmb{\theta}\\) for a distribution that can explain the observed data with the highest probability. In this case, the maximum likelihood estimation boils down to an optimization problem in which our goal is to minimize the negative likelihood (NLL), known as _loss (cost) function or objective function_ denoted by \\(\mathcal{L}(\pmb{\theta})\\). Hence, we can write our optimization problem as:
