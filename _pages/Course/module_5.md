@@ -74,7 +74,7 @@ classes: wide
       - A differentiable convex function \\(f\\) is _**strongly convex**_ with parameter \\(m > 0\\) if for all \\(\pmb{\theta}_1, \pmb{\theta}_2\\) in domain \\(f\\), we have:
         \\[(\nabla f(\pmb{\theta}_1) - \nabla f(\pmb{\theta}_2))^T(\pmb{\theta}_1 - \pmb{\theta}_2) \geq m\|\|\pmb{\theta}_1 - \pmb{\theta}_2\|\|_2^2\\]
         - If the convex function is twice differentiable, then the function is a strongly convex function if \\(\nabla^2f(\pmb{\theta}) \succeq m\mathrm{I}~\\) for all \\(\pmb{\theta}~\\) in the domain of \\(f\\).
-       - Convex analysis provides us a powerful mathematical framework to find the global minimum of convex functions. Hence, if we can recognize a function is convex, we can either use analytical solution (using linear algebra techniques) or 
+       - Convex analysis provides us with a powerful mathematical framework to find the global minimum of convex functions. Hence, if we can recognize a function is convex, we can either use an analytical solution (using linear algebra techniques) or 
          numerical approaches to find the global minimum(s).
 * A main problem in machine learning is fitting a model to given data samples, essentially solving an optimization problem. An ML model is optimized to produce the best prediction (smallest error). For example (as we will see later), in the linear regression problems, we try to fit a linear model by optimizing its parameters such that the output model can be as close as possible to the observed samples.
 
@@ -83,9 +83,9 @@ classes: wide
 * While the basic concept is relatively simple, there are many nuances and variations that can impact its performance, convergence speed, and robustness.
 * The main components of a GD algorithm are as follows:
   - **Initialization.** Initialize the decision variables, \\(\pmb{\theta}\\) with some initial values. This could be random or based on domain knowledge.
-  - For a minimization problem, the gradient of the objective function with respect to its decision variables represents the direction of the steepest increase in the function. It points to the direction in which the function's output increase the most. As a result, to minimize the function, we move in **the opposite direction of the gradient**.
+  - For a minimization problem, the gradient of the objective function with respect to its decision variables represents the direction of the steepest increase in the function. It points to the direction in which the function's output increases the most. As a result, to minimize the function, we move in **the opposite direction of the gradient**.
   - **Learning Rate**. The learning rate is a hyperparameter that determines the step size taken in each iteration of the algorithm. It scales the gradient and controls the speed of convergence. A small learning rate may cause slow convergence, while a large one might cause overshooting or even divergence.
-  - **Iterative Update.** The core of Gradient Descent is the iterative update of the parameters. In each iteration, the gradient of the objective function is computed with respect to the current decision variables, multiply it by the learning rate, and subtract it from the current the current decision variables to update them. The pseudocode algorithm might look like this:
+  - **Iterative Update.** The core of Gradient Descent is the iterative update of the parameters. In each iteration, the gradient of the objective function is computed with respect to the current decision variables, multiplied by the learning rate, and subtracted from the current the current decision variables to update them. The pseudocode algorithm might look like this:
     
      <p align="center">
             <img width="750" alt="Screenshot 2023-07-10 at 7 21 57 PM"       
