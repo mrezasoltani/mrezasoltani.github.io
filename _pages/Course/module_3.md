@@ -246,7 +246,7 @@ Here, we review the most important concepts in probability theory without mathem
 * **Multinomial.** The Multinomial distribution is a multivariate version of the Binomial distribution. Simialr to the relation between Bernoulli and Binomial random variables, if we repeat a radnom experiment moeld by a Categorical distribution with \\(K\\) outcomes, we obtain a Multinomial distribution. As a result, we can write a Multinomial random variables as the sum of \\(n\\) Multinoulli reandom variables.
   - A Multinomial random variable models the number of times that we can obtain the \\(i^{th}\\) outcome of a Categorical r.v. with \\(K\\) outcomes.
   - The support of a Multinoulli random variable is given by:
-    \\[\text{Supp}(\mathbf{X}) = \\{(x_1, x_2, \ldots, x_K)\in \\{0,1,\ldots, K\\}^K: \sum_{i=1}^K x_i = n\\}\\]
+    \\[\text{Supp}(\mathbf{X}) = \\{(x_1, x_2, \ldots, x_K)\in \\{0,1,\ldots, n\\}^K: \sum_{i=1}^K x_i = n\\}\\]
 * **Geometric.**
 * **Poisson.**
 
