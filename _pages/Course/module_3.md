@@ -191,7 +191,7 @@ Here, we review the most important concepts in probability theory without mathem
   
 ## Common Discrete Random Variables
 * **Bernoulli.** A Bernoulli random variable with parameter \\(0 \leq \theta \leq 1\\) is a binary discrete r.v.
-  - The support of a Bernoulli random variable is the set \\(\\{0,1\\}\\):
+  - The support of a Bernoulli random variable is the set \\(\text{Supp}(X) = \\{0,1\\}\\):
   - he pmf of a Bernoulli random variable is give by:
   \begin{equation}
         \begin{aligned}
@@ -219,6 +219,24 @@ Here, we review the most important concepts in probability theory without mathem
         \end{aligned}
     \end{equation}
   - The expectatrion and the covariance:
+    \begin{equation}
+        \begin{aligned}
+          \mathbb{E}(\mathbf{X}) =  
+          \begin{bmatrix}
+            \theta_1 \\\\\\\\
+            \theta_2 \\\\\\\\
+            \vdots \\\\\\\\
+            \theta_K
+          \end{bmatrix}, & & & &
+          \text{Cov}(\mathbf{X}) = 
+            \begin{bmatrix}
+              \theta_1(1-\theta_1) & -\theta_1\theta_2 & \ldots & -\theta_1\theta_K \\\\\\\\
+              -\theta_1\theta_2 & \theta_1(1-\theta_1) & \ldots & -\theta_2\theta_K \\\\\\\\
+              \vdots & \vdots & \ddots & \vdots \\\\\\\\
+             -\theta_K\theta_K & -\theta_K\theta_2 & \ldots & \theta_K(1-\theta_K)
+            \end{bmatrix}_{K\times K} 
+        \end{aligned}
+    \end{equation}
     
 * **Binomial.** Consiider \\(n\\) random variables \\(X_i\stackrel{iid}\sim Ber(x|\theta), ~ i=1,2,\ldots,n\\). The sum of these random variables, \\(Y=\sum _{i=1}^n X_i\\) is called Binomial r.v. with parameters \\((n, \theta)\\), and is defined as follows:
   \\[Bin(y\|n, \theta) = \binom ni \theta^{i}(1-\theta)^{n-i}\\]
