@@ -228,7 +228,7 @@ Here, we review the most important concepts in probability theory without mathem
             \theta_2 \\\\\\\\
             \vdots \\\\\\\\
             \theta_K
-          \end{bmatrix}, & & & &
+          \end{bmatrix}, & & &
           \text{Cov}(\mathbf{X}) = 
             \begin{bmatrix}
               \theta_1(1-\theta_1) & -\theta_1\theta_2 & \ldots & -\theta_1\theta_K \\\\\\\\
