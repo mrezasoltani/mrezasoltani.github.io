@@ -231,9 +231,9 @@ Here, we review the most important concepts in probability theory without mathem
           \text{Cov}(\mathbf{X}) = 
             \begin{bmatrix}
               \theta_1(1-\theta_1) & -\theta_1\theta_2 & \ldots & -\theta_1\theta_K \\\\\\\\
-              -\theta_1\theta_2 & \theta_1(1-\theta_1) & \ldots & -\theta_2\theta_K \\\\\\\\
+              -\theta_1\theta_2 & \theta_2(1-\theta_2) & \ldots & -\theta_2\theta_K \\\\\\\\
               \vdots & \vdots & \ddots & \vdots \\\\\\\\
-             -\theta_K\theta_K & -\theta_K\theta_2 & \ldots & \theta_K(1-\theta_K)
+             -\theta_1\theta_K & -\theta_2\theta_K & \ldots & \theta_K(1-\theta_K)
             \end{bmatrix}_{K\times K} 
         \end{aligned}
     \end{equation}
