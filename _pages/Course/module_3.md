@@ -218,7 +218,7 @@ Here, we review the most important concepts in probability theory without mathem
             \end{cases}
         \end{aligned}
     \end{equation}
-    - We note that \\(\theta_i\geq 0, ~ \text{for all} i=1,2\ldots,K\\), and \\(\sum_{i=1}^{K}\theta_i = 1\\).
+    - We note that \\(\theta_i> 0, ~ \text{for all} i=1,2\ldots,K\\), and \\(\sum_{i=1}^{K}\theta_i = 1\\).
   - The expectatrion and the covariance:
     \begin{equation}
         \begin{aligned}
@@ -245,8 +245,38 @@ Here, we review the most important concepts in probability theory without mathem
     - In other words, a Binomial r.v. is obtained if we repeat a Bernoulli random experiment \\(n\\) times.
 * **Multinomial.** The Multinomial distribution is a multivariate version of the Binomial distribution. Simialr to the relation between Bernoulli and Binomial random variables, if we repeat a radnom experiment moeld by a Categorical distribution with \\(K\\) outcomes, we obtain a Multinomial distribution. As a result, we can write a Multinomial random variables as the sum of \\(n\\) Multinoulli reandom variables.
   - A Multinomial random variable models the number of times that we can obtain the \\(i^{th}\\) outcome of a Categorical r.v. with \\(K\\) outcomes.
-  - The support of a Multinoulli random variable is given by:
+  - The support of a Multinomial random variable is given by:
     \\[\text{Supp}(\mathbf{X}) = \\{(x_1, x_2, \ldots, x_K)\in \\{0,1,\ldots, n\\}^K: \sum_{i=1}^K x_i = n\\}\\]
+  - The pmf of a Multinoulli random variable is given by:
+    \begin{equation}
+        \begin{aligned}
+          Cat(\mathbf{X}|\theta_1, \theta_2, \ldots, \theta_K) =
+            \begin{cases}
+              \binom n{x_1,x_2,\ldots,x_n} = \frac{n!}{x_1!x_2!\ldots x_n!}\prod_{i=1}^K\theta_i^{x_i}, & ~\text{if} ~(x_1, x_2, \ldots, x_K) \in \text{Supp}(\mathbf{X})  \\\\\\\\
+              0, & \text{O.W.}
+            \end{cases}
+        \end{aligned}
+    \end{equation}
+    - We note that \\(\theta_i\geq 0, ~ \text{for all} i=1,2\ldots,K\\), and \\(\sum_{i=1}^{K}\theta_i = 1\\).
+    - The expectatrion and the covariance:
+    \begin{equation}
+        \begin{aligned}
+          \mathbb{E}(\mathbf{X}) =  
+          n\begin{bmatrix}
+            \theta_1 \\\\\\\\
+            \theta_2 \\\\\\\\
+            \vdots \\\\\\\\
+            \theta_K
+          \end{bmatrix}, & & &
+          \text{Cov}(\mathbf{X}) = 
+            n\begin{bmatrix}
+              \theta_1(1-\theta_1) & -\theta_1\theta_2 & \ldots & -\theta_1\theta_K \\\\\\\\
+              -\theta_1\theta_2 & \theta_2(1-\theta_2) & \ldots & -\theta_2\theta_K \\\\\\\\
+              \vdots & \vdots & \ddots & \vdots \\\\\\\\
+             -\theta_1\theta_K & -\theta_2\theta_K & \ldots & \theta_K(1-\theta_K)
+            \end{bmatrix}_{K\times K} 
+        \end{aligned}
+    \end{equation}
 * **Geometric.**
 * **Poisson.**
 
