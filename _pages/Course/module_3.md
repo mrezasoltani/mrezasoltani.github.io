@@ -242,13 +242,17 @@ Here, we review the most important concepts in probability theory without mathem
   \\[Bin(y\|n, \theta) = \binom ni \theta^{i}(1-\theta)^{n-i}\\]
     - \\(\binom ni = \frac{n!}{(n-i)!i!}\\) is the number of ways to choose \\(i\\) items from \\(n\\) (aka binomial coefficient).
 * **Multinomial.**
+* **Geometric.**
 * **Poisson.**
 
 ## Common Continous Random Variables
+* **Uniform.**
 * **Gaussian (Normal).**
 * **Exponential.**
-* **Student-t.**
 * **Gamma.**
+* **Student-t.**
+* **F distribution.**
 * **Chi-Squared.**
 * **Beta.**
+* **Dirichlet.**
 * **Wishart.**
