@@ -243,7 +243,8 @@ Here, we review the most important concepts in probability theory without mathem
   \\[Bin(y\|n, \theta) = \binom ni \theta^{i}(1-\theta)^{n-i}\\]
     - \\(\binom ni = \frac{n!}{(n-i)!i!}\\) is the number of ways to choose \\(i\\) items from \\(n\\) (aka binomial coefficient).
     - In other words, a Binomial r.v. is obtained if we repeat a Bernoulli random experiment \\(n\\) times.
-* **Multinomial.** The Multinomial distribution is a multivariate version of the Binomial distribution. Simialr to the relation between Bernoulli and Binomial random variables, if we repeat a radnom experiment moeld by a Categorical distribution with \\(K\\) outcomes, we obtain a Multinomial distribution. As a result, we can write a Multinomial random variables as the sum of \\(n\\) Multinoulli reandom variables.
+  
+* **Multinomial.** The Multinomial distribution is a multivariate version of the Binomial distribution. Simialr to the relation between Bernoulli and Binomial random variables, if we repeat a radnom experiment moeld by a Categorical distribution with \\(K\\) outcomes, we obtain a Multinomial distribution. As a result, we can write a Multinomial random variables as the sum of \\(n\\) independent Multinoulli reandom variables.
   - A Multinomial random variable models the number of times that we can obtain the \\(i^{th}\\) outcome of a Categorical r.v. with \\(K\\) outcomes.
   - The support of a Multinomial random variable is given by:
     \\[\text{Supp}(\mathbf{X}) = \\{(x_1, x_2, \ldots, x_K)\in \\{0,1,\ldots, n\\}^K: \sum_{i=1}^K x_i = n\\}\\]
@@ -278,7 +279,9 @@ Here, we review the most important concepts in probability theory without mathem
             \end{bmatrix}_{K\times K} 
         \end{aligned}
     \end{equation}
+
 * **Geometric.**
+  
 * **Poisson.**
 
 ## Common Continous Random Variables
