@@ -190,7 +190,9 @@ Here, we review the most important concepts in probability theory without mathem
     5. \\(k^{th}\\) Sample Moment about \\(C\\): \\(\tilde{m} _k = \frac{1}{N}\sum _{i=1}^{n}(X_i-C)^k\\)
   
 ## Common Discrete Random Variables
-* **Bernoulli.** A Bernoulli random variable with parameter \\(0 \leq \theta \leq 1\\) is a binary discrete r.v. with the following pmf:
+* **Bernoulli.** A Bernoulli random variable with parameter \\(0 \leq \theta \leq 1\\) is a binary discrete r.v.
+  - The support of a Bernoulli random variable is the set \\(\\{0,1\\}\\):
+  - he pmf of a Bernoulli random variable is give by:
   \begin{equation}
         \begin{aligned}
           Ber(x|\theta) =
@@ -200,8 +202,10 @@ Here, we review the most important concepts in probability theory without mathem
             \end{cases} = \theta^{x}\theta^{1-x}
         \end{aligned}
     \end{equation}
+  - The expectatrion and the variance:
+    \\[\mathbb{E}(X)= \theta, ~~~ \text{Var}(X) = \theta(1-\theta)\\] 
 
-* **Multinoulli (Categorical).** The Multinoulli distribution (aka categorical distribution) is a multivariate version of the Bernoulli distribution. This means that a Multinoulli r.v. can take \\(K>2\\) values (i.e., \\(K\\) possible outcomes). If \\(K=2\\), then we have the Bernoulli random variable. Typically, a Multinoulli r.v. is defined by a random vector \\(\mathbf{X} = \[X_1, X_2, \ldots, X_K\]^T\\), where \\(X_i\\)'s is a Bernoulli random variable, taking \\(1\\) with probability \\(theta_i\\) if the \\(i^{th}\\) outcome of the random experiment is obtained, or \\(0\\) otherwise. In other words, when the \\(i^{th}\\) outcome of the random experiment is obtained, the \\(i^{th}\\) entry of the Multinoulli random vector \\(\mathbf{X}\\) takes value \\(1\\), while all the other entries are equal to \\(0\\).
+* **Multinoulli (Categorical).** The Multinoulli distribution (aka categorical distribution) is a multivariate version of the Bernoulli distribution. This means that a Multinoulli r.v. can take \\(K>2\\) values (i.e., \\(K\\) possible outcomes). If \\(K=2\\), then we have the Bernoulli random variable. Typically, a Multinoulli r.v. is defined by a random vector \\(\mathbf{X} = \[X_1, X_2, \ldots, X_K\]^T\\), where \\(X_i\\)'s is a Bernoulli random variable, taking \\(1\\) with probability \\(\theta_i\\) if the \\(i^{th}\\) outcome of the random experiment is obtained, or \\(0\\) otherwise. In other words, when the \\(i^{th}\\) outcome of the random experiment is obtained, the \\(i^{th}\\) entry of the Multinoulli random vector \\(\mathbf{X}\\) takes value \\(1\\), while all the other entries are equal to \\(0\\).
   - The support of a Multinoulli random variable is given by:
     \\[\text{Supp}(\mathbf{X}) = \\{(x_1, x_2, \ldots, x_K)\in \\{0,1\\}^K: \sum_{i=1}^K x_i = 1\\}\\]
   - The pmf of a Multinoulli random variable is given by:
@@ -214,7 +218,8 @@ Here, we review the most important concepts in probability theory without mathem
             \end{cases}
         \end{aligned}
     \end{equation}
-  
+  - The expectatrion and the covariance:
+    
 * **Binomial.** Consiider \\(n\\) random variables \\(X_i\stackrel{iid}\sim Ber(x|\theta), ~ i=1,2,\ldots,n\\). The sum of these random variables, \\(Y=\sum _{i=1}^n X_i\\) is called Binomial r.v. with parameters \\((n, \theta)\\), and is defined as follows:
   \\[Bin(y\|n, \theta) = \binom ni \theta^{i}(1-\theta)^{n-i}\\]
     - \\(\binom ni = \frac{n!}{(n-i)!i!}\\) is the number of ways to choose \\(i\\) items from \\(n\\) (aka binomial coefficient).
