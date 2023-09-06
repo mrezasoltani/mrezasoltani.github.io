@@ -218,6 +218,7 @@ Here, we review the most important concepts in probability theory without mathem
             \end{cases}
         \end{aligned}
     \end{equation}
+    - We note that \\(\theta_i\geq = 0, ~ \text{for all} i=1,2\ldots,K\\), and \\(\sum_{i=1}^{K}\theta_i = 1\\).
   - The expectatrion and the covariance:
     \begin{equation}
         \begin{aligned}
@@ -227,7 +228,7 @@ Here, we review the most important concepts in probability theory without mathem
             \theta_2 \\\\\\\\
             \vdots \\\\\\\\
             \theta_K
-          \end{bmatrix}, & & & &
+          \end{bmatrix}_{K\times 1}, & & & &
           \text{Cov}(\mathbf{X}) = 
             \begin{bmatrix}
               \theta_1(1-\theta_1) & -\theta_1\theta_2 & \ldots & -\theta_1\theta_K \\\\\\\\
@@ -241,7 +242,11 @@ Here, we review the most important concepts in probability theory without mathem
 * **Binomial.** Consiider \\(n\\) random variables \\(X_i\stackrel{iid}\sim Ber(x|\theta), ~ i=1,2,\ldots,n\\). The sum of these random variables, \\(Y=\sum _{i=1}^n X_i\\) is called Binomial r.v. with parameters \\((n, \theta)\\), and is defined as follows:
   \\[Bin(y\|n, \theta) = \binom ni \theta^{i}(1-\theta)^{n-i}\\]
     - \\(\binom ni = \frac{n!}{(n-i)!i!}\\) is the number of ways to choose \\(i\\) items from \\(n\\) (aka binomial coefficient).
-* **Multinomial.**
+    - In other words, a Binomial r.v. is obtained if we repeat a Bernoulli random experiment \\(n\\) times.
+* **Multinomial.** The Multinomial distribution is a multivariate version of the Binomial distribution. Simialr to the relation between Bernoulli and Binomial random variables, if we repeat a radnom experiment moeld by a Categorical distribution with \\(K\\) outcomes, we obtain a Multinomial distribution. As a result, we can write a Multinomial random variables as the sum of \\(n\\) Multinoulli reandom variables.
+  - A Multinomial random variable models the number of times that we can obtain the \\(i^{th}\\) outcome of a Categorical r.v. with \\(K\\) outcomes.
+  - The support of a Multinoulli random variable is given by:
+    \\[\text{Supp}(\mathbf{X}) = \\{(x_1, x_2, \ldots, x_K)\in \\{0,1,\ldots, K\\}^K: \sum_{i=1}^K x_i = n\\}\\]
 * **Geometric.**
 * **Poisson.**
 
