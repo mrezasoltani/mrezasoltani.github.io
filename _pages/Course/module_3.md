@@ -218,7 +218,7 @@ Here, we review the most important concepts in probability theory without mathem
             \end{cases}
         \end{aligned}
     \end{equation}
-    - We note that \\(\theta_i> 0, ~ \text{for all}~ i=1,2\ldots,K\\), and \\(\sum_{i=1}^{K}\theta_i = 1\\).
+    - We note that \\(\theta_i\geq 0, ~ \text{for all}~ i=1,2\ldots,K\\), and \\(\sum_{i=1}^{K}\theta_i = 1\\).
   - The expectatrion and the covariance:
     \begin{equation}
         \begin{aligned}
