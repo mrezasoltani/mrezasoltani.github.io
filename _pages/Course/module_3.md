@@ -250,13 +250,14 @@ Here, we review the most important concepts in probability theory without mathem
   - The pmf of a Multinoulli random variable is given by:
     \begin{equation}
         \begin{aligned}
-          Cat(\mathbf{X}|\theta_1, \theta_2, \ldots, \theta_K) =
+          Mult(\mathbf{X}|n, \theta_1, \theta_2, \ldots, \theta_K) =
             \begin{cases}
-              \binom n{x_1,x_2,\ldots,x_n} = \frac{n!}{x_1!x_2!\ldots x_n!}\prod_{i=1}^K\theta_i^{x_i}, & ~\text{if} ~(x_1, x_2, \ldots, x_K) \in \text{Supp}(\mathbf{X})  \\\\\\\\
+              \binom n{x_1,x_2,\ldots,x_n}\prod_{i=1}^K\theta_i^{x_i}, & ~\text{if} ~(x_1, x_2, \ldots, x_K) \in \text{Supp}(\mathbf{X})  \\\\\\\\
               0, & \text{O.W.}
             \end{cases}
         \end{aligned}
     \end{equation}
+    - Here, \\(n{x_1,x_2,\ldots,x_n} = \frac{n!}{x_1!x_2!\ldots x_n!}\\) is called _multinomial coefficient_.
     - We note that \\(\theta_i\geq 0, ~ \text{for all} i=1,2\ldots,K\\), and \\(\sum_{i=1}^{K}\theta_i = 1\\).
     - The expectatrion and the covariance:
     \begin{equation}
