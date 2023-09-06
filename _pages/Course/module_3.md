@@ -114,7 +114,7 @@ Here, we review the most important concepts in probability theory without mathem
     \\[F_{\mathbf{X}}(x) = Pr(\mathbf{x}) = Pr_{\mathbf{X}}(\mathbf{x}) = Pr(X_1\leq x_1, X_2\leq x_2, \ldots, X_p\leq x_p)\\]
     - For the continuous case, the cdf can be expressed as the integral of the pdf \\(p(\mathbf{x})\\):
       \\[Pr(\mathbf{x}) = \int _{\mathbf{x} \in \mathbb{R}^p}p(\mathbf{x})d\mathbf{x} = \int _{-\infty}^{x_p} \int _{-\infty}^{x _{p-1}}\ldots \int _{-\infty}^{x_1}p(x_1, x_2, \ldots, x_p) dx_1 dx_2 \ldots dx_p \\]
-* **Support.** Support of a r.v. \\(X\\) denoted by \\(\text{Supp}(X)\\) is a set \\(\mathcal{X}\subseteq \Omega\\) such that \\(p(x)\neq 0 ~\text{or} ~ P(x)\neq 0, ~ \forall x\in \mathcal{X}\\).
+* **Support.** Support of a r.v. \\(X\\) is a set \\(\mathcal{X}\subseteq \Omega\\) (sometimes denoted by \\(\text{Supp}(X)\\)) such that \\(p(x)\neq 0 ~\text{or} ~ P(x)\neq 0, ~ \forall x\in \mathcal{X}\\).
 * **Independent and Identically Distributed (IID) Random Variables.** A set of random variables is said to be iid if they are mutually independent and drawn from the same probability distribution. We denoted \\(n\\) iid random variables drawn from a distribution \\(p\\) as \\(x_1, x_2, \ldots, x_n \stackrel{iid}{\sim} p\\).
 * **Marginalization.** Given a joint pdf (pmf) of \\(n\\) random variables, we can obtain pdf (pmf) of one or any number of variables through marginalization. That is,
     \begin{equation}
@@ -207,11 +207,11 @@ Here, we review the most important concepts in probability theory without mathem
   - The pmf of a Multinoulli random variable is given by:
     \begin{equation}
         \begin{aligned}
-          Ber(x|\theta) =
+          Ber(\mathbf{X}|\theta_1, \theta_2, \ldots, \theta_K) =
             \begin{cases}
-              ~ \prod_{i=1}^K\theta_i^{x_i}, & ~\text{if} (x_1, x_2, \ldots, x_K) \in \text{Supp}(\mathbf{X})  \\\\\\\\
+              \prod_{i=1}^K\theta_i^{x_i}, & ~\text{if} (x_1, x_2, \ldots, x_K) \in \text{Supp}(\mathbf{X})  \\\\\\\\
               0, & \text{O.W.}
-            \end{cases} = \theta^{x}\theta^{1-x}
+            \end{cases}
         \end{aligned}
     \end{equation}
   
