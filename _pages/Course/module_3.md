@@ -207,9 +207,9 @@ Here, we review the most important concepts in probability theory without mathem
   - The pmf of a Multinoulli random variable is given by:
     \begin{equation}
         \begin{aligned}
-          Ber(\mathbf{X}|\theta_1, \theta_2, \ldots, \theta_K) =
+          Cat(\mathbf{X}|\theta_1, \theta_2, \ldots, \theta_K) =
             \begin{cases}
-              \prod_{i=1}^K\theta_i^{x_i}, & ~\text{if} (x_1, x_2, \ldots, x_K) \in \text{Supp}(\mathbf{X})  \\\\\\\\
+              \prod_{i=1}^K\theta_i^{x_i}, & ~\text{if} ~(x_1, x_2, \ldots, x_K) \in \text{Supp}(\mathbf{X})  \\\\\\\\
               0, & \text{O.W.}
             \end{cases}
         \end{aligned}
