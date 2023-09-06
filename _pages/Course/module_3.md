@@ -201,7 +201,10 @@ Here, we review the most important concepts in probability theory without mathem
         \end{aligned}
         \end{equation}
 
-* **Multinoulli (Categorical).** 
+* **Multinoulli (Categorical).** The Multinoulli distribution (aka categorical distribution) is a multivariate version of the Bernoulli distribution. This menas that a Multinoulli r.v. can take \\(k>2\\) values (i.e., \\(k\\) possible outcomes). If \\(k=2\\), then we have the Bernoulli random variable. Typicaly, a Multinoulli r.v. is defined by a random vector \\(\mathbf{X} = \[X_1, X_2, \ldots, X_k\]^T\\), where \\(X_i\\)'s is a Bernoulli random variable, taking \\(1~\\) with probability \\\theta_i\\) if the \\(i^{th}\\) outcome of the random experiment is obtainede, or \\(1~\\) otherwise. In other words, when the \\(i^{th}\\) outcome of the random experiment is obtained, the \\(i^{th}\\) entry of the Multinoulli random vector \\(\mathbf{X}\\) takes value \\(1\\), while all the other entries are equal to \\(0\\).
+  - The pmf of a Multinoulli random variable is given by:
+    
+  
 * **Binomial.** Consiider \\(n\\) random variables \\(X_i\stackrel{iid}\sim Ber(x|\theta), ~ i=1,2,\ldots,n\\). The sum of these random variables, \\(Y=\sum _{i=1}^n X_i\\) is called Binomial r.v. with parameters \\((n, \theta)\\), and is defined as follows:
   \\[Bin(y\|n, \theta) = \binom ni \theta^{i}(1-\theta)^{n-i}\\]
     - \\(\binom ni = \frac{n!}{(n-i)!i!}\\) is the number of ways to choose \\(i\\) items from \\(n\\) (aka binomial coefficient).
