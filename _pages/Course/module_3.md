@@ -188,7 +188,10 @@ Here, we review the most important concepts in probability theory without mathem
        - A symmetric random variable has a zero skewness, but the opposite is not always true.
        - With \\(k=4\\), we obtain the _kurtosis_ of a distribution. Kurtosis is a measure, describing how the tails of a distribution differ from the tails of a normal distribution. There are three types of kurtosis: mesokurtic (Distributions with medium tails), leptokurtic (distributions with fat tails), and platykurtic (distributions with thin tails).
     5. \\(k^{th}\\) Sample Moment about \\(C\\): \\(\tilde{m} _k = \frac{1}{N}\sum _{i=1}^{n}(X_i-C)^k\\)
-  
+
+* **Covariance**
+  * Variance measures the variation of a single random variable (like the weight of a person in a population), whereas covariance is a measure of how much two or moew random variables vary together (like the height of a person and the weight of a person in a population). The covariance between two random variables \\(X\\) and \\(Y\\) is defined by \\(\text{Cov}(X,Y) = \mathbb{E}(XY) - \mathbb{E}(X)\mathbb{E}(Y)\\).
+  * Let \\(\mathbf{X}\\) be a \\(p\\)-dimensional random vector, then the covariance of this random vector is given by \\(\text{Cov}(\mathbf{X}) = \mathbb{E}(\mathbf{X}\mathbf{X}^T) - \mathbb{E}(\mathbf{X})\mathbb{E}(\mathbf{X})^T\\), which is a \\(p\times p\\) matrix with \\(Cov(\mathbf{X})_{i,j} = \mathbb{E}(X_iX_j) - \mathbb{E}(X_i)\mathbb{E}(X_j)\\).
 ## Common Discrete Random Variables
 * **Bernoulli.** A Bernoulli random variable with parameter \\(0 \leq \theta \leq 1\\) is a binary discrete r.v.
   - The support of a Bernoulli random variable is the set \\(\text{Supp}(X) = \\{0,1\\}\\):
@@ -248,7 +251,7 @@ Here, we review the most important concepts in probability theory without mathem
   - A Multinomial random variable models the number of times that we can obtain the \\(i^{th}\\) outcome of a Categorical r.v. with \\(K\\) outcomes.
   - The support of a Multinomial random variable is given by:
     \\[\text{Supp}(\mathbf{X}) = \\{(x_1, x_2, \ldots, x_K)\in \\{0,1,\ldots, n\\}^K: \sum_{i=1}^K x_i = n\\}\\]
-  - The pmf of a Multinoulli random variable is given by:
+  - The pmf of a Multinomial random variable is given by:
     \begin{equation}
         \begin{aligned}
           Mult(\mathbf{X}|n, \theta_1, \theta_2, \ldots, \theta_K) =
