@@ -169,10 +169,6 @@ Here, we review the most important concepts in probability theory without mathem
     - **Law of Total Variance (Conditional Variance Formula).** Simialr to the Law of Total Expectation, we can express a formula for the conditional variances between two dependet variables. That is,
       \\[\text{Var}(X) = \mathbb{E} _Y(\text{Var}(X|Y)) + \text{Var} _Y(\mathbb{E}(X|Y))\\]
   
-- **Mode.** The mode of a distribution is the value in which the probability mass function or probability density function are maximized:
-  \\[x^* = \text{argmax} _x p(x)\\]
-  - If the distribution is multimodal, the solution to the above maximization problem may not be unique.
-  
 * **Moments of a Distribution**
   * Moment in probability and momentum in physics are similar concepts. In fact, both of these words come from the Latin word "movimentum", meaning to move, set in motion, or change [G. Gundersen, 2020]. Since momentum in physics is concerned with torque, and force, it is inherently related to the distribution of mass in objects. Similarly, in probability, moments of distribution help us to understand how the mass of data is distributed. In particular, moments reveal a distribution's _location_, _scale_, and _shape_. The location is captured by the first moment or mean of the distribution and it tells us how far away from the origin the center of mass is. The scale is captured by the second moment and shows how spread out a distribution is. The shape of a distribution is revealed by a higher moment.
   * Generally, \\(k^{th}\\) moment can be defined in different ways (here, we only state the formulas for the continuous case. The discrete case has the same formula by replacing "integral" with "sigma"):
@@ -192,6 +188,11 @@ Here, we review the most important concepts in probability theory without mathem
 * **Covariance**
   * Variance measures the variation of a single random variable (like the weight of a person in a population), whereas covariance is a measure of how much two or moew random variables vary together (like the height of a person and the weight of a person in a population). The covariance between two random variables \\(X\\) and \\(Y\\) is defined by \\(\text{Cov}(X,Y) = \mathbb{E}(XY) - \mathbb{E}(X)\mathbb{E}(Y)\\).
   * Let \\(\mathbf{X}\\) be a \\(p\\)-dimensional random vector, then the covariance of this random vector is given by \\(\text{Cov}(\mathbf{X}) = \mathbb{E}(\mathbf{X}\mathbf{X}^T) - \mathbb{E}(\mathbf{X})\mathbb{E}(\mathbf{X})^T\\), which is a \\(p\times p\\) matrix with \\(Cov(\mathbf{X})_{i,j} = \mathbb{E}(X_iX_j) - \mathbb{E}(X_i)\mathbb{E}(X_j)\\).
+ 
+* **Mode.** The mode of a distribution is the value in which the probability mass function or probability density function are maximized:
+  \\[x^* = \text{argmax} _x p(x)\\]
+  - If the distribution is multimodal, the solution to the above maximization problem may not be unique.
+    
 ## Common Discrete Random Variables
 * **Bernoulli.** A Bernoulli random variable with parameter \\(0 \leq \theta \leq 1\\) is a binary discrete r.v.
   - The support of a Bernoulli random variable is the set \\(\text{Supp}(X) = \\{0,1\\}\\):
