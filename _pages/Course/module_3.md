@@ -187,15 +187,24 @@ Here, we review the most important concepts in probability theory without mathem
 
 * **Covariance**
   * Variance measures the variation of a single random variable (like the weight of a person in a population). In contrast, covariance is a measure of how much two or more random variables vary together (like the height of a person and the weight of a person in a population). In other words, the covariance can be interpreted as a measure of similarity between two random variables.
-  * The covariance between two random variables \\(X\\) and \\(Y\\) is defined by \\(\text{Cov}(X,Y) = \mathbb{E}(X-\mathbb{E}(X))\mathbb{E}(Y-\mathbb{E}(Y))\\), which is equivalent to \\(\text{Cov}(X,Y) = \mathbb{E}(XY) - \mathbb{E}(X)\mathbb{E}(Y)\\).
+  * The covariance between two random variables \\(X\\) and \\(Y\\) is defined by
+    \\{\text{Cov}(X,Y) = \mathbb{E}(X-\mathbb{E}(X))\mathbb{E}(Y-\mathbb{E}(Y))\\}
+    - This is equivalent to \\(\text{Cov}(X,Y) = \mathbb{E}(XY) - \mathbb{E}(X)\mathbb{E}(Y)\\).
   * The covariance is positive if \\(X\\) and \\(Y\\) are _concordant_ (their deviations from the mean have the same sign)
   * The covariance is  negative if \\(X\\) and \\(Y\\)  _discordant_ (their deviations from the mean have opposite signs).
   * When \\(\text{Cov}(X,Y) = 0\\), we say that \\(X\\) and \\(Y\\) are **_uncorrolated_**. That is, there is no trend (tendency) between them.
     - Please note that \\(\text{Cov}(X,Y) = 0\\) doesn't mean that \\(X\\) and \\(Y\\) are independent. However, the inverse is true; if \\(X\\) and \\(Y\\) are two independent random variables, they are also uncorrelated (\\(\text{Cov}(X,Y) = 0\\)).
     - Only if \\(X\\) and \\(Y\\) are two **Gaussian r.v's**, then uncorrelation implies independence and vice versa.
   * Let \\(\mathbf{X}\\) be a \\(p\\)-dimensional random vector, then the covariance of this random vector is given by \\(\text{Cov}(\mathbf{X}) = \mathbb{E}(\mathbf{X}\mathbf{X}^T) - \mathbb{E}(\mathbf{X})\mathbb{E}(\mathbf{X})^T\\), which is a \\(p\times p\\) matrix with \\(Cov(\mathbf{X})_{i,j} = \mathbb{E}(X_iX_j) - \mathbb{E}(X_i)\mathbb{E}(X_j)\\).
-  * **Covariance Properties:**
-    - 
+  * **Covariance Properties.** In all the following properties, \\(X_i\\)'s and \\(Y\\) are random variables and \\(\alpha_i\\)'s are constants.
+    1. \\(\text{Cov}(X,X) = \text{Var}(X)\\)
+    2. \\(\text{Cov}(X,Y) =  \text{Cov}(Y,X)\\)
+    3. \\(\text{Cov}\Big{(}\sum_{i=1}^nX_i \Big{)} = \sum_{i=1}^n\text{Var}(X_i) + \sum_{i,j}text{Cov}(X_i, X_j)]\\)
+      - \\(\text{Cov}(X + Y) = \text{Var}(X) + \text{Var}(Y) + 2\text{Cov}(X, Y)]\\)
+    4. If \\(X_i\\)'s are \\(n\\) uncorrelated random variables, i.e., \\(\text{Cov}(X_1,X_2,\ldots,X_n) = 0\\) then
+      \\[\text{Cov}\Big{(}\sum_{i=1}^nX_i \Big{)} = \sum_{i=1}^n\text{Var}(X_i) \\]
+      - Let \\(X_1\\) and \\(X_2\\) be two uncorrelated random variables, \\(\text{Cov}(X_1 + X_2) = \text{Var}(X_1) + \text{Var}(X_2)\\).
+    5. \\(\text{Cov}\Big{(}\alpha_iX_i, Y\Big{)} = \sum_{i=1}^n\alpha_i\text{Cov}(X_i, Y)
  
 * **Mode.** The mode of a distribution is the value in which the probability mass function or probability density function are maximized:
   \\[x^* = \text{argmax} _x p(x)\\]
