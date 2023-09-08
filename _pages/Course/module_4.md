@@ -17,6 +17,7 @@ classes: wide
 * In the point estimation problems, we want to estimate our parameters, and we don't quantify how confident we are about the estimation.
 * Since \\(\hat{\pmb{\theta}}\\) is an estimate of the ground-truth parameter \\(\pmb{\theta}\\), there is going to be (inevitably) an error. That is, the error vector is given by \\(\pmb{e} = \pmb{\theta} - \hat{\pmb{\theta}}\\). The goal of statistical models is to minimize this error in some sense.
 * To capture the notion of minimization of the error, we use the concept of a loss function, i.e., the loss incurred due to the error in estimating the ground truth parameter \\(\pmb{\theta}\\). This is denoted by \\(\mathcal{L}(\pmb{\theta}, \hat{\pmb{\theta}})\\). Depending on the nature of the problem, there are different loss functions. Two most common of these are \\(\ell_2 = \\| \pmb{\theta}- \hat{\pmb{\theta}} \\| _2^2\\) loss and \\(\ell_1 = \\| \pmb{\theta}- \hat{\pmb{\theta}} \\| _1\\) loss functions.
+  - As we will see in the ML (supervised) models, the loss function measures the discripency betwwen the ground truth lables and the prediction, which is a function of the parameters we want to optimize over.
 * Since the estimator \\(\hat{\pmb{\theta}}\\) is a function of the observed samples (a realization of the random samples drawn from the underlying distribution), it is a random variable. Hence, in statistical problems, the expectation of the loss function with respect to the data distribution is considered a measure of the goodness of a model. This is called _risk_, and is given by \\(\mathbb{E}\[\mathcal{L}(\pmb{\theta}, \hat{\pmb{\theta}} )\]\\).
 * In principle, point estimation is guided by risk minimization, that is, by the search for estimators that minimize the risk.
 * The common risk minimization are given the by _mean absolute error (MAE)_ risk by choosing the loss function as \\(\ell_1\\) norm, and the _mean squared error (MSE)_ by choosing the loss function as \\(\ell_2\\) norm. The square root of the mean squared error is called the _root mean squared error (RMSE)_.
@@ -30,16 +31,16 @@ classes: wide
  \\[D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta})) = \mathbb{E}\[ \log \frac{q(\mathbf{x})}{p(\mathbf{x} \| \pmb{\theta})}\] = \int _{\mathbf{x} \in \mathcal{X}} \log\frac{q(\mathbf{x})}{p(\mathbf{x} \| \pmb{\theta})}q(\mathbf{x})d\mathbf{x}\\]
   - KL divergence is always non-negative, \\(D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta}))\geq 0\\) with equality holds iff \\(q(\mathbf{x}) = p(\mathbf{x} \| \pmb{\theta})\\).
 * The MLE denoted by \\(\hat{\pmb{\theta}}_n\\) is obtained by the following optimization problem:
-  \\[\hat{\pmb{\theta}} _{mle} = \hat{\pmb{\theta}}_n = argmin _{\pmb{\theta}} -\log p(\mathbf{x} \| \pmb{\theta})\\]
+  \\[\hat{\pmb{\theta}} _{mle} = \hat{\pmb{\theta}}_n = \text{argmin} _{\pmb{\theta}} -\log p(\mathbf{x} \| \pmb{\theta})\\]
   - Here, \\(-\log p(\mathbf{x} \| \pmb{\theta})\\) is denoted by \\(NLL(\pmb{\theta})\\) and called _negative log-likelihood or NLL_.
 * It can be shown that the MLE is equivalent to the minimization of KL Divergence, \\(D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta}))\geq 0\\).
 * The log-likelihood of \\(n\\) i.i.d data samples is given by
-  \\[NLL(\pmb{\theta}) = \log(\prod _{i=1}^n p(\mathbf{x_i} \| \pmb{\theta})) =-\sum _{i=1}^{n}\log p(\mathbf{x_i} \| \pmb{\theta}) \\]
+  \\[\text{NLL}(\pmb{\theta}) = \log(\prod _{i=1}^n p(\mathbf{x_i} \| \pmb{\theta})) =-\sum _{i=1}^{n}\log p(\mathbf{x_i} \| \pmb{\theta}) \\]
 * **Example.** MLE for the Bernoulli distribution
   - Consider tossing a coin experiment. Here, we don't know what the probability of landing head is; hence, we'd like to estimate it using \\(n\\) observations. That is, we toss the coin for \\(n\\) times, and every time we record what has been landed. To formulate this mathematically, let \\(X\\) be a Bernoulli r.v. such that \\(X=1\\) is the event of landing a head and \\(X=0\\) be the event of landing a tail. Let \\(P(X=1) = \theta\\); hence, \\(P(X=0) = 1-\theta\\). We now use MLE to estimate our parameter \\(\theta\\) which is the probability of seeing a head. As a result,
     \begin{equation}
         \begin{aligned}
-          NLL(\theta) = -\log \prod _{i=1}^n P(X_i) = -\log \prod _{i=1}^n \theta^{ \mathbb{1} _{\\{X_i=1\\}} }(1-\theta)^{\mathbb{1} _{\\{X_i=0\\}}} \\\\\\\\
+          \text{NLL}(\theta) = -\log \prod _{i=1}^n P(X_i) = -\log \prod _{i=1}^n \theta^{ \mathbb{1} _{\\{X_i=1\\}} }(1-\theta)^{\mathbb{1} _{\\{X_i=0\\}}} \\\\\\\\
                       = -\sum _{i=1}^n \mathbb{1} _{\\{X_i=1\\}}\log \theta + \mathbb{1} _{\\{X_i=0\\}}\log(1-\theta)
         \end{aligned}
     \end{equation}
