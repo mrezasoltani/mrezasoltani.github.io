@@ -28,14 +28,14 @@ classes: wide
 * In parametric point estimation, we focus on a parametric family of probability distributions and try to find the closest parametric distribution as the best proxy for the true distribution, \\(q(\mathbf{x})\\). We denote this parametric distribution by \\(p(\mathbf{x} \| \pmb{\theta})\\).
 * In order to characteristic "the closest", we need to define the followings:
   - There are many ways to formulate the distance/similarity between two probability distributions. Here we consider the most common measure of similarity known as _Kullback Leibler Divergence (KL)_. This measure is not quite a distance as it is not symmetric. We'll elaborate on this later. The KL between two probability distributions of \\(q(\mathbf{x})\\) and \\( p(\mathbf{x} \| \pmb{\theta})\\) is defined as follows:
- \\[D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta})) = \mathbb{E}\[ \log \frac{q(\mathbf{x})}{p(\mathbf{x} \| \pmb{\theta})}\] = \int _{\mathbf{x} \in \mathcal{X}} \log\frac{q(\mathbf{x})}{p(\mathbf{x} \| \pmb{\theta})}q(\mathbf{x})d\mathbf{x}\\]
+ \\[D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta})) = \mathbb{E}\Big{[} \log \frac{q(\mathbf{x})}{p(\mathbf{x} \| \pmb{\theta})}\Big{]} = \int _{\mathbf{x} \in \mathcal{X}} \log\frac{q(\mathbf{x})}{p(\mathbf{x} \| \pmb{\theta})}q(\mathbf{x})d\mathbf{x}\\]
   - KL divergence is always non-negative, \\(D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta}))\geq 0\\) with equality holds iff \\(q(\mathbf{x}) = p(\mathbf{x} \| \pmb{\theta})\\).
 * The MLE denoted by \\(\hat{\pmb{\theta}}_n\\) is obtained by the following optimization problem:
   \\[\hat{\pmb{\theta}} _{mle} = \hat{\pmb{\theta}}_n = \text{argmin} _{\pmb{\theta}} -\log p(\mathbf{x} \| \pmb{\theta})\\]
   - Here, \\(-\log p(\mathbf{x} \| \pmb{\theta})\\) is denoted by \\(NLL(\pmb{\theta})\\) and called _negative log-likelihood or NLL_.
 * It can be shown that the MLE is equivalent to the minimization of KL Divergence, \\(D(q(\mathbf{x}) \\| p(\mathbf{x} \| \pmb{\theta}))\geq 0\\).
 * The log-likelihood of \\(n\\) i.i.d data samples is given by
-  \\[\text{NLL}(\pmb{\theta}) = \log(\prod _{i=1}^n p(\mathbf{x_i} \| \pmb{\theta})) =-\sum _{i=1}^{n}\log p(\mathbf{x_i} \| \pmb{\theta}) \\]
+  \\[\text{NLL}(\pmb{\theta}) = \log\Big{(}\prod _{i=1}^n p(\mathbf{x_i} \| \pmb{\theta})\Big{)} =-\sum _{i=1}^{n}\log p(\mathbf{x_i} \| \pmb{\theta}) \\]
 * **Example.** MLE for the Bernoulli distribution
   - Consider tossing a coin experiment. Here, we don't know what the probability of landing head is; hence, we'd like to estimate it using \\(n\\) observations. That is, we toss the coin for \\(n\\) times, and every time we record what has been landed. To formulate this mathematically, let \\(X\\) be a Bernoulli r.v. such that \\(X=1\\) is the event of landing a head and \\(X=0\\) be the event of landing a tail. Let \\(P(X=1) = \theta\\); hence, \\(P(X=0) = 1-\theta\\). We now use MLE to estimate our parameter \\(\theta\\) which is the probability of seeing a head. As a result,
     \begin{equation}
