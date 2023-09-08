@@ -124,15 +124,27 @@ In this course, our goal is to understand ML concepts from scratch, so we can ha
       <em>Standard Reinforcement Learning (RL) scenario.</em>
    </p>
 
-* The following picture summarizes three important categories of ML approaches.
+   * The following picture summarizes three important categories of ML approaches.
+   
+      <p align="center">
+      <img width="600" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/3352531c-7ad3-4a13-bbac-8ef853bbb068">
+      <br>
+         <em>Three types of Machine Learning [K. Murthy, 2022 & Yann LeCun at NIPS’16].</em>
+      </p>
 
-   <p align="center">
-   <img width="600" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/3352531c-7ad3-4a13-bbac-8ef853bbb068">
-   <br>
-      <em>Three types of Machine Learning [K. Murthy, 2022 & Yann LeCun at NIPS’16].</em>
-   </p>
+   * **_Transfer Learning__.** In traditional machine learning, models are trained for specific tasks, and they learn patterns and features specific to that task. Transfer learning takes a different approach by allowing a model to learn general features and representations from a _source task_ and then apply this knowledge to a _target task_. This can be particularly useful when there is limited data for the target task, making training faster and improving performance. Source task and target task are two main concepts in Transfer learning:
+     - Source task: This is the task for which a _pre-trained model_ is already available. The model is trained on a large dataset for this source task, and it learns to capture general patterns and features.
+     - Target Task: This is the task one wants to apply transfer learning to. This task is related to the source task; however, there may be a smaller dataset for it, making it challenging to train a high-performing model from scratch.
+   - A starting point for transfer learning is to train the source task, which results in pre-trained models. These models are typically deep neural networks, such as Convolutional Neural Networks (CNNs) for image-related tasks or Recurrent Neural Networks (RNNs) or Transformers for sequential data. These models have already learned useful features from massive datasets (e.g., ImageNet for image recognition), and they serve as a knowledge source. To adapt the pre-trained model to the target task, a procedure called **_fine-tuning_** is adopted. Fine-tuning involves adjusting the pre-trained model's parameters (weights) using the data from the target task. This allows the model to retain the general knowledge from the source task while adapting to the specifics of the target task.
+   - There are different strategies for transfer learning one can use, including _Feature Extraction_, _Fine-tuning All/Some Layers_, In-context Learning (prompting for _Large Language Models (LLMs)_), etc.
 
-* In addition to the above learning methods, you may see names like _Transfer Learning_, _Meta Learning_, _Continous or Life-Long Learning_, _Curriculum Learning_, _Teacher-Student Learning (Distillation)_ in the literature. All these methods are different types of learning which may be used in supervised/unsupervised/RL fashion. We will look at some of these in the course.
+       <p align="center">
+         <img width="600" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/78cca657-a114-422f-9f11-f5b9cb74d6bc">
+         <br>
+            <em>Transfer Learning from the source task (Imagenet classification) to the target task (Cancer Image classification) [Mukhlif et al., 2023].</em>
+      </p>
+     
+* In addition to the above learning methods, you may see names like _Meta Learning_, _Continous or Life-Long Learning_, _Curriculum Learning_, _Teacher-Student Learning (Distillation)_ and _Self-Supervise Learning_ in the literature. All these methods are different types of learning that may be used in supervised/unsupervised/RL fashion. We will look at some of these in the course.
 
 ### Datasets in ML
 * As mentioned earlier, the availability of data is essential for all ML algorithms. In recent years, there are a large amount of data publicly available for training/evaluating/testing of ML algorithms. Here, we briefly review some of the common datasets used in ML literature.
