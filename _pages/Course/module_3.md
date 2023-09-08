@@ -188,7 +188,7 @@ Here, we review the most important concepts in probability theory without mathem
 * **Covariance**
   * Variance measures the variation of a single random variable (like the weight of a person in a population). In contrast, covariance is a measure of how much two or more random variables vary together (like the height of a person and the weight of a person in a population). In other words, the covariance can be interpreted as a measure of similarity between two random variables.
   * The covariance between two random variables \\(X\\) and \\(Y\\) is defined by
-    \\{\text{Cov}(X,Y) = \mathbb{E}(X-\mathbb{E}(X))\mathbb{E}(Y-\mathbb{E}(Y))\\}
+    \\[\text{Cov}(X,Y) = \mathbb{E}(X-\mathbb{E}(X))\mathbb{E}(Y-\mathbb{E}(Y))\\]
     - This is equivalent to \\(\text{Cov}(X,Y) = \mathbb{E}(XY) - \mathbb{E}(X)\mathbb{E}(Y)\\).
   * The covariance is positive if \\(X\\) and \\(Y\\) are _concordant_ (their deviations from the mean have the same sign)
   * The covariance is  negative if \\(X\\) and \\(Y\\)  _discordant_ (their deviations from the mean have opposite signs).
@@ -199,8 +199,8 @@ Here, we review the most important concepts in probability theory without mathem
   * **Covariance Properties.** In all the following properties, \\(X_i\\)'s and \\(Y\\) are random variables and \\(\alpha_i\\)'s are constants.
     1. \\(\text{Cov}(X,X) = \text{Var}(X)\\)
     2. \\(\text{Cov}(X,Y) =  \text{Cov}(Y,X)\\)
-    3. \\(\text{Cov}\Big{(}\sum_{i=1}^nX_i \Big{)} = \sum_{i=1}^n\text{Var}(X_i) + \sum_{i,j}text{Cov}(X_i, X_j)]\\)
-      - \\(\text{Cov}(X + Y) = \text{Var}(X) + \text{Var}(Y) + 2\text{Cov}(X, Y)]\\)
+    3. \\(\text{Cov}\Big{(}\sum_{i=1}^nX_i \Big{)} = \sum_{i=1}^n\text{Var}(X_i) + \sum_{i,j}\text{Cov}(X_i, X_j)]\\)
+      - For two r.v.'s: \\(\text{Cov}(X + Y) = \text{Var}(X) + \text{Var}(Y) + 2\text{Cov}(X, Y)]\\)
     4. If \\(X_i\\)'s are \\(n\\) uncorrelated random variables, i.e., \\(\text{Cov}(X_1,X_2,\ldots,X_n) = 0\\) then
       \\[\text{Cov}\Big{(}\sum_{i=1}^nX_i \Big{)} = \sum_{i=1}^n\text{Var}(X_i) \\]
       - Let \\(X_1\\) and \\(X_2\\) be two uncorrelated random variables, \\(\text{Cov}(X_1 + X_2) = \text{Var}(X_1) + \text{Var}(X_2)\\).
