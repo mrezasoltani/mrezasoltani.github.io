@@ -186,8 +186,16 @@ Here, we review the most important concepts in probability theory without mathem
     5. \\(k^{th}\\) Sample Moment about \\(C\\): \\(\tilde{m} _k = \frac{1}{N}\sum _{i=1}^{n}(X_i-C)^k\\)
 
 * **Covariance**
-  * Variance measures the variation of a single random variable (like the weight of a person in a population), whereas covariance is a measure of how much two or moew random variables vary together (like the height of a person and the weight of a person in a population). The covariance between two random variables \\(X\\) and \\(Y\\) is defined by \\(\text{Cov}(X,Y) = \mathbb{E}(XY) - \mathbb{E}(X)\mathbb{E}(Y)\\).
+  * Variance measures the variation of a single random variable (like the weight of a person in a population). In contrast, covariance is a measure of how much two or more random variables vary together (like the height of a person and the weight of a person in a population). In other words, the covariance can be interpreted as a measure of similarity between two random variables.
+  * The covariance between two random variables \\(X\\) and \\(Y\\) is defined by \\(\text{Cov}(X,Y) = \mathbb{E}(X-\mathbb{E}(X))\mathbb{E}(Y-\mathbb{E}(Y))\\), which is equivalent to \\(\text{Cov}(X,Y) = \mathbb{E}(XY) - \mathbb{E}(X)\mathbb{E}(Y)\\).
+  * The covariance is positive if \\(X\\) and \\(Y\\) are _concordant_ (their deviations from the mean have the same sign)
+  * The covariance is  negative if \\(X\\) and \\(Y\\)  _discordant_ (their deviations from the mean have opposite signs).
+  * When \\(\text{Cov}(X,Y) = 0\\), we say that \\(X\\) and \\(Y\\) are **_uncorrolated_**. That is, there is no trend (tendency) between them.
+    - Please note that \\(\text{Cov}(X,Y) = 0\\) doesn't mean that \\(X\\) and \\(Y\\) are independent. However, the inverse is true; if \\(X\\) and \\(Y\\) are two independent random variables, they are also uncorrelated (\\(\text{Cov}(X,Y) = 0\\)).
+    - Only if \\(X\\) and \\(Y\\) are two **Gaussian r.v's**, then uncorrelation implies independence and vice versa.
   * Let \\(\mathbf{X}\\) be a \\(p\\)-dimensional random vector, then the covariance of this random vector is given by \\(\text{Cov}(\mathbf{X}) = \mathbb{E}(\mathbf{X}\mathbf{X}^T) - \mathbb{E}(\mathbf{X})\mathbb{E}(\mathbf{X})^T\\), which is a \\(p\times p\\) matrix with \\(Cov(\mathbf{X})_{i,j} = \mathbb{E}(X_iX_j) - \mathbb{E}(X_i)\mathbb{E}(X_j)\\).
+  * **Covariance Properties:**
+    - 
  
 * **Mode.** The mode of a distribution is the value in which the probability mass function or probability density function are maximized:
   \\[x^* = \text{argmax} _x p(x)\\]
@@ -196,7 +204,7 @@ Here, we review the most important concepts in probability theory without mathem
 ## Common Discrete Random Variables
 * **Bernoulli.** A Bernoulli random variable with parameter \\(0 \leq \theta \leq 1\\) is a binary discrete r.v.
   - The support of a Bernoulli random variable is the set \\(\text{Supp}(X) = \\{0,1\\}\\):
-  - he pmf of a Bernoulli random variable is give by:
+  - he pmf of a Bernoulli random variable is given by:
   \begin{equation}
         \begin{aligned}
           Ber(x|\theta) =
@@ -206,7 +214,7 @@ Here, we review the most important concepts in probability theory without mathem
             \end{cases} = \theta^{x}\theta^{1-x}
         \end{aligned}
     \end{equation}
-  - The expectatrion and the variance:
+  - The expectation and the variance:
     \\[\mathbb{E}(X)= \theta, ~~~ \text{Var}(X) = \theta(1-\theta)\\] 
 
 * **Multinoulli (Categorical).** The Multinoulli distribution (aka categorical distribution) is a multivariate version of the Bernoulli distribution. This means that a Multinoulli r.v. can take \\(K>2\\) values (i.e., \\(K\\) possible outcomes). If \\(K=2\\), then we have the Bernoulli random variable. Typically, a Multinoulli r.v. is defined by a random vector \\(\mathbf{X} = \[X_1, X_2, \ldots, X_K\]^T\\), where \\(X_i\\)'s is a Bernoulli random variable, taking \\(1\\) with probability \\(\theta_i\\) if the \\(i^{th}\\) outcome of the random experiment is obtained, or \\(0\\) otherwise. In other words, when the \\(i^{th}\\) outcome of the random experiment is obtained, the \\(i^{th}\\) entry of the Multinoulli random vector \\(\mathbf{X}\\) takes value \\(1\\), while all the other entries are equal to \\(0\\).
@@ -223,7 +231,7 @@ Here, we review the most important concepts in probability theory without mathem
         \end{aligned}
     \end{equation}
     - We note that \\(\theta_i\geq 0, ~ \text{for all}~ i=1,2\ldots,K\\), and \\(\sum_{i=1}^{K}\theta_i = 1\\).
-  - The expectatrion and the covariance:
+  - The expectation and the covariance:
     \begin{equation}
         \begin{aligned}
           \mathbb{E}(\mathbf{X}) =  
@@ -248,7 +256,7 @@ Here, we review the most important concepts in probability theory without mathem
     - \\(\binom ni = \frac{n!}{(n-i)!i!}\\) is the number of ways to choose \\(i\\) items from \\(n\\) (aka binomial coefficient).
     - In other words, a Binomial r.v. is obtained if we repeat a Bernoulli random experiment \\(n\\) times.
   
-* **Multinomial.** The Multinomial distribution is a multivariate version of the Binomial distribution. Simialr to the relation between Bernoulli and Binomial random variables, if we repeat a radnom experiment moeld by a Categorical distribution with \\(K\\) outcomes, we obtain a Multinomial distribution. As a result, we can write a Multinomial random variables as the sum of \\(n\\) independent Multinoulli reandom variables.
+* **Multinomial.** The Multinomial distribution is a multivariate version of the Binomial distribution. Similar to the relation between Bernoulli and Binomial random variables, if we repeat a random experiment model by a Categorical distribution with \\(K\\) outcomes, we obtain a Multinomial distribution. As a result, we can write Multinomial random variables as the sum of \\(n\\) independent Multinoulli random variables.
   - A Multinomial random variable models the number of times that we can obtain the \\(i^{th}\\) outcome of a Categorical r.v. with \\(K\\) outcomes.
   - The support of a Multinomial random variable is given by:
     \\[\text{Supp}(\mathbf{X}) = \\{(x_1, x_2, \ldots, x_K)\in \\{0,1,\ldots, n\\}^K: \sum_{i=1}^K x_i = n\\}\\]
@@ -264,7 +272,7 @@ Here, we review the most important concepts in probability theory without mathem
     \end{equation}
     - Here, \\(\binom n{x_1,x_2,\ldots,x_n} = \frac{n!}{x_1!x_2!\ldots x_n!}\\) is called _multinomial coefficient_.
     - We note that \\(\theta_i\geq 0, ~ \text{for all}~ i=1,2\ldots,K\\), and \\(\sum_{i=1}^{K}\theta_i = 1\\).
-    - The expectatrion and the covariance:
+    - The expectation and the covariance:
     \begin{equation}
         \begin{aligned}
           \mathbb{E}(\mathbf{X}) =  
