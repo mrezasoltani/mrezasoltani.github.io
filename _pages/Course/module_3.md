@@ -199,7 +199,7 @@ Here, we review the most important concepts in probability theory without mathem
   * **Covariance Properties.** In all the following properties, \\(X_i\\)'s and \\(Y\\) are random variables and \\(\alpha_i\\)'s are constants.
     1. \\(\text{Cov}(X,X) = \text{Var}(X)\\)
     2. \\(\text{Cov}(X,Y) =  \text{Cov}(Y,X)\\)
-    3. \\(\text{Cov}\Big{(}\sum_{i=1}^nX_i \Big{)} = \sum_{i=1}^n\text{Var}(X_i) + \sum_{i,j}\text{Cov}(X_i, X_j)]\\)
+    3. \\(\text{Cov}\Big{(}\sum_{i=1}^nX_i \Big{)} = \sum_{i=1}^n\text{Var}(X_i) + \sum_{i,j}\text{Cov}(X_i, X_j)\\)
       - For two r.v.'s: \\(~\text{Cov}(X + Y) = \text{Var}(X) + \text{Var}(Y) + 2\text{Cov}(X, Y)\\)
     4. If \\(X_i\\)'s are \\(n\\) uncorrelated random variables, i.e., \\(\text{Cov}(X_1,X_2,\ldots,X_n) = 0\\) then
       \\[\text{Cov}\Big{(}\sum_{i=1}^nX_i \Big{)} = \sum_{i=1}^n\text{Var}(X_i) \\]
