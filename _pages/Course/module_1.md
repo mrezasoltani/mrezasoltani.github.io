@@ -141,7 +141,7 @@ In this course, our goal is to understand ML concepts from scratch, so we can ha
        <p align="center">
          <img width="600" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/37226975/80c00f15-c328-47fc-a4b8-082bf8ed8642">
          <br>
-            <em>Transfer Learning from the source task (Imagenet classification) to the target task (Cancer Image classification) [Mukhlif et al., 2023].</em>
+            <em>Transfer Learning from the source task (Imagenet classification) to the target task (Cancer Image classification).</em>
       </p>
 
 * In addition to the above learning methods, you may see names like _Meta Learning_, _Continous or Life-Long Learning_, _Curriculum Learning_, _Teacher-Student Learning (Distillation)_ and _Self-Supervise Learning_ in the literature. All these methods are different types of learning that may be used in supervised/unsupervised/RL fashion. We will look at some of these in the course.
