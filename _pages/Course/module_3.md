@@ -200,10 +200,11 @@ Here, we review the most important concepts in probability theory without mathem
     1. \\(\text{Cov}(X,X) = \text{Var}(X)\\)
     2. \\(\text{Cov}(X,Y) =  \text{Cov}(Y,X)\\)
     3. \\(\text{Cov}\Big{(}\sum_{i=1}^nX_i \Big{)} = \sum_{i=1}^n\text{Var}(X_i) + \sum_{i,j}\text{Cov}(X_i, X_j)]\\)
-      - For two r.v.'s: \\(\text{Cov}(X + Y) = \text{Var}(X) + \text{Var}(Y) + 2\text{Cov}(X, Y)]\\)
+      - For two r.v.'s: \\(~\text{Cov}(X + Y) = \text{Var}(X) + \text{Var}(Y) + 2\text{Cov}(X, Y)]\\)
     4. If \\(X_i\\)'s are \\(n\\) uncorrelated random variables, i.e., \\(\text{Cov}(X_1,X_2,\ldots,X_n) = 0\\) then
       \\[\text{Cov}\Big{(}\sum_{i=1}^nX_i \Big{)} = \sum_{i=1}^n\text{Var}(X_i) \\]
-      - Let \\(X_1\\) and \\(X_2\\) be two uncorrelated random variables, \\(\text{Cov}(X_1 + X_2) = \text{Var}(X_1) + \text{Var}(X_2)\\).
+      - Let \\(X_1\\) and \\(X_2\\) be two uncorrelated random variables,
+        \\[\text{Cov}(X_1 + X_2) = \text{Var}(X_1) + \text{Var}(X_2)\\]
     5. \\(\text{Cov}\Big{(}\alpha_iX_i, Y\Big{)} = \sum_{i=1}^n\alpha_i\text{Cov}(X_i, Y)\\)
  
 * **Mode.** The mode of a distribution is the value in which the probability mass function or probability density function are maximized:
