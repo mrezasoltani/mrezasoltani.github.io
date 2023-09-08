@@ -144,7 +144,7 @@ In this course, our goal is to understand ML concepts from scratch, so we can ha
             <em>Transfer Learning from the source task (Imagenet classification) to the target task (Cancer Image classification).</em>
       </p>
 
-* In addition to the above learning methods, you may see names like _Meta Learning_, _Continous or Life-Long Learning_, _Curriculum Learning_, _Teacher-Student Learning (Distillation)_ and _Self-Supervise Learning_ in the literature. All these methods are different types of learning that may be used in supervised/unsupervised/RL fashion. We will look at some of these in the course.
+* In addition to the above learning methods, there are other types of learning such as _Meta Learning_, _Continous or Life-Long Learning_, _Curriculum Learning_, _Teacher-Student Learning (Distillation)_ and _Self-Supervise Learning_ in the literature. All these methods are different types of learning that may be used in supervised/unsupervised/reinforcement learning fashion. We will look at some of these methods in the course.
 
 ### Datasets in ML
 * As mentioned earlier, the availability of data is essential for all ML algorithms. In recent years, there are a large amount of data publicly available for training/evaluating/testing of ML algorithms. Here, we briefly review some of the common datasets used in ML literature.
