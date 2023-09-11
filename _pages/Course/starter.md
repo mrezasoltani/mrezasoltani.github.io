@@ -64,7 +64,7 @@ classes: wide
   * Module 5 -- Optimization
 * Programming
   * Module 6 --- Python, Numpy, Pandas, Visualization
-  * Module 7 --- Pytorch
+  * Module 7 --- PyTorch
 * Machine Learning
   * Module 8 --- Linear Models
   * Module 9 --- Linear Models
