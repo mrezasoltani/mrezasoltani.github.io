@@ -158,6 +158,7 @@ names = []                               # Creates an empty list
 names = list()                           # Also creates an empty list
 stuff = [1, ['hi','bye'], -0.12, None]   # Can mix types
 ```
+
 <details markdown=1><summary markdown="span">Results</summary>
 
 - True
