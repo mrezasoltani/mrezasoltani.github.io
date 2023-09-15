@@ -263,9 +263,9 @@ for x, y in [(1,10), (2,20), (3,30)]:
 ```
 <details markdown=1><summary markdown="span">Results</summary>
 
-  - 10
-  - 20
-  - 30
+  - 1 10
+  - 2 20
+  - 3 30
 
 </details>
 
