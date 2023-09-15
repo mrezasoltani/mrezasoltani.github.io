@@ -47,6 +47,16 @@ _Markdown is valid, but add empty lines to separate from the HTML tags._
   
 </details>
 
+<details>
+<summary><b>Preview title</b></summary>
+
+_Markdown is valid, but add empty lines to separate from the HTML tags._
+
+- Bullet
+- Points
+
+</details>
+
 ### Built-in Values
 ```python
 True, False          # Usual true/false values
