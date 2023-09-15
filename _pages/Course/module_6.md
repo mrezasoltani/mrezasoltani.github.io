@@ -37,8 +37,8 @@ print(x / float(y))
 print(x // y)
 print(str(x) + '' + '' + str(y))
 ```
-<details>
-<summary markdown='span'>Results</summary>
+(ALT+255)<details>
+<summary>Results</summary>
 
 - 13
 - 7
