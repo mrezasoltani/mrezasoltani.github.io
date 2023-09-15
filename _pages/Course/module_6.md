@@ -157,6 +157,7 @@ print(names)
 names = []                               # Creates an empty list
 names = list()                           # Also creates an empty list
 stuff = [1, ['hi','bye'], -0.12, None]   # Can mix types
+print(stuff)
 ```
 <details markdown=1><summary markdown="span">Results</summary>
 
@@ -164,6 +165,7 @@ stuff = [1, ['hi','bye'], -0.12, None]   # Can mix types
 - True
 - ['Zach', 'Jay', 'Richard']
 - ['Zach', 'Jay', 'Richard', 'Abi', 'Kevin']
+- [1, ['hi', 'bye'], -0.12, None]
 
 </details>
 
@@ -199,6 +201,7 @@ numbers[::-1]
 
 ### Tuple
 * A tuple is a collection which is ordered and unchangeable (Immutable).
+  - tupels cannot be modifies. This makes the a good choice for _key_ choice in hashtables or dictionaries.
 
 ``` python
 names = ('Zach', 'Jay')       # Note the parentheses
@@ -220,5 +223,52 @@ print(single)
 - ('Zach', 'Jay')
 - 'tuple' object does not support item assignment
 - (10,)
+
+</details>
+
+### Set
+  * A set is a collection which is unordered and unindexed. In Python sets are written with curly brackets.
+  * It is suitable for creating unique collection of objects.
+  * We can do set mathematical operations with this data structure such as _unioin_, _difference_, _intersection_, etc.
+``` python
+names = {'Zach', 'Jay', 'Zach'} # Note the curly brackets and duplicates
+print(len(names) == 2)
+for name in names:
+    print(name)
+try:
+    print(names[0])
+except TypeError as e:
+    print(e)
+try:
+    names[0] = 'Richard'
+except TypeError as e:
+    print(e)
+names_2 = {'Jay', 'Richard'}
+print("========= set difference ============")
+print(names - names_2)
+print(names.difference(names_2))
+print("========= set union ============")
+print(names | names_2)
+print(names.union(names_2))
+print("========= set intersection ============")
+print(names & names_2)
+print(names.intersection(names_2))
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- True
+- Jay
+- Zach
+- 'set' object is not subscriptable
+- 'set' object does not support item assignment
+========= set difference ============
+{'Zach'}
+{'Zach'}
+========= set union ============
+{'Jay', 'Richard', 'Zach'}
+{'Jay', 'Richard', 'Zach'}
+========= set intersection ============
+{'Jay'}
+{'Jay'}
 
 </details>
