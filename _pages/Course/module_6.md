@@ -12,12 +12,12 @@ classes: wide
 ```python
 print('Hello World')
 ```
-### Anaconda
+## Anaconda
 - Anaconda is a popular Python environment/package manager  
 - Install from ([here](https://www.anaconda.com/download/))
 - We suggest using Python >= 3.8
 
-### IDEs:
+## IDEs:
 - IDLE
   - IDLE comes with Python installation by default
 - PyCharm
@@ -25,7 +25,7 @@ print('Hello World')
 - Spyder 
   - Spyder already exists in Anaconda once it is installed. Spider is very similar to Matlab ([link](https://www.spyder-ide.org/)).
 
-### Arithmatics
+## Arithmatics
 ``` python
 x = 10
 y = 3
@@ -49,7 +49,7 @@ print(str(x) + '' + '' + str(y))
 
 </details>
 
-### Built-in Values
+## Built-in Values
 ```python
 True, False          # Usual true/false values
 None                 # Represents the absence of something
@@ -65,8 +65,8 @@ int
 float
 str
 ```
-### Code blocks are created using indents.
-### Indents can be 2 or 4 spaces but should be consistent throughout the file.
+## Code blocks are created using indents.
+* **Indents can be 2 or 4 spaces but should be consistent throughout the file.**
 ``` python
 def fib(n):
     # Indent level 1: function body
@@ -78,7 +78,7 @@ def fib(n):
         return fib(n-1)+fib(n-2)
 ```
 
-### Loops
+## Loops
 ### For loops (If you want an index, \\(\Longrightarrow~\\) using enumerate()!)
 ```python
 for i, name in enumerate(['Zack','Jay','Richard']):
