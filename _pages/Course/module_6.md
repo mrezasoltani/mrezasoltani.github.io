@@ -154,9 +154,9 @@ print(names)
 names.extend(['Abi','Kevin'])
 print(names)
 
-names = [] # Creates an empty list
-names = list() # Also creates an empty list
-stuff = [1, ['hi','bye'], -0.12, None] # Can mix types
+names = []                               # Creates an empty list
+names = list()                           # Also creates an empty list
+stuff = [1, ['hi','bye'], -0.12, None]   # Can mix types
 ```
 <details markdown=1><summary markdown="span">Results</summary>
 
@@ -175,13 +175,13 @@ stuff = [1, ['hi','bye'], -0.12, None] # Can mix types
 
 ``` python
 numbers = [0, 1, 2, 3, 4, 5, 6]
-print(numbers[0:3]) # numbers[:3]
-print(numbers[5:]) # numbers[5:7]
-print(numbers[:]) # numbers
-print(numbers[-1]) # Negative index wraps around
+print(numbers[0:3])            # numbers[:3]
+print(numbers[5:])             # numbers[5:7]
+print(numbers[:])              # numbers
+print(numbers[-1])             # Negative index wraps around
 print(numbers[-3:])
-print(numbers[3:-2]) # Can mix and match
-print(numbers[0:5:2]) # numbers[:5:2]
+print(numbers[3:-2])           # Can mix and match
+print(numbers[0:5:2])          # numbers[:5:2]
 numbers[::-1]
 ```
 <details markdown=1><summary markdown="span">Results</summary>
@@ -193,5 +193,32 @@ numbers[::-1]
 - [4, 5, 6]
 - [3, 4]
 - [0, 2, 4]
+- [6, 5, 4, 3, 2, 1, 0]
+
+</details>
+
+### Tuple
+* A tuple is a collection which is ordered and unchangeable (Immutable).
+
+``` python
+names = ('Zach', 'Jay')       # Note the parentheses
+print(names[0] == 'Zach')
+print(len(names) == 2)
+print(names)
+try:
+    names[0] = 'Richard'
+except TypeError as e:
+    print(e)
+empty = tuple()               # Empty tuple
+single = (10,)                # Single-element tuple. Comma matters!
+print(single)
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- True
+- True
+- ('Zach', 'Jay')
+- 'tuple' object does not support item assignment
+- (10,)
 
 </details>
