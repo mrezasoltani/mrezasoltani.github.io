@@ -79,7 +79,7 @@ def fib(n):
 ```
 
 ### For Loops
-#### * If you Want an index, use enumerate()!
+#### If you Want an index, use enumerate()!
 ```python
 for i, name in enumerate(['Zack','Jay','Richard']):
     print('Hi ' + '! {0}: {1:.4f}'.format(name, i))
