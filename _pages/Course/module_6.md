@@ -79,7 +79,7 @@ def fib(n):
 ```
 
 ## Loops
-### For loops (If you want an index, \\(\Longrightarrow~\\) using enumerate()!)
+### For loops (If you want an index \\(\Longrightarrow\\) using enumerate()!)
 ```python
 for i, name in enumerate(['Zack','Jay','Richard']):
     print('Hi ' + '! {0}: {1:.4f}'.format(name, i))
@@ -104,7 +104,7 @@ while True:
     
 </details>
 
-### What about for (i=0; i<10; i++)? \\(\Longrightarrow~\\) using range():
+### What about for (i=0; i<10; i++)? \\(\Longrightarrow\\) using range():
 ``` python
 for i in range(5):
     print('Line' + str(I))
@@ -129,5 +129,38 @@ for x, y in [(1,10), (2,20), (3,30)]:
   - 10
   - 20
   - 30
+
+</details>
+
+## Python data structures
+* **Sequence containers - list, tuple**
+* **Mapping containers - set, dict**
+* The `collections module ([link](https://docs.python.org/2/library/collections.html)
+  - deque (list-like container with fast appends and pops on either end)
+  - Counter (dict subclass for counting hashable objects)
+  - OrderedDict (dict subclass that remembers the order entries were added)
+  - defaultdict (dict subclass that calls a factory function to supply missing values)
+### List
+* List is a collection which is ordered and changeable (Mutable). Allows duplicate members.
+```python
+names = ['Zach','Jay']
+print(names[0] == 'Zach')
+names.append('Richard')
+print(len(names) == 3)
+print(names)
+
+names.extend(['Abi','Kevin'])
+print(names)
+
+names = [] # Creates an empty list
+names = list() # Also creates an empty list
+stuff = [1, ['hi','bye'], -0.12, None] # Can mix types
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- True
+- True
+- ['Zach', 'Jay', 'Richard']
+- ['Zach', 'Jay', 'Richard', 'Abi', 'Kevin']
 
 </details>
