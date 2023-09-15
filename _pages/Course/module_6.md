@@ -81,34 +81,32 @@ def fib(n):
 ```
 
 ### Loops
-
 ```python
 for i, name in enumerate(['Zack','Jay','Richard']):
     print('Hi ' + '! {0}: {1:.4f}'.format(name, i))
 ```
-  <details>
-    <summary>Results</summary>
-  
-    - Hi ! Zack: 0.0000
-    - Hi ! Jay: 1.0000
-    - Hi ! Richard: 2.0000
-      
-  </details>
+<details>
+  <summary>Results</summary>
+
+  - Hi ! Zack: 0.0000
+  - Hi ! Jay: 1.0000
+  - Hi ! Richard: 2.0000
+    
+</details>
 
 ``` python
 while True:
-    print('We are stuck in a loop...')
-    break           # Break out of the while loop
+  print('We are stuck in a loop...')
+  break           # Break out of the while loop
 ```
-  <details>
-    <summary>Results</summary>
-  
-    - We are stuck in a loop...
-      
-  </details>
+<details>
+  <summary>Results</summary>
+
+  - We are stuck in a loop...
+    
+</details>
 
 ### What about for (i=0; i<10; i++)? Use range():
-
 ``` python
 for i in range(5):
     print('Line' + str(I))
@@ -123,22 +121,19 @@ for i in range(5):
     - Line4
       
   </details>
-
 ### Want an index also? Look at enumerate()!
-​
 ### Looping over a list, unpacking tuples:
-  
 ``` python
 for x, y in [(1,10), (2,20), (3,30)]:
     print(x, y)
 ```
-  ​<details>
-    <summary>Results</summary>
-  
-    - 10
-    - 20
-    - 30
-    - Line3
-    - Line4
-      
-  </details>
+​<details>
+  <summary>Results</summary>
+
+  - 10
+  - 20
+  - 30
+  - Line3
+  - Line4
+    
+</details>
