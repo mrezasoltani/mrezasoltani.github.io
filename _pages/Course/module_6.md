@@ -115,9 +115,9 @@ print(x, format(x, '04b'))
 - 15 1111
 - ============ Bitwise XOR operation ============
 - 13 1101
-- ============ Bitwise Left Shift ===============
+- ============ Bitwise Left Shift ================
 - 26 11010
-- ============ Bitwise Right Shift ==============
+- ============ Bitwise Right Shift ===============
 - 6 0110
 
 </details>
