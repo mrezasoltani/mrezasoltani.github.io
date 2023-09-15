@@ -38,9 +38,7 @@ print(x // y)
 print(str(x) + '' + '' + str(y))
 ```
 <details>
-<summary markdown='span'/>
-  Results
-</summary>
+<summary markdown='span'>Results</summary>
 
 - 13
 - 7
