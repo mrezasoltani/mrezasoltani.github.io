@@ -135,7 +135,7 @@ for x, y in [(1,10), (2,20), (3,30)]:
 ## Python data structures
 * **Sequence containers - list, tuple**
 * **Mapping containers - set, dict**
-* The `collections module ([link](https://docs.python.org/2/library/collections.html)
+* The `collections module ([link](https://docs.python.org/2/library/collections.html))
   - deque (list-like container with fast appends and pops on either end)
   - Counter (dict subclass for counting hashable objects)
   - OrderedDict (dict subclass that remembers the order entries were added)
@@ -163,5 +163,32 @@ stuff = [1, ['hi','bye'], -0.12, None] # Can mix types
 - True
 - ['Zach', 'Jay', 'Richard']
 - ['Zach', 'Jay', 'Richard', 'Abi', 'Kevin']
+
+</details>
+#### List slicing (indexing)
+##### x[start:stop:step]  
+start - starting integer where the slicing of the object starts  
+stop - integer until which the slicing takes place. The slicing stops at index stop - 1.  
+step - integer value which determines the increment between each index for slicing  
+``` python
+numbers = [0, 1, 2, 3, 4, 5, 6]
+print(numbers[0:3]) # numbers[:3]
+print(numbers[5:]) # numbers[5:7]
+print(numbers[:]) # numbers
+print(numbers[-1]) # Negative index wraps around
+print(numbers[-3:])
+print(numbers[3:-2]) # Can mix and match
+print(numbers[0:5:2]) # numbers[:5:2]
+numbers[::-1]
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- [0, 1, 2]
+- [5, 6]
+- [0, 1, 2, 3, 4, 5, 6]
+- 6
+- [4, 5, 6]
+- [3, 4]
+- [0, 2, 4]
 
 </details>
