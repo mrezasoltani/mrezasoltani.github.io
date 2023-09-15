@@ -36,7 +36,7 @@ print(x / float(y))
 print(x // y)
 print(str(x) + '' + '' + str(y))
 ```
-<details>
+
   <summary>Results</summary>
   13
 
@@ -52,7 +52,7 @@ print(str(x) + '' + '' + str(y))
   3
   
   103
-</details>
+
 
 ### Built-in Values
 ```python
