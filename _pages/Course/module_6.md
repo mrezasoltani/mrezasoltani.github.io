@@ -49,7 +49,7 @@ print(str(x) + '' + '' + str(y))
     
 </details>
 
-### Built-in Values
+* Built-in Values
 ```python
 True, False          # Usual true/false values
 None                 # Represents the absence of something
@@ -61,4 +61,81 @@ def func():
 
 if [1,2] != [3,4]:   # Can check for equality
     print('Error')
+int
+
+float
+
+str
 ```
+* Code blocks are created using indents.
+* Indents can be 2 or 4 spaces but should be consistent throughout the file.
+``` python
+def fib(n):
+    # Indent level 1: function body
+    if n <= 1:
+        # Indent level 2: if statement body
+        return 1
+    else:
+        # Indent level 2: else statement body
+        return fib(n-1)+fib(n-2)
+```
+
+* Loops
+```python
+for i, name in enumerate(['Zack','Jay','Richard']):
+    print('Hi ' + '! {0}: {1:.4f}'.format(name, i))
+```
+<details>
+  <summary>Results</summary>
+
+  - Hi ! Zack: 0.0000
+  - Hi ! Jay: 1.0000
+  - Hi ! Richard: 2.0000
+    
+</details>
+
+``` python
+while True:
+    print('We are stuck in a loop...')
+    break           # Break out of the while loop
+```
+<details>
+  <summary>Results</summary>
+
+  - We are stuck in a loop...
+    
+</details>
+
+* What about for (i=0; i<10; i++)? Use range():
+``` python
+for i in range(5):
+    print('Line' + str(I))
+```
+<details>
+  <summary>Results</summary>
+
+  - Line0
+  - Line1
+  - Line2
+  - Line3
+  - Line4
+    
+</details>
+
+* Want an index also? Look at enumerate()!
+​
+* Looping over a list, unpacking tuples:
+``` python
+for x, y in [(1,10), (2,20), (3,30)]:
+    print(x, y)
+```
+​<details>
+  <summary>Results</summary>
+
+  - 10
+  - 20
+  - 30
+  - Line3
+  - Line4
+    
+</details>
