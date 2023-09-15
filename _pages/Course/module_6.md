@@ -19,7 +19,7 @@ print('Hello World')
 
 ## IDEs:
 - IDLE
-  - IDLE comes with Python installation by default
+  - IDLE comes with Python installation by default.
 - PyCharm
   - PyCharm is a widely used IDE ([link](https://www.jetbrains.com/pycharm/)).
 - Spyder 
@@ -185,6 +185,9 @@ int
 float
 str
 ```
+
+## String Format
+
 ## Code blocks are created using indents.
 * **Indents can be 2 or 4 spaces but should be consistent throughout the file.**
 ``` python
@@ -197,6 +200,8 @@ def fib(n):
         # Indent level 2: else statement body
         return fib(n-1)+fib(n-2)
 ```
+
+## Condition
 
 ## Loops
 ### For loops (If you want an index \\(\Longrightarrow\\) using enumerate()!)
@@ -438,3 +443,15 @@ for name, number in phonebook.items():
 - Jay 34-23
 
 </details>
+
+## Functions
+
+## Iterators, Iterables, Comprehensions
+
+## Classes (Object-oriented Programming)
+
+## Modules
+
+## Decorators
+
+## Type Hints 
