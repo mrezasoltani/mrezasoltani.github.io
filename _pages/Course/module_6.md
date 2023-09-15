@@ -450,7 +450,11 @@ for name, number in phonebook.items():
 
 ## Classes (Object-oriented Programming)
 
-## Modules
+## Packages and namespace
+- Modules (file)
+- Package (hierarchical modules)
+- Namespace and naming conflicts
+- Using import
 
 ## Decorators
 
