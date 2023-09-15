@@ -79,7 +79,7 @@ def fib(n):
 ```
 
 ### Loops
-### For loops (If you want an index, use enumerate()!)
+### For loops (If you want an index, \\(\Longrightarrow~\\) using enumerate()!)
 ```python
 for i, name in enumerate(['Zack','Jay','Richard']):
     print('Hi ' + '! {0}: {1:.4f}'.format(name, i))
@@ -104,7 +104,7 @@ while True:
     
 </details>
 
-### What about for (i=0; i<10; i++)? Use range():
+### What about for (i=0; i<10; i++)? \\(\Longrightarrow~\\) using range():
 ``` python
 for i in range(5):
     print('Line' + str(I))
