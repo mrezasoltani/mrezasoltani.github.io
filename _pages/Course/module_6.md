@@ -14,18 +14,16 @@ print('Hello World')
 ```
 ### Anaconda
 - Anaconda is a popular Python environment/package manager  
-- Install from https://www.anaconda.com/download/  
+- Install from [here](https://www.anaconda.com/download/)
 - We suggest using Python >= 3.8
 
 ### IDEs:
 - IDLE
   - IDLE comes with Python installation by default
 - PyCharm
-  - PyCharm is a widely used IDE (Professional version free for Duke student).  
-  - [](https://www.jetbrains.com/pycharm/)
+  - PyCharm is a widely used IDE ([link](https://www.jetbrains.com/pycharm/)).
 - Spyder 
-  - Spyder already exists in Anaconda once it is installed. Spider is very simialr to Matlab.
-  - [](https://www.spyder-ide.org/)
+  - Spyder already exists in Anaconda once it is installed. Spider is very similar to Matlab [link](https://www.spyder-ide.org/).
 
 ``` python
 x = 10
@@ -41,11 +39,17 @@ print(str(x) + '' + '' + str(y))
 <details>
   <summary>Results</summary>
   13
+  
   7
+  
   1000
+  
   3.3333333333333335
+  
   3.3333333333333335
+  
   3
+  
   103
 </details>
 
