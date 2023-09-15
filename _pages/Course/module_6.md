@@ -26,3 +26,15 @@ print('Hello World')
 - Spyder 
   - Spyder already exists in Anaconda once it is installed. Spider is very simialr to Matlab.
   - [https://www.spyder-ide.org/]
+
+``` python
+x = 10
+y = 3
+print(x + y)
+print(x - y)
+print(x ** y)
+print(x / y) # in python 2 returns 3
+print(x / float(y))
+print(x // y)
+print(str(x) + '' + '' + str(y))
+```
