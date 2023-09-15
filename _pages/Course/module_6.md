@@ -135,11 +135,11 @@ for x, y in [(1,10), (2,20), (3,30)]:
 ## Python data structures
 * **Sequence containers - list, tuple**
 * **Mapping containers - set, dict**
-* The `collections module ([link](https://docs.python.org/2/library/collections.html))
-  - deque (list-like container with fast appends and pops on either end)
-  - Counter (dict subclass for counting hashable objects)
-  - OrderedDict (dict subclass that remembers the order entries were added)
-  - defaultdict (dict subclass that calls a factory function to supply missing values)
+* The **collections module** ([link](https://docs.python.org/2/library/collections.html))
+  - **deque** (list-like container with fast appends and pops on either end)
+  - **Counter** (dict subclass for counting hashable objects)
+  - **OrderedDict** (dict subclass that remembers the order entries were added)
+  - **defaultdict** (dict subclass that calls a factory function to supply missing values)
 
 ### List
 * List is a collection which is ordered and changeable (Mutable). Allows duplicate members.
