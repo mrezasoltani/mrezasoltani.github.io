@@ -261,14 +261,14 @@ print(names.intersection(names_2))
 - Zach
 - 'set' object is not subscriptable
 - 'set' object does not support item assignment
-========= set difference ============
-{'Zach'}
-{'Zach'}
-========= set union ============
-{'Jay', 'Richard', 'Zach'}
-{'Jay', 'Richard', 'Zach'}
-========= set intersection ============
-{'Jay'}
-{'Jay'}
+- ========= set difference ============
+  {'Zach'}
+  {'Zach'}
+- ========= set union ============
+  {'Jay', 'Richard', 'Zach'}
+  {'Jay', 'Richard', 'Zach'}
+- ========= set intersection ============
+  {'Jay'}
+  {'Jay'}
 
 </details>
