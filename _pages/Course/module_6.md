@@ -230,6 +230,7 @@ print(single)
   * A set is a collection which is unordered and unindexed. In Python sets are written with curly brackets.
   * It is suitable for creating unique collection of objects.
   * We can do set mathematical operations with this data structure such as _unioin_, _difference_, _intersection_, etc.
+
 ``` python
 names = {'Zach', 'Jay', 'Zach'} # Note the curly brackets and duplicates
 print(len(names) == 2)
@@ -262,13 +263,13 @@ print(names.intersection(names_2))
 - 'set' object is not subscriptable
 - 'set' object does not support item assignment
 - ========= set difference ============
-  {'Zach'}
-  {'Zach'}
+- {'Zach'}
+- {'Zach'}
 - ========= set union ============
-  {'Jay', 'Richard', 'Zach'}
-  {'Jay', 'Richard', 'Zach'}
+- {'Jay', 'Richard', 'Zach'}
+- {'Jay', 'Richard', 'Zach'}
 - ========= set intersection ============
-  {'Jay'}
-  {'Jay'}
+- {'Jay'}
+- {'Jay'}
 
 </details>
