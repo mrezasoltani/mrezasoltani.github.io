@@ -38,9 +38,8 @@ print(str(x) + '' + '' + str(y))
 ```
 <details>
   <summary>Results</summary>
-  13
-  
-  7
+  \\(13\\)
+  \\(7\\)
   
   1000
   
