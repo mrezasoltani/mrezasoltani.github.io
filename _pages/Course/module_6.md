@@ -85,6 +85,90 @@ print(0 >= 10)
 
 </details>
 
+## Bitwise
+``` python
+print(format(10, '04b'))
+print(format(7, '04b'))
+print("============ AND operation ============")
+x = 10 & 7
+print(x, format(x, '04b'))
+print("============ OR operation =============")
+x = 10 | 7
+print(x, format(x, '04b'))
+print("============ XOR operation ============")
+x = 10 ^ 7
+print(x, format(x, '04b'))
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- 1010
+- 0111
+- ============ AND operation ============
+- 2 0010
+- ============ OR operation =============
+- 15 1111
+- ============ XOR operation ============
+- 13 1101
+
+</details>
+
+## Membership
+``` python
+print('hell' in 'hello')
+print(3 in range(5), 7 in range(5))
+print('a' in dict(zip('abc', range(3))))
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- True
+- True False
+- True
+
+</details>
+
+## Identity
+``` python
+x = [2,3]
+y = [2,3]
+print(x == y, x is y)
+print(id(x), id(y))
+x = 'hello'
+y = 'hello'
+print(x == y, x is y)
+print(id(x), id(y))
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- True False
+- 140536971848256 140536971833280
+- True True
+- 140536995546928 140536995546928
+
+</details>
+
+## Assignment
+``` python
+x = 10
+print(x)
+x = x + 2
+print(x)
+x *= 2
+print(x)
+x += 5
+print(x)
+x -= 3
+print(x)
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- 10
+- 12
+- 24
+- 29
+- 26
+
+</details>
+
 ## Built-in Values
 ```python
 True, False          # Usual true/false values
