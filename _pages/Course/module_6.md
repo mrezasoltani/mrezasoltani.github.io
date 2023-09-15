@@ -168,10 +168,10 @@ stuff = [1, ['hi','bye'], -0.12, None] # Can mix types
 </details>
 
 #### List slicing (indexing)
-##### x[start:stop:step]
-start - starting integer where the slicing of the object starts  
-stop - integer until which the slicing takes place. The slicing stops at index stop - 1.  
-step - integer value which determines the increment between each index for slicing  
+  ##### x[start:stop:step]
+  start - starting integer where the slicing of the object starts  
+  stop - integer until which the slicing takes place. The slicing stops at index stop - 1.  
+  step - integer value which determines the increment between each index for slicing  
 ``` python
 numbers = [0, 1, 2, 3, 4, 5, 6]
 print(numbers[0:3]) # numbers[:3]
