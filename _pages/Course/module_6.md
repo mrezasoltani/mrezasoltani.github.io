@@ -37,7 +37,7 @@ print(x / float(y))
 print(x // y)
 print(str(x) + '' + '' + str(y))
 ```
-<details markdown=1><summary markdown="span">Our summary here</summary>
+<details markdown=1><summary markdown="span">Results</summary>
 
 - 13
 - 7
@@ -84,8 +84,7 @@ def fib(n):
 for i, name in enumerate(['Zack','Jay','Richard']):
     print('Hi ' + '! {0}: {1:.4f}'.format(name, i))
 ```
-<details>
-  <summary>Results</summary>
+<details markdown=1><summary markdown="span">Results</summary>
 
   - Hi ! Zack: 0.0000  
   - Hi ! Jay: 1.0000
@@ -99,8 +98,7 @@ while True:
   print('We are stuck in a loop...')
   break           # Break out of the while loop
 ```
-<details>
-  <summary>Results</summary>
+<details markdown=1><summary markdown="span">Results</summary>
 
   - We are stuck in a loop...
     
@@ -111,8 +109,7 @@ while True:
 for i in range(5):
     print('Line' + str(I))
 ```
-<details>
-  <summary>Results</summary>
+<details markdown=1><summary markdown="span">Results</summary>
 
   - Line0
   - Line1
@@ -127,8 +124,7 @@ for i in range(5):
 for x, y in [(1,10), (2,20), (3,30)]:
     print(x, y)
 ```
-<details>
-  <summary>Results</summary>
+<details markdown=1><summary markdown="span">Results</summary>
 
   - 10
   - 20
