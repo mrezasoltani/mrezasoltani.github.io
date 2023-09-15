@@ -129,13 +129,13 @@ for i in range(5):
 for x, y in [(1,10), (2,20), (3,30)]:
     print(x, y)
 ```
-​<details>
-  <summary>Results</summary>
-
-  - 10
-  - 20
-  - 30
-  - Line3
-  - Line4
-    
-</details>
+  ​<details>
+    <summary>Results</summary>
+  
+    - 10
+    - 20
+    - 30
+    - Line3
+    - Line4
+      
+  </details>
