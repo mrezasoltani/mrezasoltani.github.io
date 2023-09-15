@@ -49,7 +49,7 @@ print(str(x) + '' + '' + str(y))
     
 </details>
 
-* Built-in Values
+### Built-in Values
 ```python
 True, False          # Usual true/false values
 None                 # Represents the absence of something
@@ -67,8 +67,8 @@ float
 
 str
 ```
-* Code blocks are created using indents.
-* Indents can be 2 or 4 spaces but should be consistent throughout the file.
+### Code blocks are created using indents.
+### Indents can be 2 or 4 spaces but should be consistent throughout the file.
 ``` python
 def fib(n):
     # Indent level 1: function body
@@ -80,7 +80,7 @@ def fib(n):
         return fib(n-1)+fib(n-2)
 ```
 
-* Loops
+### Loops
 
 ```python
 for i, name in enumerate(['Zack','Jay','Richard']):
@@ -107,7 +107,7 @@ while True:
       
   </details>
 
-* What about for (i=0; i<10; i++)? Use range():
+### What about for (i=0; i<10; i++)? Use range():
 
 ``` python
 for i in range(5):
@@ -124,9 +124,9 @@ for i in range(5):
       
   </details>
 
-* Want an index also? Look at enumerate()!
+### Want an index also? Look at enumerate()!
 ​
-* Looping over a list, unpacking tuples:
+### Looping over a list, unpacking tuples:
   
 ``` python
 for x, y in [(1,10), (2,20), (3,30)]:
