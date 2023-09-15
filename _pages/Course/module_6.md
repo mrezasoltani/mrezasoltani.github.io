@@ -203,6 +203,8 @@ def fib(n):
 
 ## Condition
 
+## Errors and Error Handeling
+
 ## Loops
 ### For loops (If you want an index \\(\Longrightarrow\\) using enumerate()!)
 ```python
@@ -426,7 +428,6 @@ print(phonebook)
 print("=================================")
 for name, number in phonebook.items():
     print(name, number)
-
 ```
 <details markdown=1><summary markdown="span">Results</summary>
   
