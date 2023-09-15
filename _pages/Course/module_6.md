@@ -79,8 +79,8 @@ def fib(n):
         return fib(n-1)+fib(n-2)
 ```
 
-### For Loops
-##### If you Want an index, use enumerate()!
+### Loops
+### For loops (If you want an index, use enumerate()!)
 ```python
 for i, name in enumerate(['Zack','Jay','Richard']):
     print('Hi ' + '! {0}: {1:.4f}'.format(name, i))
@@ -88,7 +88,7 @@ for i, name in enumerate(['Zack','Jay','Richard']):
 <details>
   <summary>Results</summary>
 
-  - Hi ! Zack: 0.0000
+  - Hi ! Zack: 0.0000  
   - Hi ! Jay: 1.0000
   - Hi ! Richard: 2.0000
     
