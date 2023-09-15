@@ -62,9 +62,7 @@ def func():
 if [1,2] != [3,4]:   # Can check for equality
     print('Error')
 int
-
 float
-
 str
 ```
 ### Code blocks are created using indents.
