@@ -22,7 +22,7 @@ print('Hello World')
   - IDLE comes with Python installation by default
 - PyCharm
   - PyCharm is a widely used IDE (Professional version free for Duke student).  
-  - [https://www.jetbrains.com/pycharm/]
+  - (https://www.jetbrains.com/pycharm/)
 - Spyder 
   - Spyder already exists in Anaconda once it is installed. Spider is very simialr to Matlab.
   - [https://www.spyder-ide.org/]
