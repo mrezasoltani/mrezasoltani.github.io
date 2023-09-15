@@ -89,13 +89,13 @@ print(0 >= 10)
 ``` python
 print(format(10, '04b'))
 print(format(7, '04b'))
-print("============ Bitwise AND operation ============")
+print("============ Bitwise AND operation ===========")
 x = 10 & 7
 print(x, format(x, '04b'))
-print("============ Bitwise OR operation =============")
+print("============ Bitwise OR operation ============")
 x = 10 | 7
 print(x, format(x, '04b'))
-print("============ Bitwise XOR operation ============")
+print("============ Bitwise XOR operation ===========")
 x = 10 ^ 7
 print(x, format(x, '04b'))
 print("============ Bitwise Left Shift ===============")
