@@ -51,8 +51,8 @@ print(str(x) + '' + '' + str(y))
 
 ## Logical
 ``` python
-print(True and False)
-print(True or False)
+print(True and False)            # & same as and
+print(True or False)             # | same as or
 print(not (True or False))
 ```
 <details markdown=1><summary markdown="span">Results</summary>
@@ -89,26 +89,36 @@ print(0 >= 10)
 ``` python
 print(format(10, '04b'))
 print(format(7, '04b'))
-print("============ AND operation ============")
+print("============ Bitwise AND operation ============")
 x = 10 & 7
 print(x, format(x, '04b'))
-print("============ OR operation =============")
+print("============ Bitwise OR operation =============")
 x = 10 | 7
 print(x, format(x, '04b'))
-print("============ XOR operation ============")
+print("============ Bitwise XOR operation ============")
 x = 10 ^ 7
+print(x, format(x, '04b'))
+print("============ Bitwise Left Shift ===============")
+x = x << 1
+print(x, format(x, '04b'))
+print("============ Bitwise Right Shift ==============")
+x = x >> 2
 print(x, format(x, '04b'))
 ```
 <details markdown=1><summary markdown="span">Results</summary>
 
 - 1010
 - 0111
-- ============ AND operation ============
+- ============ Bitwise AND operation ============
 - 2 0010
-- ============ OR operation =============
+- ============ Bitwise OR operation =============
 - 15 1111
-- ============ XOR operation ============
+- ============ Bitwise XOR operation ============
 - 13 1101
+- ============ Bitwise Left Shift ===============
+- 26 11010
+- ============ Bitwise Right Shift ==============
+- 6 0110
 
 </details>
 
