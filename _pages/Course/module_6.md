@@ -56,9 +56,33 @@ print(True or False)
 print(not (True or False))
 ```
 <details markdown=1><summary markdown="span">Results</summary>
+  
 - False
 - True
 - False
+
+</details>
+
+## Relational
+``` python
+print(3 == 3) 
+print(1 == 5)
+print(12 != 30)
+print(-2.5 < 3)
+print(1 <= 40)
+print(0 > 10)
+print(0 >= 10)
+```
+<details markdown=1><summary markdown="span">Results</summary>
+  
+- True
+- False
+- True
+- True
+- True
+- False
+- False
+
 </details>
 
 ## Built-in Values
