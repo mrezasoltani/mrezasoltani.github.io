@@ -145,6 +145,8 @@ for x, y in [(1,10), (2,20), (3,30)]:
 * List is a collection which is ordered and changeable (Mutable). Allows duplicate members.
 
 ``` python
+empty_list = []                          # Empty list
+empty_list = list()                      # Empty list
 names = ['Zach','Jay']
 print(names[0] == 'Zach')
 names.append('Richard')
@@ -204,6 +206,8 @@ numbers[::-1]
   - tupels cannot be modifies. This makes the a good choice for _key_ choice in hashtables or dictionaries.
 
 ``` python
+empty_tuple = ()              # Empty tuple
+empty_tuple = tuple()         # Empty tuple
 names = ('Zach', 'Jay')       # Note the parentheses
 print(names[0] == 'Zach')
 print(len(names) == 2)
@@ -232,7 +236,8 @@ print(single)
   * We can do set mathematical operations with this data structure such as _unioin_, _difference_, _intersection_, etc.
 
 ``` python
-names = {'Zach', 'Jay', 'Zach'} # Note the curly brackets and duplicates
+empty_set = set()                   # Empty set
+names = {'Zach', 'Jay', 'Zach'}     # Note the curly brackets and duplicates
 print(len(names) == 2)
 for name in names:
     print(name)
@@ -271,5 +276,45 @@ print(names.intersection(names_2))
 - ========= set intersection ============
 - {'Jay'}
 - {'Jay'}
+
+</details>
+
+### Dictionary (key-value pairs)
+* A dictionary is a collection which is unordered, changeable and indexed.
+* In Python, dictionaries are written with curly brackets, and they have keys and values (This is used for creating hash tables).
+
+``` python
+
+phonebook = dict()                       # Empty dictionary 
+phonebook = {'Zach': '12-37'}            # Dictionary with one item
+phonebook['Jay'] = '34-23'               # Add another item
+print(phonebook)
+print('Zach' in phonebook)
+print('Kevin' in phonebook)
+print(phonebook['Jay'])
+print("=================================")
+for name, number in phonebook.items():
+    print(name, number)
+print("=================================")
+del phonebook['Zach']                    # Delete an item
+print(phonebook)
+print("=================================")
+for name, number in phonebook.items():
+    print(name, number)
+
+```
+<details markdown=1><summary markdown="span">Results</summary>
+  
+- {'Zach': '12-37', 'Jay': '34-23'}
+- True
+- False
+- 34-23
+- =================================
+- Zach 12-37
+- Jay 34-23
+- =================================
+- {'Jay': '34-23'}
+- =================================
+- Jay 34-23
 
 </details>
