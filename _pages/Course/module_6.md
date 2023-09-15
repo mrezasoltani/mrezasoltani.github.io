@@ -65,8 +65,8 @@ int
 float
 str
 ```
-### Code blocks are created using indents.
-### Indents can be 2 or 4 spaces but should be consistent throughout the file.
+### * Code blocks are created using indents.
+### * Indents can be 2 or 4 spaces but should be consistent throughout the file.
 ``` python
 def fib(n):
     # Indent level 1: function body
@@ -78,7 +78,8 @@ def fib(n):
         return fib(n-1)+fib(n-2)
 ```
 
-### Loops
+### For Loops
+#### * If you Want an index, use enumerate()!
 ```python
 for i, name in enumerate(['Zack','Jay','Richard']):
     print('Hi ' + '! {0}: {1:.4f}'.format(name, i))
@@ -92,6 +93,7 @@ for i, name in enumerate(['Zack','Jay','Richard']):
     
 </details>
 
+### While Loops
 ``` python
 while True:
   print('We are stuck in a loop...')
@@ -119,19 +121,17 @@ for i in range(5):
     - Line4
       
   </details>
-### Want an index also? Look at enumerate()!
+
 ### Looping over a list, unpacking tuples:
 ``` python
 for x, y in [(1,10), (2,20), (3,30)]:
     print(x, y)
 ```
-​<details>
+<details>
   <summary>Results</summary>
 
   - 10
   - 20
   - 30
-  - Line3
-  - Line4
-    
+
 </details>
