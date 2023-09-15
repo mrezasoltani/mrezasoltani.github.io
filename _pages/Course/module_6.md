@@ -49,6 +49,18 @@ print(str(x) + '' + '' + str(y))
 
 </details>
 
+## Logical
+``` python
+print(True and False)
+print(True or False)
+print(not (True or False))
+```
+<details markdown=1><summary markdown="span">Results</summary>
+- False
+- True
+- False
+</details>
+
 ## Built-in Values
 ```python
 True, False          # Usual true/false values
