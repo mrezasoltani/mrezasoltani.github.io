@@ -14,7 +14,7 @@ print('Hello World')
 ```
 ### Anaconda
 - Anaconda is a popular Python environment/package manager  
-- Install from [here](https://www.anaconda.com/download/)
+- Install from ([here](https://www.anaconda.com/download/))
 - We suggest using Python >= 3.8
 
 ### IDEs:
@@ -23,8 +23,9 @@ print('Hello World')
 - PyCharm
   - PyCharm is a widely used IDE ([link](https://www.jetbrains.com/pycharm/)).
 - Spyder 
-  - Spyder already exists in Anaconda once it is installed. Spider is very similar to Matlab [link](https://www.spyder-ide.org/).
+  - Spyder already exists in Anaconda once it is installed. Spider is very similar to Matlab ([link](https://www.spyder-ide.org/)).
 
+### Arithmatics
 ``` python
 x = 10
 y = 3
@@ -65,8 +66,8 @@ int
 float
 str
 ```
-### * Code blocks are created using indents.
-### * Indents can be 2 or 4 spaces but should be consistent throughout the file.
+### Code blocks are created using indents.
+### Indents can be 2 or 4 spaces but should be consistent throughout the file.
 ``` python
 def fib(n):
     # Indent level 1: function body
@@ -79,7 +80,7 @@ def fib(n):
 ```
 
 ### For Loops
-#### If you Want an index, use enumerate()!
+##### If you Want an index, use enumerate()!
 ```python
 for i, name in enumerate(['Zack','Jay','Richard']):
     print('Hi ' + '! {0}: {1:.4f}'.format(name, i))
@@ -111,16 +112,16 @@ while True:
 for i in range(5):
     print('Line' + str(I))
 ```
-  <details>
-    <summary>Results</summary>
-  
-    - Line0
-    - Line1
-    - Line2
-    - Line3
-    - Line4
-      
-  </details>
+<details>
+  <summary>Results</summary>
+
+  - Line0
+  - Line1
+  - Line2
+  - Line3
+  - Line4
+    
+</details>
 
 ### Looping over a list, unpacking tuples:
 ``` python
