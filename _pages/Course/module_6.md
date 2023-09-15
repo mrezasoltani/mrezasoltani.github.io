@@ -36,23 +36,18 @@ print(x / float(y))
 print(x // y)
 print(str(x) + '' + '' + str(y))
 ```
-
+<details>
   <summary>Results</summary>
   13
-
-  
+  ---
   7
-  
+  ---
   1000
-  
   3.3333333333333335
-  
   3.3333333333333335
-  
   3
-  
   103
-
+</details>
 
 ### Built-in Values
 ```python
