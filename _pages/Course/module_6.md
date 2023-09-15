@@ -165,8 +165,9 @@ stuff = [1, ['hi','bye'], -0.12, None] # Can mix types
 - ['Zach', 'Jay', 'Richard', 'Abi', 'Kevin']
 
 </details>
+
 #### List slicing (indexing)
-##### x[start:stop:step]  
+##### x[start:stop:step]
 start - starting integer where the slicing of the object starts  
 stop - integer until which the slicing takes place. The slicing stops at index stop - 1.  
 step - integer value which determines the increment between each index for slicing  
