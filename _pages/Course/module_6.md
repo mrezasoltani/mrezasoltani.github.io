@@ -143,6 +143,7 @@ for x, y in [(1,10), (2,20), (3,30)]:
 
 ### List
 * List is a collection which is ordered and changeable (Mutable). Allows duplicate members.
+
 ``` python
 names = ['Zach','Jay']
 print(names[0] == 'Zach')
@@ -163,7 +164,7 @@ stuff = [1, ['hi','bye'], -0.12, None] # Can mix types
 - True
 - ['Zach', 'Jay', 'Richard']
 - ['Zach', 'Jay', 'Richard', 'Abi', 'Kevin']
-
+```
 </details>
 
 #### List slicing (indexing)
