@@ -216,15 +216,15 @@ print("Floating point numbers: %2.4f" %(13.144567))
 print("Here is a number: %s. Here is a string: %s" %(123.1,'hi')) 
 print("Here is a number: %r. Here is a string: %r" %(123.1,'hi'))
 ```
-  <details markdown=1><summary markdown="span">Results</summary>
-  
-  - Place another string with a mod and s: DEAR
-  - Floating point numbers: 13.14
-  - Floating point numbers: 13.1446
-  - Here is a number: 123.1. Here is a string: hi
-  - Here is a number: 123.1. Here is a string: 'hi'
-  
-  </details>
+    <details markdown=1><summary markdown="span">Results</summary>
+    
+    - Place another string with a mod and s: DEAR
+    - Floating point numbers: 13.14
+    - Floating point numbers: 13.1446
+    - Here is a number: 123.1. Here is a string: hi
+    - Here is a number: 123.1. Here is a string: 'hi'
+    
+    </details>
 
 #### Using _format()_ method
 * This approach is more cleaner to write
@@ -244,6 +244,7 @@ print("Object 1: {var1}, Object 2: {var2}, Object 3: {var1}".format(var1=1,var2=
 #### Using _f-String_
 * f-string is the modern way, and the shorteset and best approach to format a string:
 * Suntax \\(~\Longrightarrow\\) ``` python f"This is an f-string {var_name} and {var_name}." ```
+
 ``` python
 language = "Python"
 school = "freeCodeCamp"
@@ -262,7 +263,7 @@ print(f"The product of {num1:.2f} and {num2:.4f} is {num1 * num2:.2f}.")
   </details>
 
 ## Code blocks are created using indents.
-### Indents can be 2 or 4 spaces but should be consistent throughout the file.**
+### Indents can be 2 or 4 spaces but should be consistent throughout the file.
 ``` python
 def fib(n):
     # Indent level 1: function body
