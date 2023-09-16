@@ -389,9 +389,22 @@ for i in range(1, 4):
 - =======================
 - 1
 - 3
+- 
 </details>
 
-## Errors and Error Handeling
+## Errors and Error Handling
+### We can handle errors nicely using _try_ and _exception_ built in:
+``` python
+try:
+    1 / 0
+except ZeroDivisionError as e:
+    print(e)
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- division by zero
+
+</details>
 
 ## Python data structures
 * **Sequence containers - list, tuple**
