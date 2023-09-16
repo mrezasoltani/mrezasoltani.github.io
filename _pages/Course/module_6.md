@@ -211,10 +211,6 @@ def fib(n):
         return fib(n-1)+fib(n-2)
 ```
 
-## Condition
-
-## Errors and Error Handeling
-
 ## Loops
 ### For loops (If you want an index \\(\Longrightarrow\\) using enumerate()!)
 ```python
@@ -268,6 +264,69 @@ for x, y in [(1,10), (2,20), (3,30)]:
   - 3 30
 
 </details>
+
+## Conditions
+``` python
+if 5 + 1 == 6:
+    print("yeah!")
+'correct' if 1 + 1  == 3 else 'incorrect'
+if 1+1 == 3:
+    print("oops")
+else:
+    print("yeah!")
+for grade in [94, 79, 81, 57]:
+    if grade > 90:
+        print('A')
+    elif grade > 80:
+        print('B')
+    elif grade > 70:
+        print('C')
+    else:
+        print('Are you in the right class?')
+i = 4
+while i > 0:
+    print(i)
+    i -= 1
+print("=======================")
+for i in range(1, 4):
+    if i % 2 == 0:
+        continue
+    print(i)
+print("=======================")
+for i in range(1, 4):
+    if i % 2 == 0:
+        break
+    print(i)
+print("=======================")
+for i in range(1, 4):
+    if i % 2 == 0:
+        pass
+    else:
+        print(i)
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- yeah!
+- yeah!
+- A
+- C
+- B
+- Are you in the right class?
+- 4
+- 3
+- 2
+- 1
+- =======================
+- 1
+- 3
+- =======================
+- 1
+- =======================
+- 1
+- 3
+</details>
+
+## Errors and Error Handeling
 
 ## Python data structures
 * **Sequence containers - list, tuple**
