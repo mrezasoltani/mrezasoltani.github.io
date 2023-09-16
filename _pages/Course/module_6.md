@@ -199,7 +199,7 @@ str
 ## String Format
 
 ## Code blocks are created using indents.
-* **Indents can be 2 or 4 spaces but should be consistent throughout the file.**
+### Indents can be 2 or 4 spaces but should be consistent throughout the file.**
 ``` python
 def fib(n):
     # Indent level 1: function body
@@ -266,6 +266,7 @@ for x, y in [(1,10), (2,20), (3,30)]:
 </details>
 
 ## Conditions
+### Similar to other languages, for wrting conditions we can use _if_, _elif_, _else_, or in _while argumnet_ as shown below:
 ``` python
 if 5 + 1 == 6:
     print("yeah!")
