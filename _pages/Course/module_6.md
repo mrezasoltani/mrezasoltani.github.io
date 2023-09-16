@@ -197,6 +197,69 @@ str
 ```
 
 ## String Format
+### There are 3 ways to format strings. 
+* Old method using "%" sign
+* Using _format()_ method
+* Using _f-String_
+
+#### Old method using "%" sign
+* Using **%n1.n2f**
+  - n1 is the total minimum number of digits the string should contain
+    - Filling with whitespace if the entire number does not have this many digits
+  - n2 placeholder denotes the number of decimal point
+  - Two methods %s and %r actually convert any python object to a string
+``` python
+s = 'DEAR'
+print("Place another string with a mod and s: %s" %(s))
+print("Floating point numbers: %1.2f" %(13.144567))
+print("Floating point numbers: %2.4f" %(13.144567))
+print("Here is a number: %s. Here is a string: %s" %(123.1,'hi')) 
+print("Here is a number: %r. Here is a string: %r" %(123.1,'hi'))
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- Place another string with a mod and s: DEAR
+- Floating point numbers: 13.14
+- Floating point numbers: 13.1446
+- Here is a number: 123.1. Here is a string: hi
+- Here is a number: 123.1. Here is a string: 'hi'
+
+</details>
+
+#### Using _format()_ method
+* This approach is more cleaner to write
+``` python
+print("This is a string with an {var}".format(var='DEAR'))
+print("One: {var1}, Two: {var1}, Three: {var1}".format(var1='HI !!!'))                                   # Multiple times
+print("Object 1: {var1}, Object 2: {var2}, Object 3: {var1}".format(var1=1,var2='two',var3=12.3))        # Several Objects
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- This is a string with an DEAR
+- One: HI !!!, Two: HI !!!, Three: HI !!!
+- Object 1: 1, Object 2: two, Object 3: 1
+
+</details>
+
+#### Using _f-String_
+* f-string is the modern way, and the shorteset and best approach to format a string:
+* Suntax \\(\Longrightarrow\\) ``` python f"This is an f-string {var_name} and {var_name}." ```
+``` python
+language = "Python"
+school = "freeCodeCamp"
+print(f"I'm learning {language} from {school}.")
+num1 = 83.98765
+num2 = 9.876543218765
+print(f"The product of {num1} and {num2} is {num1 * num2}.")
+print(f"The product of {num1:.2f} and {num2:.4f} is {num1 * num2:.2f}.")
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- I'm learning Python from freeCodeCamp.
+- The product of 83.98765 and 9.876543218765 is 829.5076550675084.
+- The product of 83.99 and 9.8765 is 829.51.
+
+</details>
 
 ## Code blocks are created using indents.
 ### Indents can be 2 or 4 spaces but should be consistent throughout the file.**
