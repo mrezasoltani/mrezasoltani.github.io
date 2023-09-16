@@ -580,6 +580,14 @@ for name, number in phonebook.items():
 </details>
 
 ## Functions
+### The syntax for defining functions is as follows:
+``` python
+def f(a, b):
+    """Doing something with inputs a and b.
+      
+    """
+    return someting
+```
 
 ## Iterators, Iterables, Comprehensions
 
