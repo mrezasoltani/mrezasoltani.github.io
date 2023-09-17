@@ -824,6 +824,38 @@ def f(a, b):
     """
     return someting
 ```
+``` python
+def Myfunction():
+    print('Hello World!')
+
+Myfunction()                          # call the function
+
+print('Outside function')
+```
+``` python
+# function with two arguments
+def add_numbers(num1, num2):
+    sum = num1 + num2
+    print('Sum: ',sum)
+
+# Return value in a function with two arguments
+def add_numbers(num1, num2):
+    sum = num1 + num2
+    return sum
+
+result = add_numbers(num1, num2)      # call the function
+print(result)
+```
+### Some built-in functions:
+- print():       prints the string inside the quotation marks
+- map():
+- filter:
+- reduce:
+- pow():         returns the power of a number
+``` python
+print("Hello")
+pow(2, 3)
+```
 
 ## Iterators, Iterables, Comprehensions
 
@@ -868,7 +900,15 @@ print(mydog.age)
 - Modules (file)
 - Package (hierarchical modules)
 - Namespace and naming conflicts
-- Using import
+- **Using import**
+  - Importing Modules
+  - Modules refer to a file containing Python statements and definitions.
+  - A file containing Python code is called a module. For example: My_Module.py is a module where its module name would be My_Module.
+    ``` python
+    import os, time                          # Import ‘os’ and ‘time’ modules
+    import numpy as np                       # Import numpy modlue and changing its name to _np_ for less wrting
+    from yaml.loader import SafeLoader       # Import a function called "Safeloader" from module "yaml"
+    ```
 
 ## Decorators
 
