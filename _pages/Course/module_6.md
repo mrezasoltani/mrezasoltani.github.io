@@ -187,8 +187,6 @@ print(x)
 True               # The boolean value True.
 False              # The boolean value False.
 None               # The singleton value None.
-Ellipsis           # The ellipsis ....
-NotImplemented     # The singleton value NotImplemented.
 float("inf")       # The floating-point value inf.
 float("-inf")      # The floating-point value -inf.
 float("nan")       # The floating-point value nan.
@@ -785,12 +783,12 @@ for name, number in phonebook.items():
 </details>
 
 ### Dictionary Methods
-- get()	            Returns the value of the specified key
-- items()	        Returns a list containing a tuple for each key value pair
-- keys()	        Returns a list containing the dictionary's keys
-- values()	        Returns a list of all the values in the dictionary
-- update()	        Updates the dictionary with the specified key-value pairs
-- clear()	        Removes all the elements from the dictionary
+- get():	            Returns the value of the specified key
+- items():	        Returns a list containing a tuple for each key value pair
+- keys():	        Returns a list containing the dictionary's keys
+- values():	        Returns a list of all the values in the dictionary
+- update():	        Updates the dictionary with the specified key-value pairs
+- clear():	        Removes all the elements from the dictionary
 
 ``` python
 a = {"Ali": 33, "John": 25, "Jeff": 58}
