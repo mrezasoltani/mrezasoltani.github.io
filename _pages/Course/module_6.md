@@ -20,6 +20,9 @@ print('Hello World')
 ## IDEs:
 - IDLE
   - IDLE comes with Python installation by default.
+- Jupyter Notebook and JupyterLab ([link](https://docs.jupyter.org/en/latest/))
+  -  Jupyter Notebook and JupyterLab are two web-based notebooks of the bigger project called Project Jupyter documentation. A notebook is a shareable document that combines computer code, plain language descriptions, data, rich visualizations like 3D models, charts, graphs and figures, and interactive controls.
+  -  One you installed Anaconda, you can install and launch Jupyter Notebook or JupyterLab, and start imidiately wrtie and run Python codes.
 - PyCharm
   - PyCharm is a widely used IDE ([link](https://www.jetbrains.com/pycharm/)).
 - Spyder 
@@ -194,6 +197,16 @@ if [1,2] != [3,4]:   # Can check for equality
 int
 float
 str
+```
+
+``` python
+False	await	else	import	pass
+None	break	except	in	raise
+True	class	finally	is	return
+and	continue	for	lambda	try
+as	def	from	nonlocal	while
+assert	del	global	not	with
+async	elif	if	or	yield
 ```
 
 ## String Format
