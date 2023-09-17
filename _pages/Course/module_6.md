@@ -422,12 +422,12 @@ except ZeroDivisionError as e:
 AssertionError	      Raised when an assert statement fails.
 AttributeError	      Raised when attribute assignment or reference fails.
 EOFError	      Raised when the input() function hits end-of-file condition.
-FloatingPointError Raised when a floating point operation fails.
+FloatingPointError   Raised when a floating point operation fails.
 GeneratorExit	      Raise when close() method a generator is called.
-ImportError	          Raised when the imported module is not found.
-IndexError	          Raised when the index of a sequence is out of range.
-KeyError	            Raised when a key is not found in a dictionary.
-KeyboardInterrupt	    Raised when the user hits the interrupt key (Ctrl+C or Delete).
+ImportError	        Raised when the imported module is not found.
+IndexError	        Raised when the index of a sequence is out of range.
+KeyError	          Raised when a key is not found in a dictionary.
+KeyboardInterrupt	  Raised when the user hits the interrupt key (Ctrl+C or Delete).
 MemoryError	          Raised when an operation runs out of memory.
 NameError	            Raised when a variable is not found in local or global scope.
 NotImplementedError	  Raised by abstract methods.
