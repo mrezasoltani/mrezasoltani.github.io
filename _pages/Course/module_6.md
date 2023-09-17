@@ -544,10 +544,10 @@ print(a.index(-1))
 print(max(a))
 print(min(a))
 print(len(a))
-print("======== Pop method ===========")
+print("======== pop method ===========")
 print(a.pop(5))
 print(a)
-print("======== Remove method ========")
+print("======== remove method ========")
 a.remove(4)
 print(a)
 ```
@@ -599,8 +599,8 @@ print(single)
 </details>
 
 ### Tuple Methods
-- count()   Returns the number of times a specified value occurs in a tuple
-- index()   Searches the tuple for a specified value and returns the position of where it was found
+- count():   Returns the number of times a specified value occurs in a tuple
+- index():   Searches the tuple for a specified value and returns the position of where it was found
 
 ``` python
 a = (2, 3, 10, -1, 10, 10)
@@ -667,21 +667,21 @@ print(names.intersection(names_2))
 </details>
 
 ### Set Methods
-- add()	                    Adds an element to the set
-- clear()	                Removes all the elements from the set
-- copy()	                Returns a copy of the set
-- difference()	            Returns a set containing the difference between two or more sets
-- difference_update()	    Removes the items in this set that are also included in another, specified set
-- discard()	                Remove the specified item
-- intersection()	        Returns a set, that is the intersection of two or more sets
-- isdisjoint()	            Returns whether two sets have a intersection or not
-- issubset()	            Returns whether another set contains this set or not
-- issuperset()	            Returns whether this set contains another set or not
-- pop()	                    Removes an element from the set
-- remove()	                Removes the specified element
-- symmetric_difference()	Returns a set with the symmetric differences of two sets
-- union()	                Return a set containing the union of sets
-- update()	                Update the set with another set, or any other iterable
+- add():	                    Adds an element to the set
+- clear():	                Removes all the elements from the set
+- copy():	                Returns a copy of the set
+- difference():	            Returns a set containing the difference between two or more sets
+- difference_update():	    Removes the items in this set that are also included in another, specified set
+- discard():	                Remove the specified item
+- intersection():	        Returns a set, that is the intersection of two or more sets
+- isdisjoint():	            Returns whether two sets have a intersection or not
+- issubset():	            Returns whether another set contains this set or not
+- issuperset():	            Returns whether this set contains another set or not
+- pop():	                    Removes an element from the set
+- remove():	                Removes the specified element
+- symmetric_difference():	Returns a set with the symmetric differences of two sets
+- union():	                Return a set containing the union of sets
+- update():	                Update the set with another set, or any other iterable
 
 ``` python
 a = {"Ali", 4, "John", 6, 8, -1}
@@ -784,6 +784,37 @@ for name, number in phonebook.items():
 
 </details>
 
+### Dictionary Methods
+- get()	            Returns the value of the specified key
+- items()	        Returns a list containing a tuple for each key value pair
+- keys()	        Returns a list containing the dictionary's keys
+- values()	        Returns a list of all the values in the dictionary
+- update()	        Updates the dictionary with the specified key-value pairs
+- clear()	        Removes all the elements from the dictionary
+
+``` python
+a = {"Ali": 33, "John": 25, "Jeff": 58}
+print(a.get("Ali"))
+print(a.items())
+print(a.keys())
+print(a.values())
+b = {"Chris": 14}
+a.update(b)
+print(a)
+a.clear()
+print(a)
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- 33
+- dict_items([('Ali', 33), ('John', 25), ('Jeff', 58)])
+- dict_keys(['Ali', 'John', 'Jeff'])
+- dict_values([33, 25, 58])
+- {'Ali': 33, 'John': 25, 'Jeff': 58, 'Chris': 14}
+- {}
+
+</details>
+
 ## Functions
 ### The syntax for defining functions is as follows:
 ``` python
@@ -797,7 +828,7 @@ def f(a, b):
 ## Iterators, Iterables, Comprehensions
 
 ## Classes (Object-oriented Programming)
-### The super() builtin returns a proxy object, a substitute object that can call methods of the base class via delegation. Indirection call or ability to reference base object with super().
+* The super() builtin returns a proxy object, a substitute object that can call methods of the base class via delegation. Indirection call or ability to reference base object with super().
 
 ``` python
 class Animal(object):
