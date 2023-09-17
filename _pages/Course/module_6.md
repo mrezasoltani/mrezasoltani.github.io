@@ -887,13 +887,13 @@ pow(2, 3)
   mydog.growup()
   print(mydog.age)
   ```
-<details markdown=1><summary markdown="span">Results</summary>
-
-- Dog 5
-- False
-- 12
-
-</details>
+  <details markdown=1><summary markdown="span">Results</summary>
+  
+  - Dog 5
+  - False
+  - 12
+  
+  </details>
 
 ## Packages and namespace
 - Modules (file)
