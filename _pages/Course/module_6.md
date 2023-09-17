@@ -422,8 +422,8 @@ except ZeroDivisionError as e:
 AssertionError	      Raised when an assert statement fails.
 AttributeError	      Raised when attribute assignment or reference fails.
 EOFError	      Raised when the input() function hits end-of-file condition.
-FloatingPointError	  Raised when a floating point operation fails.
-GeneratorExit	        Raise when close() method a generator is called.
+FloatingPointError Raised when a floating point operation fails.
+GeneratorExit	      Raise when close() method a generator is called.
 ImportError	          Raised when the imported module is not found.
 IndexError	          Raised when the index of a sequence is out of range.
 KeyError	            Raised when a key is not found in a dictionary.
