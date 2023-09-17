@@ -427,9 +427,9 @@ GeneratorExit	      Raise when close() method a generator is called.
 ImportError	      Raised when the imported module is not found.
 IndexError	      Raised when the index of a sequence is out of range.
 KeyError	      Raised when a key is not found in a dictionary.
-KeyboardInterrupt	 Raised when the user hits the interrupt key (Ctrl+C or Delete).
-MemoryError	       Raised when an operation runs out of memory.
-NameError	         Raised when a variable is not found in local or global scope.
+KeyboardInterrupt	Raised when the user hits the interrupt key (Ctrl+C or Delete).
+MemoryError	      Raised when an operation runs out of memory.
+NameError	       Raised when a variable is not found in local or global scope.
 NotImplementedError	Raised by abstract methods.
 OSError	              Raised when system operation causes system related error.
 OverflowError	        Raised when the result of an arithmetic operation is too large to be represented.
