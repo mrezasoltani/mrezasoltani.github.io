@@ -431,9 +431,9 @@ KeyboardInterrupt	Raised when the user hits the interrupt key (Ctrl+C or Delete)
 MemoryError	      Raised when an operation runs out of memory.
 NameError	      Raised when a variable is not found in local or global scope.
 NotImplementedError	Raised by abstract methods.
-OSError	          Raised when system operation causes system related error.
+OSError	              Raised when system operation causes system related error.
 OverflowError	      Raised when the result of an arithmetic operation is too large to be represented.
-ReferenceError	     Raised when a weak reference proxy is used to access a garbage collected referent.
+ReferenceError	      Raised when a weak reference proxy is used to access a garbage collected referent.
 RuntimeError	      Raised when an error does not fall under any other category.
 StopIteration	        Raised by next() function to indicate that there is no further item to be returned by iterator.
 SyntaxError	        Raised by parser when syntax error is encountered.
