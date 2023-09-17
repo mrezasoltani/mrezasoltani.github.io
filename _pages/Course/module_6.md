@@ -850,6 +850,7 @@ print(result)
 - filter:
 - reduce:
 - pow():         returns the power of a number
+
 ``` python
 print("Hello")
 pow(2, 3)
@@ -860,32 +861,32 @@ pow(2, 3)
 ## Classes (Object-oriented Programming)
 * The super() builtin returns a proxy object, a substitute object that can call methods of the base class via delegation. Indirection call or ability to reference base object with super().
 
-``` python
-class Animal(object):
-    def __init__(self, species, age): # Constructor `a = Animal(‘bird’, 10)`
-        self.species = species # Refer to instance with `self`
-        self.age = age # All instance variables are public
-        
-    def isPerson(self): # Invoked with `a.isPerson()`
-        return self.species == 'Homo Sapiens'
-    
-    def growup(self):
-        self.age += 1
-        
-class Dog(Animal): # Inherits Animal’s methods
-    def __init__(self, age):
-        super().__init__(self.__class__.__name__, age)
-    
-    def growup(self): # Override for dog years
-        self.age += 7
-```
-``` python
-mydog = Dog(5)
-print(mydog.species, mydog.age)
-print(mydog.isPerson())
-mydog.growup()
-print(mydog.age)
-```
+  ``` python
+  class Animal(object):
+      def __init__(self, species, age): # Constructor `a = Animal(‘bird’, 10)`
+          self.species = species # Refer to instance with `self`
+          self.age = age # All instance variables are public
+          
+      def isPerson(self): # Invoked with `a.isPerson()`
+          return self.species == 'Homo Sapiens'
+      
+      def growup(self):
+          self.age += 1
+          
+  class Dog(Animal): # Inherits Animal’s methods
+      def __init__(self, age):
+          super().__init__(self.__class__.__name__, age)
+      
+      def growup(self): # Override for dog years
+          self.age += 7
+  ```
+  ``` python
+  mydog = Dog(5)
+  print(mydog.species, mydog.age)
+  print(mydog.isPerson())
+  mydog.growup()
+  print(mydog.age)
+  ```
 <details markdown=1><summary markdown="span">Results</summary>
 
 - Dog 5
@@ -902,11 +903,12 @@ print(mydog.age)
   - Importing Modules
   - Modules refer to a file containing Python statements and definitions.
   - A file containing Python code is called a module. For example: My_Module.py is a module where its module name would be My_Module.
-    ``` python
-    import os, time                          # Import ‘os’ and ‘time’ modules
-    import numpy as np                       # Import numpy modlue and changing its name to _np_ for less wrting
-    from yaml.loader import SafeLoader       # Import a function called "Safeloader" from module "yaml"
-    ```
+    
+      ``` python
+      import os, time                          # Import ‘os’ and ‘time’ modules
+      import numpy as np                       # Import numpy modlue and changing its name to _np_ for less wrting
+      from yaml.loader import SafeLoader       # Import a function called "Safeloader" from module "yaml"
+      ```
 
 ## Decorators
 
