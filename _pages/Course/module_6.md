@@ -204,8 +204,8 @@ str
 False	await	else	import	pass
 None	break	except	in	raise
 True	class	finally	is	return
-and	for	lambda	try  continue	
-as	def	from	while  nonlocal	
+and	for	lambda	try     continue	
+as	def	from	while     nonlocal	
 assert	del	global	not	with
 async	elif	if	or	yield
 ```
