@@ -520,6 +520,55 @@ numbers[::-1]
 
 </details>
 
+### List Methods:
+- sorted(): Sorts the list in ascending order.
+- append(): Adds a single element to a list.
+- extend(): Adds multiple elements to a list.
+- index(): Returns the first appearance of the specified value.
+- max(): It returns an item from the list with max value.
+- min(): It returns an item from the list with min value.
+- len(): It gives the total length of the list.
+- pop(): It remove and return item at index (default last).
+- remove(): It remove first occurrence of value
+
+``` python
+a = [5, 1, 7, -1, 4, 10, 3]
+print(sorted(a))
+a.append(100)
+print(a)
+print("======== extend method ========")
+b = [20, 20, 40]
+a.extend(b)
+print(a)
+print(a.index(-1))
+print(max(a))
+print(min(a))
+print(len(a))
+print("======== Pop method ===========")
+print(a.pop(5))
+print(a)
+print("======== Remove method ========")
+a.remove(4)
+print(a)
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- [-1, 1, 3, 4, 5, 7, 10]
+- [5, 1, 7, -1, 4, 10, 3, 100]
+- ======== extend method ========
+- [5, 1, 7, -1, 4, 10, 3, 100, 20, 20, 40]
+- 3
+- 100
+- -1
+- 11
+- ======== Pop method ===========
+- 10
+- [5, 1, 7, -1, 4, 3, 100, 20, 20, 40]
+- ======== Remove method ========
+- [5, 1, 7, -1, 3, 100, 20, 20, 40]
+
+</details>
+
 ### Tuple
 * A tuple is a collection which is ordered and unchangeable (Immutable).
   - tupels cannot be modifies. This makes the a good choice for _key_ choice in hashtables or dictionaries.
@@ -546,6 +595,24 @@ print(single)
 - ('Zach', 'Jay')
 - 'tuple' object does not support item assignment
 - (10,)
+
+</details>
+
+### Tuple Methods
+- count()   Returns the number of times a specified value occurs in a tuple
+- index()   Searches the tuple for a specified value and returns the position of where it was found
+
+``` python
+a = (2, 3, 10, -1, 10, 10)
+print(a.count(10))
+print(a.index(-1))
+print(a.index(10))
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- 3
+- 3
+- 2
 
 </details>
 
@@ -596,6 +663,85 @@ print(names.intersection(names_2))
 - ========= set intersection ============
 - {'Jay'}
 - {'Jay'}
+
+</details>
+
+### Set Methods
+- add()	                    Adds an element to the set
+- clear()	                Removes all the elements from the set
+- copy()	                Returns a copy of the set
+- difference()	            Returns a set containing the difference between two or more sets
+- difference_update()	    Removes the items in this set that are also included in another, specified set
+- discard()	                Remove the specified item
+- intersection()	        Returns a set, that is the intersection of two or more sets
+- isdisjoint()	            Returns whether two sets have a intersection or not
+- issubset()	            Returns whether another set contains this set or not
+- issuperset()	            Returns whether this set contains another set or not
+- pop()	                    Removes an element from the set
+- remove()	                Removes the specified element
+- symmetric_difference()	Returns a set with the symmetric differences of two sets
+- union()	                Return a set containing the union of sets
+- update()	                Update the set with another set, or any other iterable
+
+``` python
+a = {"Ali", 4, "John", 6, 8, -1}
+print("========= add method ============")
+a.add("Jeff")
+print(a)
+print("========= clear method ============")
+a.clear()
+print(a)
+a = {"Ali", 4, "John", 6, 8, -1}
+b = {6, "Ali", 100, 3.6}
+print("======= difference method ========")
+print(a.difference(b))
+print("========= discard method ==========")
+a.discard("John")
+print(a)
+print("======= intersection method ========")
+print(a.intersection(b))
+print(a.isdisjoint(b))
+c = {4, 8}
+print("========= issubset method =========")
+print(c.issubset(a))
+print("======= issuperset method ========")
+print(a.issuperset(b))
+print("========= remove method ==========")
+b.remove(3.6)
+print(b)
+print("======= symmetric_difference method ========")
+print(a.symmetric_difference(b))
+print(a.union(b))
+a = {"Ali", 4, "John", 6, 8, -1}
+print("========= update method ==========")
+a.update(b)
+print(a)
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- ========= add method ============
+- {4, 6, 8, 'John', 'Ali', 'Jeff', -1}
+- ========= clear method ============
+- set()
+- ======= difference method ========
+- {8, 4, 'John', -1}
+- ========= discard method ==========
+- {4, 6, 8, 'Ali', -1}
+- ======= intersection method ========
+- {'Ali', 6}
+- False
+- ========= issubset method =========
+- True
+- ======= issuperset method ========
+- False
+- ========= remove method ==========
+- {'Ali', 100, 6}
+- ======= symmetric_difference method ========
+- {100, 4, 8, -1}
+- {'Ali', 4, 100, 6, 8, -1}
+- ========= update method ==========
+- {4, 100, 6, 8, 'John', 'Ali', -1}
+
 
 </details>
 
