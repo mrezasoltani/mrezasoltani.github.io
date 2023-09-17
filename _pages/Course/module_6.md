@@ -444,8 +444,8 @@ SystemExit	      Raised by sys.exit() function.
 TypeError	      Raised when a function or operation is applied to an object of incorrect type.
 UnboundLocalError	 Raised when a reference is made to a local variable in a function or method, but no value has been bound to that variable.
 UnicodeError	      Raised when a Unicode-related encoding or decoding error occurs.
-UnicodeEncodeError  Raised when a Unicode-related error occurs during encoding.
-UnicodeDecodeError   Raised when a Unicode-related error occurs during decoding.
+UnicodeEncodeError   Raised when a Unicode-related error occurs during encoding.
+UnicodeDecodeError    Raised when a Unicode-related error occurs during decoding.
 UnicodeTranslateError	 Raised when a Unicode-related error occurs during translating.
 ValueError	      Raised when a function gets an argument of correct type but improper value.
 ZeroDivisionError	 Raised when the second operand of division or modulo operation is zero.
