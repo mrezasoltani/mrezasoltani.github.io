@@ -638,10 +638,10 @@ ZeroDivisionError	 Raised when the second operand of division or modulo operatio
   </details>
 
 ### Set
-  * A set is a collection which is unordered and unindexed. In Python sets are written with curly brackets.
-    - Please note that if you create a set with a curly brackets, it should be non-empty; otherwise it is treated as a dictionary.
-  * It is suitable for creating unique collection of objects.
-  * We can do set mathematical operations with this data structure such as _unioin_, _difference_, _intersection_, etc.
+* A set is a collection which is unordered and unindexed. In Python sets are written with curly brackets.
+  - Please note that if you create a set with a curly brackets, it should be non-empty; otherwise it is treated as a dictionary.
+* It is suitable for creating unique collection of objects.
+* We can do set mathematical operations with this data structure such as _unioin_, _difference_, _intersection_, etc.
 
   ``` python
   empty_set = set()                   # Empty set
@@ -813,28 +813,28 @@ ZeroDivisionError	 Raised when the second operand of division or modulo operatio
   - update():	        Updates the dictionary with the specified key-value pairs
   - clear():	        Removes all the elements from the dictionary
   
-  ``` python
-  a = {"Ali": 33, "John": 25, "Jeff": 58}
-  print(a.get("Ali"))
-  print(a.items())
-  print(a.keys())
-  print(a.values())
-  b = {"Chris": 14}
-  a.update(b)
-  print(a)
-  a.clear()
-  print(a)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-  
-  - 33
-  - dict_items([('Ali', 33), ('John', 25), ('Jeff', 58)])
-  - dict_keys(['Ali', 'John', 'Jeff'])
-  - dict_values([33, 25, 58])
-  - {'Ali': 33, 'John': 25, 'Jeff': 58, 'Chris': 14}
-  - {}
-  
-  </details>
+    ``` python
+    a = {"Ali": 33, "John": 25, "Jeff": 58}
+    print(a.get("Ali"))
+    print(a.items())
+    print(a.keys())
+    print(a.values())
+    b = {"Chris": 14}
+    a.update(b)
+    print(a)
+    a.clear()
+    print(a)
+    ```
+    <details markdown=1><summary markdown="span">Results</summary>
+    
+    - 33
+    - dict_items([('Ali', 33), ('John', 25), ('Jeff', 58)])
+    - dict_keys(['Ali', 'John', 'Jeff'])
+    - dict_values([33, 25, 58])
+    - {'Ali': 33, 'John': 25, 'Jeff': 58, 'Chris': 14}
+    - {}
+    
+    </details>
 
 ## Functions
 ### The syntax for defining functions is as follows:
