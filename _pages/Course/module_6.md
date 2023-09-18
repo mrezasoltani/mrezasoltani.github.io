@@ -1094,4 +1094,41 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
 
 ## Decorators
 
-## Type Hints 
+## Type Hints
+
+## Numpy
+* Optimized library for matrix and vector computation.  
+* Makes use of C/C++ subroutines and memory-efficient data structures.  
+  - Lots of computation can be efficiently represented as np.ndarray.
+* This is the data type that you will use to represent matrix/vector computations.
+  - Constructor function is np.array()  
+
+  ``` python
+  import numpy as np
+  x = np.array([1,2,3])
+  y = np.array([[3,4,5]])
+  z = np.array([[1], [2], [3]])
+  t = np.array([[6,7],[8,9]])
+  print("x:", x)
+  print("y:", y)
+  print("z:", z)
+  print("===== shape of arrays =====")
+  print(x.shape)
+  print(y.shape)
+  print(z.shape)
+  print(t.shape)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+    
+    - x: [1 2 3]
+    - y: [[3 4 5]]
+    - z: [[1]
+         [2]
+         [3]]
+    - ===== shape of arrays =====
+    - (3,)
+    - (1, 3)
+    - (3, 1)
+    - (2, 2)
+    
+  </details>
