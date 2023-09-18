@@ -1209,7 +1209,8 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   - For example, "axis = 1" means taking max() operaiton row-wise (recall axis = 1 denotes rows)
     - This results in taking max() between entries of a row (different columns)
     - If the original array has two dimension (i.e., a \\(m\times n\\) matrix), then the max() output is a rank 1 array with dimension written as (m,)
-  - "keepdims = True" argument force the output has the exact shape (dimension) before applying the operation.  
+  - "keepdims = True" argument force the output has the exact shape (dimension) before applying the operation.
+    - "keepdims" is the argument for many other math operations such as np.min, np.sum(), np.mean(), etx
 
   ``` python
   x = np.array([[1, 2, 3],[4, 5, 6]])
