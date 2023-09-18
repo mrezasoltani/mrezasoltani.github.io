@@ -1097,18 +1097,27 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
 ## Type Hints
 
 ## Numpy
+* Numpy is the core library for scientific computing in Python. 
+* It provides a high-performance multidimensional array object, and tools for working with these arrays.
 * Optimized library for matrix and vector computation.  
 * Makes use of C/C++ subroutines and memory-efficient data structures.  
   - Lots of computation can be efficiently represented as np.ndarray.
 * This is the data type that you will use to represent matrix/vector computations.
   - Constructor function is np.array()  
 
+
+* **Arrays**
+* A numpy array is a grid of values, all of the same type, and is indexed by a tuple of nonnegative integers.
+* The number of dimensions is the rank of the array
+  - The shape of an array is a tuple of integers giving the size of the array along each dimension.
+* One can initialize numpy arrays from nested Python lists.
+
   ``` python
   import numpy as np
-  x = np.array([1,2,3])
-  y = np.array([[3,4,5]])
-  z = np.array([[1], [2], [3]])
-  t = np.array([[6,7],[8,9]])
+  x = np.array([1,2,3])              # Create a rank 1 array
+  y = np.array([[3,4,5]])            # Create a rank 2 array
+  z = np.array([[1], [2], [3]])      # Create a rank 2 array
+  t = np.array([[6,7],[8,9]])        # Create a rank 2 array
   print("x:", x)
   print("y:", y)
   print("z:", z)
@@ -1132,3 +1141,60 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
     - (2, 2)
     
   </details>
+
+* numpy has many functions to create different arrays:
+  ``` python
+  print("==== an array of all zeros ====")
+  a = np.zeros((2,2))   
+  print(a)                      
+  print("==== an array of all ones ====")
+  b = np.ones((1,2))   
+  print(b)             
+  print("==== an array of constant values ====")
+  c = np.full((2,2), 7)  
+  print(c)                           
+  print("==== a 2x2 identity matrix ====")
+  d = np.eye(2)        
+  print(d)             
+  print("==== an array with random entries ====")
+  e = np.random.random((2,2)) 
+  print(e) 
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+
+  - ==== an array of all zeros ====
+  - [[0. 0.]
+    [0. 0.]]
+  - ==== an array of all ones ====
+  - [[1. 1.]]
+  - ==== an array of constant values ====
+  - [[7 7]
+    [7 7]]
+  - ==== a 2x2 identity matrix ====
+  - [[1. 0.]
+    [0. 1.]]
+  - ==== an array with random entries ====
+  - [[0.33147697 0.76320062]
+    [0.08826422 0.47941476]]
+
+  </details>
+  
+* Other operations
+  ``` python
+  x = np.array([[1,2,3],[4,5,6]])
+  print(x.shape)
+  print(np.max(x, axis = 1))
+  np.max(x, axis = 1).shape, np.max(x, axis = 1, keepdims = True).shape
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+    
+  - (2, 3)
+  - [3 6]
+  - ((2,), (2, 1))
+  
+  </details>
+
+* Matrix Operations: np.dot, np.linalg.norm, .T, +, -, *, ...
+* Infix operators (i.e. +, -, *, **, /) are element-wise.  
+* Matrix multiplication is done with np.dot(x, W) or x.dot(W). Transpose a matrix with x.T 
+* Note: Shapes (N,) != (1, N) != (N,1)
