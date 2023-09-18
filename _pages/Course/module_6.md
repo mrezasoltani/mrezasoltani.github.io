@@ -1106,11 +1106,13 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   - Constructor function is np.array()  
 
 
-* **Arrays**
-* A numpy array is a grid of values, all of the same type, and is indexed by a tuple of nonnegative integers.
+### Arrays
+* A numpy array is a grid of values, all the same type, and is indexed by a tuple of nonnegative integers.
 * The number of dimensions is the rank of the array
   - The shape of an array is a tuple of integers giving the size of the array along each dimension.
 * One can initialize numpy arrays from nested Python lists.
+* The first dimension (axis = 0) denotes the columns
+* The second dimension (axis = 1) denotes the rows.
 
   ``` python
   import numpy as np
@@ -1132,8 +1134,8 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
     - x: [1 2 3]
     - y: [[3 4 5]]
     - z: [[1]
-         [2]
-         [3]]
+    -     [2]
+    -     [3]]
     - ===== shape of arrays =====
     - (3,)
     - (1, 3)
@@ -1142,7 +1144,8 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
     
   </details>
 
-* numpy has many functions to create different arrays:
+* Numpy has many functions to create different arrays:
+
   ``` python
   print("==== an array of all zeros ====")
   a = np.zeros((2,2))   
@@ -1164,34 +1167,100 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
 
   - ==== an array of all zeros ====
   - [[0. 0.]
-    [0. 0.]]
+  -   [0. 0.]]
   - ==== an array of all ones ====
   - [[1. 1.]]
   - ==== an array of constant values ====
   - [[7 7]
-    [7 7]]
+  -   [7 7]]
   - ==== a 2x2 identity matrix ====
   - [[1. 0.]
-    [0. 1.]]
+  -   [0. 1.]]
   - ==== an array with random entries ====
   - [[0.33147697 0.76320062]
-    [0.08826422 0.47941476]]
+  - [0.08826422 0.47941476]]
+
+  </details>
+
+### Data Types
+* Numpy array are a collection of elements with the same type.
+* Numpy provides a large set of numeric datatypes that can be used to construct arrays.
+* Numpy tries to guess a datatype when an array is created.
+    - Functions that construct arrays usually include an optional argument to explicitly specify the datatyp
+  ``` python
+  x = np.array([3, 4])                    # numpy choose the datatype
+  print(x.dtype)         
+  x = np.array([1.3, 2.0])                # numpy choose the datatype
+  print(x.dtype)             
+  x = np.array([4, 2], dtype=np.int64)    # User datatype
+  print(x.dtype)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+
+  - int64
+  - float64
+  - int64
 
   </details>
   
-* Other operations
+### Math Operations
+* max()/min() operation along one axis:
+  - Argument "axis" controls the direction of operation
+  - For example, "axis = 1" means taking max() operaiton row-wise (recall axis = 1 denotes rows)
+    - This results in taking max() between entries of a row (different columns)
+    - If the original array has two dimension (i.e., a \\(m\times n\\) matrix), then the max() output is a rank 1 array with dimension written as (m,)
+  - "keepdims = True" argument force the output has the exact shape (dimension) before applying the operation.  
+
   ``` python
-  x = np.array([[1,2,3],[4,5,6]])
-  print(x.shape)
-  print(np.max(x, axis = 1))
-  np.max(x, axis = 1).shape, np.max(x, axis = 1, keepdims = True).shape
+  x = np.array([[1, 2, 3],[4, 5, 6]])
+  print("x shape:", x.shape)
+  xm1 = np.max(x, axis = 1)
+  print(xm1, xm1.shape)
+  xm2 = np.max(x, axis = 1, keepdims = True)
+  print(xm2, xm2.shape)
+  print("=======================")
+  y = np.array([[[1, 2, 3],[4, 5, 6]], [[-1, 3, 2],[0, 1, 2]]])
+  print("y shape:", y.shape)
+  ym1 = np.max(y, axis = 1)
+  print(ym1, ym1.shape)
+  ym2 = np.max(y, axis = 1, keepdims=True)
+  print(ym2, ym2.shape)
   ```
   <details markdown=1><summary markdown="span">Results</summary>
     
-  - (2, 3)
-  - [3 6]
-  - ((2,), (2, 1))
+  - x shape: (2, 3)
+  - [3 6] (2,)
+  - [[3]
+  -    [6]] (2, 1)
+  - =======================
+  - y shape: (2, 2, 3)
+  - [[4 5 6]
+  -    [0 3 2]] (2, 3)
+  -  [[[4 5 6]]
+  -    [[0 3 2]]] (2, 1, 3)
   
+  </details>
+
+* Transpose and reshape operation:
+  - "-1" in one axis means everything left. For example, ``` python x.reshape((1,-1) ``` reshapes the \\(x\\) dimension such that the first dimension has one and the second dimension has 3 elements.
+
+  ``` python
+  x = np.array([1, 2, 3])
+  print(x.shape)
+  print(x.T.shape)
+  print(x.reshape((1, -1)).shape)
+  print(x.reshape((-1, 1)).shape)
+  xx = np.array([[1, 2, 3]])
+  print(xx.shape)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+    
+  - (3,)
+  - (3,)
+  - (1, 3)
+  - (3, 1)
+  - (1, 3)
+
   </details>
 
 * Matrix Operations: np.dot, np.linalg.norm, .T, +, -, *, ...
