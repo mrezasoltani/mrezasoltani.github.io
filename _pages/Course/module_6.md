@@ -519,7 +519,8 @@ numbers[::-1]
 </details>
 
 ### List Methods:
-- sorted(): Sorts the list in ascending order.
+- sort(): Sorts the list in ascending order.
+  - We can also use sorted() built-in function.
 - append(): Adds a single element to a list.
 - extend(): Adds multiple elements to a list.
 - index(): Returns the first appearance of the specified value.
@@ -531,13 +532,18 @@ numbers[::-1]
 
 ``` python
 a = [5, 1, 7, -1, 4, 10, 3]
+rint("======= using sorted function =======")
 print(sorted(a))
+print("======== using sort() method ========")
+a.sort()
+print(a)
 a.append(100)
 print(a)
 print("======== extend method ========")
 b = [20, 20, 40]
 a.extend(b)
 print(a)
+a = [5, 1, 7, -1, 4, 10, 3]
 print(a.index(-1))
 print(max(a))
 print(min(a))
@@ -551,10 +557,13 @@ print(a)
 ```
 <details markdown=1><summary markdown="span">Results</summary>
 
+- ======= using sorted function =======
 - [-1, 1, 3, 4, 5, 7, 10]
-- [5, 1, 7, -1, 4, 10, 3, 100]
+- ======== using sort() method ========
+- [-1, 1, 3, 4, 5, 7, 10]
+- [-1, 1, 3, 4, 5, 7, 10, 100]
 - ======== extend method ========
-- [5, 1, 7, -1, 4, 10, 3, 100, 20, 20, 40]
+- [-1, 1, 3, 4, 5, 7, 10, 100, 20, 20, 40]
 - 3
 - 100
 - -1
@@ -843,18 +852,40 @@ def add_numbers(num1, num2):
 
 result = add_numbers(num1, num2)      # call the function
 print(result)
+
+def test_function(a. b):              # some placeholder (doinf nothing) for a function
+  pass
 ```
 ### Some built-in functions:
-- print():       prints the string inside the quotation marks
-- map():
-- filter:
-- reduce:
-- pow():         returns the power of a number
+- print():       It prints the string inside the quotation marks
+- map():         It applies a function to all the items in an input_list
+  ``` python map(function_to_apply, list_of_inputs)```
+- filter:        It creates a list of elements for which a function returns true
+- reduce:        It applies a rolling computation to sequential pairs of values in a list
+- pow():         it returns the power of a number
 
 ``` python
 print("Hello")
 pow(2, 3)
 ```
+* **map()**
+``` python
+#passing all the list elements to a function one-by-one and then collect the output. For instance:
+items = [1, 2, 3, 4, 5]
+squared = []
+for i in items:
+    squared.append(i**2)
+
+#Map allows us to implement this in a much simpler and nicer way. Here you go:
+items = [1, 2, 3, 4, 5]
+squared = list(map(lambda x: x**2, items))
+print(squared)
+```
+<details markdown=1><summary markdown="span">Results</summary>
+  
+  - [1, 4, 9, 16, 25]
+
+  </details>
 
 ## Iterators, Iterables, Comprehensions
 
