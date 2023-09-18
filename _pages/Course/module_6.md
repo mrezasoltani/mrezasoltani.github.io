@@ -909,23 +909,57 @@ pow(2, 3)
 
 * **map()**
 
-``` python
-#passing all the list elements to a function one-by-one and then collect the output. For instance:
-items = [1, 2, 3, 4, 5]
-squared = []
-for i in items:
-    squared.append(i**2)
-
-#Map allows us to implement this in a much simpler and nicer way. Here you go:
-items = [1, 2, 3, 4, 5]
-squared = list(map(lambda x: x**2, items))
-print(squared)
-```
-<details markdown=1><summary markdown="span">Results</summary>
+  ``` python
+  # passing all the list elements to a function one-by-one and then collect the output. For instance:
+  items = [1, 2, 3, 4, 5]
+  squared = []
+  for i in items:
+      squared.append(i**2)
   
-  - [1, 4, 9, 16, 25]
+  # map allows us to implement this in a much simpler and nicer way. Here you go:
+  items = [1, 2, 3, 4, 5]
+  squared = list(map(lambda x: x**2, items))
+  print(squared)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+    
+    - [1, 4, 9, 16, 25]
+  
+  </details>
 
-</details>
+* **filter()**
+
+  ``` python
+  number_list = range(-5, 5)
+  less_than_zero = list(filter(lambda x: x < 0, number_list))
+  print(less_than_zero)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+    
+    - [-5, -4, -3, -2, -1]
+  
+  </details>
+
+* **reduce()**
+
+  ``` python
+  # multiplication without reduce
+  product = 1
+  list = [1, 2, 3, 4]
+  for num in list:
+      product = product * num
+  
+  # multiplication with reduce
+  from functools import reduce
+  product = reduce((lambda x, y: x * y), [1, 2, 3, 4])
+  print(product)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+    
+    - 24
+  
+  </details>
+
 
 ## Iterators, Iterables, Comprehensions
 
