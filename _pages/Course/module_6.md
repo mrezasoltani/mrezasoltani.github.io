@@ -1215,28 +1215,36 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   ``` python
   x = np.array([[1, 2, 3],[4, 5, 6]])
   print("x shape:", x.shape)
+  print("=======================")
   xm1 = np.max(x, axis = 1)
   print(xm1, xm1.shape)
+  print("=======================")
   xm2 = np.max(x, axis = 1, keepdims = True)
   print(xm2, xm2.shape)
   print("=======================")
   y = np.array([[[1, 2, 3],[4, 5, 6]], [[-1, 3, 2],[0, 1, 2]]])
   print("y shape:", y.shape)
+  print("=======================")
   ym1 = np.max(y, axis = 1)
   print(ym1, ym1.shape)
+  print("=======================")
   ym2 = np.max(y, axis = 1, keepdims=True)
   print(ym2, ym2.shape)
   ```
   <details markdown=1><summary markdown="span">Results</summary>
     
   - x shape: (2, 3)
+  - =======================
   - [3 6] (2,)
+  - =======================
   - [[3]
   -    [6]] (2, 1)
   - =======================
   - y shape: (2, 2, 3)
+  - =======================
   - [[4 5 6]
   -    [0 3 2]] (2, 3)
+  - =======================
   -  [[[4 5 6]]
   -    [[0 3 2]]] (2, 1, 3)
   
