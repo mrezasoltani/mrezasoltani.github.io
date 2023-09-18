@@ -856,6 +856,44 @@ print(result)
 def test_function(a. b):              # some placeholder (doinf nothing) for a function
   pass
 ```
+### Lambda Function
+* A lambda function is a small anonymous function.  
+* A lambda function can take any number of arguments, but can only have one expression.
+    ``` lambda argument: manipulate(argument)```
+
+``` python
+# These two operations are identical
+def add(a, b):
+    return a+b
+
+add_lambda = lambda x, y: x + y
+
+print("======== regular function =========")
+print(add(3, 5))
+print("====== using lambda function =======")
+print(add_lambda(3, 5))
+
+print("====================================")
+add = lambda a, b, c : a + b + c
+print(add(5, 6, 2))
+
+# Sorting a List of tuples
+a = [(1, 2), (4, 1), (9, 10), (13, -3)]
+a.sort(key=lambda x: x[1])
+print(a)
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- ======== regular function =========
+- 8
+- ====== using lambda function =======
+- 8
+- ====================================
+- 13
+- [(13, -3), (4, 1), (1, 2), (9, 10)]
+
+</details>
+
 ### Some built-in functions:
 - print():       It prints the string inside the quotation marks
 - map():         It applies a function to all the items in an input_list
@@ -885,7 +923,7 @@ print(squared)
   
   - [1, 4, 9, 16, 25]
 
-  </details>
+</details>
 
 ## Iterators, Iterables, Comprehensions
 
