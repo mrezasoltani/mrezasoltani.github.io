@@ -252,7 +252,7 @@ print("Object 1: {var1}, Object 2: {var2}, Object 3: {var1}".format(var1=1,var2=
 
 #### Using _f-String_
 * f-string is the modern way, and the shorteset and best approach to format a string:
-* Suntax \\(~\Longrightarrow\\) ``` python f"This is an f-string {var_name} and {var_name}." ```
+* Syntax \\(~\Longrightarrow\\) ``` python f"This is an f-string {var_name} and {var_name}." ```
 
 ``` python
 language = "Python"
