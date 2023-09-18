@@ -870,6 +870,74 @@ print(result)
 def test_function(a. b):              # some placeholder (doinf nothing) for a function
   pass
 ```
+
+### *args and **kwargs
+*  These two are mostly used in function definitions.
+*  *args (non-keyworded) and **kwargs (keyworded) arguments allow one to pass an unspecified number of arguments to a function.
+*  it is not required to write *args or **kwargs. Only the * (asterisk) is necessary.
+*  Order of different types of arguments in a function
+    - formal args --- > *args --- > **kwargs 
+
+  ``` python
+  def test(normal_arg, *argv):
+      print("first normal arg:", normal_arg)
+      for arg in argv:
+          print("another arg through *argv:", arg)
+  
+  test(25, 'John', 'Zach', 'Marry')
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+  
+  - first normal arg: 25
+  - another arg through *argv: John
+  - another arg through *argv: Zach
+  - another arg through *argv: Marry
+  
+  </details>
+
+  ``` python
+  def test(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+  test(name="John", age=23)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+    
+  - name: John
+  - age: 23
+  
+  </details>
+
+* Using *args and **kwargs to call a function
+  
+  ``` python
+  def test(arg1, arg2, arg3):
+    print("arg1:", arg1)
+    print("arg2:", arg2)
+    print("arg3:", arg3)
+
+  print("========== with *args ==========")
+  args = ("five", 4, 1)
+  test(*args)
+  
+  print("========= with **kwargs ========")
+  kwargs = {"arg3": 1, "arg2": "two", "arg1": 15}
+  test(**kwargs)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+    
+  - ========== with *args ==========
+  - arg1: five
+  - arg2: 4
+  - arg3: 1
+  - ========= with **kwargs ========
+  - arg1: 15
+  - arg2: two
+  - arg3: 1
+  
+  </details>
+
 ### Lambda Function
 * A lambda function is a small anonymous function.  
 * A lambda function can take any number of arguments, but can only have one expression.
