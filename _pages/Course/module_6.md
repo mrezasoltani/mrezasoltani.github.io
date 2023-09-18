@@ -906,7 +906,9 @@ print(a)
 print("Hello")
 pow(2, 3)
 ```
+
 * **map()**
+
 ``` python
 #passing all the list elements to a function one-by-one and then collect the output. For instance:
 items = [1, 2, 3, 4, 5]
