@@ -24,6 +24,7 @@ classes: wide
     4. J. Brownlee, Crash Course in Python for Machine Learning Developers, 2016 ([link](https://machinelearningmastery.com/crash-course-python-machine-learning-developers/))
     5. Become a Python Master ([link](https://programiz.pro/learn/master-python?ref=cp))
     6. Data Science With Python Core Skills ([link](https://realpython.com/learning-paths/data-science-python-core-skills/))
+    7. A great resource to get started with Python ([link](https://book.pythontips.com/en/latest/index.html))
 
 * **ML blogs:**
     1. Lilian's blog with many interesting learning notes ([link](https://lilianweng.github.io/lil-log/))
