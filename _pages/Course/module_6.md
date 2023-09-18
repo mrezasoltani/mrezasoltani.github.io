@@ -878,36 +878,37 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
 *  Order of different types of arguments in a function
     - formal args --- > *args --- > **kwargs 
 
-  ``` python
-  def test(normal_arg, *argv):
-      print("first normal arg:", normal_arg)
-      for arg in argv:
-          print("another arg through *argv:", arg)
-  
-  test(25, 'John', 'Zach', 'Marry')
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-  
-  - first normal arg: 25
-  - another arg through *argv: John
-  - another arg through *argv: Zach
-  - another arg through *argv: Marry
-  
-  </details>
-
-  ``` python
-  def test(**kwargs):
-    for key, value in kwargs.items():
-        print(f"{key}: {value}")
-
-  test(name="John", age=23)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
+    ``` python
+    def test(normal_arg, *argv):
+        print("first normal arg:", normal_arg)
+        for arg in argv:
+            print("another arg through *argv:", arg)
     
-  - name: John
-  - age: 23
+    test(25, 'John', 'Zach', 'Marry')
+    ```
+    <details markdown=1><summary markdown="span">Results</summary>
+    
+    - first normal arg: 25
+    - another arg through *argv: John
+    - another arg through *argv: Zach
+    - another arg through *argv: Marry
+    
+    </details>
   
-  </details>
+    ``` python
+    def test(**kwargs):
+      for key, value in kwargs.items():
+          print(f"{key}: {value}")
+  
+    test(name="John", age=23)
+    ```
+    <details markdown=1><summary markdown="span">Results</summary>
+      
+    - name: John
+    - age: 23
+    
+    </details>
+
 
 * Using *args and **kwargs to call a function
   
@@ -943,38 +944,38 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
 * A lambda function can take any number of arguments, but can only have one expression.
     ``` lambda argument: manipulate(argument)```
 
-``` python
-# These two operations are identical
-def add(a, b):
-    return a+b
-
-add_lambda = lambda x, y: x + y
-
-print("======== regular function =========")
-print(add(3, 5))
-print("====== using lambda function =======")
-print(add_lambda(3, 5))
-
-print("====================================")
-add = lambda a, b, c : a + b + c
-print(add(5, 6, 2))
-
-# Sorting a List of tuples
-a = [(1, 2), (4, 1), (9, 10), (13, -3)]
-a.sort(key=lambda x: x[1])
-print(a)
-```
-<details markdown=1><summary markdown="span">Results</summary>
-
-- ======== regular function =========
-- 8
-- ====== using lambda function =======
-- 8
-- ====================================
-- 13
-- [(13, -3), (4, 1), (1, 2), (9, 10)]
-
-</details>
+  ``` python
+  # These two operations are identical
+  def add(a, b):
+      return a+b
+  
+  add_lambda = lambda x, y: x + y
+  
+  print("======== regular function =========")
+  print(add(3, 5))
+  print("====== using lambda function =======")
+  print(add_lambda(3, 5))
+  
+  print("====================================")
+  add = lambda a, b, c : a + b + c
+  print(add(5, 6, 2))
+  
+  # Sorting a List of tuples
+  a = [(1, 2), (4, 1), (9, 10), (13, -3)]
+  a.sort(key=lambda x: x[1])
+  print(a)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+  
+  - ======== regular function =========
+  - 8
+  - ====== using lambda function =======
+  - 8
+  - ====================================
+  - 13
+  - [(13, -3), (4, 1), (1, 2), (9, 10)]
+  
+  </details>
 
 ### Some built-in functions:
 - map():         It applies a function to all the items in an input_list
