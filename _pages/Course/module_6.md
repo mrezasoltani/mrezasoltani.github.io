@@ -338,6 +338,20 @@ for x, y in [(1,10), (2,20), (3,30)]:
 
 </details>
 
+### _Enumerate_ is a built-in function of Python, allowing us to loop over something and have an automatic counter
+
+``` python
+for i, item in enumerate(["Ali", "John", "Zach"]):
+    print(i, item)
+```
+<details markdown=1><summary markdown="span">Results</summary>
+
+- 0 Ali
+- 1 John
+- 2 Zach
+
+</details>
+
 ## Conditions
 ### Similar to other languages, for wrting conditions we can use _if_, _elif_, _else_, or in _while argumnet_ as shown below:
 ``` python
@@ -895,17 +909,11 @@ print(a)
 </details>
 
 ### Some built-in functions:
-- print():       It prints the string inside the quotation marks
 - map():         It applies a function to all the items in an input_list
   ``` python map(function_to_apply, list_of_inputs)```
 - filter:        It creates a list of elements for which a function returns true
 - reduce:        It applies a rolling computation to sequential pairs of values in a list
-- pow():         it returns the power of a number
-
-``` python
-print("Hello")
-pow(2, 3)
-```
+- All these functions return an iterator that yield the output of the desired funciton. To get the whole results, you sould wrap it with the _list()_ method.
 
 * **map()**
 
