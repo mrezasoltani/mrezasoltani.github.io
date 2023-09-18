@@ -475,32 +475,32 @@ ZeroDivisionError	 Raised when the second operand of division or modulo operatio
 ### List
 * List is a collection which is ordered and changeable (Mutable). Allows duplicate members.
 
-``` python
-empty_list = []                          # Empty list
-empty_list = list()                      # Empty list
-names = ['Zach','Jay']
-print(names[0] == 'Zach')
-names.append('Richard')
-print(len(names) == 3)
-print(names)
-
-names.extend(['Abi','Kevin'])
-print(names)
-
-names = []                               # Creates an empty list
-names = list()                           # Also creates an empty list
-stuff = [1, ['hi','bye'], -0.12, None]   # Can mix types
-print(stuff)
-```
-<details markdown=1><summary markdown="span">Results</summary>
-
-- True
-- True
-- ['Zach', 'Jay', 'Richard']
-- ['Zach', 'Jay', 'Richard', 'Abi', 'Kevin']
-- [1, ['hi', 'bye'], -0.12, None]
-
-</details>
+  ``` python
+  empty_list = []                          # Empty list
+  empty_list = list()                      # Empty list
+  names = ['Zach','Jay']
+  print(names[0] == 'Zach')
+  names.append('Richard')
+  print(len(names) == 3)
+  print(names)
+  
+  names.extend(['Abi','Kevin'])
+  print(names)
+  
+  names = []                               # Creates an empty list
+  names = list()                           # Also creates an empty list
+  stuff = [1, ['hi','bye'], -0.12, None]   # Can mix types
+  print(stuff)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+  
+  - True
+  - True
+  - ['Zach', 'Jay', 'Richard']
+  - ['Zach', 'Jay', 'Richard', 'Abi', 'Kevin']
+  - [1, ['hi', 'bye'], -0.12, None]
+  
+  </details>
 
 #### List slicing (indexing)
   * **x[start:stop:step]**
@@ -508,29 +508,29 @@ print(stuff)
     - stop - integer until which the slicing takes place. The slicing stops at index stop - 1.
     - step - integer value which determines the increment between each index for slicing
 
-``` python
-numbers = [0, 1, 2, 3, 4, 5, 6]
-print(numbers[0:3])            # numbers[:3]
-print(numbers[5:])             # numbers[5:7]
-print(numbers[:])              # numbers
-print(numbers[-1])             # Negative index wraps around
-print(numbers[-3:])
-print(numbers[3:-2])           # Can mix and match
-print(numbers[0:5:2])          # numbers[:5:2]
-numbers[::-1]
-```
-<details markdown=1><summary markdown="span">Results</summary>
-
-- [0, 1, 2]
-- [5, 6]
-- [0, 1, 2, 3, 4, 5, 6]
-- 6
-- [4, 5, 6]
-- [3, 4]
-- [0, 2, 4]
-- [6, 5, 4, 3, 2, 1, 0]
-
-</details>
+    ``` python
+    numbers = [0, 1, 2, 3, 4, 5, 6]
+    print(numbers[0:3])            # numbers[:3]
+    print(numbers[5:])             # numbers[5:7]
+    print(numbers[:])              # numbers
+    print(numbers[-1])             # Negative index wraps around
+    print(numbers[-3:])
+    print(numbers[3:-2])           # Can mix and match
+    print(numbers[0:5:2])          # numbers[:5:2]
+    numbers[::-1]
+    ```
+    <details markdown=1><summary markdown="span">Results</summary>
+    
+    - [0, 1, 2]
+    - [5, 6]
+    - [0, 1, 2, 3, 4, 5, 6]
+    - 6
+    - [4, 5, 6]
+    - [3, 4]
+    - [0, 2, 4]
+    - [6, 5, 4, 3, 2, 1, 0]
+    
+    </details>
 
 ### List Methods:
 - sort(): Sorts the list in ascending order.
@@ -544,98 +544,98 @@ numbers[::-1]
 - pop(): It remove and return item at index (default last).
 - remove(): It remove first occurrence of value
 
-``` python
-a = [5, 1, 7, -1, 4, 10, 3]
-rint("======= using sorted function =======")
-print(sorted(a))
-print("======== using sort() method ========")
-a.sort()
-print(a)
-a.append(100)
-print(a)
-print("======== extend method ========")
-b = [20, 20, 40]
-a.extend(b)
-print(a)
-a = [5, 1, 7, -1, 4, 10, 3]
-print(a.index(-1))
-print(max(a))
-print(min(a))
-print(len(a))
-print("======== pop method ===========")
-print(a.pop(5))
-print(a)
-print("======== remove method ========")
-a.remove(4)
-print(a)
-```
-<details markdown=1><summary markdown="span">Results</summary>
-
-- ======= using sorted function =======
-- [-1, 1, 3, 4, 5, 7, 10]
-- ======== using sort() method ========
-- [-1, 1, 3, 4, 5, 7, 10]
-- [-1, 1, 3, 4, 5, 7, 10, 100]
-- ======== extend method ========
-- [-1, 1, 3, 4, 5, 7, 10, 100, 20, 20, 40]
-- 3
-- 100
-- -1
-- 11
-- ======== Pop method ===========
-- 10
-- [5, 1, 7, -1, 4, 3, 100, 20, 20, 40]
-- ======== Remove method ========
-- [5, 1, 7, -1, 3, 100, 20, 20, 40]
-
-</details>
+  ``` python
+  a = [5, 1, 7, -1, 4, 10, 3]
+  rint("======= using sorted function =======")
+  print(sorted(a))
+  print("======== using sort() method ========")
+  a.sort()
+  print(a)
+  a.append(100)
+  print(a)
+  print("======== extend method ========")
+  b = [20, 20, 40]
+  a.extend(b)
+  print(a)
+  a = [5, 1, 7, -1, 4, 10, 3]
+  print(a.index(-1))
+  print(max(a))
+  print(min(a))
+  print(len(a))
+  print("======== pop method ===========")
+  print(a.pop(5))
+  print(a)
+  print("======== remove method ========")
+  a.remove(4)
+  print(a)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+  
+  - ======= using sorted function =======
+  - [-1, 1, 3, 4, 5, 7, 10]
+  - ======== using sort() method ========
+  - [-1, 1, 3, 4, 5, 7, 10]
+  - [-1, 1, 3, 4, 5, 7, 10, 100]
+  - ======== extend method ========
+  - [-1, 1, 3, 4, 5, 7, 10, 100, 20, 20, 40]
+  - 3
+  - 100
+  - -1
+  - 11
+  - ======== Pop method ===========
+  - 10
+  - [5, 1, 7, -1, 4, 3, 100, 20, 20, 40]
+  - ======== Remove method ========
+  - [5, 1, 7, -1, 3, 100, 20, 20, 40]
+  
+  </details>
 
 ### Tuple
 * A tuple is a collection which is ordered and unchangeable (Immutable).
   - tupels cannot be modifies. This makes the a good choice for _key_ choice in hashtables or dictionaries.
 
-``` python
-empty_tuple = ()              # Empty tuple
-empty_tuple = tuple()         # Empty tuple
-names = ('Zach', 'Jay')       # Note the parentheses
-print(names[0] == 'Zach')
-print(len(names) == 2)
-print(names)
-try:
-    names[0] = 'Richard'
-except TypeError as e:
-    print(e)
-empty = tuple()               # Empty tuple
-single = (10,)                # Single-element tuple. Comma matters!
-print(single)
-```
-<details markdown=1><summary markdown="span">Results</summary>
-
-- True
-- True
-- ('Zach', 'Jay')
-- 'tuple' object does not support item assignment
-- (10,)
-
-</details>
+  ``` python
+  empty_tuple = ()              # Empty tuple
+  empty_tuple = tuple()         # Empty tuple
+  names = ('Zach', 'Jay')       # Note the parentheses
+  print(names[0] == 'Zach')
+  print(len(names) == 2)
+  print(names)
+  try:
+      names[0] = 'Richard'
+  except TypeError as e:
+      print(e)
+  empty = tuple()               # Empty tuple
+  single = (10,)                # Single-element tuple. Comma matters!
+  print(single)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+  
+  - True
+  - True
+  - ('Zach', 'Jay')
+  - 'tuple' object does not support item assignment
+  - (10,)
+  
+  </details>
 
 ### Tuple Methods
 - count():   Returns the number of times a specified value occurs in a tuple
 - index():   Searches the tuple for a specified value and returns the position of where it was found
 
-``` python
-a = (2, 3, 10, -1, 10, 10)
-print(a.count(10))
-print(a.index(-1))
-print(a.index(10))
-```
-<details markdown=1><summary markdown="span">Results</summary>
-
-- 3
-- 3
-- 2
-
-</details>
+  ``` python
+  a = (2, 3, 10, -1, 10, 10)
+  print(a.count(10))
+  print(a.index(-1))
+  print(a.index(10))
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+  
+  - 3
+  - 3
+  - 2
+  
+  </details>
 
 ### Set
   * A set is a collection which is unordered and unindexed. In Python sets are written with curly brackets.
@@ -643,49 +643,49 @@ print(a.index(10))
   * It is suitable for creating unique collection of objects.
   * We can do set mathematical operations with this data structure such as _unioin_, _difference_, _intersection_, etc.
 
-``` python
-empty_set = set()                   # Empty set
-names = {'Zach', 'Jay', 'Zach'}     # Note the curly brackets and duplicates
-print(len(names) == 2)
-for name in names:
-    print(name)
-try:
-    print(names[0])
-except TypeError as e:
-    print(e)
-try:
-    names[0] = 'Richard'
-except TypeError as e:
-    print(e)
-names_2 = {'Jay', 'Richard'}
-print("========= set difference ============")
-print(names - names_2)
-print(names.difference(names_2))
-print("========= set union ============")
-print(names | names_2)
-print(names.union(names_2))
-print("========= set intersection ============")
-print(names & names_2)
-print(names.intersection(names_2))
-```
-<details markdown=1><summary markdown="span">Results</summary>
-
-- True
-- Jay
-- Zach
-- 'set' object is not subscriptable
-- 'set' object does not support item assignment
-- ========= set difference ============
-- {'Zach'}
-- {'Zach'}
-- ========= set union ============
-- {'Jay', 'Richard', 'Zach'}
-- {'Jay', 'Richard', 'Zach'}
-- ========= set intersection ============
-- {'Jay'}
-- {'Jay'}
-
-</details>
+  ``` python
+  empty_set = set()                   # Empty set
+  names = {'Zach', 'Jay', 'Zach'}     # Note the curly brackets and duplicates
+  print(len(names) == 2)
+  for name in names:
+      print(name)
+  try:
+      print(names[0])
+  except TypeError as e:
+      print(e)
+  try:
+      names[0] = 'Richard'
+  except TypeError as e:
+      print(e)
+  names_2 = {'Jay', 'Richard'}
+  print("========= set difference ============")
+  print(names - names_2)
+  print(names.difference(names_2))
+  print("========= set union ============")
+  print(names | names_2)
+  print(names.union(names_2))
+  print("========= set intersection ============")
+  print(names & names_2)
+  print(names.intersection(names_2))
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+  
+  - True
+  - Jay
+  - Zach
+  - 'set' object is not subscriptable
+  - 'set' object does not support item assignment
+  - ========= set difference ============
+  - {'Zach'}
+  - {'Zach'}
+  - ========= set union ============
+  - {'Jay', 'Richard', 'Zach'}
+  - {'Jay', 'Richard', 'Zach'}
+  - ========= set intersection ============
+  - {'Jay'}
+  - {'Jay'}
+  
+  </details>
 
 ### Set Methods
 - add():	                    Adds an element to the set
@@ -704,137 +704,137 @@ print(names.intersection(names_2))
 - union():	                Return a set containing the union of sets
 - update():	                Update the set with another set, or any other iterable
 
-``` python
-a = {"Ali", 4, "John", 6, 8, -1}
-print("========= add method ============")
-a.add("Jeff")
-print(a)
-print("========= clear method ============")
-a.clear()
-print(a)
-a = {"Ali", 4, "John", 6, 8, -1}
-b = {6, "Ali", 100, 3.6}
-print("======= difference method ========")
-print(a.difference(b))
-print("========= discard method ==========")
-a.discard("John")
-print(a)
-print("======= intersection method ========")
-print(a.intersection(b))
-print(a.isdisjoint(b))
-c = {4, 8}
-print("========= issubset method =========")
-print(c.issubset(a))
-print("======= issuperset method ========")
-print(a.issuperset(b))
-print("========= remove method ==========")
-b.remove(3.6)
-print(b)
-print("======= symmetric_difference method ========")
-print(a.symmetric_difference(b))
-print(a.union(b))
-a = {"Ali", 4, "John", 6, 8, -1}
-print("========= update method ==========")
-a.update(b)
-print(a)
-```
-<details markdown=1><summary markdown="span">Results</summary>
-
-- ========= add method ============
-- {4, 6, 8, 'John', 'Ali', 'Jeff', -1}
-- ========= clear method ============
-- set()
-- ======= difference method ========
-- {8, 4, 'John', -1}
-- ========= discard method ==========
-- {4, 6, 8, 'Ali', -1}
-- ======= intersection method ========
-- {'Ali', 6}
-- False
-- ========= issubset method =========
-- True
-- ======= issuperset method ========
-- False
-- ========= remove method ==========
-- {'Ali', 100, 6}
-- ======= symmetric_difference method ========
-- {100, 4, 8, -1}
-- {'Ali', 4, 100, 6, 8, -1}
-- ========= update method ==========
-- {4, 100, 6, 8, 'John', 'Ali', -1}
-
-
-</details>
+  ``` python
+  a = {"Ali", 4, "John", 6, 8, -1}
+  print("========= add method ============")
+  a.add("Jeff")
+  print(a)
+  print("========= clear method ============")
+  a.clear()
+  print(a)
+  a = {"Ali", 4, "John", 6, 8, -1}
+  b = {6, "Ali", 100, 3.6}
+  print("======= difference method ========")
+  print(a.difference(b))
+  print("========= discard method ==========")
+  a.discard("John")
+  print(a)
+  print("======= intersection method ========")
+  print(a.intersection(b))
+  print(a.isdisjoint(b))
+  c = {4, 8}
+  print("========= issubset method =========")
+  print(c.issubset(a))
+  print("======= issuperset method ========")
+  print(a.issuperset(b))
+  print("========= remove method ==========")
+  b.remove(3.6)
+  print(b)
+  print("======= symmetric_difference method ========")
+  print(a.symmetric_difference(b))
+  print(a.union(b))
+  a = {"Ali", 4, "John", 6, 8, -1}
+  print("========= update method ==========")
+  a.update(b)
+  print(a)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+  
+  - ========= add method ============
+  - {4, 6, 8, 'John', 'Ali', 'Jeff', -1}
+  - ========= clear method ============
+  - set()
+  - ======= difference method ========
+  - {8, 4, 'John', -1}
+  - ========= discard method ==========
+  - {4, 6, 8, 'Ali', -1}
+  - ======= intersection method ========
+  - {'Ali', 6}
+  - False
+  - ========= issubset method =========
+  - True
+  - ======= issuperset method ========
+  - False
+  - ========= remove method ==========
+  - {'Ali', 100, 6}
+  - ======= symmetric_difference method ========
+  - {100, 4, 8, -1}
+  - {'Ali', 4, 100, 6, 8, -1}
+  - ========= update method ==========
+  - {4, 100, 6, 8, 'John', 'Ali', -1}
+  
+  
+  </details>
 
 ### Dictionary (key-value pairs)
 * A dictionary is a collection which is unordered, changeable and indexed.
 * In Python, dictionaries are written with curly brackets, and they have keys and values (This is used for creating hash tables).
 
-``` python
-
-phonebook = dict()                       # Empty dictionary 
-phonebook = {'Zach': '12-37'}            # Dictionary with one item
-phonebook['Jay'] = '34-23'               # Add another item
-print(phonebook)
-print('Zach' in phonebook)
-print('Kevin' in phonebook)
-print(phonebook['Jay'])
-print("=================================")
-for name, number in phonebook.items():
-    print(name, number)
-print("=================================")
-del phonebook['Zach']                    # Delete an item
-print(phonebook)
-print("=================================")
-for name, number in phonebook.items():
-    print(name, number)
-```
-<details markdown=1><summary markdown="span">Results</summary>
+  ``` python
   
-- {'Zach': '12-37', 'Jay': '34-23'}
-- True
-- False
-- 34-23
-- =================================
-- Zach 12-37
-- Jay 34-23
-- =================================
-- {'Jay': '34-23'}
-- =================================
-- Jay 34-23
-
-</details>
-
-### Dictionary Methods
-- get():	            Returns the value of the specified key
-- items():	        Returns a list containing a tuple for each key value pair
-- keys():	        Returns a list containing the dictionary's keys
-- values():	        Returns a list of all the values in the dictionary
-- update():	        Updates the dictionary with the specified key-value pairs
-- clear():	        Removes all the elements from the dictionary
-
-``` python
-a = {"Ali": 33, "John": 25, "Jeff": 58}
-print(a.get("Ali"))
-print(a.items())
-print(a.keys())
-print(a.values())
-b = {"Chris": 14}
-a.update(b)
-print(a)
-a.clear()
-print(a)
-```
-<details markdown=1><summary markdown="span">Results</summary>
-
-- 33
-- dict_items([('Ali', 33), ('John', 25), ('Jeff', 58)])
-- dict_keys(['Ali', 'John', 'Jeff'])
-- dict_values([33, 25, 58])
-- {'Ali': 33, 'John': 25, 'Jeff': 58, 'Chris': 14}
-- {}
-
-</details>
+  phonebook = dict()                       # Empty dictionary 
+  phonebook = {'Zach': '12-37'}            # Dictionary with one item
+  phonebook['Jay'] = '34-23'               # Add another item
+  print(phonebook)
+  print('Zach' in phonebook)
+  print('Kevin' in phonebook)
+  print(phonebook['Jay'])
+  print("=================================")
+  for name, number in phonebook.items():
+      print(name, number)
+  print("=================================")
+  del phonebook['Zach']                    # Delete an item
+  print(phonebook)
+  print("=================================")
+  for name, number in phonebook.items():
+      print(name, number)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+    
+  - {'Zach': '12-37', 'Jay': '34-23'}
+  - True
+  - False
+  - 34-23
+  - =================================
+  - Zach 12-37
+  - Jay 34-23
+  - =================================
+  - {'Jay': '34-23'}
+  - =================================
+  - Jay 34-23
+  
+  </details>
+  
+  ### Dictionary Methods
+  - get():	            Returns the value of the specified key
+  - items():	        Returns a list containing a tuple for each key value pair
+  - keys():	        Returns a list containing the dictionary's keys
+  - values():	        Returns a list of all the values in the dictionary
+  - update():	        Updates the dictionary with the specified key-value pairs
+  - clear():	        Removes all the elements from the dictionary
+  
+  ``` python
+  a = {"Ali": 33, "John": 25, "Jeff": 58}
+  print(a.get("Ali"))
+  print(a.items())
+  print(a.keys())
+  print(a.values())
+  b = {"Chris": 14}
+  a.update(b)
+  print(a)
+  a.clear()
+  print(a)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+  
+  - 33
+  - dict_items([('Ali', 33), ('John', 25), ('Jeff', 58)])
+  - dict_keys(['Ali', 'John', 'Jeff'])
+  - dict_values([33, 25, 58])
+  - {'Ali': 33, 'John': 25, 'Jeff': 58, 'Chris': 14}
+  - {}
+  
+  </details>
 
 ## Functions
 ### The syntax for defining functions is as follows:
