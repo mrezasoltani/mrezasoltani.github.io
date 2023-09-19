@@ -1450,7 +1450,7 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   * Modifying a slice of an array will also modify the original array.
   * Mixing integer indexing with slices results in an array of lower rank.
   * Indexing using slices results in an array of the same rank as the original array.
-  * For slicing method, **do not use septate bracket for each dimension**.
+  * For slicing method, **do not use separate square brackets for each dimension**.
 
   ``` python
   a = np.array([[5,6,1,3], [2,-6,0,9], [19,-10,1,2]])
