@@ -1543,7 +1543,7 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   print("==== Integer indexing with constructing index array using np.arrange() ====")
   print(b[[0, 0], [1, 1]])
   
-  print("==== A new 3 by 3 array =====")
+  print("==== A new 4 by 3 array =====")
   c = np.array([[1,2,3], [4,5,6], [7,8,9], [10, 11, 12]])
   print("c =", c)
   
@@ -1575,7 +1575,7 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   - [1 4 5]
   - ==== Integer indexing with constructing index array using np.arrange() ====
   - [2 2]
-  - ==== A new 3 by 3 array =====
+  - ==== A new 4 by 3 array =====
   - c = [[ 1  2  3]
   -     [ 4  5  6]
   -     [ 7  8  9]
