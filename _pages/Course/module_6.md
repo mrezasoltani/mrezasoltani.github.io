@@ -1187,21 +1187,21 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
 * Numpy provides a large set of numeric datatypes that can be used to construct arrays.
 * Numpy tries to guess a datatype when an array is created.
     - Functions that construct arrays usually include an optional argument to explicitly specify the data type.
-  ``` python
-  x = np.array([3, 4])                    # numpy choose the datatype
-  print(x.dtype)         
-  x = np.array([1.3, 2.0])                # numpy choose the datatype
-  print(x.dtype)             
-  x = np.array([4, 2], dtype=np.int64)    # User datatype
-  print(x.dtype)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-
-  - int64
-  - float64
-  - int64
-
-  </details>
+    ``` python
+    x = np.array([3, 4])                    # numpy choose the datatype
+    print(x.dtype)         
+    x = np.array([1.3, 2.0])                # numpy choose the datatype
+    print(x.dtype)             
+    x = np.array([4, 2], dtype=np.int64)    # User datatype
+    print(x.dtype)
+    ```
+    <details markdown=1><summary markdown="span">Results</summary>
+  
+    - int64
+    - float64
+    - int64
+  
+    </details>
   
 ### Math Operations
 * max()/min() operation along one axis:
