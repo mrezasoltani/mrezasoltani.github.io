@@ -21,14 +21,14 @@ print('Hello World')
 - IDLE
   - IDLE comes with Python installation by default.
 - Jupyter Notebook and JupyterLab ([link](https://docs.jupyter.org/en/latest/))
-  -  Jupyter Notebook and JupyterLab are two web-based notebooks of the bigger project called Project Jupyter documentation. A notebook is a shareable document that combines computer code, plain language descriptions, data, rich visualizations like 3D models, charts, graphs and figures, and interactive controls.
-  -  One you installed Anaconda, you can install and launch Jupyter Notebook or JupyterLab, and start imidiately wrtie and run Python codes.
+  -  Jupyter Notebook and JupyterLab are two web-based notebooks of the bigger project called Project Jupyter Documentation. A notebook is a shareable document that combines computer code, plain language descriptions, data, rich visualizations like 3D models, charts, graphs and figures, and interactive controls.
+  -  Once you installed Anaconda, you can install and launch Jupyter Notebook or JupyterLab, and start immediately writing and running Python codes.
 - PyCharm
   - PyCharm is a widely used IDE ([link](https://www.jetbrains.com/pycharm/)).
 - Spyder 
   - Spyder already exists in Anaconda once it is installed. Spider is very similar to Matlab ([link](https://www.spyder-ide.org/)).
 
-## Arithmatics
+## Arithmetics
 ``` python
 x = 10
 y = 3
@@ -194,7 +194,7 @@ complex('1+2j')    # Return a complex number with the value real + imag*1j or co
 ```
 
 ## List of keywords in Python
-### There are cannot be used a a keyword as a variable name, function name or any other identifier.
+### There cannot be used as a keyword as a variable name, function name, or any other identifier.
 ``` python
 False	await	else	import	pass
 None	break	except	in	raise
@@ -216,7 +216,7 @@ async	elif	if	or	yield
   - n1 is the total minimum number of digits the string should contain
     - Filling with whitespace if the entire number does not have this many digits
   - n2 placeholder denotes the number of decimal point
-  - Two methods %s and %r actually convert any python object to a string
+  - Two methods %s and %r actually convert any Python object to a string
 ``` python
 s = 'DEAR'
 print("Place another string with a mod and s: %s" %(s))
@@ -238,20 +238,20 @@ print("Here is a number: %r. Here is a string: %r" %(123.1,'hi'))
 #### Using _format()_ method
 * This approach is more cleaner to write
 ``` python
-print("This is a string with an {var}".format(var='DEAR'))
+print("This is a string with a {var}".format(var='DEAR'))
 print("One: {var1}, Two: {var1}, Three: {var1}".format(var1='HI !!!'))                                   # Multiple times
 print("Object 1: {var1}, Object 2: {var2}, Object 3: {var1}".format(var1=1,var2='two',var3=12.3))        # Several Objects
 ```
   <details markdown=1><summary markdown="span">Results</summary>
   
-  - This is a string with an DEAR
+  - This is a string with a DEAR
   - One: HI !!!, Two: HI !!!, Three: HI !!!
   - Object 1: 1, Object 2: two, Object 3: 1
   
   </details>
 
 #### Using _f-String_
-* f-string is the modern way, and the shorteset and best approach to format a string:
+* f-string is the modern way, and the shortest and best approach to format a string:
 * Syntax \\(~\Longrightarrow\\) ``` python f"This is an f-string {var_name} and {var_name}." ```
 
 ``` python
@@ -353,7 +353,7 @@ for i, item in enumerate(["Ali", "John", "Zach"]):
 </details>
 
 ## Conditions
-### Similar to other languages, for wrting conditions we can use _if_, _elif_, _else_, or in _while argumnet_ as shown below:
+### Similar to other languages, for writing conditions we can use _if_, _elif_, _else_, or in _while argumnet_ as shown below:
 ``` python
 if 5 + 1 == 6:
     print("yeah!")
@@ -416,7 +416,7 @@ for i in range(1, 4):
 </details>
 
 ## Errors and Error Handling
-### We can handle errors nicely using _try_ and _exception_ built in:
+### We can handle errors nicely using _try_ and _exception_ built-in:
 ``` python
 try:
     1 / 0
@@ -433,7 +433,7 @@ except ZeroDivisionError as e:
 ``` python
 AssertionError	      Raised when an assert statement fails.
 AttributeError	      Raised when attribute assignment or reference fails.
-EOFError	      Raised when the input() function hits end-of-file condition.
+EOFError	      Raised when the input() function hits the end-of-file condition.
 FloatingPointError    Raised when a floating point operation fails.
 GeneratorExit	      Raise when close() method a generator is called.
 ImportError	      Raised when the imported module is not found.
@@ -443,15 +443,15 @@ KeyboardInterrupt	Raised when the user hits the interrupt key (Ctrl+C or Delete)
 MemoryError	      Raised when an operation runs out of memory.
 NameError	      Raised when a variable is not found in local or global scope.
 NotImplementedError	Raised by abstract methods.
-OSError	              Raised when system operation causes system related error.
+OSError	              Raised when system operation causes system-related error.
 OverflowError	      Raised when the result of an arithmetic operation is too large to be represented.
 ReferenceError	      Raised when a weak reference proxy is used to access a garbage collected referent.
 RuntimeError	      Raised when an error does not fall under any other category.
 StopIteration	      Raised by next() function to indicate that there is no further item to be returned by iterator.
-SyntaxError	      Raised by parser when syntax error is encountered.
+SyntaxError	      Raised by the parser when a syntax error is encountered.
 IndentationError	   Raised when there is incorrect indentation.
 TabError	      Raised when indentation consists of inconsistent tabs and spaces.
-SystemError	      Raised when interpreter detects internal error.
+SystemError	      Raised when the interpreter detects an internal error.
 SystemExit	      Raised by sys.exit() function.
 TypeError	      Raised when a function or operation is applied to an object of incorrect type.
 UnboundLocalError	 Raised when a reference is made to a local variable in a function or method, but no value has been bound to that variable.
@@ -459,7 +459,7 @@ UnicodeError	      Raised when a Unicode-related encoding or decoding error occu
 UnicodeEncodeError    Raised when a Unicode-related error occurs during encoding.
 UnicodeDecodeError    Raised when a Unicode-related error occurs during decoding.
 UnicodeTranslateError	 Raised when a Unicode-related error occurs during translating.
-ValueError	      Raised when a function gets an argument of correct type but improper value.
+ValueError	      Raised when a function gets an argument of the correct type but improper value.
 ZeroDivisionError	 Raised when the second operand of division or modulo operation is zero.
 ```
 
@@ -473,7 +473,7 @@ ZeroDivisionError	 Raised when the second operand of division or modulo operatio
   - **defaultdict** (dict subclass that calls a factory function to supply missing values)
 
 ### List
-* List is a collection which is ordered and changeable (Mutable). Allows duplicate members.
+* List is a collection that is ordered and changeable (Mutable). Allows duplicate members.
 
   ``` python
   empty_list = []                          # Empty list
@@ -541,8 +541,8 @@ ZeroDivisionError	 Raised when the second operand of division or modulo operatio
 - max(): It returns an item from the list with max value.
 - min(): It returns an item from the list with min value.
 - len(): It gives the total length of the list.
-- pop(): It remove and return item at index (default last).
-- remove(): It remove first occurrence of value
+- pop(): It removes and returns the item at index (default last).
+- remove(): It removes the first occurrence of a value
 
   ``` python
   a = [5, 1, 7, -1, 4, 10, 3]
@@ -591,8 +591,8 @@ ZeroDivisionError	 Raised when the second operand of division or modulo operatio
   </details>
 
 ### Tuple
-* A tuple is a collection which is ordered and unchangeable (Immutable).
-  - tupels cannot be modifies. This makes the a good choice for _key_ choice in hashtables or dictionaries.
+* A tuple is a collection that is ordered and unchangeable (Immutable).
+  - Tuples cannot be modified. This makes a good choice for _key_ in hashtables or dictionaries.
 
   ``` python
   empty_tuple = ()              # Empty tuple
@@ -638,9 +638,9 @@ ZeroDivisionError	 Raised when the second operand of division or modulo operatio
   </details>
 
 ### Set
-* A set is a collection which is unordered and unindexed. In Python sets are written with curly brackets.
-  - Please note that if you create a set with a curly brackets, it should be non-empty; otherwise it is treated as a dictionary.
-* It is suitable for creating unique collection of objects.
+* A set is a collection that is unordered and unindexed. In Python, sets are written with curly brackets.
+  - Please note that if you create a set with a curly bracket, it should be non-empty; otherwise, it is treated as a dictionary.
+* It is suitable for creating a unique collection of objects.
 * We can do set mathematical operations with this data structure such as _unioin_, _difference_, _intersection_, etc.
 
   ``` python
@@ -695,7 +695,7 @@ ZeroDivisionError	 Raised when the second operand of division or modulo operatio
 - difference_update():	    Removes the items in this set that are also included in another, specified set
 - discard():	                Remove the specified item
 - intersection():	        Returns a set, that is the intersection of two or more sets
-- isdisjoint():	            Returns whether two sets have a intersection or not
+- isdisjoint():	            Returns whether two sets have an intersection or not
 - issubset():	            Returns whether another set contains this set or not
 - issuperset():	            Returns whether this set contains another set or not
 - pop():	                    Removes an element from the set
@@ -767,7 +767,7 @@ ZeroDivisionError	 Raised when the second operand of division or modulo operatio
   </details>
 
 ### Dictionary (key-value pairs)
-* A dictionary is a collection which is unordered, changeable and indexed.
+* A dictionary is a collection that is unordered, changeable, and indexed.
 * In Python, dictionaries are written with curly brackets, and they have keys and values (This is used for creating hash tables).
 
   ``` python
@@ -807,7 +807,7 @@ ZeroDivisionError	 Raised when the second operand of division or modulo operatio
   
   ### Dictionary Methods
   - get():	            Returns the value of the specified key
-  - items():	        Returns a list containing a tuple for each key value pair
+  - items():	        Returns a list containing a tuple for each key-value pair
   - keys():	        Returns a list containing the dictionary's keys
   - values():	        Returns a list of all the values in the dictionary
   - update():	        Updates the dictionary with the specified key-value pairs
@@ -982,12 +982,12 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   ``` python map(function_to_apply, list_of_inputs)```
 - filter:        It creates a list of elements for which a function returns true
 - reduce:        It applies a rolling computation to sequential pairs of values in a list
-- All these functions return an iterator that yield the output of the desired funciton. To get the whole results, you sould wrap it with the _list()_ method.
+- All these functions return an iterator that yields the output of the desired function. To get the whole results, you should wrap it with the _list()_ method.
 
 * **map()**
 
   ``` python
-  # passing all the list elements to a function one-by-one and then collect the output. For instance:
+  # passing all the list elements to a function one-by-one and then collecting the output. For instance:
   items = [1, 2, 3, 4, 5]
   squared = []
   for i in items:
@@ -1041,7 +1041,7 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
 ## Iterators, Iterables, Comprehensions
 
 ## Classes (Object-oriented Programming)
-* The super() builtin returns a proxy object, a substitute object that can call methods of the base class via delegation. Indirection call or ability to reference base object with super().
+* The super() built-in returns a proxy object, a substitute object that can call methods of the base class via delegation. Indirection call or ability to reference base object with super().
 
   ``` python
   class Animal(object):
@@ -1088,7 +1088,7 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
     
       ``` python
       import os, time                          # Import ‘os’ and ‘time’ modules
-      import numpy as np                       # Import numpy modlue and changing its name to _np_ for less wrting
+      import numpy as np                       # Import numpy module and changing its name to _np_ for less writing
       from yaml.loader import SafeLoader       # Import a function called "Safeloader" from module "yaml"
       ```
 
@@ -1098,7 +1098,7 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
 
 ## Numpy
 * Numpy is the core library for scientific computing in Python. 
-* It provides a high-performance multidimensional array object, and tools for working with these arrays.
+* It provides a high-performance multidimensional array object and tools for working with these arrays.
 * Optimized library for matrix and vector computation.  
 * Makes use of C/C++ subroutines and memory-efficient data structures.  
   - Lots of computation can be efficiently represented as np.ndarray.
@@ -1183,10 +1183,10 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   </details>
 
 ### Data Types
-* Numpy array are a collection of elements with the same type.
+* Numpy arrays are a collection of elements of the same type.
 * Numpy provides a large set of numeric datatypes that can be used to construct arrays.
 * Numpy tries to guess a datatype when an array is created.
-    - Functions that construct arrays usually include an optional argument to explicitly specify the datatyp
+    - Functions that construct arrays usually include an optional argument to explicitly specify the data type.
   ``` python
   x = np.array([3, 4])                    # numpy choose the datatype
   print(x.dtype)         
@@ -1206,10 +1206,10 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
 ### Math Operations
 * max()/min() operation along one axis:
   - Argument "axis" controls the direction of operation
-  - For example, "axis = 1" means taking max() operaiton row-wise (recall axis = 1 denotes rows)
+  - For example, "axis = 1" means taking max() operation row-wise (recall axis = 1 denotes rows)
     - This results in taking max() between entries of a row (different columns)
-    - If the original array has two dimension (i.e., a \\(m\times n\\) matrix), then the max() output is a rank 1 array with dimension written as (m,)
-  - "keepdims = True" argument force the output has the exact shape (dimension) before applying the operation.
+    - If the original array has two dimensions (i.e., a \\(m\times n\\) matrix), then the max() output is a rank 1 array with dimension written as (m,)
+  - "keepdims = True" argument forces the output to have the exact shape (dimension) before applying the operation.
     - "keepdims" is the argument for many other math operations such as np.min, np.sum(), np.mean(), etx
 
   ``` python
