@@ -1252,7 +1252,7 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
 
 * Transpose and reshape operation:
   - "-1" in one axis means everything left. For example, ``` python x.reshape((1,-1) ``` reshapes the \\(x\\) dimension such that the first dimension has one and the second dimension has 3 elements.
-  - # Taking the transpose of a rank 1 array does nothing (printing the same thing).
+  - Taking the transpose of a rank 1 array does nothing (printing the same thing).
 
   ``` python
   x = np.array([1, 2, 3])
