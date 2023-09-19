@@ -1402,7 +1402,7 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
 * Note: Shapes (N,) != (1, N) != (N,1)
 
 ### Indexing
-* Similar to Python lists, numpy arrays can be sliced or indexed by itegers.
+* Similar to Python lists, numpy arrays can be indexed by slicing or itegers.
 * Different ways for indexing:
   - Single element indexing
   - Slicing indexing
@@ -1416,33 +1416,33 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
       - It is not necessary to separate each dimension’s index into its own set of square brackets.
       - Separating each dimension’s index into its own set of square brackets is recommended.
   
-       ``` python
-       x = np.arange(10)
-       print("x=", x)
-       print(x[2])
-       print(x[-2])
-        
-       print("==== changing the shape of x  to (2, 5) ====")
-       x.shape = (2, 5)
-       print("x=", x)
-       print(x[1, 3] == x[1][3])
+     ``` python
+     x = np.arange(10)
+     print("x=", x)
+     print(x[2])
+     print(x[-2])
+      
+     print("==== changing the shape of x  to (2, 5) ====")
+     x.shape = (2, 5)
+     print("x=", x)
+     print(x[1, 3] == x[1][3])
 
-       print("==== The first row of x and its shape")
-       print(x[0], x[0].shape)
-       ```
-       <details markdown=1><summary markdown="span">Results</summary>
- 
-       - x= [0 1 2 3 4 5 6 7 8 9]
-       - 2
-       - 8
-       - ==== changing the shape of x  to (2, 5) ====
-       - x= [[0 1 2 3 4]
-       -    [5 6 7 8 9]]
-       -    True
-       -    ==== The first row of x and its shape
-       -    [0 1 2 3 4] (5,) 
-       
-       </details>
+     print("==== The first row of x and its shape")
+     print(x[0], x[0].shape)
+     ```
+     <details markdown=1><summary markdown="span">Results</summary>
+
+     - x= [0 1 2 3 4 5 6 7 8 9]
+     - 2
+     - 8
+     - ==== changing the shape of x  to (2, 5) ====
+     - x= [[0 1 2 3 4]
+     -    [5 6 7 8 9]]
+     -    True
+     -    ==== The first row of x and its shape
+     -    [0 1 2 3 4] (5,) 
+     
+     </details>
 
 * **Slicing Indexing**
   * We need to specify a slice for each dimension of the array.
@@ -1450,7 +1450,7 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   * Modifying a slice of an array will also modify the original array.
   * Mixing integer indexing with slices results in an array of lower rank.
   * Indexing using slices results in an array of the same rank as the original array.
-  * For slicing method, **do not use septate bracket for each dimension**
+  * For slicing method, **do not use septate bracket for each dimension**.
 
   ``` python
   a = np.array([[5,6,1,3], [2,-6,0,9], [19,-10,1,2]])
