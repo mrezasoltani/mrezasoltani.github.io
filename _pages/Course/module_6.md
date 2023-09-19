@@ -1400,3 +1400,193 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
    </details>
   
 * Note: Shapes (N,) != (1, N) != (N,1)
+
+### Indexing
+* Similar to Python lists, numpy arrays can be sliced or indexed by itegers.
+* Different ways for indexing:
+  - Single element indexing
+  - Slicing indexing
+  - Integer indexing
+  - Mixed indexing
+
+* **Single Element Indexing**
+* Single element indexing works exactly like that for other standard Python sequences.
+* Modifying an array with single element indexing will also modify the original array.
+* It is 0-based, and accepts negative indices for indexing from the end of the array.
+    - It is not necessary to separate each dimension’s index into its own set of square brackets.
+    - Separating each dimension’s index into its own set of square brackets is recommended.
+       ``` python
+       x = np.arange(10)
+       print("x=", x)
+       print(x[2])
+       print(x[-2])
+        
+       print("==== changing the shape of x  to (2, 5) ====")
+       x.shape = (2, 5)
+       print("x=", x)
+       print(x[1, 3] == x[1][3])
+
+       print("==== The first row of x and its shape")
+       print(x[0], x[0].shape)
+       ```
+       <details markdown=1><summary markdown="span">Results</summary>
+ 
+       - x= [0 1 2 3 4 5 6 7 8 9]
+       - 2
+       - 8
+       - ==== changing the shape of x  to (2, 5) ====
+       - x= [[0 1 2 3 4]
+       -    [5 6 7 8 9]]
+       -    True
+       -    ==== The first row of x and its shape
+       -    [0 1 2 3 4] (5,) 
+       
+       </details>
+
+* **Slicing Indexing**
+  * We need to specify a slice for each dimension of the array.
+    - Slice has the format as ```start:stop:step```
+  * Modifying a slice of an array will also modify the original array.
+  * Mixing integer indexing with slices results in an array of lower rank.
+  * Indexing using slices results in an array of the same rank as the original array.
+  * For slicing method, **do not use septate bracket for each dimension**
+
+  ``` python
+  a = np.array([[5,6,1,3], [2,-6,0,9], [19,-10,1,2]])
+  print("a=", a, a.shape)
+  
+  print("===== A slice of array a =====")
+  b = a[:2, 1:3]
+  print(b.shape)
+  print("a[:2, 1:3] != a[:2][1:3]")
+  
+  print("===== Entry (0, 1) of array a =====")
+  print(a[0, 1])
+  
+  print("===== Modifying entry (0, 0) of b will change the Entry (0, 1) of array a =====")
+  b[0, 0] = 77     
+  print(a[0, 1])
+  
+  print("===== Rank 1 view of the second row of array a ======")
+  row_r1 = a[1, :]
+  print(row_r1, row_r1.shape)
+  
+  print("===== Rank 2 view of the second row of array a ======")
+  row_r2 = a[1:2, :]  # Rank 2 view of the second row of a
+  print(row_r2, row_r2.shape)
+  
+  print("==== slice is selected only for the first dimension")
+  t = a[1:2]
+  print(t, t.shape)
+  
+  print("===== Rank 1 view of the second column of array a ======")
+  col_r1 = a[:, 1]
+  print(col_r1, col_r1.shape)
+  
+  print("===== Rank 2 view of the second column of array a ======")
+  col_r2 = a[:, 1:2]
+  print(col_r2, col_r2.shape)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+
+  - a= [[  5   6   1   3]
+  -     [  2  -6   0   9]
+  -     [ 19 -10   1   2]] (3, 4)
+  - ===== A slice of array a =====
+  - (2, 2)
+  - a[:2, 1:3] != a[:2][1:3]
+  - ===== Entry (0, 1) of array a =====
+  - 6
+  - ===== Modifying entry (0, 0) of b will change the Entry (0, 1) of array a =====
+  - 77
+  - ===== Rank 1 view of the second row of array a ======
+  - [ 2 -6  0  9] (4,)
+  - ===== Rank 2 view of the second row of array a ======
+  - [[ 2 -6  0  9]] (1, 4)
+  - ==== slice is selected only for the first dimension
+  - [[ 2 -6  0  9]] (1, 4)
+  - ===== Rank 1 view of the second column of array a ======
+  - [ 77  -6 -10] (3,)
+  - ===== Rank 2 view of the second column of array a ======
+  - [[ 77]
+  -    [ -6]
+  -    [-10]] (3, 1)
+  
+  </details>
+
+* **Integer Indexing**
+  * Integer array indexing allows selection of arbitrary items in the array based on their N-dimensional index.
+  * Each integer array represents a number of indices into that dimension.
+  * Mixing integer indexing with slices results in an array of lower rank.
+  * Indexing using slices results in an array of the same rank as the original array.
+ 
+  ``` python
+  x = np.arange(10, 1, -1)
+  print("x=", x)
+  print("==== A subset of x with specified location =====")
+  print("subset = ", x[np.array([3, 3, 1, 8])])
+  print("==== Integer indexing with constructing index array using np.arrange()  ====")
+  print("subset = ", x[[3, 3, 1, 8]])
+  
+  print("==== A new 3 by 2 array =====")
+  b = np.array([[1,2], [3, 4], [5, 6]])
+  print("b=", b, b.shape)
+  
+  print("==== A subset of b with specified location =====")
+  t = b[[0, 1, 2], [0, 1, 0]]
+  print("t =", t, t.shape) 
+  
+  print("==== t array with another approach =====")
+  print(np.array([b[0, 0], b[1, 1], b[2, 0]]))
+  
+  print("==== Integer indexing with constructing index array using np.arrange() ====")
+  print(b[[0, 0], [1, 1]])
+  
+  print("==== A new 3 by 3 array =====")
+  c = np.array([[1,2,3], [4,5,6], [7,8,9], [10, 11, 12]])
+  print("c =", c)
+  
+  print("==== Creating an array of indices =====")
+  i = np.array([0, 2, 0, 1])
+  print("i = ", i)
+  
+  print("==== Select one element from each row of c using the indices in i ====")
+  print(c[np.arange(4), i]) 
+  
+  print("==== Mutating one element from each row of c using the indices in i ====")
+  c[np.arange(4), i] += 10
+  print("c = ", c)
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+
+  - x = [10  9  8  7  6  5  4  3  2]
+  - ==== A subset of x with specified location =====
+  - subset =  [7 7 9 2]
+  - ==== Integer indexing with constructing index array using np.arrange()  ====
+  - subset =  [7 7 9 2]
+  - ==== A new 3 by 2 array =====
+  - b= [[1 2]
+  -     [3 4]
+  -     [5 6]] (3, 2)
+  - ==== A subset of b with specified location =====
+  - t = [1 4 5] (3,)
+  - ==== t array with another approach =====
+  - [1 4 5]
+  - ==== Integer indexing with constructing index array using np.arrange() ====
+  - [2 2]
+  - ==== A new 3 by 3 array =====
+  - c = [[ 1  2  3]
+  -       [ 4  5  6]
+  -       [ 7  8  9]
+  -       [10 11 12]]
+  - ==== Creating an array of indices =====
+  - i =  [0 2 0 1]
+  - ==== Select one element from each row of c using the indices in i ====
+  - [ 1  6  7 11]
+  - ==== Mutating one element from each row of c using the indices in i ====
+  - c =  [[11  2  3]
+  -       [ 4  5 16]
+  -       [17  8  9]
+  -       [10 21 12]]
+
+  </details>
