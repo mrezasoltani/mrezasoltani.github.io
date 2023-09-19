@@ -1410,11 +1410,12 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   - Mixed indexing
 
 * **Single Element Indexing**
-* Single element indexing works exactly like that for other standard Python sequences.
-* Modifying an array with single element indexing will also modify the original array.
-* It is 0-based, and accepts negative indices for indexing from the end of the array.
-    - It is not necessary to separate each dimension’s index into its own set of square brackets.
-    - Separating each dimension’s index into its own set of square brackets is recommended.
+  * Single element indexing works exactly like that for other standard Python sequences.
+  * Modifying an array with single element indexing will also modify the original array.
+  * It is 0-based, and accepts negative indices for indexing from the end of the array.
+      - It is not necessary to separate each dimension’s index into its own set of square brackets.
+      - Separating each dimension’s index into its own set of square brackets is recommended.
+  
        ``` python
        x = np.arange(10)
        print("x=", x)
@@ -1490,8 +1491,8 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   <details markdown=1><summary markdown="span">Results</summary>
 
   - a= [[  5   6   1   3]
-  -     [  2  -6   0   9]
-  -     [ 19 -10   1   2]] (3, 4)
+  -   [  2  -6   0   9]
+  -   [ 19 -10   1   2]] (3, 4)
   - ===== A slice of array a =====
   - (2, 2)
   - a[:2, 1:3] != a[:2][1:3]
@@ -1532,7 +1533,7 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   b = np.array([[1,2], [3, 4], [5, 6]])
   print("b=", b, b.shape)
   
-  print("==== A subset of b with specified location =====")
+  print("==== A subset of b with specified locations =====")
   t = b[[0, 1, 2], [0, 1, 0]]
   print("t =", t, t.shape) 
   
@@ -1560,7 +1561,7 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   <details markdown=1><summary markdown="span">Results</summary>
 
   - x = [10  9  8  7  6  5  4  3  2]
-  - ==== A subset of x with specified location =====
+  - ==== A subset of x with specified locations =====
   - subset =  [7 7 9 2]
   - ==== Integer indexing with constructing index array using np.arrange()  ====
   - subset =  [7 7 9 2]
@@ -1576,17 +1577,17 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   - [2 2]
   - ==== A new 3 by 3 array =====
   - c = [[ 1  2  3]
-  -       [ 4  5  6]
-  -       [ 7  8  9]
-  -       [10 11 12]]
+  -     [ 4  5  6]
+  -     [ 7  8  9]
+  -     [10 11 12]]
   - ==== Creating an array of indices =====
   - i =  [0 2 0 1]
   - ==== Select one element from each row of c using the indices in i ====
   - [ 1  6  7 11]
   - ==== Mutating one element from each row of c using the indices in i ====
   - c =  [[11  2  3]
-  -       [ 4  5 16]
-  -       [17  8  9]
-  -       [10 21 12]]
+  -     [ 4  5 16]
+  -     [17  8  9]
+  -     [10 21 12]]
 
   </details>
