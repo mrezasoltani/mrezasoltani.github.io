@@ -1077,10 +1077,7 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   
   </details>
 
-## Packages and namespace
-- Modules (file)
-- Package (hierarchical modules)
-- Namespace and naming conflicts
+## Packages and Modules (file.py)
 - **Using import**
   - Importing Modules
   - Modules refer to a file containing Python statements and definitions.
