@@ -1252,6 +1252,7 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
 
 * Transpose and reshape operation:
   - "-1" in one axis means everything left. For example, ``` python x.reshape((1,-1) ``` reshapes the \\(x\\) dimension such that the first dimension has one and the second dimension has 3 elements.
+  - # Taking the transpose of a rank 1 array does nothing (printing the same thing).
 
   ``` python
   x = np.array([1, 2, 3])
@@ -1272,7 +1273,133 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
 
   </details>
 
-* Matrix Operations: np.dot, np.linalg.norm, .T, +, -, *, ...
 * Infix operators (i.e. +, -, *, **, /) are element-wise.  
-* Matrix multiplication is done with np.dot(x, W) or x.dot(W). Transpose a matrix with x.T 
+* Matrix Operations: np.dot, np.linalg.norm, .T, +, -, *, ...
+* Matrix multiplication is done with np.dot(x, W) or x.dot(W). Transpose a matrix with x.T
+
+  ``` python
+  x = np.array([[4,2],[1,9]], dtype=np.float64)
+  y = np.array([[2,1],[3,9]], dtype=np.float64)
+
+  print("==== Elementwise sum ====")
+  print(x + y)
+  print(np.add(x, y))
+
+  print("==== Elementwise difference ====")
+  print(x - y)
+  print(np.subtract(x, y))
+
+  print("==== Elementwise product ====")
+  print(x * y)
+  print(np.multiply(x, y))
+
+  print("==== Elementwise division ====")
+  print(x / y)
+  print(np.divide(x, y))
+
+  print("==== Elementwise square root ====")
+  print(np.sqrt(x))
+
+  print("==== Elementwise power ====")
+  print(np.power(x, 2))
+  print(x**2)
+
+  x = np.array([[3,1],[2,-2]])
+  y = np.array([[3,4],[5,9]])
+  
+  v = np.array([9,0])
+  w = np.array([3, 8])
+  
+  print("==== Inner product of vectors ====")
+  print(v.dot(w))
+  print(np.dot(v, w))
+
+  # The result is the rank 1 array
+  print("==== Matrix/vector product ====")
+  print(x.dot(v))
+  print(np.dot(x, v))
+  
+  # The result is the rank 2 array)
+  print("==== Matrix/matrix product  ====")
+  print(x.dot(y))
+  print(np.dot(x, y))
+
+  x = np.array([[1,2],[3,4]])
+  print("==== Compute sum of all elements ====")
+  print(np.sum(x))  
+  print("==== Compute the sum of each column ====")
+  print(np.sum(x, axis=0))
+  print("==== Compute sum of each row ====")
+  print(np.sum(x, axis=1))
+
+  x = np.array([[4,1],[3,2]])
+  print("==== Frobenius norm ====")
+  print(np.linalg.norm(x))
+  print("==== nuclear norm ====")
+  print(np.linalg.norm(x, 'nuc'))
+  print("==== 2 norm ====")
+  print(np.linalg.norm(x, 2))
+  ```
+  <details markdown=1><summary markdown="span">Results</summary>
+    
+  - ==== Elementwise sum ====
+  - [[ 6.  3.]
+  - [ 4. 18.]]
+    
+  - [[ 6.  3.]
+  - [ 4. 18.]]
+  - ==== Elementwise difference ====
+  - [[ 2.  1.]
+  - [-2.  0.]]
+    
+  - [[ 2.  1.]
+  - [-2.  0.]]
+  - ==== Elementwise product ====
+  - [[ 8.  2.]
+  - [ 3. 81.]]
+    
+  - [[ 8.  2.]
+  - [ 3. 81.]]
+  - ==== Elementwise division ====
+  - [[2.         2.        ]
+  - [0.33333333 1.        ]]
+    
+  - [[2.         2.        ]
+  - [0.33333333 1.        ]]
+  - ==== Elementwise square root ====
+  - [[2.         1.41421356]
+  - [1.         3.        ]]
+  - ==== Elementwise power ====
+  - [[16.  4.]
+  - [ 1. 81.]]
+    
+  - [[16.  4.]
+  - [ 1. 81.]]
+  - ==== Inner product of vectors ====
+  - 27
+  - 27
+  - ==== Matrix/vector product ====
+  - [27 18]
+  - [27 18]
+  - ==== Matrix/matrix product  ====
+  - [[ 14  21]
+  - [ -4 -10]]
+    
+  - [[ 14  21]
+  - [ -4 -10]]
+  - ==== Compute sum of all elements ====
+  - 10
+  - ==== Compute the sum of each column ====
+  - [4 6]
+  - ==== Compute sum of each row ====
+  - [3 7]
+  - ==== Frobenius norm ====
+  - 5.477225575051661
+  - ==== nuclear norm ====
+  - 6.324555320336758
+  - ==== 2 norm (max singular value) ====
+  - 5.398345637668169
+  
+   </details>
+  
 * Note: Shapes (N,) != (1, N) != (N,1)
