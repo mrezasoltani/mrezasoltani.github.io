@@ -1668,18 +1668,9 @@ plt.plot(x, y1, 'r-', x, y2, 'b--', linewidth=2)
 plt.grid()
 plt.legend(['Sigmoid Function', 'Exp Function'])
 ```
-
-
-
-
-    <matplotlib.legend.Legend at 0x7fe476d91970>
-
-
-
-
-    
-![png](output_114_1.png)
-    
+<p>
+    <img width="600" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/images/output_114_1.png">
+</p>    
 
 
 
