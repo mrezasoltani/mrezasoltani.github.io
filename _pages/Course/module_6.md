@@ -1669,7 +1669,7 @@ plt.grid()
 plt.legend(['Sigmoid Function', 'Exp Function'])
 ```
 <p>
-    <img width="600" src="https://github.com/mrezasoltani/mrezasoltani.github.io/assets/images/output_114_1.png">
+    ![results](/assets/images/output_114_1.png)
 </p>    
 
 
