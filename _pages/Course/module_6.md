@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Module 6 --- Python, Numpy, Pandas, Visualization"
 classes: wide
 ---
@@ -12,6 +13,9 @@ classes: wide
 ```python
 print('Hello World')
 ```
+
+## Python Installation
+
 ## Anaconda
 - Anaconda is a popular Python environment/package manager  
 - Install from ([here](https://www.anaconda.com/download/))
@@ -28,8 +32,19 @@ print('Hello World')
 - Spyder 
   - Spyder already exists in Anaconda once it is installed. Spider is very similar to Matlab ([link](https://www.spyder-ide.org/)).
 
+
+
+```python
+print('Hello World')
+```
+
+    Hello World
+
+
 ## Arithmetics
-``` python
+
+
+```python
 x = 10
 y = 3
 print(x + y)
@@ -40,34 +55,34 @@ print(x / float(y))
 print(x // y)
 print(str(x) + '' + '' + str(y))
 ```
-<details markdown=1><summary markdown="span">Results</summary>
 
-- 13
-- 7
-- 1000
-- 3.3333333333333335
-- 3.3333333333333335
-- 3
-- 103
+    13
+    7
+    1000
+    3.3333333333333335
+    3.3333333333333335
+    3
+    103
 
-</details>
 
 ## Logical
-``` python
+
+
+```python
 print(True and False)            # & same as and
 print(True or False)             # | same as or
 print(not (True or False))
 ```
-<details markdown=1><summary markdown="span">Results</summary>
-  
-- False
-- True
-- False
 
-</details>
+    False
+    True
+    False
+
 
 ## Relational
-``` python
+
+
+```python
 print(3 == 3) 
 print(1 == 5)
 print(12 != 30)
@@ -76,20 +91,20 @@ print(1 <= 40)
 print(0 > 10)
 print(0 >= 10)
 ```
-<details markdown=1><summary markdown="span">Results</summary>
-  
-- True
-- False
-- True
-- True
-- True
-- False
-- False
 
-</details>
+    True
+    False
+    True
+    True
+    True
+    False
+    False
+
 
 ## Bitwise
-``` python
+
+
+```python
 print(format(10, '04b'))
 print(format(7, '04b'))
 print("============ Bitwise AND operation ===========")
@@ -108,39 +123,39 @@ print("============ Bitwise Right Shift ==============")
 x = x >> 2
 print(x, format(x, '04b'))
 ```
-<details markdown=1><summary markdown="span">Results</summary>
 
-- 1010
-- 0111
-- ============ Bitwise AND operation ============
-- 2 0010
-- ============ Bitwise OR operation =============
-- 15 1111
-- ============ Bitwise XOR operation ============
-- 13 1101
-- ============ Bitwise Left Shift ================
-- 26 11010
-- ============ Bitwise Right Shift ===============
-- 6 0110
+    1010
+    0111
+    ============ Bitwise AND operation ===========
+    2 0010
+    ============ Bitwise OR operation ============
+    15 1111
+    ============ Bitwise XOR operation ===========
+    13 1101
+    ============ Bitwise Left Shift ===============
+    26 11010
+    ============ Bitwise Right Shift ==============
+    6 0110
 
-</details>
 
 ## Membership
-``` python
+
+
+```python
 print('hell' in 'hello')
 print(3 in range(5), 7 in range(5))
 print('a' in dict(zip('abc', range(3))))
 ```
-<details markdown=1><summary markdown="span">Results</summary>
 
-- True
-- True False
-- True
+    True
+    True False
+    True
 
-</details>
 
 ## Identity
-``` python
+
+
+```python
 x = [2,3]
 y = [2,3]
 print(x == y, x is y)
@@ -150,17 +165,17 @@ y = 'hello'
 print(x == y, x is y)
 print(id(x), id(y))
 ```
-<details markdown=1><summary markdown="span">Results</summary>
 
-- True False
-- 140536971848256 140536971833280
-- True True
-- 140536995546928 140536995546928
+    True False
+    140619199022464 140619199022016
+    True True
+    140619189642544 140619189642544
 
-</details>
 
 ## Assignment
-``` python
+
+
+```python
 x = 10
 print(x)
 x = x + 2
@@ -172,17 +187,17 @@ print(x)
 x -= 3
 print(x)
 ```
-<details markdown=1><summary markdown="span">Results</summary>
 
-- 10
-- 12
-- 24
-- 29
-- 26
+    10
+    12
+    24
+    29
+    26
 
-</details>
 
 ## Built-in Values
+
+
 ```python
 True               # The boolean value True.
 False              # The boolean value False.
@@ -195,6 +210,7 @@ complex('1+2j')    # Return a complex number with the value real + imag*1j or co
 
 ## List of keywords in Python
 ### There cannot be used as a keyword as a variable name, function name, or any other identifier.
+
 ``` python
 False	await	else	import	pass
 None	break	except	in	raise
@@ -217,7 +233,9 @@ async	elif	if	or	yield
     - Filling with whitespace if the entire number does not have this many digits
   - n2 placeholder denotes the number of decimal point
   - Two methods %s and %r actually convert any Python object to a string
-``` python
+
+
+```python
 s = 'DEAR'
 print("Place another string with a mod and s: %s" %(s))
 print("Floating point numbers: %1.2f" %(13.144567))
@@ -225,36 +243,35 @@ print("Floating point numbers: %2.4f" %(13.144567))
 print("Here is a number: %s. Here is a string: %s" %(123.1,'hi')) 
 print("Here is a number: %r. Here is a string: %r" %(123.1,'hi'))
 ```
-    <details markdown=1><summary markdown="span">Results</summary>
-    
-    - Place another string with a mod and s: DEAR
-    - Floating point numbers: 13.14
-    - Floating point numbers: 13.1446
-    - Here is a number: 123.1. Here is a string: hi
-    - Here is a number: 123.1. Here is a string: 'hi'
-    
-    </details>
+
+    Place another string with a mod and s: DEAR
+    Floating point numbers: 13.14
+    Floating point numbers: 13.1446
+    Here is a number: 123.1. Here is a string: hi
+    Here is a number: 123.1. Here is a string: 'hi'
+
 
 #### Using _format()_ method
 * This approach is more cleaner to write
-``` python
+
+
+```python
 print("This is a string with a {var}".format(var='DEAR'))
 print("One: {var1}, Two: {var1}, Three: {var1}".format(var1='HI !!!'))                                   # Multiple times
 print("Object 1: {var1}, Object 2: {var2}, Object 3: {var1}".format(var1=1,var2='two',var3=12.3))        # Several Objects
 ```
-  <details markdown=1><summary markdown="span">Results</summary>
-  
-  - This is a string with a DEAR
-  - One: HI !!!, Two: HI !!!, Three: HI !!!
-  - Object 1: 1, Object 2: two, Object 3: 1
-  
-  </details>
+
+    This is a string with a DEAR
+    One: HI !!!, Two: HI !!!, Three: HI !!!
+    Object 1: 1, Object 2: two, Object 3: 1
+
 
 #### Using _f-String_
 * f-string is the modern way, and the shortest and best approach to format a string:
 * Syntax \\(~\Longrightarrow\\) ``` python f"This is an f-string {var_name} and {var_name}." ```
 
-``` python
+
+```python
 language = "Python"
 school = "freeCodeCamp"
 print(f"I'm learning {language} from {school}.")
@@ -263,17 +280,17 @@ num2 = 9.876543218765
 print(f"The product of {num1} and {num2} is {num1 * num2}.")
 print(f"The product of {num1:.2f} and {num2:.4f} is {num1 * num2:.2f}.")
 ```
-  <details markdown=1><summary markdown="span">Results</summary>
-  
-  - I'm learning Python from freeCodeCamp.
-  - The product of 83.98765 and 9.876543218765 is 829.5076550675084.
-  - The product of 83.99 and 9.8765 is 829.51.
-  
-  </details>
+
+    I'm learning Python from freeCodeCamp.
+    The product of 83.98765 and 9.876543218765 is 829.5076550675084.
+    The product of 83.99 and 9.8765 is 829.51.
+
 
 ## Code blocks are created using indents.
 ### Indents can be 2 or 4 spaces but should be consistent throughout the file.
-``` python
+
+
+```python
 def fib(n):
     # Indent level 1: function body
     if n <= 1:
@@ -286,78 +303,75 @@ def fib(n):
 
 ## Loops
 ### For loops (If you want an index \\(\Longrightarrow\\) using enumerate()!)
+
+
 ```python
 for i, name in enumerate(['Zack','Jay','Richard']):
     print('Hi ' + '! {0}: {1:.4f}'.format(name, i))
 ```
-<details markdown=1><summary markdown="span">Results</summary>
-
-  - Hi ! Zack: 0.0000  
-  - Hi ! Jay: 1.0000
-  - Hi ! Richard: 2.0000
-    
-</details>
 
 ### While Loops
-``` python
+
+
+```python
 while True:
   print('We are stuck in a loop...')
   break           # Break out of the while loop
 ```
-<details markdown=1><summary markdown="span">Results</summary>
 
-  - We are stuck in a loop...
-    
-</details>
+    We are stuck in a loop...
+
 
 ### What about for (i=0; i<10; i++)? \\(\Longrightarrow\\) using range():
-``` python
-for i in range(5):
-    print('Line' + str(I))
-```
-<details markdown=1><summary markdown="span">Results</summary>
 
-  - Line0
-  - Line1
-  - Line2
-  - Line3
-  - Line4
-    
-</details>
+
+```python
+for i in range(5):
+    print('Line' + str(i))
+```
+
+    Line0
+    Line1
+    Line2
+    Line3
+    Line4
+
 
 ### Looping over a list, unpacking tuples:
-``` python
+
+
+```python
 for x, y in [(1,10), (2,20), (3,30)]:
     print(x, y)
 ```
-<details markdown=1><summary markdown="span">Results</summary>
 
-  - 1 10
-  - 2 20
-  - 3 30
+    1 10
+    2 20
+    3 30
 
-</details>
 
 ### _Enumerate_ is a built-in function of Python, allowing us to loop over something and have an automatic counter
 
-``` python
+
+```python
 for i, item in enumerate(["Ali", "John", "Zach"]):
     print(i, item)
 ```
-<details markdown=1><summary markdown="span">Results</summary>
 
-- 0 Ali
-- 1 John
-- 2 Zach
+    0 Ali
+    1 John
+    2 Zach
 
-</details>
 
 ## Conditions
 ### Similar to other languages, for writing conditions we can use _if_, _elif_, _else_, or in _while argumnet_ as shown below:
-``` python
+
+
+```python
 if 5 + 1 == 6:
     print("yeah!")
 'correct' if 1 + 1  == 3 else 'incorrect'
+
 if 1+1 == 3:
     print("oops")
 else:
@@ -375,16 +389,19 @@ i = 4
 while i > 0:
     print(i)
     i -= 1
+    
 print("=======================")
 for i in range(1, 4):
     if i % 2 == 0:
         continue
     print(i)
+    
 print("=======================")
 for i in range(1, 4):
     if i % 2 == 0:
         break
     print(i)
+    
 print("=======================")
 for i in range(1, 4):
     if i % 2 == 0:
@@ -392,44 +409,43 @@ for i in range(1, 4):
     else:
         print(i)
 ```
-<details markdown=1><summary markdown="span">Results</summary>
 
-- yeah!
-- yeah!
-- A
-- C
-- B
-- Are you in the right class?
-- 4
-- 3
-- 2
-- 1
-- =======================
-- 1
-- 3
-- =======================
-- 1
-- =======================
-- 1
-- 3
-- 
-</details>
+    yeah!
+    yeah!
+    A
+    C
+    B
+    Are you in the right class?
+    4
+    3
+    2
+    1
+    =======================
+    1
+    3
+    =======================
+    1
+    =======================
+    1
+    3
+
 
 ## Errors and Error Handling
 ### We can handle errors nicely using _try_ and _exception_ built-in:
-``` python
+
+
+```python
 try:
     1 / 0
 except ZeroDivisionError as e:
     print(e)
 ```
-<details markdown=1><summary markdown="span">Results</summary>
 
-- division by zero
+    division by zero
 
-</details>
 
 ### List of possible exceptions ([link](https://www.programiz.com/python-programming/exceptions)): 
+
 ``` python
 AssertionError	      Raised when an assert statement fails.
 AttributeError	      Raised when attribute assignment or reference fails.
@@ -475,62 +491,66 @@ ZeroDivisionError	 Raised when the second operand of division or modulo operatio
 ### List
 * List is a collection that is ordered and changeable (Mutable). Allows duplicate members.
 
-  ``` python
-  empty_list = []                          # Empty list
-  empty_list = list()                      # Empty list
-  names = ['Zach','Jay']
-  print(names[0] == 'Zach')
-  names.append('Richard')
-  print(len(names) == 3)
-  print(names)
-  
-  names.extend(['Abi','Kevin'])
-  print(names)
-  
-  names = []                               # Creates an empty list
-  names = list()                           # Also creates an empty list
-  stuff = [1, ['hi','bye'], -0.12, None]   # Can mix types
-  print(stuff)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-  
-  - True
-  - True
-  - ['Zach', 'Jay', 'Richard']
-  - ['Zach', 'Jay', 'Richard', 'Abi', 'Kevin']
-  - [1, ['hi', 'bye'], -0.12, None]
-  
-  </details>
+
+```python
+empty_list = []                          # Empty list
+empty_list = list()                      # Empty list
+names = ['Zach','Jay']
+print(names[0] == 'Zach')
+names.append('Richard')
+print(len(names) == 3)
+print(names)
+
+names.extend(['Abi','Kevin'])
+print(names)
+
+names = []                               # Creates an empty list
+names = list()                           # Also creates an empty list
+stuff = [1, ['hi','bye'], -0.12, None]   # Can mix types
+print(stuff)
+```
+
+    True
+    True
+    ['Zach', 'Jay', 'Richard']
+    ['Zach', 'Jay', 'Richard', 'Abi', 'Kevin']
+    [1, ['hi', 'bye'], -0.12, None]
+
 
 #### List slicing (indexing)
-  * **x[start:stop:step]**
-    - start - starting integer where the slicing of the object starts
-    - stop - integer until which the slicing takes place. The slicing stops at index stop - 1.
-    - step - integer value which determines the increment between each index for slicing
+* **x[start:stop:step]**
+- start - starting integer where the slicing of the object starts
+- stop - integer until which the slicing takes place. The slicing stops at index stop - 1.
+- step - integer value which determines the increment between each index for slicing
 
-    ``` python
-    numbers = [0, 1, 2, 3, 4, 5, 6]
-    print(numbers[0:3])            # numbers[:3]
-    print(numbers[5:])             # numbers[5:7]
-    print(numbers[:])              # numbers
-    print(numbers[-1])             # Negative index wraps around
-    print(numbers[-3:])
-    print(numbers[3:-2])           # Can mix and match
-    print(numbers[0:5:2])          # numbers[:5:2]
-    numbers[::-1]
-    ```
-    <details markdown=1><summary markdown="span">Results</summary>
-    
-    - [0, 1, 2]
-    - [5, 6]
-    - [0, 1, 2, 3, 4, 5, 6]
-    - 6
-    - [4, 5, 6]
-    - [3, 4]
-    - [0, 2, 4]
-    - [6, 5, 4, 3, 2, 1, 0]
-    
-    </details>
+
+```python
+numbers = [0, 1, 2, 3, 4, 5, 6]
+print(numbers[0:3])            # numbers[:3]
+print(numbers[5:])             # numbers[5:7]
+print(numbers[:])              # numbers
+print(numbers[-1])             # Negative index wraps around
+print(numbers[-3:])
+print(numbers[3:-2])           # Can mix and match
+print(numbers[0:5:2])          # numbers[:5:2]
+numbers[::-1]
+```
+
+    [0, 1, 2]
+    [5, 6]
+    [0, 1, 2, 3, 4, 5, 6]
+    6
+    [4, 5, 6]
+    [3, 4]
+    [0, 2, 4]
+
+
+
+
+
+    [6, 5, 4, 3, 2, 1, 0]
+
+
 
 ### List Methods:
 - sort(): Sorts the list in ascending order.
@@ -544,98 +564,101 @@ ZeroDivisionError	 Raised when the second operand of division or modulo operatio
 - pop(): It removes and returns the item at index (default last).
 - remove(): It removes the first occurrence of a value
 
-  ``` python
-  a = [5, 1, 7, -1, 4, 10, 3]
-  rint("======= using sorted function =======")
-  print(sorted(a))
-  print("======== using sort() method ========")
-  a.sort()
-  print(a)
-  a.append(100)
-  print(a)
-  print("======== extend method ========")
-  b = [20, 20, 40]
-  a.extend(b)
-  print(a)
-  a = [5, 1, 7, -1, 4, 10, 3]
-  print(a.index(-1))
-  print(max(a))
-  print(min(a))
-  print(len(a))
-  print("======== pop method ===========")
-  print(a.pop(5))
-  print(a)
-  print("======== remove method ========")
-  a.remove(4)
-  print(a)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-  
-  - ======= using sorted function =======
-  - [-1, 1, 3, 4, 5, 7, 10]
-  - ======== using sort() method ========
-  - [-1, 1, 3, 4, 5, 7, 10]
-  - [-1, 1, 3, 4, 5, 7, 10, 100]
-  - ======== extend method ========
-  - [-1, 1, 3, 4, 5, 7, 10, 100, 20, 20, 40]
-  - 3
-  - 100
-  - -1
-  - 11
-  - ======== Pop method ===========
-  - 10
-  - [5, 1, 7, -1, 4, 3, 100, 20, 20, 40]
-  - ======== Remove method ========
-  - [5, 1, 7, -1, 3, 100, 20, 20, 40]
-  
-  </details>
+
+```python
+a = [5, 1, 7, -1, 4, 10, 3]
+print("======= using sorted function =======")
+print(sorted(a))
+
+print("======== using sort() method ========")
+a.sort()
+print(a)
+a.append(100)
+print(a)
+
+print("======== extend method ========")
+b = [20, 20, 40]
+a.extend(b)
+print(a)
+a = [5, 1, 7, -1, 4, 10, 3]
+print(a.index(-1))
+print(max(a))
+print(min(a))
+print(len(a))
+
+print("======== pop method ===========")
+print(a.pop(5))
+print(a)
+
+print("======== remove method ========")
+a.remove(4)
+print(a)
+```
+
+    ======= using sorted function =======
+    [-1, 1, 3, 4, 5, 7, 10]
+    ======== using sort() method ========
+    [-1, 1, 3, 4, 5, 7, 10]
+    [-1, 1, 3, 4, 5, 7, 10, 100]
+    ======== extend method ========
+    [-1, 1, 3, 4, 5, 7, 10, 100, 20, 20, 40]
+    3
+    10
+    -1
+    7
+    ======== pop method ===========
+    10
+    [5, 1, 7, -1, 4, 3]
+    ======== remove method ========
+    [5, 1, 7, -1, 3]
+
 
 ### Tuple
 * A tuple is a collection that is ordered and unchangeable (Immutable).
   - Tuples cannot be modified. This makes a good choice for _key_ in hashtables or dictionaries.
 
-  ``` python
-  empty_tuple = ()              # Empty tuple
-  empty_tuple = tuple()         # Empty tuple
-  names = ('Zach', 'Jay')       # Note the parentheses
-  print(names[0] == 'Zach')
-  print(len(names) == 2)
-  print(names)
-  try:
-      names[0] = 'Richard'
-  except TypeError as e:
-      print(e)
-  empty = tuple()               # Empty tuple
-  single = (10,)                # Single-element tuple. Comma matters!
-  print(single)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-  
-  - True
-  - True
-  - ('Zach', 'Jay')
-  - 'tuple' object does not support item assignment
-  - (10,)
-  
-  </details>
+
+```python
+empty_tuple = ()              # Empty tuple
+empty_tuple = tuple()         # Empty tuple
+names = ('Zach', 'Jay')       # Note the parentheses
+print(names[0] == 'Zach')
+print(len(names) == 2)
+print(names)
+
+try:
+  names[0] = 'Richard'
+except TypeError as e:
+  print(e)
+
+empty = tuple()               # Empty tuple
+single = (10,)                # Single-element tuple. Comma matters!
+print(single)
+```
+
+    True
+    True
+    ('Zach', 'Jay')
+    'tuple' object does not support item assignment
+    (10,)
+
 
 ### Tuple Methods
 - count():   Returns the number of times a specified value occurs in a tuple
 - index():   Searches the tuple for a specified value and returns the position of where it was found
 
-  ``` python
-  a = (2, 3, 10, -1, 10, 10)
-  print(a.count(10))
-  print(a.index(-1))
-  print(a.index(10))
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-  
-  - 3
-  - 3
-  - 2
-  
-  </details>
+
+```python
+a = (2, 3, 10, -1, 10, 10)
+print(a.count(10))
+print(a.index(-1))
+print(a.index(10))
+```
+
+    3
+    3
+    2
+
 
 ### Set
 * A set is a collection that is unordered and unindexed. In Python, sets are written with curly brackets.
@@ -643,49 +666,55 @@ ZeroDivisionError	 Raised when the second operand of division or modulo operatio
 * It is suitable for creating a unique collection of objects.
 * We can do set mathematical operations with this data structure such as _unioin_, _difference_, _intersection_, etc.
 
-  ``` python
-  empty_set = set()                   # Empty set
-  names = {'Zach', 'Jay', 'Zach'}     # Note the curly brackets and duplicates
-  print(len(names) == 2)
-  for name in names:
-      print(name)
-  try:
-      print(names[0])
-  except TypeError as e:
-      print(e)
-  try:
-      names[0] = 'Richard'
-  except TypeError as e:
-      print(e)
-  names_2 = {'Jay', 'Richard'}
-  print("========= set difference ============")
-  print(names - names_2)
-  print(names.difference(names_2))
-  print("========= set union ============")
-  print(names | names_2)
-  print(names.union(names_2))
-  print("========= set intersection ============")
-  print(names & names_2)
-  print(names.intersection(names_2))
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-  
-  - True
-  - Jay
-  - Zach
-  - 'set' object is not subscriptable
-  - 'set' object does not support item assignment
-  - ========= set difference ============
-  - {'Zach'}
-  - {'Zach'}
-  - ========= set union ============
-  - {'Jay', 'Richard', 'Zach'}
-  - {'Jay', 'Richard', 'Zach'}
-  - ========= set intersection ============
-  - {'Jay'}
-  - {'Jay'}
-  
-  </details>
+
+```python
+empty_set = set()                   # Empty set
+names = {'Zach', 'Jay', 'Zach'}     # Note the curly brackets and duplicates
+print(len(names) == 2)
+
+for name in names:
+  print(name)
+
+try:
+  print(names[0])
+except TypeError as e:
+  print(e)
+
+try:
+  names[0] = 'Richard'
+except TypeError as e:
+  print(e)
+
+names_2 = {'Jay', 'Richard'}
+
+print("========= set difference ============")
+print(names - names_2)
+print(names.difference(names_2))
+
+print("========= set union ============")
+print(names | names_2)
+print(names.union(names_2))
+
+print("========= set intersection ============")
+print(names & names_2)
+print(names.intersection(names_2))
+```
+
+    True
+    Zach
+    Jay
+    'set' object is not subscriptable
+    'set' object does not support item assignment
+    ========= set difference ============
+    {'Zach'}
+    {'Zach'}
+    ========= set union ============
+    {'Zach', 'Richard', 'Jay'}
+    {'Zach', 'Richard', 'Jay'}
+    ========= set intersection ============
+    {'Jay'}
+    {'Jay'}
+
 
 ### Set Methods
 - add():	                    Adds an element to the set
@@ -704,156 +733,167 @@ ZeroDivisionError	 Raised when the second operand of division or modulo operatio
 - union():	                Return a set containing the union of sets
 - update():	                Update the set with another set, or any other iterable
 
-  ``` python
-  a = {"Ali", 4, "John", 6, 8, -1}
-  print("========= add method ============")
-  a.add("Jeff")
-  print(a)
-  print("========= clear method ============")
-  a.clear()
-  print(a)
-  a = {"Ali", 4, "John", 6, 8, -1}
-  b = {6, "Ali", 100, 3.6}
-  print("======= difference method ========")
-  print(a.difference(b))
-  print("========= discard method ==========")
-  a.discard("John")
-  print(a)
-  print("======= intersection method ========")
-  print(a.intersection(b))
-  print(a.isdisjoint(b))
-  c = {4, 8}
-  print("========= issubset method =========")
-  print(c.issubset(a))
-  print("======= issuperset method ========")
-  print(a.issuperset(b))
-  print("========= remove method ==========")
-  b.remove(3.6)
-  print(b)
-  print("======= symmetric_difference method ========")
-  print(a.symmetric_difference(b))
-  print(a.union(b))
-  a = {"Ali", 4, "John", 6, 8, -1}
-  print("========= update method ==========")
-  a.update(b)
-  print(a)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-  
-  - ========= add method ============
-  - {4, 6, 8, 'John', 'Ali', 'Jeff', -1}
-  - ========= clear method ============
-  - set()
-  - ======= difference method ========
-  - {8, 4, 'John', -1}
-  - ========= discard method ==========
-  - {4, 6, 8, 'Ali', -1}
-  - ======= intersection method ========
-  - {'Ali', 6}
-  - False
-  - ========= issubset method =========
-  - True
-  - ======= issuperset method ========
-  - False
-  - ========= remove method ==========
-  - {'Ali', 100, 6}
-  - ======= symmetric_difference method ========
-  - {100, 4, 8, -1}
-  - {'Ali', 4, 100, 6, 8, -1}
-  - ========= update method ==========
-  - {4, 100, 6, 8, 'John', 'Ali', -1}
-  
-  
-  </details>
 
-### Dictionary (key-value pairs)
+```python
+a = {"Ali", 4, "John", 6, 8, -1}
+print("========= add method ============")
+a.add("Jeff")
+print(a)
+
+print("========= clear method ============")
+a.clear()
+print(a)
+a = {"Ali", 4, "John", 6, 8, -1}
+b = {6, "Ali", 100, 3.6}
+
+print("======= difference method ========")
+print(a.difference(b))
+
+print("========= discard method ==========")
+a.discard("John")
+print(a)
+
+print("======= intersection method ========")
+print(a.intersection(b))
+print(a.isdisjoint(b))
+c = {4, 8}
+
+print("========= issubset method =========")
+print(c.issubset(a))
+
+print("======= issuperset method ========")
+print(a.issuperset(b))
+
+print("========= remove method ==========")
+b.remove(3.6)
+print(b)
+
+print("======= symmetric_difference method ========")
+print(a.symmetric_difference(b))
+print(a.union(b))
+a = {"Ali", 4, "John", 6, 8, -1}
+
+print("========= update method ==========")
+a.update(b)
+print(a)
+```
+
+    ========= add method ============
+    {'John', 'Jeff', 4, 6, 8, 'Ali', -1}
+    ========= clear method ============
+    set()
+    ======= difference method ========
+    {8, 'John', 4, -1}
+    ========= discard method ==========
+    {4, 6, 8, 'Ali', -1}
+    ======= intersection method ========
+    {'Ali', 6}
+    False
+    ========= issubset method =========
+    True
+    ======= issuperset method ========
+    False
+    ========= remove method ==========
+    {100, 'Ali', 6}
+    ======= symmetric_difference method ========
+    {4, 100, 8, -1}
+    {4, 100, 6, 8, 'Ali', -1}
+    ========= update method ==========
+    {'John', 4, 100, 6, 8, 'Ali', -1}
+
+
+## Dictionary (key-value pairs)
 * A dictionary is a collection that is unordered, changeable, and indexed.
 * In Python, dictionaries are written with curly brackets, and they have keys and values (This is used for creating hash tables).
 
-  ``` python
-  
-  phonebook = dict()                       # Empty dictionary 
-  phonebook = {'Zach': '12-37'}            # Dictionary with one item
-  phonebook['Jay'] = '34-23'               # Add another item
-  print(phonebook)
-  print('Zach' in phonebook)
-  print('Kevin' in phonebook)
-  print(phonebook['Jay'])
-  print("=================================")
-  for name, number in phonebook.items():
-      print(name, number)
-  print("=================================")
-  del phonebook['Zach']                    # Delete an item
-  print(phonebook)
-  print("=================================")
-  for name, number in phonebook.items():
-      print(name, number)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-    
-  - {'Zach': '12-37', 'Jay': '34-23'}
-  - True
-  - False
-  - 34-23
-  - =================================
-  - Zach 12-37
-  - Jay 34-23
-  - =================================
-  - {'Jay': '34-23'}
-  - =================================
-  - Jay 34-23
-  
-  </details>
-  
-  ### Dictionary Methods
-  - get():	            Returns the value of the specified key
-  - items():	        Returns a list containing a tuple for each key-value pair
-  - keys():	        Returns a list containing the dictionary's keys
-  - values():	        Returns a list of all the values in the dictionary
-  - update():	        Updates the dictionary with the specified key-value pairs
-  - clear():	        Removes all the elements from the dictionary
-  
-    ``` python
-    a = {"Ali": 33, "John": 25, "Jeff": 58}
-    print(a.get("Ali"))
-    print(a.items())
-    print(a.keys())
-    print(a.values())
-    b = {"Chris": 14}
-    a.update(b)
-    print(a)
-    a.clear()
-    print(a)
-    ```
-    <details markdown=1><summary markdown="span">Results</summary>
-    
-    - 33
-    - dict_items([('Ali', 33), ('John', 25), ('Jeff', 58)])
-    - dict_keys(['Ali', 'John', 'Jeff'])
-    - dict_values([33, 25, 58])
-    - {'Ali': 33, 'John': 25, 'Jeff': 58, 'Chris': 14}
-    - {}
-    
-    </details>
+
+```python
+phonebook = dict()                       # Empty dictionary 
+phonebook = {'Zach': '12-37'}            # Dictionary with one item
+phonebook['Jay'] = '34-23'               # Add another item
+print(phonebook)
+print('Zach' in phonebook)
+print('Kevin' in phonebook)
+print(phonebook['Jay'])
+print("=================================")
+
+for name, number in phonebook.items():
+  print(name, number)
+print("=================================")
+
+del phonebook['Zach']                    # Delete an item
+print(phonebook)
+print("=================================")
+
+for name, number in phonebook.items():
+  print(name, number)
+```
+
+    {'Zach': '12-37', 'Jay': '34-23'}
+    True
+    False
+    34-23
+    =================================
+    Zach 12-37
+    Jay 34-23
+    =================================
+    {'Jay': '34-23'}
+    =================================
+    Jay 34-23
+
+
+### Dictionary Methods
+- get():	            Returns the value of the specified key
+- items():	        Returns a list containing a tuple for each key-value pair
+- keys():	        Returns a list containing the dictionary's keys
+- values():	        Returns a list of all the values in the dictionary
+- update():	        Updates the dictionary with the specified key-value pairs
+- clear():	        Removes all the elements from the dictionary
+
+
+```python
+a = {"Ali": 33, "John": 25, "Jeff": 58}
+
+print(a.get("Ali"))
+print(a.items())
+print(a.keys())
+print(a.values())
+
+b = {"Chris": 14}
+a.update(b)
+print(a)
+
+a.clear()
+print(a)
+```
+
+    33
+    dict_items([('Ali', 33), ('John', 25), ('Jeff', 58)])
+    dict_keys(['Ali', 'John', 'Jeff'])
+    dict_values([33, 25, 58])
+    {'Ali': 33, 'John': 25, 'Jeff': 58, 'Chris': 14}
+    {}
+
 
 ## Functions
 ### The syntax for defining functions is as follows:
-``` python
+
+
+```python
+
 def f(a, b):
     """Doing something with inputs a and b.
       
     """
     return someting
-```
-``` python
+
 def Myfunction():
     print('Hello World!')
 
 Myfunction()                          # call the function
 
 print('Outside function')
-```
-``` python
+
 # function with two arguments
 def add_numbers(num1, num2):
     sum = num1 + num2
@@ -878,104 +918,99 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
 *  Order of different types of arguments in a function
     - formal args --- > *args --- > **kwargs 
 
-    ``` python
-    def test(normal_arg, *argv):
-        print("first normal arg:", normal_arg)
-        for arg in argv:
-            print("another arg through *argv:", arg)
+
+```python
+def test(normal_arg, *argv):
+    print("first normal arg:", normal_arg)
+    for arg in argv:
+        print("another arg through *argv:", arg)
     
-    test(25, 'John', 'Zach', 'Marry')
-    ```
-    <details markdown=1><summary markdown="span">Results</summary>
-    
-    - first normal arg: 25
-    - another arg through *argv: John
-    - another arg through *argv: Zach
-    - another arg through *argv: Marry
-    
-    </details>
-  
-    ``` python
-    def test(**kwargs):
-      for key, value in kwargs.items():
-          print(f"{key}: {value}")
-  
-    test(name="John", age=23)
-    ```
-    <details markdown=1><summary markdown="span">Results</summary>
-      
-    - name: John
-    - age: 23
-    
-    </details>
+test(25, 'John', 'Zach', 'Marry')
+```
+
+    first normal arg: 25
+    another arg through *argv: John
+    another arg through *argv: Zach
+    another arg through *argv: Marry
 
 
-* Using *args and **kwargs to call a function
-  
-  ``` python
-  def test(arg1, arg2, arg3):
+
+```python
+def test(**kwargs):
+  for key, value in kwargs.items():
+      print(f"{key}: {value}")
+
+test(name="John", age=23)
+```
+
+    name: John
+    age: 23
+
+
+#### Using *args and **kwargs to call a function
+
+
+```python
+def test(arg1, arg2, arg3):
     print("arg1:", arg1)
     print("arg2:", arg2)
     print("arg3:", arg3)
 
-  print("========== with *args ==========")
-  args = ("five", 4, 1)
-  test(*args)
-  
-  print("========= with **kwargs ========")
-  kwargs = {"arg3": 1, "arg2": "two", "arg1": 15}
-  test(**kwargs)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-    
-  - ========== with *args ==========
-  - arg1: five
-  - arg2: 4
-  - arg3: 1
-  - ========= with **kwargs ========
-  - arg1: 15
-  - arg2: two
-  - arg3: 1
-  
-  </details>
+print("========== with *args ==========")
+args = ("five", 4, 1)
+test(*args)
+
+print("========= with **kwargs ========")
+kwargs = {"arg3": 1, "arg2": "two", "arg1": 15}
+test(**kwargs)
+```
+
+    ========== with *args ==========
+    arg1: five
+    arg2: 4
+    arg3: 1
+    ========= with **kwargs ========
+    arg1: 15
+    arg2: two
+    arg3: 1
+
 
 ### Lambda Function
 * A lambda function is a small anonymous function.  
 * A lambda function can take any number of arguments, but can only have one expression.
-    ``` lambda argument: manipulate(argument)```
+    ```lambda argument: manipulate(argument)```
 
-  ``` python
-  # These two operations are identical
-  def add(a, b):
-      return a+b
-  
-  add_lambda = lambda x, y: x + y
-  
-  print("======== regular function =========")
-  print(add(3, 5))
-  print("====== using lambda function =======")
-  print(add_lambda(3, 5))
-  
-  print("====================================")
-  add = lambda a, b, c : a + b + c
-  print(add(5, 6, 2))
-  
-  # Sorting a List of tuples
-  a = [(1, 2), (4, 1), (9, 10), (13, -3)]
-  a.sort(key=lambda x: x[1])
-  print(a)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-  
-  - ======== regular function =========
-  - 8
-  - ====== using lambda function =======
-  - 8
-  - ====================================
-  - 13
-  - [(13, -3), (4, 1), (1, 2), (9, 10)]
-  
-  </details>
+
+```python
+# These two operations are identical
+def add(a, b):
+  return a+b
+
+add_lambda = lambda x, y: x + y
+
+print("======== regular function =========")
+print(add(3, 5))
+print("====== using lambda function =======")
+print(add_lambda(3, 5))
+
+print("====================================")
+add = lambda a, b, c : a + b + c
+print(add(5, 6, 2))
+
+# Sorting a List of tuples
+a = [(1, 2), (4, 1), (9, 10), (13, -3)]
+a.sort(key=lambda x: x[1])
+print(a)
+```
+
+    ======== regular function =========
+    8
+    ====== using lambda function =======
+    8
+    ====================================
+    13
+    [(13, -3), (4, 1), (1, 2), (9, 10)]
+
 
 ### Some built-in functions:
 - map():         It applies a function to all the items in an input_list
@@ -984,114 +1019,125 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
 - reduce:        It applies a rolling computation to sequential pairs of values in a list
 - All these functions return an iterator that yields the output of the desired function. To get the whole results, you should wrap it with the _list()_ method.
 
-* **map()**
+#### map()
 
-  ``` python
-  # passing all the list elements to a function one-by-one and then collecting the output. For instance:
-  items = [1, 2, 3, 4, 5]
-  squared = []
-  for i in items:
-      squared.append(i**2)
-  
-  # map allows us to implement this in a much simpler and nicer way. Here you go:
-  items = [1, 2, 3, 4, 5]
-  squared = list(map(lambda x: x**2, items))
-  print(squared)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-    
-    - [1, 4, 9, 16, 25]
-  
-  </details>
 
-* **filter()**
+```python
+# passing all the list elements to a function one-by-one and then collecting the output. For instance:
+items = [1, 2, 3, 4, 5]
+squared = []
 
-  ``` python
-  number_list = range(-5, 5)
-  less_than_zero = list(filter(lambda x: x < 0, number_list))
-  print(less_than_zero)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-    
-    - [-5, -4, -3, -2, -1]
-  
-  </details>
+for i in items:
+  squared.append(i**2)
 
-* **reduce()**
+# map allows us to implement this in a much simpler and nicer way. Here you go:
+items = [1, 2, 3, 4, 5]
+squared = list(map(lambda x: x**2, items))
+print(squared)
+```
 
-  ``` python
-  # multiplication without reduce
-  product = 1
-  list = [1, 2, 3, 4]
-  for num in list:
-      product = product * num
-  
-  # multiplication with reduce
-  from functools import reduce
-  product = reduce((lambda x, y: x * y), [1, 2, 3, 4])
-  print(product)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-    
-    - 24
-  
-  </details>
+    [1, 4, 9, 16, 25]
+
+
+#### filter()
+
+
+```python
+number_list = range(-5, 5)
+less_than_zero = list(filter(lambda x: x < 0, number_list))
+print(less_than_zero)
+```
+
+    [-5, -4, -3, -2, -1]
+
+
+#### reduce()
+
+
+```python
+# multiplication without reduce
+product = 1
+list = [1, 2, 3, 4]
+for num in list:
+  product = product * num
+
+# multiplication with reduce
+from functools import reduce
+product = reduce((lambda x, y: x * y), [1, 2, 3, 4])
+print(product)
+```
+
+    24
 
 
 ## Iterators, Iterables, Comprehensions
 
+
+```python
+
+```
+
 ## Classes (Object-oriented Programming)
 * The super() built-in returns a proxy object, a substitute object that can call methods of the base class via delegation. Indirection call or ability to reference base object with super().
 
-  ``` python
-  class Animal(object):
-      def __init__(self, species, age): # Constructor `a = Animal(‘bird’, 10)`
-          self.species = species # Refer to instance with `self`
-          self.age = age # All instance variables are public
-          
-      def isPerson(self): # Invoked with `a.isPerson()`
-          return self.species == 'Homo Sapiens'
-      
-      def growup(self):
-          self.age += 1
-          
-  class Dog(Animal): # Inherits Animal’s methods
-      def __init__(self, age):
-          super().__init__(self.__class__.__name__, age)
-      
-      def growup(self): # Override for dog years
-          self.age += 7
-  ```
-  ``` python
-  mydog = Dog(5)
-  print(mydog.species, mydog.age)
-  print(mydog.isPerson())
-  mydog.growup()
-  print(mydog.age)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-  
-  - Dog 5
-  - False
-  - 12
-  
-  </details>
+
+```python
+class Animal(object):
+  def __init__(self, species, age): # Constructor `a = Animal(‘bird’, 10)`
+      self.species = species # Refer to instance with `self`
+      self.age = age # All instance variables are public
+
+  def isPerson(self): # Invoked with `a.isPerson()`
+      return self.species == 'Homo Sapiens'
+
+  def growup(self):
+      self.age += 1
+
+class Dog(Animal): # Inherits Animal’s methods
+  def __init__(self, age):
+      super().__init__(self.__class__.__name__, age)
+
+  def growup(self): # Override for dog years
+      self.age += 7
+
+mydog = Dog(5)
+print(mydog.species, mydog.age)
+print(mydog.isPerson())
+mydog.growup()
+print(mydog.age)
+```
+
+    Dog 5
+    False
+    12
+
 
 ## Packages and Modules (file.py)
-- **Using import**
-  - Importing Modules
+#### Using import
+ - Importing Modules
   - Modules refer to a file containing Python statements and definitions.
   - A file containing Python code is called a module. For example: My_Module.py is a module where its module name would be My_Module.
-    
-      ``` python
-      import os, time                          # Import ‘os’ and ‘time’ modules
-      import numpy as np                       # Import numpy module and changing its name to _np_ for less writing
-      from yaml.loader import SafeLoader       # Import a function called "Safeloader" from module "yaml"
-      ```
+
+
+```python
+import os, time                          # Import ‘os’ and ‘time’ modules
+import numpy as np                       # Import numpy module and changing its name to _np_ for less writing
+from yaml.loader import SafeLoader       # Import a function called "Safeloader" from module "yaml"
+```
 
 ## Decorators
 
+
+```python
+
+```
+
 ## Type Hints
+
+
+```python
+
+```
 
 ## Numpy
 * Numpy is the core library for scientific computing in Python. 
@@ -1111,95 +1157,100 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
 * The first dimension (axis = 0) denotes the columns
 * The second dimension (axis = 1) denotes the rows.
 
-  ``` python
-  import numpy as np
-  x = np.array([1,2,3])              # Create a rank 1 array
-  y = np.array([[3,4,5]])            # Create a rank 2 array
-  z = np.array([[1], [2], [3]])      # Create a rank 2 array
-  t = np.array([[6,7],[8,9]])        # Create a rank 2 array
-  print("x:", x)
-  print("y:", y)
-  print("z:", z)
-  print("===== shape of arrays =====")
-  print(x.shape)
-  print(y.shape)
-  print(z.shape)
-  print(t.shape)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-    
-    - x: [1 2 3]
-    - y: [[3 4 5]]
-    - z: [[1]
-    -     [2]
-    -     [3]]
-    - ===== shape of arrays =====
-    - (3,)
-    - (1, 3)
-    - (3, 1)
-    - (2, 2)
-    
-  </details>
 
-* Numpy has many functions to create different arrays:
+```python
+import numpy as np
 
-  ``` python
-  print("==== an array of all zeros ====")
-  a = np.zeros((2,2))   
-  print(a)                      
-  print("==== an array of all ones ====")
-  b = np.ones((1,2))   
-  print(b)             
-  print("==== an array of constant values ====")
-  c = np.full((2,2), 7)  
-  print(c)                           
-  print("==== a 2x2 identity matrix ====")
-  d = np.eye(2)        
-  print(d)             
-  print("==== an array with random entries ====")
-  e = np.random.random((2,2)) 
-  print(e) 
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
+x = np.array([1,2,3])              # Create a rank 1 array
+y = np.array([[3,4,5]])            # Create a rank 2 array
+z = np.array([[1], [2], [3]])      # Create a rank 2 array
+t = np.array([[6,7],[8,9]])        # Create a rank 2 array
 
-  - ==== an array of all zeros ====
-  - [[0. 0.]
-  -   [0. 0.]]
-  - ==== an array of all ones ====
-  - [[1. 1.]]
-  - ==== an array of constant values ====
-  - [[7 7]
-  -   [7 7]]
-  - ==== a 2x2 identity matrix ====
-  - [[1. 0.]
-  -   [0. 1.]]
-  - ==== an array with random entries ====
-  - [[0.33147697 0.76320062]
-  - [0.08826422 0.47941476]]
+print("x:", x)
+print("y:", y)
+print("z:", z)
 
-  </details>
+print("===== shape of arrays =====")
+print(x.shape)
+print(y.shape)
+print(z.shape)
+print(t.shape)
+```
+
+    x: [1 2 3]
+    y: [[3 4 5]]
+    z: [[1]
+     [2]
+     [3]]
+    ===== shape of arrays =====
+    (3,)
+    (1, 3)
+    (3, 1)
+    (2, 2)
+
+
+#### Numpy has many functions to create different arrays:
+
+
+```python
+print("==== an array of all zeros ====")
+a = np.zeros((2,2))   
+print(a)    
+
+print("==== an array of all ones ====")
+b = np.ones((1,2))   
+print(b)             
+
+print("==== an array of constant values ====")
+c = np.full((2,2), 7)  
+print(c)             
+
+print("==== a 2x2 identity matrix ====")
+d = np.eye(2)        
+print(d)             
+
+print("==== an array with random entries ====")
+e = np.random.random((2,2)) 
+print(e) 
+```
+
+    ==== an array of all zeros ====
+    [[0. 0.]
+     [0. 0.]]
+    ==== an array of all ones ====
+    [[1. 1.]]
+    ==== an array of constant values ====
+    [[7 7]
+     [7 7]]
+    ==== a 2x2 identity matrix ====
+    [[1. 0.]
+     [0. 1.]]
+    ==== an array with random entries ====
+    [[0.96780339 0.1153085 ]
+     [0.78520961 0.12827767]]
+
 
 ### Data Types
 * Numpy arrays are a collection of elements of the same type.
 * Numpy provides a large set of numeric datatypes that can be used to construct arrays.
 * Numpy tries to guess a datatype when an array is created.
     - Functions that construct arrays usually include an optional argument to explicitly specify the data type.
-    ``` python
-    x = np.array([3, 4])                    # numpy choose the datatype
-    print(x.dtype)         
-    x = np.array([1.3, 2.0])                # numpy choose the datatype
-    print(x.dtype)             
-    x = np.array([4, 2], dtype=np.int64)    # User datatype
-    print(x.dtype)
-    ```
-    <details markdown=1><summary markdown="span">Results</summary>
-  
-    - int64
-    - float64
-    - int64
-  
-    </details>
-  
+
+
+```python
+x = np.array([3, 4])                    # numpy choose the datatype
+print(x.dtype)         
+x = np.array([1.3, 2.0])                # numpy choose the datatype
+print(x.dtype)             
+x = np.array([4, 2], dtype=np.int64)    # User datatype
+print(x.dtype)
+```
+
+    int64
+    float64
+    int64
+
+
 ### Math Operations
 * max()/min() operation along one axis:
   - Argument "axis" controls the direction of operation
@@ -1209,196 +1260,186 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   - "keepdims = True" argument forces the output to have the exact shape (dimension) before applying the operation.
     - "keepdims" is the argument for many other math operations such as np.min, np.sum(), np.mean(), etx
 
-  ``` python
-  x = np.array([[1, 2, 3],[4, 5, 6]])
-  print("x shape:", x.shape)
-  print("=======================")
-  xm1 = np.max(x, axis = 1)
-  print(xm1, xm1.shape)
-  print("=======================")
-  xm2 = np.max(x, axis = 1, keepdims = True)
-  print(xm2, xm2.shape)
-  print("=======================")
-  y = np.array([[[1, 2, 3],[4, 5, 6]], [[-1, 3, 2],[0, 1, 2]]])
-  print("y shape:", y.shape)
-  print("=======================")
-  ym1 = np.max(y, axis = 1)
-  print(ym1, ym1.shape)
-  print("=======================")
-  ym2 = np.max(y, axis = 1, keepdims=True)
-  print(ym2, ym2.shape)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
+
+```python
+x = np.array([[1, 2, 3],[4, 5, 6]])
+print("x shape:", x.shape)
+
+print("=======================")
+xm1 = np.max(x, axis = 1)
+print(xm1, xm1.shape)
+
+print("=======================")
+xm2 = np.max(x, axis = 1, keepdims = True)
+print(xm2, xm2.shape)
+
+print("=======================")
+y = np.array([[[1, 2, 3],[4, 5, 6]], [[-1, 3, 2],[0, 1, 2]]])
+print("y shape:", y.shape)
+
+print("=======================")
+ym1 = np.max(y, axis = 1)
+print(ym1, ym1.shape)
+
+print("=======================")
+ym2 = np.max(y, axis = 1, keepdims=True)
+print(ym2, ym2.shape)
+```
+
+    x shape: (2, 3)
+    =======================
+    [3 6] (2,)
+    =======================
+    [[3]
+     [6]] (2, 1)
+    =======================
+    y shape: (2, 2, 3)
+    =======================
+    [[4 5 6]
+     [0 3 2]] (2, 3)
+    =======================
+    [[[4 5 6]]
     
-  - x shape: (2, 3)
-  - =======================
-  - [3 6] (2,)
-  - =======================
-  - [[3]
-  -    [6]] (2, 1)
-  - =======================
-  - y shape: (2, 2, 3)
-  - =======================
-  - [[4 5 6]
-  -    [0 3 2]] (2, 3)
-  - =======================
-  -  [[[4 5 6]]
-  -    [[0 3 2]]] (2, 1, 3)
-  
-  </details>
+     [[0 3 2]]] (2, 1, 3)
+
 
 * Transpose and reshape operation:
   - "-1" in one axis means everything left. For example, ``` python x.reshape((1,-1) ``` reshapes the \\(x\\) dimension such that the first dimension has one and the second dimension has 3 elements.
   - Taking the transpose of a rank 1 array does nothing (printing the same thing).
 
-  ``` python
-  x = np.array([1, 2, 3])
-  print(x.shape)
-  print(x.T.shape)
-  print(x.reshape((1, -1)).shape)
-  print(x.reshape((-1, 1)).shape)
-  xx = np.array([[1, 2, 3]])
-  print(xx.shape)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-    
-  - (3,)
-  - (3,)
-  - (1, 3)
-  - (3, 1)
-  - (1, 3)
 
-  </details>
+```python
+x = np.array([1, 2, 3])
+print(x.shape)
+print(x.T.shape)
+print(x.reshape((1, -1)).shape)
+print(x.reshape((-1, 1)).shape)
+xx = np.array([[1, 2, 3]])
+print(xx.shape)
+```
 
 * Infix operators (i.e. +, -, *, **, /) are element-wise.  
 * Matrix Operations: np.dot, np.linalg.norm, .T, +, -, *, ...
 * Matrix multiplication is done with np.dot(x, W) or x.dot(W). Transpose a matrix with x.T
 
-  ``` python
-  x = np.array([[4,2],[1,9]], dtype=np.float64)
-  y = np.array([[2,1],[3,9]], dtype=np.float64)
 
-  print("==== Elementwise sum ====")
-  print(x + y)
-  print(np.add(x, y))
+```python
+x = np.array([[4,2],[1,9]], dtype=np.float64)
+y = np.array([[2,1],[3,9]], dtype=np.float64)
 
-  print("==== Elementwise difference ====")
-  print(x - y)
-  print(np.subtract(x, y))
+print("==== Elementwise sum ====")
+print(x + y)
+print(np.add(x, y))
 
-  print("==== Elementwise product ====")
-  print(x * y)
-  print(np.multiply(x, y))
+print("==== Elementwise difference ====")
+print(x - y)
+print(np.subtract(x, y))
 
-  print("==== Elementwise division ====")
-  print(x / y)
-  print(np.divide(x, y))
+print("==== Elementwise product ====")
+print(x * y)
+print(np.multiply(x, y))
 
-  print("==== Elementwise square root ====")
-  print(np.sqrt(x))
+print("==== Elementwise division ====")
+print(x / y)
+print(np.divide(x, y))
 
-  print("==== Elementwise power ====")
-  print(np.power(x, 2))
-  print(x**2)
+print("==== Elementwise square root ====")
+print(np.sqrt(x))
 
-  x = np.array([[3,1],[2,-2]])
-  y = np.array([[3,4],[5,9]])
-  
-  v = np.array([9,0])
-  w = np.array([3, 8])
-  
-  print("==== Inner product of vectors ====")
-  print(v.dot(w))
-  print(np.dot(v, w))
+print("==== Elementwise power ====")
+print(np.power(x, 2))
+print(x**2)
 
-  # The result is the rank 1 array
-  print("==== Matrix/vector product ====")
-  print(x.dot(v))
-  print(np.dot(x, v))
-  
-  # The result is the rank 2 array)
-  print("==== Matrix/matrix product  ====")
-  print(x.dot(y))
-  print(np.dot(x, y))
+x = np.array([[3,1],[2,-2]])
+y = np.array([[3,4],[5,9]])
 
-  x = np.array([[1,2],[3,4]])
-  print("==== Compute sum of all elements ====")
-  print(np.sum(x))  
-  print("==== Compute the sum of each column ====")
-  print(np.sum(x, axis=0))
-  print("==== Compute sum of each row ====")
-  print(np.sum(x, axis=1))
+v = np.array([9,0])
+w = np.array([3, 8])
 
-  x = np.array([[4,1],[3,2]])
-  print("==== Frobenius norm ====")
-  print(np.linalg.norm(x))
-  print("==== nuclear norm ====")
-  print(np.linalg.norm(x, 'nuc'))
-  print("==== 2 norm ====")
-  print(np.linalg.norm(x, 2))
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
-    
-  - ==== Elementwise sum ====
-  - [[ 6.  3.]
-  - [ 4. 18.]]
-    
-  - [[ 6.  3.]
-  - [ 4. 18.]]
-  - ==== Elementwise difference ====
-  - [[ 2.  1.]
-  - [-2.  0.]]
-    
-  - [[ 2.  1.]
-  - [-2.  0.]]
-  - ==== Elementwise product ====
-  - [[ 8.  2.]
-  - [ 3. 81.]]
-    
-  - [[ 8.  2.]
-  - [ 3. 81.]]
-  - ==== Elementwise division ====
-  - [[2.         2.        ]
-  - [0.33333333 1.        ]]
-    
-  - [[2.         2.        ]
-  - [0.33333333 1.        ]]
-  - ==== Elementwise square root ====
-  - [[2.         1.41421356]
-  - [1.         3.        ]]
-  - ==== Elementwise power ====
-  - [[16.  4.]
-  - [ 1. 81.]]
-    
-  - [[16.  4.]
-  - [ 1. 81.]]
-  - ==== Inner product of vectors ====
-  - 27
-  - 27
-  - ==== Matrix/vector product ====
-  - [27 18]
-  - [27 18]
-  - ==== Matrix/matrix product  ====
-  - [[ 14  21]
-  - [ -4 -10]]
-    
-  - [[ 14  21]
-  - [ -4 -10]]
-  - ==== Compute sum of all elements ====
-  - 10
-  - ==== Compute the sum of each column ====
-  - [4 6]
-  - ==== Compute sum of each row ====
-  - [3 7]
-  - ==== Frobenius norm ====
-  - 5.477225575051661
-  - ==== nuclear norm ====
-  - 6.324555320336758
-  - ==== 2 norm (max singular value) ====
-  - 5.398345637668169
-  
-   </details>
-  
+print("==== Inner product of vectors ====")
+print(v.dot(w))
+print(np.dot(v, w))
+
+# The result is the rank 1 array
+print("==== Matrix/vector product ====")
+print(x.dot(v))
+print(np.dot(x, v))
+
+# The result is the rank 2 array)
+print("==== Matrix/matrix product  ====")
+print(x.dot(y))
+print(np.dot(x, y))
+
+x = np.array([[1,2],[3,4]])
+print("==== Compute sum of all elements ====")
+print(np.sum(x))  
+print("==== Compute the sum of each column ====")
+print(np.sum(x, axis=0))
+print("==== Compute sum of each row ====")
+print(np.sum(x, axis=1))
+
+x = np.array([[4,1],[3,2]])
+print("==== Frobenius norm ====")
+print(np.linalg.norm(x))
+print("==== nuclear norm ====")
+print(np.linalg.norm(x, 'nuc'))
+print("==== 2 norm ====")
+print(np.linalg.norm(x, 2))
+```
+
+    ==== Elementwise sum ====
+    [[ 6.  3.]
+     [ 4. 18.]]
+    [[ 6.  3.]
+     [ 4. 18.]]
+    ==== Elementwise difference ====
+    [[ 2.  1.]
+     [-2.  0.]]
+    [[ 2.  1.]
+     [-2.  0.]]
+    ==== Elementwise product ====
+    [[ 8.  2.]
+     [ 3. 81.]]
+    [[ 8.  2.]
+     [ 3. 81.]]
+    ==== Elementwise division ====
+    [[2.         2.        ]
+     [0.33333333 1.        ]]
+    [[2.         2.        ]
+     [0.33333333 1.        ]]
+    ==== Elementwise square root ====
+    [[2.         1.41421356]
+     [1.         3.        ]]
+    ==== Elementwise power ====
+    [[16.  4.]
+     [ 1. 81.]]
+    [[16.  4.]
+     [ 1. 81.]]
+    ==== Inner product of vectors ====
+    27
+    27
+    ==== Matrix/vector product ====
+    [27 18]
+    [27 18]
+    ==== Matrix/matrix product  ====
+    [[ 14  21]
+     [ -4 -10]]
+    [[ 14  21]
+     [ -4 -10]]
+    ==== Compute sum of all elements ====
+    10
+    ==== Compute the sum of each column ====
+    [4 6]
+    ==== Compute sum of each row ====
+    [3 7]
+    ==== Frobenius norm ====
+    5.477225575051661
+    ==== nuclear norm ====
+    6.324555320336758
+    ==== 2 norm ====
+    5.398345637668169
+
+
 * Note: Shapes (N,) != (1, N) != (N,1)
 
 ### Indexing
@@ -1415,179 +1456,233 @@ def test_function(a. b):              # some placeholder (doinf nothing) for a f
   * It is 0-based, and accepts negative indices for indexing from the end of the array.
       - It is not necessary to separate each dimension’s index into its own set of square brackets.
       - Separating each dimension’s index into its own set of square brackets is recommended.
-  
-     ``` python
-     x = np.arange(10)
-     print("x=", x)
-     print(x[2])
-     print(x[-2])
-      
-     print("==== changing the shape of x  to (2, 5) ====")
-     x.shape = (2, 5)
-     print("x=", x)
-     print(x[1, 3] == x[1][3])
 
-     print("==== The first row of x and its shape")
-     print(x[0], x[0].shape)
-     ```
-     <details markdown=1><summary markdown="span">Results</summary>
 
-     - x= [0 1 2 3 4 5 6 7 8 9]
-     - 2
-     - 8
-     - ==== changing the shape of x  to (2, 5) ====
-     - x= [[0 1 2 3 4]
-     -    [5 6 7 8 9]]
-     -    True
-     -    ==== The first row of x and its shape
-     -    [0 1 2 3 4] (5,) 
-     
-     </details>
+```python
+x = np.arange(10)
+print("x=", x)
+print(x[2])
+print(x[-2])
+
+print("==== changing the shape of x  to (2, 5) ====")
+x.shape = (2, 5)
+print("x=", x)
+print(x[1, 3] == x[1][3])
+
+print("==== The first row of x and its shape")
+print(x[0], x[0].shape)
+```
+
+    x= [0 1 2 3 4 5 6 7 8 9]
+    2
+    8
+    ==== changing the shape of x  to (2, 5) ====
+    x= [[0 1 2 3 4]
+     [5 6 7 8 9]]
+    True
+    ==== The first row of x and its shape
+    [0 1 2 3 4] (5,)
+
 
 * **Slicing Indexing**
-  * We need to specify a slice for each dimension of the array.
-    - Slice has the format as ```start:stop:step```
-  * Modifying a slice of an array will also modify the original array.
-  * Mixing integer indexing with slices results in an array of lower rank.
-  * Indexing using slices results in an array of the same rank as the original array.
-  * For slicing method, **do not use separate square brackets for each dimension**.
+* We need to specify a slice for each dimension of the array.
+- Slice has the format as ```start:stop:step```
+* Modifying a slice of an array will also modify the original array.
+* Mixing integer indexing with slices results in an array of lower rank.
+* Indexing using slices results in an array of the same rank as the original array.
+* For slicing method, **do not use separate square brackets for each dimension**.
 
-  ``` python
-  a = np.array([[5,6,1,3], [2,-6,0,9], [19,-10,1,2]])
-  print("a=", a, a.shape)
-  
-  print("===== A slice of array a =====")
-  b = a[:2, 1:3]
-  print(b.shape)
-  print("a[:2, 1:3] != a[:2][1:3]")
-  
-  print("===== Entry (0, 1) of array a =====")
-  print(a[0, 1])
-  
-  print("===== Modifying entry (0, 0) of b will change the Entry (0, 1) of array a =====")
-  b[0, 0] = 77     
-  print(a[0, 1])
-  
-  print("===== Rank 1 view of the second row of array a ======")
-  row_r1 = a[1, :]
-  print(row_r1, row_r1.shape)
-  
-  print("===== Rank 2 view of the second row of array a ======")
-  row_r2 = a[1:2, :]  # Rank 2 view of the second row of a
-  print(row_r2, row_r2.shape)
-  
-  print("==== slice is selected only for the first dimension")
-  t = a[1:2]
-  print(t, t.shape)
-  
-  print("===== Rank 1 view of the second column of array a ======")
-  col_r1 = a[:, 1]
-  print(col_r1, col_r1.shape)
-  
-  print("===== Rank 2 view of the second column of array a ======")
-  col_r2 = a[:, 1:2]
-  print(col_r2, col_r2.shape)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
 
-  - a= [[  5   6   1   3]
-  -   [  2  -6   0   9]
-  -   [ 19 -10   1   2]] (3, 4)
-  - ===== A slice of array a =====
-  - (2, 2)
-  - a[:2, 1:3] != a[:2][1:3]
-  - ===== Entry (0, 1) of array a =====
-  - 6
-  - ===== Modifying entry (0, 0) of b will change the Entry (0, 1) of array a =====
-  - 77
-  - ===== Rank 1 view of the second row of array a ======
-  - [ 2 -6  0  9] (4,)
-  - ===== Rank 2 view of the second row of array a ======
-  - [[ 2 -6  0  9]] (1, 4)
-  - ==== slice is selected only for the first dimension
-  - [[ 2 -6  0  9]] (1, 4)
-  - ===== Rank 1 view of the second column of array a ======
-  - [ 77  -6 -10] (3,)
-  - ===== Rank 2 view of the second column of array a ======
-  - [[ 77]
-  -    [ -6]
-  -    [-10]] (3, 1)
-  
-  </details>
+```python
+a = np.array([[5,6,1,3], [2,-6,0,9], [19,-10,1,2]])
+print("a=", a, a.shape)
+
+print("===== A slice of array a =====")
+b = a[:2, 1:3]
+print(b.shape)
+print("a[:2, 1:3] != a[:2][1:3]")
+
+print("===== Entry (0, 1) of array a =====")
+print(a[0, 1])
+
+print("===== Modifying entry (0, 0) of b will change the Entry (0, 1) of array a =====")
+b[0, 0] = 77     
+print(a[0, 1])
+
+print("===== Rank 1 view of the second row of array a ======")
+row_r1 = a[1, :]
+print(row_r1, row_r1.shape)
+
+print("===== Rank 2 view of the second row of array a ======")
+row_r2 = a[1:2, :]  # Rank 2 view of the second row of a
+print(row_r2, row_r2.shape)
+
+print("==== slice is selected only for the first dimension")
+t = a[1:2]
+print(t, t.shape)
+
+print("===== Rank 1 view of the second column of array a ======")
+col_r1 = a[:, 1]
+print(col_r1, col_r1.shape)
+
+print("===== Rank 2 view of the second column of array a ======")
+col_r2 = a[:, 1:2]
+print(col_r2, col_r2.shape)
+```
+
+    a= [[  5   6   1   3]
+     [  2  -6   0   9]
+     [ 19 -10   1   2]] (3, 4)
+    ===== A slice of array a =====
+    (2, 2)
+    a[:2, 1:3] != a[:2][1:3]
+    ===== Entry (0, 1) of array a =====
+    6
+    ===== Modifying entry (0, 0) of b will change the Entry (0, 1) of array a =====
+    77
+    ===== Rank 1 view of the second row of array a ======
+    [ 2 -6  0  9] (4,)
+    ===== Rank 2 view of the second row of array a ======
+    [[ 2 -6  0  9]] (1, 4)
+    ==== slice is selected only for the first dimension
+    [[ 2 -6  0  9]] (1, 4)
+    ===== Rank 1 view of the second column of array a ======
+    [ 77  -6 -10] (3,)
+    ===== Rank 2 view of the second column of array a ======
+    [[ 77]
+     [ -6]
+     [-10]] (3, 1)
+
 
 * **Integer Indexing**
-  * Integer array indexing allows selection of arbitrary items in the array based on their N-dimensional index.
-  * Each integer array represents a number of indices into that dimension.
-  * Mixing integer indexing with slices results in an array of lower rank.
-  * Indexing using slices results in an array of the same rank as the original array.
- 
-  ``` python
-  x = np.arange(10, 1, -1)
-  print("x=", x)
-  print("==== A subset of x with specified location =====")
-  print("subset = ", x[np.array([3, 3, 1, 8])])
-  print("==== Integer indexing with constructing index array using np.arrange()  ====")
-  print("subset = ", x[[3, 3, 1, 8]])
-  
-  print("==== A new 3 by 2 array =====")
-  b = np.array([[1,2], [3, 4], [5, 6]])
-  print("b=", b, b.shape)
-  
-  print("==== A subset of b with specified locations =====")
-  t = b[[0, 1, 2], [0, 1, 0]]
-  print("t =", t, t.shape) 
-  
-  print("==== t array with another approach =====")
-  print(np.array([b[0, 0], b[1, 1], b[2, 0]]))
-  
-  print("==== Integer indexing with constructing index array using np.arrange() ====")
-  print(b[[0, 0], [1, 1]])
-  
-  print("==== A new 4 by 3 array =====")
-  c = np.array([[1,2,3], [4,5,6], [7,8,9], [10, 11, 12]])
-  print("c =", c)
-  
-  print("==== Creating an array of indices =====")
-  i = np.array([0, 2, 0, 1])
-  print("i = ", i)
-  
-  print("==== Select one element from each row of c using the indices in i ====")
-  print(c[np.arange(4), i]) 
-  
-  print("==== Mutating one element from each row of c using the indices in i ====")
-  c[np.arange(4), i] += 10
-  print("c = ", c)
-  ```
-  <details markdown=1><summary markdown="span">Results</summary>
+* Integer array indexing allows selection of arbitrary items in the array based on their N-dimensional index.
+* Each integer array represents a number of indices into that dimension.
+* Mixing integer indexing with slices results in an array of lower rank.
+* Indexing using slices results in an array of the same rank as the original array.
 
-  - x = [10  9  8  7  6  5  4  3  2]
-  - ==== A subset of x with specified locations =====
-  - subset =  [7 7 9 2]
-  - ==== Integer indexing with constructing index array using np.arrange()  ====
-  - subset =  [7 7 9 2]
-  - ==== A new 3 by 2 array =====
-  - b= [[1 2]
-  -     [3 4]
-  -     [5 6]] (3, 2)
-  - ==== A subset of b with specified location =====
-  - t = [1 4 5] (3,)
-  - ==== t array with another approach =====
-  - [1 4 5]
-  - ==== Integer indexing with constructing index array using np.arrange() ====
-  - [2 2]
-  - ==== A new 4 by 3 array =====
-  - c = [[ 1  2  3]
-  -     [ 4  5  6]
-  -     [ 7  8  9]
-  -     [10 11 12]]
-  - ==== Creating an array of indices =====
-  - i =  [0 2 0 1]
-  - ==== Select one element from each row of c using the indices in i ====
-  - [ 1  6  7 11]
-  - ==== Mutating one element from each row of c using the indices in i ====
-  - c =  [[11  2  3]
-  -     [ 4  5 16]
-  -     [17  8  9]
-  -     [10 21 12]]
 
-  </details>
+```python
+x = np.arange(10, 1, -1)
+print("x=", x)
+print("==== A subset of x with specified location =====")
+print("subset = ", x[np.array([3, 3, 1, 8])])
+print("==== Integer indexing with constructing index array using np.arrange()  ====")
+print("subset = ", x[[3, 3, 1, 8]])
+
+print("==== A new 3 by 2 array =====")
+b = np.array([[1,2], [3, 4], [5, 6]])
+print("b=", b, b.shape)
+
+print("==== A subset of b with specified locations =====")
+t = b[[0, 1, 2], [0, 1, 0]]
+print("t =", t, t.shape) 
+
+print("==== t array with another approach =====")
+print(np.array([b[0, 0], b[1, 1], b[2, 0]]))
+
+print("==== Integer indexing with constructing index array using np.arrange() ====")
+print(b[[0, 0], [1, 1]])
+
+print("==== A new 4 by 3 array =====")
+c = np.array([[1,2,3], [4,5,6], [7,8,9], [10, 11, 12]])
+print("c =", c)
+
+print("==== Creating an array of indices =====")
+i = np.array([0, 2, 0, 1])
+print("i = ", i)
+
+print("==== Select one element from each row of c using the indices in i ====")
+print(c[np.arange(4), i]) 
+
+print("==== Mutating one element from each row of c using the indices in i ====")
+c[np.arange(4), i] += 10
+print("c = ", c)
+```
+
+    x= [10  9  8  7  6  5  4  3  2]
+    ==== A subset of x with specified location =====
+    subset =  [7 7 9 2]
+    ==== Integer indexing with constructing index array using np.arrange()  ====
+    subset =  [7 7 9 2]
+    ==== A new 3 by 2 array =====
+    b= [[1 2]
+     [3 4]
+     [5 6]] (3, 2)
+    ==== A subset of b with specified locations =====
+    t = [1 4 5] (3,)
+    ==== t array with another approach =====
+    [1 4 5]
+    ==== Integer indexing with constructing index array using np.arrange() ====
+    [2 2]
+    ==== A new 4 by 3 array =====
+    c = [[ 1  2  3]
+     [ 4  5  6]
+     [ 7  8  9]
+     [10 11 12]]
+    ==== Creating an array of indices =====
+    i =  [0 2 0 1]
+    ==== Select one element from each row of c using the indices in i ====
+    [ 1  6  7 11]
+    ==== Mutating one element from each row of c using the indices in i ====
+    c =  [[11  2  3]
+     [ 4  5 16]
+     [17  8  9]
+     [10 21 12]]
+
+
+## Pandas
+
+
+```python
+
+```
+
+## Matplotlib
+
+
+```python
+import matplotlib.pyplot as plt
+%matplotlib inline
+```
+
+
+```python
+x = np.linspace(-5, 5, 100)
+
+y1 = 1/(1+np.exp(-x))
+y2 = np.log(1+np.exp(-x))
+
+x.shape, y1.shape, y2.shape
+```
+
+
+
+
+    ((100,), (100,), (100,))
+
+
+
+
+```python
+plt.plot(x, y1, 'r-', x, y2, 'b--', linewidth=2)
+plt.grid()
+plt.legend(['Sigmoid Function', 'Exp Function'])
+```
+
+
+
+
+    <matplotlib.legend.Legend at 0x7fe476d91970>
+
+
+
+
+    
+![png](output_114_1.png)
+    
+
+
+
+```python
+
+```
