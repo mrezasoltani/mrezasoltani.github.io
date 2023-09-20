@@ -1484,12 +1484,12 @@ print(x[0], x[0].shape)
 
 
 * **Slicing Indexing**
-* We need to specify a slice for each dimension of the array.
-- Slice has the format as ```start:stop:step```
-* Modifying a slice of an array will also modify the original array.
-* Mixing integer indexing with slices results in an array of lower rank.
-* Indexing using slices results in an array of the same rank as the original array.
-* For slicing method, **do not use separate square brackets for each dimension**.
+  * We need to specify a slice for each dimension of the array.
+    - Slice has the format as ```start:stop:step```
+  * Modifying a slice of an array will also modify the original array.
+  * Mixing integer indexing with slices results in an array of lower rank.
+  * Indexing using slices results in an array of the same rank as the original array.
+  * For slicing method, **do not use separate square brackets for each dimension**.
 
 
 ```python
@@ -1554,10 +1554,10 @@ print(col_r2, col_r2.shape)
 
 
 * **Integer Indexing**
-* Integer array indexing allows selection of arbitrary items in the array based on their N-dimensional index.
-* Each integer array represents a number of indices into that dimension.
-* Mixing integer indexing with slices results in an array of lower rank.
-* Indexing using slices results in an array of the same rank as the original array.
+  * Integer array indexing allows selection of arbitrary items in the array based on their N-dimensional index.
+  * Each integer array represents a number of indices into that dimension.
+  * Mixing integer indexing with slices results in an array of lower rank.
+  * Indexing using slices results in an array of the same rank as the original array.
 
 
 ```python
