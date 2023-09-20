@@ -10,4 +10,3 @@ title: "Course"
 * [Module 4](Course/module_4.md)
 * [Module 5](Course/module_5.md)
 * [Module 6](Course/module_6.md)
-* [test](Course/test.md)
