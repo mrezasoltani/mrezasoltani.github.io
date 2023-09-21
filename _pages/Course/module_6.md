@@ -13,7 +13,7 @@ classes: wide
 print('Hello World')
 ```
 
-## Python Installation
+## Python installation
 
 ## Anaconda
 - Anaconda is a popular Python environment/package manager  
@@ -220,7 +220,7 @@ assert	del	global	not	with
 async	elif	if	or	yield
 ```
 
-## String Format
+## String format
 ### There are 3 ways to format strings. 
 * Old method using "%" sign
 * Using _format()_ method
@@ -309,7 +309,7 @@ for i, name in enumerate(['Zack','Jay','Richard']):
     print('Hi ' + '! {0}: {1:.4f}'.format(name, i))
 ```
 
-### While Loops
+### While loops
 
 
 ```python
@@ -546,7 +546,7 @@ numbers[::-1]
 
 
 
-### List Methods:
+### List methods:
 - sort(): Sorts the list in ascending order.
   - We can also use sorted() built-in function.
 - append(): Adds a single element to a list.
@@ -637,7 +637,7 @@ print(single)
     (10,)
 
 
-### Tuple Methods
+### Tuple methods
 - count():   Returns the number of times a specified value occurs in a tuple
 - index():   Searches the tuple for a specified value and returns the position of where it was found
 
@@ -710,7 +710,7 @@ print(names.intersection(names_2))
     {'Jay'}
 
 
-### Set Methods
+### Set methods
 - add():	                    Adds an element to the set
 - clear():	                Removes all the elements from the set
 - copy():	                Returns a copy of the set
@@ -836,7 +836,7 @@ for name, number in phonebook.items():
     Jay 34-23
 
 
-### Dictionary Methods
+### Dictionary methods
 - get():	            Returns the value of the specified key
 - items():	        Returns a list containing a tuple for each key-value pair
 - keys():	        Returns a list containing the dictionary's keys
@@ -1106,7 +1106,7 @@ print(mydog.age)
     12
 
 
-## Packages and Modules (file.py)
+## Packages and modules (file.py)
 #### Using import
  - Importing Modules
   - Modules refer to a file containing Python statements and definitions.
@@ -1182,27 +1182,6 @@ print(t.shape)
     (3, 1)
     (2, 2)
 
-
-#### Numpy has many functions to create different arrays:
-* Two function for creating 1-D arrays:
-  - ```python np.linspace(stat, stop, # samples) ``` \\(~\Longrightarrow\\) Returns evenly spaced numbers over a specified interval.
-  - ```python np.arange(stat, stop, step) ``` \\(~\Longrightarrow\\) Return evenly spaced values within a given interval.
-    - step: spacing between values
-
-  ``` python
-  a = np.linspace(-5, 5, 100)
-  print("==== a shape ====")
-  print(a.shape)
-  b = np.arange(-5, 5, 0.01)
-  print("==== a shape ====")
-  print(b.shape)
-  ```
-
-    ==== a shape ====
-    (100,)
-    ==== a shape ====
-    (1000,)
-    
 
 ```python
 print("==== an array of all zeros ====")
