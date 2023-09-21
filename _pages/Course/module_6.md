@@ -1185,8 +1185,8 @@ print(t.shape)
 
 #### Numpy has many functions to create different arrays:
 * Two function for creating 1-D arrays:
-  - ``` python np.linspace(stat, stop, # samples) ``` \\(~Longrightarrow\\) Returns evenly spaced numbers over a specified interval.
-  - ``` python np.arange(stat, stop, step) ``` \\(~Longrightarrow\\) Return evenly spaced values within a given interval.
+  - ```python np.linspace(stat, stop, # samples) ``` \\(~Longrightarrow\\) Returns evenly spaced numbers over a specified interval.
+  - ```python np.arange(stat, stop, step) ``` \\(~Longrightarrow\\) Return evenly spaced values within a given interval.
     - step: spacing between values
 
   ``` python
