@@ -1184,7 +1184,25 @@ print(t.shape)
 
 
 #### Numpy has many functions to create different arrays:
+* Two function for creating 1-D arrays:
+  - ``` python np.linspace(stat, stop, # samples) ``` \\(~Longrightarrow\\) Returns evenly spaced numbers over a specified interval.
+  - ``` python np.arange(stat, stop, step) ``` \\(~Longrightarrow\\) Return evenly spaced values within a given interval.
+    - step: spacing between values
 
+  ``` python
+  a = np.linspace(-5, 5, 100)
+  print("==== a shape ====")
+  print(a.shape)
+  b = np.arange(-5, 5, 0.01)
+  print("==== a shape ====")
+  print(b.shape)
+  ```
+
+    ==== a shape ====
+    (100,)
+    ==== a shape ====
+    (1000,)
+    
 
 ```python
 print("==== an array of all zeros ====")
