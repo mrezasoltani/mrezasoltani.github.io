@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Module 6 --- Python, Numpy, Pandas, Visualization"
 classes: wide
 ---
@@ -13,7 +14,7 @@ classes: wide
 print('Hello World')
 ```
 
-## Python installation
+## Python Installation
 
 ## Anaconda
 - Anaconda is a popular Python environment/package manager  
@@ -220,7 +221,21 @@ assert	del	global	not	with
 async	elif	if	or	yield
 ```
 
-## String format
+### Special variables
+
+*These variables are all reserved by Python and should not be used for other purposes.
+* ```__author__``` The name of the author of the module
+* ```__doc__``` A string that contains the documentation for the module
+* ```__file__``` The path to the module file
+* ```__name__``` The name of the module
+* ```__package__``` The name of the package that the module is part of
+* ```__name__``` The namespace that a Python module is running in
+* ```__doc__``` Printing out the docstring that appears in a class or method
+* ```__class__``` Returning the class of an instance
+* ```__dict__``` Returning, as a dictionary, all attributes of a class instance:
+* ```dir()``` Rreturning, as a list, every associated method or attribute
+
+## String Format
 ### There are 3 ways to format strings. 
 * Old method using "%" sign
 * Using _format()_ method
@@ -285,6 +300,69 @@ print(f"The product of {num1:.2f} and {num2:.4f} is {num1 * num2:.2f}.")
     The product of 83.99 and 9.8765 is 829.51.
 
 
+### String methods
+* Python String find()
+    - Returns the index of first occurrence of substring
+* Python String islower()
+    - Checks if all Alphabets in a String are Lowercase
+* Python String isnumeric()
+    - Checks Numeric Characters
+* Python String replace()
+    - Replaces Substring Inside
+* Python String lstrip()
+    - Removes Leading Characters
+* Python String rstrip()
+    - Removes Trailing Characters
+* Python String split()
+    - Splits String from Left
+* Python String join()
+    - Returns a Concatenated String
+
+
+```python
+string = " !Hi man how are you?&"
+
+print(string.find("man"), "\n")
+
+print(string.islower(), "\n")
+
+print(string.isnumeric(), "\n")
+
+print(string.replace("man", "Sir"), "\n")
+
+print(string.lstrip(" !"), "\n")
+
+print(string.rstrip("&"), "\n")
+
+print(string.split(" "), "\n")
+
+a = string.split(" ")
+" ".join(a)
+```
+
+    5 
+    
+    False 
+    
+    False 
+    
+     !Hi Sir how are you?& 
+    
+    Hi man how are you?& 
+    
+     !Hi man how are you? 
+    
+    ['', '!Hi', 'man', 'how', 'are', 'you?&'] 
+    
+
+
+
+
+
+    ' !Hi man how are you?&'
+
+
+
 ## Code blocks are created using indents.
 ### Indents can be 2 or 4 spaces but should be consistent throughout the file.
 
@@ -309,7 +387,7 @@ for i, name in enumerate(['Zack','Jay','Richard']):
     print('Hi ' + '! {0}: {1:.4f}'.format(name, i))
 ```
 
-### While loops
+### While Loops
 
 
 ```python
@@ -542,11 +620,16 @@ numbers[::-1]
     [4, 5, 6]
     [3, 4]
     [0, 2, 4]
+
+
+
+
+
     [6, 5, 4, 3, 2, 1, 0]
 
 
 
-### List methods:
+### List Methods:
 - sort(): Sorts the list in ascending order.
   - We can also use sorted() built-in function.
 - append(): Adds a single element to a list.
@@ -637,7 +720,7 @@ print(single)
     (10,)
 
 
-### Tuple methods
+### Tuple Methods
 - count():   Returns the number of times a specified value occurs in a tuple
 - index():   Searches the tuple for a specified value and returns the position of where it was found
 
@@ -710,7 +793,7 @@ print(names.intersection(names_2))
     {'Jay'}
 
 
-### Set methods
+### Set Methods
 - add():	                    Adds an element to the set
 - clear():	                Removes all the elements from the set
 - copy():	                Returns a copy of the set
@@ -836,7 +919,7 @@ for name, number in phonebook.items():
     Jay 34-23
 
 
-### Dictionary methods
+### Dictionary Methods
 - get():	            Returns the value of the specified key
 - items():	        Returns a list containing a tuple for each key-value pair
 - keys():	        Returns a list containing the dictionary's keys
@@ -1064,12 +1147,29 @@ print(product)
     24
 
 
-## Iterators, Iterables, Comprehensions
+#### I/O file operation
+* Open a file
+* Read or write (perform operation)
+* Close the file
+    - "r" Open a file for reading (default)
+    - "w" Open a file for writing. Creates a new file if it does not exist or overwrite the file if it exists.
+    - "a" Open a file for appending at the end of the file without overwriting it. Creates a new file if it does not exist.
+    - "b" Open in binary mode
 
 
 ```python
+# Wrting in a file
+with open("test.txt", "w") as file:
+    file.write("Hello My Dear !!!")
 
+# Reading a file
+with open("test.txt", "r") as file:
+    a = file.read()
+print(a)
 ```
+
+    Hello My Dear !!!
+
 
 ## Classes (Object-oriented Programming)
 * The super() built-in returns a proxy object, a substitute object that can call methods of the base class via delegation. Indirection call or ability to reference base object with super().
@@ -1106,7 +1206,152 @@ print(mydog.age)
     12
 
 
-## Packages and modules (file.py)
+## List, set and disctionary comprehensions
+
+
+```python
+print("===== list comprehension =====")
+print([a**2 for a in range(6)])
+
+print("===== list comprehension with condition =====")
+print([a**2 for a in range(6) if a%2 != 0])
+
+persons = [("John", 23), ("Abby", 18), ("Frank", 39)]
+
+print("===== set comprehension =====")
+print({item[0] for item in persons})
+
+print("===== dictionary comprehension =====")
+print({name: age for name, age in persons})
+```
+
+    ===== list comprehension =====
+    [0, 1, 4, 9, 16, 25]
+    ===== list comprehension with condition =====
+    [1, 9, 25]
+    ===== set comprehension =====
+    {'Frank', 'Abby', 'John'}
+    ===== dictionary comprehension =====
+    {'John': 23, 'Abby': 18, 'Frank': 39}
+
+
+## Iteration, Iterators, Iterables, and Generators
+
+#### Iteration
+* It is the process of taking an item from something e.g a list. When we use a loop to loop over something which is called iteration. 
+
+#### Iterable
+* An iterable is any object in Python which has an **\_iter\_()** or a **\_getitem\_()** method.
+* It returns an iterator or can take indexes (an object that can generate an iterator).
+* It produce items on demand.
+* lists, tuples, dictionaries, and sets are built-in iterables.
+
+####  Iterator
+* An object that allows you to iterate over collections of data such list.
+* it should implement a **\_next\_()** method and **\_iter\_()** methods that returns an item in every call.
+* Iterators take responsibility for two main actions:
+    - Returning the data from a stream or container one item at a time
+    - Keeping track of the current and visited items
+* Every Iterator is an interable but the other way around is not always true. 
+
+
+#### Generators
+* Generators are iterators, but you can only iterate over them once. 
+* Generators do'not store all the values in memory, they generate the values on the fly.
+* You use them by iterating over them, either with a ‘for’ loop or by passing them to any function or construct that iterates.
+* There are two ways generators:
+    - MUsing functions using _yield_ instead of _return_
+    - Uisng Generator expression
+
+#### Implementing a generator
+
+
+```python
+class Myiterator():
+    def __init__(self, sequence):
+        self.sequence = sequence
+        self.next = 0
+        
+    def __iter__(self):
+        return self
+    
+    def __next__(self):
+        if self.next < len(self.sequence):
+            temp = self.sequence[self.next]
+            self.next += 1
+            return temp
+        else:
+            raise StopIteration
+
+a = [1, 2, 3, 4]
+for item in Myiterator(a):
+    print(item)
+```
+
+    1
+    2
+    3
+    4
+
+
+#### Generator using function
+
+
+```python
+def generator_function():
+    for i in range(4):
+        yield i
+
+for item in generator_function():
+    print(item)
+```
+
+    0
+    1
+    2
+    3
+
+
+#### Generator expression \\(\Longrightarrow\\) (expression for item in iterable)
+
+
+```python
+My_Generator = (i ** 2 for i in range(4))
+
+for i in My_Generator:
+    print(i)
+```
+
+    0
+    1
+    4
+    9
+
+
+#### Pipelining Generators
+* Multiple generators can be used to pipeline a series of operations.
+
+
+```python
+def fibonacci_numbers(nums):
+    x, y = 0, 1
+    for _ in range(nums):
+        x, y = y, x+y
+        yield x
+
+def square(nums):
+    for num in nums:
+        yield num**2
+
+print("Finding the sum of squares of numbers in the Fibonacci series")
+print(sum(square(fibonacci_numbers(10))))
+```
+
+    Finding the sum of squares of numbers in the Fibonacci series
+    4895
+
+
+## Packages and Modules (file.py)
 #### Using import
  - Importing Modules
   - Modules refer to a file containing Python statements and definitions.
@@ -1121,10 +1366,40 @@ from yaml.loader import SafeLoader       # Import a function called "Safeloader"
 
 ## Decorators
 
+* A Python decorator is a function that takes in a function and returns it by adding some functionality ([link](https://www.programiz.com/python-programming/decorator)).
+* Python uses **@** to define a decorator. 
+
 
 ```python
+def zero_devision(func):
+    # define the inner function 
+    def inner(a, b):
+        # add some additional functionality to the decorated function
+        if b==0:
+            print("Cannot devide by zero !!!")
+            return
+        
+        # return the inner function
+        return func(a, b)
+    return inner
 
+@zero_devision
+def devide(a, b):
+    return a/b
+
+print("==== deviding by non-zero =====")
+print(devide(4,3))
+
+print("\n==== deviding by zero =====")
+devide(4,0)
 ```
+
+    ==== deviding by non-zero =====
+    1.3333333333333333
+    
+    ==== deviding by zero =====
+    Cannot devide by zero !!!
+
 
 ## Type Hints
 
@@ -1181,6 +1456,31 @@ print(t.shape)
     (1, 3)
     (3, 1)
     (2, 2)
+
+
+#### Numpy has many functions to create different arrays:
+* Two functions for creating 1-D arrays:
+  - ```python np.linspace(stat, stop, # samples) ``` \\(~\Longrightarrow\\) Returns evenly spaced numbers over a specified interval.
+  - ```python np.arange(stat, stop, step) ``` \\(~\Longrightarrow\\) Return evenly spaced values within a given interval.
+    - step: spacing between values
+
+
+```python
+a = np.linspace(-5, 5, 100)
+print("==== a shape linspace ====")
+print(a.shape)
+b = np.arange(-5, 5, 0.1)
+print("==== a shape arange ====")
+print(b.shape)
+```
+
+    ==== a shape linspace ====
+    (100,)
+    ==== a shape arange ====
+    (100,)
+
+
+* Functions for creating 2-D arrays (matrix)
 
 
 ```python
@@ -1312,6 +1612,7 @@ print(xx.shape)
 * Infix operators (i.e. +, -, *, **, /) are element-wise.  
 * Matrix Operations: np.dot, np.linalg.norm, .T, +, -, *, ...
 * Matrix multiplication is done with np.dot(x, W) or x.dot(W). Transpose a matrix with x.T
+* Note: Shapes \\((N,) != (1, N) != (N,1)\\)
 
 
 ```python
@@ -1431,8 +1732,6 @@ print(np.linalg.norm(x, 2))
     5.398345637668169
 
 
-* Note: Shapes (N,) != (1, N) != (N,1)
-
 ### Indexing
 * Similar to Python lists, numpy arrays can be indexed by slicing or itegers.
 * Different ways for indexing:
@@ -1476,12 +1775,12 @@ print(x[0], x[0].shape)
 
 
 * **Slicing Indexing**
-  * We need to specify a slice for each dimension of the array.
-    - Slice has the format as ```start:stop:step```
-  * Modifying a slice of an array will also modify the original array.
-  * Mixing integer indexing with slices results in an array of lower rank.
-  * Indexing using slices results in an array of the same rank as the original array.
-  * For slicing method, **do not use separate square brackets for each dimension**.
+    * We need to specify a slice for each dimension of the array.
+        - Slice has the format as ```start:stop:step```
+    * Modifying a slice of an array will also modify the original array.
+    * Mixing integer indexing with slices results in an array of lower rank.
+    * Indexing using slices results in an array of the same rank as the original array.
+    * For slicing method, **do not use separate square brackets for each dimension**.
 
 
 ```python
@@ -1546,10 +1845,10 @@ print(col_r2, col_r2.shape)
 
 
 * **Integer Indexing**
-  * Integer array indexing allows selection of arbitrary items in the array based on their N-dimensional index.
-  * Each integer array represents a number of indices into that dimension.
-  * Mixing integer indexing with slices results in an array of lower rank.
-  * Indexing using slices results in an array of the same rank as the original array.
+    * Integer array indexing allows selection of arbitrary items in the array based on their N-dimensional index.
+    * Each integer array represents a number of indices into that dimension.
+    * Mixing integer indexing with slices results in an array of lower rank.
+    * Indexing using slices results in an array of the same rank as the original array.
 
 
 ```python
@@ -1621,19 +1920,143 @@ print("c = ", c)
      [10 21 12]]
 
 
+### Broadcasting
+https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html
+* Broadcasting is a super useful mechanism that allows numpy to work with arrays of different shapes.
+    - For instance, we have a smaller array and a larger array, and we want to use the smaller array multiple times to perform some operation on the larger array.
+* When operating on two arrays, NumPy compares their shapes element-wise. 
+* It starts with the trailing dimensions, and works its way forward. 
+* Two dimensions are compatible when  
+    - They are equal
+    - one of them is 1
+
+
+```python
+x = np.ones((3, 4)) # Random (3, 4) matrix
+y = 2*np.ones((3, 1)) # Random (3, 1) matrix
+
+print("x = ", x, x.shape)
+
+print("y = ", y, y.shape)
+print("======= x+y =====")
+print(x+y)
+
+print("=================")
+z = -2*np.ones((1, 4)) # Random (3,) vector
+print("z = ", z)
+
+print("====== shape of x + y =======")
+print((x + y).shape) # Adds y to each column of x
+
+print("====== shape of x * y =======")
+print((x * z).shape) # Multiplies z element-wise with each row of x
+
+print("====== shape of x + y.T =======")
+print((y + y.T).shape) 
+
+print("====== shape of y + y.T =======")
+print((y + y.T).shape)
+```
+
+    x =  [[1. 1. 1. 1.]
+     [1. 1. 1. 1.]
+     [1. 1. 1. 1.]] (3, 4)
+    y =  [[2.]
+     [2.]
+     [2.]] (3, 1)
+    ======= x+y =====
+    [[3. 3. 3. 3.]
+     [3. 3. 3. 3.]
+     [3. 3. 3. 3.]]
+    =================
+    z =  [[-2. -2. -2. -2.]]
+    ====== shape of x + y =======
+    (3, 4)
+    ====== shape of x * y =======
+    (3, 4)
+    ====== shape of x + y.T =======
+    (3, 3)
+    ====== shape of y + y.T =======
+    (3, 3)
+
+
+* Broadcasting two arrays together follows these rules ([link](https://cs231n.github.io/python-numpy-tutorial/#array-math)):
+
+    - If the arrays do not have the same rank, prepend the shape of the lower rank array with 1s until both shapes have the same length.
+    - The two arrays are said to be compatible in a dimension if they have the same size in the dimension, or if one of the arrays has size 1 in that dimension.
+    - The arrays can be broadcast together if they are compatible in all dimensions.
+    - After broadcasting, each array behaves as if it had shape equal to the elementwise maximum of shapes of the two input arrays.
+    - In any dimension where one array had size 1 and the other array had size greater than 1, the first array behaves as if it were copied along that dimension
+
+#### Avoid explicit for-loops over indices/axes at all costs.
+* For-loops will dramatically slow down your code (~10-100x)
+
+* Sqaurring each elemt of a mtrix using for loops and power operation
+
+
+```python
+import time
+s = time.time()
+x = np.random.rand(1000,1000)
+for i in range(x.shape[0]):
+    for j in range(x.shape[1]):
+        x[i,j] **= 2
+print("Using for loop ===== ", f"{time.time()-s:.4f} second")
+
+s = time.time()
+x **= 2
+print("Using power operation ===== ", f"{time.time()-s:.4f} second")
+```
+
+    Using for loop =====  0.4877 second
+    Using power operation =====  0.0012 second
+
+
+* Adding a constant to a matrix using for loops and broadcasting
+
+
+```python
+s = time.time()
+for i in range(100, 1000):
+    for j in range(x.shape[1]):
+        x[i, j] += 5
+print("Using for loop ===== ", f"{time.time()-s:.4f} second")
+
+s = time.time()
+x[np.arange(100,1000), :] += 5
+print("Using broadcasting ===== ", f"{time.time()-s:.4f} second")
+```
+
+    Using for loop =====  0.4557 second
+    Using broadcasting =====  0.0021 second
+
+
 ## Pandas
 
 
 ```python
+import pandas as pd
 
+pd.Series({"Ali": 3, "Abby": 4})
 ```
+
+
+
+
+    Ali     3
+    Abby    4
+    dtype: int64
+
+
 
 ## Matplotlib
 
 
 ```python
 import matplotlib.pyplot as plt
+import numpy as np
 %matplotlib inline
+# %matplotlib
 ```
 
 
@@ -1659,7 +2082,18 @@ plt.plot(x, y1, 'r-', x, y2, 'b--', linewidth=2)
 plt.grid()
 plt.legend(['Sigmoid Function', 'Exp Function'])
 ```
-![results](/assets/images/output_114_1.png)
+
+
+
+
+    <matplotlib.legend.Legend at 0x7fb867255a00>
+
+
+
+
+    
+![png](output_139_1.png)
+    
 
 
 
