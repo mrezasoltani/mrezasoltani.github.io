@@ -1584,7 +1584,7 @@ print(ym2, ym2.shape)
 
 
 * Transpose and reshape operation:
-  - "-1" in one axis means everything left. For example, ``` python x.reshape((1,-1) ``` reshapes the \\(x\\) with dimensions \\(\[1, 2, 3\] such that the first dimension equals to one and the second dimension equals to the product of other 2 dimnetion, i.e., \\(\[1. 6\]\\).
+  - "-1" in one axis means everything left. For example, ``` python x.reshape((1,-1) ``` reshapes the \\(x\\) with dimensions \\(\[1, 2, 3\]\\) such that the first dimension equals to one and the second dimension equals to the product of other 2 dimnetion, i.e., \\(\[1, 6\]\\).
   - Taking the transpose of a rank 1 array does nothing (printing the same thing).
 
 
