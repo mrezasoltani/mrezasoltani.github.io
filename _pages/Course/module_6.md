@@ -302,7 +302,7 @@ print(f"The product of {num1:.2f} and {num2:.4f} is {num1 * num2:.2f}.")
 
 ### String methods
 * Python String find()
-    - Returns the index of first occurrence of substring
+    - Returns the index of the first occurrence of a substring
 * Python String islower()
     - Checks if all Alphabets in a String are Lowercase
 * Python String isnumeric()
@@ -354,11 +354,6 @@ a = string.split(" ")
     
     ['', '!Hi', 'man', 'how', 'are', 'you?&'] 
     
-
-
-
-
-
     ' !Hi man how are you?&'
 
 
@@ -1152,7 +1147,7 @@ print(product)
 * Read or write (perform operation)
 * Close the file
     - "r" Open a file for reading (default)
-    - "w" Open a file for writing. Creates a new file if it does not exist or overwrite the file if it exists.
+    - "w" Open a file for writing. Creates a new file if it does not exist or overwrites the file if it exists.
     - "a" Open a file for appending at the end of the file without overwriting it. Creates a new file if it does not exist.
     - "b" Open in binary mode
 
@@ -1206,7 +1201,7 @@ print(mydog.age)
     12
 
 
-## List, set and disctionary comprehensions
+## List, set, and dictionary comprehensions
 
 
 ```python
@@ -1238,12 +1233,12 @@ print({name: age for name, age in persons})
 ## Iteration, Iterators, Iterables, and Generators
 
 #### Iteration
-* It is the process of taking an item from something e.g a list. When we use a loop to loop over something which is called iteration. 
+* It is the process of taking an item from something e.g a list. When we use a loop to loop over something it is called iteration. 
 
 #### Iterable
 * An iterable is any object in Python which has an **\_iter\_()** or a **\_getitem\_()** method.
 * It returns an iterator or can take indexes (an object that can generate an iterator).
-* It produce items on demand.
+* It produces items on demand.
 * lists, tuples, dictionaries, and sets are built-in iterables.
 
 ####  Iterator
@@ -1257,11 +1252,11 @@ print({name: age for name, age in persons})
 
 #### Generators
 * Generators are iterators, but you can only iterate over them once. 
-* Generators do'not store all the values in memory, they generate the values on the fly.
+* Generators do not store all the values in memory, they generate the values on the fly.
 * You use them by iterating over them, either with a ‘for’ loop or by passing them to any function or construct that iterates.
 * There are two ways generators:
     - MUsing functions using _yield_ instead of _return_
-    - Uisng Generator expression
+    - Using Generator expression
 
 #### Implementing a generator
 
@@ -1780,7 +1775,7 @@ print(x[0], x[0].shape)
     * Modifying a slice of an array will also modify the original array.
     * Mixing integer indexing with slices results in an array of lower rank.
     * Indexing using slices results in an array of the same rank as the original array.
-    * For slicing method, **do not use separate square brackets for each dimension**.
+    * For the slicing method, **do not use separate square brackets for each dimension**.
 
 
 ```python
@@ -1845,8 +1840,8 @@ print(col_r2, col_r2.shape)
 
 
 * **Integer Indexing**
-    * Integer array indexing allows selection of arbitrary items in the array based on their N-dimensional index.
-    * Each integer array represents a number of indices into that dimension.
+    * Integer array indexing allows the selection of arbitrary items in the array based on their N-dimensional index.
+    * Each integer array represents a number of indices in that dimension.
     * Mixing integer indexing with slices results in an array of lower rank.
     * Indexing using slices results in an array of the same rank as the original array.
 
@@ -1925,7 +1920,7 @@ https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html
 * Broadcasting is a super useful mechanism that allows numpy to work with arrays of different shapes.
     - For instance, we have a smaller array and a larger array, and we want to use the smaller array multiple times to perform some operation on the larger array.
 * When operating on two arrays, NumPy compares their shapes element-wise. 
-* It starts with the trailing dimensions, and works its way forward. 
+* It starts with the trailing dimensions and works its way forward. 
 * Two dimensions are compatible when  
     - They are equal
     - one of them is 1
@@ -1985,13 +1980,13 @@ print((y + y.T).shape)
     - If the arrays do not have the same rank, prepend the shape of the lower rank array with 1s until both shapes have the same length.
     - The two arrays are said to be compatible in a dimension if they have the same size in the dimension, or if one of the arrays has size 1 in that dimension.
     - The arrays can be broadcast together if they are compatible in all dimensions.
-    - After broadcasting, each array behaves as if it had shape equal to the elementwise maximum of shapes of the two input arrays.
+    - After broadcasting, each array behaves as if it had a shape equal to the elementwise maximum of shapes of the two input arrays.
     - In any dimension where one array had size 1 and the other array had size greater than 1, the first array behaves as if it were copied along that dimension
 
 #### Avoid explicit for-loops over indices/axes at all costs.
 * For-loops will dramatically slow down your code (~10-100x)
 
-* Sqaurring each elemt of a mtrix using for loops and power operation
+* Sqaurring each element of a matrix using for loops and power operation
 
 
 ```python
@@ -2083,16 +2078,7 @@ plt.grid()
 plt.legend(['Sigmoid Function', 'Exp Function'])
 ```
 
-
-
-
-    <matplotlib.legend.Legend at 0x7fb867255a00>
-
-
-
-
-    
-![png](output_139_1.png)
+![results](/assets/images/output_114_1.png)
     
 
 
