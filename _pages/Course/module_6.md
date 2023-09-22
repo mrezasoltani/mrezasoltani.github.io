@@ -224,15 +224,14 @@ async	elif	if	or	yield
 
 *These variables are all reserved by Python and should not be used for other purposes.
 * ```__author__``` The name of the author of the module
-* ```__doc__``` A string that contains the documentation for the module
+* ```__doc__``` A string that contains the documentation for the module and docstring that appears in a class or method
 * ```__file__``` The path to the module file
 * ```__name__``` The name of the module
 * ```__package__``` The name of the package that the module is part of
 * ```__name__``` The namespace that a Python module is running in
-* ```__doc__``` Printing out the docstring that appears in a class or method
 * ```__class__``` Returning the class of an instance
 * ```__dict__``` Returning, as a dictionary, all attributes of a class instance:
-* ```dir()``` Rreturning, as a list, every associated method or attribute
+* ```dir()``` Returning, as a list, every associated method or attribute
 
 ## String Format
 ### There are 3 ways to format strings. 
