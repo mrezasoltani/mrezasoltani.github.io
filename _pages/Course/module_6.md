@@ -9,6 +9,7 @@ classes: wide
 + Scientific computation functionality similar to Matlab and Octave.
 + Used by major deep learning frameworks such as PyTorch and TensorFlow.
 
+#### Printing a message
 ```python
 print('Hello World')
 ```
@@ -299,21 +300,21 @@ print(f"The product of {num1:.2f} and {num2:.4f} is {num1 * num2:.2f}.")
 
 
 ### String methods
-* Python String find()
+* find()
     - Returns the index of the first occurrence of a substring
-* Python String islower()
+* islower()
     - Checks if all Alphabets in a String are Lowercase
-* Python String isnumeric()
+* isnumeric()
     - Checks Numeric Characters
-* Python String replace()
+* replace()
     - Replaces Substring Inside
-* Python String lstrip()
+* lstrip()
     - Removes Leading Characters
-* Python String rstrip()
+* rstrip()
     - Removes Trailing Characters
-* Python String split()
+* split()
     - Splits String from Left
-* Python String join()
+* join()
     - Returns a Concatenated String
 
 
@@ -393,7 +394,8 @@ while True:
 
 
 ### What about for (i=0; i<10; i++)? \\(\Longrightarrow\\) using range():
-
+* The ```range()``` function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
+  - range(start, stop, step)
 
 ```python
 for i in range(5):
@@ -434,7 +436,7 @@ for i, item in enumerate(["Ali", "John", "Zach"]):
 
 
 ## Conditions
-### Similar to other languages, for writing conditions we can use _if_, _elif_, _else_, or in _while argumnet_ as shown below:
+* Similar to other languages, for writing conditions we can use _if_, _elif_, _else_, or in _while argumnet_ as shown below:
 
 
 ```python
@@ -603,7 +605,7 @@ print(numbers[-1])             # Negative index wraps around
 print(numbers[-3:])
 print(numbers[3:-2])           # Can mix and match
 print(numbers[0:5:2])          # numbers[:5:2]
-numbers[::-1]
+numbers[::-1]                  # inverse ordering a list
 ```
 
     [0, 1, 2]
@@ -945,7 +947,6 @@ print(a)
 
 
 ```python
-
 def f(a, b):
     """Doing something with inputs a and b.
       
