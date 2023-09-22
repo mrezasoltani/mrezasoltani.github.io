@@ -9,19 +9,19 @@ classes: wide
 + Scientific computation functionality similar to Matlab and Octave.
 + Used by major deep learning frameworks such as PyTorch and TensorFlow.
 
-#### Printing a message
+## Printing a message
 ```python
 print('Hello World')
 ```
 
 ## Python Installation
 
-## Anaconda
+### Anaconda
 - Anaconda is a popular Python environment/package manager  
 - Install from ([here](https://www.anaconda.com/download/))
 - We suggest using Python >= 3.8
 
-## IDEs:
+### IDEs:
 - IDLE
   - IDLE comes with Python installation by default.
 - Jupyter Notebook and JupyterLab ([link](https://docs.jupyter.org/en/latest/))
