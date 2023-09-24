@@ -13,7 +13,7 @@ title: "Course"
 
 
 
-
+<!--
 * If you find this course useful, please consider to cite it.
   - Soltani, Mohammadreza. All You Need in Machine Learning. https://mrezasoltani.github.io/course_modules/.
 
@@ -23,3 +23,4 @@ title: "Course"
     journal = "https://mrezasoltani.github.io",
     url     = "https://mrezasoltani.github.io/course_modules/."
 }
+-->
