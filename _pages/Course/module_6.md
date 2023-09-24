@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Module 6 --- Python, Numpy, Pandas, Visualization"
 classes: wide
 ---
@@ -9,19 +10,18 @@ classes: wide
 + Scientific computation functionality similar to Matlab and Octave.
 + Used by major deep learning frameworks such as PyTorch and TensorFlow.
 
-## Printing a message
 ```python
 print('Hello World')
 ```
 
 ## Python Installation
 
-### Anaconda
+## Anaconda
 - Anaconda is a popular Python environment/package manager  
 - Install from ([here](https://www.anaconda.com/download/))
 - We suggest using Python >= 3.8
 
-### IDEs:
+## IDEs:
 - IDLE
   - IDLE comes with Python installation by default.
 - Jupyter Notebook and JupyterLab ([link](https://docs.jupyter.org/en/latest/))
@@ -32,6 +32,8 @@ print('Hello World')
 - Spyder 
   - Spyder already exists in Anaconda once it is installed. Spider is very similar to Matlab ([link](https://www.spyder-ide.org/)).
 
+
+## Printing a message
 
 
 ```python
@@ -139,6 +141,8 @@ print(x, format(x, '04b'))
 
 
 ## Membership
+* The ```range()``` function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
+  - range(start, stop, step)
 
 
 ```python
@@ -225,14 +229,15 @@ async	elif	if	or	yield
 
 *These variables are all reserved by Python and should not be used for other purposes.
 * ```__author__``` The name of the author of the module
-* ```__doc__``` A string that contains the documentation for the module and docstring that appears in a class or method
+* ```__doc__``` A string that contains the documentation for the module
 * ```__file__``` The path to the module file
 * ```__name__``` The name of the module
 * ```__package__``` The name of the package that the module is part of
-* ```__name__``` The namespace that a Python module is running in
+* ```__main__``` The namespace that a Python module is running in
+* ```__doc__``` Printing out the docstring that appears in a class or method
 * ```__class__``` Returning the class of an instance
 * ```__dict__``` Returning, as a dictionary, all attributes of a class instance:
-* ```dir()``` Returning, as a list, every associated method or attribute
+* ```dir()``` Rreturning, as a list, every associated method or attribute
 
 ## String Format
 ### There are 3 ways to format strings. 
@@ -301,7 +306,7 @@ print(f"The product of {num1:.2f} and {num2:.4f} is {num1 * num2:.2f}.")
 
 ### String methods
 * find()
-    - Returns the index of the first occurrence of a substring
+    - Returns the index of first occurrence of substring
 * islower()
     - Checks if all Alphabets in a String are Lowercase
 * isnumeric()
@@ -353,12 +358,17 @@ a = string.split(" ")
     
     ['', '!Hi', 'man', 'how', 'are', 'you?&'] 
     
+
+
+
+
+
     ' !Hi man how are you?&'
 
 
 
 ## Code blocks are created using indents.
-### Indents can be 2 or 4 spaces but should be consistent throughout the file.
+#### Indents can be 2 or 4 spaces but should be consistent throughout the file.
 
 
 ```python
@@ -371,6 +381,48 @@ def fib(n):
         # Indent level 2: else statement body
         return fib(n-1)+fib(n-2)
 ```
+
+## Zip/Unzip
+* Zip allows to combine two collections.
+* it returns back an iterator.
+* We use "* for unzipping.
+
+
+```python
+first = ['Joe','Earnst','Thomas','Martin','Charles']
+last = ['Schmoe','Ehlmann','Fischer','Walter','Rogan','Green']
+age = [23, 65, 11, 36, 83]
+
+for first_name, last_name, age in zip(first_name, last_name, age):
+    print(f"{first_name} {last_name} is {age} years old")
+```
+
+    Joe Schmoe is 23 years old
+    Earnst Ehlmann is 65 years old
+    Thomas Fischer is 11 years old
+    Martin Walter is 36 years old
+    Charles Rogan is 83 years old
+
+
+
+```python
+full = [('Joe', 'Schmoe', 23),
+      ('Earnst', 'Ehlmann', 65),
+      ('Thomas', 'Fischer', 11),
+      ('Martin', 'Walter', 36),
+      ('Charles', 'Rogan', 83)]
+
+first_name, last_name, age = list(zip(*full))
+
+print(f"first name: {first_name}")
+print(f"last name: {last_name}")
+print(f"age: {age}")
+```
+
+    first name: ('Joe', 'Earnst', 'Thomas', 'Martin', 'Charles')
+    last name: ('Schmoe', 'Ehlmann', 'Fischer', 'Walter', 'Rogan')
+    age: (23, 65, 11, 36, 83)
+
 
 ## Loops
 ### For loops (If you want an index \\(\Longrightarrow\\) using enumerate()!)
@@ -394,8 +446,7 @@ while True:
 
 
 ### What about for (i=0; i<10; i++)? \\(\Longrightarrow\\) using range():
-* The ```range()``` function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
-  - range(start, stop, step)
+
 
 ```python
 for i in range(5):
@@ -503,7 +554,7 @@ for i in range(1, 4):
 
 
 ## Errors and Error Handling
-### We can handle errors nicely using _try_ and _exception_ built-in:
+* We can handle errors nicely using _try_ and _exception_ built-in:
 
 
 ```python
@@ -514,6 +565,31 @@ except ZeroDivisionError as e:
 ```
 
     division by zero
+
+
+* ``` assert()```
+* The assert keyword lets one test if a condition in yotheur code returns True, if not, the program will raise an AssertionError.
+
+
+```python
+x = "Good"
+
+#if condition is False, AssertionError is raised:
+assert x == "OK", "x should be 'OK'"
+```
+
+
+    ---------------------------------------------------------------------------
+
+    AssertionError                            Traceback (most recent call last)
+
+    /var/folders/nf/r9pb0kd107s0x03h3r5bgl6r0000gn/T/ipykernel_29083/2461160715.py in <module>
+          2 
+          3 #if condition is False, AssertionError is raised:
+    ----> 4 assert x == "OK", "x should be 'OK'"
+    
+
+    AssertionError: x should be 'OK'
 
 
 ### List of possible exceptions ([link](https://www.programiz.com/python-programming/exceptions)): 
@@ -605,7 +681,7 @@ print(numbers[-1])             # Negative index wraps around
 print(numbers[-3:])
 print(numbers[3:-2])           # Can mix and match
 print(numbers[0:5:2])          # numbers[:5:2]
-numbers[::-1]                  # inverse ordering a list
+numbers[::-1]
 ```
 
     [0, 1, 2]
@@ -615,6 +691,11 @@ numbers[::-1]                  # inverse ordering a list
     [4, 5, 6]
     [3, 4]
     [0, 2, 4]
+
+
+
+
+
     [6, 5, 4, 3, 2, 1, 0]
 
 
@@ -1141,7 +1222,7 @@ print(product)
 * Read or write (perform operation)
 * Close the file
     - "r" Open a file for reading (default)
-    - "w" Open a file for writing. Creates a new file if it does not exist or overwrites the file if it exists.
+    - "w" Open a file for writing. Creates a new file if it does not exist or overwrite the file if it exists.
     - "a" Open a file for appending at the end of the file without overwriting it. Creates a new file if it does not exist.
     - "b" Open in binary mode
 
@@ -1159,6 +1240,42 @@ print(a)
 
     Hello My Dear !!!
 
+
+* **Pickle file**
+* Python's Pickle module is a format used to serialize and deserialize data types. 
+* ickle objects cannot be loaded using any other programming language.
+* Pickle can serialize almost every used built-in Python data type:
+    - list, dictionary, numpy array, pandas dataframe, machine learning. models
+* serialization formats like JSON does not support tuples and datetime objects. 
+* Pickle also retains the exact state of the object, while JSON does not do it.
+* Pickle is slower and produces larger serialized values than JSON.
+* Pickle is unsafe because it can execute malicious Python callables to construct objects.
+
+
+```python
+import pickle
+
+names = ["Abby", "John", "Maggy"]
+print("==== before loading pickle file ====")
+print(names)
+
+with open('names.pkl', 'wb') as f:   # open a text file
+    pickle.dump(names, f)            # serialize the list
+    
+with open('names.pkl', 'rb') as f:   # open a text file
+    array = pickle.load(f)           # serialize the list
+
+print("==== after loading pickle file ====")
+print(array)
+```
+
+    ==== before loading pickle file ====
+    ['Abby', 'John', 'Maggy']
+    ==== after loading pickle file ====
+    ['Abby', 'John', 'Maggy']
+
+
+* dumps() and loads() functions are used to serialize and and deserialize byte objects. 
 
 ## Classes (Object-oriented Programming)
 * The super() built-in returns a proxy object, a substitute object that can call methods of the base class via delegation. Indirection call or ability to reference base object with super().
@@ -1195,7 +1312,7 @@ print(mydog.age)
     12
 
 
-## List, set, and dictionary comprehensions
+## List, set and disctionary comprehensions
 
 
 ```python
@@ -1227,12 +1344,12 @@ print({name: age for name, age in persons})
 ## Iteration, Iterators, Iterables, and Generators
 
 #### Iteration
-* It is the process of taking an item from something e.g a list. When we use a loop to loop over something it is called iteration. 
+* It is the process of taking an item from something e.g a list. When we use a loop to loop over something which is called iteration. 
 
 #### Iterable
 * An iterable is any object in Python which has an **\_iter\_()** or a **\_getitem\_()** method.
 * It returns an iterator or can take indexes (an object that can generate an iterator).
-* It produces items on demand.
+* It produce items on demand.
 * lists, tuples, dictionaries, and sets are built-in iterables.
 
 ####  Iterator
@@ -1246,11 +1363,11 @@ print({name: age for name, age in persons})
 
 #### Generators
 * Generators are iterators, but you can only iterate over them once. 
-* Generators do not store all the values in memory, they generate the values on the fly.
+* Generators do'not store all the values in memory, they generate the values on the fly.
 * You use them by iterating over them, either with a ‘for’ loop or by passing them to any function or construct that iterates.
 * There are two ways generators:
-    - MUsing functions using _yield_ instead of _return_
-    - Using Generator expression
+    - Using functions using _yield_ instead of _return_
+    - Uisng Generator expression
 
 #### Implementing a generator
 
@@ -1584,7 +1701,7 @@ print(ym2, ym2.shape)
 
 
 * Transpose and reshape operation:
-  - "-1" in one axis means everything left. For example, ``` python x.reshape((1,-1) ``` reshapes the \\(x\\) with dimensions \\(\[1, 2, 3\]\\) such that the first dimension equals to one and the second dimension equals to the product of other 2 dimnetion, i.e., \\(\[1, 6\]\\).
+  - "-1" in one axis means everything left. For example, ``` python x.reshape((1,-1) ``` reshapes the \\(x\\) dimension such that the first dimension has one and the second dimension has 3 elements.
   - Taking the transpose of a rank 1 array does nothing (printing the same thing).
 
 
@@ -1769,7 +1886,7 @@ print(x[0], x[0].shape)
     * Modifying a slice of an array will also modify the original array.
     * Mixing integer indexing with slices results in an array of lower rank.
     * Indexing using slices results in an array of the same rank as the original array.
-    * For the slicing method, **do not use separate square brackets for each dimension**.
+    * For slicing method, **do not use separate square brackets for each dimension**.
 
 
 ```python
@@ -1834,8 +1951,8 @@ print(col_r2, col_r2.shape)
 
 
 * **Integer Indexing**
-    * Integer array indexing allows the selection of arbitrary items in the array based on their N-dimensional index.
-    * Each integer array represents a number of indices in that dimension.
+    * Integer array indexing allows selection of arbitrary items in the array based on their N-dimensional index.
+    * Each integer array represents a number of indices into that dimension.
     * Mixing integer indexing with slices results in an array of lower rank.
     * Indexing using slices results in an array of the same rank as the original array.
 
@@ -1914,7 +2031,7 @@ https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html
 * Broadcasting is a super useful mechanism that allows numpy to work with arrays of different shapes.
     - For instance, we have a smaller array and a larger array, and we want to use the smaller array multiple times to perform some operation on the larger array.
 * When operating on two arrays, NumPy compares their shapes element-wise. 
-* It starts with the trailing dimensions and works its way forward. 
+* It starts with the trailing dimensions, and works its way forward. 
 * Two dimensions are compatible when  
     - They are equal
     - one of them is 1
@@ -1974,13 +2091,13 @@ print((y + y.T).shape)
     - If the arrays do not have the same rank, prepend the shape of the lower rank array with 1s until both shapes have the same length.
     - The two arrays are said to be compatible in a dimension if they have the same size in the dimension, or if one of the arrays has size 1 in that dimension.
     - The arrays can be broadcast together if they are compatible in all dimensions.
-    - After broadcasting, each array behaves as if it had a shape equal to the elementwise maximum of shapes of the two input arrays.
+    - After broadcasting, each array behaves as if it had shape equal to the elementwise maximum of shapes of the two input arrays.
     - In any dimension where one array had size 1 and the other array had size greater than 1, the first array behaves as if it were copied along that dimension
 
 #### Avoid explicit for-loops over indices/axes at all costs.
 * For-loops will dramatically slow down your code (~10-100x)
 
-* Sqaurring each element of a matrix using for loops and power operation
+* Sqaurring each elemt of a mtrix using for loops and power operation
 
 
 ```python
@@ -2072,7 +2189,16 @@ plt.grid()
 plt.legend(['Sigmoid Function', 'Exp Function'])
 ```
 
-![results](/assets/images/output_114_1.png)
+
+
+
+    <matplotlib.legend.Legend at 0x7fb867255a00>
+
+
+
+
+    
+![png](output_148_1.png)
     
 
 
