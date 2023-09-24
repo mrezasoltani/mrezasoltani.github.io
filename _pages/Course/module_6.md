@@ -144,12 +144,10 @@ print(x, format(x, '04b'))
 ```python
 print('hell' in 'hello')
 print(3 in range(5), 7 in range(5))
-print('a' in dict(zip('abc', range(3))))
 ```
 
     True
     True False
-    True
 
 
 ## Identity
@@ -353,11 +351,6 @@ a = string.split(" ")
      !Hi man how are you? 
     
     ['', '!Hi', 'man', 'how', 'are', 'you?&'] 
-    
-
-
-
-
 
     ' !Hi man how are you?&'
 
@@ -413,11 +406,16 @@ first_name, last_name, age = list(zip(*full))
 print(f"first name: {first_name}")
 print(f"last name: {last_name}")
 print(f"age: {age}")
+
+print()
+print('a' in dict(zip('abc', range(3))))
 ```
 
     first name: ('Joe', 'Earnst', 'Thomas', 'Martin', 'Charles')
     last name: ('Schmoe', 'Ehlmann', 'Fischer', 'Walter', 'Rogan')
     age: (23, 65, 11, 36, 83)
+    
+    True
 
 
 ## Loops
