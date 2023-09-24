@@ -2015,8 +2015,7 @@ print("c = ", c)
      [10 21 12]]
 
 
-### Broadcasting
-https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html
+### Broadcasting ([link](https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html))
 * Broadcasting is a super useful mechanism that allows numpy to work with arrays of different shapes.
     - For instance, we have a smaller array and a larger array, and we want to use the smaller array multiple times to perform some operation on the larger array.
 * When operating on two arrays, NumPy compares their shapes element-wise. 
