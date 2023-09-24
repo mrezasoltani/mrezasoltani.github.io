@@ -2185,7 +2185,7 @@ plt.plot(x, y1, 'r-', x, y2, 'b--', linewidth=2)
 plt.grid()
 plt.legend(['Sigmoid Function', 'Exp Function'])
 ```
-![results](/assets/images/output_114_1.png)
+[results](/assets/images/output_114_1.png)
 
 
 
