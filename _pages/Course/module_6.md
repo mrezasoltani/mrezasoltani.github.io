@@ -48,9 +48,9 @@ y = 3
 print(x + y)
 print(x - y)
 print(x ** y)
-print(x / y) # in python 2 returns 3
+print(x / y)                # in python 2 returns 3
 print(x / float(y))
-print(x // y)
+print(x // y)               # returning the quotient (integer division)
 print(str(x) + '' + '' + str(y))
 ```
 
