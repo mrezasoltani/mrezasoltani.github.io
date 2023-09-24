@@ -10,3 +10,16 @@ title: "Course"
 * [Module 4](Course/module_4.md)
 * [Module 5](Course/module_5.md)
 * [Module 6](Course/module_6.md)
+
+
+
+
+* If you find this course useful, please consider to cite it.
+  - Soltani, Mohammadreza. All You Need in Machine Learning. https://mrezasoltani.github.io/course_modules/.
+
+  @article{ML2023,
+    title   = "All You Need in Machine Learning",
+    author  = "Soltani, Mohammadreza",
+    journal = "https://mrezasoltani.github.io",
+    url     = "https://mrezasoltani.github.io/course_modules/."
+}
