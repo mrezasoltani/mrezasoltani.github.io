@@ -374,7 +374,7 @@ def fib(n):
 ## Zip/Unzip
 * Zip allows to combine two collections.
 * it returns back an iterator.
-* We use "* for unzipping.
+* We use "*" for unzipping.
 
 
 ```python
