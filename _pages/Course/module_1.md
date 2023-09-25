@@ -384,7 +384,7 @@ In this course, our goal is to understand ML concepts from scratch, so we can ha
              <em>Predicting interactions between people. [https://www.analyticsvidhya.com/blog/].</em>
         </p>
        
-   * **Other Tasks.** Here we consider two more tasks in RL and recommendation systems.
+   * **Other Tasks.** Here we consider three more tasks in RL, recommendation systems, and stock price prediction.
      
      1. **The Cart-Pole problem using Reinforcement Learning.** The Cart-Pole problem is an inverted pendulum problem where a rod/stick is balanced upright on a cart. The goal is to learn an agent/learner to keep the stick from falling over by moving the cart right or left. At each timestep, if the agent can hold the stick upright, it receives a positive reward (e.g., +1); otherwise, it receives a negative reward (e.g., -1). Using RL, The objective is to maximize the total reward by preventing the stick from falling over.
  
