@@ -1301,7 +1301,7 @@ print(mydog.age)
     12
 
 
-## List, set and disctionary comprehensions
+## List, set and dictionary comprehensions
 
 
 ```python
@@ -2022,7 +2022,7 @@ print("c = ", c)
 * It starts with the trailing dimensions, and works its way forward. 
 * Two dimensions are compatible when  
     - They are equal
-    - one of them is 1
+    - One of them is 1
 
 
 ```python
