@@ -64,16 +64,18 @@ classes: wide
   * Module 5 -- Optimization
 * Programming
   * Module 6 --- Python, Numpy, Pandas, Visualization
-  * Module 7 --- PyTorch
 * Machine Learning
-  * Module 8 --- Linear Models
-  * Module 9 --- Linear Models
+  * Module 7 --- Regression Models
+  * Module 8 --- Scikit-learn
+  * Module 9 --- Classification Models
   * Module 10 --- Decision Trees, Bagging, Ensemble Methods
   * Module 11 --- Unsupervised Learning
   * Module 12 --- Unsupervised Learning
 * Deep Learning
-  * Module 13 --- Feed-Forward Models
-  * Module 14 --- Optimization in DL
-  * Module 15 --- Convolutional Neural Networks (CNNs)
-  * Module 16 --- Recurrent Neural Networks (RNNs)
-  * Module 17 --- Attention & Transformers
+  * Module 13 --- PyTorch 
+  * Module 14 --- Feed-Forward Models (Fully Connected Neural Networks - FCNNs)
+  * Module 15 --- Automatic differentiation (AD)
+  * Module 16 --- Optimization in DL
+  * Module 17 --- Convolutional Neural Networks (CNNs)
+  * Module 18 --- Recurrent Neural Networks (RNNs)
+  * Module 19 --- Attention & Transformers
