@@ -1,4 +1,4 @@
 ---
-title: "Module 7 - Linear Models - Regression"
+title: "Module 7 - Regression Models"
 classes: wide
 ---
