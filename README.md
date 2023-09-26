@@ -1,1 +1,1 @@
-## Please use this link to my page: [https://mrezasoltani.github.io]
+## Link to my page: [https://mrezasoltani.github.io]
