@@ -84,7 +84,7 @@ classes: wide
 
 ## Probabilistic model
 
-* Let's recall the goal of regression. We are given observation data, including a set of \\(n\\) i.i.d. input-output pairs (_training data_) \\(\\{(\mathbf{x_i}, y_i)\\}_{i=1}^n\\) drawn from some probability distribution \\(p(\mathbf{x}, y)\\) such that \\(\mathbf{x}\in \mathcal{X}\\) and \\(y\in\mathcal{Y}\\). The \\(\mathbf{x_i}\in \mathbb{R}^p\\) (also called features, independent variables, explanatory variables, or covariate) denotes the \\(i^{th}\\) data sample is a \\(p\\)-dimensional vector. We are asked to find a function \\(f:\mathcal{X}\rightarrow\mathcal{Y}\\) that maps any _test_ point \\(\mathbf{x}^{\*}\\) to the corresponding \\(y^{\*}\\) (please note that \\( (\mathbf{x}^{\*}, y^{\*})\sim p(\mathbf{x}, y)\\). What this means that we hope that we can learn a predictor (sometimes called an estimator)  \\(\hat{f} := \hat{f}_n(\mathcal{D}_n)\\) as a function of our training data  that generalizes well to the unseen data drawn from the same distribution \\(p\\). Please note that \\(\mathcal{D}_n\\) is a fixed realization set drawn from the distribution \\(p\\); hence, by changing our training set, the estimator \\(\hat{f}\\) will also be changed; as a result, \\(\hat{f}\\) is a random variable.
+* Let's recall the goal of regression. We are given observation data, including a set of \\(n\\) i.i.d. input-output pairs (_training data_) \\(\mathcal{D}=\\) \\(\\{(\mathbf{x_i}, y_i)\\}_{i=1}^N\\) drawn from some probability distribution \\(p(\mathbf{x}, y)\\) such that \\(\mathbf{x}\in \mathcal{X}\\) and \\(y\in\mathcal{Y}\\). The \\(i^{th}\\) data sample, \\(\mathbf{x_i}\in \mathbb{R}^p\\) (also called features, independent variables, explanatory variables, or covariate) denotes is a \\(p\\)-dimensional vector. We are asked to find a function \\(f:\mathcal{X}\rightarrow\mathcal{Y}\\) that maps any _test_ point \\(\mathbf{x}^{\*}\\) to the corresponding \\(y^{\*}\\) (please note that \\( (\mathbf{x}^{\*}, y^{\*})\sim p(\mathbf{x}, y)\\). What this means that we hope that we can learn a predictor (sometimes called an estimator)  \\(\hat{f} := \hat{f}_n(\mathcal{D}_n)\\) as a function of our training data  that generalizes well to the unseen data drawn from the same distribution \\(p\\). Please note that \\(\mathcal{D}_n\\) is a fixed realization set drawn from the distribution \\(p\\); hence, by changing our training set, the estimator \\(\hat{f}\\) will also be changed; as a result, \\(\hat{f}\\) is a random variable.
 
 * Our approach to finding the estimator \\(\hat{f}\\) is to assume that the observation data has been corrupted by some additive noise (aka observation noise), and we are going to adopt a probabilistic approach and model the noise using a likelihood function. As a result, we can use the maximum likelihood principle to find \\(\hat{f}\\). 
     - For most of our problems, we consider a real-valued (scalar value) response (output). A similar approach usually works for the vector-valued outputs. 
@@ -108,28 +108,18 @@ classes: wide
     - We note that the inner expectation (the risk) is a random variable as \\(\hat{f}\\) is a r.v.
     - it can be shown that the regression function which minimizes the above expected risk is given by \\(f^*= \hat{f}(\mathbf{x}) = \mathbb{E}\big{(}Y\|\mathbf{x}=\mathbf{X}\big{)}\\).
     
-        <details>
-          <summary>Proof</summary>
-         * Now let's see the optimal solution for the above minimization problem. Using the Law of Iterated Expectations:
+<details>
+<summary>Proof</summary>
+    Now let's see the optimal solution for the above minimization problem. Using the Law of Iterated Expectations:
+    \begin{equation}
+        \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2  = \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E}_{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} + \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2 \| \mathbf{X}=\mathbf{x}\Big{)}  \\\\\\\\
+\Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E}_{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\|\mathbf{X}=\mathbf{x}\big{)}^2 + 2\mathbb{E}_{Y\|\mathbf{X}}\big{(}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X} = \mathbf{x}\big{)}\big{)}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} -  \hat{f}(\mathbf{X})\big{)}\|\mathbf{X} = \mathbf{x}\big{)} + \mathbb{E}_{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)} \\\\\\\\
+\Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E}_{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\|\mathbf{X}=\mathbf{x}\big{)}^2 
++ 2\mathbb{E}_{Y\|\mathbf{X}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}) -\hat{f}(\mathbf{X}\big{)}\big{)}\|\mathbf{X} = \mathbf{x}\big{)}\times 0 + \mathbb{E}_{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)} \\\\\\\\
+\Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 \geq  \mathbb{E}\big{(}Y \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\big{)}^2
+    \end{equation}
             
-            \begin{equation}
-                 \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2  = \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E}_{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} + \mathbb{E} 
-                 \big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2 \| \mathbf{X}=\mathbf{x}\Big{)}  \\\\\\\\
-            
-                 \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = 
-                 \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E}_{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\|\mathbf{X}=\mathbf{x}\big{)}^2 
-                 + 2\mathbb{E}_{Y\|\mathbf{X}}\big{(}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X} = \mathbf{x}\big{)}\big{)}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} -  
-                 \hat{f}(\mathbf{X})\big{)}\|\mathbf{X} = \mathbf{x}\big{)}
-                 + \mathbb{E}_{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)} \\\\\\\\
-      
-                 \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = 
-                 \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E}_{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\|\mathbf{X}=\mathbf{x}\big{)}^2 
-                 +2\mathbb{E}_{Y\|\mathbf{X}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}) -\hat{f}(\mathbf{X}\big{)}\big{)}\|\mathbf{X} = \mathbf{x}\big{)}\times 0
-                  + \mathbb{E}_{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)} \\\\\\\\
-                  \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 \geq  \mathbb{E}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\big{)}^2 
-            \end{equation}
-            
-       </details>
+</details>
 
 * Where the minimum in the last inequality is achieved if we choose
                 \\(\hat{f}(\mathbf{x})=\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\).
