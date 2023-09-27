@@ -21,59 +21,63 @@ classes: wide
 
 <details>
   <summary>Proof</summary>
+
     
-    ```python
-    import numpy as np
-    import matplotlib.pyplot as plt
+        ```python
+        import numpy as np
+        import matplotlib.pyplot as plt
+        
+        n_samples = 50
+        sigam = 0.5
+        
+        X = np.linspace(1, 5, n_samples)
+        X = np.expand_dims(X, 1)
+        y = (-np.sin(X) + sigam*np.random.randn(n_samples, 1))
+        
+        X_lin = np.hstack((np.ones((n_samples, 1)), X))
+        w_lin = np.linalg.inv(np.matmul(X.T, X))*np.matmul(X.T, y)
+        y_hat_lin = np.matmul(X, w_lin)
+        
+        
+        X_quad = np.hstack((np.ones((n_samples, 1)), X, X**2))
+        w_quad = np.matmul(np.linalg.inv(np.matmul(X_quad.T, X_quad)), np.matmul(X_quad.T, y))
+        y_hat_quad = np.matmul(X_quad, w_quad)
+        
+        X_cub = np.hstack((np.ones((n_samples, 1)), X, X**2, X**3))
+        w_cub = np.matmul(np.linalg.inv(np.matmul(X_cub.T, X_cub)), np.matmul(X_cub.T, y))
+        y_hat_cub = np.matmul(X_cub, w_cub)
+        
+        
+        plt.figure(figsize=(10,3))
+        
+        plt.subplot(131)
+        plt.scatter(X, y, color="red", marker=".", s =200)
+        plt.plot(X, y_hat_lin, color="blue", linewidth=2)
+        plt.xlabel("Input")
+        plt.ylabel("Response")
+        plt.title("Linear Fitting")
+        
+        plt.subplot(132)
+        plt.scatter(X, y, color="red", marker=".", s =200)
+        plt.plot(X, y_hat_quad, color="blue", linewidth=2)
+        plt.xlabel("Input")
+        plt.ylabel("Response")
+        plt.title("Quadratic Fitting")
+        
+        plt.subplot(133)
+        plt.scatter(X, y, color="red", marker=".", s =200)
+        plt.plot(X, y_hat_cub, color="blue", linewidth=2)
+        plt.xlabel("Input")
+        plt.ylabel("Response")
+        plt.title("Cubic Fitting")
+        
+        plt.subplots_adjust(right=1.3)
+        plt.show()
+        ```
     
-    n_samples = 50
-    sigam = 0.5
     
-    X = np.linspace(1, 5, n_samples)
-    X = np.expand_dims(X, 1)
-    y = (-np.sin(X) + sigam*np.random.randn(n_samples, 1))
-    
-    X_lin = np.hstack((np.ones((n_samples, 1)), X))
-    w_lin = np.linalg.inv(np.matmul(X.T, X))*np.matmul(X.T, y)
-    y_hat_lin = np.matmul(X, w_lin)
-    
-    
-    X_quad = np.hstack((np.ones((n_samples, 1)), X, X**2))
-    w_quad = np.matmul(np.linalg.inv(np.matmul(X_quad.T, X_quad)), np.matmul(X_quad.T, y))
-    y_hat_quad = np.matmul(X_quad, w_quad)
-    
-    X_cub = np.hstack((np.ones((n_samples, 1)), X, X**2, X**3))
-    w_cub = np.matmul(np.linalg.inv(np.matmul(X_cub.T, X_cub)), np.matmul(X_cub.T, y))
-    y_hat_cub = np.matmul(X_cub, w_cub)
-    
-    
-    plt.figure(figsize=(10,3))
-    
-    plt.subplot(131)
-    plt.scatter(X, y, color="red", marker=".", s =200)
-    plt.plot(X, y_hat_lin, color="blue", linewidth=2)
-    plt.xlabel("Input")
-    plt.ylabel("Response")
-    plt.title("Linear Fitting")
-    
-    plt.subplot(132)
-    plt.scatter(X, y, color="red", marker=".", s =200)
-    plt.plot(X, y_hat_quad, color="blue", linewidth=2)
-    plt.xlabel("Input")
-    plt.ylabel("Response")
-    plt.title("Quadratic Fitting")
-    
-    plt.subplot(133)
-    plt.scatter(X, y, color="red", marker=".", s =200)
-    plt.plot(X, y_hat_cub, color="blue", linewidth=2)
-    plt.xlabel("Input")
-    plt.ylabel("Response")
-    plt.title("Cubic Fitting")
-    
-    plt.subplots_adjust(right=1.3)
-    plt.show()
-    ```
 </details>
+
 ![results](/assets/images/output_2_0.png)
 
 * In the above graph, we see three models used for predicting the weather temperature. The left panel shows a linear fitting (linear regression), the middle panel illustrates a quadratic prediction, and the right one shows a cubic curve fitting. We can see the limitedness of linear regression for this specific dataset as the trend of the data doesn't seem to be linear. 
@@ -90,16 +94,16 @@ classes: wide
 
 * This implies the following relationship between a generic input random vector \\(\mathbf{X}\\) and its random output \\(Y\\) with the joint distribution \\(p\\):
 \\[Y = f(\mathbf{X}) + \epsilon\\]
-    - Here \\(\epsilon\sim\mathcal{N}(0, \sigma^2)\\).
+    - \\(\epsilon\\) is the observation noise and is distributed as \\(\epsilon\sim\mathcal{N}(0, \sigma^2)\\).
     - For models we discuss here we assume that the observation noise is statistically independent of our data, \\(\mathbf{x}, y\\).
 
 * So, finding the estimator \\(\hat{f}\\) boils down to estimating the mean of the Gaussian distribution using training data. To this end, we use the maximum likelihood approach. The negative log-likelihood (NLL) is given by
 \\[\text{NLL}(f) = -\frac{1}{2}\log\sigma^2 + \frac{(Y - f(\mathbf{X}))^2}{2\sigma^2} + \text{cons.}\\]
 
 * So, if we assume \\(\sigma^2\\) is knowm, minimizing the NLL is equivalent to minimizing \\(\frac{(Y - f(\mathbf{X}))^2}{2\sigma^2}\\). This is the squared loss. As we have discussed in the Statistics section ([link](https://mrezasoltani.github.io/_pages/Course/module_4/#what-is-statistics)), the measure of fitness is given by the expected risk, considering the expected performance of the algorithm (model) with respect to the chosen loss function. As a result, our estimator is the solution to the following optimization problem:
-\\[f^* = \text{argmin}_{\hat{f}}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \text{argmin}_{\hat{f}}\mathbb{E}_{\mathcal{D}_n}\mathbb{E}_{\mathbf{X}, Y}\Big{(}\big{(}Y - \hat{f}(\mathbf{X})\big{)}^2\|\mathcal{D}_n\Big{)}\\].
+\\[f^{\*} = \text{argmin}_{\hat{f}}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \text{argmin}_{\hat{f}}\mathbb{E}_{\mathcal{D}_n}\mathbb{E}_{\mathbf{X}, Y}\Big{(}\big{(}Y - \hat{f}(\mathbf{X})\big{)}^2\|\mathcal{D}_n\Big{)}\\].
     - In the above likelihood expression, please note that we have used \\(\hat{f}\\) instead of \\(f\\). This is because we have written the likelihood function using our training data which results in an estimator \\(\hat{f}\\) (not necessarily optimal one).
-    - \\[\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \int_{\mathcal{X}\times\mathcal{Y}}\big{(}y - \hat{f}(\mathbf{x})\big{)}^2 p(\mathbf{x}, y)d\mathbf{x}dy\\]
+     \\[\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \int_{\mathcal{X}\times\mathcal{Y}}\big{(}y - \hat{f}(\mathbf{x})\big{)}^2 p(\mathbf{x}, y)d\mathbf{x}dy\\]
     - We note that the inner expectation (the risk) is a random variable as \\(\hat{f}\\) is a r.v.
     - it can be shown that the regression function which minimizes the above expected risk is given by \\(f^*= \hat{f}(\mathbf{x}) = \mathbb{E}\big{(}Y\|\mathbf{x}=\mathbf{X}\big{)}\\).
     
@@ -121,8 +125,6 @@ classes: wide
                   + \mathbb{E}_{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)} \\\\\\\\
                   \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 \geq  \mathbb{E}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\big{)}^2 
             \end{equation}
-                - Where the minimum in the last inequality is achieved if we choose
-                \\(\hat{f}(\mathbf{x})=\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\).
             
        </details>
 
