@@ -114,7 +114,7 @@ classes: wide
   <summary>Proof</summary>
     \begin{equation}
         \begin{aligned}
-            \hspace{-0.5cm}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 &= \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E} _{Y\|\mathbf{X}}\big{(}Y-\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} + \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2 \|\mathbf{X}=\mathbf{x}\Big{)}  \\\\
+            \hspace{-0.5cm}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 &= \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E} _{Y\|\mathbf{X}}\big{(}Y-\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} + \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2 \|\mathbf{X}=\mathbf{x}\Big{)}  \\
         & = \mathbb{E} _{\mathbf{X}}\Big{(}\mathbb{E} _{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}^2\|\mathbf{X}=\mathbf{x}\big{)}  \\\\\\\\
         & \hspace{+1cm}+ 2\mathbb{E} _{Y\|\mathbf{X}}\big{(}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X} = \mathbf{x}\big{)}\big{)}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} -  
                  \hat{f}(\mathbf{X})\big{)}\|\mathbf{X} = \mathbf{x}\big{)} \\\\\\\\
@@ -126,7 +126,7 @@ classes: wide
         \end{aligned}
     \end{equation}
     
-    Where the minimum in the last inequality is achieved if we choose
+Where the minimum in the last inequality is achieved if we choose
                   \\(\hat{f}(\mathbf{x})=\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\).
 </details>
 
