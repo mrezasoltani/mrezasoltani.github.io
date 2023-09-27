@@ -109,6 +109,7 @@ classes: wide
     
 
 * Now let's see the optimal solution for the above minimization problem. Using the Law of Iterated Expectations:
+
     <details>
       <summary>Proof</summary>
         \begin{equation}
