@@ -1,5 +1,5 @@
 ---
-title: "Welcome to "All You Need in Machine Learning" Course"
+title: "Welcome to All You Need in Machine Learning course"
 classes: wide
 ---
 
