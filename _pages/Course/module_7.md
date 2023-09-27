@@ -112,23 +112,22 @@ classes: wide
 * Now let's see the optimal solution for the above minimization problem. Using the Law of Iterated Expectations:
 <details>
   <summary>Code</summary>
-\begin{equation}
-    \begin{aligned}
-        \hspace{-0.5cm}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 &= \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E} _{Y\|\mathbf{X}}\big{(}Y-\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} + \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2 \|\mathbf{X}=\mathbf{x}\Big{)}  \\\\\\\\
-    & = \mathbb{E} _{\mathbf{X}}\Big{(}\mathbb{E} _{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}^2\|\mathbf{X}=\mathbf{x}\big{)}  \\\\\\\\
-    & \hspace{+1cm}+ 2\mathbb{E} _{Y\|\mathbf{X}}\big{(}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X} = \mathbf{x}\big{)}\big{)}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} -  
-             \hat{f}(\mathbf{X})\big{)}\|\mathbf{X} = \mathbf{x}\big{)} \\\\\\\\
-             & \hspace{+2cm} + \mathbb{E} _{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}-\hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\big{)}\Big{)} \\\\\\\\
-    & = \mathbb{E} _{\mathbf{X}}\Big{(}\mathbb{E} _{Y\|\mathbf{X}}\big{(}Y- \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\|\mathbf{X}=\mathbf{x}\big{)}^2 \\\\\\\\
-    & \hspace{+1cm}+ 2\mathbb{E} _{Y\|\mathbf{X}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}) -\hat{f}(\mathbf{X}\big{)}\big{)}\|\mathbf{X} = \mathbf{x}\big{)}\times 0 \\\\\\\\
-              & \hspace{+2cm} + \mathbb{E} _{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)} \\\\\\\\
-    & \hspace{1cm} \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 \geq  \mathbb{E}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\big{)}^2
-    \end{aligned}
-\end{equation}
-
-    - Where the minimum in the last inequality is achieved if we choose
-              \\(\hat{f}(\mathbf{x})=\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\).
-
+    \begin{equation}
+        \begin{aligned}
+            \hspace{-0.5cm}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 &= \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E} _{Y\|\mathbf{X}}\big{(}Y-\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} + \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2 \|\mathbf{X}=\mathbf{x}\Big{)}  \\\\\\\\
+        & = \mathbb{E} _{\mathbf{X}}\Big{(}\mathbb{E} _{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}^2\|\mathbf{X}=\mathbf{x}\big{)}  \\\\\\\\
+        & \hspace{+1cm}+ 2\mathbb{E} _{Y\|\mathbf{X}}\big{(}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X} = \mathbf{x}\big{)}\big{)}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} -  
+                 \hat{f}(\mathbf{X})\big{)}\|\mathbf{X} = \mathbf{x}\big{)} \\\\\\\\
+                 & \hspace{+2cm} + \mathbb{E} _{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}-\hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\big{)}\Big{)} \\\\\\\\
+        & = \mathbb{E} _{\mathbf{X}}\Big{(}\mathbb{E} _{Y\|\mathbf{X}}\big{(}Y- \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\|\mathbf{X}=\mathbf{x}\big{)}^2 \\\\\\\\
+        & \hspace{+1cm}+ 2\mathbb{E} _{Y\|\mathbf{X}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}) -\hat{f}(\mathbf{X}\big{)}\big{)}\|\mathbf{X} = \mathbf{x}\big{)}\times 0 \\\\\\\\
+                  & \hspace{+2cm} + \mathbb{E} _{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)} \\\\\\\\
+        & \hspace{1cm} \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 \geq  \mathbb{E}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\big{)}^2
+        \end{aligned}
+    \end{equation}
+    
+    Where the minimum in the last inequality is achieved if we choose
+                  \\(\hat{f}(\mathbf{x})=\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\).
 </details>
 
 * If we plug-in the minimizer, \\(\mathbb{E}\big{(}Y\|\mathbf{x}=\mathbf{X}\big{)}\\) in the expected risk expression, we find the following Bias-variance trade-off:
