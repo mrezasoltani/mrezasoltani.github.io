@@ -120,7 +120,8 @@ classes: wide
              & \hspace{+2cm} + \mathbb{E} _{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}-\hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\big{)}\Big{)} \\\\\\\\
     & = \mathbb{E} _{\mathbf{X}}\Big{(}\mathbb{E} _{Y\|\mathbf{X}}\big{(}Y- \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\|\mathbf{X}=\mathbf{x}\big{)}^2 \\\\\\\\
     & \hspace{+1cm}+ 2\mathbb{E} _{Y\|\mathbf{X}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}) -\hat{f}(\mathbf{X}\big{)}\big{)}\|\mathbf{X} = \mathbf{x}\big{)}\times 0 \\\\\\\\
-              & \hspace{+2cm} + \mathbb{E} _{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)}
+              & \hspace{+2cm} + \mathbb{E} _{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)} \\\\\\\\
+    \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 \geq  \mathbb{E}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\big{)}^2
     \end{aligned}
 \end{equation}
 
