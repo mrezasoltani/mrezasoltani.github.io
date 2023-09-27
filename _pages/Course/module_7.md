@@ -22,60 +22,58 @@ classes: wide
 <details>
   <summary>Code</summary>
 
-    
         ```python
-        import numpy as np
-        import matplotlib.pyplot as plt
-        
-        n_samples = 50
-        sigam = 0.5
-        
-        X = np.linspace(1, 5, n_samples)
-        X = np.expand_dims(X, 1)
-        y = (-np.sin(X) + sigam*np.random.randn(n_samples, 1))
-        
-        X_lin = np.hstack((np.ones((n_samples, 1)), X))
-        w_lin = np.linalg.inv(np.matmul(X.T, X))*np.matmul(X.T, y)
-        y_hat_lin = np.matmul(X, w_lin)
-        
-        
-        X_quad = np.hstack((np.ones((n_samples, 1)), X, X**2))
-        w_quad = np.matmul(np.linalg.inv(np.matmul(X_quad.T, X_quad)), np.matmul(X_quad.T, y))
-        y_hat_quad = np.matmul(X_quad, w_quad)
-        
-        X_cub = np.hstack((np.ones((n_samples, 1)), X, X**2, X**3))
-        w_cub = np.matmul(np.linalg.inv(np.matmul(X_cub.T, X_cub)), np.matmul(X_cub.T, y))
-        y_hat_cub = np.matmul(X_cub, w_cub)
-        
-        
-        plt.figure(figsize=(10,3))
-        
-        plt.subplot(131)
-        plt.scatter(X, y, color="red", marker=".", s =200)
-        plt.plot(X, y_hat_lin, color="blue", linewidth=2)
-        plt.xlabel("Input")
-        plt.ylabel("Response")
-        plt.title("Linear Fitting")
-        
-        plt.subplot(132)
-        plt.scatter(X, y, color="red", marker=".", s =200)
-        plt.plot(X, y_hat_quad, color="blue", linewidth=2)
-        plt.xlabel("Input")
-        plt.ylabel("Response")
-        plt.title("Quadratic Fitting")
-        
-        plt.subplot(133)
-        plt.scatter(X, y, color="red", marker=".", s =200)
-        plt.plot(X, y_hat_cub, color="blue", linewidth=2)
-        plt.xlabel("Input")
-        plt.ylabel("Response")
-        plt.title("Cubic Fitting")
-        
-        plt.subplots_adjust(right=1.3)
-        plt.show()
+            import numpy as np
+            import matplotlib.pyplot as plt
+            
+            n_samples = 50
+            sigam = 0.5
+            
+            X = np.linspace(1, 5, n_samples)
+            X = np.expand_dims(X, 1)
+            y = (-np.sin(X) + sigam*np.random.randn(n_samples, 1))
+            
+            X_lin = np.hstack((np.ones((n_samples, 1)), X))
+            w_lin = np.linalg.inv(np.matmul(X.T, X))*np.matmul(X.T, y)
+            y_hat_lin = np.matmul(X, w_lin)
+            
+            
+            X_quad = np.hstack((np.ones((n_samples, 1)), X, X**2))
+            w_quad = np.matmul(np.linalg.inv(np.matmul(X_quad.T, X_quad)), np.matmul(X_quad.T, y))
+            y_hat_quad = np.matmul(X_quad, w_quad)
+            
+            X_cub = np.hstack((np.ones((n_samples, 1)), X, X**2, X**3))
+            w_cub = np.matmul(np.linalg.inv(np.matmul(X_cub.T, X_cub)), np.matmul(X_cub.T, y))
+            y_hat_cub = np.matmul(X_cub, w_cub)
+            
+            
+            plt.figure(figsize=(10,3))
+            
+            plt.subplot(131)
+            plt.scatter(X, y, color="red", marker=".", s =200)
+            plt.plot(X, y_hat_lin, color="blue", linewidth=2)
+            plt.xlabel("Input")
+            plt.ylabel("Response")
+            plt.title("Linear Fitting")
+            
+            plt.subplot(132)
+            plt.scatter(X, y, color="red", marker=".", s =200)
+            plt.plot(X, y_hat_quad, color="blue", linewidth=2)
+            plt.xlabel("Input")
+            plt.ylabel("Response")
+            plt.title("Quadratic Fitting")
+            
+            plt.subplot(133)
+            plt.scatter(X, y, color="red", marker=".", s =200)
+            plt.plot(X, y_hat_cub, color="blue", linewidth=2)
+            plt.xlabel("Input")
+            plt.ylabel("Response")
+            plt.title("Cubic Fitting")
+            
+            plt.subplots_adjust(right=1.3)
+            plt.show()
         ```
-    
-    
+        
 </details>
 
 ![results](/assets/images/output_2_0.png)
@@ -85,7 +83,7 @@ classes: wide
 ## Probabilistic model
 * Let's recall the goal of regression. We are given observation data, \\(\mathcal{D_n}=\\{(\mathbf{x_i}, y_i)\\}^n_{i=1}\\) which is a set of \\(n\\) i.i.d. input-output pairs/training data, drawn from some **unkown** probability distribution \\(p(\mathbf{x}, y)\\) such that \\(\mathbf{x}\in \mathcal{X}\\) and \\(y\in\mathcal{Y}\\), where \\(\mathcal{X}\\) and \\(\mathcal{Y}\\) are the input and output domains, respectively (e.g., \\(\mathcal{X}=\mathbb{R}^p, \mathcal{Y}=\mathbb{R}\\)). The \\(i^{th}\\) data sample, \\(\mathbf{x_i}\in \mathbb{R}^p\\) (also called features, independent variables, explanatory variables, or covariate) is a \\(p\\)-dimensional vector. We are asked to find a function \\(f:\mathcal{X}\rightarrow\mathcal{Y}\\) that maps any _test_ point \\(\mathbf{x}^{\*}\\) to the corresponding \\(y^{\*}\\) (please note that \\( (\mathbf{x}^{\*}, y^{\*})\sim p(\mathbf{x}, y)\\)). What this means that we hope that we can learn a predictor (sometimes called an estimator)  \\(\hat{f} := \hat{f}_n(\mathcal{D}_n)\\) as a function of our training data that generalizes well to the unseen data (e.g., test data) drawn from the same distribution \\(p\\). Please note that \\(\mathcal{D}_n\\) is a fixed realization set drawn from the distribution \\(p\\); hence, by changing our training set, the estimator \\(\hat{f}\\) will also be changed; as a result, \\(\hat{f}\\) is a random variable.
 
-* Our approach to finding the estimator \\(\hat{f}\\) is to assume that the observation data has been corrupted by some additive noise (aka observation noise), and we are going to adopt a probabilistic approach and model the noise using a likelihood function. As a result, we can use the maximum likelihood principle to find \\(\hat{f}\\). 
+* Our approach to finding the estimator \\(\hat{f}\\) is to assume that the observation data has been corrupted by some additive noise (aka observation noise), and we are going to adopt a probabilistic approach and model the noise using a likelihood function. Consequently, we can use the maximum likelihood principle to find \\(\hat{f}\\). 
     - For most of our problems, we consider a real-valued (scalar value) response (output). A similar approach usually works for the vector-valued outputs. 
 * For regression problems, the observation noise is generally modeled as Gaussian noise; hence, we have the following likelihood function:
 
