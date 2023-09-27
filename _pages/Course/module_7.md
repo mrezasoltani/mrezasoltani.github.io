@@ -17,7 +17,7 @@ classes: wide
     
 * We'll talk about these issues later.
 * Linear models (i.e., the output of the model is linear with respect to its parameters) are the simplest class of regression models. Here, we first discuss parametric regression methods and then overview some non-parametric models. Now let's start with a motivating example:
-* Assume that we are given a set of \\(N\\) input-output pairs \\(\mathcal{D}=\\) \\(\\{(\mathbf{x_i}, y_i)\\}_{i=1}^n\\), where \\(\mathbf{x_i}\in \mathbb{R}^p\\) denotes the \\(i^{th}\\) sample which is usually a \\(p\\)-dimensional vector (also called features, independent variables, explanatory variables, or covariate). The goal is to learn a map from inputs, \\(\mathbf{x_i}\\)'s to outputs, \\(y_i\\)'s. For example, consider the following scatter plot, illustrating a dataset in 1-dimension. That is, each red point has one feature and the output is a scaler real number. For example, \\(x_i\\)'s can represent 50 different hours from 1 to 5, and \\(y_i\\)'s denotes the weather temperature in Celsius. We want to build a **Regression model** to predict the temperature for the future hours.
+* Assume that we are given a set of \\(n\\) input-output pairs \\(\mathcal{D}=\\) \\(\\{(\mathbf{x_i}, y_i)\\}_{i=1}^n\\), where \\(\mathbf{x_i}\in \mathbb{R}^p\\) denotes the \\(i^{th}\\) sample which is usually a \\(p\\)-dimensional vector (also called features, independent variables, explanatory variables, or covariate). The goal is to learn a map from inputs, \\(\mathbf{x_i}\\)'s to outputs, \\(y_i\\)'s. For example, consider the following scatter plot, illustrating a dataset in 1-dimension. That is, each red point has one feature and the output is a scaler real number. For example, \\(x_i\\)'s can represent 50 different hours from 1 to 5, and \\(y_i\\)'s denotes the weather temperature in Celsius. We want to build a **Regression model** to predict the temperature for the future hours.
 
 <details>
   <summary>Proof</summary>
@@ -101,7 +101,7 @@ classes: wide
 \\[\text{NLL}(f) = -\frac{1}{2}\log\sigma^2 + \frac{(Y - f(\mathbf{X}))^2}{2\sigma^2} + \text{cons.}\\]
 
 * So, if we assume \\(\sigma^2\\) is knowm, minimizing the NLL is equivalent to minimizing \\(\frac{(Y - f(\mathbf{X}))^2}{2\sigma^2}\\). This is the squared loss. As we have discussed in the Statistics section ([link](https://mrezasoltani.github.io/_pages/Course/module_4/#what-is-statistics)), the measure of fitness is given by the expected risk, considering the expected performance of the algorithm (model) with respect to the chosen loss function. As a result, our estimator is the solution to the following optimization problem:
-\\[f^{\*} = \text{argmin}_{\hat{f}}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \text{argmin} _{\hat{f}}\mathbb{E} _{\mathcal{D}_n} _\mathbb{E} _{\mathbf{X}, Y}\Big{(}\\]
+\\[f^{\*} = \text{argmin}_{\hat{f}}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \text{argmin} _{\hat{f}}\mathbb{E} _{\mathcal{D}_n} _\mathbb{E} _{\mathbf{X}, Y}\\]
 
     - In the above likelihood expression, please note that we have used \\(\hat{f}\\) instead of \\(f\\). This is because we have written the likelihood function using our training data which results in an estimator \\(\hat{f}\\) (not necessarily optimal one).
      \\[\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \int_{\mathcal{X}\times\mathcal{Y}}\big{(}y - \hat{f}(\mathbf{x})\big{)}^2 p(\mathbf{x}, y)d\mathbf{x}dy\\]
