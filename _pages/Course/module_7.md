@@ -19,59 +19,61 @@ classes: wide
 * Linear models (i.e., the output of the model is linear with respect to its parameters) are the simplest class of regression models. Here, we first discuss parametric regression methods and then overview some non-parametric models. Now let's start with a motivating example:
 * Assume that we are given a set of \\(N\\) input-output pairs \\(\mathcal{D}=\\) \\(\\{(\mathbf{x_i}, y_i)\\}_{i=1}^n\\), where \\(\mathbf{x_i}\in \mathbb{R}^p\\) denotes the \\(i^{th}\\) sample which is usually a \\(p\\)-dimensional vector (also called features, independent variables, explanatory variables, or covariate). The goal is to learn a map from inputs, \\(\mathbf{x_i}\\)'s to outputs, \\(y_i\\)'s. For example, consider the following scatter plot, illustrating a dataset in 1-dimension. That is, each red point has one feature and the output is a scaler real number. For example, \\(x_i\\)'s can represent 50 different hours from 1 to 5, and \\(y_i\\)'s denotes the weather temperature in Celsius. We want to build a **Regression model** to predict the temperature for the future hours.
 
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-
-n_samples = 50
-sigam = 0.5
-
-X = np.linspace(1, 5, n_samples)
-X = np.expand_dims(X, 1)
-y = (-np.sin(X) + sigam*np.random.randn(n_samples, 1))
-
-X_lin = np.hstack((np.ones((n_samples, 1)), X))
-w_lin = np.linalg.inv(np.matmul(X.T, X))*np.matmul(X.T, y)
-y_hat_lin = np.matmul(X, w_lin)
-
-
-X_quad = np.hstack((np.ones((n_samples, 1)), X, X**2))
-w_quad = np.matmul(np.linalg.inv(np.matmul(X_quad.T, X_quad)), np.matmul(X_quad.T, y))
-y_hat_quad = np.matmul(X_quad, w_quad)
-
-X_cub = np.hstack((np.ones((n_samples, 1)), X, X**2, X**3))
-w_cub = np.matmul(np.linalg.inv(np.matmul(X_cub.T, X_cub)), np.matmul(X_cub.T, y))
-y_hat_cub = np.matmul(X_cub, w_cub)
-
-
-plt.figure(figsize=(10,3))
-
-plt.subplot(131)
-plt.scatter(X, y, color="red", marker=".", s =200)
-plt.plot(X, y_hat_lin, color="blue", linewidth=2)
-plt.xlabel("Input")
-plt.ylabel("Response")
-plt.title("Linear Fitting")
-
-plt.subplot(132)
-plt.scatter(X, y, color="red", marker=".", s =200)
-plt.plot(X, y_hat_quad, color="blue", linewidth=2)
-plt.xlabel("Input")
-plt.ylabel("Response")
-plt.title("Quadratic Fitting")
-
-plt.subplot(133)
-plt.scatter(X, y, color="red", marker=".", s =200)
-plt.plot(X, y_hat_cub, color="blue", linewidth=2)
-plt.xlabel("Input")
-plt.ylabel("Response")
-plt.title("Cubic Fitting")
-
-plt.subplots_adjust(right=1.3)
-plt.show()
-```
+<details>
+  <summary>Proof</summary>
     
+    ```python
+    import numpy as np
+    import matplotlib.pyplot as plt
+    
+    n_samples = 50
+    sigam = 0.5
+    
+    X = np.linspace(1, 5, n_samples)
+    X = np.expand_dims(X, 1)
+    y = (-np.sin(X) + sigam*np.random.randn(n_samples, 1))
+    
+    X_lin = np.hstack((np.ones((n_samples, 1)), X))
+    w_lin = np.linalg.inv(np.matmul(X.T, X))*np.matmul(X.T, y)
+    y_hat_lin = np.matmul(X, w_lin)
+    
+    
+    X_quad = np.hstack((np.ones((n_samples, 1)), X, X**2))
+    w_quad = np.matmul(np.linalg.inv(np.matmul(X_quad.T, X_quad)), np.matmul(X_quad.T, y))
+    y_hat_quad = np.matmul(X_quad, w_quad)
+    
+    X_cub = np.hstack((np.ones((n_samples, 1)), X, X**2, X**3))
+    w_cub = np.matmul(np.linalg.inv(np.matmul(X_cub.T, X_cub)), np.matmul(X_cub.T, y))
+    y_hat_cub = np.matmul(X_cub, w_cub)
+    
+    
+    plt.figure(figsize=(10,3))
+    
+    plt.subplot(131)
+    plt.scatter(X, y, color="red", marker=".", s =200)
+    plt.plot(X, y_hat_lin, color="blue", linewidth=2)
+    plt.xlabel("Input")
+    plt.ylabel("Response")
+    plt.title("Linear Fitting")
+    
+    plt.subplot(132)
+    plt.scatter(X, y, color="red", marker=".", s =200)
+    plt.plot(X, y_hat_quad, color="blue", linewidth=2)
+    plt.xlabel("Input")
+    plt.ylabel("Response")
+    plt.title("Quadratic Fitting")
+    
+    plt.subplot(133)
+    plt.scatter(X, y, color="red", marker=".", s =200)
+    plt.plot(X, y_hat_cub, color="blue", linewidth=2)
+    plt.xlabel("Input")
+    plt.ylabel("Response")
+    plt.title("Cubic Fitting")
+    
+    plt.subplots_adjust(right=1.3)
+    plt.show()
+    ```
+</details>
 ![results](/assets/images/output_2_0.png)
 
 * In the above graph, we see three models used for predicting the weather temperature. The left panel shows a linear fitting (linear regression), the middle panel illustrates a quadratic prediction, and the right one shows a cubic curve fitting. We can see the limitedness of linear regression for this specific dataset as the trend of the data doesn't seem to be linear. 
@@ -84,7 +86,7 @@ plt.show()
     - For most of our problems, we consider a real-valued (scalar value) response (output). A similar approach usually works for the vector-valued outputs. 
 * For regression problems, the observation noise is generally modeled as Gaussian noise; hence, we have the following likelihood function:
 
-\\[p(y*\|\mathbf{x}^*) =\mathcal{N}(y^* \| f(\mathbf{x}^*), \sigma^2)\\]
+\\[p(y*\|\mathbf{x}^{\*}) =\mathcal{N}(y^{\*} \| f(\mathbf{x}^{\*}), \sigma^2)\\]
 
 * This implies the following relationship between a generic input random vector \\(\mathbf{X}\\) and its random output \\(Y\\) with the joint distribution \\(p\\):
 \\[Y = f(\mathbf{X}) + \epsilon\\]
@@ -104,23 +106,23 @@ plt.show()
         <details>
           <summary>Proof</summary>
 
-        * Now let's see the optimal solution for the above minimization problem. Using the Law of Iterated Expectations:
-        \begin{equation}
-             \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2  = \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E}_{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} + \mathbb{E} 
-             \big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2 \| \mathbf{X}=\mathbf{x}\Big{)}  \\\\\\\\
-             \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = 
-             \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E}_{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\|\mathbf{X}=\mathbf{x}\big{)}^2 
-             + 2\mathbb{E}_{Y\|\mathbf{X}}\big{(}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X} = \mathbf{x}\big{)}\big{)}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} -  
-             \hat{f}(\mathbf{X})\big{)}\|\mathbf{X} = \mathbf{x}\big{)}
-             + \mathbb{E}_{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)} \\\\\\\\
-             \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = 
-             \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E}_{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\|\mathbf{X}=\mathbf{x}\big{)}^2 
-             +2\mathbb{E}_{Y\|\mathbf{X}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}) -\hat{f}(\mathbf{X}\big{)}\big{)}\|\mathbf{X} = \mathbf{x}\big{)}\times 0
-              + \mathbb{E}_{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)} \\\\\\\\
-              \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 \geq  \mathbb{E}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\big{)}^2 
-        \end{equation}
-            - Where the minimum in the last inequality is achieved if we choose
-            \\(\hat{f}(\mathbf{x})=\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\).
+            * Now let's see the optimal solution for the above minimization problem. Using the Law of Iterated Expectations:
+            \begin{equation}
+                 \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2  = \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E}_{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} + \mathbb{E} 
+                 \big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2 \| \mathbf{X}=\mathbf{x}\Big{)}  \\\\\\\\
+                 \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = 
+                 \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E}_{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\|\mathbf{X}=\mathbf{x}\big{)}^2 
+                 + 2\mathbb{E}_{Y\|\mathbf{X}}\big{(}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X} = \mathbf{x}\big{)}\big{)}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} -  
+                 \hat{f}(\mathbf{X})\big{)}\|\mathbf{X} = \mathbf{x}\big{)}
+                 + \mathbb{E}_{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)} \\\\\\\\
+                 \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = 
+                 \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E}_{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\|\mathbf{X}=\mathbf{x}\big{)}^2 
+                 +2\mathbb{E}_{Y\|\mathbf{X}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}) -\hat{f}(\mathbf{X}\big{)}\big{)}\|\mathbf{X} = \mathbf{x}\big{)}\times 0
+                  + \mathbb{E}_{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)} \\\\\\\\
+                  \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 \geq  \mathbb{E}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\big{)}^2 
+            \end{equation}
+                - Where the minimum in the last inequality is achieved if we choose
+                \\(\hat{f}(\mathbf{x})=\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\).
             
        </details>
 
