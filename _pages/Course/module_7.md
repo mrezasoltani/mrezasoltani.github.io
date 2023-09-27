@@ -109,7 +109,6 @@ classes: wide
     
         <details>
           <summary>Proof</summary>
-
             * Now let's see the optimal solution for the above minimization problem. Using the Law of Iterated Expectations:
             \begin{equation}
                  \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2  = \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E}_{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} + \mathbb{E} 
@@ -128,7 +127,9 @@ classes: wide
             
        </details>
 
-
+* Where the minimum in the last inequality is achieved if we choose
+                \\(\hat{f}(\mathbf{x})=\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\).
+  
 * If we replace the minimizer, \\(\mathbb{E}\big{(}Y\|\mathbf{x}=\mathbf{X}\big{)}\\) in the expected risk expression, we find the following Bias-variance trade-off:
 \\[\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \sigma^2 + \text{Bias}^2(\mathbf{X}) + \text{Var}(\mathbf{X})\\]
 * where
