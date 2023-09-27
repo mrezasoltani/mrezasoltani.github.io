@@ -113,7 +113,7 @@ classes: wide
 
 \begin{equation}
     \begin{aligned}
-        \hspace{-3cm}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 &= \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E} _{Y\|\mathbf{X}}\big{(}Y-\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} + \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2 \|\mathbf{X}=\mathbf{x}\Big{)}  \\\\\\\\
+        \hspace{-1cm}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 &= \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E} _{Y\|\mathbf{X}}\big{(}Y-\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} + \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2 \|\mathbf{X}=\mathbf{x}\Big{)}  \\\\\\\\
     & = \mathbb{E} _{\mathbf{X}}\Big{(}\mathbb{E} _{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}^2\|\mathbf{X}=\mathbf{x}\big{)}  \\\\\\\\
     & + 2\mathbb{E} _{Y\|\mathbf{X}}\big{(}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X} = \mathbf{x}\big{)}\big{)}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} -  
              \hat{f}(\mathbf{X})\big{)}\|\mathbf{X} = \mathbf{x}\big{)} \\\\\\\\
