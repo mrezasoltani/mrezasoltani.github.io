@@ -132,7 +132,8 @@ classes: wide
                 \\(\hat{f}(\mathbf{x})=\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\).
   
 * If we replace the minimizer, \\(\mathbb{E}\big{(}Y\|\mathbf{x}=\mathbf{X}\big{)}\\) in the expected risk expression, we find the following Bias-variance trade-off:
-\\[\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \sigma^2 + \text{Bias}^2(\mathbf{X}) + \text{Var}(\mathbf{X})\\]
+\\[\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \sigma^2 + \text{Bias}^2(\mathbf{X}) + \text{Var}(\mathbf{X})\text{argmin}_{\hat{f}}\mathbb{E}_{\mathcal{D}_n}\mathbb{E}_{\mathbf{X}, Y}\Big{(}\\]
+
 * where
     - \\(\text{Bias}(\mathbf{X}) = \mathbb{E}\big{(}\hat{f}(\mathbf{X})\big{)} - f(\mathbf{X})\\)
     - \\(\text{Var}(\mathbf{X}) = \mathbb{E}\big{(}\hat{f}(\mathbf{X}\big{)} - f(\mathbf{X})\big{)}^2\\)
