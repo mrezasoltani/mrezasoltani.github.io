@@ -117,7 +117,7 @@ classes: wide
     & = \mathbb{E} _{\mathbf{X}}\Big{(}\mathbb{E} _{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}^2\|\mathbf{X}=\mathbf{x}\big{)}  \\\\\\\\
     & \hspace{+1cm}+ 2\mathbb{E} _{Y\|\mathbf{X}}\big{(}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X} = \mathbf{x}\big{)}\big{)}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} -  
              \hat{f}(\mathbf{X})\big{)}\|\mathbf{X} = \mathbf{x}\big{)} \\\\\\\\
-             & \hspace{+2cm} \mathbb{E} _{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}-\hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\big{)}\Big{)}
+             & \hspace{+2cm} + \mathbb{E} _{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}-\hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\big{)}\Big{)}
     \end{aligned}
 \end{equation}
 
