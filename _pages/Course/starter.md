@@ -6,11 +6,11 @@ classes: wide
 * Website of the course: [https://mrezasoltani.github.io/course_modules/](https://mrezasoltani.github.io/course_modules/)
 ### Some logistics:
   * This course needs a minimum of 4-6 hours/week of work.
-  * There are weekly assignments. both theoretical and programming questions.
+  * There are weekly assignments, including both theoretical and programming questions.
   * Assignments should be done individually; however, discussion with your friends is encouraged.
   * Many of the questions in the assignments may seem challenging at the first attempt, but with enough spending time, every student can solve them. 
   * In addition to the course materials, you may engage yourself with numerous resources out there.
-  * Being active in class is **VERY** important for me. This is not a spectator sport. The more you engage yourself in the course, the better your understanding of concepts.
+  * Being active in the class is **VERY** important for me. This is not a spectator sport. The more you engage yourself in the course, the better your understanding of concepts.
   * Always try to ask any questions you may have. There is no place to be shy.
   * Most questions and examples come with real-world datasets.
   * To be successful in this course, you need to develop both your mathematical background and programming skills.
