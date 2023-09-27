@@ -16,7 +16,7 @@ classes: wide
     - Uncertainty modeling (if the model parameters are deterministic or random)
     
 * We'll talk about these issues later.
-* Linear models (i.e., the output of the model is linear with respect to its parameters) are the simplest class of regression models. Here, we first discuss parametric regression methods and then overview some non-parametric models. Now let's star with a motivating example:
+* Linear models (i.e., the output of the model is linear with respect to its parameters) are the simplest class of regression models. Here, we first discuss parametric regression methods and then overview some non-parametric models. Now let's start with a motivating example:
 * Assume that we are given a set of \\(N\\) input-output pairs \\(\mathcal{D}=\\) \\(\\{(\mathbf{x_i}, y_i)\\}_{i=1}^n\\), where \\(\mathbf{x_i}\in \mathbb{R}^p\\) denotes the \\(i^{th}\\) sample which is usually a \\(p\\)-dimensional vector (also called features, independent variables, explanatory variables, or covariate). The goal is to learn a map from inputs, \\(\mathbf{x_i}\\)'s to outputs, \\(y_i\\)'s. For example, consider the following scatter plot, illustrating a dataset in 1-dimension. That is, each red point has one feature and the output is a scaler real number. For example, \\(x_i\\)'s can represent 50 different hours from 1 to 5, and \\(y_i\\)'s denotes the weather temperature in celsius. We want to build a **Regression model** to predict the temperature for the future hours.
 
 
@@ -71,21 +71,17 @@ plt.title("Cubic Fitting")
 plt.subplots_adjust(right=1.3)
 plt.show()
 ```
-
-
     
-![png](output_2_0.png)
-    
+![results](/assets/images/output_2_0.png)
 
+* In the above graph, we see three models used for predicting the weather temperature. The left panel shows a linear fitting (linear regression), the middle panel illustrates a quadratic prediction, and the right one shows a cubic curve fitting. We can see the limitedness of linear regression for this specific dataset as the trend of the data doesn't seem to be linear. 
 
-* In the above graph, we see three models used for predicting the weather temperature. The lef panel show a linear fitting (linear regression), the middle panel illustrates a quadratic prediction, and the right one show a cubic curve fitting. We can see the limitedness of linear regression for this specific dataset as the trend of the data doesn't seem to be linear. 
+## Probabilistic model
 
-## Probablistic model
+* Let's recall the goal of regression. We are given an observation data, including a set of \\(n\\) i.i.d. input-output pairs (_training data_) \\(\mathcal{D}_n=\\) \\(\\{(\mathbf{x_i}, y_i)\\}_{i=1}^n\\) drawn from some probability distribution \\(p(\mathbf{x}, y)\\) such that \\(\mathbf{x}\in \mathcal{X}\\) and \\(y\in\mathcal{Y}\\), and we are asked to find a function \\(f:\mathcal{X}\rightarrow\mathcal{Y}\\) that maps any _test_ point \\(\mathbf{x}^*\\) to the corresponding \\(y^*\\) (please note that \\( (\mathbf{x}^*, y^*)\sim p(\mathbf{x}, y)\\). What this means that we hope that we can learn a predictor (sometimes called an estimator)  \\(\hat{f} := \hat{f}_n(\mathcal{D}_n)\\) as a function of our training data  that generalizes well to the unseen data drawn from the same distribution \\(p\\). Please note that \\(\mathcal{D}_n\\) is a fixed realization set drawn from the distribution \\(p\\); hence, by changing our training set, the estimator \\(\hat{f}\\) will aslo be changed; as a result, \\(\hat{f}\\) is a random variable.
 
-* Let's recall the goal of regression. We are given an observation data, including a set of \\(n\\) i.i.d. input-output pairs (_training data_) \\(\mathcal{D}_n=\\) \\(\\{(\mathbf{x_i}, y_i)\\}_{i=1}^n\\) drwan from some probablity distribution \\(p(\mathbf{x}, y)\\) such that \\(\mathbf{x}\in \mathcal{X}\\) and \\(y\in\mathcal{Y}\\), and we are asked to find a function \\(f:\mathcal{X}\rightarrow\mathcal{Y}\\) that maps any _test_ point \\(\mathbf{x}^*\\) to the correpsonding \\(y^*\\) (please note that \\( (\mathbf{x}^*, y^*)\sim p(\mathbf{x}, y)\\). What this means that we hope that we can learn a predictor (sometimes called an estimator)  \\(\hat{f} := \hat{f}_n(\mathcal{D}_n)\\) as a function of our training data  that generalizes well to the unseen data drawn from the same distribution \\(p\\). Please note that \\(\mathcal{D}_n\\) is a fixed realization set drawn from the distribution \\(p\\); hence, with chnaging our training set, the estimator \\(\hat{f}\\) will aslo be changed; as a result, \\(\hat{f}\\) is a random variable.
-
-* Our approach to find the estimator \\(\hat{f}\\) is to assume that the observation data has been corrupted by some additive noise (aka observation noise), and we are going to adopt a probabilistic approach and model the noise using a likelihood function. As a result, we can use the maximum likelihood principle to find \\(\hat{f}\\). 
-    - For most of our problems, we consider a real-valued (scalar value) response (output). Similar approach usually works for the vector-valued outputs. 
+* Our approach to finding the estimator \\(\hat{f}\\) is to assume that the observation data has been corrupted by some additive noise (aka observation noise), and we are going to adopt a probabilistic approach and model the noise using a likelihood function. As a result, we can use the maximum likelihood principle to find \\(\hat{f}\\). 
+    - For most of our problems, we consider a real-valued (scalar value) response (output). A similar approach usually works for the vector-valued outputs. 
 * For regression problems, the observation noise is generally modeled as Gaussian noise; hence, we have the following likelihood function:
 
 \\[p(y*\|\mathbf{x}^*) =\mathcal{N}(y^* \| f(\mathbf{x}^*), \sigma^2)\\]
@@ -93,17 +89,17 @@ plt.show()
 * This implies the following relationship between a generic input random vector \\(\mathbf{X}\\) and its random output \\(Y\\) with the joint distribution \\(p\\):
 \\[Y = f(\mathbf{X}) + \epsilon\\]
     - Here \\(\epsilon\sim\mathcal{N}(0, \sigma^2)\\).
-    - For models we discuss here we assume that the observation noise is statistically independent from our data, \\(\mathbf{x}, y\\).
+    - For models we discuss here we assume that the observation noise is statistically independent of our data, \\(\mathbf{x}, y\\).
 
-* So, finding the estimator \\(\hat{f}\\) boils down to estimate the mean of the Gaussian distribution using tianing data. To this end, we use the maximum likelihhod approach. The negative log-likelihood (NLL) is given by
+* So, finding the estimator \\(\hat{f}\\) boils down to estimating the mean of the Gaussian distribution using training data. To this end, we use the maximum likelihood approach. The negative log-likelihood (NLL) is given by
 \\[\text{NLL}(f) = -\frac{1}{2}\log\sigma^2 + \frac{(Y - f(\mathbf{X}))^2}{2\sigma^2} + \text{cons.}\\]
 
-* So, if we assume \\(\sigma^2\\) is knowm, minimizing the NLL is equivalent to minimizing \\(\frac{(Y - f(\mathbf{X}))^2}{2\sigma^2}\\). This is the squared loss. As we have discussed in Statistics section ([link](https://mrezasoltani.github.io/_pages/Course/module_4/#what-is-statistics)), the measure of fitness is given by the expected risk, considering the expected performance of the algorithm (model) with respect to the chosen loss function. As a rsult, our estimator is the solution of the following optimization problem:
+* So, if we assume \\(\sigma^2\\) is knowm, minimizing the NLL is equivalent to minimizing \\(\frac{(Y - f(\mathbf{X}))^2}{2\sigma^2}\\). This is the squared loss. As we have discussed in the Statistics section ([link](https://mrezasoltani.github.io/_pages/Course/module_4/#what-is-statistics)), the measure of fitness is given by the expected risk, considering the expected performance of the algorithm (model) with respect to the chosen loss function. As a result, our estimator is the solution to the following optimization problem:
 \\[f^* = \text{argmin}_{\hat{f}}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \text{argmin}_{\hat{f}}\mathbb{E}_{\mathcal{D}_n}\mathbb{E}_{\mathbf{X}, Y}\Big{(}\big{(}Y - \hat{f}(\mathbf{X})\big{)}^2\|\mathcal{D}_n\Big{)}\\].
-    - In the above likelihood expression, please note that the we have used \\(\hat{f}\\) instead of \\(f\\). This is becasue we have written the likelihood function using our training data which results an estimator \\(\hat{f}\\) (not necessarly optimal one).
+    - In the above likelihood expression, please note that we have used \\(\hat{f}\\) instead of \\(f\\). This is because we have written the likelihood function using our training data which results in an estimator \\(\hat{f}\\) (not necessarily optimal one).
     - \\[\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \int_{\mathcal{X}\times\mathcal{Y}}\big{(}y - \hat{f}(\mathbf{x})\big{)}^2 p(\mathbf{x}, y)d\mathbf{x}dy\\]
     - We note that the inner expectation (the risk) is a random variable as \\(\hat{f}\\) is a r.v.
-    - it can be show that the regression function which minimizes the above expected risk is given by \\(f^*= \hat{f}(\mathbf{x}) = \mathbb{E}\big{(}Y\|\mathbf{x}=\mathbf{X}\big{)}\\).
+    - it can be shown that the regression function which minimizes the above expected risk is given by \\(f^*= \hat{f}(\mathbf{x}) = \mathbb{E}\big{(}Y\|\mathbf{x}=\mathbf{X}\big{)}\\).
     
         <details>
           <summary>Proof</summary>
@@ -123,7 +119,7 @@ plt.show()
               + \mathbb{E}_{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)} \\\\\\\\
               \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 \geq  \mathbb{E}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\big{)}^2 
         \end{equation}
-            - Where the minimum in the last inequality achieves if we choose
+            - Where the minimum in the last inequality is achieved if we choose
             \\(\hat{f}(\mathbf{x})=\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\).
             
        </details>
@@ -138,11 +134,11 @@ plt.show()
 
 ## Parametric models
 
-* One way to solve the above problem is to assume that the our estimator \\(\hat{f}: \mathbb{R}^p\rightarrow \mathbb{R}\\) has a parametrix form, \\(\hat{f}(\mathbf{x}, \pmb{\theta})\\), where \\(\pmb{\theta}\in \mathbb{R}^k\\) denotes a set of parameters such that \\(k = o(n)\\), that is, \\(k\\) doesn't grow with the number of samples. If \\(k=O(p)\\), the model is called under-parametrized (i.e., we are in low-dimensional space), while models with \\(k >> p\\) are called over-parametrized (i.e., we are in high-dimensional space). One example of the over-parametrized models is Deep Neural Networks (DNNs).
+* One way to solve the above problem is to assume that our estimator \\(\hat{f}: \mathbb{R}^p\rightarrow \mathbb{R}\\) has a parametrix form, \\(\hat{f}(\mathbf{x}, \pmb{\theta})\\), where \\(\pmb{\theta}\in \mathbb{R}^k\\) denotes a set of parameters such that \\(k = o(n)\\), that is, \\(k\\) doesn't grow with the number of samples. If \\(k=O(p)\\), the model is called under-parametrized (i.e., we are in low-dimensional space), while models with \\(k >> p\\) are called over-parametrized (i.e., we are in high-dimensional space). One example of the over-parametrized models is Deep Neural Networks (DNNs).
 
 ### Linear Regression
 
-* We first focus on the linear regression models; as a result, we may assume that the output is a linear function of the input. * We note that this is just an assumption, and it may not be valid or realistic, but certainly the linear models are the simplest model we can start with. 
+* We first focus on the linear regression models; as a result, we may assume that the output is a linear function of the input. * We note that this is just an assumption, and it may not be valid or realistic, but certainly, the linear models are the simplest model we can start with. 
 * Hence, \\(\hat{f}(\mathbf{x}, \pmb{\theta}) = b + \mathbf{w}^T\mathbf{x}\\), where we consider the case \\(k=p\\). Accordingly, the likelihood function is given by:
 \\[p(y\|\mathbf{x}) =\mathcal{N}(y \| b + \mathbf{w}^T \mathbf{x}, \sigma^2)\\]
     - Here, \\(\pmb{\theta}(\mathbf{w}, b, \sigma^2)\\) are all the parameters of the model. 
