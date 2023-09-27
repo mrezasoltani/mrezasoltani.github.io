@@ -114,12 +114,12 @@ classes: wide
         \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2  = \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E}_{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} + \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2 \| \mathbf{X}=\mathbf{x}\Big{)}  \\\\\\\\                    
 \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E}_{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\|\mathbf{X}=\mathbf{x}\big{)}^2 + 2\mathbb{E}_{Y\|\mathbf{X}}\big{(}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X} = \mathbf{x}\big{)}\big{)}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} -  \hat{f}(\mathbf{X})\big{)}\|\mathbf{X} = \mathbf{x}\big{)} + \mathbb{E}_{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}- \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)} \\\\\\\\
 \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E}_{Y\|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\|\mathbf{X}=\mathbf{x}\big{)}^2 
-+ 2\mathbb{E}_{Y\|\mathbf{X}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}) -\hat{f}(\mathbf{X}\big{)}\big{)}\|\mathbf{X} = \mathbf{x}\big{)}\times 0 + \mathbb{E}_{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)} \\\\\\\\
-+ 
++ 2\mathbb{E}_{Y\|\mathbf{X}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}) -\hat{f}(\mathbf{X}\big{)}\big{)}\|\mathbf{X} = \mathbf{x}\big{)}\times 0 + \mathbb{E}_{Y\|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2\|\mathbf{X}=\mathbf{x}\Big{)} \\\\\\\\ 
 \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 \geq  \mathbb{E}\big{(}Y \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\big{)}^2
 \end{equation}
 
-    - Where the minimum in the last inequality is achieved if we choose \\(\hat{f}(\mathbf{x})=\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\).
+    - Where the minimum in the last inequality is achieved if we choose
+                  \\(\hat{f}(\mathbf{x})=\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\).
   
 * If we replace the minimizer, \\(\mathbb{E}\big{(}Y\|\mathbf{x}=\mathbf{X}\big{)}\\) in the expected risk expression, we find the following Bias-variance trade-off:
 \\[\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \sigma^2 + \text{Bias}^2(\mathbf{X}) + \text{Var}(\mathbf{X})\\]
