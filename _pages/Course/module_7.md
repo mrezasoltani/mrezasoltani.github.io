@@ -15,7 +15,7 @@ classes: wide
     - Choice of loss function (how to choose the loss function according to the underlying probabilistic model)
     - Uncertainty modeling (if the model parameters are deterministic or random)
     
-* In this module, we start with reviewing some statistical assumptions for regression problems and then focus on studying different types of linear algorithms (i.e., the output of the model is linear with respect to its parameters) as the simplest class of regression models. Initially, we go over the parametric regression methods and then discuss some non-parametric models. Now let's start with a motivating example:
+* In this module, we start with reviewing some statistical assumptions for regression problems and then focus on studying different types of linear algorithms (i.e., the output of the model is linear with respect to its parameters) as the simplest class of regression models. We also talk about some non-linea models. DNN algorithms are deffered to the DNN section. Initially, we go over the parametric regression methods and then discuss some non-parametric models. Now let's start with a motivating example:
 
 * Consider the following scatter plot, illustrating 50 data samples in 1-dimension. The x-axis denotes the feature and the output is a scaler real number. For example, The red circles can represent 50 different hours from 1 to 5, and \\(y_i\\)'s denotes the weather temperature in Celsius. We want to build a **Regression model** to predict the temperature for the future hours (hours do not exist in our dataset).
 
