@@ -1,5 +1,5 @@
 ---
-title: "Welcome to the ML/DL course."
+title: "Welcome to "All You Need in Machine Learning" Course"
 classes: wide
 ---
 
