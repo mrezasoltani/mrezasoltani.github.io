@@ -19,8 +19,7 @@ classes: wide
 
 * Consider the following scatter plot, illustrating 50 data samples in 1-dimension. The x-axis denotes the feature and the output is a scaler real number. For example, The red circles can represent 50 different hours from 1 to 5, and \\(y_i\\)'s denotes the weather temperature in Celsius. We want to build a **Regression model** to predict the temperature for the future hours (hours do not exist in our dataset).
 
-<details>
-  <summary>Code</summary>
+<details markdown=1><summary markdown="span">Code</summary>
 
   ```python
       import numpy as np
