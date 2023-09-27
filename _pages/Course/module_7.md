@@ -125,8 +125,8 @@ classes: wide
 \end{equation}
 -->
 
-    - Where the minimum in the last inequality is achieved if we choose
-                  \\(\hat{f}(\mathbf{x})=\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\).
+* Where the minimum in the last inequality is achieved if we choose
+              \\(\hat{f}(\mathbf{x})=\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\).
   
 * If we replace the minimizer, \\(\mathbb{E}\big{(}Y\|\mathbf{x}=\mathbf{X}\big{)}\\) in the expected risk expression, we find the following Bias-variance trade-off:
 \\[\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \sigma^2 + \text{Bias}^2(\mathbf{X}) + \text{Var}(\mathbf{X})\\]
