@@ -1,6 +1,6 @@
 ---
 permalink: /course_modules/
-title: "Course"
+title: "All You Need in Machine Learning"
 ---
 
 * [Course Info](Course/starter.md)
