@@ -11,7 +11,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
   |       Variable Type       | Symbol             |
    | -------------| ---------------------- |
    | \\(a := b\\) | \\(a\\) is defined by \\(b\\) |
-   |  **Set of integers from** \\(1\\) **to** \\(n\\)   |  \\([n]= \{1,2,\ldots,n\}\\) |
+   |  **Set of integers from** \\(1\\) **to** \\(n\\)   |  \\([n]= \\{1,2,\ldots,n\\}\\) |
    | **Deterministic scalar variable**   | \\(x\\) |
    | **Random scalar variable or a general set** | \\(X\\)|
    | **Deterministic vector** | \\(\mathbf{x}\\)|
