@@ -10,7 +10,8 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
 
   |       Variable Type       | Symbol             |
    | -------------| ---------------------- |
-   |\\(a := b\\) | \\(a\\) is defined by \\(b\\) | 
+   | \\(a := b\\) | \\(a\\) is defined by \\(b\\) |
+   |  **Set of integers from** \\(1\\) **to** \\(n\\)   |  \\([n]= \{1,2,\ldots,n\}\\) |
    | **Deterministic scalar variable**   | \\(x\\) |
    | **Random scalar variable or a general set** | \\(X\\)|
    | **Deterministic vector** | \\(\mathbf{x}\\)|
@@ -35,6 +36,7 @@ Linear algebra is the study of matrices and vectors. In this module, we start wi
    | \\(p\\) **-induced norm of a matrix** | \\(\\|\\|\mathrm{X}\\|\\|_p\\) |
    | **Dot product of two vectors** | \\(\mathbf{x}\cdot\mathbf{y}\\) |
    | **Hadamard (element-wise) product of two vectors (matrices)** | \\(\mathbf{x}\odot\mathbf{y} ~ (\mathrm{X}\odot\mathrm{Y})\\) |
+   | \\(k^{th}\\) **derivative of a single variable function** \\(f\\) | \\(f^{(k)}\\) |
    | **Gradient of a multivariable function** \\(f(\mathbf{x}):~ \mathbb{R}^p\rightarrow \mathbb{R}\\) | \\(\nabla _{\mathbf{x}} f(\mathbf{x}) = \nabla f(\mathbf{x})\\) |
    | **Hessian of a multivariable function** \\(f(\mathbf{x}):~ \mathbb{R}^p\rightarrow \mathbb{R}\\) | \\(\nabla _{\mathbf{x}}^2 f(\mathbf{x}) = \nabla^2 f(\mathbf{x})\\) |
 
