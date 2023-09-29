@@ -135,7 +135,7 @@ classes: wide
     - \\(\text{Var}(\mathbf{X}) = \mathbb{E}\big{(}\mathbb{E}\big{(}\hat{f}(\mathbf{X}\big{)} - f(\mathbf{X})\big{)}^2\\)
     - \\(\sigma^2 = \mathbb{E}\big{(}Y-f(\mathbf{X})\big{)}\\)
 * \\(\sigma^2\\) is called _irreducible_ error since it is always there as one of the main components in our statistical model.
-* In fact the above expression for \\(\sigma^2\\) is the MLE of the \\(\sigma^2\\). If we wanted to estimate it from NLL (by taking derivative w.r.t. \\(sigma^2\\) and equating with zero) we would find the same thing).
+* In fact the above expression for \\(\sigma^2\\) is the MLE of the \\(\sigma^2\\). If we wanted to estimate it from NLL (by taking derivative w.r.t. \\(\sigma^2\\) and equating with zero) we would find the same thing).
 * The Bias-Variance trade-off states that we cannot decrease both the bias and the variance of our estimator at the same time. Estimators with higher bias tend to underfit the data; while models with higher variance overfit the training data. We'll talk about this more later.
 
 ### Fixed design
@@ -143,7 +143,7 @@ classes: wide
 \\(\mathbf{x_1}, \mathbf{x_2},\ldots,\mathbf{x_n}\\) are considered deterministic, and the  goal is to estimate \\(f\\) only at these
 points. The fixed design is sometimes called denoising since we want to recover \\(f(\mathbf{x_1}), f(\mathbf{x_2}),\ldots,f(\mathbf{x_n})\\) given the noisy observations, \\(y_1, y_2, \ldots, y_n\\).
 * Using the Gaussian assumption for the observation noise and the squared loss, we can write the expected risk (as a measure of performance):
-\\[\\( \mathcal{R}(\hat{f}) = \mathbb{E}\text{MSE}(\hat{f}) = \mathbb{E}\big{(} \frac{1}{n}\sum _{i=1}^n(\hatf(\mathbf{x_i}) - f(\mathbf{x_i}))\big{)}
+\\[ \mathcal{R}(\hat{f}) = \mathbb{E}\text{MSE}(\hat{f}) = \mathbb{E}\big{(} \frac{1}{n}\sum _{i=1}^n(\hatf(\mathbf{x_i}) - f(\mathbf{x_i}))\big{)}\\]
 
 ## Parametric models
 
