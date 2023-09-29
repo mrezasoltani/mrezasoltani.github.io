@@ -84,7 +84,6 @@ classes: wide
 
 * Our approach to finding the estimator \\(\hat{f}\\) is to assume that the observation data has been corrupted by some additive noise (aka observation noise), and we are going to adopt a probabilistic approach and model the noise using a likelihood function. Consequently, we can use the maximum likelihood principle to find \\(\hat{f}\\). 
     - For most of our problems, we consider a real-valued (scalar value) response (output). A similar approach usually works for the vector-valued outputs.
-* We note that _regressor_ \\(f\\) is part of our statistical model, and it is not necessarily the ground-truth function, \\(g\\) (if there is such a function) that maps every input point to the output. We'll get back to this issue once we discuss the approximation and estimation errors.
 
 * For regression problems, the observation noise is generally modeled as Gaussian noise; hence, we have the following likelihood function:
 
@@ -98,7 +97,7 @@ classes: wide
 * So, finding the estimator \\(\hat{f}\\) boils down to estimating the mean of the Gaussian distribution using training data. To this end, we use the maximum likelihood approach. The negative log-likelihood (NLL) is given by
 \\[\text{NLL}(f) = -\frac{1}{2}\log\sigma^2 + \frac{(Y - f(\mathbf{X}))^2}{2\sigma^2} + \text{cons.}\\]
 
-* So, if we assume \\(\sigma^2\\) is knowm, minimizing the NLL is equivalent to minimizing \\(\frac{(Y - f(\mathbf{X}))^2}{2\sigma^2}\\). This is the squared loss. As we have discussed in the Statistics section ([link](https://mrezasoltani.github.io/_pages/Course/module_4/#what-is-statistics)), the measure of fitness is given by the expected risk, considering the expected performance of the algorithm (model) with respect to the chosen loss function. As a result, our estimator is the solution to the following optimization problem:
+* If we assume \\(\sigma^2\\) is knowm, minimizing the NLL is equivalent to minimizing \\(\frac{(Y - f(\mathbf{X}))^2}{2\sigma^2}\\). This is the squared loss. As we have discussed in the Statistics section ([link](https://mrezasoltani.github.io/_pages/Course/module_4/#what-is-statistics)), the measure of fitness is given by the expected risk, considering the expected performance of the algorithm (model) with respect to the chosen loss function. As a result, our estimator is the solution to the following optimization problem:
 \\[f^{\*} = \text{argmin}_{\hat{f}}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \text{argmin} _{\hat{f}}\mathbb{E} _{\mathcal{D}_n} \mathbb{E} _{\mathbf{X}, Y} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2\|\mathcal{D}_n\big{)}\\]
 
     - Where the risk is given by \\( \mathcal{R}(\hat{f}) = \mathbb{E} _{\mathbf{X}, Y} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 \\).
