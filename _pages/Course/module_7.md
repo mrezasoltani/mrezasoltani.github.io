@@ -155,7 +155,7 @@ points. The fixed design is sometimes called denoising since we want to recover 
 * We first focus on the linear regression models; as a result, we may assume that the output is a linear function of the input. * We note that this is just an assumption, and it may not be valid or realistic, but certainly, the linear models are the simplest model we can start with. 
 * Hence, \\(\hat{f}(\mathbf{x}, \pmb{\theta}) = b + \mathbf{w}^T\mathbf{x}\\), where we consider the case \\(k=p\\). Accordingly, the likelihood function is given by:
 \\[p(y\|\mathbf{x}) =\mathcal{N}(y \| b + \mathbf{w}^T \mathbf{x}, \sigma^2)\\]
-    - Here, \\(\pmb{\theta}(\mathbf{w}, b, \sigma^2)\\) are all the parameters of the model. 
+    - Here, \\(\pmb{\theta} = (\mathbf{w}, b, \sigma^2)\\) denotes all the parameters of the model. 
     - The vector of parameters \\(w_1, w_2,\ldots, w_p\\) are known as the weights or regression coefficients. Each coefficient       \\(w_i\\) specifies the change in the output we expect if we change the corresponding input feature xd by one unit.
 
 * There are fundamental assumptions to use a linear regression model.
