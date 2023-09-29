@@ -15,7 +15,7 @@ classes: wide
     - Choice of loss function (how to choose the loss function according to the underlying probabilistic model)
     - Uncertainty modeling (if the model parameters are deterministic or random)
     
-* In this module, we start with reviewing some statistical assumptions for regression problems and then focus on studying different types of linear algorithms (i.e., the output of the model is linear with respect to its parameters) as the simplest class of regression models. We also talk about some non-linea models. DNN algorithms are deffered to the DNN section. Initially, we go over the parametric regression methods and then discuss some non-parametric models. Now let's start with a motivating example:
+* In this module, we start with reviewing some statistical assumptions for regression problems and then focus on studying different types of linear algorithms (i.e., the output of the model is linear with respect to its parameters) as the simplest class of regression models. We also talk about some non-linear models. DNN algorithms are deferred to the DNN section. Initially, we go over the parametric regression methods and then discuss some non-parametric models. Now let's start with a motivating example:
 
 * Consider the following scatter plot, illustrating 50 data samples in 1-dimension. The x-axis denotes the feature and the output is a scaler real number. For example, The red circles can represent 50 different hours from 1 to 5, and \\(y_i\\)'s denotes the weather temperature in Celsius. We want to build a **Regression model** to predict the temperature for the future hours (hours do not exist in our dataset).
 
@@ -77,10 +77,14 @@ classes: wide
 * In the above graph, we see three models used for predicting the weather temperature. The left panel shows a linear fitting (linear regression), the middle panel illustrates a quadratic prediction, and the right one shows a cubic curve fitting. We can see the limitedness of linear regression for this specific dataset as the trend of the data doesn't seem to be linear. 
 
 ## Statistical model
-* Let's recall the goal of regression. We are given observation data, \\(\mathcal{D_n}=\\{(\mathbf{x_i}, y_i)\\}^n_{i=1}\\) which is a set of \\(n\\) i.i.d. input-output pairs/training data, drawn from some **unkown** probability distribution \\(p(\mathbf{x}, y)\\) such that \\(\mathbf{x}\in \mathcal{X}\\) and \\(y\in\mathcal{Y}\\), where \\(\mathcal{X}\\) and \\(\mathcal{Y}\\) are the input and output domains, respectively (e.g., \\(\mathcal{X}=\mathbb{R}^p, \mathcal{Y}=\mathbb{R}\\)). The \\(i^{th}\\) data sample, \\(\mathbf{x_i}\in \mathbb{R}^p\\) (also called features, independent variables, explanatory variables, or covariate) is a \\(p\\)-dimensional vector. We are asked to find a function \\(f:\mathcal{X}\rightarrow\mathcal{Y}\\) that maps any _test_ point \\(\mathbf{x}^{\*}\\) to the corresponding \\(y^{\*}\\) (please note that \\( (\mathbf{x}^{\*}, y^{\*})\sim p(\mathbf{x}, y)\\)). What this means that we hope that we can learn a predictor (sometimes called an estimator)  \\(\hat{f} := \hat{f}_n(\mathcal{D}_n)\\) as a function of our training data that generalizes well to the unseen data (e.g., test data) drawn from the same distribution \\(p\\). Please note that \\(\mathcal{D}_n\\) is a fixed realization set drawn from the distribution \\(p\\); hence, by changing our training set, the estimator \\(\hat{f}\\) will also be changed; as a result, \\(\hat{f}\\) is a random variable.
+* Depending on the nature of the inputs (also called features, independent variables, explanatory variables, or covariates), there are two types of possibilities. If we think that inputs \\(\mathbf{X_1}, \Mathbf{X_2},\ldots,\mathbf{X_n}\\) are random, we have _random design_. On the other hand, if input points \\(\mathbf{x_1}, \Mathbf{x_2},\ldots,\mathbf{x_n}\\) are considered as deterministic (fixed points), we call it a _fixed design_. However, the distinction between  fixed and random design is significant and has effects on the measure of performance.
+### Random design
+* In this scenario, we are given observation data, \\(\mathcal{D_n}=\\{(\mathbf{x_i}, y_i)\\}^n_{i=1}\\) which is a set of \\(n\\) i.i.d. input-output pairs/training data, drawn from some **unknown** probability distribution \\(p(\mathbf{x}, y)\\) such that \\(\mathbf{x}\in \mathcal{X}\\) and \\(y\in\mathcal{Y}\\), where \\(\mathcal{X}\\) and \\(\mathcal{Y}\\) are the input and output domains, respectively (e.g., \\(\mathcal{X}=\mathbb{R}^p, \mathcal{Y}=\mathbb{R}\\)). The \\(i^{th}\\) data sample, \\(\mathbf{x_i}\in \mathbb{R}^p\\) is a \\(p\\)-dimensional vector. We are asked to find a function \\(f:\mathcal{X}\rightarrow\mathcal{Y}\\) that maps any _test_ point \\(\mathbf{x}^{\*}\\) to the corresponding \\(y^{\*}\\) (please note that \\( (\mathbf{x}^{\*}, y^{\*})\sim p(\mathbf{x}, y)\\)). What this means that we hope that we can learn a predictor (sometimes called an estimator)  \\(\hat{f} := \hat{f}_n(\mathcal{D}_n)\\) as a function of our training data that generalizes well to the unseen data (e.g., test data) drawn from the same distribution \\(p\\). Please note that \\(\mathcal{D}_n\\) is a fixed realization set drawn from the distribution \\(p\\); hence, by changing our training set, the estimator \\(\hat{f}\\) will also be changed; as a result, \\(\hat{f}\\) is a random variable.
 
 * Our approach to finding the estimator \\(\hat{f}\\) is to assume that the observation data has been corrupted by some additive noise (aka observation noise), and we are going to adopt a probabilistic approach and model the noise using a likelihood function. Consequently, we can use the maximum likelihood principle to find \\(\hat{f}\\). 
-    - For most of our problems, we consider a real-valued (scalar value) response (output). A similar approach usually works for the vector-valued outputs. 
+    - For most of our problems, we consider a real-valued (scalar value) response (output). A similar approach usually works for the vector-valued outputs.
+* WE note that _regressor_ \\(f\\) is part of our statistical model, and it is not necessarily the ground-truth function, \\(g\\) (if there is such a function) that maps every input point to the output. We'll get back to this issue once we discuss the approximation and estimation errors.
+
 * For regression problems, the observation noise is generally modeled as Gaussian noise; hence, we have the following likelihood function:
 
 \\[p(y*\|\mathbf{x}^{\*}) =\mathcal{N}(y^{\*} \| f(\mathbf{x}^{\*}), \sigma^2)\\]
@@ -123,14 +127,15 @@ classes: wide
     
     </details>
 
-* If we plug-in the minimizer, \\(\mathbb{E}\big{(}Y\|\mathbf{x}=\mathbf{X}\big{)}\\) in the expected risk expression, we find the following Bias-Variance trade-off:
+* If we plug in the minimizer, \\(\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\) in the expected risk expression, we find the following Bias-Variance trade-off:
 \\[\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \sigma^2 + \text{Bias}^2(\mathbf{X}) + \text{Var}(\mathbf{X})\\]
 
 * where
     - \\(\text{Bias}(\mathbf{X}) = \mathbb{E}\big{(}\hat{f}(\mathbf{X})\big{)} - f(\mathbf{X})\\)
-    - \\(\text{Var}(\mathbf{X}) = \mathbb{E}\big{(}\hat{f}(\mathbf{X}\big{)} - f(\mathbf{X})\big{)}^2\\)
+    - \\(\text{Var}(\mathbf{X}) = \mathbb{E}\big{(}\mathbb{E}\big{(}\hat{f}(\mathbf{X}\big{)} - f(\mathbf{X})\big{)}^2\\)
     - \\(\sigma^2 = \mathbb{E}\big{(}Y-f(\mathbf{X})\big{)}\\)
-
+* \\(\sigma^2\\) is called _irreducible_ error since it is always there as one of the main components in our statistical model.
+* The Bias-Variance trade-off states that we cannot decrease both the bias and the variance of our estimator at the same time. Estimators with higher bias tend to underfit the data; while models with higher variance overfit the training data. We'll talk about this more later.
 ## Parametric models
 
 * One way to solve the above problem is to assume that our estimator \\(\hat{f}: \mathbb{R}^p\rightarrow \mathbb{R}\\) has a parametrix form, \\(\hat{f}(\mathbf{x}, \pmb{\theta})\\), where \\(\pmb{\theta}\in \mathbb{R}^k\\) denotes a set of parameters such that \\(k = o(n)\\), that is, \\(k\\) doesn't grow with the number of samples. If \\(k=O(p)\\), the model is called under-parametrized (i.e., we are in low-dimensional space), while models with \\(k >> p\\) are called over-parametrized (i.e., we are in high-dimensional space). One example of the over-parametrized models is Deep Neural Networks (DNNs).
