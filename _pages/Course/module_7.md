@@ -92,7 +92,7 @@ classes: wide
 * This implies the following relationship between a generic input random vector \\(\mathbf{X}\\) and its random output \\(Y\\) with the joint distribution \\(p\\) (for notation simplicity, we use \\((\mathbf{X}, Y)\\) instead of the test point \\((\mathbf{X}^{\*}, Y^{\*})\\)):
 \\[Y = f(\mathbf{X}) + \epsilon\\]
     - \\(\epsilon\\) is the observation noise and is distributed as \\(\epsilon\sim\mathcal{N}(0, \sigma^2)\\).
-    - For models we discuss here, we assume that the observation noise is statistically independent of our data, \\(\mathbf{x}, y\\).
+    - For models we discuss here, we assume that the observation noise is statistically independent of our data, \\(\mathbf{X}, Y\\).
 
 * So, finding the estimator \\(\hat{f}\\) boils down to estimating the mean of the Gaussian distribution using training data. To this end, we use the maximum likelihood approach. The negative log-likelihood (NLL) is given by
 \\[\text{NLL}(f) = -\frac{1}{2}\log\sigma^2 + \frac{(Y - f(\mathbf{X}))^2}{2\sigma^2} + \text{cons.}\\]
@@ -129,7 +129,7 @@ classes: wide
 * If we plug in the minimizer, \\(\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\) in the expected risk expression, we find the following Bias-Variance trade-off:
 \\[\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \sigma^2 + \text{Bias}^2(\mathbf{X}) + \text{Var}(\mathbf{X})\\]
 
-* where
+* Where
     - \\(\text{Bias}(\mathbf{X}) = \mathbb{E}\big{(}\hat{f}(\mathbf{X})\big{)} - f(\mathbf{X})\\)
     - \\(\text{Var}(\mathbf{X}) = \mathbb{E}\Big{(}\mathbb{E}\big{(}\hat{f}(\mathbf{X})\big{)} - f(\mathbf{X})\Big{)}^2\\)
     - \\(\sigma^2 = \mathbb{E}\big{(}Y-f(\mathbf{X})\big{)}\\)
