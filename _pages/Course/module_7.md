@@ -132,7 +132,7 @@ classes: wide
 
 * where
     - \\(\text{Bias}(\mathbf{X}) = \mathbb{E}\big{(}\hat{f}(\mathbf{X})\big{)} - f(\mathbf{X})\\)
-    - \\(\text{Var}(\mathbf{X}) = \mathbb{E}\big{(}\mathbb{E}\big{(}\hat{f}(\mathbf{X}\big{)} - f(\mathbf{X})\big{)}^2\\)
+    - \\(\text{Var}(\mathbf{X}) = \mathbb{E}\Big{(}\mathbb{E}\big{(}\hat{f}(\mathbf{X})\big{)} - f(\mathbf{X})\Big{)}^2\\)
     - \\(\sigma^2 = \mathbb{E}\big{(}Y-f(\mathbf{X})\big{)}\\)
 * \\(\sigma^2\\) is called _irreducible_ error since it is always there as one of the main components in our statistical model.
 * In fact, the above expression for \\(\sigma^2\\) is the MLE of the \\(\sigma^2\\). If we wanted to estimate it from NLL (by taking derivative w.r.t. \\(\sigma^2\\) and equating it with zero), we would find the same expression.
