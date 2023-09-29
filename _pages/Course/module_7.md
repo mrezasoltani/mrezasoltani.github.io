@@ -77,22 +77,23 @@ classes: wide
 * In the above graph, we see three models used for predicting the weather temperature. The left panel shows a linear fitting (linear regression), the middle panel illustrates a quadratic prediction, and the right one shows a cubic curve fitting. We can see the limitedness of linear regression for this specific dataset as the trend of the data doesn't seem to be linear. 
 
 ## Statistical model
-* Depending on the nature of the inputs (also called features, independent variables, explanatory variables, or covariates), there are two types of possibilities. If we think that inputs \\(\mathbf{X_1}, \Mathbf{X_2},\ldots,\mathbf{X_n}\\) are random, we have _random design_. On the other hand, if input points \\(\mathbf{x_1}, \Mathbf{x_2},\ldots,\mathbf{x_n}\\) are considered as deterministic (fixed points), we call it a _fixed design_. However, the distinction between  fixed and random design is significant and has effects on the measure of performance.
+* Depending on the nature of the inputs (also called features, independent variables, explanatory variables, or covariates), there are two types of possibilities. If we think that inputs \\(\mathbf{X_1}, \mathbf{X_2},\ldots,\mathbf{X_n}\\) are random, we have _random design_. On the other hand, if input points \\(\mathbf{x_1}, \mathbf{x_2},\ldots,\mathbf{x_n}\\) are considered as deterministic (fixed points), we call it a _fixed design_. However, the distinction between  fixed and random design is significant and has effects on the measure of performance.
+
 ### Random design
-* In this scenario, we are given observation data, \\(\mathcal{D_n}=\\{(\mathbf{x_i}, y_i)\\}^n_{i=1}\\) which is a set of \\(n\\) i.i.d. input-output pairs/training data, drawn from some **unknown** probability distribution \\(p(\mathbf{x}, y)\\) such that \\(\mathbf{x}\in \mathcal{X}\\) and \\(y\in\mathcal{Y}\\), where \\(\mathcal{X}\\) and \\(\mathcal{Y}\\) are the input and output domains, respectively (e.g., \\(\mathcal{X}=\mathbb{R}^p, \mathcal{Y}=\mathbb{R}\\)). The \\(i^{th}\\) data sample, \\(\mathbf{x_i}\in \mathbb{R}^p\\) is a \\(p\\)-dimensional vector. We are asked to find a function \\(f:\mathcal{X}\rightarrow\mathcal{Y}\\) that maps any _test_ point \\(\mathbf{x}^{\*}\\) to the corresponding \\(y^{\*}\\) (please note that \\( (\mathbf{x}^{\*}, y^{\*})\sim p(\mathbf{x}, y)\\)). What this means that we hope that we can learn a predictor (sometimes called an estimator)  \\(\hat{f} := \hat{f}_n(\mathcal{D}_n)\\) as a function of our training data that generalizes well to the unseen data (e.g., test data) drawn from the same distribution \\(p\\). Please note that \\(\mathcal{D}_n\\) is a fixed realization set drawn from the distribution \\(p\\); hence, by changing our training set, the estimator \\(\hat{f}\\) will also be changed; as a result, \\(\hat{f}\\) is a random variable.
+* In this scenario, we are given observation data, \\(\mathcal{D_n}=\\{(\mathbf{x_i}, y_i)\\}^n_{i=1}\\) which is a set of \\(n\\) i.i.d. input-output pairs/training data, drawn from some **unknown** probability distribution \\(p(\mathbf{x}, y)\\) such that \\(\mathbf{x}\in \mathcal{X}\\) and \\(y\in\mathcal{Y}\\), where \\(\mathcal{X}\\) and \\(\mathcal{Y}\\) are the input and output domains, respectively (e.g., \\(\mathcal{X}=\mathbb{R}^p, \mathcal{Y}=\mathbb{R}\\)). The \\(i^{th}\\) data sample, \\(\mathbf{x_i}\in \mathbb{R}^p\\) is a \\(p\\)-dimensional vector. We are asked to find a function \\(f:\mathcal{X}\rightarrow\mathcal{Y}\\) that maps any _test_ point \\(\mathbf{x}^{\*}\\) to the corresponding \\(y^{\*}\\) (please note that \\( (\mathbf{X}^{\*}, Y^{\*})\sim p(\mathbf{x}, y)\\)). What this means that we hope that we can learn a predictor (sometimes called an estimator)  \\(\hat{f} := \hat{f}_n := \hat{f}_n(\mathcal{D}_n)\\) as a function of our training data that generalizes well to the unseen data (e.g., test data) drawn from the same distribution \\(p\\). Please note that \\(\mathcal{D}_n\\) is a fixed realization set drawn from the distribution \\(p\\); hence, by changing our training set, the estimator \\(\hat{f}\\) will also be changed; as a result, \\(\hat{f}\\) is a random variable.
 
 * Our approach to finding the estimator \\(\hat{f}\\) is to assume that the observation data has been corrupted by some additive noise (aka observation noise), and we are going to adopt a probabilistic approach and model the noise using a likelihood function. Consequently, we can use the maximum likelihood principle to find \\(\hat{f}\\). 
     - For most of our problems, we consider a real-valued (scalar value) response (output). A similar approach usually works for the vector-valued outputs.
-* WE note that _regressor_ \\(f\\) is part of our statistical model, and it is not necessarily the ground-truth function, \\(g\\) (if there is such a function) that maps every input point to the output. We'll get back to this issue once we discuss the approximation and estimation errors.
+* We note that _regressor_ \\(f\\) is part of our statistical model, and it is not necessarily the ground-truth function, \\(g\\) (if there is such a function) that maps every input point to the output. We'll get back to this issue once we discuss the approximation and estimation errors.
 
 * For regression problems, the observation noise is generally modeled as Gaussian noise; hence, we have the following likelihood function:
 
-\\[p(y*\|\mathbf{x}^{\*}) =\mathcal{N}(y^{\*} \| f(\mathbf{x}^{\*}), \sigma^2)\\]
+\\[p(y^{\*}\|\mathbf{x}^{\*}) =\mathcal{N}(y^{\*} \| f(\mathbf{x}^{\*}), \sigma^2)\\]
 
-* This implies the following relationship between a generic input random vector \\(\mathbf{X}\\) and its random output \\(Y\\) with the joint distribution \\(p\\):
+* This implies the following relationship between a generic input random vector \\(\mathbf{X}\\) and its random output \\(Y\\) with the joint distribution \\(p\\) (for notation simplicity, we use \\((\mathbf{X}, Y)\\) instead of the test point \\((\mathbf{X}^{\*}, Y^{\*})\\)):
 \\[Y = f(\mathbf{X}) + \epsilon\\]
     - \\(\epsilon\\) is the observation noise and is distributed as \\(\epsilon\sim\mathcal{N}(0, \sigma^2)\\).
-    - For models we discuss here we assume that the observation noise is statistically independent of our data, \\(\mathbf{x}, y\\).
+    - For models we discuss here, we assume that the observation noise is statistically independent of our data, \\(\mathbf{x}, y\\).
 
 * So, finding the estimator \\(\hat{f}\\) boils down to estimating the mean of the Gaussian distribution using training data. To this end, we use the maximum likelihood approach. The negative log-likelihood (NLL) is given by
 \\[\text{NLL}(f) = -\frac{1}{2}\log\sigma^2 + \frac{(Y - f(\mathbf{X}))^2}{2\sigma^2} + \text{cons.}\\]
@@ -100,16 +101,15 @@ classes: wide
 * So, if we assume \\(\sigma^2\\) is knowm, minimizing the NLL is equivalent to minimizing \\(\frac{(Y - f(\mathbf{X}))^2}{2\sigma^2}\\). This is the squared loss. As we have discussed in the Statistics section ([link](https://mrezasoltani.github.io/_pages/Course/module_4/#what-is-statistics)), the measure of fitness is given by the expected risk, considering the expected performance of the algorithm (model) with respect to the chosen loss function. As a result, our estimator is the solution to the following optimization problem:
 \\[f^{\*} = \text{argmin}_{\hat{f}}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \text{argmin} _{\hat{f}}\mathbb{E} _{\mathcal{D}_n} \mathbb{E} _{\mathbf{X}, Y} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2\|\mathcal{D}_n\big{)}\\]
 
-    - In the above likelihood expression, please note that we have used \\(\hat{f}\\) instead of \\(f\\). This is because we have written the likelihood function using our training data which results in an estimator \\(\hat{f}\\) (not necessarily optimal one).
+    - Where the risk is given by \\( \mathcal{R}(\hat{f}) = \mathbb{E} _{\mathbf{X}, Y} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 \\).
+    - In the above likelihood expression, please note that we have used \\(\hat{f}\\) instead of \\(f\\). This is because we have written the likelihood function using our training data which results in an estimator \\(\hat{f}\\) (not necessarily the function used in our statistical model).
      \\[\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \int_{\mathcal{X}\times\mathcal{Y}}\big{(}y - \hat{f}(\mathbf{x})\big{)}^2 p(\mathbf{x}, y)d\mathbf{x}dy\\]
     - We note that the inner expectation (the risk) is a random variable as \\(\hat{f}\\) is a r.v.
-    - it can be shown that the regression function which minimizes the above expected risk is given by \\(f^*= \hat{f}(\mathbf{x}) = \mathbb{E}\big{(}Y\|\mathbf{x}=\mathbf{X}\big{)}\\).
+    - It can be shown that the optimal regression function which minimizes the above expected risk is given by \\(f^*(\mathbf{x}) = \mathbb{E}\big{(}Y\|\mathbf{x}=\mathbf{X}\big{)}\\).
     
-
-* Now let's see the optimal solution for the above minimization problem. Using the Law of Iterated Expectations:
-
     <details>
       <summary>Proof</summary>
+        Using the Law of Iterated Expectations:
         \begin{equation}
             \begin{aligned}
                 \hspace{0.4cm}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 &= \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E} _{Y|\mathbf{X}}\big{(}Y-\mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)} + \mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2 |\mathbf{X}=\mathbf{x}\Big{)}  \\
@@ -135,10 +135,18 @@ classes: wide
     - \\(\text{Var}(\mathbf{X}) = \mathbb{E}\big{(}\mathbb{E}\big{(}\hat{f}(\mathbf{X}\big{)} - f(\mathbf{X})\big{)}^2\\)
     - \\(\sigma^2 = \mathbb{E}\big{(}Y-f(\mathbf{X})\big{)}\\)
 * \\(\sigma^2\\) is called _irreducible_ error since it is always there as one of the main components in our statistical model.
+* In fact the above expression for \\(\sigma^2\\) is the MLE of the \\(\sigma^2\\). If we wanted to estimate it from NLL (by taking derivative w.r.t. \\(sigma^2\\) and equating with zero) we would find the same thing).
 * The Bias-Variance trade-off states that we cannot decrease both the bias and the variance of our estimator at the same time. Estimators with higher bias tend to underfit the data; while models with higher variance overfit the training data. We'll talk about this more later.
 ## Parametric models
 
 * One way to solve the above problem is to assume that our estimator \\(\hat{f}: \mathbb{R}^p\rightarrow \mathbb{R}\\) has a parametrix form, \\(\hat{f}(\mathbf{x}, \pmb{\theta})\\), where \\(\pmb{\theta}\in \mathbb{R}^k\\) denotes a set of parameters such that \\(k = o(n)\\), that is, \\(k\\) doesn't grow with the number of samples. If \\(k=O(p)\\), the model is called under-parametrized (i.e., we are in low-dimensional space), while models with \\(k >> p\\) are called over-parametrized (i.e., we are in high-dimensional space). One example of the over-parametrized models is Deep Neural Networks (DNNs).
+
+### Fixed design
+* In fixed design, there is no concept of the marginal distribution of \\(p(\mathbb{x}^{\*})\\). Rather, since the design points
+\\(\mathbf{x_1}, \mathbf{x_2},\ldots,\mathbf{x_n}\\) are considered deterministic, and the  goal is to estimate \\(f\\) only at these
+points. The fixed design is sometimes called denoising since we want to recover \\(f(\mathbf{x_1}), f(\mathbf{x_2}),\ldots,f(\mathbf{x_n})\\) given the noisy observations, \\(y_1, y_2, \ldots, y_n\\).
+* Using the Gaussian assumption for the observation noise and the squared loss, we can write the expected risk (as a measure of performance):
+\\[\\( \mathcal{R}(\hat{f}) = \mathbb{E}\text{MSE}(\hat{f}) = \mathbb{E}\big{(} \frac{1}{n}\sum _{i=1}^n(\hatf(\mathbf{x_i}) - f(\mathbf{x_i}))\big{)}
 
 ### Linear Regression
 
@@ -151,6 +159,7 @@ classes: wide
 * There are fundamental assumptions to use a linear regression model.
 
 * The key property of the model is that the expected value of the output is assumed to be a linear function of the input, E[yjx] = wTx, which makes the model easy to interpret, and easy to fit to data. We discuss nonlinear extensions later in this book.
+
 
 
 ```python
