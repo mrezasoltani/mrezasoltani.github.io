@@ -137,9 +137,6 @@ classes: wide
 * \\(\sigma^2\\) is called _irreducible_ error since it is always there as one of the main components in our statistical model.
 * In fact the above expression for \\(\sigma^2\\) is the MLE of the \\(\sigma^2\\). If we wanted to estimate it from NLL (by taking derivative w.r.t. \\(sigma^2\\) and equating with zero) we would find the same thing).
 * The Bias-Variance trade-off states that we cannot decrease both the bias and the variance of our estimator at the same time. Estimators with higher bias tend to underfit the data; while models with higher variance overfit the training data. We'll talk about this more later.
-## Parametric models
-
-* One way to solve the above problem is to assume that our estimator \\(\hat{f}: \mathbb{R}^p\rightarrow \mathbb{R}\\) has a parametrix form, \\(\hat{f}(\mathbf{x}, \pmb{\theta})\\), where \\(\pmb{\theta}\in \mathbb{R}^k\\) denotes a set of parameters such that \\(k = o(n)\\), that is, \\(k\\) doesn't grow with the number of samples. If \\(k=O(p)\\), the model is called under-parametrized (i.e., we are in low-dimensional space), while models with \\(k >> p\\) are called over-parametrized (i.e., we are in high-dimensional space). One example of the over-parametrized models is Deep Neural Networks (DNNs).
 
 ### Fixed design
 * In fixed design, there is no concept of the marginal distribution of \\(p(\mathbb{x}^{\*})\\). Rather, since the design points
@@ -147,6 +144,11 @@ classes: wide
 points. The fixed design is sometimes called denoising since we want to recover \\(f(\mathbf{x_1}), f(\mathbf{x_2}),\ldots,f(\mathbf{x_n})\\) given the noisy observations, \\(y_1, y_2, \ldots, y_n\\).
 * Using the Gaussian assumption for the observation noise and the squared loss, we can write the expected risk (as a measure of performance):
 \\[\\( \mathcal{R}(\hat{f}) = \mathbb{E}\text{MSE}(\hat{f}) = \mathbb{E}\big{(} \frac{1}{n}\sum _{i=1}^n(\hatf(\mathbf{x_i}) - f(\mathbf{x_i}))\big{)}
+
+## Parametric models
+
+* One way to solve the above problem is to assume that our estimator \\(\hat{f}: \mathbb{R}^p\rightarrow \mathbb{R}\\) has a parametrix form, \\(\hat{f}(\mathbf{x}, \pmb{\theta})\\), where \\(\pmb{\theta}\in \mathbb{R}^k\\) denotes a set of parameters such that \\(k = o(n)\\), that is, \\(k\\) doesn't grow with the number of samples. If \\(k=O(p)\\), the model is called under-parametrized (i.e., we are in low-dimensional space), while models with \\(k >> p\\) are called over-parametrized (i.e., we are in high-dimensional space). One example of the over-parametrized models is Deep Neural Networks (DNNs).
+
 
 ### Linear Regression
 
