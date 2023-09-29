@@ -139,7 +139,7 @@ classes: wide
 * The Bias-Variance trade-off states that we cannot decrease both the bias and the variance of our estimator at the same time. Estimators with higher bias tend to underfit the data; while models with higher variance overfit the training data. We'll talk about this more later.
 
 ### Fixed design
-* In fixed design, there is no concept of the marginal distribution of \\(p(\mathbb{x}^{\*})\\). Rather, since the design points
+* In fixed design, there is no concept of the marginal distribution of \\(p(\mathbf{x}^{\*})\\). Rather, since the design points
 \\(\mathbf{x_1}, \mathbf{x_2},\ldots,\mathbf{x_n}\\) are considered deterministic, and the  goal is to estimate \\(f\\) only at these
 points. The fixed design is sometimes called denoising since we want to recover \\(f(\mathbf{x_1}), f(\mathbf{x_2}),\ldots,f(\mathbf{x_n})\\) given the noisy observations, \\(y_1, y_2, \ldots, y_n\\).
 * Using the Gaussian assumption for the observation noise and the squared loss, we can write the expected risk (as a measure of performance):
