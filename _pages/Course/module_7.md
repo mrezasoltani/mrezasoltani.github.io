@@ -135,7 +135,7 @@ classes: wide
     - \\(\text{Var}(\mathbf{X}) = \mathbb{E}\big{(}\mathbb{E}\big{(}\hat{f}(\mathbf{X}\big{)} - f(\mathbf{X})\big{)}^2\\)
     - \\(\sigma^2 = \mathbb{E}\big{(}Y-f(\mathbf{X})\big{)}\\)
 * \\(\sigma^2\\) is called _irreducible_ error since it is always there as one of the main components in our statistical model.
-* In fact the above expression for \\(\sigma^2\\) is the MLE of the \\(\sigma^2\\). If we wanted to estimate it from NLL (by taking derivative w.r.t. \\(\sigma^2\\) and equating with zero) we would find the same thing).
+* In fact, the above expression for \\(\sigma^2\\) is the MLE of the \\(\sigma^2\\). If we wanted to estimate it from NLL (by taking derivative w.r.t. \\(\sigma^2\\) and equating it with zero), we would find the same expression.
 * The Bias-Variance trade-off states that we cannot decrease both the bias and the variance of our estimator at the same time. Estimators with higher bias tend to underfit the data; while models with higher variance overfit the training data. We'll talk about this more later.
 
 ### Fixed design
