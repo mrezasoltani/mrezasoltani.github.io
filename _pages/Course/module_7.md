@@ -143,7 +143,7 @@ classes: wide
 \\(\mathbf{x_1}, \mathbf{x_2},\ldots,\mathbf{x_n}\\) are considered deterministic, and the  goal is to estimate \\(f\\) only at these
 points. The fixed design is sometimes called denoising since we want to recover \\(f(\mathbf{x_1}), f(\mathbf{x_2}),\ldots,f(\mathbf{x_n})\\) given the noisy observations, \\(y_1, y_2, \ldots, y_n\\).
 * Using the Gaussian assumption for the observation noise and the squared loss, we can write the expected risk (as a measure of performance):
-\\[ \mathbb{E}\Big{[}\mathcal{R}(\hat{f})\Big{]} = \mathbb{E}\Big{[}\text{MSE}(\hat{f})\Big{]} = \mathbb{E}\Big{(} \frac{1}{n}\sum _{i=1}^n(\hat{f}(\mathbf{x_i}) - f(\mathbf{x_i}))^2\Big{)}\\]
+\\[ \mathbb{E}\Big{[}\mathcal{R}(\hat{f})\Big{]} = \mathbb{E}\Big{[}\text{MSE}(\hat{f})\Big{]} = \mathbb{E}\Big{[} \frac{1}{n}\sum _{i=1}^n(\hat{f}(\mathbf{x_i}) - f(\mathbf{x_i}))^2\Big{]}\\]
 
 ## Parametric models
 
