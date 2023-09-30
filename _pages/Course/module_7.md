@@ -138,10 +138,12 @@ classes: wide
 * The Bias-Variance trade-off states that we cannot decrease both the bias and the variance of our estimator at the same time. Estimators with higher bias tend to underfit the data; while models with higher variance overfit the training data. We'll talk about this more later.
 
 ### Fixed design
-* In fixed design, there is no concept of the marginal distribution of \\(p(\mathbf{x}^{\*})\\). Rather, since the design points
+* In the fixed design, there is no concept of the marginal distribution of \\(p(\mathbf{x}^{\*})\\). Rather, the design points
 \\(\mathbf{x_1}, \mathbf{x_2},\ldots,\mathbf{x_n}\\) are considered deterministic, and the  goal is to estimate \\(f\\) only at these
 points. The fixed design is sometimes called denoising since we want to recover \\(f(\mathbf{x_1}), f(\mathbf{x_2}),\ldots,f(\mathbf{x_n})\\) given the noisy observations, \\(y_1, y_2, \ldots, y_n\\).
-* Using the Gaussian assumption for the observation noise and the squared loss, we can write the expected risk (as a measure of performance):
+* Here, we again use the Gaussian noise model for our observation, i.e., \\(y_i = f(\mathbf{x_i}) + \epsilon_i\\), where \\(\epsilon_i\overset{i.i.d}{\sim}\mathcal{N}(o, \sigma^2)\\) for \\(i=1,2,\ldots,n\\).
+* The input points \\(\mathbf{x_1}, \mathbf{x_2},\ldots,\mathbf{x_n}\\) will usually be represented in the matrix format denoted by \\(	\mathrm{X}\in \mathbb{R}^{n\times p}\\). Please pay attention to our notation of deterministc matrix we have already introduced ([link](https://mrezasoltani.github.io/_pages/Course/module_2/#math-notations)).
+* Using the above Gaussian assumption for the observation noise and the squared loss, we can write the expected risk (as a measure of performance):
 \\[ \mathbb{E}\Big{[}\mathcal{R}(\hat{f})\Big{]} = \mathbb{E}\Big{[}\text{MSE}(\hat{f})\Big{]} = \mathbb{E}\Big{[} \frac{1}{n}\sum _{i=1}^n(\hat{f}(\mathbf{x_i}) - f(\mathbf{x_i}))^2\Big{]}\\]
 
 ## Parametric models
@@ -151,11 +153,18 @@ points. The fixed design is sometimes called denoising since we want to recover 
 
 ### Linear Regression
 
-* We first focus on the linear regression models; as a result, we may assume that the output is a linear function of the input. * We note that this is just an assumption, and it may not be valid or realistic, but certainly, the linear models are the simplest model we can start with. 
+* We first focus on the linear regression models; as a result, we may assume that the output is a linear function of the input. Unless otherwise stated, we assume the fixed design for linear regression models. 
+* We note that this is just an assumption, and it may not be valid or realistic, but certainly, the linear models are the simplest model we can start with. 
 * Hence, \\(\hat{f}(\mathbf{x}, \pmb{\theta}) = b + \mathbf{w}^T\mathbf{x}\\), where we consider the case \\(k=p\\). Accordingly, the likelihood function is given by:
 \\[p(y\|\mathbf{x}) =\mathcal{N}(y \| b + \mathbf{w}^T \mathbf{x}, \sigma^2)\\]
     - Here, \\(\pmb{\theta} = (\mathbf{w}, b, \sigma^2)\\) denotes all the parameters of the model. 
-    - The vector of parameters \\(w_1, w_2,\ldots, w_p\\) are known as the weights or regression coefficients. Each coefficient       \\(w_i\\) specifies the change in the output we expect if we change the corresponding input feature xd by one unit.
+    - The vector of parameters \\(w_1, w_2,\ldots, w_p\\) are known as the weights or regression coefficients. Each coefficient \\(w_i\\) specifies the change in the output we expect if we change the corresponding input feature \\(x_i\\) by one unit.
+    - The coefficient \\(b\\) is called the _offset_ or _bias_ term. This captures the unconditional mean of the response, \\(b = mathbb{E}(y), and can be used as a baseline. In most cases, we absorb the bias term into the vector \\(\mathbf{w}\\) and consider the coefficient vector as \\(\pmb{\theta} = [b, w_1, w_2, \ldots, w_p]^T\\). This implies that number 1 is appended from the left to all input samples, i.e., \\\mathbf{x_i} = [1, x_1, x_2, \ldots, x_p]^T\\) for all \\(i=1,2,\ldots,n\\). So, in matrix notation, our obervation model is given by:
+      \[[Y = \mathrm{X}\pmb{\theta} + \mathbf{\epsilon}\\]
+      - Where \\(\mathbf{\epsilon} = [\epsilon_1, \epsilon_2,\ldots,\epsilon_n]^T\\), and \\(\epsilon_i\sim\mathcal{N}(0, \sigma^2)\\).
+    - When \\(p=1\\), the regression problem is called _simple linear regression_, and if \\(p>1\\), it is called _multiple linear regression_.
+
+
 
 * There are fundamental assumptions to use a linear regression model.
 
