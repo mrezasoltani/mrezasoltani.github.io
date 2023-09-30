@@ -142,14 +142,27 @@ classes: wide
 \\(\mathbf{x_1}, \mathbf{x_2},\ldots,\mathbf{x_n}\\) are considered deterministic, and the  goal is to estimate \\(f\\) only at these
 points. The fixed design is sometimes called denoising since we want to recover \\(f(\mathbf{x_1}), f(\mathbf{x_2}),\ldots,f(\mathbf{x_n})\\) given the noisy observations, \\(y_1, y_2, \ldots, y_n\\).
 * Here, we again use the Gaussian noise model for our observation, i.e., \\(y_i = f(\mathbf{x_i}) + \epsilon_i\\), where \\(\epsilon_i\overset{i.i.d}{\sim}\mathcal{N}(o, \sigma^2)\\) for \\(i=1,2,\ldots,n\\).
-* The input points \\(\mathbf{x_1}, \mathbf{x_2},\ldots,\mathbf{x_n}\\) will usually be represented in the matrix format denoted by \\(	\mathrm{X}\in \mathbb{R}^{n\times p}\\). Please pay attention to our notation of deterministc matrix we have already introduced ([link](https://mrezasoltani.github.io/_pages/Course/module_2/#math-notations)).
+* The input points \\(\mathbf{x_1}, \mathbf{x_2},\ldots,\mathbf{x_n}\\) will usually be represented in the matrix format denoted by \\(	\mathrm{X}\in \mathbb{R}^{n\times p}\\). Please pay attention to the notation of the deterministic matrix we have already introduced ([link](https://mrezasoltani.github.io/_pages/Course/module_2/#math-notations)).
 * Using the above Gaussian assumption for the observation noise and the squared loss, we can write the expected risk (as a measure of performance):
 \\[ \mathbb{E}\Big{[}\mathcal{R}(\hat{f})\Big{]} = \mathbb{E}\Big{[}\text{MSE}(\hat{f})\Big{]} = \mathbb{E}\Big{[} \frac{1}{n}\sum _{i=1}^n(\hat{f}(\mathbf{x_i}) - f(\mathbf{x_i}))^2\Big{]}\\]
 
-## Parametric models
+## Parametric and non_parametric models
 
-* One way to solve the above problem is to assume that our estimator \\(\hat{f}: \mathbb{R}^p\rightarrow \mathbb{R}\\) has a parametrix form, \\(\hat{f}(\mathbf{x}, \pmb{\theta})\\), where \\(\pmb{\theta}\in \mathbb{R}^k\\) denotes a set of parameters such that \\(k = o(n)\\), that is, \\(k\\) doesn't grow with the number of samples. If \\(k=O(p)\\), the model is called under-parametrized (i.e., we are in low-dimensional space), while models with \\(k >> p\\) are called over-parametrized (i.e., we are in high-dimensional space). One example of the over-parametrized models is Deep Neural Networks (DNNs).
+* **Parametric models.** One way to solve the above problem is to assume that our estimator \\(\hat{f}: \mathbb{R}^p\rightarrow \mathbb{R}\\) has a parametrix form, \\(\hat{f}(\mathbf{x}, \pmb{\theta})\\), where \\(\pmb{\theta}\in \mathbb{R}^k\\) denotes a set of parameters such that \\(k = o(n)\\), that is, \\(k\\) doesn't grow with the number of samples. If \\(k=O(p)\\), the model is called under-parametrized (i.e., we are in low-dimensional space), while models with \\(k >> p\\) are called over-parametrized (i.e., we are in high-dimensional space). One example of the over-parametrized models is Deep Neural Networks (DNNs).
 
+* **Non-parametric models.** 
+
+
+## Parametric Models
+* We discuss the following parametric models:
+  - Linear Regression
+  - Polynomial Regression
+  - Ridge Regression
+  - LASSO
+  - Group LASSO
+  - Kernel Method in Regression
+  - Support Vector Regression (SVR)
+  - Bayesian Linear Regression
 
 ### Linear Regression
 
