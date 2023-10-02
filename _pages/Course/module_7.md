@@ -191,9 +191,9 @@ points. The fixed design is sometimes called denoising since we want to recover 
 * To learn the linear model, we follow the same procedure of minimizing NLL:
   \\[\text{NLL}(\pmb{\theta}) = \frac{n}{2}\log\sigma^2 + \frac{\sum_{i=1}^n(y_i - \pmb{\theta}^T\mathbf{x_i})^2}{2\sigma^2} + \text{cons.}\\]
 * To find the minimizer \\(\pmb{\theta}\\), we assume that \\(\sigma^2\\) is fixed. As a result, we need to minimize the _Residual Sum of Squares (RSS)_ defined below:
-\\[\text{RSS}(\pmb{\theta}) = \frac{1}{2}\sum_{i=1}^n(y_i - \pmb{\theta}^T\mathbf{x_i})^2 = \frac{1}{2}\||\mathbf{y} - \mathbf{X}\pmb{\theta}\||_2^2\\]
-    - Where \\(y = [y_1, y_2,\ldots, y_n]^T\\).
+\\[\text{RSS}(\pmb{\theta}) = \frac{1}{2}\sum_{i=1}^n(y_i - \pmb{\theta}^T\mathbf{x_i})^2 = \frac{1}{2}\||\mathbf{y} - \mathrm{X}\pmb{\theta}\||_2^2\\]
+    - Where \\(\mathbf{y} = [y_1, y_2,\ldots, y_n]^T\\).
     - This is the estimation of the above expected risk expression (MSE equation) for the fixed design setup. Now if we take the derivative w.r.t to \\(\pmb{\theta}\\), we obtain the gradient:
-      \\[\nabla_{\pmb{\theta}}\text{RSS}(\pmb{\theta}) = \mathbf{X}^T\mathbf{X}\pmb{\theta} - \mathbf{X}^T\mathbf{y}\\]
+      \\[\nabla_{\pmb{\theta}}\text{RSS}(\pmb{\theta}) = \mathrm{X}^T\mathrm{X}\pmb{\theta} - \mathrm{X}^T\mathbf{y}\\]
     - Now setting the gradient to zero, we find the optimal solution called _**Normal Equation**_ or _ordinary least squares (OLS)_ solution:
-      \\[\hat{\pmb{\theta}} = \pmb{\theta}_{mle} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y}\\]
+      \\[\hat{\pmb{\theta}} = \pmb{\theta}_{mle} = (\mathrm{X}^T\mathrm{X})^{-1}\mathrm{X}^T\mathbf{y}\\]
