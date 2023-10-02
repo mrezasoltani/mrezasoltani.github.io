@@ -194,6 +194,6 @@ points. The fixed design is sometimes called denoising since we want to recover 
 \\[\text{RSS}(\pmb{\theta}) = \frac{1}{n}\sum_{i=1}^n(y_i - \pmb{\theta}^T\mathbf{x_i})^2 = \frac{1}{n}\||\mathbf{y} - \mathbf{X}\pmb{\theta}\||_2^2\\]
     - Where \\(y = [y_1, y_2,\ldots, y_n]^T\\).
     - This is the estimation of the above expected risk expression (MSE equation) for the fixed design setup. Now if we take the derivative w.r.t to \\(\pmb{\theta}\\), we obtain the gradient:
-      \\[\nabla_{\pmb{\epsilon}}\text{RSS}(\pmb{\theta}) = \mathbf{X}^T\mathbf{X} = (\mathbf{X}^T\mathbf{y}\\]
+      \\[\nabla_{\pmb{\theta}}\text{RSS}(\pmb{\theta}) = \mathbf{X}^T\mathbf{X} - \mathbf{X}^T\mathbf{y}\\]
     - The above equation is called _**Normal Equation**_. Now setting the gradient to zero, we find the optimal solution which is also called _ordinary least squares (OLS)_ solution:
       \\[\hat{\pmb{\theta}} = \pmb{\theta}_{mle} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y}\\]
