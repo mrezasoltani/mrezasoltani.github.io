@@ -103,30 +103,30 @@ classes: wide
 \\[f^{\*} = \text{argmin}_{\hat{f}}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \text{argmin} _{\hat{f}}\mathbb{E} _{\mathcal{D}_n} \mathbb{E} _{\mathbf{X}, Y} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2\|\mathcal{D}_n\big{)}\\]
 
     - Where the risk is given by \\( \mathcal{R}(\hat{f}) = \mathbb{E} _{\mathbf{X}, Y} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 \\).
-    - In the above likelihood expression, please note that we have used \\(\hat{f}\\) instead of \\(f\\). This is because we have written the likelihood function using our training data which results in an estimator \\(\hat{f}\\) (not necessarily the function used in our statistical model).
+    - In the above likelihood expression, note that we have used \\(\hat{f}\\) instead of \\(f\\). This is because we have written the likelihood function using our training data which results in an estimator \\(\hat{f}\\) (not necessarily the function used in our statistical model).
      \\[\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \int_{\mathcal{X}\times\mathcal{Y}}\big{(}y - \hat{f}(\mathbf{x})\big{)}^2 p(\mathbf{x}, y)d\mathbf{x}dy\\]
     - We note that the inner expectation (the risk) is a random variable as \\(\hat{f}\\) is a r.v.
     - It can be shown that the optimal regression function which minimizes the above expected risk is given by \\(f^*(\mathbf{x}) = \mathbb{E}\big{(}Y\|\mathbf{x}=\mathbf{X}\big{)}\\).
     
-    <details>
-      <summary>Proof</summary>
-        Using the Law of Iterated Expectations:
-        \begin{equation}
-            \begin{aligned}
-                \hspace{0.4cm}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 &= \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E} _{Y|\mathbf{X}}\big{(}Y-\mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)} + \mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2 |\mathbf{X}=\mathbf{x}\Big{)}  \\
-            & = \mathbb{E} _{\mathbf{X}}\Big{(}\mathbb{E} _{Y|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)}^2|\mathbf{X}=\mathbf{x}\big{)}  \\
-            & \hspace{+1cm}+ 2\mathbb{E} _{Y|\mathbf{X}}\big{(}\big{(}Y - \mathbb{E}\big{(}Y|\mathbf{X} = \mathbf{x}\big{)}\big{)}\big{(}\mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)} -  
-                     \hat{f}(\mathbf{X})\big{)}|\mathbf{X} = \mathbf{x}\big{)} \\
-                     & \hspace{+2cm} + \mathbb{E} _{Y|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)}-\hat{f}(\mathbf{X})\big{)}^2|\mathbf{X}=\mathbf{x}\big{)}\Big{)} \\
-            & = \mathbb{E} _{\mathbf{X}}\Big{(}\mathbb{E} _{Y|\mathbf{X}}\big{(}Y- \mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)}|\mathbf{X}=\mathbf{x}\big{)}^2 \\
-            & \hspace{+1cm}+ 2\mathbb{E} _{Y|\mathbf{X}}\big{(}\mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}) -\hat{f}(\mathbf{X}\big{)}\big{)}|\mathbf{X} = \mathbf{x}\big{)}\times 0 \\
-                      & \hspace{+2cm} + \mathbb{E} _{Y|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2|\mathbf{X}=\mathbf{x}\Big{)} \\
-            & \hspace{0cm} \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 \geq  \mathbb{E}\big{(}Y - \mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)}\big{)}^2 \\\\
-        & \hspace{-4cm} \text{Where the minimum in the last inequality is achieved if we choose}~ \hat{f}(\mathbf{x})=\mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)}.\blacksquare
-            \end{aligned}
-        \end{equation}
-    
-    </details>
+        <details>
+          <summary>Proof</summary>
+            Using the Law of Iterated Expectations:
+            \begin{equation}
+                \begin{aligned}
+                    \hspace{0.4cm}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 &= \mathbb{E}_{\mathbf{X}}\Big{(}\mathbb{E} _{Y|\mathbf{X}}\big{(}Y-\mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)} + \mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2 |\mathbf{X}=\mathbf{x}\Big{)}  \\
+                & = \mathbb{E} _{\mathbf{X}}\Big{(}\mathbb{E} _{Y|\mathbf{X}}\big{(}Y - \mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)}^2|\mathbf{X}=\mathbf{x}\big{)}  \\
+                & \hspace{+1cm}+ 2\mathbb{E} _{Y|\mathbf{X}}\big{(}\big{(}Y - \mathbb{E}\big{(}Y|\mathbf{X} = \mathbf{x}\big{)}\big{)}\big{(}\mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)} -  
+                         \hat{f}(\mathbf{X})\big{)}|\mathbf{X} = \mathbf{x}\big{)} \\
+                         & \hspace{+2cm} + \mathbb{E} _{Y|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)}-\hat{f}(\mathbf{X})\big{)}^2|\mathbf{X}=\mathbf{x}\big{)}\Big{)} \\
+                & = \mathbb{E} _{\mathbf{X}}\Big{(}\mathbb{E} _{Y|\mathbf{X}}\big{(}Y- \mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)}|\mathbf{X}=\mathbf{x}\big{)}^2 \\
+                & \hspace{+1cm}+ 2\mathbb{E} _{Y|\mathbf{X}}\big{(}\mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}) -\hat{f}(\mathbf{X}\big{)}\big{)}|\mathbf{X} = \mathbf{x}\big{)}\times 0 \\
+                          & \hspace{+2cm} + \mathbb{E} _{Y|\mathbf{X}=\mathbf{x}}\big{(}\mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)} - \hat{f}(\mathbf{X})\big{)}^2|\mathbf{X}=\mathbf{x}\Big{)} \\
+                & \hspace{0cm} \Longrightarrow \mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 \geq  \mathbb{E}\big{(}Y - \mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)}\big{)}^2 \\\\
+            & \hspace{-4cm} \text{Where the minimum in the last inequality is achieved if we choose}~ \hat{f}(\mathbf{x})=\mathbb{E}\big{(}Y|\mathbf{X}=\mathbf{x}\big{)}.\blacksquare
+                \end{aligned}
+            \end{equation}
+        
+        </details>
 
 * If we plug in the minimizer, \\(\mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\) in the expected risk expression, we find the following Bias-Variance trade-off:
 \\[\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \sigma^2 + \text{Bias}^2(\mathbf{X}) + \text{Var}(\mathbf{X})\\]
