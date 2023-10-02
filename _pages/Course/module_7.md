@@ -190,7 +190,7 @@ points. The fixed design is sometimes called denoising since we want to recover 
 #### Learning the linear model (fitting the data with a hyperplane)
 * To learn the linear model, we follow the same procedure of minimizing NLL:
   \\[\text{NLL}(f) = \frac{n}{2}\log\sigma^2 + \frac{\sum_{i=1}^n(y_i - \pmb{\theta}^T\mathbf{x_i})^2}{2\sigma^2} + \text{cons.}\\]
-* To find the minimizer \\(\pmb{\theta}\\), we take the derivative of NLL w.r.t to it (while \\(\sigma^2\\) is assumed to be fixed). As a result, we find the _Residual Sum of Squares (RSS)_:
+* To find the minimizer \\(\pmb{\theta}\\), we assume that \\(\sigma^2\\) is fixed. As a result, we need to minimize the _Residual Sum of Squares (RSS)_ defined below:
 \\[\text{RSS}(\pmb{\theta}) = \frac{1}{n}\sum_{i=1}^n(y_i - \pmb{\theta}^T\mathbf{x_i})^2\\]
-
-
+    - This is the estimation of the above expected risk expression (MSE equation) for our general fixed design setup. Now if we take we take the derivative of w.r.t to \\(\pmb{\theta}\\), we obtain:
+      \\[\pmb{\theta}_{mle} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y}\\]
