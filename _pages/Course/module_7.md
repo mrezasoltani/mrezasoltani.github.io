@@ -147,6 +147,8 @@ points. The fixed design is sometimes called denoising since we want to recover 
 * The input points \\(\mathbf{x_1}, \mathbf{x_2},\ldots,\mathbf{x_n}\\) will usually be represented in the matrix format denoted by \\(	\mathrm{X}\in \mathbb{R}^{n\times p}\\). Please pay attention to the notation of the deterministic matrix we have already introduced ([link](https://mrezasoltani.github.io/_pages/Course/module_2/#math-notations)).
 * Using the above Gaussian assumption for the observation noise and the squared loss, we can write the expected risk (as a measure of performance):
 \\[ \mathbb{E}\Big{[}\mathcal{R}(\hat{f})\Big{]} = \mathbb{E}\Big{[}\text{MSE}(\hat{f})\Big{]} = \mathbb{E}\Big{[} \frac{1}{n}\sum _{i=1}^n(\hat{f}(\mathbf{x_i}) - f(\mathbf{x_i}))^2\Big{]}\\]
+    - The expectation is taken w.r.t the randomness of \\(\hat{f}\\) or training samples. That is, we want a best \\(\hat{f}\\) to perform well , on average, over all realizations of our data distribution.
+* We assume the fixed design scenrio for the following methods, unless stated otherwise.
 
 ## Parametric and non-parametric models
 
