@@ -17,7 +17,7 @@ classes: wide
     
 * In this module, we start with reviewing some statistical assumptions for regression problems and then focus on studying different types of linear algorithms (i.e., the output of the model is linear with respect to its parameters) as the simplest class of regression models. We also talk about some non-linear models. DNN algorithms are deferred to the DNN section. Initially, we go over the parametric regression methods and then discuss some non-parametric models. Now let's start with a motivating example:
 
-* Consider the following scatter plot, illustrating 50 data samples in 1-dimension. The x-axis denotes the feature and the output is a scaler real number. For example, The red circles can represent 50 different humidity levels ranging from very dry, denoted by 1 to very humid denoted by 5, and \\(y_i\\)'s denotes the weather temperature in Celsius. We want to build a **regression model** to predict the temperature for those humidity levels that do not exist in our dataset)
+* Consider the following scatter plot, illustrating 50 data samples in 1-dimension. The x-axis denotes the feature and the output is a scaler real number. For example, The red circles can represent 50 different humidity levels ranging from very dry denoted by 1 to very humid denoted by 5, and \\(y_i\\)'s denotes the weather temperature in Celsius. We want to build a **regression model** to predict the temperature for those humidity levels that do not exist in our dataset.
 
     <details markdown=1><summary markdown="span">Code</summary>
     
