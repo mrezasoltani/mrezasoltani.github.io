@@ -5,7 +5,7 @@ classes: wide
 
 ## Introduction
 * This is our first exposure to the Machine Leering methods. Recall that the three major components of a machine learning system are data, model, and learning algorithm. The goal of an ML algorithm is to learn the right model or hypothesis using the available data such that the model can predict the unseen data. The choice of the model depends on the nature of the problem. In this module, we start exploring a group of ML methods/models that deal with predicting a real-valued output(s) (also called the dependent variable or target). This class of methods is called regression methods. 
-* Regression is a fundamental problem in machine learning, and regression problems appear in a diverse range of research areas and applications including time-series analysis, control and robotics (e.g., reinforcement learning) deep learning applications such as speech-to-text translation, and image recognition. 
+* Regression is a fundamental problem in machine learning, and regression problems appear in a diverse range of research areas and applications including time-series analysis, control and robotics (e.g., reinforcement learning), deep learning applications such as speech-to-text, image recognition, etc. 
 
 * For a regression problem and in general in any machine learning problem, we need to take into account the following considerations:
     - Choice of the right hypothesis (parametric/non-parametric, linear/non-linear models, etc.)
