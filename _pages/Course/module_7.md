@@ -184,7 +184,7 @@ points. The fixed design is sometimes called denoising since we want to recover 
 * As mentioned before, the linear model is called linear because of the linear relationship between the output and the input features. In general; however, a straight line will not provide a good fit to the observation data. In this case, one can apply a nonlinear transformation to the input features to obtain new features of \\(\phi(\mathbf{x})\\), and make the output-input relation linear, i.e., \\(y=\mathbf{w}^T \phi(\mathbf{x})\\). This relationship is still linear, so we can study it in the context of linear regression models. We'll come back to this when we talk about kernel methods.
 
 * Before discussing the training of the linear model (fitting observation data), let's review the fundamental assumptions in a linear regression model.
-    - The key property of the model is that the expected value of the output is assumed to be a linear function of the input, i.e., \\(\mathbb{E}(Y\|\mathbf{X}=\mathbf{x}) = \mathbf{w}^T \mathbf{x}\\), which makes the model easy to interpret, and easy to fit to data.
+    - The key property of the model is that the expected value of the output is assumed to be a linear function of the input, i.e., \\(\mathbb{E}(Y\|\mathbf{x}) = \mathbf{w}^T \mathbf{x}\\), which makes the model easy to interpret, and easy to fit to data.
     - The feature vectors have no correlation to each other. If they are related to each other, then the term _multicolinearity_ is used.
     - The noise and the observation are statistically independent.
     - The observation noise is assumed to be Gaussian and Stationary across all samples. This property is sometimes called _Homoscedasticity_.
