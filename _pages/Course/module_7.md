@@ -95,7 +95,9 @@ classes: wide
     - For models we discuss here, we assume that the observation noise is statistically independent of our data, \\(\mathbf{X}, Y\\).
 
 * So, finding the estimator \\(\hat{f}\\) boils down to estimating the mean of the Gaussian distribution using training data. To this end, we use the maximum likelihood approach. The negative log-likelihood (NLL) is given by
-\\[\text{NLL}(f) = -\frac{1}{2}\log\sigma^2 + \frac{(Y - f(\mathbf{X}))^2}{2\sigma^2} + \text{cons.}\\]
+\\[\text{NLL}(f) = \frac{1}{2}\log\sigma^2 + \frac{(Y - f(\mathbf{X}))^2}{2\sigma^2} + \text{cons.}\\]
+
+    - Please note that, unlike our convention, we have used random \\(\mathbf{X}\\) and \\(Y\\) instead of their realization in the above NLL. 
 
 * If we assume \\(\sigma^2\\) is knowm, minimizing the NLL is equivalent to minimizing \\(\frac{(Y - f(\mathbf{X}))^2}{2\sigma^2}\\). This is the squared loss. As we have discussed in the Statistics section ([link](https://mrezasoltani.github.io/_pages/Course/module_4/#what-is-statistics)), the measure of fitness is given by the expected risk, considering the expected performance of the algorithm (model) with respect to the chosen loss function. As a result, our estimator is the solution to the following optimization problem:
 \\[f^{\*} = \text{argmin}_{\hat{f}}\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \text{argmin} _{\hat{f}}\mathbb{E} _{\mathcal{D}_n} \mathbb{E} _{\mathbf{X}, Y} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2\|\mathcal{D}_n\big{)}\\]
@@ -186,3 +188,10 @@ points. The fixed design is sometimes called denoising since we want to recover 
     - The observation noise is assumed to be Gaussian and Stationary across all samples. This property is sometimes called _Homoscedasticity_.
 
 #### Learning the linear model (fitting the data with a hyperplane)
+* To learn the linear model, we follow the same procedure of minimizing NLL:
+  \\[\text{NLL}(f) = \frac{n}{2}\log\sigma^2 + \frac{\sum_{i=1}^n(y_i - \pmb{\theta}^T\mathbf{x_i})^2}{2\sigma^2} + \text{cons.}\\].
+
+* To find the minimizer \((\pmb{\theta\\), we take the derivative of NLL w.r.t to it (while \\(sigma^2\\) is assumed to be fixed). As a result, we find
+\\[\text{RSE}(\pmb{\theta}) = \frac{1}{n}\sum_{i=1}^n(y_i - \pmb{\theta}^T\mathbf{x_i})^2 \Big{)} \\]
+
+
