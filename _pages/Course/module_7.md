@@ -175,16 +175,13 @@ points. The fixed design is sometimes called denoising since we want to recover 
     - The coefficient \\(b\\) is called the _offset_ or _bias_ term. This captures the unconditional mean of the response, \\(b = \mathbb{E}(y)\\), and can be used as a baseline for regression problems. In most cases, we absorb the bias term into the vector \\(\mathbf{w}\\) and consider the coefficient vector as \\(\pmb{\theta} = [b, w_1, w_2, \ldots, w_p]^T\\). This implies that number 1 is appended from the left to all input samples, i.e., \\(\mathbf{x_i} = [1, x_1, x_2, \ldots, x_p]^T\\) for all \\(i=1,2,\ldots,n\\). So, in matrix notation, our observation model is given by:
       \\[Y = \mathrm{X}\pmb{\theta} + \pmb{\epsilon}\\]
       - Where \\(\pmb{\epsilon} = [\epsilon_1, \epsilon_2,\ldots,\epsilon_n]^T\\), and \\(\epsilon_i\sim\mathcal{N}(0, \sigma^2)\\).
-    - When \\(p=1\\), the regression problem is called _simple linear regression_, and if \\(p>1\\), it is called _multiple linear regression_.
+    - When \\(p=1\\), the regression problem is called _**simple linear regression**_, and if \\(p>1\\), it is called _**multiple linear regression**_. Also, when the output is a vector, the regression problem is called _**multivariate linear regression,**_.
+* As mentioned before, the linear model is called linear because of the linear relationship between the output and the input features. In general; however, a straight line will not provide a good fit to the observation data. In this case, one can apply a nonlinear transformation to the input features to obtain new features of \\(\phi(\mathbf{x}\\), and make the output-input relation linear, i.e., \\(y=\mathbf{w}^T \phi(\mathbf{x})\\). This relationship is still linear, so we can study it in the context of linear regression models. We'll come back to this when we talk about kernel methods.
 
+* Before discussing the raining of the model, let's review the fundamental assumptions in a linear regression model.
+    - The key property of the model is that the expected value of the output is assumed to be a linear function of the input, i.e., \\(\mathbb{E})(y|\mathbf{X}=\mathbf{x}) = \mathbf{w}^T\mathbf{x}\\), which makes the model easy to interpret, and easy to fit to data.
+    - The feature vectors have no correlation to each other. If they are related to each other, then the term _multicolinearity_ is used.
+    - The noise and the observation are statistically independent.
+    - The observation noise is assumed to be Gaussian and Stationary across all samples. This property is sometimes called _Homoscedasticity_.
 
-
-* There are fundamental assumptions to use a linear regression model.
-
-* The key property of the model is that the expected value of the output is assumed to be a linear function of the input, E[yjx] = wTx, which makes the model easy to interpret, and easy to fit to data. We discuss nonlinear extensions later in this book.
-
-
-
-```python
-
-```
+#### Learning the linear model (fitting the data with a hyperplane)
