@@ -140,7 +140,7 @@ classes: wide
 * The Bias-Variance trade-off states that we cannot decrease both the bias and the variance of our estimator at the same time. Estimators with higher bias tend to underfit the data; while models with higher variance overfit the training data. We'll talk about this more later.
 
 ### Fixed design
-* In the fixed design, there is no concept of the marginal distribution of \\(p(\mathbf{x}^{\*})\\). Rather, the design points
+* In the fixed design, there is no concept of the marginal distribution of \\(p(\mathbf{x})\\). Rather, the design points
 \\(\mathbf{x_1}, \mathbf{x_2},\ldots,\mathbf{x_n}\\) are considered deterministic, and the  goal is to estimate \\(f\\) only at these
 points. In this case, the covariance structure of the design points is completely known and we don't need to estimate it, making the conditions simpler for studying other techniques such as dimension reduction. The fixed design is sometimes called denoising since we want to recover \\(f(\mathbf{x_1}), f(\mathbf{x_2}),\ldots,f(\mathbf{x_n})\\) given the noisy (random) observations, \\(Y_1, Y_2, \ldots, Y_n\\). However, the fixed design does not directly address the generalization (out-of-sample prediction).
 * Here, we again use the Gaussian noise model for our observation, i.e., \\(Y_i = f(\mathbf{x_i}) + \epsilon_i\\), where \\(\epsilon_i\overset{i.i.d}{\sim}\mathcal{N}(o, \sigma^2)\\) for \\(i=1,2,\ldots,n\\).
@@ -149,9 +149,6 @@ points. In this case, the covariance structure of the design points is completel
 \\[ \mathbb{E}\Big{[}\mathcal{R}(\hat{f})\Big{]} = \mathbb{E}\Big{[}\text{MSE}(\hat{f})\Big{]} = \mathbb{E}\Big{[} \frac{1}{n}\sum _{i=1}^n(\hat{f}(\mathbf{x_i}) - f(\mathbf{x_i}))^2\Big{]}\\]
     - The expectation is taken w.r.t the randomness of \\(\hat{f}\\) or training samples. That is, we want a best \\(\hat{f}\\) to perform well , on average, over all realizations of our data distribution.
 * We assume the fixed design scenrio for the following methods, unless stated otherwise.
-
- 
-
 
 ## Parametric and non-parametric models
 
@@ -202,3 +199,6 @@ points. In this case, the covariance structure of the design points is completel
       \\[\nabla_{\pmb{\theta}}\text{RSS}(\pmb{\theta}) = \mathrm{X}^T\mathrm{X}\pmb{\theta} - \mathrm{X}^T\mathbf{y}\\]
     - Now setting the gradient to zero, we find the optimal solution called _**Normal Equation**_ or _ordinary least squares (OLS)_ solution:
       \\[\hat{\pmb{\theta}} = \pmb{\theta}_{mle} = (\mathrm{X}^T\mathrm{X})^{-1}\mathrm{X}^T\mathbf{y}\\]
+* There are two important obervations here:
+  1. The matrix \\( (\mathrm{X}^T\mathrm{X})^{-1}\mathrm{X}^T\\) is the (left) psuedo-inverse introduced ([here]()). This can be seen easily by checking the fouur conditions.
+  2.  The ols solution for the parameters is unique. To see this, we first note that \\(\text{RSS}(\pmb{\theta})\\) is a convex function because if we calculate the Hessian of the \\(\text{RSS}(\pmb{\theta})\\), we obtain \\(\mathcal{H} = \nabla_{\pmb{\theta}}^2\text{RSS}(\pmb{\theta}) = \mathrm{X}^T\mathrm{X} \succeq 0\\). That is, the Hessian is, in general, a positive semi-definite. Now, since we have assumed that the features are linearly independent, then the matrix \\(\mathrm{X}\\) is a full-column rank. On the other hand, we know that \\(rank(\mathrm{X}) = \mathrm{X}^T\mathrm{X})= p\\); hence, \\(\mathrm{X}^T\mathrm{X})\\) is a full-rank matrix; as a result, the Hessian is positive definite, i.e., \\(\mathcal{H}\succ 0\\). This means that the \\\hat{\pmb{\theta\\)}\\) satisfies the condition for being a unique global minimum of the convex objective function, \\(\text{RSS}(\pmb{\theta})\\).
