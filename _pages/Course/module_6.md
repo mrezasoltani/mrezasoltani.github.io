@@ -1518,7 +1518,7 @@ devide(4,0)
 * The number of dimensions is the rank of the array
   - The shape of an array is a tuple of integers giving the size of the array along each dimension.
 * One can initialize numpy arrays from nested Python lists.
-* The first dimension (axis = 0) denotes the rows
+* The first dimension (axis = 0) denotes the rows.
 * The second dimension (axis = 1) denotes the columns.
 
 
