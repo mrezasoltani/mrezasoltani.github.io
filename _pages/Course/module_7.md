@@ -87,7 +87,7 @@ classes: wide
 
 * For regression problems, the observation noise is generally modeled as Gaussian noise; hence, we have the following likelihood function:
 
-\\[p(y^{\*}\|\mathbf{x}^{\*}) =\mathcal{N}(y^{\*} \| f(\mathbf{x}^{\*}), \sigma^2)\\]
+\\[p(Y^{\*}\|\mathbf{X}^{\*}=\mathbf{x}^{\*}) =\mathcal{N}(Y^{\*} \| f(\mathbf{x}^{\*}), \sigma^2)\\]
 
 * This implies the following relationship between a generic input random vector \\(\mathbf{X}\\) and its random output \\(Y\\) with the joint distribution \\(p\\) (for notation simplicity, we use \\((\mathbf{X}, Y)\\) instead of the test point \\((\mathbf{X}^{\*}, Y^{\*})\\)):
 \\[Y = f(\mathbf{X}) + \epsilon\\]
