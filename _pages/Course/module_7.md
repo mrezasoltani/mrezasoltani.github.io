@@ -173,7 +173,7 @@ points. In this case, the covariance structure of the design points is completel
 * We first focus on the linear regression models; as a result, we may assume that the output is a linear function of the input. Unless otherwise stated, we assume the fixed design for linear regression models.
 * We note that this is just an assumption, and it may not be valid or realistic, but certainly, the linear models are the simplest model we can start with. 
 * Hence, \\(\hat{f}(\mathbf{x}, \pmb{\theta}) = b + \mathbf{w}^T\mathbf{x}\\), where we consider the case \\(k=p\\) and the the low-dimensional space, i.e., \\(n\geq p\\) (We'll talk about the high dimensional regime later). Accordingly, the likelihood function is given by:
-\\[p(y\|\mathbf{x}) =\mathcal{N}(y \| b + \mathbf{w}^T \mathbf{x}, \sigma^2)\\]
+\\[p(Y\|\mathbf{x}) =\mathcal{N}(Y \| b + \mathbf{w}^T \mathbf{x}, \sigma^2)\\]
     - Here, \\(\pmb{\theta} = (\mathbf{w}, b, \sigma^2)\\) denotes all the parameters of the model. 
     - The vector of parameters \\(w_1, w_2,\ldots, w_p\\) are known as the weights or regression coefficients. Each coefficient \\(w_i\\) specifies the change in the output we expect if we change the corresponding input feature \\(x_i\\) by one unit.
     - The coefficient \\(b\\) is called the _offset_ or _bias_ term. This captures the unconditional mean of the response, \\(b = \mathbb{E}(y)\\), and can be used as a baseline for regression problems. In most cases, we absorb the bias term into the vector \\(\mathbf{w}\\) and consider the coefficient vector as \\(\pmb{\theta} = [b, w_1, w_2, \ldots, w_p]^T\\). This implies that number 1 is appended from the left to all input samples, i.e., \\(\mathbf{x_i} = [1, x_1, x_2, \ldots, x_p]^T\\) for all \\(i=1,2,\ldots,n\\). So, in the matrix notation, our observation model is given by:
@@ -194,7 +194,7 @@ points. In this case, the covariance structure of the design points is completel
   \\[\text{NLL}(\pmb{\theta}) = \frac{n}{2}\log\sigma^2 + \frac{\sum_{i=1}^n(y_i - \pmb{\theta}^T\mathbf{x_i})^2}{2\sigma^2} + \text{cons.}\\]
 * To find the minimizer \\(\pmb{\theta}\\), we assume that \\(\sigma^2\\) is fixed. As a result, we need to minimize the _Residual Sum of Squares (RSS)_ defined below:
 \\[\text{RSS}(\pmb{\theta}) = \frac{1}{2}\sum_{i=1}^n(y_i - \pmb{\theta}^T\mathbf{x_i})^2 = \frac{1}{2}\||\mathbf{y} - \mathrm{X}\pmb{\theta}\||_2^2\\]
-    - Where \\(\mathbf{y} = [y_1, y_2,\ldots, y_n]^T\\) is a general realization of the random vector \\(\mathbf{Y}\\).
+    - Where \\(\mathbf{y} = [y_1, y_2,\ldots, y_n]^T\\) is a realization of the random vector \\(\mathbf{Y}\\).
     - This is the risk expression (MSE equation) for the fixed design setup (not the expected risk). Now if we take the derivative w.r.t to \\(\pmb{\theta}\\), we obtain the gradient:
       \\[\nabla_{\pmb{\theta}}\text{RSS}(\pmb{\theta}) = \mathrm{X}^T\mathrm{X}\pmb{\theta} - \mathrm{X}^T\mathbf{y}\\]
     - Now setting the gradient to zero, we find the optimal solution called _**Normal Equation**_ or _ordinary least squares (OLS)_ solution:
