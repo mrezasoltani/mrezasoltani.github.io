@@ -221,7 +221,7 @@ async	elif	if	or	yield
 
 ### Special variables
 
-*These variables are all reserved by Python and should not be used for other purposes.
+* These variables are all reserved by Python and should not be used for other purposes.
 * ```__author__``` The name of the author of the module
 * ```__doc__``` A string that contains the documentation for the module
 * ```__file__``` The path to the module file
@@ -467,7 +467,7 @@ for x, y in [(1,10), (2,20), (3,30)]:
     3 30
 
 
-### _Enumerate_ is a built-in function of Python, allowing us to loop over something and have an automatic counter
+* **_Enumerate_ is a built-in function of Python, allowing us to loop over something and have an automatic counter.**
 
 
 ```python
