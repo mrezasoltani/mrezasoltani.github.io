@@ -142,13 +142,16 @@ classes: wide
 ### Fixed design
 * In the fixed design, there is no concept of the marginal distribution of \\(p(\mathbf{x}^{\*})\\). Rather, the design points
 \\(\mathbf{x_1}, \mathbf{x_2},\ldots,\mathbf{x_n}\\) are considered deterministic, and the  goal is to estimate \\(f\\) only at these
-points. The fixed design is sometimes called denoising since we want to recover \\(f(\mathbf{x_1}), f(\mathbf{x_2}),\ldots,f(\mathbf{x_n})\\) given the noisy (random) observations, \\(Y_1, Y_2, \ldots, Y_n\\).
+points. In this case, the covariance structure of the design points is completely known and we don't need to estimate it, making the conditions simpler for studying other techniques such as dimension reduction. The fixed design is sometimes called denoising since we want to recover \\(f(\mathbf{x_1}), f(\mathbf{x_2}),\ldots,f(\mathbf{x_n})\\) given the noisy (random) observations, \\(Y_1, Y_2, \ldots, Y_n\\). However, the fixed design does not directly address the generalization (out-of-sample prediction).
 * Here, we again use the Gaussian noise model for our observation, i.e., \\(Y_i = f(\mathbf{x_i}) + \epsilon_i\\), where \\(\epsilon_i\overset{i.i.d}{\sim}\mathcal{N}(o, \sigma^2)\\) for \\(i=1,2,\ldots,n\\).
 * The input points \\(\mathbf{x_1}, \mathbf{x_2},\ldots,\mathbf{x_n}\\) will usually be represented in the matrix format denoted by \\(	\mathrm{X}\in \mathbb{R}^{n\times p}\\). Please pay attention to the notation of the deterministic matrix we have already introduced ([link](https://mrezasoltani.github.io/_pages/Course/module_2/#math-notations)).
-* Using the above Gaussian assumption for the observation noise and the squared loss, we can write the expected risk (as a measure of performance):
+* Using the above Gaussian assumption for the observation noise and using the squared loss, we can write the expected risk (as a measure of performance):
 \\[ \mathbb{E}\Big{[}\mathcal{R}(\hat{f})\Big{]} = \mathbb{E}\Big{[}\text{MSE}(\hat{f})\Big{]} = \mathbb{E}\Big{[} \frac{1}{n}\sum _{i=1}^n(\hat{f}(\mathbf{x_i}) - f(\mathbf{x_i}))^2\Big{]}\\]
     - The expectation is taken w.r.t the randomness of \\(\hat{f}\\) or training samples. That is, we want a best \\(\hat{f}\\) to perform well , on average, over all realizations of our data distribution.
 * We assume the fixed design scenrio for the following methods, unless stated otherwise.
+
+ 
+
 
 ## Parametric and non-parametric models
 
