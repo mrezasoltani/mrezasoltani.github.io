@@ -106,7 +106,7 @@ classes: wide
     - In the above likelihood expression, note that we have used \\(\hat{f}\\) instead of \\(f\\). This is because we have written the likelihood function using our training data which results in an estimator \\(\hat{f}\\) (not necessarily the function used in our statistical model).
      \\[\mathbb{E} \big{(}Y - \hat{f}(\mathbf{X})\big{)}^2 = \int_{\mathcal{X}\times\mathcal{Y}}\big{(}y - \hat{f}(\mathbf{x})\big{)}^2 p(\mathbf{x}, y)d\mathbf{x}dy\\]
     - We note that the inner expectation (the risk) is a random variable as \\(\hat{f}\\) is a r.v.
-    - It can be shown that the optimal regression function which minimizes the above expected risk is given by \\(f^*(\mathbf{x}) = \mathbb{E}\big{(}Y\|\mathbf{x}=\mathbf{X}\big{)}\\).
+    - It can be shown that the optimal regression function which minimizes the above expected risk is given by \\(f^*(\mathbf{x}) = \mathbb{E}\big{(}Y\|\mathbf{X}=\mathbf{x}\big{)}\\).
     
         <details>
           <summary>Proof</summary>
