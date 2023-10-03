@@ -152,7 +152,7 @@ points. In this case, the covariance structure of the design points is completel
 
 ## Parametric and non-parametric models
 
-* **Parametric models.** One way to solve the above problem is to assume that our estimator \\(\hat{f}: \mathbb{R}^p\rightarrow \mathbb{R}\\) has a parametrix form, \\(\hat{f}(\mathbf{x}, \pmb{\theta})\\), where \\(\pmb{\theta}\in \mathbb{R}^k\\) denotes a set of parameters such that \\(k = o(n)\\), that is, \\(k\\) doesn't grow with the number of samples. If \\(k=O(p)\\), the model is called under-parametrized (i.e., we are in low-dimensional space), while models with \\(k >> p\\) are called over-parametrized (i.e., we are in high-dimensional space). One example of the over-parametrized models is Deep Neural Networks (DNNs).
+* **Parametric models.** One way to solve the above problem is to assume that our estimator \\(\hat{f}: \mathbb{R}^p\rightarrow \mathbb{R}\\) has a parametrix form, \\(\hat{f}(\mathbf{x}, \pmb{\theta})\\), where \\(\pmb{\theta}\in \mathbb{R}^k\\) denotes a set of parameters such that \\(k = o(n)\\), that is, \\(k\\) doesn't grow with the number of samples. If \\(k=O(p)\\), the model is called under-parametrized (i.e., we are in low-dimensional space), while models with \\(k \gg p\\) are called over-parametrized (i.e., we are in high-dimensional space). One example of the over-parametrized models is Deep Neural Networks (DNNs).
 
 * **Non-parametric models.** 
 
@@ -170,9 +170,9 @@ points. In this case, the covariance structure of the design points is completel
 
 ### Linear Regression
 
-* We first focus on the linear regression models; as a result, we may assume that the output is a linear function of the input. Unless otherwise stated, we assume the fixed design for linear regression models. 
+* We first focus on the linear regression models; as a result, we may assume that the output is a linear function of the input. Unless otherwise stated, we assume the fixed design for linear regression models.
 * We note that this is just an assumption, and it may not be valid or realistic, but certainly, the linear models are the simplest model we can start with. 
-* Hence, \\(\hat{f}(\mathbf{x}, \pmb{\theta}) = b + \mathbf{w}^T\mathbf{x}\\), where we consider the case \\(k=p\\). Accordingly, the likelihood function is given by:
+* Hence, \\(\hat{f}(\mathbf{x}, \pmb{\theta}) = b + \mathbf{w}^T\mathbf{x}\\), where we consider the case \\(k=p\\) and the the low-dimensional space, i.e., \\(n\geq p\\) (We'll talk about the high dimensional regime later). Accordingly, the likelihood function is given by:
 \\[p(y\|\mathbf{x}) =\mathcal{N}(y \| b + \mathbf{w}^T \mathbf{x}, \sigma^2)\\]
     - Here, \\(\pmb{\theta} = (\mathbf{w}, b, \sigma^2)\\) denotes all the parameters of the model. 
     - The vector of parameters \\(w_1, w_2,\ldots, w_p\\) are known as the weights or regression coefficients. Each coefficient \\(w_i\\) specifies the change in the output we expect if we change the corresponding input feature \\(x_i\\) by one unit.
