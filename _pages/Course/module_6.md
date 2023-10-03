@@ -1518,8 +1518,8 @@ devide(4,0)
 * The number of dimensions is the rank of the array
   - The shape of an array is a tuple of integers giving the size of the array along each dimension.
 * One can initialize numpy arrays from nested Python lists.
-* The first dimension (axis = 0) denotes the columns
-* The second dimension (axis = 1) denotes the rows.
+* The first dimension (axis = 0) denotes the rows
+* The second dimension (axis = 1) denotes the columns.
 
 
 ```python
@@ -1695,14 +1695,30 @@ print(ym2, ym2.shape)
 
 
 ```python
-x = np.array([1, 2, 3])
+x = np.array([[1, 2, 3],[4, 5, 6]])
+print("==== x shape =====")
 print(x.shape)
+print("==== x.T shape =====")
 print(x.T.shape)
+print("==== reshape(1, -1) =====")
 print(x.reshape((1, -1)).shape)
+print("==== reshape(-1, 1) =====")
 print(x.reshape((-1, 1)).shape)
 xx = np.array([[1, 2, 3]])
+print("==== reshape(1, 2, 3) =====")
 print(xx.shape)
 ```
+
+    ==== x shape =====
+    (2, 3)
+    ==== x.T shape =====
+    (3, 2)
+    ==== reshape(1, -1) =====
+    (1, 6)
+    ==== reshape(-1, 1) =====
+    (6, 1)
+    ==== reshape(1, 2, 3) =====
+    (1, 3)
 
 * Infix operators (i.e. +, -, *, **, /) are element-wise.  
 * Matrix Operations: np.dot, np.linalg.norm, .T, +, -, *, ...
@@ -1765,6 +1781,13 @@ print(np.sum(x, axis=0))
 print("==== Compute sum of each row ====")
 print(np.sum(x, axis=1))
 
+x = np.array([[3,1],[2,-2]])
+y = np.array([[3,4],[5,9]])
+print("==== Compute the matrix-matrix multiplication using np.matmul() =====")
+print(np.matmul(x, y))
+print("==== Compute the matrix-matrix multiplication using np.dot() =====")
+print(np.dot(x, y))
+
 x = np.array([[4,1],[3,2]])
 print("==== Frobenius norm ====")
 print(np.linalg.norm(x))
@@ -1819,6 +1842,12 @@ print(np.linalg.norm(x, 2))
     [4 6]
     ==== Compute sum of each row ====
     [3 7]
+    ==== Compute the matrix-matrix multiplication using np.matmul() =====
+    [[ 14  21]
+     [ -4 -10]]
+    ==== Compute the matrix-matrix multiplication using np.dot() =====
+    [[ 14  21]
+     [ -4 -10]]
     ==== Frobenius norm ====
     5.477225575051661
     ==== nuclear norm ====
