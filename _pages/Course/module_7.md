@@ -4,7 +4,7 @@ classes: wide
 ---
 
 ## Introduction
-* This is our first exposure to the Machine Leering methods. Recall that the three major components of a machine learning system are data, model, and learning algorithm. The goal of an ML algorithm is to learn the right model or hypothesis using the available data such that the model can predict the unseen data. The choice of the model depends on the nature of the problem. In this module, we start exploring a group of ML methods/models that deal with predicting a real-valued output(s) (also called the dependent variable or target). This class of methods is called regression methods. 
+* This is our first exposure to machine learning methods. Recall that the three major components of a machine learning system are data, model, and learning algorithm. The goal of an ML algorithm is to learn the right model or hypothesis using the available data such that the model can predict the unseen data. The choice of the model depends on the nature of the problem. In this module, we start exploring a group of ML methods/models that deal with predicting a real-valued output(s) (also called the dependent variable or target). This class of methods is called regression methods. 
 * Regression is a fundamental problem in machine learning, and regression problems appear in a diverse range of research areas and applications including time-series analysis, control and robotics (e.g., reinforcement learning), deep learning applications such as speech-to-text, image recognition, etc. 
 
 * For a regression problem and in general in any machine learning problem, we need to take into account the following considerations:
@@ -147,8 +147,8 @@ points. In this case, the covariance structure of the design points is completel
 * The input points \\(\mathbf{x_1}, \mathbf{x_2},\ldots,\mathbf{x_n}\\) will usually be represented in the matrix format denoted by \\(	\mathrm{X}\in \mathbb{R}^{n\times p}\\). Please pay attention to the notation of the deterministic matrix we have already introduced ([link](https://mrezasoltani.github.io/_pages/Course/module_2/#math-notations)).
 * Using the above Gaussian assumption for the observation noise and using the squared loss, we can write the expected risk (as a measure of performance):
 \\[ \mathbb{E}\Big{[}\mathcal{R}(\hat{f})\Big{]} = \mathbb{E}\Big{[}\text{MSE}(\hat{f})\Big{]} = \mathbb{E}\Big{[} \frac{1}{n}\sum _{i=1}^n(\hat{f}(\mathbf{x_i}) - f(\mathbf{x_i}))^2\Big{]}\\]
-    - The expectation is taken w.r.t the randomness of \\(\hat{f}\\) or data samples. That is, we want a best \\(\hat{f}\\) to perform well , on average, over all realizations of our data distribution.
-* We assume the fixed design scenrio for the following methods, unless stated otherwise.
+    - The expectation is taken w.r.t the randomness of \\(\hat{f}\\) or data samples. That is, we want a best \\(\hat{f}\\) to perform well, on average, over all realizations of our data distribution.
+* We assume the fixed design scenario for the following methods unless stated otherwise.
 
 ## Parametric and non-parametric models
 
@@ -172,7 +172,7 @@ points. In this case, the covariance structure of the design points is completel
 
 * We first focus on the linear regression models; as a result, we may assume that the output is a linear function of the input. Unless otherwise stated, we assume the fixed design for linear regression models.
 * We note that this is just an assumption, and it may not be valid or realistic, but certainly, the linear models are the simplest model we can start with. 
-* Hence, \\(\hat{f}(\mathbf{x}, \pmb{\theta}) = b + \mathbf{w}^T\mathbf{x}\\), where we consider the case \\(k=p\\) and the the low-dimensional space, i.e., \\(n\geq p\\) (We'll talk about the high dimensional regime later). Accordingly, the likelihood function is given by:
+* Hence, \\(\hat{f}(\mathbf{x}, \pmb{\theta}) = b + \mathbf{w}^T\mathbf{x}\\), where we consider the case \\(k=p\\) and the low-dimensional space, i.e., \\(n\geq p\\) (We'll talk about the high dimensional regime later). Accordingly, the likelihood function is given by:
 \\[p(Y\|\mathbf{x}) =\mathcal{N}(Y \| b + \mathbf{w}^T \mathbf{x}, \sigma^2)\\]
     - Here, \\(\pmb{\theta} = (\mathbf{w}, b, \sigma^2)\\) denotes all the parameters of the model. 
     - The vector of parameters \\(w_1, w_2,\ldots, w_p\\) are known as the weights or regression coefficients. Each coefficient \\(w_i\\) specifies the change in the output we expect if we change the corresponding input feature \\(x_i\\) by one unit.
@@ -184,8 +184,8 @@ points. In this case, the covariance structure of the design points is completel
 * As mentioned before, the linear model is called linear because of the linear relationship between the output and the input features. In general; however, a straight line will not provide a good fit to the observation data. In this case, one can apply a nonlinear transformation to the input features to obtain new features of \\(\phi(\mathbf{x})\\), and make the output-input relation linear, i.e., \\(y=\mathbf{w}^T \phi(\mathbf{x})\\). This relationship is still linear, so we can study it in the context of linear regression models. We'll come back to this when we talk about kernel methods.
 
 * Before discussing the training of the linear model (fitting observation data), let's review the fundamental assumptions in a linear regression model.
-    - The key property of the model is that the expected value of the output is assumed to be a linear function of the input, i.e., \\(\mathbb{E}(Y\|\mathbf{x}) = \mathbf{w}^T \mathbf{x}\\), which makes the model easy to interpret, and easy to fit to data.
-    - The feature vectors have no correlation to each other. If they are related to each other, then the term _multicolinearity_ is used.
+    - The key property of the model is that the expected value of the output is assumed to be a linear function of the input, i.e., \\(\mathbb{E}(Y\|\mathbf{x}) = \mathbf{w}^T \mathbf{x}\\), which makes the model easy to interpret, and easy to fit data.
+    - The feature vectors do not correlate with each other. If they are related to each other, then the term _multicolinearity_ is used.
     - The noise and the observation are statistically independent.
     - The observation noise is assumed to be Gaussian and Stationary across all samples. This property is sometimes called _Homoscedasticity_.
 
@@ -199,9 +199,9 @@ points. In this case, the covariance structure of the design points is completel
       \\[\nabla_{\pmb{\theta}}\text{RSS}(\pmb{\theta}) = \mathrm{X}^T\mathrm{X}\pmb{\theta} - \mathrm{X}^T\mathbf{y}\\]
     - Now setting the gradient to zero, we find the optimal solution called _**Normal Equation**_ or _ordinary least squares (OLS)_ solution:
       \\[\hat{\pmb{\theta}} = \pmb{\theta}_{mle} = (\mathrm{X}^T\mathrm{X})^{-1}\mathrm{X}^T\mathbf{y}\\]
-* There are three important obervations here:
+* There are three important observations here:
   1. The \\(\hat{\pmb{\theta}}\\) is a random vecotr since the response \\(Y_i\\)'s are random.
-  2. The matrix \\( (\mathrm{X}^T\mathrm{X})^{-1}\mathrm{X}^T\\) is the (left) psuedo-inverse introduced ([here](https://mrezasoltani.github.io/_pages/Course/module_2/#rank-of-a-matrix)). This can be seen easily by checking the fouur conditions.
-  3.  The ols solution for the parameters is unique. To see this, we first note that \\(\text{RSS}(\pmb{\theta})\\) is a convex function because if we calculate the Hessian of the \\(\text{RSS}(\pmb{\theta})\\), we obtain \\(\mathcal{H} = \nabla_{\pmb{\theta}}^2\text{RSS}(\pmb{\theta}) = \mathrm{X}^T\mathrm{X} \succeq 0\\). That is, the Hessian is, in general, a positive semi-definite. Now, since we have assumed that the features are linearly independent, then the matrix \\(\mathrm{X}\\) is a full-column rank. On the other hand, we know that \\(rank(\mathrm{X}) = rank(\mathrm{X}^T\mathrm{X})= p\\); hence, \\(\mathrm{X}^T\mathrm{X}\\) is a full-rank matrix; as a result, the Hessian is positive definite, i.e., \\(\mathcal{H}\succ 0\\). This means that the \\\hat{\pmb{\theta\\)}\\) satisfies the condition for being a unique global minimum of the convex objective function, \\(\text{RSS}(\pmb{\theta})\\). From this, we conclude that the sqaure matrix \\( (\mathrm{X}^T\mathrm{X})\\) is an invetible matrix.
+  2. The matrix \\( (\mathrm{X}^T\mathrm{X})^{-1}\mathrm{X}^T\\) is the (left) psuedo-inverse introduced ([here](https://mrezasoltani.github.io/_pages/Course/module_2/#rank-of-a-matrix)). This can be seen easily by checking the four conditions.
+  3.  The OLS solution for the parameters is unique. To see this, we first note that \\(\text{RSS}(\pmb{\theta})\\) is a convex function because if we calculate the Hessian of the \\(\text{RSS}(\pmb{\theta})\\), we obtain \\(\mathcal{H} = \nabla_{\pmb{\theta}}^2\text{RSS}(\pmb{\theta}) = \mathrm{X}^T\mathrm{X} \succeq 0\\). That is, the Hessian is, in general, a positive semi-definite. Now, since we have assumed that the features are linearly independent, then the matrix \\(\mathrm{X}\\) is a full-column rank. On the other hand, we know that \\(rank(\mathrm{X}) = rank(\mathrm{X}^T\mathrm{X})= p\\); hence, \\(\mathrm{X}^T\mathrm{X}\\) is a full-rank matrix; as a result, the Hessian is positive definite, i.e., \\(\mathcal{H}\succ 0\\). This means that the \\\hat{\pmb{\theta\\)}\\) satisfies the condition for being a unique global minimum of the convex objective function, \\(\text{RSS}(\pmb{\theta})\\). From this, we conclude that the square matrix \\( (\mathrm{X}^T\mathrm{X})\\) is an invertible matrix.
 * **Geometric intrepretation of the least squares**
 *  
